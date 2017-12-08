@@ -2,9 +2,6 @@
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it && \
-    ~/.bash_it/install.sh
-
 brew install \
     bash-completion \
     fpp \
@@ -15,6 +12,9 @@ brew install \
     tig \
     vim \
     yarn
+
+git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it && \
+    ~/.bash_it/install.sh
 
 ln -s \
     $PWD/.bash_it_custom \
