@@ -109,3 +109,6 @@
 [submodule ".vim/bundle-available/vim-test"]
 	path = .vim/bundle-available/vim-test
 	url = https://github.com/janko-m/vim-test.git
+[submodule ".vim/bundle-available/devdocs.vim"]
+	path = .vim/bundle-available/devdocs.vim
+	url = https://github.com/rhysd/devdocs.vim.git
