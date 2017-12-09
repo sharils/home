@@ -18,6 +18,8 @@ git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it && \
 
 ln -s \
     $PWD/.bash_it_custom \
-    $PWD/.bashrc
+    $PWD/.bashrc \
+    $PWD/.vimrc \
+    ~
 
 vimdiff .bash_profile ~/.bash_profile
