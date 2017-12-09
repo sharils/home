@@ -21,8 +21,8 @@ git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it && \
 ln -fs \
     $PWD/.bash_it_custom \
     $PWD/.bashrc \
-    $PWD/.vimrc \
     $PWD/.vim \
+    $PWD/.vimrc \
     ~
 
 git submodule update --init --recursive
