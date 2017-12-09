@@ -1,0 +1,55 @@
+snippet ca "case" b
+case $1:
+endsnippet
+
+snippet cb "case break" b
+case $1:
+	break;
+endsnippet
+
+snippet cnb "case no break" b
+case $1:
+	// no break
+endsnippet
+
+snippet de "default" b
+default:
+	$1;
+endsnippet
+
+snippet /(?<=})e/ "else" r
+ else {
+	$1
+}
+endsnippet
+
+snippet /(?<=})ei/ "else" r
+ else if ($1) {
+}
+endsnippet
+
+snippet ibr "if break" b
+if ($1) {
+	break;
+}
+endsnippet
+
+snippet ic "if continue" b
+if ($1) {
+	continue;
+}
+endsnippet
+
+snippet if "if" b
+if ($1) {
+}
+endsnippet
+
+snippet /(?<=else)if/ "if" Ar
+ if ($1)
+endsnippet
+
+snippet sw "switch" b
+switch ($1) {
+}
+endsnippet

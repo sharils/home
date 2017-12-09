@@ -1,0 +1,25 @@
+global !p
+import re
+def to_const(text):
+    return re.sub('(?=[A-Z])', '_', text).upper()
+endglobal
+
+snippet f "false" w
+false
+endsnippet
+
+snippet n "null" w
+null
+endsnippet
+
+snippet t "true" w
+true
+endsnippet
+
+snippet "" "heredoc" w
+$$1 = <<<`!p snip.rv = to_const(t[1]) + "\n"`$2`!p snip.rv =  "\n" + to_const(t[1])`;
+endsnippet
+
+snippet '' "nowdoc" w
+$$1 = <<<`!p snip.rv = "'" + to_const(t[1]) + "'\n"`$2`!p snip.rv =  "\n" + to_const(t[1])`;
+endsnippet

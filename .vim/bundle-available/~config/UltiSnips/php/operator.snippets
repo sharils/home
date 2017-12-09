@@ -1,0 +1,11 @@
+snippet ! "!==" i
+ !== $0
+endsnippet
+
+snippet = "===" i
+ === $0
+endsnippet
+
+snippet ?? "null coalesce operator" w
+isset($1) ? ${1:false} : ${2:false}
+endsnippet

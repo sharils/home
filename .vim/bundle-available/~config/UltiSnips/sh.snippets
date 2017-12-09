@@ -1,0 +1,71 @@
+global !p
+import re
+def singular(word):
+	return re.sub(r'(s|es)$', '', word)
+endglobal
+
+snippet #! "#!" w
+#!/usr/bin/env $1
+endsnippet
+
+snippet #sh "#!" w
+#!/usr/bin/env sh
+
+endsnippet
+
+snippet #ph "#!php" w
+#!/usr/bin/env php
+
+endsnippet
+
+snippet #py "#!python" w
+#!/usr/bin/env python3
+
+endsnippet
+
+snippet #py2 "#!python" w
+#!/usr/bin/env python
+
+endsnippet
+
+snippet fun "function" w
+${1:fun}() {
+	${2::}
+}
+endsnippet
+
+snippet if "if" w
+if [ $1 ]; then
+	${2::}
+fi
+endsnippet
+
+snippet fie "else" w
+else
+	${2::}
+fi
+endsnippet
+
+snippet fiei "elif" w
+elif [ $1 ]; then
+	${2::}
+fi
+endsnippet
+
+snippet wh "while" w
+while [ $1 ]; do
+	${2::}
+done
+endsnippet
+
+snippet un "until" w
+until [ $1 ]; do
+	${2::}
+done
+endsnippet
+
+snippet fi "for in" w
+for `!p snip.rv = singular(t[1])` in ${1:items}; do
+	${2::}
+done
+endsnippet

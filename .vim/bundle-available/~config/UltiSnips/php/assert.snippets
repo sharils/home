@@ -1,0 +1,55 @@
+snippet aa "assert array" w
+assert('is_array($$1)');
+endsnippet
+
+snippet ab "assert bool" w
+assert('is_bool($$1)');
+endsnippet
+
+snippet ac "assert callable" w
+assert('is_callable($$1)');
+endsnippet
+
+snippet ad "assert double" w
+assert('is_double($$1)');
+endsnippet
+
+snippet ai "assert int" w
+assert('is_int($$1)');
+endsnippet
+
+snippet ais "assert isset" w
+assert('isset($$1)');
+endsnippet
+
+snippet amb "assert maybe bool" w
+assert('$${1} === null || is_bool($$1)');
+endsnippet
+
+snippet amd "assert maybe double" w
+assert('$${1} === null || is_double($$1)');
+endsnippet
+
+snippet ami "assert maybe int" w
+assert('$${1} === null || is_int($$1)');
+endsnippet
+
+snippet amre "assert maybe resource" w
+assert('$${1} === null || is_resource($$1)');
+endsnippet
+
+snippet ams "assert maybe string" w
+assert('$${1} === null || is_string($$1)');
+endsnippet
+
+snippet anf "assert not false" w
+assert('$$1 !== false');
+endsnippet
+
+snippet are "assert resource" w
+assert('is_resource($$1)');
+endsnippet
+
+snippet as "assert string" w
+assert('is_string($$1)');
+endsnippet

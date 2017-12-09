@@ -1,0 +1,36 @@
+snippet a "a" w
+<a href="$1">
+	${2:$1}
+</a>
+endsnippet
+
+snippet ai "a>img" w
+<a href="${3:$2}">
+	<img alt="$1" src="${2}">
+</a>
+endsnippet
+
+snippet div "div" w
+<div>
+	$1
+</div>
+endsnippet
+
+snippet h "html" "len(snip.buffer) == 1" e
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>$1</title>
+</head>
+<body>
+	$2
+</body>
+</html>
+endsnippet
+
+snippet sc "script" w
+<script>
+	$1
+</script>
+endsnippet

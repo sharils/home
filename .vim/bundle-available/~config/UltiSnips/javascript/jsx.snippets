@@ -1,0 +1,101 @@
+snippet < "<tag>" i
+<${1}>${VISUAL}$2</$1>
+endsnippet
+
+snippet </ "<tag>" i
+<${1}>
+	${VISUAL}$2
+</$1>
+endsnippet
+
+snippet /> "<tag>" i
+<${1} />
+endsnippet
+
+snippet /(?<=\.)dp/ "defaultProps" r
+defaultProps = {$1
+};
+endsnippet
+
+snippet /(?<=\.)ir/ "isRequired" r
+isRequired
+endsnippet
+
+snippet /(?<=\.)pt/ "propTypes" r
+propTypes = {$1
+};
+endsnippet
+
+snippet ren "render" w
+render() {$1
+}
+endsnippet
+
+snippet /^ir/ "import React" r
+import React from 'react';
+endsnippet
+
+snippet /^ipt/ "import PropTypes" r
+import PropTypes from 'prop-types';
+endsnippet
+
+snippet pta "PropTypes.array" w
+PropTypes.array
+endsnippet
+
+snippet ptao "PropTypes.arrayOf()" w
+PropTypes.arrayOf($1)
+endsnippet
+
+snippet ptb "PropTypes.bool" w
+PropTypes.bool
+endsnippet
+
+snippet ptd "PropTypes.node" w
+PropTypes.node
+endsnippet
+
+snippet pte "PropTypes.oneOf([])" w
+PropTypes.oneOf([$1])
+endsnippet
+
+snippet ptf "PropTypes.func" w
+PropTypes.func
+endsnippet
+
+snippet pti "PropTypes.instanceOf()" w
+PropTypes.instanceOf($1)
+endsnippet
+
+snippet ptl "PropTypes.element" w
+PropTypes.element
+endsnippet
+
+snippet ptn "PropTypes.number" w
+PropTypes.number
+endsnippet
+
+snippet pto "PropTypes.object" w
+PropTypes.object
+endsnippet
+
+snippet ptoo "PropTypes.objectOf()" w
+PropTypes.objectOf($1)
+endsnippet
+
+snippet ptp "PropTypes.shape({})" w
+PropTypes.shape({$1
+})
+endsnippet
+
+snippet pts "PropTypes.string" w
+PropTypes.string
+endsnippet
+
+snippet ptu "PropTypes.oneOfType([])" w
+PropTypes.oneOfType([$1])
+endsnippet
+
+snippet pty "PropTypes.symbol" w
+PropTypes.symbol
+endsnippet

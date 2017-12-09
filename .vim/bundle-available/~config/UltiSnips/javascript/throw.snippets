@@ -1,0 +1,33 @@
+snippet /(?<=})c/ "catch" r
+ catch (e) {
+	if (e instanceof $1) {
+	} else {
+		throw e;
+	}
+}
+endsnippet
+
+snippet /(?<=})eie/ "else if" r
+ else if (e instanceof $1) {
+}
+endsnippet
+
+snippet /(?<=})f/ "finally" r
+ finally {
+	$1
+}
+endsnippet
+
+snippet tne "throw new Error" w
+throw new ${1:Error}($2);
+endsnippet
+
+snippet tnt "throw new TypeError" w
+throw new TypeError($1);
+endsnippet
+
+snippet try "try" w
+try {
+	${VISUAL}$1
+}
+endsnippet

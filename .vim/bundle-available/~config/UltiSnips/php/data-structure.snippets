@@ -1,0 +1,25 @@
+snippet kv "key value" w
+'$1' => $$2,
+endsnippet
+
+snippet li "list" w
+list($1)
+endsnippet
+
+snippet ne "new" w
+new ${1:stdClass}($2)
+endsnippet
+
+snippet ns "new stdClass" w
+new stdClass()
+endsnippet
+
+snippet oa "object array" w
+(object) [
+	$1
+]
+endsnippet
+
+snippet us "use stdClass" b
+use stdClass;
+endsnippet

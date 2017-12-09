@@ -1,0 +1,27 @@
+snippet cf "call function" w
+${1:func}($2)
+endsnippet
+
+snippet cm "Class::method()" w
+${1:stdClass}::$2($3)
+endsnippet
+
+snippet om "$object->method()" w
+$${1:object}->$2($3)
+endsnippet
+
+snippet pm "parent::method()" w
+parent::$1($2)
+endsnippet
+
+snippet sm "self::method()" w
+self::$1($2)
+endsnippet
+
+snippet stm "static::method()" w
+static::$1($2)
+endsnippet
+
+snippet tm "$this->method()" w
+$this->$1($2)
+endsnippet

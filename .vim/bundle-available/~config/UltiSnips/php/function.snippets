@@ -1,0 +1,144 @@
+snippet aprf "abstract protected function" b
+abstract protected function ${1:abstractProtectedFunction}($2);
+endsnippet
+
+snippet aprsf "abstract protected static function" b
+abstract protected static function ${1:abstractProtectedStaticFunction}($2);
+endsnippet
+
+snippet apuf "abstract public function" b
+abstract public function ${1:abstractPublicFunction}($2);
+endsnippet
+
+snippet apusf "abstract public static function" b
+abstract public static function ${1:abstractPublicStaticFunction}($2);
+endsnippet
+
+snippet fu "anonymous function" w
+function ($1) {
+	${2:throw new BadFunctionCallException('TODO');}
+}
+endsnippet
+
+snippet fun "function" b
+function ${1:func}($2)
+{
+	${3:throw new BadFunctionCallException('TODO');}
+}
+endsnippet
+
+snippet fuu "anonymous function use" w
+function ($1) use ($${2:var}) {
+	${3:throw new BadFunctionCallException('TODO');}
+}
+endsnippet
+
+snippet fuu; "anonymous function use;" w
+function ($1) use ($${2:var}) {
+	${3:throw new BadFunctionCallException('TODO');}
+};
+endsnippet
+
+snippet ipuf "interface public function" b
+public function ${1:interfacePublicFunction}($2);
+endsnippet
+
+snippet ipusf "interface public static function" b
+public static function ${1:interfacePublicStaticFunction}($2);
+endsnippet
+
+snippet pf "private function" b
+private function ${1:privateFunction}($2)
+{
+	${3:throw new BadMethodCallException('TODO');}
+}
+endsnippet
+
+snippet pff "private final function" b
+private final function ${1:privateFinalFunction}($2)
+{
+	${3:throw new BadMethodCallException('TODO');}
+}
+endsnippet
+
+snippet prf "protected function" b
+protected function ${1:protectedFunction}($2)
+{
+	${3:throw new BadMethodCallException('TODO');}
+}
+endsnippet
+
+snippet prff "protected final function" b
+protected final function ${1:protectedFinalFunction}($2)
+{
+	${3:throw new BadMethodCallException('TODO');}
+}
+endsnippet
+
+snippet prsf "protected static function" b
+protected static function ${1:protectedStaticFunction}($2)
+{
+	${3:throw new BadMethodCallException('TODO');}
+}
+endsnippet
+
+snippet prsff "protected static final function" b
+protected static final function ${1:protectedStaticFinalFunction}($2)
+{
+	${3:throw new BadMethodCallException('TODO');}
+}
+endsnippet
+
+snippet psf "private static function" b
+private static function ${1:privateStaticFunction}($2)
+{
+	${3:throw new BadMethodCallException('TODO');}
+}
+endsnippet
+
+snippet psff "private static final function" b
+private static final function ${1:privateStaticFinalFunction}($2)
+{
+	${3:throw new BadMethodCallException('TODO');}
+}
+endsnippet
+
+snippet puf "public function" b
+public function ${1:publicFunction}($2)
+{
+	${3:throw new BadMethodCallException('TODO');}
+}
+endsnippet
+
+snippet puff "public final function" b
+public final function ${1:publicFinalFunction}($2)
+{
+	${3:throw new BadMethodCallException('TODO');}
+}
+endsnippet
+
+snippet pusf "public static function" b
+public static function ${1:publicStaticFunction}($2)
+{
+	${3:throw new BadMethodCallException('TODO');}
+}
+endsnippet
+
+snippet pusff "public static final function" b
+public static final function ${1:publicStaticFinalFunction}($2)
+{
+	${3:throw new BadMethodCallException('TODO');}
+}
+endsnippet
+
+snippet /(?<=\))u/ "use var" r
+ use ($${1:var})
+endsnippet
+
+snippet ube "use BadMethodCallException" w
+use BadMethodCallException;
+endsnippet
+
+snippet ubfe "use BadFunctionCallException" w
+use BadFunctionCallException;
+endsnippet

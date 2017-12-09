@@ -1,0 +1,323 @@
+global !p
+import re
+def singular(word):
+	return re.sub(r'(s|es)$', '', word)
+endglobal
+
+snippet acb "array_combine(): array, false" w
+array_combine($1)
+endsnippet
+
+snippet ach "array_chunk(): arrays, null" w
+array_chunk($1)
+endsnippet
+
+snippet ack "array_change_key_case(): array, false" w
+array_change_key_case($1)
+endsnippet
+
+snippet aco "array_column(): array" w
+array_column($1)
+endsnippet
+
+snippet acp "compact(): array" w
+compact($1)
+endsnippet
+
+snippet act "count(): int, 1, 0" w
+count($1)
+endsnippet
+
+snippet acv "array_count_values(): ints" w
+array_count_values($1)
+endsnippet
+
+snippet adi "array_diff(): array" w
+array_diff($1)
+endsnippet
+
+snippet adi "array_udiff(): array" w
+array_udiff($1)
+endsnippet
+
+snippet adi "array_diff_key(): array" w
+array_diff_key($1)
+endsnippet
+
+snippet adi "array_diff_ukey(): array" w
+array_diff_ukey($1)
+endsnippet
+
+snippet adi "array_diff_assoc(): array" w
+array_diff_assoc($1)
+endsnippet
+
+snippet adi "array_udiff_assoc(): array" w
+array_udiff_assoc($1)
+endsnippet
+
+snippet adi "array_diff_uassoc(): array" w
+array_diff_uassoc($1)
+endsnippet
+
+snippet adi "array_udiff_uassoc(): array" w
+array_udiff_uassoc($1)
+endsnippet
+
+snippet aex "extract(): int" w
+extract($1)
+endsnippet
+
+snippet afi "array_filter(): array" w
+array_filter($1)
+endsnippet
+
+snippet afil "array_fill(): array" w
+array_fill($1)
+endsnippet
+
+snippet afk "array_fill_keys(): array" w
+array_fill_keys($1)
+endsnippet
+
+snippet afl "array_flip(): keys, null" w
+array_flip($1)
+endsnippet
+
+snippet ain "in_array(): bool" w
+in_array($1)
+endsnippet
+
+snippet ais "array_intersect(): array" w
+array_intersect($1)
+endsnippet
+
+snippet ais "array_uintersect(): array" w
+array_uintersect($1)
+endsnippet
+
+snippet ais "array_intersect_key(): array" w
+array_intersect_key($1)
+endsnippet
+
+snippet ais "array_intersect_ukey(): array" w
+array_intersect_ukey($1)
+endsnippet
+
+snippet ais "array_intersect_assoc(): array" w
+array_intersect_assoc($1)
+endsnippet
+
+snippet ais "array_uintersect_assoc(): array" w
+array_uintersect_assoc($1)
+endsnippet
+
+snippet ais "array_intersect_uassoc(): array" w
+array_intersect_uassoc($1)
+endsnippet
+
+snippet ais "array_uintersect_uassoc(): array" w
+array_uintersect_uassoc($1)
+endsnippet
+
+snippet ake "array_key_exists(): bool" w
+array_key_exists('$1', $$2)
+endsnippet
+
+snippet aks "array_keys(): array" w
+array_keys($1)
+endsnippet
+
+snippet ama "array_map(): array" w
+array_map($1)
+endsnippet
+
+snippet ame "array_merge(): array" w
+array_merge($1)
+endsnippet
+
+snippet amr "array_merge_recursive(): array" w
+array_merge_recursive($1)
+endsnippet
+
+snippet apa "array_pad(): array" w
+array_pad($1)
+endsnippet
+
+snippet apo "array_pop(): mix, null" w
+array_pop($1)
+endsnippet
+
+snippet apr "array_product(): int, double" w
+array_product($1)
+endsnippet
+
+snippet apu "array_push(): int" w
+array_push($1)
+endsnippet
+
+snippet ara "array_rand(): int, string, array, null" w
+array_rand($1)
+endsnippet
+
+snippet ard "array_reduce(): mix, null" w
+array_reduce($1)
+endsnippet
+
+snippet arg "range(): array" w
+range($1)
+endsnippet
+
+snippet array_filter( "array_filter function" w
+array_filter($$1, function ($`!p snip.rv = singular(t[1])`) {
+	${2:throw new BadFunctionCallException('TODO');}
+}
+endsnippet
+
+snippet array_map( "array_map function" w
+array_map(function ($`!p snip.rv = singular(t[1])`) {
+	${2:throw new BadFunctionCallException('TODO');}
+}, $$1
+endsnippet
+
+snippet array_reduce( "array_reduce function" w
+array_reduce($$1, function ($result, $`!p snip.rv = singular(t[1])`) {
+	${2:throw new BadFunctionCallException('TODO');}
+}
+endsnippet
+
+snippet array_walk( "array_walk function" w
+array_walk($$1, function (&$`!p snip.rv = singular(t[1])`) {
+	${2:throw new BadFunctionCallException('TODO');}
+}
+endsnippet
+
+snippet arp "array_replace(): array, null" w
+array_replace($1)
+endsnippet
+
+snippet arr "array_replace_recursive(): array, null" w
+array_replace_recursive($1)
+endsnippet
+
+snippet ars "reset(): mix, false" w
+reset($1)
+endsnippet
+
+snippet arv "array_reverse(): array" w
+array_reverse($1)
+endsnippet
+
+snippet ase "array_search(): int, string, false" w
+array_search($1)
+endsnippet
+
+snippet ash "array_shift(): mix, null" w
+array_shift($1)
+endsnippet
+
+snippet asl "array_slice(): array" w
+array_slice($1)
+endsnippet
+
+snippet aso "sort(): bool" w
+sort($1)
+endsnippet
+
+snippet aso "rsort(): bool" w
+rsort($1)
+endsnippet
+
+snippet aso "usort(): bool" w
+usort($1)
+endsnippet
+
+snippet aso "ksort(): bool" w
+ksort($1)
+endsnippet
+
+snippet aso "krsort(): bool" w
+krsort($1)
+endsnippet
+
+snippet aso "uksort(): bool" w
+uksort($1)
+endsnippet
+
+snippet aso "asort(): bool" w
+asort($1)
+endsnippet
+
+snippet aso "arsort(): bool" w
+arsort($1)
+endsnippet
+
+snippet aso "uasort(): bool" w
+uasort($1)
+endsnippet
+
+snippet aso "natcasesort(): bool" w
+natcasesort($1)
+endsnippet
+
+snippet aso "natsort(): bool" w
+natsort($1)
+endsnippet
+
+snippet aso "array_multisort(): bool" w
+array_multisort($1)
+endsnippet
+
+snippet aso "shuffle(): bool" w
+shuffle($1)
+endsnippet
+
+snippet asp "array_splice(): array" w
+array_splice($1)
+endsnippet
+
+snippet asu "array_sum(): int, double" w
+array_sum($1)
+endsnippet
+
+snippet aun "array_unique(): array" w
+array_unique($1)
+endsnippet
+
+snippet aus "array_unshift(): int" w
+array_unshift($1)
+endsnippet
+
+snippet ava "array_values(): array" w
+array_values($1)
+endsnippet
+
+snippet awa "array_walk(): bool" w
+array_walk($1)
+endsnippet
+
+snippet awr "array_walk_recursive(): bool" w
+array_walk_recursive($1)
+endsnippet
+
+snippet end "end(): mix, false" w
+end($1)
+endsnippet
+
+snippet uasort( "uasort function" w
+uasort($$1, function ($low, $high) {
+	${2:throw new BadFunctionCallException('TODO');}
+}
+endsnippet
+
+snippet uksort( "uksort function" w
+uksort($$1, function ($low, $high) {
+	${2:throw new BadFunctionCallException('TODO');}
+}
+endsnippet
+
+snippet usort( "usort function" w
+usort($$1, function ($low, $high) {
+	${2:throw new BadFunctionCallException('TODO');}
+}
+endsnippet

@@ -1,0 +1,31 @@
+snippet cgc "console.groupCollapsed" w
+console.groupCollapsed($1);
+${VISUAL}$2
+console.groupEnd();
+endsnippet
+
+snippet cgr "console.group" w
+console.group($1);
+${VISUAL}$2
+console.groupEnd();
+endsnippet
+
+snippet clo "console.log" w
+console.log(${VISUAL}${1});
+endsnippet
+
+snippet clO "console.log" w
+(console.log(${VISUAL}${1}), ${VISUAL}$1)
+endsnippet
+
+snippet cpr "console.profile" w
+console.profile("${1}");
+${VISUAL}$2
+console.profileEnd($1);
+endsnippet
+
+snippet cti "console.time" w
+console.time("${1}");
+${VISUAL}$2
+console.timeEnd("$1");
+endsnippet

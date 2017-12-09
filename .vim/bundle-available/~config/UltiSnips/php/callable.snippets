@@ -1,0 +1,23 @@
+snippet cmc "Class::method callable" w
+"${1:Class}::$2"
+endsnippet
+
+snippet omc "[$object, 'method'] callable" w
+array($$1, '${2:method}')
+endsnippet
+
+snippet pmc "parent::method callable" w
+"parent::$1"
+endsnippet
+
+snippet smc "self::method callable" w
+"self::$1"
+endsnippet
+
+snippet stmc "static::method callable" w
+"static::$1"
+endsnippet
+
+snippet tmc "[$this, 'method'] callable" w
+array($this, '${1:method}')
+endsnippet

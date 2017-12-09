@@ -1,0 +1,23 @@
+snippet jea "after" b
+after$1(($2) => {
+});
+endsnippet
+
+snippet jeb "before" b
+before$1(($2) => {
+});
+endsnippet
+
+snippet jed "describe" b
+describe('$1', ($2) => {
+});
+endsnippet
+
+snippet jet "test" b
+test('$1', ($2) => {
+});
+endsnippet
+
+snippet /(?:(?<=\bafter)|(?<=\bbefore))a/ "all" Ar
+All
+endsnippet

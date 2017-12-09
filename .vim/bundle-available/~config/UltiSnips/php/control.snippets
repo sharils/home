@@ -1,0 +1,84 @@
+snippet ca "case" b
+case ${1:false}:
+endsnippet
+
+snippet cb "case break" b
+case ${1:false}:
+	break;
+endsnippet
+
+snippet cnb "case no break" b
+case ${1:false}:
+	// no break
+endsnippet
+
+snippet de "default" b
+default:
+	$1
+endsnippet
+
+snippet e "else" "snip.buffer[snip.line-1][snip.column:snip.column+1] == '}'" be
+} else {
+	$1
+
+endsnippet
+
+snippet e "php else" "snip.buffer[snip.line-1][snip.column:snip.column+14] == '<?php endif ?>'" be
+<?php else: ?>
+	$1
+
+endsnippet
+
+snippet ei "elseif" "snip.buffer[snip.line-1][snip.column:snip.column+1] == '}'" be
+} elseif (${1:false}) {
+
+endsnippet
+
+snippet ei "php elseif else" "snip.buffer[snip.line-1][snip.column:snip.column+14] == '<?php else: ?>'" be
+<?php elseif (${1:false}): ?>
+	$1
+
+endsnippet
+
+snippet ei "php elseif endif" "snip.buffer[snip.line-1][snip.column:snip.column+14] == '<?php endif ?>'" be
+<?php elseif (${1:false}): ?>
+	$1
+
+endsnippet
+
+snippet ibr "if break" b
+if (${1:false}) {
+	break;
+}
+endsnippet
+
+snippet ic "if continue" b
+if (${1:false}) {
+	continue;
+}
+endsnippet
+
+snippet if "if" b
+if (${1:false}) {
+}
+endsnippet
+
+snippet ir "if return" b
+if (${1:false}) {
+	return;
+}
+endsnippet
+
+snippet pif "php if" b
+<?php if (${1:false}): ?>
+<?php endif ?>
+endsnippet
+
+snippet re "return" w
+return $1;
+endsnippet
+
+snippet sw "switch" b
+switch (${1:false}) {
+}
+endsnippet

@@ -1,0 +1,13 @@
+snippet d "debugger" w
+
+// eslint-disable-next-line no-debugger
+(() => { debugger; return ${VISUAL}$1; })()
+
+endsnippet
+
+snippet d> "debugger =>" w
+
+// eslint-disable-next-line no-debugger
+(...args) => { debugger; return args[${1:0}]; }
+
+endsnippet

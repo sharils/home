@@ -1,0 +1,193 @@
+global !p
+import re
+def class_name(fqcn):
+	return re.sub(r'.*\\', '', fqcn)
+endglobal
+
+snippet abs "abstract" w
+abstract $0
+endsnippet
+
+snippet ac "abstract class" b
+<?php
+namespace ${1:Vendor};
+
+abstract class `!p snip.rv=snip.basename`
+{
+	$2
+}
+endsnippet
+
+snippet ace "abstract class extends" b
+<?php
+namespace ${1:Vendor};
+
+use ${2:stdClass};
+
+abstract class `!p snip.rv=snip.basename` extends `!p snip.rv = class_name(t[2])`
+{
+	$3
+}
+endsnippet
+
+snippet acei "abstract class extends implements" b
+<?php
+namespace ${1:Vendor};
+
+use ${2:stdClass};
+
+use ${3:IteratorAggregate};
+
+abstract class `!p snip.rv=snip.basename` extends `!p snip.rv = class_name(t[2])` implements `!p snip.rv = class_name(t[3])`
+{
+	$4
+}
+endsnippet
+
+snippet aci "abstract class implements" b
+<?php
+namespace ${1:Vendor};
+
+use ${2:IteratorAggregate};
+
+abstract class `!p snip.rv=snip.basename` implements `!p snip.rv = class_name(t[2])`
+{
+	$3
+}
+endsnippet
+
+snippet ce "class extends" b
+<?php
+namespace ${1:Vendor};
+
+use ${2:stdClass};
+
+class `!p snip.rv=snip.basename` extends `!p snip.rv = class_name(t[2])`
+{
+	$3
+}
+endsnippet
+
+snippet cei "class extends implements" b
+<?php
+namespace ${1:Vendor};
+
+use ${2:stdClass};
+
+use ${3:IteratorAggregate};
+
+class `!p snip.rv=snip.basename` extends `!p snip.rv = class_name(t[2])` implements `!p snip.rv = class_name(t[3])`
+{
+	$4
+}
+endsnippet
+
+snippet ci "class implements" b
+<?php
+namespace ${1:Vendor};
+
+use ${2:IteratorAggregate};
+
+class `!p snip.rv=snip.basename` implements `!p snip.rv = class_name(t[2])`
+{
+	$3
+}
+endsnippet
+
+snippet cl "class" b
+<?php
+namespace ${1:Vendor};
+
+class `!p snip.rv=snip.basename`
+{
+	$2
+}
+endsnippet
+
+snippet ex "extends" i
+ extends $0
+endsnippet
+
+snippet fce "final class extends" b
+<?php
+namespace ${1:Vendor};
+
+use ${2:stdClass};
+
+final class `!p snip.rv=snip.basename` extends `!p snip.rv = class_name(t[2])`
+{
+	$3
+}
+endsnippet
+
+snippet fcei "final class extends implements" b
+<?php
+namespace ${1:Vendor};
+
+use ${2:stdClass};
+
+use ${3:IteratorAggregate};
+
+final class `!p snip.rv=snip.basename` extends `!p snip.rv = class_name(t[2])` implements `!p snip.rv = class_name(t[3])`
+{
+	$4
+}
+endsnippet
+
+snippet fci "final class implements" b
+<?php
+namespace ${1:Vendor};
+
+use ${2:IteratorAggregate};
+
+final class `!p snip.rv=snip.basename` implements `!p snip.rv = class_name(t[2])`
+{
+	$3
+}
+endsnippet
+
+snippet fcl "final class" b
+<?php
+namespace ${1:Vendor};
+
+final class `!p snip.rv=snip.basename`
+{
+	$2
+}
+endsnippet
+
+snippet ie "interface extends" b
+<?php
+namespace ${1:Vendor};
+
+use ${2:IteratorAggregate};
+
+interface `!p snip.rv=snip.basename` extends `!p snip.rv = class_name(t[2])`
+{
+	$3
+}
+endsnippet
+
+snippet im "implements" i
+ implements $0
+endsnippet
+
+snippet in "interface" b
+<?php
+namespace ${1:Vendor};
+
+interface `!p snip.rv=snip.basename`
+{
+	$2
+}
+endsnippet
+
+snippet tr "trait" b
+<?php
+namespace ${1:Vendor};
+
+trait `!p snip.rv=snip.basename`
+{
+	$2
+}
+endsnippet

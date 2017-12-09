@@ -1,0 +1,19 @@
+snippet rmi "invoke ReflectionMethod" w
+$$2 = new ReflectionMethod($${1}, '${2}');
+$$2->setAccessible(true);
+$$2->invoke($$1);
+endsnippet
+
+snippet rpg "get ReflectionProperty" w
+$$2 = new ReflectionProperty($${1}, '${2}');
+$$2->setAccessible(true);
+$$3 = $$2->getValue($$1);
+endsnippet
+
+snippet urm "use ReflectionMethod" b
+use ReflectionMethod;
+endsnippet
+
+snippet urp "use ReflectionMethod" w
+use ReflectionMethod;
+endsnippet

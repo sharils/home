@@ -1,0 +1,47 @@
+snippet db "var_dump get_defined_vars debug_backtrace" w
+$var_dump = array(${1:null}); $var_dump_gdv = get_defined_vars(); $var_dump_db = array_reverse(debug_backtrace()); unset($var_dump_gdv['var_dump']); static $var_dump_ctr = 0; $var_dump_date = $var_dump_ctr++ . ' ' . date('g:i:s M j Y'); array_unshift($var_dump, $var_dump_db, $var_dump_gdv); array_push($var_dump, $var_dump_date); ob_start(); var_dump($var_dump); $var_dump = preg_replace('/\=\>\n\s+/', ' => ', ob_get_clean()); echo $var_dump;
+endsnippet
+
+snippet dbe "var_dump get_defined_vars debug_backtrace exit" w
+$var_dump = array(${1:null}); $var_dump_gdv = get_defined_vars(); $var_dump_db = array_reverse(debug_backtrace()); unset($var_dump_gdv['var_dump']); static $var_dump_ctr = 0; $var_dump_date = $var_dump_ctr++ . ' ' . date('g:i:s M j Y'); array_unshift($var_dump, $var_dump_db, $var_dump_gdv); array_push($var_dump, $var_dump_date); ob_start(); var_dump($var_dump); $var_dump = preg_replace('/\=\>\n\s+/', ' => ', ob_get_clean()); echo $var_dump; exit;
+endsnippet
+
+snippet dbr "var_dump get_defined_vars debug_backtrace reverse" w
+$var_dump = array(${1:null}); $var_dump_gdv = array_reverse(get_defined_vars()); $var_dump_db = debug_backtrace(); unset($var_dump_gdv['var_dump']); static $var_dump_ctr = 0; $var_dump_date = $var_dump_ctr++ . ' ' . date('g:i:s M j Y'); array_unshift($var_dump, $var_dump_date); array_push($var_dump, $var_dump_gdv, $var_dump_db); ob_start(); var_dump($var_dump); $var_dump = preg_replace('/\=\>\n\s+/', ' => ', ob_get_clean()); $var_dump = '<pre style="width: 100%; height: 100%" onclick="var range = document.createRange(); range.selectNodeContents(this); var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range)">' . $var_dump . '</pre>'; echo $var_dump;
+endsnippet
+
+snippet dbre "var_dump get_defined_vars debug_backtrace reverse exit" w
+$var_dump = array(${1:null}); $var_dump_gdv = array_reverse(get_defined_vars()); $var_dump_db = debug_backtrace(); unset($var_dump_gdv['var_dump']); static $var_dump_ctr = 0; $var_dump_date = $var_dump_ctr++ . ' ' . date('g:i:s M j Y'); array_unshift($var_dump, $var_dump_date); array_push($var_dump, $var_dump_gdv, $var_dump_db); ob_start(); var_dump($var_dump); $var_dump = preg_replace('/\=\>\n\s+/', ' => ', ob_get_clean()); $var_dump = '<pre style="width: 100%; height: 100% exit" onclick="var range = document.createRange(); range.selectNodeContents(this); var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range)">' . $var_dump . '</pre>'; echo $var_dump; exit;
+endsnippet
+
+snippet du "var_dump" w
+$var_dump = array(${1:null}); $var_dump_gdv = get_defined_vars(); $var_dump_db = array_reverse(debug_backtrace()); unset($var_dump_gdv['var_dump']); static $var_dump_ctr = 0; $var_dump_date = $var_dump_ctr++ . ' ' . date('g:i:s M j Y'); array_push($var_dump, $var_dump_date); ob_start(); var_dump($var_dump); $var_dump = preg_replace('/\=\>\n\s+/', ' => ', ob_get_clean()); echo $var_dump;
+endsnippet
+
+snippet due "var_dump exit" w
+$var_dump = array(${1:null}); $var_dump_gdv = get_defined_vars(); $var_dump_db = array_reverse(debug_backtrace()); unset($var_dump_gdv['var_dump']); static $var_dump_ctr = 0; $var_dump_date = $var_dump_ctr++ . ' ' . date('g:i:s M j Y'); array_push($var_dump, $var_dump_date); ob_start(); var_dump($var_dump); $var_dump = preg_replace('/\=\>\n\s+/', ' => ', ob_get_clean()); echo $var_dump; exit;
+endsnippet
+
+snippet dur "var_dump reverse" w
+$var_dump = array(${1:null}); $var_dump_gdv = array_reverse(get_defined_vars()); $var_dump_db = debug_backtrace(); unset($var_dump_gdv['var_dump']); static $var_dump_ctr = 0; $var_dump_date = $var_dump_ctr++ . ' ' . date('g:i:s M j Y'); array_unshift($var_dump, $var_dump_date); ob_start(); var_dump($var_dump); $var_dump = preg_replace('/\=\>\n\s+/', ' => ', ob_get_clean()); $var_dump = '<pre style="width: 100%; height: 100%" onclick="var range = document.createRange(); range.selectNodeContents(this); var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range)">' . $var_dump . '</pre>'; echo $var_dump;
+endsnippet
+
+snippet dure "var_dump reverse exit" w
+$var_dump = array(${1:null}); $var_dump_gdv = array_reverse(get_defined_vars()); $var_dump_db = debug_backtrace(); unset($var_dump_gdv['var_dump']); static $var_dump_ctr = 0; $var_dump_date = $var_dump_ctr++ . ' ' . date('g:i:s M j Y'); array_unshift($var_dump, $var_dump_date); ob_start(); var_dump($var_dump); $var_dump = preg_replace('/\=\>\n\s+/', ' => ', ob_get_clean()); $var_dump = '<pre style="width: 100%; height: 100% exit" onclick="var range = document.createRange(); range.selectNodeContents(this); var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range)">' . $var_dump . '</pre>'; echo $var_dump; exit;
+endsnippet
+
+snippet dv "var_dump get_defined_vars" w
+$var_dump = array(${1:null}); $var_dump_gdv = get_defined_vars(); $var_dump_db = array_reverse(debug_backtrace()); unset($var_dump_gdv['var_dump']); static $var_dump_ctr = 0; $var_dump_date = $var_dump_ctr++ . ' ' . date('g:i:s M j Y'); array_unshift($var_dump, $var_dump_gdv); array_push($var_dump, $var_dump_date); ob_start(); var_dump($var_dump); $var_dump = preg_replace('/\=\>\n\s+/', ' => ', ob_get_clean()); echo $var_dump;
+endsnippet
+
+snippet dve "var_dump get_defined_vars exit" w
+$var_dump = array(${1:null}); $var_dump_gdv = get_defined_vars(); $var_dump_db = array_reverse(debug_backtrace()); unset($var_dump_gdv['var_dump']); static $var_dump_ctr = 0; $var_dump_date = $var_dump_ctr++ . ' ' . date('g:i:s M j Y'); array_unshift($var_dump, $var_dump_gdv); array_push($var_dump, $var_dump_date); ob_start(); var_dump($var_dump); $var_dump = preg_replace('/\=\>\n\s+/', ' => ', ob_get_clean()); echo $var_dump; exit;
+endsnippet
+
+snippet dvr "var_dump get_defined_vars reverse" w
+$var_dump = array(${1:null}); $var_dump_gdv = array_reverse(get_defined_vars()); $var_dump_db = debug_backtrace(); unset($var_dump_gdv['var_dump']); static $var_dump_ctr = 0; $var_dump_date = $var_dump_ctr++ . ' ' . date('g:i:s M j Y'); array_unshift($var_dump, $var_dump_date); array_push($var_dump, $var_dump_gdv); ob_start(); var_dump($var_dump); $var_dump = preg_replace('/\=\>\n\s+/', ' => ', ob_get_clean()); $var_dump = '<pre style="width: 100%; height: 100%" onclick="var range = document.createRange(); range.selectNodeContents(this); var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range)">' . $var_dump . '</pre>'; echo $var_dump;
+endsnippet
+
+snippet dvre "var_dump get_defined_vars reverse exit" w
+$var_dump = array(${1:null}); $var_dump_gdv = array_reverse(get_defined_vars()); $var_dump_db = debug_backtrace(); unset($var_dump_gdv['var_dump']); static $var_dump_ctr = 0; $var_dump_date = $var_dump_ctr++ . ' ' . date('g:i:s M j Y'); array_unshift($var_dump, $var_dump_date); array_push($var_dump, $var_dump_gdv); ob_start(); var_dump($var_dump); $var_dump = preg_replace('/\=\>\n\s+/', ' => ', ob_get_clean()); $var_dump = '<pre style="width: 100%; height: 100% exit" onclick="var range = document.createRange(); range.selectNodeContents(this); var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range)">' . $var_dump . '</pre>'; echo $var_dump; exit;
+endsnippet

@@ -1,0 +1,17 @@
+snippet /(?<!\/)>/ "=>" r
+($1) => {$2}
+endsnippet
+
+snippet a> "=>" Aw
+async ($1) => {$2}
+endsnippet
+
+snippet f* "function* () {}" Aw
+function* $1($2) {
+}
+endsnippet
+
+snippet fu "function" w
+function $1($2) {
+}
+endsnippet

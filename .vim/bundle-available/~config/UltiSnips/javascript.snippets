@@ -1,0 +1,51 @@
+snippet /^js/ "javascript:" Ar
+javascript:
+endsnippet
+
+snippet . "..." i
+...
+endsnippet
+
+snippet = "===" i
+ === $0
+endsnippet
+
+snippet ! "!==" i
+ !== $0
+endsnippet
+
+snippet $ "${var}" i
+${$1}
+endsnippet
+
+snippet /\b(?<!\/)(?<!^)f/ "false" r
+false
+endsnippet
+
+snippet a "await" w
+await $0
+endsnippet
+
+snippet c "const" w
+const $0
+endsnippet
+
+snippet n "null" w
+null
+endsnippet
+
+snippet r "return" w
+return $0
+endsnippet
+
+snippet /\b(?<!\/)t/ "true" r
+true
+endsnippet
+
+snippet u "undefined" w
+undefined
+endsnippet
+
+snippet /t "// TODO: " b
+// TODO ($1): $0
+endsnippet

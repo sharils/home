@@ -1,0 +1,59 @@
+snippet a "ADD" b
+ADD $0
+endsnippet
+
+snippet ai "apt-get install -y" b
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y $0
+endsnippet
+
+snippet c "CMD" b
+CMD [$1]
+endsnippet
+
+snippet cp "COPY" b
+COPY $0
+endsnippet
+
+snippet e "ENV" b
+ENV $0
+endsnippet
+
+snippet ep "ENTRYPOINT" b
+ENTRYPOINT [$0]
+endsnippet
+
+snippet ex "EXPOSE" b
+EXPOSE $0
+endsnippet
+
+snippet f "FROM" b
+FROM ${1:ubuntu}
+endsnippet
+
+snippet l "LABEL" b
+LABEL $0
+endsnippet
+
+snippet m "MAINTAINER" b
+MAINTAINER ${1:name} <${2:$1@users.noreply.github.com}>
+endsnippet
+
+snippet o "ONBUILD" b
+ONBUILD $0
+endsnippet
+
+snippet r "RUN" b
+RUN $0
+endsnippet
+
+snippet u "USER" b
+USER $0
+endsnippet
+
+snippet v "VOLUME" b
+VOLUME [$1]
+endsnippet
+
+snippet w "WORKDIR" b
+WORKDIR $0
+endsnippet

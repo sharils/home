@@ -100,9 +100,6 @@
 [submodule ".vim/bundle-available/vim-rhubarb"]
 	path = .vim/bundle-available/vim-rhubarb
 	url = https://github.com/tpope/vim-rhubarb.git
-[submodule ".vim/bundle-available/vim-sharils"]
-	path = .vim/bundle-available/vim-sharils
-	url = https://github.com/sharils/vim-sharils.git
 [submodule ".vim/bundle-available/vim-shebang"]
 	path = .vim/bundle-available/vim-shebang
 	url = https://github.com/vitalk/vim-shebang.git

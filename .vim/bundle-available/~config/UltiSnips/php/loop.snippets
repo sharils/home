@@ -1,0 +1,60 @@
+global !p
+import re
+def singular(word):
+	return re.sub(r'(s|es)$', '', word)
+endglobal
+
+snippet pfe "php foreach" b
+<?php foreach ($${1:items} as $`!p snip.rv = singular(t[1])`): ?>
+<?php endforeach ?>
+endsnippet
+
+snippet pfei "php foreach index" b
+<?php foreach ($${1:items} as $`!p snip.rv = singular(t[1])`Idx => $`!p snip.rv = singular(t[1])`): ?>
+<?php endforeach ?>
+endsnippet
+
+snippet pfek "php foreach key" b
+<?php foreach ($${1:map} as $$1Key => $$1Val): ?>
+<?php endforeach ?>
+endsnippet
+
+snippet pfor "php for" b
+<?php for ($1; $2; $3): ?>
+<?php endfor ?>
+endsnippet
+
+snippet pwh "php while" b
+<?php while (${1:false}): ?>
+<?php endwhile ?>
+endsnippet
+
+snippet dw "do while" b
+do {
+} while (${1:false});
+endsnippet
+
+snippet fe "foreach" b
+foreach ($${1:items} as $`!p snip.rv = singular(t[1])`) {
+}
+endsnippet
+
+snippet fei "foreach index" b
+foreach ($${1:items} as $`!p snip.rv = singular(t[1])`Idx => $`!p snip.rv = singular(t[1])`) {
+}
+endsnippet
+
+snippet fek "foreach key" b
+foreach ($${1:map} as $$1Key => $$1Val) {
+}
+endsnippet
+
+snippet for "for" b
+for ($1; $2; $3) {
+}
+endsnippet
+
+snippet wh "while" b
+while (${1:false}) {
+}
+endsnippet

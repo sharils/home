@@ -1,0 +1,47 @@
+snippet moa "after" b
+after$1(function($2) {
+});
+endsnippet
+
+snippet mob "before" b
+before$1(function($2) {
+});
+endsnippet
+
+snippet mod "describe" b
+describe('$1', function($2) {
+});
+endsnippet
+
+snippet moi "it" b
+it('$1', function($2) {
+});
+endsnippet
+
+snippet mor "timeout" b
+this.retries($1);
+endsnippet
+
+snippet mos "skip" b
+this.skip();
+endsnippet
+
+snippet mosl "slow" b
+this.slow($1);
+endsnippet
+
+snippet mot "timeout" b
+this.timeout($1);
+endsnippet
+
+snippet /(?:(?<=\bafter)|(?<=\bbefore))e/ "each" Ar
+Each
+endsnippet
+
+snippet /(?:(?<=\bdescribe)|(?<=\bit)|(?<=test))o/ ".only" Ar
+.only
+endsnippet
+
+snippet /(?:(?<=\bdescribe)|(?<=\bit)|(?<=test))s/ ".skip" Ar
+.skip
+endsnippet
