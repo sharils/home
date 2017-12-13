@@ -1,5 +1,4 @@
 .DS_Store
-/.gitconfig
 /.vim/.netrwhist
 /Session.vim
 /doc/tags
