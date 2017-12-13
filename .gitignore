@@ -1,2 +1,5 @@
+.DS_Store
+/.gitconfig
 /.vim/.netrwhist
-/.vim/bundle-available/tern_for_vim/yarn.lock
+/Session.vim
+/doc/tags

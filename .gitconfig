@@ -1,0 +1,8 @@
+[core]
+	autocrlf = input
+	excludesfile = ~/.gitignore
+[mergetool]
+	keepBackup = false
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
