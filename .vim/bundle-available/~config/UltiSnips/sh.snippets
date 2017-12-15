@@ -4,30 +4,6 @@ def singular(word):
 	return re.sub(r'(s|es)$', '', word)
 endglobal
 
-snippet #! "#!" w
-#!/usr/bin/env $1
-endsnippet
-
-snippet #sh "#!" w
-#!/usr/bin/env sh
-
-endsnippet
-
-snippet #ph "#!php" w
-#!/usr/bin/env php
-
-endsnippet
-
-snippet #py "#!python" w
-#!/usr/bin/env python3
-
-endsnippet
-
-snippet #py2 "#!python" w
-#!/usr/bin/env python
-
-endsnippet
-
 snippet fun "function" w
 ${1:fun}() {
 	${2::}
