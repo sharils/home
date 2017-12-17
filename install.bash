@@ -8,6 +8,7 @@ brew install \
 	fzf \
 	git \
 	ripgrep \
+	rmtrash \
 	thefuck \
 	tig \
 	vim \
