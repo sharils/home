@@ -32,17 +32,17 @@ cp .gitconfig ~
 git submodule update --init --recursive
 
 (
-	cd .vim/bundle-available/YouCompleteMe/third_party/ycmd/third_party/racerd/ || exit
-	git checkout .
+	cd .vim/bundle-available/YouCompleteMe/third_party/ycmd/third_party/racerd/ &&
+		git checkout .
 )
 
 (
-	cd .vim/bundle-available/tagbar-phpctags.vim || exit
-	make
+	cd .vim/bundle-available/tagbar-phpctags.vim &&
+		make
 )
 
 (
 	npm install -g git+https://github.com/ramitos/jsctags.git
-	cd .vim/bundle-available/tern_for_vim/ || exit
-	yarn --no-lockfile install
+	cd .vim/bundle-available/tern_for_vim/ &&
+		yarn --no-lockfile install
 )
