@@ -24,6 +24,7 @@ set shiftwidth=4
 set showcmd
 set smartcase
 set softtabstop=4
+set synmaxcol=120
 set t_Co=256
 set tabstop=4
 set wildmenu
