@@ -16,7 +16,6 @@ set incsearch
 set laststatus=1
 set linebreak
 set modeline
-set nowrap
 set number
 set relativenumber
 set ruler
