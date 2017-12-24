@@ -106,7 +106,7 @@ bind main       gpH     ?@git push %(remote) %(commit):refs/heads/%(prompt)
 bind main       gras    ?@git rebase --autosquash %(commit)~
 bind main       gri     !git rebase --interactive %(commit)~
 bind main       gro     !@git rebase --onto %(prompt) %(commit)~
-bind main       gta     !git tag --annotate %(commit)
+bind main       gta     !git tag --annotate %(prompt) %(commit)
 bind main       grh     ?git reset --hard %(commit)
 bind refs       gbm     ?@git branch --move %(branch) %(prompt)
 bind refs       gp:     ?@git push %(remote) :%(ref)
