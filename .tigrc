@@ -103,9 +103,10 @@ bind main       gcf     ?@git commit --fixup %(commit)
 bind main       gcrm    ?@git commit --reuse-message %(commit)
 bind main       gd      ?git diff %(commit) HEAD
 bind main       gpH     ?@git push %(remote) %(commit):refs/heads/%(prompt)
-bind main       gras    ?@git rebase --autosquash %(commit)~
-bind main       gri     !git rebase --interactive %(commit)~
-bind main       gro     !@git rebase --onto %(prompt) %(commit)~
+bind main       grbs    ?@git rebase --autosquash %(commit)~
+bind main       grbi    !git rebase --interactive %(commit)~
+bind main       grbo    !@git rebase --onto %(prompt) %(commit)~
+bind main       grv     !@git revert %(commit)
 bind main       gta     !git tag --annotate %(prompt) %(commit)
 bind main       grh     ?git reset --hard %(commit)
 bind refs       gbm     ?@git branch --move %(branch) %(prompt)
