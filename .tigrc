@@ -110,7 +110,7 @@ bind main       gta     !git tag --annotate %(prompt) %(commit)
 bind main       grh     ?git reset --hard %(commit)
 bind refs       gbm     ?@git branch --move %(branch) %(prompt)
 bind refs       gp:     ?@git push %(remote) :%(ref)
-bind refs       gp     ?@git push %(remote) %(ref)
+bind refs       gpr     ?@git push %(remote) %(ref)
 
 # Colors
 # ------
