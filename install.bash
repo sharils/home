@@ -9,11 +9,12 @@ brew install \
 	git \
 	ripgrep \
 	rmtrash \
-	rust \
 	thefuck \
 	tig \
 	vim \
 	yarn
+
+curl https://sh.rustup.rs -sSf | sh
 
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it &&
 	~/.bash_it/install.sh
