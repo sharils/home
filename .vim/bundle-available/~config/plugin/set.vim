@@ -16,8 +16,6 @@ set incsearch
 set laststatus=1
 set linebreak
 set modeline
-set number
-set relativenumber
 set ruler
 set shiftwidth=4
 set showcmd
@@ -26,4 +24,5 @@ set softtabstop=4
 set synmaxcol=120
 set t_Co=256
 set tabstop=4
+set nowrap
 set wildmenu

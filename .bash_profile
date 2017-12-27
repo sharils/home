@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Path to the bash it configuration
-export BASH_IT="/Users/minniebavaro/.bash_it"
+export BASH_IT="$HOME/.bash_it"
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
@@ -54,6 +54,6 @@ source ~/.bashrc
 # Load Bash It
 source "$BASH_IT"/bash_it.sh
 
-# To get started you need Cargo's bin directory ($HOME/.cargo/bin) in your PATH 
+# To get started you need Cargo's bin directory ($HOME/.cargo/bin) in your PATH
 # environment variable. Next time you log in this will be done automatically.
 export PATH="$HOME/.cargo/bin:$PATH"

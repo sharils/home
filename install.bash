@@ -9,18 +9,18 @@ brew install \
 	git \
 	ripgrep \
 	rmtrash \
+	rust \
 	thefuck \
 	tig \
 	vim \
 	yarn
-
-vimdiff .bash_profile ~/.bash_profile
 
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it &&
 	~/.bash_it/install.sh
 
 ln -fs \
 	"$PWD/.bash_it_custom" \
+	"$PWD/.bash_profile" \
 	"$PWD/.bashrc" \
 	"$PWD/.gitignore" \
 	"$PWD/.tigrc" \
@@ -33,7 +33,9 @@ cp .gitconfig ~
 git submodule update --init --recursive
 
 (
-	cd .vim/bundle-available/YouCompleteMe/third_party/ycmd/third_party/racerd/ &&
+	cd .vim/bundle-available/YouCompleteMe/ &&
+		./install.py --clang-completer --racer-completer --tern-completer &&
+		cd ./third_party/ycmd/third_party/racerd/ &&
 		git checkout .
 )
 
