@@ -49,9 +49,11 @@ export SCM_CHECK=true
 export BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
 
 # Load bashrc
+# shellcheck source=.bashrc
 source ~/.bashrc
 
 # Load Bash It
+# shellcheck source=.bash_it/bash_it.sh
 source "$BASH_IT"/bash_it.sh
 
 # To get started you need Cargo's bin directory ($HOME/.cargo/bin) in your PATH
