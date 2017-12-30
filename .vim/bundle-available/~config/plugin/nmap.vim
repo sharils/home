@@ -10,7 +10,7 @@ nmap <LEADER>cc :cc<CR>
 nmap <LEADER>cn :cnext<CR>
 nmap <LEADER>cp :cprevious<CR>
 nmap <LEADER>cr :crewind<CR>
-nmap <LEADER>cw :cwindow<CR>
+" nmap <LEADER>cw :cwindow<CR>
 nmap <LEADER>eh :Hexplore<CR>
 nmap <LEADER>et :Texplore<CR>
 nmap <LEADER>ev :Vexplore<CR>
