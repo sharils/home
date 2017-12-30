@@ -55,9 +55,6 @@
 [submodule ".vim/bundle-available/vim-cucumber"]
 	path = .vim/bundle-available/vim-cucumber
 	url = https://github.com/tpope/vim-cucumber.git
-[submodule ".vim/bundle-available/vim-dispatch"]
-	path = .vim/bundle-available/vim-dispatch
-	url = https://github.com/tpope/vim-dispatch.git
 [submodule ".vim/bundle-available/vim-easymotion"]
 	path = .vim/bundle-available/vim-easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
@@ -112,3 +109,6 @@
 [submodule ".vim/bundle-available/devdocs.vim"]
 	path = .vim/bundle-available/devdocs.vim
 	url = https://github.com/rhysd/devdocs.vim.git
+[submodule ".vim/bundle-available/asyncrun.vim"]
+	path = .vim/bundle-available/asyncrun.vim
+	url = https://github.com/skywind3000/asyncrun.vim.git
