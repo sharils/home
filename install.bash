@@ -50,3 +50,6 @@ git submodule update --init --recursive
 	cd .vim/bundle-available/tern_for_vim/ &&
 		yarn --no-lockfile install
 )
+
+echo "git config --global user.name '$USER'"
+echo "git config --global user.email '$USER@users.noreply.github.com'"
