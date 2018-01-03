@@ -17,6 +17,7 @@ set incsearch
 set laststatus=1
 set linebreak
 set modeline
+set number
 set ruler
 set shiftwidth=4
 set showcmd
