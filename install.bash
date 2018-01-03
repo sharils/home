@@ -7,6 +7,7 @@ brew install \
 	fpp \
 	fzf \
 	git \
+	gpg \
 	ripgrep \
 	rmtrash \
 	thefuck \
