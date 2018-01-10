@@ -9,7 +9,6 @@ brew install \
 	git \
 	gpg \
 	ripgrep \
-	rmtrash \
 	thefuck \
 	tig \
 	vim \
