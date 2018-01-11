@@ -115,3 +115,9 @@
 [submodule ".vim/bundle-available/alchemist.vim"]
 	path = .vim/bundle-available/alchemist.vim
 	url = https://github.com/slashmili/alchemist.vim.git
+[submodule ".vim/bundle-available/vim-mark"]
+	path = .vim/bundle-available/vim-mark
+	url = https://github.com/inkarkat/vim-mark.git
+[submodule ".vim/bundle-available/vim-ingo-library"]
+	path = .vim/bundle-available/vim-ingo-library
+	url = https://github.com/inkarkat/vim-ingo-library.git
