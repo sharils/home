@@ -112,3 +112,6 @@
 [submodule ".vim/bundle-available/asyncrun.vim"]
 	path = .vim/bundle-available/asyncrun.vim
 	url = https://github.com/skywind3000/asyncrun.vim.git
+[submodule ".vim/bundle-available/alchemist.vim"]
+	path = .vim/bundle-available/alchemist.vim
+	url = https://github.com/slashmili/alchemist.vim.git
