@@ -1,10 +1,10 @@
 nmap <LEADER><LEADER>cw :cclose<CR>
 nmap <LEADER><LEADER>lw :lclose<CR>
 nmap <LEADER><LEADER>w= <C-W><C-_><C-W><BAR>
-nmap <LEADER><LEADER>wh <C-W><C-H><C-W><C-_><C-W><BAR>
-nmap <LEADER><LEADER>wj <C-W><C-J><C-W><C-_><C-W><BAR>
-nmap <LEADER><LEADER>wk <C-W><C-K><C-W><C-_><C-W><BAR>
-nmap <LEADER><LEADER>wl <C-W><C-L><C-W><C-_><C-W><BAR>
+nmap <LEADER><LEADER>wh <C-W><C-H><C-W><C-_>80<C-W><BAR>
+nmap <LEADER><LEADER>wj <C-W><C-J><C-W><C-_>80<C-W><BAR>
+nmap <LEADER><LEADER>wk <C-W><C-K><C-W><C-_>80<C-W><BAR>
+nmap <LEADER><LEADER>wl <C-W><C-L><C-W><C-_>80<C-W><BAR>
 nmap <LEADER>E :edit!<CR>
 nmap <LEADER>cc :cc<CR>
 nmap <LEADER>cn :cnext<CR>
@@ -54,3 +54,5 @@ nmap <LEADER>wv <C-W><C-V>
 nmap <LEADER>ww <C-W><C-W>
 nmap <LEADER>wx <C-W><C-X>
 nmap <LEADER>wz <C-W><C-Z>
+nmap <LEADER>w8 80<C-W><BAR>
+nmap <LEADER>w10 100<C-W><BAR>
