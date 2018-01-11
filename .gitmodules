@@ -7,12 +7,21 @@
 [submodule ".vim/bundle-available/YouCompleteMe"]
 	path = .vim/bundle-available/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule ".vim/bundle-available/alchemist.vim"]
+	path = .vim/bundle-available/alchemist.vim
+	url = https://github.com/slashmili/alchemist.vim.git
 [submodule ".vim/bundle-available/ale"]
 	path = .vim/bundle-available/ale
 	url = https://github.com/w0rp/ale.git
+[submodule ".vim/bundle-available/asyncrun.vim"]
+	path = .vim/bundle-available/asyncrun.vim
+	url = https://github.com/skywind3000/asyncrun.vim.git
 [submodule ".vim/bundle-available/auto-pairs"]
 	path = .vim/bundle-available/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule ".vim/bundle-available/devdocs.vim"]
+	path = .vim/bundle-available/devdocs.vim
+	url = https://github.com/rhysd/devdocs.vim.git
 [submodule ".vim/bundle-available/erlang-motions.vim"]
 	path = .vim/bundle-available/erlang-motions.vim
 	url = https://github.com/vim-erlang/erlang-motions.vim.git
@@ -70,6 +79,9 @@
 [submodule ".vim/bundle-available/vim-fugitive"]
 	path = .vim/bundle-available/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".vim/bundle-available/vim-ingo-library"]
+	path = .vim/bundle-available/vim-ingo-library
+	url = https://github.com/inkarkat/vim-ingo-library.git
 [submodule ".vim/bundle-available/vim-javascript"]
 	path = .vim/bundle-available/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
@@ -79,6 +91,9 @@
 [submodule ".vim/bundle-available/vim-jsx"]
 	path = .vim/bundle-available/vim-jsx
 	url = https://github.com/mxw/vim-jsx
+[submodule ".vim/bundle-available/vim-mark"]
+	path = .vim/bundle-available/vim-mark
+	url = https://github.com/inkarkat/vim-mark.git
 [submodule ".vim/bundle-available/vim-markdown"]
 	path = .vim/bundle-available/vim-markdown
 	url = https://github.com/tpope/vim-markdown.git
@@ -106,18 +121,3 @@
 [submodule ".vim/bundle-available/vim-test"]
 	path = .vim/bundle-available/vim-test
 	url = https://github.com/janko-m/vim-test.git
-[submodule ".vim/bundle-available/devdocs.vim"]
-	path = .vim/bundle-available/devdocs.vim
-	url = https://github.com/rhysd/devdocs.vim.git
-[submodule ".vim/bundle-available/asyncrun.vim"]
-	path = .vim/bundle-available/asyncrun.vim
-	url = https://github.com/skywind3000/asyncrun.vim.git
-[submodule ".vim/bundle-available/alchemist.vim"]
-	path = .vim/bundle-available/alchemist.vim
-	url = https://github.com/slashmili/alchemist.vim.git
-[submodule ".vim/bundle-available/vim-mark"]
-	path = .vim/bundle-available/vim-mark
-	url = https://github.com/inkarkat/vim-mark.git
-[submodule ".vim/bundle-available/vim-ingo-library"]
-	path = .vim/bundle-available/vim-ingo-library
-	url = https://github.com/inkarkat/vim-ingo-library.git
