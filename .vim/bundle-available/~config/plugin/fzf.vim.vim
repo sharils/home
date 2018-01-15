@@ -61,7 +61,7 @@ nnoremap <LEADER>zC :BCommits<CR>
 nnoremap <LEADER>zM :Maps<CR>
 nnoremap <LEADER>zd :Commands<CR>
 nnoremap <LEADER>zH :call fzf#vim#helptags()<CR>
-nnoremap <LEADER>zt :Filetypes<CR>
+" nnoremap <LEADER>zt :Filetypes<CR>
 nnoremap <LEADER>zr :Rg<CR>
 nnoremap <LEADER>zg :GGrep<CR>
 
