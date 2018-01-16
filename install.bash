@@ -14,6 +14,9 @@ brew install \
 	vim \
 	yarn
 
+# for tern_for_vim
+npm install -g git+https://github.com/ramitos/jsctags.git
+
 curl https://sh.rustup.rs -sSf | sh
 
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it &&
@@ -46,7 +49,6 @@ git submodule update --init --recursive
 )
 
 (
-	npm install -g git+https://github.com/ramitos/jsctags.git
 	cd .vim/bundle-available/tern_for_vim/ &&
 		yarn --no-lockfile install
 )
