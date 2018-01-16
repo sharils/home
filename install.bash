@@ -19,16 +19,15 @@ curl https://sh.rustup.rs -sSf | sh
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it &&
 	~/.bash_it/install.sh
 
-ln -fs \
-	"$PWD/.bash_it_custom" \
-	"$PWD/.bash_profile" \
-	"$PWD/.bashrc" \
-	"$PWD/.curlrc" \
-	"$PWD/.gitignore" \
-	"$PWD/.tigrc" \
-	"$PWD/.vim" \
-	"$PWD/.vimrc" \
-	~
+ln -s "$PWD"/.* ~
+
+find . -type f \
+	-depth 1 \
+	-name '.*' \
+	! -name .gitconfig |
+	sort |
+	sed "s@^.@\$PWD@" |
+	xargs -I {} echo -s {} ~
 
 cp .gitconfig ~
 
