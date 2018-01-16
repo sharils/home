@@ -121,3 +121,6 @@
 [submodule ".vim/bundle-available/vim-test"]
 	path = .vim/bundle-available/vim-test
 	url = https://github.com/janko-m/vim-test.git
+[submodule ".vim/bundle-available/FastFold"]
+	path = .vim/bundle-available/FastFold
+	url = https://github.com/Konfekt/FastFold.git
