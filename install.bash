@@ -23,6 +23,7 @@ ln -fs \
 	"$PWD/.bash_it_custom" \
 	"$PWD/.bash_profile" \
 	"$PWD/.bashrc" \
+	"$PWD/.curlrc" \
 	"$PWD/.gitignore" \
 	"$PWD/.tigrc" \
 	"$PWD/.vim" \
