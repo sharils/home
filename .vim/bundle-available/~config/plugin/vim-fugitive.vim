@@ -7,8 +7,8 @@ nmap <LEADER>gcc :Gcommit<CR>
 nmap <LEADER>gcva :Gcommit --amend --verbose<CR>
 nmap <LEADER>gcvc :Gcommit --verbose<CR>
 nmap <LEADER>gD :Gdiff<CR>
-nmap <LEADER>gdp :Git add --intent-to-add (untracked files)<CR>
-nmap <LEADER>gdp :Git! diff (p for patch; use :Gw to apply)<CR>
+" nmap <LEADER>gdp :Git add --intent-to-add<CR>
+" nmap <LEADER>gdp :Git! diff<CR>
 nmap <LEADER>gds :Gsdiff<CR>
 nmap <LEADER>gdv :Gvdiff<CR>
 nmap <LEADER>ge :Gedit %<CR>
