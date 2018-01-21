@@ -27,6 +27,7 @@ ln -s "$PWD"/.* ~
 find . -type f \
 	-depth 1 \
 	-name '.*' \
+	! -name .git \
 	! -name .gitconfig |
 	sort |
 	sed "s@^.@\$PWD@" |
