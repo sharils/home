@@ -1,0 +1,80 @@
+snippet dm "defmodule" w
+defmodule ${1:ModuleName} do
+end
+endsnippet
+
+snippet ds "defstruct" w
+defstruct $1
+endsnippet
+
+snippet ek "@enforce_keys" w
+@enforce_keys $1
+endsnippet
+
+snippet def "def" w
+def ${1:function_name} do
+end
+endsnippet
+
+snippet defp "def" w
+defp ${1:function_name} do
+end
+endsnippet
+
+snippet ca "case" w
+case ${1:expressino} do
+end
+endsnippet
+
+snippet if "if" w
+if ${1:expression} do
+end
+endsnippet
+
+snippet w "when" w
+when $1
+endsnippet
+
+snippet fn "fn" w
+fn $1 -> $2 end
+endsnippet
+
+snippet > "|>" w
+|>
+endsnippet
+
+snippet % "%{}" w
+%{$1}
+endsnippet
+
+snippet # "#{}" w
+#{$1}
+endsnippet
+
+snippet #i "#{}" w
+#{inspect($1)}
+endsnippet
+
+snippet lg "Logger" w
+require Logger
+endsnippet
+
+snippet lgd "Logger.debug" w
+Logger.debug($1)
+endsnippet
+
+snippet lge "Logger.error" w
+Logger.error($1)
+endsnippet
+
+snippet lgi "Logger.info" w
+Logger.info($1)
+endsnippet
+
+snippet lgw "Logger.warn" w
+Logger.warn($1)
+endsnippet
+
+snippet ioi "IO.inspect" w
+IO.inspect($1)
+endsnippet
