@@ -12,12 +12,12 @@ snippet ek "@enforce_keys" w
 endsnippet
 
 snippet def "def" w
-def ${1:function_name} do
+def ${1:function_name}($2) do
 end
 endsnippet
 
 snippet defp "def" w
-defp ${1:function_name} do
+defp ${1:function_name}($2) do
 end
 endsnippet
 
@@ -51,6 +51,18 @@ snippet # "#{}" w
 #{$1}
 endsnippet
 
+snippet & "&()" w
+&($1)
+endsnippet
+
+snippet 1 "&1" w
+&1
+endsnippet
+
+snippet 2 "&2" w
+&2
+endsnippet
+
 snippet #i "#{}" w
 #{inspect($1)}
 endsnippet
@@ -77,4 +89,8 @@ endsnippet
 
 snippet ioi "IO.inspect" w
 IO.inspect($1)
+endsnippet
+
+snippet - "->" w
+-> $1
 endsnippet
