@@ -112,10 +112,10 @@ bind main       grv     !@git revert %(commit)
 bind main       gta     !git tag --annotate %(prompt) %(commit)
 bind main       grh     ?git reset --hard %(commit)
 bind refs       gbm     ?@git branch --move %(branch) %(prompt)
-bind refs       gpb:     ?@git push %(remote) :%(branch)
-bind refs       gpt:     ?@git push %(remote) :%(tag)
-bind refs       gpb     ?@git push %(remote) %(branch)
-bind refs       gpt     ?@git push %(remote) %(tag)
+bind refs       gbp:     ?@git push %(remote) :%(branch)
+bind refs       gtp:     ?@git push %(remote) :%(tag)
+bind refs       gbp     ?@git push %(remote) %(branch)
+bind refs       gtp     ?@git push %(remote) %(tag)
 
 # Colors
 # ------
