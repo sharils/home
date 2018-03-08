@@ -16,7 +16,7 @@ nmap <LEADER>gf :Gfetch<CR>
 nmap <LEADER>gl<CR> :Gpull --prune --rebase<CR>
 nmap <LEADER>glg :Glgrep<SPACE>
 nmap <LEADER>gll :Gllog<CR>
-nmap <LEADER>gm :Gmove<SPACE>
+nmap <LEADER>gmv :Gmove <C-R>=expand("%")<CR>
 nmap <LEADER>go :Gsplit<CR>
 nmap <LEADER>gO :Gtabedit<CR>
 nmap <LEADER>gP :Gpush --set-upstream --force<CR>
