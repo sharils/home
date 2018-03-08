@@ -43,7 +43,7 @@ snippet > "|>" w
 |> $1
 endsnippet
 
-snippet % "%{}" w
+snippet % "%{}" i
 %{$1}
 endsnippet
 
@@ -105,4 +105,9 @@ endsnippet
 
 snippet = "=>" b
 => $1
+endsnippet
+
+snippet eut "test" w
+test "$1" do
+end
 endsnippet
