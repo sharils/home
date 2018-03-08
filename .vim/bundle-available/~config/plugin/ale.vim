@@ -17,5 +17,6 @@ let g:ale_fixers.python     = ['remove_trailing_lines', 'trim_whitespace']
 let g:ale_fixers.ruby       = ['remove_trailing_lines', 'trim_whitespace']
 let g:ale_fixers.rust       = ['remove_trailing_lines', 'trim_whitespace']
 let g:ale_fixers.sh         = ['remove_trailing_lines', 'trim_whitespace', 'shfmt']
+let g:ale_fixers.snippets   = ['remove_trailing_lines', 'trim_whitespace']
 let g:ale_fixers.sql        = ['remove_trailing_lines', 'trim_whitespace']
 let g:ale_set_quickfix      = 1
