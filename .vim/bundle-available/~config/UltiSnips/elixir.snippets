@@ -1,14 +1,51 @@
-snippet dm "defmodule" w
-defmodule ${1:ModuleName} do
+snippet # "#{}" i
+#{$1}
+endsnippet
+
+snippet #i "#{}" w
+#{inspect($1)}
+endsnippet
+
+snippet % "%{}" i
+%{$1}
+endsnippet
+
+snippet & "&()" i
+&($1)
+endsnippet
+
+snippet - "->" w
+-> $1
+endsnippet
+
+snippet 1 "&1" w
+&1
+endsnippet
+
+snippet 2 "&2" w
+&2
+endsnippet
+
+snippet = "=>" b
+=> $1
+endsnippet
+
+snippet > "|>" w
+|> $1
+endsnippet
+
+snippet \ "\\" w
+\\\\ $0
+endsnippet
+
+snippet af "after" w
+after
+	$1 -> $2
+endsnippet
+
+snippet ca "case" w
+case ${1:expressino} do
 end
-endsnippet
-
-snippet ds "defstruct" w
-defstruct $1
-endsnippet
-
-snippet ek "@enforce_keys" w
-@enforce_keys $1
 endsnippet
 
 snippet def "def" w
@@ -21,9 +58,44 @@ defp ${1:function_name}($2) do
 end
 endsnippet
 
-snippet ca "case" w
-case ${1:expressino} do
+snippet dm "defmodule" w
+defmodule ${1:ModuleName} do
 end
+endsnippet
+
+snippet do "do" w
+do$0
+end
+endsnippet
+
+snippet ds "defstruct" w
+defstruct $1
+endsnippet
+
+snippet ek "@enforce_keys" w
+@enforce_keys $1
+endsnippet
+
+snippet eua "assert" w
+assert $0
+endsnippet
+
+snippet eus "setup" w
+setup do$0
+end
+endsnippet
+
+snippet eut "test" w
+test "$1" do
+end
+endsnippet
+
+snippet f "false" w
+false
+endsnippet
+
+snippet fn "fn" w
+fn $1 -> $2 end
 endsnippet
 
 snippet if "if" w
@@ -31,40 +103,8 @@ if ${1:expression} do
 end
 endsnippet
 
-snippet w "when" w
-when $1
-endsnippet
-
-snippet fn "fn" w
-fn $1 -> $2 end
-endsnippet
-
-snippet > "|>" w
-|> $1
-endsnippet
-
-snippet % "%{}" i
-%{$1}
-endsnippet
-
-snippet # "#{}" i
-#{$1}
-endsnippet
-
-snippet & "&()" i
-&($1)
-endsnippet
-
-snippet 1 "&1" w
-&1
-endsnippet
-
-snippet 2 "&2" w
-&2
-endsnippet
-
-snippet #i "#{}" w
-#{inspect($1)}
+snippet ioi "IO.inspect" w
+IO.inspect($1)
 endsnippet
 
 snippet lg "Logger" w
@@ -87,45 +127,16 @@ snippet lgw "Logger.warn" w
 Logger.warn($1)
 endsnippet
 
-snippet ioi "IO.inspect" w
-IO.inspect($1)
-endsnippet
-
-snippet - "->" w
--> $1
-endsnippet
-
-snippet f "false" w
-false
+snippet re "receive" w
+receive do$0
+end
 endsnippet
 
 snippet t "true" w
 true
 endsnippet
 
-snippet = "=>" b
-=> $1
+snippet w "when" w
+when $1
 endsnippet
 
-snippet eut "test" w
-test "$1" do
-end
-endsnippet
-
-snippet eua "assert" w
-assert $0
-endsnippet
-
-snippet re "receive" w
-receive do$0
-end
-endsnippet
-
-snippet af "after" w
-after
-	$1 -> $2
-endsnippet
-
-snippet \ "\\" w
-\\\\ $0
-endsnippet

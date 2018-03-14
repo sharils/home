@@ -4,7 +4,7 @@ nmap <LEADER>af :ALEFix<CR>
 let g:ale_fixers            = {}
 let g:ale_fixers.c          = ['remove_trailing_lines', 'trim_whitespace']
 let g:ale_fixers.css        = ['remove_trailing_lines', 'trim_whitespace', 'prettier']
-let g:ale_fixers.elixir     = ['remove_trailing_lines', 'trim_whitespace']
+let g:ale_fixers.elixir     = ['remove_trailing_lines', 'trim_whitespace', 'mix_format']
 let g:ale_fixers.erlang     = ['remove_trailing_lines', 'trim_whitespace']
 let g:ale_fixers.html       = ['remove_trailing_lines', 'trim_whitespace']
 let g:ale_fixers.java       = ['remove_trailing_lines', 'trim_whitespace']
