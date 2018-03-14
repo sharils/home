@@ -12,6 +12,7 @@ brew install \
 	thefuck \
 	tig \
 	vim \
+	watchman \
 	yarn
 
 # for tern_for_vim
