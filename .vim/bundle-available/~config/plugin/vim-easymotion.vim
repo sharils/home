@@ -1,4 +1,6 @@
 nmap <LEADER>f <Plug>(easymotion-s)
+nmap <LEADER>. <Plug>(easymotion-repeat)
+nmap <LEADER>j <Plug>(easymotion-bd-jk)
 
 let g:EasyMotion_keys = 'FDSAGTBRVECWXQZYNUMI,O.P/H;LKJ'
 let g:EasyMotion_smartcase = 1
