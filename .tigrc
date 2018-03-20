@@ -95,27 +95,27 @@ bind generic    <C-B>   move-page-up
 bind generic    g       none
 bind generic    g       none
 bind generic    gg      view-grep
-bind main       gbb     ?@git bisect bad HEAD
-bind main       gbg     ?@git bisect good HEAD
-bind main       gbr     ?@git bisect reset
-bind main       gbs     ?@git bisect start HEAD %(commit)
-bind main       gco     ?@git checkout %(commit)
-bind main       gcb     ?@git checkout -b %(prompt) %(commit)
-bind main       gcf     ?@git commit --fixup %(commit)
-bind main       gcrm    ?@git commit --reuse-message %(commit)
+bind main       gbb     ?git bisect bad HEAD
+bind main       gbg     ?git bisect good HEAD
+bind main       gbr     ?git bisect reset
+bind main       gbs     ?git bisect start HEAD %(commit)
+bind main       gco     ?git checkout %(commit)
+bind main       gcb     ?git checkout -b %(prompt) %(commit)
+bind main       gcf     ?git commit --fixup %(commit)
+bind main       gcrm    ?git commit --reuse-message %(commit)
 bind main       gd      ?git diff %(commit) HEAD
-bind main       gpH     ?@git push %(remote) %(commit):refs/heads/%(prompt)
+bind main       gpH     ?git push %(remote) %(commit):refs/heads/%(prompt)
 bind main       grbs    !git rebase --autosquash --interactive %(commit)
 bind main       grbi    !git rebase --interactive %(commit)
-bind main       grbo    !@git rebase --onto %(prompt) %(commit)
-bind main       grv     !@git revert %(commit)
+bind main       grbo    !git rebase --onto %(prompt) %(commit)
+bind main       grv     !git revert %(commit)
 bind main       gta     !git tag --annotate %(prompt) %(commit)
 bind main       grh     ?git reset --hard %(commit)
-bind refs       gbm     ?@git branch --move %(branch) %(prompt)
-bind refs       gb:     ?@git push %(remote) :%(branch)
-bind refs       gt:     ?@git push %(remote) :%(tag)
-bind refs       gbp     ?@git push %(remote) %(branch)
-bind refs       gtp     ?@git push %(remote) %(tag)
+bind refs       gbm     ?git branch --move %(branch) %(prompt)
+bind refs       gb:     ?git push %(remote) :%(branch)
+bind refs       gt:     ?git push %(remote) :%(tag)
+bind refs       gbp     ?git push %(remote) %(branch)
+bind refs       gtp     ?git push %(remote) %(tag)
 
 # Colors
 # ------
