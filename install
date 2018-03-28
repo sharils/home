@@ -23,16 +23,13 @@ curl https://sh.rustup.rs -sSf | sh
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it &&
 	~/.bash_it/install.sh
 
-ln -s "$PWD"/.* ~
-
 find . -type f \
 	-depth 1 \
 	-name '.*' \
-	! -name .git \
 	! -name .gitconfig |
 	sort |
-	sed "s@^.@\$PWD@" |
-	xargs -I {} echo -s {} ~
+	sed "s@^.@$PWD@" |
+	xargs -I {} ln -s {} ~
 
 cp .gitconfig ~
 
