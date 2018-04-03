@@ -22,6 +22,7 @@ nmap <LEADER>g< :silent lgrep --fixed-strings '<<<<<<<' %<CR>zt<C-L>zt
 nmap <LEADER>gC :silent lgrep --fixed-strings 'class <C-R><C-W> ' *<CR><C-L>zt
 nmap <LEADER>gF :silent lgrep --fixed-strings 'function <C-R><C-W>(' *<CR><C-L>zt
 nmap <LEADER>gW :silent lgrep --fixed-strings <C-R><C-W> *<CR><C-L>zt
+nmap <LEADER>itr i<C-R>=expand("%:t:r")<CR><ESC>
 nmap <LEADER>ll :ll<CR>
 nmap <LEADER>ln :lnext<CR>
 nmap <LEADER>lp :lprevious<CR>
@@ -36,6 +37,7 @@ nmap <LEADER>sp :set paste!<CR>
 nmap <LEADER>ss :set spell!<CR>
 nmap <LEADER>sw :set wrap!<CR>
 nmap <LEADER>t% :tabedit<SPACE><C-R>=expand("%")<CR>
+nmap <LEADER>t. :tabedit<SPACE><C-R>=expand("%:h")<CR>/
 nmap <LEADER>t. :tabedit<SPACE><C-R>=expand("%:h")<CR>/
 nmap <LEADER>tc :tabclose<CR>
 nmap <LEADER>te :tabedit<SPACE>
