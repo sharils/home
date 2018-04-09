@@ -38,7 +38,6 @@ nmap <LEADER>ss :set spell!<CR>
 nmap <LEADER>sw :set wrap!<CR>
 nmap <LEADER>t% :tabedit<SPACE><C-R>=expand("%")<CR>
 nmap <LEADER>t. :tabedit<SPACE><C-R>=expand("%:h")<CR>/
-nmap <LEADER>t. :tabedit<SPACE><C-R>=expand("%:h")<CR>/
 nmap <LEADER>tc :tabclose<CR>
 nmap <LEADER>te :tabedit<SPACE>
 nmap <LEADER>tm :tabmove
