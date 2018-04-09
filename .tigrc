@@ -116,6 +116,7 @@ bind refs       gb:     ?git push %(remote) :%(branch)
 bind refs       gt:     ?git push %(remote) :%(tag)
 bind refs       gbp     ?git push %(remote) %(branch)
 bind refs       gtp     ?git push %(remote) %(tag)
+bind refs       grd     ?git update-ref -d %(ref)
 
 # Colors
 # ------
