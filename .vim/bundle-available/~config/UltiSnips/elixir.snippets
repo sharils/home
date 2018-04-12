@@ -30,6 +30,22 @@ snippet 2 "&2" w
 &2
 endsnippet
 
+snippet :nr ":noreply" b
+{:noreply, ${1:state}}
+endsnippet
+
+snippet :ok ":ok" b
+{:ok, ${1:state}}
+endsnippet
+
+snippet :r ":reply" b
+{:reply, ${1:reply}, ${2:state}}
+endsnippet
+
+snippet :s ":st" b
+{:stop, ${1:reason}}
+endsnippet
+
 snippet = "=>" w
 => $1
 endsnippet
