@@ -26,24 +26,28 @@ snippet 2 "&2" w
 &2
 endsnippet
 
-snippet :e ":error" b
+snippet :e ":error" w
 {:error, ${1:reason}}
 endsnippet
 
-snippet :nr ":noreply" b
+snippet :nr ":noreply" w
 {:noreply, ${1:state}}
 endsnippet
 
-snippet :ok ":ok" b
+snippet :ok ":ok" w
 {:ok, ${1:state}}
 endsnippet
 
-snippet :r ":reply" b
+snippet :r ":reply" w
 {:reply, ${1:reply}, ${2:state}}
 endsnippet
 
-snippet :s ":st" b
+snippet :s ":st" w
 {:stop, ${1:reason}}
+endsnippet
+
+snippet < "<-" w
+<- $1
 endsnippet
 
 snippet = "=>" w
@@ -162,6 +166,10 @@ endsnippet
 
 snippet w "when" w
 when $1
+endsnippet
+
+snippet w/ "with" w
+with $1
 endsnippet
 
 snippet n "nil" w
