@@ -106,7 +106,7 @@ bind main       gcf     ?git commit --fixup %(commit)
 bind main       gcrm    ?git commit --reuse-message %(commit)
 bind main       gd      ?git diff %(commit) HEAD
 bind main       gph     ?git push %(remote) %(commit):refs/heads/%(prompt)
-bind main       gphf    ?git push --force %(remote) %(commit):refs/heads/%(prompt)
+bind main       gpfh    ?git push --force %(remote) %(commit):refs/heads/%(prompt)
 bind main       grbs    !git rebase --autosquash --interactive %(commit)
 bind main       grbi    !git rebase --interactive %(commit)
 bind main       grbo    !git rebase --onto %(prompt) %(commit)
