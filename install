@@ -26,7 +26,8 @@ git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it &&
 find . -type f \
 	-depth 1 \
 	-name '.*' \
-	! -name .gitconfig |
+	! -name .gitconfig \
+	! -name .gitmodules |
 	sort |
 	sed "s@^.@$PWD@" |
 	xargs -I {} ln -s {} ~
