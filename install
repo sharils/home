@@ -16,7 +16,7 @@ brew install \
 	yarn
 
 # for tern_for_vim
-yarn global add jsctags
+yarn global add jsctags tldr
 
 curl https://sh.rustup.rs -sSf | sh
 
