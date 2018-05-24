@@ -16,7 +16,7 @@ brew install \
 	yarn
 
 # for tern_for_vim
-npm install -g git+https://github.com/ramitos/jsctags.git
+yarn global add jsctags
 
 curl https://sh.rustup.rs -sSf | sh
 
