@@ -15,6 +15,9 @@ brew install \
 	watchman \
 	yarn
 
+brew cask install \
+    squirrel
+
 # for tern_for_vim
 yarn global add jsctags tldr
 
