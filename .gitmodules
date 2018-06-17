@@ -127,3 +127,6 @@
 [submodule ".vim/bundle-available/BufOnly.vim"]
 	path = .vim/bundle-available/BufOnly.vim
 	url = https://github.com/vim-scripts/BufOnly.vim
+[submodule ".vim/bundle-available/vim-gutentags"]
+	path = .vim/bundle-available/vim-gutentags
+	url = https://github.com/ludovicchabant/vim-gutentags.git
