@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# MANUALLY COPY Library/Rime/default.custom.yaml
+
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew install \
@@ -34,6 +36,8 @@ find . -type f \
 	sort |
 	sed "s@^.@$PWD@" |
 	xargs -I {} ln -s {} ~
+
+ln -s "$PWD/.gnupg/gpg-agent.conf" "$HOME/.gnupg"
 
 cp .gitconfig ~
 
