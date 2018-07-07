@@ -1,3 +1,8 @@
+" Work around https://github.com/vim/vim/issues/3117
+if has('python3')
+  silent! python3 1
+endif
+
 filetype indent plugin on
 syntax on
 let mapleader = ' '
