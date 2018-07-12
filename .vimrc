@@ -8,7 +8,6 @@ syntax on
 let mapleader = ' '
 
 map Y y$
-nnoremap <C-L> :nohlsearch\|redraw!<CR><C-L>
 
 cnoremap <C-L><C-P> <C-R>+
 inoremap <C-L><C-P> <C-R>+
