@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+git-submodule-add() {
+    url="$*"
+    dir=".vim/bundle-available/$(basename "$url")"
+    git submodule add "$url" "$dir"
+}
+
+git-submodule-add "$*"
