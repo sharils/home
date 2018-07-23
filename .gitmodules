@@ -130,3 +130,6 @@
 [submodule ".vim/bundle-available/vim-gutentags"]
 	path = .vim/bundle-available/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags.git
+[submodule ".vim/bundle-available/typescript-vim"]
+	path = .vim/bundle-available/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim
