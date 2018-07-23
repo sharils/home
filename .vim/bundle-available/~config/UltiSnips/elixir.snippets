@@ -6,6 +6,10 @@ snippet #i "#{inspect($1)}" i
 #{inspect($1)}
 endsnippet
 
+snippet #t "# TODO ($1)" b
+# TODO ($1)
+endsnippet
+
 snippet % "%{}" i
 %{$1}
 endsnippet
@@ -114,7 +118,7 @@ test "$1" do
 end
 endsnippet
 
-snippet f "false" w
+snippet f "false" i
 false
 endsnippet
 
@@ -160,7 +164,7 @@ receive do$0
 end
 endsnippet
 
-snippet t "true" w
+snippet t "true" i
 true
 endsnippet
 
@@ -172,6 +176,6 @@ snippet w/ "with" w
 with $1
 endsnippet
 
-snippet n "nil" w
+snippet n "nil" i
 nil
 endsnippet
