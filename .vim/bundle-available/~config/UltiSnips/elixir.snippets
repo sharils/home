@@ -67,8 +67,7 @@ snippet \ "\\" w
 endsnippet
 
 snippet af "after" w
-after
-	$1 -> $2
+after $0
 endsnippet
 
 snippet ca "case" w
@@ -102,6 +101,10 @@ endsnippet
 
 snippet ek "@enforce_keys" w
 @enforce_keys $1
+endsnippet
+
+snippet el "else" w
+else $0
 endsnippet
 
 snippet eua "assert" w
@@ -159,6 +162,10 @@ snippet lgw "Logger.warn" w
 Logger.warn($1)
 endsnippet
 
+snippet ra "description" w
+raise $0
+endsnippet
+
 snippet re "receive" w
 receive do$0
 end
@@ -166,6 +173,22 @@ endsnippet
 
 snippet t "true" i
 true
+endsnippet
+
+snippet tc "try catch" w
+try do$1
+catch$2
+end
+endsnippet
+
+snippet throw "throw" w
+throw $0
+endsnippet
+
+snippet tr "try rescue" w
+try do$1
+rescue$2
+end
 endsnippet
 
 snippet w "when" w
