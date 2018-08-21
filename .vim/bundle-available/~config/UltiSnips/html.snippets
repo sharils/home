@@ -27,21 +27,20 @@ snippet h "html" "len(snip.buffer) == 1" e
 </html>
 endsnippet
 
+snippet l "link" b
+<link rel="stylesheet" type="text/css" href="${1:index}.css" />
+endsnippet
+
 snippet sc "script" w
-<script>
-	$1
+<script>$1
 </script>
 endsnippet
 
-snippet html "html" b
-<!DOCTYPE html>
-<html lang="$1">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>$2</title>
-</head>
-<body>$3
-</body>
-</html>
+snippet ss "script" w
+<script src="$1"></script>
+endsnippet
+
+snippet st "style" w
+<style type="text/css">$1
+</style>
 endsnippet
