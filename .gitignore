@@ -3,3 +3,4 @@ Session.vim
 /.vim/.netrwhist
 /doc/tags
 tags
+watchman-make
