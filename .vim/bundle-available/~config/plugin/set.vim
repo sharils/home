@@ -13,7 +13,7 @@ set foldlevelstart=1
 set foldmethod=syntax
 set grepprg=grep\ --binary-files=without-match\ --directories=recurse\ --exclude-dir=.git\ --exclude-dir=vendor\ --exclude-dir=node_modules\ --exclude-dir=bower_components\ --exclude=tags\ --exclude=Session.vim\ --line-number\ --with-filename\ $*
 set hidden
-" set nohlsearch
+set hlsearch
 set ignorecase
 set incsearch
 set laststatus=1
