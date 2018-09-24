@@ -52,7 +52,7 @@
 set diff-options                = --show-signature
 set ignore-case                 = smart-case
 set log-options                 = --show-signature
-set main-view                   = line-number:no,interval=5 id:yes date:relative-compact author:no commit-title:yes,graph,refs,overflow=no
+set main-view                   = line-number:yes,interval=1 id:yes date:relative-compact author:no commit-title:yes,graph,refs,overflow=no
 set mouse                       = yes
 set mouse-scroll                = 1
 set mouse-wheel-cursor          = yes
