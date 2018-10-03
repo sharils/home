@@ -4,3 +4,5 @@ Session.vim
 /doc/tags
 tags
 watchman-make
+.vim/plugged/*
+!.vim/plugged/vim-sharils
