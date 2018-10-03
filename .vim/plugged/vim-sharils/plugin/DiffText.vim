@@ -3,7 +3,7 @@ nmap <LEADER><LEADER>df :call WipeOutDiffs()<CR>
 
 let g:diffed_buffers=[]
 
-function DiffText(left, right)
+function! DiffText(left, right)
 	tabnew
 	setlocal buftype=nowrite
 	call add(g:diffed_buffers, bufnr('%'))
@@ -16,7 +16,7 @@ function DiffText(left, right)
 	diffthis
 endfunction
 
-function WipeOutDiffs()
+function! WipeOutDiffs()
 	for buffer in g:diffed_buffers
 		execute 'bwipeout! '.buffer
 	endfor

@@ -1,6 +1,6 @@
 nmap <LEADER>gmt :call GitMergetool()<CR>
 
-function GitMergetool()
+function! GitMergetool()
 	" Save conflict
 	silent %yank c
 
