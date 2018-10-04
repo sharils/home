@@ -1,3 +1,5 @@
+let mapleader = ' '
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'SirVer/ultisnips'
@@ -6,7 +8,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --racer-c
 
 Plug 'ekalinin/Dockerfile.vim', { 'for': 'dockerfile' }
 
-Plug 'jaredpar/EasyMotion'
+Plug 'easymotion/vim-easymotion'
 
 Plug 'jiangmiao/auto-pairs'
 
