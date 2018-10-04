@@ -1,0 +1,16 @@
+priority 4
+
+snippet r "require" "re.search('const|let|var|^r$', snip.buffer[snip.line])" we
+require("$1")
+endsnippet
+
+snippet . "default" "'require' in snip.buffer[snip.line]" ie
+.default
+endsnippet
+
+
+priority 3
+
+snippet me "module.exports" b
+module.exports
+endsnippet

@@ -1,5 +1,9 @@
 priority -50
 
+snippet ! "python" i
+\`!p snip.rv = ${1:t[1]}\`
+endsnippet
+
 snippet $1 "${1:false}" i
 \${1:${1:false}}
 endsnippet
@@ -133,8 +137,8 @@ $4
 `!p snip.rv = "endsnippet"`
 endsnippet
 
-snippet p "python" i
-\`!p snip.rv = ${1:t[1]}\`
+snippet p "priority" b
+priority ${1:0}
 endsnippet
 
 snippet r "snippet r" w
@@ -143,7 +147,15 @@ $3
 `!p snip.rv = "endsnippet"`
 endsnippet
 
-snippet v "${VISUAL}" w
+snippet sb "snip.buffer" w
+snip.buffer
+endsnippet
+
+snippet sl "snip.line" w
+snip.line
+endsnippet
+
+snippet v "${VISUAL}" i
 \${VISUAL$1}
 endsnippet
 

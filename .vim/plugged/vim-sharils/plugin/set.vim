@@ -22,7 +22,7 @@ set list
 set listchars=tab:\ \ ,trail:·,extends:>,precedes:<
 set modeline
 set number
-" set relativenumber
+set relativenumber
 set ruler
 set shiftwidth=4
 set showcmd
