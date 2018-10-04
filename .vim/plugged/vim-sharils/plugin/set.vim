@@ -18,6 +18,8 @@ set ignorecase
 set incsearch
 set laststatus=1
 set linebreak
+set list
+set listchars=tab:\ \ ,trail:·,extends:>,precedes:<
 set modeline
 set number
 " set relativenumber
