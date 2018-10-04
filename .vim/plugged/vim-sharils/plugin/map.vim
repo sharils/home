@@ -98,7 +98,6 @@ inoremap <C-_><C-H> <ESC>mm$x<ESC>`mli
 inoremap <C-_>p <ESC>mmyyp`mja
 inoremap <C-_>, <ESC>mm$a,<ESC>`mli
 inoremap <C-_>; <ESC>mm$a;<ESC>`mli
-inoremap <C-_><SPACE> <ESC>mm:call NERDComment('n', 'invert')<CR>`ma
 nmap <LEADER><LEADER>cw :cclose<CR>
 nmap <LEADER><LEADER>lw :lclose<CR>
 nmap <LEADER><LEADER>w= <C-W><C-_><C-W><BAR>
