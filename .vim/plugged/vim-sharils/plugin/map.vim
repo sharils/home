@@ -1,3 +1,12 @@
+let mapleader = ' '
+
+cnoremap <C-L><C-P> <C-R>+
+inoremap <C-L><C-P> <C-R>+
+nnoremap <LEADER>y :%y+<CR>
+nnoremap <LEADER>p "+gP
+vnoremap <LEADER>y "+y
+vnoremap <LEADER>p c<C-R>+<C-C>
+
 cnoremap <C-G>  <C-c>
 cnoremap <M-d>  <S-Right><Delete>
 
@@ -120,6 +129,7 @@ nmap <LEADER>ln :lnext<CR>
 nmap <LEADER>lp :lprevious<CR>
 nmap <LEADER>lr :lrewind<CR>
 nmap <LEADER>lw :lwindow<CR>
+nmap <LEADER>n :nohlsearch<CR>
 nmap <LEADER>sf :set filetype=
 nmap <LEADER>sfh :set filetype=html<CR>
 nmap <LEADER>sfj :set filetype=javascript<CR>
