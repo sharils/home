@@ -1,9 +1,33 @@
 priority 2
 
+snippet URL "URL" w
+new URL($1)
+endsnippet
+
+snippet URLSearchParams "URLSearchParams" w
+new URLSearchParams($1)
+endsnippet
+
 snippet co "console" w
 console
 endsnippet
 
 snippet col "console.log()" w
 console.log($1)
+endsnippet
+
+snippet fe "fetch" w
+fetch($1, { method: "${1:GET}", headers, body })
+endsnippet
+
+snippet lo "location" w
+location
+endsnippet
+
+snippet ur "URL" w
+URL
+endsnippet
+
+snippet usp "URLSearchParams" w
+URLSearchParams
 endsnippet
