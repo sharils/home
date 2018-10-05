@@ -6,3 +6,4 @@ tags
 watchman-make
 .vim/plugged/*
 !.vim/plugged/vim-sharils
+__pycache__

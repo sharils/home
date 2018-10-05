@@ -1,49 +1,37 @@
 global !p
-from os.path import basename
-
-def importname(path):
-	return to_camel(basename(path))
-
-def	singularize(plural):
-	return re.sub('(?<!e)es|s$', '', plural)
-
-def	singularize_idx(plural):
-	return singularize(plural) + 'Idx' if len(plural) > 0 else plural
-
-def to_camel(text):
-    return re.sub('[-_]([a-zA-Z0-9])', lambda m: m.group(1).upper(), text)
+from my_snippet_helpers import *
 endglobal
 
 
 priority 4
 
-snippet a "(async () => {})()" "len(snip.buffer) == 1" be
+snippet a "(async () => {})()" "one_line(snip)" be
 (async () => {
 	$1${VISUAL}
 })();
 endsnippet
 
-snippet c "case" "re.search('break|switch', snip.buffer[snip.line - 1])" be
+snippet c "case" "around_switch(snip)" be
 case:
 endsnippet
 
-snippet d "default" "re.search('break|switch', snip.buffer[snip.line - 1])" be
+snippet d "default" "around_switch(snip)" be
 default:
 endsnippet
 
-snippet a "async" "re.search('=>|function|\w+\(.*\)', snip.buffer[snip.line])" we
+snippet a "async" "around_function(snip)" we
 async $0
 endsnippet
 
-snippet d "default" "'export' in snip.buffer[snip.line]" we
+snippet d "default" "around_export(snip)" we
 default $0
 endsnippet
 
-snippet e "extends" "'class' in snip.buffer[snip.line]" we
+snippet e "extends" "around_class(snip)" we
 extends $0
 endsnippet
 
-snippet n "new" "'=' in snip.buffer[snip.line]" we
+snippet n "new" "around_assign(snip)" we
 new $1($2)
 endsnippet
 

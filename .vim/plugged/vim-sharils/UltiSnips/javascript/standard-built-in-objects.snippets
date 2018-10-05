@@ -1,10 +1,15 @@
+global !p
+from my_snippet_helpers import *
+endglobal
+
+
 priority 4
 
-snippet e "Error" "'throw' in snip.buffer[snip.line]" we
+snippet e "Error" "around_throw(snip)" we
 new Error("$1")
 endsnippet
 
-snippet te "TypeError" "'throw' in snip.buffer[snip.line]" we
+snippet te "TypeError" "around_throw(snip)" we
 new TypeError("$1")
 endsnippet
 
