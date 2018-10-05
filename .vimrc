@@ -3,7 +3,7 @@ let mapleader = ' '
 call plug#begin('~/.vim/plugged')
 Plug 'vim-scripts/BufOnly.vim'
 Plug 'ekalinin/Dockerfile.vim', { 'for': 'dockerfile' }
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --racer-completer --tern-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --rust-completer' }
 Plug 'jnurmine/Zenburn'
 Plug 'slashmili/alchemist.vim', { 'for': 'elixir' }
 Plug 'w0rp/ale'

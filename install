@@ -18,8 +18,8 @@ brew install \
 brew cask install \
     squirrel
 
-# for tern_for_vim
-yarn global add jsctags tldr
+# for ycm
+yarn global add typescript
 
 curl https://sh.rustup.rs -sSf | sh
 
@@ -36,25 +36,6 @@ find . -type f \
 	xargs -I {} ln -s {} ~
 
 cp .gitconfig ~
-
-git submodule update --init --recursive
-
-(
-	cd .vim/bundle-available/YouCompleteMe/ &&
-		./install.py --clang-completer --racer-completer --tern-completer &&
-		cd ./third_party/ycmd/third_party/racerd/ &&
-		git checkout .
-)
-
-(
-	cd .vim/bundle-available/tagbar-phpctags.vim &&
-		make
-)
-
-(
-	cd .vim/bundle-available/tern_for_vim/ &&
-		yarn --no-lockfile install
-)
 
 echo "git config --global user.name '$USER'"
 echo "git config --global user.email '$USER@users.noreply.github.com'"

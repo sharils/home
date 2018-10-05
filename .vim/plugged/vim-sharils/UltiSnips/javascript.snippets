@@ -1,9 +1,11 @@
+extends common
+
 global !p
 from my_snippet_helpers import *
 endglobal
 
 
-priority 4
+priority 5
 
 snippet a "(async () => {})()" "one_line(snip)" be
 (async () => {
@@ -36,6 +38,13 @@ new $1($2)
 endsnippet
 
 
+priority 4
+
+snippet /^i/ "import" r
+import $0
+endsnippet
+
+
 priority 3
 
 snippet "import " "import from" r
@@ -60,11 +69,7 @@ for ($1) {
 }
 endsnippet
 
-snippet i "import" b
-import $0
-endsnippet
-
-snippet if "if" b
+snippet i "if" b
 if ($1) {
 	$2${VISUAL}
 }
@@ -82,10 +87,6 @@ snippet m "method" w
 $1($2) {
 	$3${VISUAL}
 }
-endsnippet
-
-snippet r "return" b
-return
 endsnippet
 
 snippet s "switch" b

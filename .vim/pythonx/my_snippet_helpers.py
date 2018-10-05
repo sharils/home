@@ -8,7 +8,7 @@ def around_class(snip):
     return 'class' in snip.buffer[snip.line]
 
 def around_const_let_var(snip):
-    return re.search('const|let|var|^r$', snip.buffer[snip.line]) and '=' not in snip.buffer[snip.line]
+    return re.search('const|let|var', snip.buffer[snip.line]) and '=' not in snip.buffer[snip.line]
 
 def around_expect(snip):
     return 'expect' in snip.buffer[snip.line]

@@ -120,8 +120,13 @@ $4
 `!p snip.rv = "endsnippet"`
 endsnippet
 
+snippet e "extends" b
+extends extends
+endsnippet
+
 snippet g "global !p" w
-global !p$1
+global !p
+${1:from my_snippet_helpers import *}
 endglobal
 endsnippet
 
