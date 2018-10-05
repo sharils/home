@@ -1,3 +1,4 @@
+nmap <LEADER>ad :ALEDetail<CR>
 nmap <LEADER>af :ALEFix<CR>
 
 " let g:ale_fix_on_save       = 1

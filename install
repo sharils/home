@@ -4,10 +4,15 @@
 
 brew install \
 	bash-completion \
+    bat \
 	fpp \
 	fzf \
 	git \
+	git-crypt \
 	gpg \
+	jq \
+    ncdu \
+    noti \
 	ripgrep \
 	thefuck \
 	tig \
@@ -16,10 +21,17 @@ brew install \
 	yarn
 
 brew cask install \
-    squirrel
+    gimp \
+    insomnia \
+    postman \
+    squirrel \
+    vagrant \
+    virtualbox \
+    virtualbox-extension-pack
 
-# for ycm
-yarn global add typescript
+yarn global add \
+    tldr \
+    typescript # for YouCompleteMe
 
 curl https://sh.rustup.rs -sSf | sh
 

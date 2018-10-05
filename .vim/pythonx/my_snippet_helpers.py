@@ -4,6 +4,9 @@ import os
 def around_assign(snip):
     return '=' in snip.buffer[snip.line]
 
+def around_assign_or_line_start(snip):
+    return snip.column == 0
+
 def around_class(snip):
     return 'class' in snip.buffer[snip.line]
 
@@ -15,6 +18,9 @@ def around_expect(snip):
 
 def around_export(snip):
     return 'export' in snip.buffer[snip.line]
+
+def around_file_start(snip):
+    return snip.line == 0 and snip.column == 0
 
 def around_function(snip):
     return re.search('=>|function|\w+\(.*\)', snip.buffer[snip.line])
@@ -30,9 +36,6 @@ def around_throw(snip):
 
 def importname(path):
     return to_camel(os.path.basename(path))
-
-def one_line(snip):
-    return len(snip.buffer) == 1
 
 def singularize(plural):
     return re.sub('(?<!e)es|s$', '', plural)

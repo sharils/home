@@ -49,6 +49,7 @@
 # the column. Use zero (the default value) to auto-size the column based
 # on the content.
 
+set diff-highlight              = true
 set diff-options                = --show-signature
 set ignore-case                 = smart-case
 set log-options                 = --show-signature
