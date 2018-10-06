@@ -10,6 +10,7 @@ Plug 'jnurmine/Zenburn'
 Plug 'slashmili/alchemist.vim', { 'for': 'elixir' }
 Plug 'w0rp/ale'
 Plug 'jiangmiao/auto-pairs'
+Plug 'editorconfig/editorconfig-vim'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'SirVer/ultisnips'
