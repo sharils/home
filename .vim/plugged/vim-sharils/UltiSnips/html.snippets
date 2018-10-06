@@ -1,3 +1,13 @@
+snippet <> "<element attr></element>" w
+<$1>$2</`!p snip.rv = re.sub(' .*', '', t[1])`>
+endsnippet
+
+snippet tag "<element attr></element>" w
+<$1>
+	$2${VISUAL}
+</`!p snip.rv = re.sub(' .*', '', t[1])`>
+endsnippet
+
 snippet a "a" w
 <a href="$1">
 	${2:$1}
@@ -29,11 +39,6 @@ endsnippet
 
 snippet l "link" b
 <link rel="stylesheet" type="text/css" href="${1:index}.css" />
-endsnippet
-
-snippet sc "script" w
-<script>$1
-</script>
 endsnippet
 
 snippet ss "script" w

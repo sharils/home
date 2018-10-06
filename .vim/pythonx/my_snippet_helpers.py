@@ -5,7 +5,7 @@ def around_assign(snip):
     return '=' in snip.buffer[snip.line]
 
 def around_assign_or_line_start(snip):
-    return snip.column == 0
+    return around_assign(snip) or snip.column == 0
 
 def around_class(snip):
     return 'class' in snip.buffer[snip.line]
@@ -35,7 +35,7 @@ def around_throw(snip):
     return 'throw' in snip.buffer[snip.line]
 
 def importname(path):
-    return to_camel(os.path.basename(path))
+    return to_camel(re.sub('\..*', '', os.path.basename(path)))
 
 def singularize(plural):
     return re.sub('(?<!e)es|s$', '', plural)
