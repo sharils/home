@@ -49,5 +49,7 @@ find . -type f \
 
 cp .gitconfig ~
 
+vim -S ~/.vim/snapshot.vim
+
 echo "git config --global user.name '$USER'"
 echo "git config --global user.email '$USER@users.noreply.github.com'"
