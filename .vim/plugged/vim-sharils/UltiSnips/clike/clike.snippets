@@ -1,3 +1,8 @@
+global !p
+from my_snippet_helpers import *
+endglobal
+
+
 priority 5
 
 snippet c "case" "around_switch(snip)" be
@@ -52,6 +57,10 @@ snippet s "switch" b
 switch ($1) {
 	$2${VISUAL}
 }
+endsnippet
+
+snippet t "// TODO: " b
+// TODO (${1:`git config --get user.name`}): $0
 endsnippet
 
 

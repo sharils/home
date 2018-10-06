@@ -1,4 +1,4 @@
-extends common, clike, javalike
+extends common, clike, javalike, strictequal
 
 global !p
 from my_snippet_helpers import *
@@ -6,6 +6,10 @@ endglobal
 
 
 priority 5
+
+snippet $ "${var}" "around_template_string(snip)" we
+${$1}
+endsnippet
 
 snippet a "(async () => {})()" "around_file_start(snip)" be
 (async () => {
@@ -21,7 +25,7 @@ snippet d "default" "around_export(snip)" we
 default $0
 endsnippet
 
-snippet l "let itemIdx = 0; itemIdx < items.length; itemIdx++" "around_for(snip)" we
+snippet l "let idx = 0; idx < length; idx++" "around_for(snip)" we
 let `!p snip.rv = singularize_idx(t[1])` = 0; `!p snip.rv = singularize_idx(t[1])` < $1.length; `!p snip.rv = singularize_idx(t[1])`++
 endsnippet
 
@@ -55,10 +59,6 @@ snippet l "let" b
 let $0
 endsnippet
 
-snippet t "// TODO: " b
-// TODO (${1:`git config --get user.name`}): $0
-endsnippet
-
 snippet u "use strict" b
 "use strict";
 endsnippet
@@ -66,20 +66,8 @@ endsnippet
 
 priority 2
 
-snippet ! "!==" w
-!== $0
-endsnippet
-
-snippet $ "${var}" w
-${$1}
-endsnippet
-
 snippet . "..." w
 ...
-endsnippet
-
-snippet = "===" w
-=== $0
 endsnippet
 
 snippet a "await" w
