@@ -22,8 +22,14 @@ def around_export(snip):
 def around_file_start(snip):
     return snip.line == 0 and snip.column == 0
 
+def around_for(snip):
+    return 'for' in snip.buffer[snip.line]
+
 def around_function(snip):
     return re.search('=>|function|\w+\(.*\)', snip.buffer[snip.line])
+
+def around_json_parse(snip):
+    return 'JSON.parse' in snip.v
 
 def around_require(snip):
     return 'require' in snip.buffer[snip.line]

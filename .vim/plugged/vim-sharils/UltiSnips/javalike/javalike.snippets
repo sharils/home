@@ -1,0 +1,61 @@
+priority 5
+
+snippet e "extends" "around_class(snip)" we
+extends $0
+endsnippet
+
+snippet n "new" "around_assign(snip)" we
+new $1($2)
+endsnippet
+
+
+priority 3
+
+snippet tr "throw" b
+throw $0
+endsnippet
+
+snippet ty "try" b
+try {
+	$1${VISUAL}
+}
+endsnippet
+
+
+priority 2
+
+snippet ca "catch" w
+ catch (e) {
+	$1${VISUAL}
+}
+endsnippet
+
+snippet cl "class" w
+class $1{$2}
+endsnippet
+
+snippet f "false" w
+false
+endsnippet
+
+snippet fi "finally" w
+ finally {
+	$1${VISUAL}
+}
+endsnippet
+
+snippet n "null" w
+null
+endsnippet
+
+snippet st "static" w
+static $0
+endsnippet
+
+snippet t "true" w
+true
+endsnippet
+
+snippet th "this" w
+this
+endsnippet
