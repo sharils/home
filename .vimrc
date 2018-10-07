@@ -13,15 +13,18 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'editorconfig/editorconfig-vim'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdcommenter'
+Plug 'godlygeek/tabular'
 Plug 'SirVer/ultisnips'
-Plug 'alvan/vim-closetag'
-Plug 'hail2u/vim-css3-syntax'
+Plug 'PeterRincker/vim-argumentative'
+Plug 'alvan/vim-closetag', { 'for': ['html', 'javascript,jsx', 'xhtml'] }
+Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-fugitive'
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'moll/vim-node', { 'for': 'javascript' }
+Plug 'moll/vim-node', { 'for': 'jsx' }
 Plug 'tpope/vim-obsession', { 'on':  'Obsession' }
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-repeat'
 Plug 'vitalk/vim-shebang'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
