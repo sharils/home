@@ -7,6 +7,9 @@ def around_assign(snip):
 def around_assign_or_line_start(snip):
     return around_assign(snip) or snip.column == 0
 
+def around_catch(snip):
+    return 'catch' in snip.buffer[snip.line - 1]
+
 def around_class(snip):
     return 'class' in snip.buffer[snip.line]
 
@@ -20,16 +23,19 @@ def around_export(snip):
     return 'export' in snip.buffer[snip.line]
 
 def around_file_start(snip):
-    return snip.line == 0 and snip.column == 0
+    return len(snip.buffer) == 1 and len(snip.buffer[0]) == 1
 
 def around_for(snip):
     return 'for' in snip.buffer[snip.line]
 
 def around_function(snip):
-    return re.search('=>|function|\w+\(.*\)', snip.buffer[snip.line])
+    return re.search('=>|function|^\s+\w+\(.*\)', snip.buffer[snip.line])
 
 def around_json_parse(snip):
     return 'JSON.parse' in snip.v
+
+def around_regex(snip):
+    return re.search('/.+/', snip.buffer[snip.line])
 
 def around_require(snip):
     return 'require' in snip.buffer[snip.line]
