@@ -15,6 +15,7 @@ Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'SirVer/ultisnips'
 Plug 'alvan/vim-closetag'
+Plug 'hail2u/vim-css3-syntax'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-fugitive'
 Plug 'ludovicchabant/vim-gutentags'
@@ -22,6 +23,7 @@ Plug 'moll/vim-node', { 'for': 'javascript' }
 Plug 'tpope/vim-obsession', { 'on':  'Obsession' }
 Plug 'sheerun/vim-polyglot'
 Plug 'vitalk/vim-shebang'
+Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
 
 Plug '~/.vim/plugged/after'
