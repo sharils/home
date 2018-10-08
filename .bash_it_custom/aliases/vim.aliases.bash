@@ -4,6 +4,8 @@
 alias vimrc='vim ~/.vimrc'
 alias vims='vim -S'
 alias vimtmp='vim /tmp/'
+
+alias vimgi='vim .gitignore'
 alias vimgie='vim .git/info/exclude'
 
 alias vimt="vim /tmp/$RANDOM"
