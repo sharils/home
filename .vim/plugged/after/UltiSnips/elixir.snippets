@@ -1,24 +1,15 @@
-extends common, strictequal
+extends common, strictequal, truefalse
 
-snippet # "#{}" i
-#{$1}
-endsnippet
 
-snippet #i "#{inspect($1)}" i
-#{inspect(${1:error})}
-endsnippet
+priority 3
 
 snippet #t "# TODO ($1)" b
 # TODO ($1)
 endsnippet
 
-snippet % "%{}" i
-%{$1}
-endsnippet
 
-snippet & "&()" i
-&($1)
-endsnippet
+
+priority 2
 
 snippet - "->" w
 -> $1
@@ -128,10 +119,6 @@ test "$1" do$2
 end
 endsnippet
 
-snippet f "false" w
-false
-endsnippet
-
 snippet fn "fn" w
 fn $1 -> $2 end
 endsnippet
@@ -178,10 +165,6 @@ receive do$0
 end
 endsnippet
 
-snippet t "true" i
-true
-endsnippet
-
 snippet tc "try catch" w
 try do$1
 catch$2
@@ -204,6 +187,26 @@ endsnippet
 
 snippet w/ "with" w
 with $1
+endsnippet
+
+
+
+priority 1
+
+snippet # "#{}" i
+#{$1}
+endsnippet
+
+snippet #i "#{inspect($1)}" i
+#{inspect(${1:error})}
+endsnippet
+
+snippet % "%{}" i
+%{$1}
+endsnippet
+
+snippet & "&()" i
+&($1)
 endsnippet
 
 snippet n "nil" i
