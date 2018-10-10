@@ -165,7 +165,3 @@ nmap <LEADER>wx <C-W><C-X>
 nmap <LEADER>wz <C-W><C-Z>
 nmap <LEADER>w8 80<C-W><BAR>
 nmap <LEADER>w10 100<C-W><BAR>
-nnoremap <C-_>, mm$a,<ESC>`m
-nnoremap <C-_>; mm$a;<ESC>`m
-nnoremap <LEADER>, mm$a,<ESC>`m
-nnoremap <LEADER>; mm$a;<ESC>`m
