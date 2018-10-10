@@ -4,6 +4,10 @@ def singular(word):
 	return re.sub(r'(s|es)$', '', word)
 endglobal
 
+snippet /^a/ "alias" r
+alias $1='$2'
+endsnippet
+
 snippet fun "function" w
 ${1:fun}() {
 	${2::}
