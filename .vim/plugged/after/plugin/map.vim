@@ -101,7 +101,7 @@ inoremap <C-A> <C-O>I
 inoremap <C-B> <ESC>i
 inoremap <C-E> <C-O>A
 inoremap <C-F> <C-O>l
-inoremap <C-[> <ESC>
+" inoremap <C-[> <ESC>
 nmap <LEADER><LEADER>cw :cclose<CR>
 nmap <LEADER><LEADER>lw :lclose<CR>
 nmap <LEADER><LEADER>w= <C-W><C-_><C-W><BAR>

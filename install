@@ -3,27 +3,31 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew install \
-	bash-completion \
+    bash-completion \
     bat \
-	fpp \
-	fzf \
-	git \
-	git-crypt \
-	gpg \
-	jq \
+    fpp \
+    fzf \
+    git \
+    git-crypt \
+    gpg \
+    jq \
     ncdu \
     noti \
-	ripgrep \
-	thefuck \
-	tig \
-	vim \
-	watchman \
-	yarn
+    ripgrep \
+    thefuck \
+    tig \
+    vim \
+    watchman \
+    yarn
 
 brew cask install \
+    android-file-transfer \
+    clipy \
     gimp \
     insomnia \
+    karabiner-elements \
     postman \
+    spectacle \
     squirrel \
     vagrant \
     virtualbox \
@@ -36,16 +40,16 @@ yarn global add \
 curl https://sh.rustup.rs -sSf | sh
 
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it &&
-	~/.bash_it/install.sh
+    ~/.bash_it/install.sh
 
 find . -type f \
-	-depth 1 \
-	-name '.*' \
-	! -name .gitconfig \
-	! -name .gitmodules |
-	sort |
-	sed "s@^.@$PWD@" |
-	xargs -I {} ln -s {} ~
+    -depth 1 \
+    -name '.*' \
+    ! -name .gitconfig \
+    ! -name .gitmodules |
+    sort |
+    sed "s@^.@$PWD@" |
+    xargs -I {} ln -s {} ~
 
 cp .gitconfig ~
 
