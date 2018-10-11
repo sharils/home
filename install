@@ -23,12 +23,25 @@ brew install \
 brew cask install \
     android-file-transfer \
     clipy \
+    firefox \
     gimp \
+    google-chrome \
+    homebrew/cask-versions/firefox-developer-edition \
     insomnia \
     karabiner-elements \
+    keepassxc \
+    keybase \
+    libreoffice \
+    licecap \
+    opera \
+    # origin \
     postman \
+    skype \
     spectacle \
     squirrel \
+    steam \
+    syncthing-macos \
+    tor-browser \
     vagrant \
     virtualbox \
     virtualbox-extension-pack
