@@ -5,6 +5,7 @@ export BASH_IT="$HOME/.bash_it"
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
+# export BASH_IT_THEME='bobby'
 export BASH_IT_THEME="$HOME/.bash_it_custom/custom/themes/axin-custom.theme.bash"
 
 # (Advanced): Change this to the name of your remote repo if you
@@ -47,6 +48,9 @@ export SCM_CHECK=true
 # (Advanced): Uncomment this to make Bash-it reload itself automatically
 # after enabling or disabling aliases, plugins, and completions.
 export BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
+
+# Uncomment this to make Bash-it create alias reload.
+# export BASH_IT_RELOAD_LEGACY=1
 
 # Load bashrc
 # shellcheck source=.bashrc

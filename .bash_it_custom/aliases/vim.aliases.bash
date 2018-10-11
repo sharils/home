@@ -2,6 +2,8 @@
 # shellcheck disable=SC2139
 
 alias vimrc='vim ~/.vimrc'
+alias vimo='vim -O'
+alias vimp='vim -p'
 alias vims='vim -S'
 alias vimtmp='vim /tmp/'
 

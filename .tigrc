@@ -53,7 +53,7 @@ set diff-highlight              = true
 set diff-options                = --show-signature
 set ignore-case                 = smart-case
 set log-options                 = --show-signature
-set main-view                   = line-number:yes,interval=1 id:yes date:relative-compact author:no commit-title:yes,graph,refs,overflow=no
+set main-view                   = line-number:no,interval=1 id:yes date:relative-compact author:no commit-title:yes,graph,refs,overflow=no
 set mouse                       = yes
 set mouse-scroll                = 1
 set mouse-wheel-cursor          = yes
@@ -94,38 +94,46 @@ set status-show-untracked-files = yes
 #   %(diffargs)     The diff options from `diff-options` or `TIG_DIFF_OPTS`
 #   %(prompt)       Prompt for the argument value.
 
-bind refs       C       ?@git checkout %(branch)
-
 bind generic    <C-F>   move-page-down
 bind generic    <C-B>   move-page-up
-bind generic    g       none
+bind main       G       move-last-line
+bind generic    G       move-last-line
 bind generic    g       none
 bind generic    gg      move-first-line
-bind generic    G       move-last-line
+bind diff       ]       none
+bind diff       [       none
+bind diff       ]c      :/^@@
+bind diff       [c      :?^@@
+bind stage      ]       none
+bind stage      [       none
+bind stage      ]c      :/^@@
+bind stage      [c      :?^@@
+
 bind main       gbb     ?git bisect bad HEAD
 bind main       gbg     ?git bisect good HEAD
 bind main       gbr     ?git bisect reset
 bind main       gbs     ?git bisect start HEAD %(commit)
-bind main       gco     ?git checkout %(commit)
 bind main       gcb     ?git checkout -b %(prompt) %(commit)
 bind main       gcf     ?git commit --fixup %(commit)
+bind main       gco     ?git checkout %(commit)
+bind main       gcp     ?git cherry-pick %(commit)
 bind main       gcrm    ?git commit --reuse-message %(commit)
 bind main       gd      ?git diff %(commit) HEAD
-bind main       gph     ?git push %(remote) %(commit):refs/heads/%(prompt)
 bind main       gpfh    ?git push --force %(remote) %(commit):refs/heads/%(prompt)
-bind main       grbs    !git rebase --autosquash --interactive %(commit)
+bind main       gph     ?git push %(remote) %(commit):refs/heads/%(prompt)
 bind main       grbi    !git rebase --interactive %(commit)
 bind main       grbo    !git rebase --onto %(prompt) %(commit)
+bind main       grbs    !git rebase --autosquash --interactive %(commit)
+bind main       grh     ?git reset --hard %(commit)
 bind main       grv     !git revert %(commit)
 bind main       gta     !git tag --annotate %(prompt) %(commit)
-bind main       grh     ?git reset --hard %(commit)
-bind refs       gbm     ?git branch --move %(branch) %(prompt)
 bind refs       gb:     ?git push %(remote) :%(branch)
-bind refs       gt:     ?git push %(remote) :%(tag)
+bind refs       gbm     ?git branch --move %(branch) %(prompt)
 bind refs       gbp     ?git push %(remote) %(branch)
-bind refs       gtp     ?git push %(remote) %(tag)
 bind refs       grb     ?git rebase %(prompt) %(ref)
 bind refs       grd     ?git update-ref -d %(ref)
+bind refs       gt:     ?git push %(remote) :%(tag)
+bind refs       gtp     ?git push %(remote) %(tag)
 
 # Colors
 # ------

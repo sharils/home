@@ -1,29 +1,41 @@
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
-nmap <LEADER>gb :Gblame<CR>
-nmap <LEADER>gB :Gbrowse<CR>
-nmap <LEADER>gcA :Gcommit --amend --reuse-message=HEAD<CR>
+
+" Follow fugitive-:Gstatus
 nmap <LEADER>gca :Gcommit --amend<CR>
 nmap <LEADER>gcc :Gcommit<CR>
-nmap <LEADER>gcva :Gcommit --amend --verbose<CR>
+nmap <LEADER>gce :Gcommit --amend --no-edit<CR>
+nmap <LEADER>gcw :Gcommit --amend --only<CR>
+nmap <LEADER>gcva :Gcommit --verbose --amend<CR>
 nmap <LEADER>gcvc :Gcommit --verbose<CR>
 nmap <LEADER>gD :Gdiff<CR>
-" nmap <LEADER>gdp :Git add --intent-to-add<CR>
-" nmap <LEADER>gdp :Git! diff<CR>
 nmap <LEADER>gds :Gsdiff<CR>
 nmap <LEADER>gdv :Gvdiff<CR>
-nmap <LEADER>ge :Gedit %<CR>
-nmap <LEADER>gf :Gfetch<CR>
-nmap <LEADER>gl<CR> :Gpull --prune --rebase<CR>
-nmap <LEADER>glg :Glgrep<SPACE>
+nmap <LEADER>gO :Gtabedit<CR>
+nmap <LEADER>go :Gsplit<CR>
+nmap <LEADER>gS :Gvsplit<CR>
+
+nmap <LEADER>gbl :Gblame<CR>
+nmap <LEADER>gbr :Gbrowse<CR>
+nmap <LEADER>gf :Gfetch --all --prune<CR>
+nmap <LEADER>gl<CR> :Gpull --prune<CR>
+nmap <LEADER>ggr :Glgrep<SPACE>
 nmap <LEADER>gll :Gllog<CR>
 nmap <LEADER>gmv :Gmove <C-R>=expand("%")<CR>
-nmap <LEADER>go :Gsplit<CR>
-nmap <LEADER>gO :Gtabedit<CR>
-nmap <LEADER>gP :Gpush --set-upstream --force<CR>
-nmap <LEADER>gp :Gpush --set-upstream<CR>
-nmap <LEADER>gr :Gread<CR>
-nmap <LEADER>gR :Gremove!<CR>
-nmap <LEADER>gS :Gdiff HEAD~<CR>
+nmap <LEADER>gpo :Gpush origin<CR>
+nmap <LEADER>gpom :Gpush origin master<CR>
+nmap <LEADER>gpof :Gpush origin --force<CR>
+nmap <LEADER>gpuo :Gpush --set-upstream origin<CR>
+nmap <LEADER>gpuof :Gpush --set-upstream origin --force<CR>
 nmap <LEADER>gs :Gstatus<CR>
-" nmap <LEADER>gS :Gvsplit<CR>
+
+nmap <LEADER>ge :Gedit %<CR>
+nmap <LEADER>gre :Gread<CR>
 nmap <LEADER>gw :Gwrite<CR>
+nmap <LEADER>gde :Gdelete<CR>
+nmap <LEADER>grm :Gremove<CR>
+
+nmap <LEADER>ga. :Git add .<CR>
+nmap <LEADER>gau :Git add --update<CR>
+nmap <LEADER>gcfh :Gcommit --fixup HEAD<CR>
+nmap <LEADER>gstP :Git stash pop<CR>
+nmap <LEADER>gstp :Git stash push<CR>

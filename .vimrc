@@ -25,6 +25,7 @@ Plug 'moll/vim-node', { 'for': 'jsx' }
 Plug 'tpope/vim-obsession', { 'on':  'Obsession' }
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-rhubarb'
 Plug 'vitalk/vim-shebang'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
