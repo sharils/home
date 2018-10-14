@@ -2,10 +2,10 @@ let mapleader = ' '
 
 map Y y$
 
-imap <C-R>, <C-O>m`<C-O>:s/[,;]*$/,/\|nohlsearch<CR><C-O>``
-imap <C-R>; <C-O>m`<C-O>:s/[,;]*$/;/\|nohlsearch<CR><C-O>``
-nmap <C-R>, m`:s/[,;]*$/,/\|nohlsearch<ESC>``
-nmap <C-R>; m`:s/[,;]*$/;/\|nohlsearch<ESC>``
+" imap <C-R>, <C-O>m`<C-O>:s/[,;]*$/,/\|nohlsearch<CR><C-O>``
+" imap <C-R>; <C-O>m`<C-O>:s/[,;]*$/;/\|nohlsearch<CR><C-O>``
+" nmap <C-R>, m`:s/[,;]*$/,/\|nohlsearch<ESC>``
+" nmap <C-R>; m`:s/[,;]*$/;/\|nohlsearch<ESC>``
 
 cnoremap <C-L><C-P> <C-R>+
 inoremap <C-L><C-P> <C-R>+
