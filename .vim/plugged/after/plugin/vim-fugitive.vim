@@ -17,16 +17,16 @@ nmap <LEADER>gS :Gvsplit<CR>
 nmap <LEADER>gbl :Gblame<CR>
 nmap <LEADER>gbr :Gbrowse<CR>
 nmap <LEADER>gf :Gfetch --all --prune<CR>
-nmap <LEADER>gl<CR> :Gpull --prune<CR>
+nmap <LEADER>gl<SPACE> :Gpull --prune<CR>
 nmap <LEADER>ggr :Glgrep<SPACE>
 nmap <LEADER>gll :Gllog<CR>
 nmap <LEADER>gmv :Gmove <C-R>=expand("%")<CR>
-nmap <LEADER>gpo<CR> :Gpush origin<CR>
+nmap <LEADER>gpo<SPACE> :Gpush origin<CR>
 nmap <LEADER>gpom :Gpush origin master<CR>
 nmap <LEADER>gpof :Gpush origin --force<CR>
 nmap <LEADER>gpuo :Gpush --set-upstream origin<CR>
 nmap <LEADER>gpuof :Gpush --set-upstream origin --force<CR>
-nmap <LEADER>gs<CR> :Gstatus<CR>
+nmap <LEADER>gs<SPACE> :Gstatus<CR>
 
 nmap <LEADER>ge :Gedit %<CR>
 nmap <LEADER>gre :Gread<CR>
