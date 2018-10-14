@@ -136,58 +136,106 @@ bind refs       gbd         !git branch --delete %(branch)
 bind refs       gbD         !git branch --delete --force %(branch)
 bind refs       gbm         !git branch --move %(branch) %(prompt)
 bind main       gco<ENTER>  !git checkout %(commit)
+bind status     gco<ENTER>  !git checkout %(commit)
 bind main       gco-        !git checkout -
+bind status     gco-        !git checkout -
 bind main       gcop        !git checkout -p
+bind status     gcop        !git checkout -p
 bind main       gco.        !git checkout .
+bind status     gco.        !git checkout .
 bind main       gcp         !git cherry-pick %(commit)
+bind status     gcp         !git cherry-pick %(commit)
 bind main       gcf<ENTER>  !git commit --fixup %(commit)
+bind status     gcf<ENTER>  !git commit --fixup %(commit)
 bind main       gcfh        !git commit --fixup HEAD
+bind status     gcfh        !git commit --fixup HEAD
 bind main       gci         !git commit --interactive
+bind status     gci         !git commit --interactive
 bind main       gcrm        !git commit --reuse-message %(commit)
+bind status     gcrm        !git commit --reuse-message %(commit)
 bind main       gc<ENTER>   !git commit -v
+bind status     gc<ENTER>   !git commit -v
 bind main       gca<ENTER>  !git commit -v -a
+bind status     gca<ENTER>  !git commit -v -a
 bind main       gcam        !git commit -v -am %(prompt)
+bind status     gcam        !git commit -v -am %(prompt)
 bind main       gcm         !git commit -v -m %(prompt)
 bind status     gcm         !git commit -v -m %(prompt)
+bind status     gcm         !git commit -v -m %(prompt)
 bind main       gd          !git diff %(commit) HEAD
+bind status     gd          !git diff %(commit) HEAD
 bind main       gf<ENTER>   !git fetch --all --prune
+bind status     gf<ENTER>   !git fetch --all --prune
 bind main       gft<ENTER>  !git fetch --all --prune --tags
+bind status     gft<ENTER>  !git fetch --all --prune --tags
 bind main       gftv        !git fetch --all --prune --tags --verbose
+bind status     gftv        !git fetch --all --prune --tags --verbose
 bind main       gfv         !git fetch --all --prune --verbose
+bind status     gfv         !git fetch --all --prune --verbose
 bind generic    ggr         view-blob
 bind main       gl<ENTER>   !git pull
+bind status     gl<ENTER>   !git pull
 bind generic    gll         view-main
 bind main       gpp         !git pull && git push
+bind status     gpp         !git pull && git push
 bind main       gpr         !git pull --rebase
+bind status     gpr         !git pull --rebase
 bind main       glum        !git pull upstream master
+bind status     glum        !git pull upstream master
 bind main       gp<ENTER>   !git push
+bind status     gp<ENTER>   !git push
 bind main       gph         !git push %(remote) %(commit):refs/heads/%(prompt)
+bind status     gph         !git push %(remote) %(commit):refs/heads/%(prompt)
 bind main       gpfh        !git push --force %(remote) %(commit):refs/heads/%(prompt)
+bind status     gpfh        !git push --force %(remote) %(commit):refs/heads/%(prompt)
 bind main       gpu<ENTER>  !git push --set-upstream
+bind status     gpu<ENTER>  !git push --set-upstream
 bind main       gpuo<ENTER> !git push --set-upstream origin
+bind status     gpuo<ENTER> !git push --set-upstream origin
 bind main       gpuof       !git push --set-upstream origin --force
+bind status     gpuof       !git push --set-upstream origin --force
 bind main       gpo<ENTER>  !git push origin
+bind status     gpo<ENTER>  !git push origin
 bind main       gpof        !git push origin -f
+bind status     gpof        !git push origin -f
 bind main       gpom        !git push origin master
+bind status     gpom        !git push origin master
 bind main       gpohm       !git push origin push origin HEAD:master
+bind status     gpohm       !git push origin push origin HEAD:master
 bind main       grba        !git rebase --abort
+bind status     grba        !git rebase --abort
 bind main       grbk        !git rebase --autosquash --interactive %(commit)
+bind status     grbk        !git rebase --autosquash --interactive %(commit)
 bind main       grbs        !git rebase --autosquash --interactive %(commit)
+bind status     grbs        !git rebase --autosquash --interactive %(commit)
 bind main       grbc        !git rebase --continue
+bind status     grbc        !git rebase --continue
 bind main       grbi        !git rebase --interactive %(commit)
+bind status     grbi        !git rebase --interactive %(commit)
 bind main       grbo        !git rebase --onto %(prompt) %(commit)
+bind status     grbo        !git rebase --onto %(prompt) %(commit)
 bind main       grbm        !git rebase origin/master
+bind status     grbm        !git rebase origin/master
 bind main       grsh        !git reset --hard %(commit)
+bind status     grsh        !git reset --hard %(commit)
 bind main       grsm        !git reset --merge
+bind status     grsm        !git reset --merge
 bind main       gus         !git reset HEAD
+bind status     gus         !git reset HEAD
 bind main       grs^        !git reset HEAD^
+bind status     grs^        !git reset HEAD^
 bind main       grvt        !git revert %(commit)
+bind status     grvt        !git revert %(commit)
 bind generic    gs          view-status
 bind generic    gstl        view-stash
 bind main       gstd        !git stash --drop
+bind status     gstd        !git stash --drop
 bind main       gstk        !git stash --keep-index
+bind status     gstk        !git stash --keep-index
 bind main       gstP        !git stash pop
+bind status     gstP        !git stash pop
 bind main       gstp        !git stash push
+bind status     gstp        !git stash push
 bind generic    gt<ENTER>   view-refs
 bind refs       gta         !git tag -a
 bind refs       gtd         !git tag -d
