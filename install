@@ -3,6 +3,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew install \
+    asciinema \
     bash-completion \
     bat \
     fpp \
@@ -33,7 +34,7 @@ brew cask install \
     libreoffice \
     licecap \
     opera \
-    # origin \
+    origin \
     postman \
     skype \
     spectacle \
