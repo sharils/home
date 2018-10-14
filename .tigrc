@@ -96,44 +96,103 @@ set status-show-untracked-files = yes
 
 bind generic    <C-F>   move-page-down
 bind generic    <C-B>   move-page-up
-bind main       G       move-last-line
-bind generic    G       move-last-line
 bind generic    g       none
 bind generic    gg      move-first-line
+bind main       G       move-last-line
+bind generic    G       move-last-line
 bind diff       ]       none
 bind diff       [       none
-bind diff       ]c      :/^@@
-bind diff       [c      :?^@@
 bind stage      ]       none
 bind stage      [       none
+bind diff       ]c      :/^@@
+bind diff       [c      :?^@@
 bind stage      ]c      :/^@@
 bind stage      [c      :?^@@
 
-bind main       gbb     ?git bisect bad HEAD
-bind main       gbg     ?git bisect good HEAD
-bind main       gbr     ?git bisect reset
-bind main       gbs     ?git bisect start HEAD %(commit)
-bind main       gcb     ?git checkout -b %(prompt) %(commit)
-bind main       gcf     ?git commit --fixup %(commit)
-bind main       gco     ?git checkout %(commit)
-bind main       gcp     ?git cherry-pick %(commit)
-bind main       gcrm    ?git commit --reuse-message %(commit)
-bind main       gd      ?git diff %(commit) HEAD
-bind main       gpfh    ?git push --force %(remote) %(commit):refs/heads/%(prompt)
-bind main       gph     ?git push %(remote) %(commit):refs/heads/%(prompt)
-bind main       grbi    !git rebase --interactive %(commit)
-bind main       grbo    !git rebase --onto %(prompt) %(commit)
-bind main       grbs    !git rebase --autosquash --interactive %(commit)
-bind main       grh     ?git reset --hard %(commit)
-bind main       grv     !git revert %(commit)
-bind main       gta     !git tag --annotate %(prompt) %(commit)
-bind refs       gb:     ?git push %(remote) :%(branch)
-bind refs       gbm     ?git branch --move %(branch) %(prompt)
-bind refs       gbp     ?git push %(remote) %(branch)
-bind refs       grb     ?git rebase %(prompt) %(ref)
-bind refs       grd     ?git update-ref -d %(ref)
-bind refs       gt:     ?git push %(remote) :%(tag)
-bind refs       gtp     ?git push %(remote) %(tag)
+# Follow fugitive-:Gstatus
+bind status     !           none
+bind status     u           none
+bind status     -           status-update
+bind status     c           none
+bind status     ca          !git commit --amend
+bind status     cc          !git commit
+bind status     ce          !git commit --amend --no-edit
+bind status     cw          !git commit --amend --only
+bind status     cva         !git commit --verbose --amend
+bind status     cvc         !git commit --verbose
+bind status     D           enter
+bind status     O           edit
+bind status     P           !git add --patch %(file)
+bind status     U           status-revert
+bind stage      !           none
+bind stage      u           none
+bind stage      -           status-update
+bind stage      O           edit
+bind stage      P           !git reset --patch %(file)
+bind stage      U           status-revert
+
+bind generic    gba         view-refs
+bind refs       gbd         !git branch --delete %(branch)
+bind refs       gbD         !git branch --delete --force %(branch)
+bind refs       gbm         !git branch --move %(branch) %(prompt)
+bind main       gco<ENTER>  !git checkout %(commit)
+bind main       gco-        !git checkout -
+bind main       gcop        !git checkout -p
+bind main       gco.        !git checkout .
+bind main       gcp         !git cherry-pick %(commit)
+bind main       gcf<ENTER>  !git commit --fixup %(commit)
+bind main       gcfh        !git commit --fixup HEAD
+bind main       gci         !git commit --interactive
+bind main       gcrm        !git commit --reuse-message %(commit)
+bind main       gc<ENTER>   !git commit -v
+bind main       gca<ENTER>  !git commit -v -a
+bind main       gcam        !git commit -v -am %(prompt)
+bind main       gcm         !git commit -v -m %(prompt)
+bind status     gcm         !git commit -v -m %(prompt)
+bind main       gd          !git diff %(commit) HEAD
+bind main       gf<ENTER>   !git fetch --all --prune
+bind main       gft<ENTER>  !git fetch --all --prune --tags
+bind main       gftv        !git fetch --all --prune --tags --verbose
+bind main       gfv         !git fetch --all --prune --verbose
+bind generic    ggr         view-blob
+bind main       gl<ENTER>   !git pull
+bind generic    gll         view-main
+bind main       gpp         !git pull && git push
+bind main       gpr         !git pull --rebase
+bind main       glum        !git pull upstream master
+bind main       gp<ENTER>   !git push
+bind main       gph         !git push %(remote) %(commit):refs/heads/%(prompt)
+bind main       gpfh        !git push --force %(remote) %(commit):refs/heads/%(prompt)
+bind main       gpu<ENTER>  !git push --set-upstream
+bind main       gpuo<ENTER> !git push --set-upstream origin
+bind main       gpuof       !git push --set-upstream origin --force
+bind main       gpo<ENTER>  !git push origin
+bind main       gpof        !git push origin -f
+bind main       gpom        !git push origin master
+bind main       gpohm       !git push origin push origin HEAD:master
+bind main       grba        !git rebase --abort
+bind main       grbk        !git rebase --autosquash --interactive %(commit)
+bind main       grbs        !git rebase --autosquash --interactive %(commit)
+bind main       grbc        !git rebase --continue
+bind main       grbi        !git rebase --interactive %(commit)
+bind main       grbo        !git rebase --onto %(prompt) %(commit)
+bind main       grbm        !git rebase origin/master
+bind main       grsh        !git reset --hard %(commit)
+bind main       grsm        !git reset --merge
+bind main       gus         !git reset HEAD
+bind main       grs^        !git reset HEAD^
+bind main       grvt        !git revert %(commit)
+bind generic    gs          view-status
+bind generic    gstl        view-stash
+bind main       gstd        !git stash --drop
+bind main       gstk        !git stash --keep-index
+bind main       gstP        !git stash pop
+bind main       gstp        !git stash push
+bind generic    gt<ENTER>   view-refs
+bind refs       gta         !git tag -a
+bind refs       gtd         !git tag -d
+bind refs       gtl         !git tag -l
+
 
 # Colors
 # ------

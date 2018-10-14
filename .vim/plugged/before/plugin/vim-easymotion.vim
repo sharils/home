@@ -1,7 +1,7 @@
-map <LEADER>e  <Plug>(easymotion-prefix)
-map <LEADER>ea <Plug>(easymotion-jumptoanywhere)
-map <LEADER>egn <Plug>(easymotion-next)
-map <LEADER>egN <Plug>(easymotion-prev)
+map <LEADER>m  <Plug>(easymotion-prefix)
+map <LEADER>ma <Plug>(easymotion-jumptoanywhere)
+map <LEADER>mgn <Plug>(easymotion-next)
+map <LEADER>mgN <Plug>(easymotion-prev)
 
 let g:EasyMotion_smartcase = 1
 let g:EasyMotion_space_jump_first = 1
