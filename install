@@ -84,6 +84,7 @@ bash-it enable completion \
     vagrant
 
 bash-it enable plugin \
+    extract \
     fasd \
     git \
     todo
