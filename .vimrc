@@ -27,6 +27,7 @@ Plug 'tpope/vim-obsession', { 'on':  'Obsession' }
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-sensible'
 Plug 'vitalk/vim-shebang'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'

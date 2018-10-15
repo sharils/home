@@ -102,10 +102,12 @@ bind main       G       move-last-line
 bind generic    G       move-last-line
 bind diff       ]       none
 bind diff       [       none
-bind stage      ]       none
-bind stage      [       none
 bind diff       ]c      :/^@@
 bind diff       [c      :?^@@
+bind pager      ]c      :/^@@
+bind pager      [c      :?^@@
+bind stage      ]       none
+bind stage      [       none
 bind stage      ]c      :/^@@
 bind stage      [c      :?^@@
 
