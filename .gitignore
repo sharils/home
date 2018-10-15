@@ -1,10 +1,8 @@
 .DS_Store
-Session.vim
 /.vim/.netrwhist
-/doc/tags
-tags
-watchman-make
-.vim/plugged/*
-!.vim/plugged/before
+/.vim/plugged/*
 !.vim/plugged/after
+!.vim/plugged/before
+/doc/tags
+Session.vim
 __pycache__

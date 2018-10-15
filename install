@@ -6,6 +6,7 @@ brew install \
     asciinema \
     bash-completion \
     bat \
+    fasd \
     fpp \
     fzf \
     git \
@@ -83,6 +84,7 @@ bash-it enable completion \
     vagrant
 
 bash-it enable plugin \
+    fasd \
     git \
     todo
 
