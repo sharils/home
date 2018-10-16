@@ -27,6 +27,7 @@ main() {
         noti \
         ripgrep \
         tig \
+        tldr \
         todo-txt \
         vim \
         watchman \
@@ -59,7 +60,6 @@ main() {
         virtualbox-extension-pack
 
     yarn global add \
-        tldr \
         typescript # for YouCompleteMe
 
     curl https://sh.rustup.rs -sSf | sh
@@ -110,6 +110,8 @@ main() {
 
     cp .gitconfig ~
 
+    mkdir -p ~/.cache/vim-gutentags
+
     vim -S ~/.vim/snapshot.vim
 
     git config --global user.email "$email"
@@ -117,4 +119,4 @@ main() {
     git config --global user.signingkey "$signingkey"
 }
 
-main $*
+main "$*"

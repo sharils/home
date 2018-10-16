@@ -131,7 +131,6 @@ nmap <LEADER>ln :lnext<CR>
 nmap <LEADER>lp :lprevious<CR>
 nmap <LEADER>lr :lrewind<CR>
 nmap <LEADER>lw :lwindow<CR>
-nmap <LEADER><CR> :nohlsearch<CR>
 nmap <LEADER>sf :set filetype=
 nmap <LEADER>sfh :set filetype=html<CR>
 nmap <LEADER>sfj :set filetype=javascript<CR>

@@ -2,7 +2,8 @@
 
 alias dk="docker"
 alias dkb='docker build --tag ${USER}/$(basename $PWD) .'
-alias dkbr='docker run --interactive --name ${USER}_$(basename $PWD) --rm --tty --volume $PWD:$PWD --workdir $PWD ${USER}/$(basename $PWD)'
+alias dkbr='docker run --interactive --name ${USER}_$(basename $PWD) --rm --tty ${USER}/$(basename $PWD)'
+alias dkbrw='docker run --interactive --name ${USER}_$(basename $PWD) --rm --tty --volume $PWD:$PWD --workdir $PWD ${USER}/$(basename $PWD)'
 alias dkbs='docker stop ${USER}_$(basename $PWD)'
 alias dkbri='docker rmi ${USER}/$(basename $PWD)'
 alias dkrr='docker run --interactive --rm --tty --volume $PWD:$PWD --workdir $PWD'
