@@ -1,106 +1,120 @@
 #!/usr/bin/env bash
 
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+main() {
+    if [ $# != 1 ]; then
+        echo "Usage: $0 <git_global_config_user.signingkey>"
+        return 1
+    fi
 
-brew install \
-    asciinema \
-    bash-completion \
-    bat \
-    fasd \
-    fpp \
-    fzf \
-    git \
-    git-crypt \
-    gpg \
-    jq \
-    ncdu \
-    noti \
-    ripgrep \
-    tig \
-    todo-txt \
-    vim \
-    watchman \
-    yarn
+    signingkey=$1
 
-brew cask install \
-    android-file-transfer \
-    clipy \
-    firefox \
-    gimp \
-    google-chrome \
-    homebrew/cask-versions/firefox-developer-edition \
-    insomnia \
-    karabiner-elements \
-    keepassxc \
-    keybase \
-    libreoffice \
-    licecap \
-    opera \
-    origin \
-    postman \
-    skype \
-    spectacle \
-    squirrel \
-    steam \
-    syncthing-macos \
-    tor-browser \
-    vagrant \
-    virtualbox \
-    virtualbox-extension-pack
+    read -r name email <<< "$(gpg --list-key "$signingkey" | sed -n 's/uid           \[ultimate\] //; 3s/[<>]//g; 3p')"
 
-yarn global add \
-    tldr \
-    typescript # for YouCompleteMe
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-curl https://sh.rustup.rs -sSf | sh
+    brew install \
+        asciinema \
+        bash-completion \
+        bat \
+        fasd \
+        fpp \
+        fzf \
+        git \
+        git-crypt \
+        gpg \
+        jq \
+        ncdu \
+        noti \
+        ripgrep \
+        tig \
+        todo-txt \
+        vim \
+        watchman \
+        yarn
 
-git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it &&
-    ~/.bash_it/install.sh
+    brew cask install \
+        android-file-transfer \
+        clipy \
+        firefox \
+        gimp \
+        google-chrome \
+        homebrew/cask-versions/firefox-developer-edition \
+        insomnia \
+        karabiner-elements \
+        keepassxc \
+        keybase \
+        libreoffice \
+        licecap \
+        opera \
+        origin \
+        postman \
+        skype \
+        spectacle \
+        squirrel \
+        steam \
+        syncthing-macos \
+        tor-browser \
+        vagrant \
+        virtualbox \
+        virtualbox-extension-pack
 
-bash-it enable alias \
-    docker \
-    docker-compose \
-    general \
-    git \
-    homebrew \
-    homebrew-cask \
-    npm \
-    osx \
-    todo.txt-cli \
-    vagrant \
-    yarn
+    yarn global add \
+        tldr \
+        typescript # for YouCompleteMe
 
-bash-it enable completion \
-    brew \
-    docker \
-    docker-compose \
-    docker-machine \
-    git \
-    makefile \
-    npm \
-    ssh \
-    system \
-    todo \
-    vagrant
+    curl https://sh.rustup.rs -sSf | sh
 
-bash-it enable plugin \
-    extract \
-    fasd \
-    git \
-    todo
+    git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it &&
+        ~/.bash_it/install.sh
 
-find . -type f \
-    -depth 1 \
-    -name '.*' \
-    ! -name .gitconfig \
-    ! -name .gitmodules |
-    sort |
-    sed "s@^.@$PWD@" |
-    xargs -I {} ln -s {} ~
+    bash-it enable alias \
+        docker \
+        docker-compose \
+        general \
+        git \
+        homebrew \
+        homebrew-cask \
+        npm \
+        osx \
+        todo.txt-cli \
+        vagrant \
+        yarn
 
-cp .gitconfig ~
+    bash-it enable completion \
+        brew \
+        docker \
+        docker-compose \
+        docker-machine \
+        git \
+        makefile \
+        npm \
+        ssh \
+        system \
+        todo \
+        vagrant
 
-vim -S ~/.vim/snapshot.vim
+    bash-it enable plugin \
+        extract \
+        fasd \
+        git \
+        todo
 
-echo "git config --global user.name '$USER'"
-echo "git config --global user.email '$USER@users.noreply.github.com'"
+    find . -type f \
+        -depth 1 \
+        -name '.*' \
+        ! -name .gitconfig \
+        ! -name .gitmodules |
+        sort |
+        sed "s@^.@$PWD@" |
+        xargs -I {} ln -s {} ~
+
+    cp .gitconfig ~
+
+    vim -S ~/.vim/snapshot.vim
+
+    git config --global user.email "$email"
+    git config --global user.name "$name"
+    git config --global user.signingkey "$signingkey"
+}
+
+main $*

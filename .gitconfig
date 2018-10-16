@@ -1,8 +1,10 @@
+[commit]
+	gpgsign = true
 [core]
 	autocrlf = input
 	excludesfile = ~/.gitignore
-[mergetool]
-	keepBackup = false
 [merge]
 	conflictstyle = diff3
 	tool = vimdiff
+[mergetool]
+	keepBackup = false
