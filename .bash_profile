@@ -27,7 +27,7 @@ export TODO="t"
 # Set this to false to turn off version control status checking within the prompt for all themes
 export SCM_CHECK=true
 
-export SCM_GIT_SHOW_STASH_INFO=false
+export SCM_GIT_SHOW_MINIMAL_INFO=true
 
 # Set Xterm/screen/Tmux title with only a short hostname.
 # Uncomment this (or set SHORT_HOSTNAME to something else),
