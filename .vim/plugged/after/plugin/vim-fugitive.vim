@@ -37,5 +37,6 @@ nmap <LEADER>grm :Gremove<CR>
 nmap <LEADER>ga. :Git add .<CR>
 nmap <LEADER>gau :Git add --update<CR>
 nmap <LEADER>gcfh :Gcommit --fixup HEAD<CR>
+nmap <LEADER>gco. :Git checkout .<CR>
 nmap <LEADER>gstP :Git stash pop<CR>
 nmap <LEADER>gstp :Git stash push<CR>
