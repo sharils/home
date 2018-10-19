@@ -120,3 +120,7 @@ main() {
 }
 
 main "$*"
+
+echo 'REMEMBER:'
+echo '- Automatically rearrange Spaces based on most recent use'
+echo '- Dashboard: As Overlay'
