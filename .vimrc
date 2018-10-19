@@ -35,6 +35,7 @@ Plug 'vitalk/vim-shebang'
 Plug 'tpope/vim-sleuth'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
+Plug 'pedrohdz/vim-yaml-folds', { 'for': 'yaml' }
 
 Plug '~/.vim/plugged/after'
 call plug#end()
