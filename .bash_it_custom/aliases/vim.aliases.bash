@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2139
 
-alias vvrc='vim ~/.vimrc'
+alias vvrc='vim ~/git/github.com/sharils/home/.vimrc'
 
 alias vgi='vim .gitignore'
 alias vgie='vim .git/info/exclude'
