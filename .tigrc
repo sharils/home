@@ -229,10 +229,11 @@ bind main       grs^        !git reset HEAD^
 bind status     grs^        !git reset HEAD^
 bind main       grvt        !git revert %(commit)
 bind status     grvt        !git revert %(commit)
-bind generic    gs          view-status
+bind generic    gs<ENTER>   view-status
 bind generic    gstl        view-stash
-bind main       gstd        !git stash --drop
-bind status     gstd        !git stash --drop
+bind main       gstd        !git stash drop
+bind status     gstd        !git stash drop
+bind stash      gstd        !git stash drop %(stash)
 bind main       gstk        !git stash --keep-index
 bind status     gstk        !git stash --keep-index
 bind main       gstP        !git stash pop
