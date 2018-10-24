@@ -7,7 +7,6 @@ Plug 'vim-scripts/BufOnly.vim'
 Plug 'ekalinin/Dockerfile.vim', { 'for': 'dockerfile' }
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --rust-completer' }
 Plug 'jnurmine/Zenburn'
-Plug 'slashmili/alchemist.vim', { 'for': 'elixir' }
 Plug 'w0rp/ale'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'jiangmiao/auto-pairs'
