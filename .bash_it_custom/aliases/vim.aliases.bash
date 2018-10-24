@@ -8,6 +8,7 @@ alias vgie='vim .git/info/exclude'
 alias vpi='vim +PlugInstall'
 alias vpc='vim +PlugClean'
 alias vps="vim +'PlugSnapshot! ~/.vim/snapshot.vim'"
+alias vss='vim -S Session.vim'
 
 alias vtmp="vim /tmp/$RANDOM"
 alias vbash="vim /tmp/$RANDOM.bash"
