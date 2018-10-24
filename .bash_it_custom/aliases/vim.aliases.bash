@@ -6,6 +6,7 @@ alias vvrc='vim ~/git/github.com/sharils/home/.vimrc'
 alias vgi='vim .gitignore'
 alias vgie='vim .git/info/exclude'
 alias vpi='vim +PlugInstall'
+alias vpc='vim +PlugClean'
 alias vps="vim +'PlugSnapshot! ~/.vim/snapshot.vim'"
 
 alias vtmp="vim /tmp/$RANDOM"
