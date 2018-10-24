@@ -1,0 +1,1 @@
+alias agr='alias | grep'
