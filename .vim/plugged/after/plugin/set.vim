@@ -1,6 +1,6 @@
 set colorcolumn=80
 set directory=$TMPDIR//
-" set hidden
+set hidden
 set hlsearch
 set ignorecase
 set linebreak
