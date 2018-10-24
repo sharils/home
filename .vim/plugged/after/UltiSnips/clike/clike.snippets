@@ -42,14 +42,9 @@ for ($1) {
 }
 endsnippet
 
-snippet i "if" b
-if ($1) {
-	$2${VISUAL}
-}
-endsnippet
-
-snippet w "while" b
+snippet wh "while" b
 while ($1) {
+	$2${VISUAL}
 }
 endsnippet
 
@@ -66,13 +61,13 @@ endsnippet
 
 priority 2
 
-snippet e "else" w
+snippet el "else" w
  else {
 	$1${VISUAL}
 }
 endsnippet
 
-snippet i "if" w
+snippet eif "if" w
  else if ($1) {
 	$2${VISUAL}
 }
