@@ -29,6 +29,7 @@ alias gia='git init && git commit --allow-empty --message "Initialize empty Git 
 alias gic='git init && git commit --allow-empty --message "Initialize empty Git repository"'
 alias gmt='git mergetool'
 alias gpof='git push origin -f'
+alias gpoh='git push origin HEAD:'
 alias gpohm='git push origin HEAD:master'
 alias gpuof='git push --set-upstream origin --force'
 alias grb='git rebase'
