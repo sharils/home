@@ -203,6 +203,8 @@ bind main       gpof        !git push origin -f
 bind status     gpof        !git push origin -f
 bind main       gpom        !git push origin master
 bind status     gpom        !git push origin master
+bind main       gpoh<ENTER> !git push origin HEAD:%(prompt)
+bind status     gpoh<ENTER> !git push origin HEAD:%(prompt)
 bind main       gpohm       !git push origin HEAD:master
 bind status     gpohm       !git push origin HEAD:master
 bind main       grba        !git rebase --abort
