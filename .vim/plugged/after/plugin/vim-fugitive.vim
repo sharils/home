@@ -22,6 +22,8 @@ nmap <LEADER>ggr :Glgrep<SPACE>
 nmap <LEADER>gll :Gllog<CR>
 nmap <LEADER>gmv :Gmove <C-R>=expand("%")<CR>
 nmap <LEADER>gpo<CR> :Gpush origin<CR>
+nmap <LEADER>gpoh<CR> :Gpush origin HEAD:
+nmap <LEADER>gpohm :Gpush origin HEAD:master<CR>
 nmap <LEADER>gpom :Gpush origin master<CR>
 nmap <LEADER>gpof :Gpush origin --force<CR>
 nmap <LEADER>gpuo :Gpush --set-upstream origin<CR>
