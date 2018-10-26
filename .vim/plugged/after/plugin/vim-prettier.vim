@@ -1,0 +1,1 @@
+nmap <LEADER>= :PrettierAsync<CR>
