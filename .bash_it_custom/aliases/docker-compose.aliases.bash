@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+alias dcob="docker-compose build"
 alias dcod="docker-compose down"
 alias dcodv="docker-compose down --volumes"
 alias dcoe="docker-compose exec"
