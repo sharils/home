@@ -13,6 +13,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'rhysd/devdocs.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+Plug 'vito-c/jq.vim', { 'for': 'jq' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'godlygeek/tabular'
 Plug 'majutsushi/tagbar'
@@ -27,6 +28,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'moll/vim-node', { 'for': 'jsx' }
 Plug 'tpope/vim-obsession', { 'on':  'Obsession' }
 Plug 'sheerun/vim-polyglot'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-sensible'
