@@ -162,6 +162,9 @@ bind main       gca<ENTER>  !git commit -v -a
 bind status     gca<ENTER>  !git commit -v -a
 bind main       gcam        !git commit -v -am %(prompt)
 bind status     gcam        !git commit -v -am %(prompt)
+bind main       gcc         !git commit -v -m %(prompt)
+bind status     gcc         !git commit -v -m %(prompt)
+bind status     gcc         !git commit -v -m %(prompt)
 bind main       gcm         !git commit -v -m %(prompt)
 bind status     gcm         !git commit -v -m %(prompt)
 bind status     gcm         !git commit -v -m %(prompt)
