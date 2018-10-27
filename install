@@ -25,6 +25,7 @@ main() {
         jq \
         ncdu \
         noti \
+        python-yq \
         ripgrep \
         tig \
         tldr \
