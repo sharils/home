@@ -4,48 +4,65 @@ def singular(word):
 	return re.sub(r'(s|es)$', '', word)
 endglobal
 
+
+priority 4
+
 snippet /^a/ "alias" r
 alias $1='$2'
 endsnippet
 
-snippet fun "function" w
-${1:fun}() {
-	${2::}
+
+priority 3
+
+snippet fun "fun() {}" b
+$1() {
+	$2
 }
 endsnippet
 
-snippet if "if" w
-if [ $1 ]; then
-	${2::}
-fi
+
+priority 1
+
+snippet # "$#" i
+\$#
 endsnippet
 
-snippet fie "else" w
-else
-	${2::}
-fi
+snippet 0 "$0" i
+\$0
 endsnippet
 
-snippet fiei "elif" w
-elif [ $1 ]; then
-	${2::}
-fi
+snippet 1 "$1" i
+\$1
 endsnippet
 
-snippet wh "while" w
-while [ $1 ]; do
-	${2::}
-done
+snippet 2 "$2" i
+\$2
 endsnippet
 
-snippet un "until" w
-until [ $1 ]; do
-	${2::}
-done
+snippet 3 "$3" i
+\$3
 endsnippet
 
-snippet fi "for in" w
-for `!p snip.rv = singular(t[1])` in ${1:items}; do
-	${2::}
-done
+snippet 4 "$4" i
+\$4
+endsnippet
+
+snippet 5 "$5" i
+\$5
+endsnippet
+
+snippet 6 "$6" i
+\$6
+endsnippet
+
+snippet 7 "$7" i
+\$7
+endsnippet
+
+snippet 8 "$8" i
+\$8
+endsnippet
+
+snippet 9 "$9" i
+\$9
 endsnippet
