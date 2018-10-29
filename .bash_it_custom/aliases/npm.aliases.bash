@@ -1,0 +1,1 @@
+alias nsr='npm search'
