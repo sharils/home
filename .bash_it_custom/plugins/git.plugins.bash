@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
 gclt() {
-    git clone --depth=1 "$1" "/tmp/$(basename "$1")"
+    filename="$(basename "$1")"
+    dir="/tmp/${filename%.*}"
+    git clone --depth=1 "$1" "$dir" && cd "$dir" || exit
 }
