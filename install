@@ -13,10 +13,10 @@ main() {
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
     brew install \
+        autojump \
         asciinema \
         bash-completion \
         bat \
-        fasd \
         fpp \
         fzf \
         git \
@@ -27,10 +27,12 @@ main() {
         noti \
         python-yq \
         ripgrep \
+        surfraw \
         tig \
         tldr \
         todo-txt \
         vim \
+        w3m \
         watchman \
         yarn
 
@@ -96,8 +98,8 @@ main() {
         vagrant
 
     bash-it enable plugin \
+        autojump \
         extract \
-        fasd \
         git \
         todo
 

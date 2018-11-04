@@ -1,0 +1,5 @@
+alias srddg='surfraw duckduckgo '
+alias srg='surfraw google '
+alias srso='surfraw stack '
+alias srwp='surfraw wikipedia '
+alias srwt='surfraw wiktionary '
