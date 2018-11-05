@@ -8,7 +8,7 @@ main() {
 
     signingkey=$1
 
-    read -r name email <<< "$(gpg --list-key "$signingkey" | sed -n 's/uid           \[ultimate\] //; 3s/[<>]//g; 3p')"
+    IFS='<' read -r name email <<< "$(gpg --list-key "$signingkey" | sed -n 's/uid           \[ultimate\] //; 3s/>//g; 3s/ </</; 3p')"
 
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
