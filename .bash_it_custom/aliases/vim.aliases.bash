@@ -18,6 +18,7 @@ alias vijs='vim index.js'
 alias vijsx='vim index.jsx'
 alias vmake='vim Makefile'
 alias vpjson='vim package.json'
+alias vrm='vim README.md'
 
 alias vtmp="vim /tmp/$RANDOM"
 alias vbash="vim /tmp/$RANDOM.bash"
