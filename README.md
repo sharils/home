@@ -2,7 +2,6 @@
 
 ```sh
 gpg --generate-key
-gpg --list-keys
 ```
 
 # Install
