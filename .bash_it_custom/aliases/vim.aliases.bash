@@ -3,8 +3,6 @@
 
 alias vvrc='vim ~/git/github.com/sharils/home/.vimrc'
 
-alias vgi='vim .gitignore'
-alias vgie='vim .git/info/exclude'
 alias vss='vim -S Session.vim'
 
 alias vpc='vim +PlugClean'
@@ -14,6 +12,8 @@ alias vpu='vim +PlugUpdate'
 
 alias vdco='vim docker-compose.yml'
 alias vdk='vim Dockerfile'
+alias vgi='vim .gitignore'
+alias vgie='vim .git/info/exclude'
 alias vijs='vim index.js'
 alias vijsx='vim index.jsx'
 alias vmake='vim Makefile'
