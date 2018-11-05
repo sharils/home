@@ -103,9 +103,10 @@ main() {
         git \
         todo
 
-    find . -type f \
+    find . \
         -depth 1 \
         -name '.*' \
+        ! -name .git \
         ! -name .gitconfig \
         ! -name .gitmodules |
         sort |
