@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2139
 
-alias vvrc='vim ~/git/github.com/sharils/home/.vimrc'
-
 alias vss='vim -S Session.vim'
 
 alias vpc='vim +PlugClean'
@@ -19,6 +17,7 @@ alias vijsx='vim index.jsx'
 alias vmake='vim Makefile'
 alias vpjson='vim package.json'
 alias vrm='vim README.md'
+alias vvrc='vim ~/git/github.com/sharils/home/.vimrc'
 
 alias vtmp="vim /tmp/$RANDOM"
 alias vbash="vim /tmp/$RANDOM.bash"
