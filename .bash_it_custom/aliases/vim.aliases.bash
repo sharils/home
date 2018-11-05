@@ -12,12 +12,12 @@ alias vpi='vim +PlugInstall'
 alias vps="vim +'PlugSnapshot! ~/.vim/snapshot.vim'"
 alias vpu='vim +PlugUpdate'
 
-alias vdk="vim Dockerfile"
-alias vdco="vim docker-compose.yml"
-alias vijs="vim index.js"
-alias vijsx="vim index.jsx"
-alias vmake="vim Makefile"
-alias vpjson="vim package.json"
+alias vdk='vim Dockerfile'
+alias vdco='vim docker-compose.yml'
+alias vijs='vim index.js'
+alias vijsx='vim index.jsx'
+alias vmake='vim Makefile'
+alias vpjson='vim package.json'
 
 alias vtmp="vim /tmp/$RANDOM"
 alias vbash="vim /tmp/$RANDOM.bash"
