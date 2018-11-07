@@ -2,4 +2,4 @@ alias create-react-app="npx create-react-app "
 alias create-react-native-app="npx create-react-native-app "
 alias prettier="npx prettier "
 alias resume="npx resume-cli "
-# https://twitter.com/thatzackhawkins/status/893495424375341058?lang=en
+alias selenium-side-runner='npx selenium-side-runner'
