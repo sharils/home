@@ -17,6 +17,7 @@ main() {
         asciinema \
         bash-completion \
         bat \
+        fd \
         fpp \
         fzf \
         git \
@@ -101,6 +102,7 @@ main() {
     bash-it enable plugin \
         autojump \
         extract \
+        fzf \
         git \
         todo
 
