@@ -102,6 +102,7 @@ inoremap <C-B> <ESC>i
 inoremap <C-E> <C-O>A
 inoremap <C-F> <C-O>l
 inoremap <C-[>O <ESC>O
+nmap <2-LeftMouse> :tjump <C-R><C-W><CR>
 nmap <LEADER><LEADER>lw :lclose<CR>
 nmap <LEADER><LEADER>w= <C-W><C-_><C-W><BAR>
 nmap <LEADER><LEADER>wh <C-W><C-H><C-W><C-_>80<C-W><BAR>
