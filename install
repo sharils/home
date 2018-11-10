@@ -17,6 +17,7 @@ main() {
         asciinema \
         bash-completion \
         bat \
+        direnv \
         fd \
         fpp \
         fzf \
