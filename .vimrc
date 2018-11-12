@@ -18,8 +18,9 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'godlygeek/tabular'
 Plug 'majutsushi/tagbar'
 Plug 'SirVer/ultisnips'
-Plug 'PeterRincker/vim-argumentative'
 Plug 'tpope/vim-abolish'
+Plug 'vim-airline/vim-airline'
+Plug 'PeterRincker/vim-argumentative'
 Plug 'alvan/vim-closetag', { 'for': ['html', 'javascript,jsx', 'xhtml'] }
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'easymotion/vim-easymotion'
@@ -40,6 +41,7 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
 Plug 'pedrohdz/vim-yaml-folds', { 'for': 'yaml' }
 
+let g:airline#extensions#tabline#enabled = 1
 
 Plug '~/.vim/plugged/after'
 call plug#end()
