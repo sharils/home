@@ -15,7 +15,6 @@ Plug 'editorconfig/editorconfig-vim'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'vito-c/jq.vim', { 'for': 'jq' }
 Plug 'scrooloose/nerdcommenter'
-" Plug 'zxqfl/tabnine-vim'
 Plug 'godlygeek/tabular'
 Plug 'majutsushi/tagbar'
 Plug 'SirVer/ultisnips'
