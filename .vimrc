@@ -29,7 +29,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'inkarkat/vim-ingo-library'
 Plug 'inkarkat/vim-mark'
 Plug 'moll/vim-node', { 'for': 'jsx' }
-Plug 'tpope/vim-obsession', { 'on':  'Obsession' }
+Plug 'tpope/vim-obsession'
 Plug 'sheerun/vim-polyglot'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'tpope/vim-repeat'
