@@ -132,14 +132,33 @@ nmap <LEADER>ln :lnext<CR>
 nmap <LEADER>lp :lprevious<CR>
 nmap <LEADER>lr :lrewind<CR>
 nmap <LEADER>lw :lwindow<CR>
-nmap <LEADER>sf :set filetype=
-nmap <LEADER>sfh :set filetype=html<CR>
-nmap <LEADER>sfj :set filetype=javascript<CR>
-nmap <LEADER>sfp :set filetype=php<CR>
-nmap <LEADER>sn :execute &relativenumber ? "set number" : "set relativenumber"<CR>
-nmap <LEADER>sp :set paste!<CR>
+nmap <LEADER>sf<CR> :set filetype=
+nmap <LEADER>sfbash :set filetype=bash<CR>
+nmap <LEADER>sfc<CR> :set filetype=c<CR>
+nmap <LEADER>sfcss<CR> :set filetype=css<CR>
+nmap <LEADER>sfeex :set filetype=elixir<CR>
+nmap <LEADER>sferl :set filetype=erlang<CR>
+nmap <LEADER>sfex<CR> :set filetype=elixir<CR>
+nmap <LEADER>sfexs :set filetype=elixir<CR>
+nmap <LEADER>sfhtml :set filetype=html<CR>
+nmap <LEADER>sfjava :set filetype=java<CR>
+nmap <LEADER>sfjq :set filetype=jq<CR>
+nmap <LEADER>sfjs<CR> :set filetype=javascript.jsx<CR>
+nmap <LEADER>sfjson :set filetype=json<CR>
+nmap <LEADER>sfjsx :set filetype=javascript.jsx<CR>
+nmap <LEADER>sflua :set filetype=lua<CR>
+nmap <LEADER>sfmd :set filetype=markdown<CR>
+nmap <LEADER>sfphp :set filetype=php<CR>
+nmap <LEADER>sfpy :set filetype=python<CR>
+nmap <LEADER>sfrs :set filetype=rust<CR>
+nmap <LEADER>sfsh :set filetype=sh<CR>
+nmap <LEADER>sfsql :set filetype=sql<CR>
+nmap <LEADER>sfstory :set filetype=cucumber<CR>
+nmap <LEADER>sftxt :set filetype=text<CR>
+nmap <LEADER>sfxhtml :set filetype=html<CR>
+nmap <LEADER>sfyml :set filetype=yaml<CR>
+" nmap <LEADER>sfzep :set filetype=zep<CR>
 nmap <LEADER>ss :set spell!<CR>
-nmap <LEADER>sw :set wrap!<CR>
 nmap <LEADER>t% :tabedit<SPACE><C-R>=expand("%")<CR>
 nmap <LEADER>t. :tabedit<SPACE><C-R>=expand("%:h")<CR>/
 nmap <LEADER>tc :tabclose<CR>
