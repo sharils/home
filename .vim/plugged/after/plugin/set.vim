@@ -8,7 +8,6 @@ set list
 set modeline
 set mouse=a
 set number
-set relativenumber
 set shiftwidth=4
 set showcmd
 set smartcase
