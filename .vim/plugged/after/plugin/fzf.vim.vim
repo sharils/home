@@ -49,7 +49,7 @@ nnoremap <LEADER>zl :Lines<CR>
 nnoremap <LEADER>zL :BLines<CR>
 nnoremap <LEADER>zt :Tags<CR>
 nnoremap <LEADER>zT :BTags<CR>
-nnoremap <LEADER>zm :Marks<CR>
+nnoremap <LEADER>zm :call fzf#vim#marks(!0)<CR>
 nnoremap <LEADER>zw :Windows<CR>
 " nnoremap <LEADER>z :Locate<CR>
 nnoremap <LEADER>zh :History<CR>

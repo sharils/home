@@ -26,6 +26,8 @@ Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-fugitive'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'inkarkat/vim-ingo-library'
+Plug 'inkarkat/vim-mark'
 Plug 'moll/vim-node', { 'for': 'jsx' }
 Plug 'tpope/vim-obsession', { 'on':  'Obsession' }
 Plug 'sheerun/vim-polyglot'
@@ -38,6 +40,7 @@ Plug 'tpope/vim-sleuth'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
 Plug 'pedrohdz/vim-yaml-folds', { 'for': 'yaml' }
+
 
 Plug '~/.vim/plugged/after'
 call plug#end()
