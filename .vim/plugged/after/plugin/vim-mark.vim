@@ -1,5 +1,4 @@
 let g:mwDefaultHighlightingPalette = 'extended'
-let g:mwAutoLoadMarks = 1
 
 nmap <Leader>mM <Plug>MarkToggle
 nmap <Leader>mN <Plug>MarkAllClear

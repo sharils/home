@@ -31,6 +31,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'inkarkat/vim-ingo-library'
 Plug 'inkarkat/vim-mark'
 Plug 'moll/vim-node', { 'for': 'jsx' }
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'tpope/vim-obsession'
 Plug 'sheerun/vim-polyglot'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
