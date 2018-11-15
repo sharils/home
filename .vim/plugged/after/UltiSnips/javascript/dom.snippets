@@ -25,13 +25,13 @@ console.error($1)
 endsnippet
 
 snippet cog "console.group()" w
-console.group(${1})
+console.group(${1:`!v '"' . expand("%") . ':' . (line(".") + 1) .  '"' `})
 ${VISUAL}$2
 console.groupEnd($1)
 endsnippet
 
 snippet cogc "console.Collapsed()" w
-console.groupCollapsed(${1})
+console.groupCollapsed(${1:`!v '"' . expand("%") . ':' . (line(".") + 1) .  '"' `})
 ${VISUAL}$2
 console.groupEnd($1)
 endsnippet
@@ -45,13 +45,13 @@ console.log($1)
 endsnippet
 
 snippet cop "console.profile()" w
-console.profile(${1})
+console.profile(${1:`!v '"' . expand("%") . ':' . (line(".") + 1) .  '"' `})
 ${VISUAL}$2
 console.profileEnd($1)
 endsnippet
 
 snippet cot "console.time()" w
-console.time(${1})
+console.time(${1:`!v '"' . expand("%") . ':' . (line(".") + 1) .  '"' `})
 ${VISUAL}$2
 console.timeEnd($1)
 endsnippet
