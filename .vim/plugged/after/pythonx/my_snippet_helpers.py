@@ -1,5 +1,6 @@
 import re
 import os
+import vim
 
 def around_assign(snip):
     return '=' in snip.buffer[snip.line]
@@ -51,6 +52,9 @@ def around_throw(snip):
 
 def importname(path):
     return to_camel(re.sub('\..*', '', os.path.basename(path)))
+
+def path_and_line():
+    return vim.eval("'\"'. expand('%') . ':' . line('.') . '\"'")
 
 def singularize(plural):
     return re.sub('(?<!e)es|s$', '', plural)

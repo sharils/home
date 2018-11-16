@@ -1,5 +1,9 @@
 priority 2
 
+global !p
+from my_snippet_helpers import *
+endglobal
+
 snippet URL "URL" w
 new URL($1)
 endsnippet
@@ -25,13 +29,13 @@ console.error($1)
 endsnippet
 
 snippet cog "console.group()" w
-console.group(${1:`!v '"' . expand("%") . ':' . (line(".") + 1) .  '"' `})
+console.group(${1:`!p snip.rv = path_and_line()`})
 ${VISUAL}$2
 console.groupEnd($1)
 endsnippet
 
 snippet cogc "console.Collapsed()" w
-console.groupCollapsed(${1:`!v '"' . expand("%") . ':' . (line(".") + 1) .  '"' `})
+console.groupCollapsed(${1:`!p snip.rv = path_and_line()`})
 ${VISUAL}$2
 console.groupEnd($1)
 endsnippet
@@ -45,13 +49,13 @@ console.log($1)
 endsnippet
 
 snippet cop "console.profile()" w
-console.profile(${1:`!v '"' . expand("%") . ':' . (line(".") + 1) .  '"' `})
+console.profile(${1:`!p snip.rv = path_and_line()`})
 ${VISUAL}$2
 console.profileEnd($1)
 endsnippet
 
 snippet cot "console.time()" w
-console.time(${1:`!v '"' . expand("%") . ':' . (line(".") + 1) .  '"' `})
+console.time(${1:`!p snip.rv = path_and_line()`})
 ${VISUAL}$2
 console.timeEnd($1)
 endsnippet
