@@ -39,8 +39,6 @@ main() {
         yarn
 
     brew cask install \
-        adobe-acrobat-reader \
-        android-file-transfer \
         clipy \
         firefox \
         gimp \
@@ -49,22 +47,26 @@ main() {
         insomnia \
         karabiner-elements \
         keepassxc \
-        keybase \
-        libreoffice \
         licecap \
         opera \
-        origin \
         postman \
-        rescuetime \
-        skype \
         spectacle \
         squirrel \
-        steam \
-        syncthing-app \
-        tor-browser \
         vagrant \
         virtualbox \
         virtualbox-extension-pack
+
+    brew cask install \
+        adobe-acrobat-reader \
+        android-file-transfer \
+        keybase \
+        libreoffice \
+        origin \
+        rescuetime \
+        skype \
+        steam \
+        syncthing-app \
+        tor-browser
 
     yarn global add \
         typescript # for YouCompleteMe
