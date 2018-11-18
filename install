@@ -39,6 +39,7 @@ main() {
         yarn
 
     brew cask install \
+        adobe-acrobat-reader \
         android-file-transfer \
         clipy \
         firefox \
