@@ -109,6 +109,8 @@ nmap <LEADER><LEADER>wh <C-W><C-H><C-W><C-_>80<C-W><BAR>
 nmap <LEADER><LEADER>wj <C-W><C-J><C-W><C-_>80<C-W><BAR>
 nmap <LEADER><LEADER>wk <C-W><C-K><C-W><C-_>80<C-W><BAR>
 nmap <LEADER><LEADER>wl <C-W><C-L><C-W><C-_>80<C-W><BAR>
+nmap <LEADER>- :.-
+nmap <LEADER>= :.+
 nmap <LEADER>E :edit!<CR>
 nmap <LEADER>bd :bdelete<CR>
 nmap <LEADER>bn :bnext<CR>

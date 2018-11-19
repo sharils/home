@@ -1,22 +1,22 @@
 extends common, clike, javalike, strictequal, boolean
 
-snippet e "echo" w
-echo $1
-endsnippet
+priority 4
 
-snippet pe "php echo" b
-<?= ${1:false} ?>
-endsnippet
-
-snippet ph "<?php" b
+snippet /^<$/ "<?php" r
 <?php
-
 endsnippet
 
-snippet php "<?php?>" b
+
+priority 2
+
+snippet <= "php echo" w
+<?= ${1:''} ?>
+endsnippet
+
+snippet <> "<?php?>" w
 <?php $1 ?>
 endsnippet
 
-snippet hp "?>" b
-?>
+snippet e "echo" w
+echo $1
 endsnippet
