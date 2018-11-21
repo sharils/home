@@ -20,8 +20,12 @@ snippet dt "%Y-%m-%d %H:%M:%S" w
 `!v strftime("%Y-%m-%d %H:%M:%S")`
 endsnippet
 
-snippet sb "snip.basename" i
-`!p snip.rv = snip.basename`
+snippet %p. "%:p:." i
+`!v expand("%:p:.")`
+endsnippet
+
+snippet %tr "%:t:r" i
+`!v expand("%:t:r")`
 endsnippet
 
 snippet #! "#!" b
