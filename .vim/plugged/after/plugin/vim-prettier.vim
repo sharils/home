@@ -1,1 +1,1 @@
-nmap <LEADER>= :PrettierAsync<CR>
+nmap <LEADER><LEADER>= :PrettierAsync<CR>
