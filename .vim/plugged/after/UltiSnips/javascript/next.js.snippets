@@ -1,5 +1,37 @@
-snippet sjsx "" w
+priority 3
+
+snippet gip "getInitialProps" b
+static async getInitialProps(${1:{
+	pathname,
+	query,
+	asPath,
+	req,
+	res,
+	jsonPageRes,
+	err,
+}}) {
+	$2
+}
+endsnippet
+
+snippet sjsx "" b
 <style jsx$1>{\`
 	$2
 \`}</style>
+endsnippet
+
+priority 2
+
+snippet gip "getInitialProps" w
+getInitialProps = async (${1:{
+	pathname,
+	query,
+	asPath,
+	req,
+	res,
+	jsonPageRes,
+	err,
+}}) => {
+	$2
+}
 endsnippet
