@@ -1,3 +1,4 @@
+alias yab='yarn build'
 alias yagls='yarn global list'
 alias yas='yarn start'
 alias yaui='yarn upgrade-interactive'
