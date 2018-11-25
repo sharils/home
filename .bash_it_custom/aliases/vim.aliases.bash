@@ -18,8 +18,10 @@ alias vihtml='vim index.html'
 alias vijs='vim index.js'
 alias vijsx='vim index.jsx'
 alias vmake='vim Makefile'
+alias vncjs='vim next.config.js'
 alias vpjson='vim package.json'
 alias vrm='vim README.md'
+alias vsjs='vim server.js'
 alias vvrc='vim ~/git/github.com/sharils/home/.vimrc'
 
 alias vtmp="vim /tmp/$RANDOM"
