@@ -1,4 +1,5 @@
 map <LEADER>j  <Plug>(easymotion-prefix)
+map <LEADER>ma  <Plug>(easymotion-jumptoanywhere)
 
 let g:EasyMotion_smartcase = 1
 let g:EasyMotion_space_jump_first = 1
