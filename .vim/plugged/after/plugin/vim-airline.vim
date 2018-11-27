@@ -7,5 +7,6 @@
 " https://github.com/vim-airline/vim-airline/wiki/Screenshots#base16
 let g:airline_theme='base16'
 
+let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#branch#format = 2
 let g:airline#extensions#tagbar#enabled = 0
