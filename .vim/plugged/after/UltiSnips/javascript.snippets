@@ -15,7 +15,7 @@ snippet < "(?<>)" "around_regex(snip)" ie
 (?<$1>$2)
 endsnippet
 
-snippet a "(async () => {})()" "around_file_start(snip)" be
+snippet /^a/ "(async () => {})()" r
 (async () => {
 	$1${VISUAL}
 })();
