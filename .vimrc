@@ -12,6 +12,7 @@ Plug 'skywind3000/asyncrun.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'rhysd/devdocs.vim'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'shumphrey/fugitive-gitlab.vim'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'vito-c/jq.vim', { 'for': 'jq' }
 Plug 'godlygeek/tabular'
