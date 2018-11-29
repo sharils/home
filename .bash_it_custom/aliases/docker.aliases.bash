@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
 alias dk="docker"
-alias dkb='docker build --tag ${USER}/$(basename $PWD) .'
-alias dkbr='docker run --interactive --name ${USER}_$(basename $PWD) --rm --tty ${USER}/$(basename $PWD)'
-alias dkbrw='docker run --interactive --name ${USER}_$(basename $PWD) --rm --tty --volume $PWD:$PWD --workdir $PWD ${USER}/$(basename $PWD)'
-alias dkbs='docker stop ${USER}_$(basename $PWD)'
-alias dkbri='docker rmi ${USER}/$(basename $PWD)'
+alias dkb='docker build --tag ${USER}/$(dkbasename) .'
+alias dkbasename='echo $(basename $PWD | tr "[:upper:]" "[:lower:]")'
+alias dkbr='docker run --interactive --name ${USER}_$(dkbasename) --rm --tty ${USER}/$(basename $PWD)'
+alias dkbrw='docker run --interactive --name ${USER}_$(dkbasename) --rm --tty --volume $PWD:$PWD --workdir $PWD ${USER}/$(basename $PWD)'
+alias dkbs='docker stop ${USER}_$(dkbasename)'
+alias dkbri='docker rmi ${USER}/$(dkbasename)'
 alias dkrr='docker run --interactive --rm --tty --volume $PWD:$PWD --workdir $PWD'
 alias dkru='docker run --interactive --rm --tty --user $UID:$(id -g) --volume $PWD:$PWD --workdir $PWD'
 
