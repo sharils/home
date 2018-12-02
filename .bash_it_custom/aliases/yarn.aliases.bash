@@ -1,5 +1,6 @@
 alias yab='yarn build'
 alias yagls='yarn global list'
+alias yaip='yarn import'
 alias yas='yarn start'
 alias yaui='yarn upgrade-interactive'
 alias yauil='yarn upgrade-interactive --latest'
