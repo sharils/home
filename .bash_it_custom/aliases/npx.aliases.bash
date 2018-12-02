@@ -1,5 +1,6 @@
 alias browser-sync='npx browser-sync '
 alias create-react-app='npx create-react-app '
 alias create-react-native-app='npx create-react-native-app '
+alias ncu='npx npm-check-updates'
 alias prettier='npx prettier '
 alias resume='npx resume-cli '
