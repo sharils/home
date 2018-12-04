@@ -152,6 +152,10 @@ bind main       gcf<ENTER>  !git commit --fixup %(commit)
 bind status     gcf<ENTER>  !git commit --fixup %(commit)
 bind main       gcfh        !git commit --fixup HEAD
 bind status     gcfh        !git commit --fixup HEAD
+bind main       gcs<ENTER>  !git commit --squash %(commit)
+bind status     gcs<ENTER>  !git commit --squash %(commit)
+bind main       gcsh        !git commit --squash HEAD
+bind status     gcsh        !git commit --squash HEAD
 bind main       gci         !git commit --interactive
 bind status     gci         !git commit --interactive
 bind main       gcrm        !git commit --reuse-message %(commit)
