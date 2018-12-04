@@ -1,3 +1,6 @@
+alias nb='npm build'
 alias ncl='rm -fr ./node_modules'
 alias nrm='npm rm'
+alias ns='npm start'
 alias nsr='npm search'
+alias nt='npm test'
