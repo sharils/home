@@ -9,6 +9,7 @@ alias dkbs='docker stop ${USER}_$(dkbasename)'
 alias dkbri='docker rmi ${USER}/$(dkbasename)'
 alias dkrr='docker run --interactive --rm --tty --volume $PWD:$PWD --workdir $PWD'
 alias dkru='docker run --interactive --rm --tty --user $UID:$(id -g) --volume $PWD:$PWD --workdir $PWD'
+alias dks='docker stop'
 
 alias dklc='docker ps -l'                                                            # List last Docker container'
 alias dklcid='docker ps -l -q'                                                       # List last Docker container ID'
