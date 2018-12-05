@@ -1,3 +1,5 @@
+alias na='npm audit'
+alias naf='npm audit fix'
 alias nb='npm build'
 alias nci='npm ci'
 alias ncl='rm -fr ./node_modules'
