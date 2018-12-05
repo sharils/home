@@ -1,6 +1,7 @@
 alias nb='npm build'
 alias nci='npm ci'
 alias ncl='rm -fr ./node_modules'
+alias niy='npm init --yes'
 alias nrm='npm rm'
 alias ns='npm start'
 alias nsr='npm search'
