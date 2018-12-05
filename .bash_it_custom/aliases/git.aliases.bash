@@ -14,6 +14,7 @@ alias gl='git pull --prune'
 
 alias ga.='git add .'
 alias gau='git add --update'
+alias gamscp='git am --show-current-patch'
 alias gbb='git bisect bad'
 alias gbg='git bisect good'
 alias gbs='git bisect start'
