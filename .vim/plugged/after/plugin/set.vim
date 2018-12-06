@@ -1,5 +1,5 @@
 set colorcolumn=80
-set directory=$TMPDIR//
+set directory=~/.cache//
 set hidden
 set hlsearch
 set ignorecase
