@@ -104,6 +104,7 @@ main() {
 
     bash-it enable plugin \
         autojump \
+        direnv \
         extract \
         fzf \
         git \
