@@ -1,4 +1,5 @@
 .DS_Store
+.envrc
 Session.vim
 __pycache__
 /.bash_it_custom/aliases/custom.aliases.bash
