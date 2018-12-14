@@ -18,7 +18,7 @@ priority 3
 
 snippet /* "/* comment block */" b
 /**
- * $1${VISUAL}
+ * ${1:${VISUAL}}
  */
 endsnippet
 
@@ -32,25 +32,25 @@ endsnippet
 
 snippet fn "function" b
 $1($2) {
-	$3${VISUAL}
+	${3:${VISUAL}}
 }
 endsnippet
 
 snippet fo "for" b
 for ($1) {
-	$2${VISUAL}
+	${2:${VISUAL}}
 }
 endsnippet
 
 snippet wh "while" b
 while ($1) {
-	$2${VISUAL}
+	${2:${VISUAL}}
 }
 endsnippet
 
 snippet s "switch" b
 switch ($1) {
-	$2${VISUAL}
+	${2:${VISUAL}}
 }
 endsnippet
 
@@ -63,13 +63,13 @@ priority 2
 
 snippet el "else" w
  else {
-	$1${VISUAL}
+	${1:${VISUAL}}
 }
 endsnippet
 
 snippet eif "if" w
  else if ($1) {
-	$2${VISUAL}
+	${2:${VISUAL}}
 }
 endsnippet
 

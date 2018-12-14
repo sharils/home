@@ -17,7 +17,7 @@ endsnippet
 
 snippet /^a/ "(async () => {})()" r
 (async () => {
-	$1${VISUAL}
+	${1:${VISUAL}}
 })();
 endsnippet
 
@@ -31,7 +31,7 @@ endsnippet
 
 snippet i "if else throw" "around_catch(snip)" we
 if ($1) {
-	$2${VISUAL}
+	${2:${VISUAL}}
 } else {
 	throw e;
 }

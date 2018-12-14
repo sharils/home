@@ -30,13 +30,13 @@ endsnippet
 
 snippet cog "console.group()" w
 console.group(${1:`!p snip.rv = path_and_line()`})
-${VISUAL}$2
+${2:${VISUAL}}
 console.groupEnd($1)
 endsnippet
 
 snippet cogc "console.Collapsed()" w
 console.groupCollapsed(${1:`!p snip.rv = path_and_line()`})
-${VISUAL}$2
+${2:${VISUAL}}
 console.groupEnd($1)
 endsnippet
 
@@ -50,13 +50,13 @@ endsnippet
 
 snippet cop "console.profile()" w
 console.profile(${1:`!p snip.rv = path_and_line()`})
-${VISUAL}$2
+${2:${VISUAL}}
 console.profileEnd($1)
 endsnippet
 
 snippet cot "console.time()" w
 console.time(${1:`!p snip.rv = path_and_line()`})
-${VISUAL}$2
+${2:${VISUAL}}
 console.timeEnd($1)
 endsnippet
 
