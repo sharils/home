@@ -96,6 +96,13 @@ valueOf() {
 };
 endsnippet
 
+snippet rf "refactor function" b
+const ${1:fn} = (${2}) => {
+	${3:${VISUAL}}
+}
+$1($2)
+endsnippet
+
 snippet u "use strict" b
 "use strict";
 endsnippet
