@@ -21,10 +21,6 @@ snippet /^a/ "(async () => {})()" r
 })();
 endsnippet
 
-snippet as "async" "around_function(snip)" we
-async $0
-endsnippet
-
 snippet d "default" "around_export(snip)" we
 default $0
 endsnippet
@@ -120,6 +116,10 @@ endsnippet
 
 snippet a "await" w
 await $0
+endsnippet
+
+snippet as "async" w
+async $0
 endsnippet
 
 snippet d "debugger" w
