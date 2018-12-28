@@ -5,9 +5,6 @@ import vim
 def around_assign(snip):
     return '=' in snip.buffer[snip.line]
 
-def around_assign_or_line_start(snip):
-    return around_assign(snip) or snip.column == 0
-
 def around_catch(snip):
     return 'catch' in snip.buffer[snip.line - 1]
 
@@ -23,8 +20,8 @@ def around_expect(snip):
 def around_export(snip):
     return 'export' in snip.buffer[snip.line]
 
-def around_file_start(snip):
-    return len(snip.buffer) == 1 and len(snip.buffer[0]) == 1
+def around_first_line_or_require(snip):
+    return 'const' not in snip.buffer[snip.line] and (snip.line == 0 or 'require' in snip.buffer[snip.line - 1])
 
 def around_for(snip):
     return 'for' in snip.buffer[snip.line]
