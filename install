@@ -68,7 +68,7 @@ main() {
         syncthing-app \
         tor-browser
 
-    yarn global add \
+    npm --global install \
         typescript # for YouCompleteMe
 
     curl https://sh.rustup.rs -sSf | sh
