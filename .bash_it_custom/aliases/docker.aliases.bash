@@ -18,4 +18,5 @@ alias dkvr='docker volume rm'
 alias dkt='docker tag'
 alias dkp='docker push'
 
-alias toodles='docker run --interactive --tty --publish 9001:9001 --volume $PWD:/repo aviaviavi/toodles'
+alias dhttp='docker run --interactive --rm --tty alpine/httpie'
+alias toodles='docker run --interactive --rm --tty --publish 9001:9001 --volume $PWD:/repo aviaviavi/toodles'
