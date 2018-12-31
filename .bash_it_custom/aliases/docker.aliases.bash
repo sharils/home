@@ -18,4 +18,4 @@ alias dkvr='docker volume rm'
 alias dkt='docker tag'
 alias dkp='docker push'
 
-alias http='docker run --interactive --rm --tty meltwater/httpie'
+alias toodles='docker run -it -v $PWD:/repo -p 9001:9001 aviaviavi/toodles'
