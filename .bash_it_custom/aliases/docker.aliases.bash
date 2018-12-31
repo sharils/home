@@ -17,3 +17,5 @@ alias dkvl='docker volume ls'
 alias dkvr='docker volume rm'
 alias dkt='docker tag'
 alias dkp='docker push'
+
+alias http='docker run --interactive --rm --tty meltwater/httpie'
