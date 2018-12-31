@@ -7,10 +7,6 @@ endglobal
 
 priority 5
 
-snippet $ "${var}" "around_template_string(snip)" we
-${$1}
-endsnippet
-
 snippet < "(?<>)" "around_regex(snip)" ie
 (?<$1>$2)
 endsnippet
@@ -176,6 +172,10 @@ endsnippet
 
 
 priority 1
+
+snippet $ "${var}" i
+${$1}
+endsnippet
 
 snippet . "..." i
 ...
