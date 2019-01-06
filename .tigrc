@@ -207,6 +207,10 @@ bind main       gpuof       !git push --set-upstream origin --force
 bind status     gpuof       !git push --set-upstream origin --force
 bind main       gpo<ENTER>  !git push origin
 bind status     gpo<ENTER>  !git push origin
+bind main       gpo:        !git push origin :%(branch)
+bind status     gpo:        !git push origin :%(branch)
+bind main       gpoc        !git push origin %(commit):%(prompt)
+bind status     gpoc        !git push origin %(commit):%(prompt)
 bind main       gpof        !git push origin -f
 bind status     gpof        !git push origin -f
 bind main       gpom        !git push origin master
