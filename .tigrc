@@ -137,7 +137,7 @@ bind generic    gba         view-refs
 bind refs       gbd         !git branch --delete %(branch)
 bind refs       gbD         !git branch --delete --force %(branch)
 bind refs       gbm         !git branch --move %(branch) %(prompt)
-bind main       gbs         !git bisect start %(commit)
+bind main       gbs         !git bisect start %(commit) HEAD
 bind main       gco<ENTER>  !git checkout %(commit)
 bind status     gco<ENTER>  !git checkout %(commit)
 bind refs       gco<ENTER>  !git checkout %(branch)
