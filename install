@@ -17,18 +17,33 @@ main() {
         asciinema \
         bash-completion \
         bat \
+        ctags \
         direnv \
+        elixir \
+        erlang \
+        exercism \
         fd \
         fpp \
         fzf \
         git \
         git-crypt \
         gpg \
+        hr \
+        httpie \
+        hub \
         jq \
+        lua \
         ncdu \
+        nnn \
+        node@10 \
         noti \
+        octave \
+        phantomjs \
+        postgresql \
         python-yq \
         ripgrep \
+        shellcheck \
+        shfmt \
         surfraw \
         tig \
         tldr \
@@ -39,19 +54,26 @@ main() {
         yarn
 
     brew cask install \
+        chromedriver \
         clipy \
+        devdocs \
         firefox \
+        firefox-developer-edition \
         gimp \
         google-chrome \
         homebrew/cask-versions/firefox-developer-edition \
         insomnia \
         karabiner-elements \
         keepassxc \
-        licecap \
+        keybase \
         opera \
+        operadriver \
         postman \
+        remember-the-milk \
+        slack \
         spectacle \
         squirrel \
+        toggl \
         vagrant \
         virtualbox \
         virtualbox-extension-pack
@@ -59,9 +81,11 @@ main() {
     brew cask install \
         adobe-acrobat-reader \
         android-file-transfer \
-        keybase \
+        anki \
         libreoffice \
+        notion \
         origin \
+        polar-bookshelf \
         rescuetime \
         skype \
         steam \
