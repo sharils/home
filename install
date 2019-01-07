@@ -38,7 +38,6 @@ main() {
         node@10 \
         noti \
         octave \
-        phantomjs \
         postgresql \
         python-yq \
         ripgrep \
@@ -61,7 +60,6 @@ main() {
         firefox-developer-edition \
         gimp \
         google-chrome \
-        homebrew/cask-versions/firefox-developer-edition \
         insomnia \
         karabiner-elements \
         keepassxc \
