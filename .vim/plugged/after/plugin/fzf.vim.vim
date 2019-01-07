@@ -48,10 +48,10 @@ nnoremap <LEADER>zF :GFiles<CR>
 nnoremap <LEADER>z? :GFiles?<CR>
 nnoremap <LEADER>zb :Buffers<CR>
 " nnoremap <LEADER>z :Colors<CR>
-nnoremap <LEADER>zl :Lines<CR>
-nnoremap <LEADER>zL :BLines<CR>
-nnoremap <LEADER>zt :Tags<CR>
-nnoremap <LEADER>zT :BTags<CR>
+nnoremap <LEADER>zl :BLines<CR>
+nnoremap <LEADER>zL :Lines<CR>
+nnoremap <LEADER>zT :Tags<CR>
+nnoremap <LEADER>zt :BTags<CR>
 nnoremap <LEADER>zm :call fzf#vim#marks(!0)<CR>
 nnoremap <LEADER>zw :Windows<CR>
 " nnoremap <LEADER>z :Locate<CR>
@@ -59,8 +59,8 @@ nnoremap <LEADER>zh :History<CR>
 nnoremap <LEADER>z: :History:<CR>
 nnoremap <LEADER>z/ :History/<CR>
 nnoremap <LEADER>zs :Snippets<CR>
-nnoremap <LEADER>zc :Commits<CR>
-nnoremap <LEADER>zC :BCommits<CR>
+nnoremap <LEADER>zC :Commits<CR>
+nnoremap <LEADER>zc :BCommits<CR>
 nnoremap <LEADER>zM :Maps<CR>
 nnoremap <LEADER>zd :Commands<CR>
 nnoremap <LEADER>zH :call fzf#vim#helptags()<CR>
