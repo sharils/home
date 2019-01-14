@@ -196,10 +196,10 @@ bind main       glum        !git pull upstream master
 bind status     glum        !git pull upstream master
 bind main       gp<ENTER>   !git push
 bind status     gp<ENTER>   !git push
-bind main       gph<ENTER>  !git push %(remote) %(commit):refs/heads/%(prompt)
-bind status     gph<ENTER>  !git push %(remote) %(commit):refs/heads/%(prompt)
-bind main       gphf        !git push --force %(remote) %(commit):refs/heads/%(prompt)
-bind status     gphf        !git push --force %(remote) %(commit):refs/heads/%(prompt)
+bind main       gpc<ENTER>  !git push %(remote) %(commit):refs/heads/%(prompt)
+bind status     gpc<ENTER>  !git push %(remote) %(commit):refs/heads/%(prompt)
+bind main       gpcf        !git push --force %(remote) %(commit):refs/heads/%(prompt)
+bind status     gpcf        !git push --force %(remote) %(commit):refs/heads/%(prompt)
 bind main       gpo<ENTER>  !git push %(remote)
 bind status     gpo<ENTER>  !git push %(remote)
 bind main       gpo:        !git push %(remote) :%(branch)
