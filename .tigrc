@@ -137,7 +137,7 @@ bind generic    gba         view-refs
 bind refs       gbd         !git branch --delete %(branch)
 bind refs       gbD         !git branch --delete --force %(branch)
 bind refs       gbm         !git branch --move %(branch) %(prompt)
-bind main       gbs         !git bisect start HEAD %(commit)
+bind main       gbs         !git bisect start %(head) %(commit)
 bind main       gco<ENTER>  !git checkout %(commit)
 bind status     gco<ENTER>  !git checkout %(commit)
 bind refs       gco<ENTER>  !git checkout %(branch)
@@ -152,12 +152,12 @@ bind main       gcp         !git cherry-pick %(commit)
 bind status     gcp         !git cherry-pick %(commit)
 bind main       gcf<ENTER>  !git commit --fixup %(commit)
 bind status     gcf<ENTER>  !git commit --fixup %(commit)
-bind main       gcfh        !git commit --fixup HEAD
-bind status     gcfh        !git commit --fixup HEAD
+bind main       gcfh        !git commit --fixup %(head)
+bind status     gcfh        !git commit --fixup %(head)
 bind main       gcs<ENTER>  !git commit --squash %(commit)
 bind status     gcs<ENTER>  !git commit --squash %(commit)
-bind main       gcsh        !git commit --squash HEAD
-bind status     gcsh        !git commit --squash HEAD
+bind main       gcsh        !git commit --squash %(head)
+bind status     gcsh        !git commit --squash %(head)
 bind main       gci         !git commit --interactive
 bind status     gci         !git commit --interactive
 bind main       gcrm        !git commit --reuse-message %(commit)
@@ -174,8 +174,8 @@ bind status     gcc         !git commit -v -m %(prompt)
 bind main       gcm         !git commit -v -m %(prompt)
 bind status     gcm         !git commit -v -m %(prompt)
 bind status     gcm         !git commit -v -m %(prompt)
-bind main       gd          !git diff %(commit) HEAD
-bind status     gd          !git diff %(commit) HEAD
+bind main       gd          !git diff %(commit) %(head)
+bind status     gd          !git diff %(commit) %(head)
 bind main       gf<ENTER>   !git fetch --all --prune
 bind status     gf<ENTER>   !git fetch --all --prune
 bind main       gft<ENTER>  !git fetch --all --prune --tags
@@ -210,10 +210,10 @@ bind main       gpof        !git push %(remote) -f
 bind status     gpof        !git push %(remote) -f
 bind main       gpom        !git push %(remote) master
 bind status     gpom        !git push %(remote) master
-bind main       gpoh<ENTER> !git push %(remote) HEAD:%(prompt)
-bind status     gpoh<ENTER> !git push %(remote) HEAD:%(prompt)
-bind main       gpohm       !git push %(remote) HEAD:master
-bind status     gpohm       !git push %(remote) HEAD:master
+bind main       gpoh<ENTER> !git push %(remote) %(head):%(prompt)
+bind status     gpoh<ENTER> !git push %(remote) %(head):%(prompt)
+bind main       gpohm       !git push %(remote) %(head):master
+bind status     gpohm       !git push %(remote) %(head):master
 bind main       gpu<ENTER>  !git push --set-upstream
 bind status     gpu<ENTER>  !git push --set-upstream
 bind main       gpuo<ENTER> !git push --set-upstream %(remote)
@@ -239,10 +239,10 @@ bind main       grsh        !git reset --hard %(commit)
 bind status     grsh        !git reset --hard %(commit)
 bind main       grsm        !git reset --merge
 bind status     grsm        !git reset --merge
-bind main       gus         !git reset HEAD
-bind status     gus         !git reset HEAD
-bind main       grs^        !git reset HEAD^
-bind status     grs^        !git reset HEAD^
+bind main       gus         !git reset %(head)
+bind status     gus         !git reset %(head)
+bind main       grs^        !git reset %(head)^
+bind status     grs^        !git reset %(head)^
 bind main       grvt        !git revert %(commit)
 bind status     grvt        !git revert %(commit)
 bind generic    gs<ENTER>   view-status
