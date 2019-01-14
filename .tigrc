@@ -219,6 +219,7 @@ bind main       gpoh<ENTER> !git push origin HEAD:%(prompt)
 bind status     gpoh<ENTER> !git push origin HEAD:%(prompt)
 bind main       gpohm       !git push origin HEAD:master
 bind status     gpohm       !git push origin HEAD:master
+bind refs       grb         !git rebase %(branch)
 bind main       grba        !git rebase --abort
 bind status     grba        !git rebase --abort
 bind main       grbk        !git rebase --autosquash --interactive %(commit)
