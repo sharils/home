@@ -200,26 +200,26 @@ bind main       gph<ENTER>  !git push %(remote) %(commit):refs/heads/%(prompt)
 bind status     gph<ENTER>  !git push %(remote) %(commit):refs/heads/%(prompt)
 bind main       gphf        !git push --force %(remote) %(commit):refs/heads/%(prompt)
 bind status     gphf        !git push --force %(remote) %(commit):refs/heads/%(prompt)
-bind main       gpo<ENTER>  !git push origin
-bind status     gpo<ENTER>  !git push origin
-bind main       gpo:        !git push origin :%(branch)
-bind status     gpo:        !git push origin :%(branch)
-bind main       gpoc        !git push origin %(commit):%(prompt)
-bind status     gpoc        !git push origin %(commit):%(prompt)
-bind main       gpof        !git push origin -f
-bind status     gpof        !git push origin -f
-bind main       gpom        !git push origin master
-bind status     gpom        !git push origin master
-bind main       gpoh<ENTER> !git push origin HEAD:%(prompt)
-bind status     gpoh<ENTER> !git push origin HEAD:%(prompt)
-bind main       gpohm       !git push origin HEAD:master
-bind status     gpohm       !git push origin HEAD:master
+bind main       gpo<ENTER>  !git push %(remote)
+bind status     gpo<ENTER>  !git push %(remote)
+bind main       gpo:        !git push %(remote) :%(branch)
+bind status     gpo:        !git push %(remote) :%(branch)
+bind main       gpoc        !git push %(remote) %(commit):%(prompt)
+bind status     gpoc        !git push %(remote) %(commit):%(prompt)
+bind main       gpof        !git push %(remote) -f
+bind status     gpof        !git push %(remote) -f
+bind main       gpom        !git push %(remote) master
+bind status     gpom        !git push %(remote) master
+bind main       gpoh<ENTER> !git push %(remote) HEAD:%(prompt)
+bind status     gpoh<ENTER> !git push %(remote) HEAD:%(prompt)
+bind main       gpohm       !git push %(remote) HEAD:master
+bind status     gpohm       !git push %(remote) HEAD:master
 bind main       gpu<ENTER>  !git push --set-upstream
 bind status     gpu<ENTER>  !git push --set-upstream
-bind main       gpuo<ENTER> !git push --set-upstream origin
-bind status     gpuo<ENTER> !git push --set-upstream origin
-bind main       gpuof       !git push --set-upstream origin --force
-bind status     gpuof       !git push --set-upstream origin --force
+bind main       gpuo<ENTER> !git push --set-upstream %(remote)
+bind status     gpuo<ENTER> !git push --set-upstream %(remote)
+bind main       gpuof       !git push --set-upstream %(remote) --force
+bind status     gpuof       !git push --set-upstream %(remote) --force
 bind refs       grb         !git rebase %(branch)
 bind main       grba        !git rebase --abort
 bind status     grba        !git rebase --abort
@@ -233,8 +233,8 @@ bind main       grbi        !git rebase --interactive %(commit)
 bind status     grbi        !git rebase --interactive %(commit)
 bind main       grbo        !git rebase --onto %(prompt) %(commit)
 bind status     grbo        !git rebase --onto %(prompt) %(commit)
-bind main       grbm        !git rebase origin/master
-bind status     grbm        !git rebase origin/master
+bind main       grbm        !git rebase %(remote)/master
+bind status     grbm        !git rebase %(remote)/master
 bind main       grsh        !git reset --hard %(commit)
 bind status     grsh        !git reset --hard %(commit)
 bind main       grsm        !git reset --merge
