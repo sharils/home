@@ -143,6 +143,7 @@ bind status     gco<ENTER>  !git checkout %(commit)
 bind refs       gco<ENTER>  !git checkout %(branch)
 bind main       gco-        !git checkout -
 bind status     gco-        !git checkout -
+bind main       gcob        !git checkout -b %(prompt) %(commit)
 bind main       gcop        !git checkout -p
 bind status     gcop        !git checkout -p
 bind main       gco.        !git checkout .
