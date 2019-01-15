@@ -206,8 +206,8 @@ bind main       gpcf        !git push --force %(remote) %(commit):refs/heads/%(p
 bind status     gpcf        !git push --force %(remote) %(commit):refs/heads/%(prompt)
 bind main       gpo<ENTER>  !git push origin
 bind status     gpo<ENTER>  !git push origin
-bind main       gpo:        !git push origin :%(branch)
-bind status     gpo:        !git push origin :%(branch)
+bind main       gpo:        !git push origin :%(prompt)
+bind status     gpo:        !git push origin :%(prompt)
 bind main       gpoc        !git push origin %(commit):%(prompt)
 bind status     gpoc        !git push origin %(commit):%(prompt)
 bind main       gpof        !git push origin -f
