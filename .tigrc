@@ -198,6 +198,10 @@ bind main       gp<ENTER>   !git push
 bind status     gp<ENTER>   !git push
 bind main       gpc<ENTER>  !git push %(remote) %(commit):refs/heads/%(prompt)
 bind status     gpc<ENTER>  !git push %(remote) %(commit):refs/heads/%(prompt)
+bind main       gpcb        !git push %(remote) %(commit):refs/heads/%(branch)
+bind status     gpcb        !git push %(remote) %(commit):refs/heads/%(branch)
+bind main       gpcbf       !git push --force %(remote) %(commit):refs/heads/%(branch)
+bind status     gpcbf       !git push --force %(remote) %(commit):refs/heads/%(branch)
 bind main       gpcf        !git push --force %(remote) %(commit):refs/heads/%(prompt)
 bind status     gpcf        !git push --force %(remote) %(commit):refs/heads/%(prompt)
 bind main       gpo<ENTER>  !git push origin
