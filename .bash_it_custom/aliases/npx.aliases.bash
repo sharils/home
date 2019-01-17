@@ -1,3 +1,4 @@
+alias backstopjs='npx backstopjs '
 alias browser-sync='npx browser-sync '
 alias create-react-app='npx create-react-app '
 alias create-react-native-app='npx create-react-native-app '
