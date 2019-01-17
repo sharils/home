@@ -1,5 +1,6 @@
 set colorcolumn=80
 set directory=~/.cache//
+set foldcolumn=1
 set hidden
 set hlsearch
 set ignorecase
