@@ -164,8 +164,8 @@ bind main       gcrm        !git commit --reuse-message %(commit)
 bind status     gcrm        !git commit --reuse-message %(commit)
 bind main       gc<ENTER>   !git commit -v
 bind status     gc<ENTER>   !git commit -v
-bind main       gca<ENTER>  !git commit -v -a
-bind status     gca<ENTER>  !git commit -v -a
+bind main       gca<ENTER>  !git commit --amend
+bind status     gca<ENTER>  !git commit --amend
 bind main       gcam        !git commit -v -am %(prompt)
 bind status     gcam        !git commit -v -am %(prompt)
 bind main       gcc         !git commit -v -m %(prompt)
