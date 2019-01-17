@@ -20,3 +20,4 @@ alias dkp='docker push'
 
 alias dhttp='docker run --interactive --rm --tty alpine/httpie'
 alias toodles='docker run --interactive --rm --tty --publish 9001:9001 --volume $PWD:/repo aviaviavi/toodles'
+alias wraith='docker run --interactive --rm --tty bbcnews/wraith'
