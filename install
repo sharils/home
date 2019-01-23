@@ -27,6 +27,7 @@ main() {
         fzf \
         git \
         git-crypt \
+        gitup \
         gpg \
         hr \
         httpie \
