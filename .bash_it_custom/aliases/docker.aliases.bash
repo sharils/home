@@ -20,5 +20,6 @@ alias dkp='docker push'
 
 alias bfg='docker run --interactive --rm --tty --volume $PWD:/home/nikovirtala nikovirtala/bfg'
 alias dhttp='docker run --interactive --rm --tty alpine/httpie'
+alias speedtest-cli='docker run --rm moutten/speedtest-cli'
 alias toodles='docker run --interactive --rm --tty --publish 9001:9001 --volume $PWD:/repo aviaviavi/toodles'
 alias wraith='docker run --interactive --rm --tty bbcnews/wraith'
