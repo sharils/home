@@ -133,6 +133,9 @@ bind stage      O           edit
 bind stage      P           !git reset --patch %(file)
 bind stage      U           status-revert
 
+bind main       gau         !git add --update
+bind status     gau         !git add --update
+bind refs       gau         !git add --update
 bind generic    gba         view-refs
 bind refs       gbd         !git branch --delete %(branch)
 bind refs       gbD         !git branch --delete --force %(branch)
