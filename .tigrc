@@ -206,7 +206,7 @@ bind main       gpo<ENTER>  !git push origin
 bind status     gpo<ENTER>  !git push origin
 bind main       gpo:        !git push origin :%(prompt)
 bind status     gpo:        !git push origin :%(prompt)
-bind refs       gpo:        !git push origin :%(prompt)
+bind refs       gpo:        !git push %(remote) :%(branch)
 bind main       gpoc        !git push origin %(commit):%(prompt)
 bind status     gpoc        !git push origin %(commit):%(prompt)
 bind main       gpof        !git push origin -f
