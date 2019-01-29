@@ -170,9 +170,7 @@ bind main       gcam        !git commit -v -am %(prompt)
 bind status     gcam        !git commit -v -am %(prompt)
 bind main       gcc         !git commit -v -m %(prompt)
 bind status     gcc         !git commit -v -m %(prompt)
-bind status     gcc         !git commit -v -m %(prompt)
 bind main       gcm         !git commit -v -m %(prompt)
-bind status     gcm         !git commit -v -m %(prompt)
 bind status     gcm         !git commit -v -m %(prompt)
 bind main       gd          !git diff %(commit) %(head)
 bind status     gd          !git diff %(commit) %(head)
@@ -265,7 +263,6 @@ bind generic    gt<ENTER>   view-refs
 bind refs       gta         !git tag -a
 bind refs       gtd         !git tag -d
 bind refs       gtl         !git tag -l
-
 
 # Colors
 # ------
