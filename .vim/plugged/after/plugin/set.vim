@@ -1,5 +1,6 @@
 set colorcolumn=80
 set directory=~/.cache//
+set expandtab
 set foldcolumn=1
 set hidden
 set hlsearch
@@ -10,6 +11,7 @@ set modeline
 set mouse=a
 set number
 set relativenumber
-set shiftwidth=4
+set shiftwidth=0
 set showcmd
 set smartcase
+set tabstop=4
