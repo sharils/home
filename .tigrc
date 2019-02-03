@@ -210,8 +210,10 @@ bind status     gpo<ENTER>  !git push origin
 bind main       gpo:        !git push origin :%(prompt)
 bind status     gpo:        !git push origin :%(prompt)
 bind refs       gpo:        !git push %(remote) :%(branch)
-bind main       gpoc        !git push origin %(commit):%(prompt)
-bind status     gpoc        !git push origin %(commit):%(prompt)
+bind main       gpoc<ENTER> !git push origin %(commit):%(prompt)
+bind status     gpoc<ENTER> !git push origin %(commit):%(prompt)
+bind main       gpocf       !git push origin -f %(commit):%(prompt)
+bind status     gpocf       !git push origin -f %(commit):%(prompt)
 bind main       gpof        !git push origin -f
 bind status     gpof        !git push origin -f
 bind main       gpom        !git push origin master
