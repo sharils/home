@@ -4,7 +4,9 @@ call plug#begin('~/.vim/plugged')
 Plug '~/.vim/plugged/before'
 
 Plug 'vim-scripts/BufOnly.vim'
+" Plug 'coot/CRDispatcher'
 Plug 'ekalinin/Dockerfile.vim', { 'for': 'dockerfile' }
+" Plug 'coot/EnchantedVim'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --rust-completer' }
 Plug 'jnurmine/Zenburn'
 Plug 'w0rp/ale'
