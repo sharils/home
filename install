@@ -23,6 +23,7 @@ main() {
         erlang \
         exercism \
         fd \
+        fx \
         fpp \
         fzf \
         git \
