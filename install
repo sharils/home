@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# GIPHY Capture. The GIF Maker on the Mac App Store https://itunes.apple.com/app/id668208984
+# Thor on the Mac App Store https://itunes.apple.com/app/thor/id1120999687
+
 main() {
     if [ $# != 1 ]; then
         echo "Usage: $0 <git_global_config_user.signingkey>"
