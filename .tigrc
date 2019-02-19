@@ -177,6 +177,7 @@ bind main       gcm         !git commit -v -m %(prompt)
 bind status     gcm         !git commit -v -m %(prompt)
 bind main       gd          !git diff %(commit) %(head)
 bind status     gd          !git diff %(commit) %(head)
+bind main       gfb         !git filter-branch --force --msg-filter %(prompt) %(commit)..HEAD
 bind main       gf<ENTER>   !git fetch --all --prune
 bind status     gf<ENTER>   !git fetch --all --prune
 bind main       gft<ENTER>  !git fetch --all --prune --tags
