@@ -17,6 +17,7 @@ alias dkvl='docker volume ls'
 alias dkvr='docker volume rm'
 alias dkt='docker tag'
 alias dkp='docker push'
+alias dksd='docker system df'
 
 alias bfg='docker run --interactive --rm --tty --volume $PWD:/home/nikovirtala nikovirtala/bfg'
 alias http='docker run --interactive --rm --tty alpine/httpie'
