@@ -17,6 +17,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'shumphrey/fugitive-gitlab.vim'
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 Plug 'vito-c/jq.vim', { 'for': 'jq' }
+Plug 'alunny/pegjs-vim', { 'for': 'pegjs' }
 Plug 'godlygeek/tabular'
 Plug 'majutsushi/tagbar'
 Plug 'tomtom/tcomment_vim'
