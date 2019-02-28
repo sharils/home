@@ -1,6 +1,7 @@
 alias backstopjs='npx backstopjs '
-alias codecrumbs='npx codecrumbs '
 alias browser-sync='npx browser-sync '
+alias cap='npx --package @capacitor/core --package @capacitor/cli cap '
+alias codecrumbs='npx codecrumbs '
 alias covgen='npx covgen'
 alias create-react-app='npx create-react-app '
 alias create-react-native-app='npx create-react-native-app '
