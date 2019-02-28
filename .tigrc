@@ -266,7 +266,7 @@ bind status     gstP        !git stash pop
 bind main       gstp        !git stash push
 bind status     gstp        !git stash push
 bind generic    gt<ENTER>   view-refs
-bind refs       gta         !git tag -a
+bind main       gta         !git tag -a %(commit)
 bind refs       gtd         !git tag -d
 bind refs       gtl         !git tag -l
 
