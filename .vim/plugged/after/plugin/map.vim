@@ -150,6 +150,7 @@ nmap <LEADER>sfjson :set filetype=json<CR>
 nmap <LEADER>sfjsx :set filetype=javascript.jsx<CR>
 nmap <LEADER>sflua :set filetype=lua<CR>
 nmap <LEADER>sfmd :set filetype=markdown<CR>
+nmap <LEADER>sfpegjs :set filetype=pegjs<CR>
 nmap <LEADER>sfphp :set filetype=php<CR>
 nmap <LEADER>sfpy :set filetype=python<CR>
 nmap <LEADER>sfrs :set filetype=rust<CR>
