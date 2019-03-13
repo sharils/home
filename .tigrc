@@ -232,6 +232,8 @@ bind main       gpuo<ENTER> !git push --set-upstream origin
 bind status     gpuo<ENTER> !git push --set-upstream origin
 bind main       gpuof       !git push --set-upstream origin --force
 bind status     gpuof       !git push --set-upstream origin --force
+bind main       grb<ENTER>  !git rebase %(commit)
+bind status     grb<ENTER>  !git rebase %(commit)
 bind refs       grb<ENTER>  !git rebase %(branch)
 bind main       grba        !git rebase --abort
 bind status     grba        !git rebase --abort
