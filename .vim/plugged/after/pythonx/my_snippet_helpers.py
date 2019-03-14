@@ -29,6 +29,9 @@ def around_for(snip):
 def around_function(snip):
     return re.search('=>|function|^\s+\w+\(.*\)', snip.buffer[snip.line])
 
+def around_import(snip):
+    return 'import' in snip.buffer[snip.line]
+
 def around_json_parse(snip):
     return 'JSON.parse' in snip.v
 
