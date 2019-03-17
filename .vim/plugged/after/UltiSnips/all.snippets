@@ -1,7 +1,35 @@
+snippet #! "#!" b
+#!/usr/bin/env ${1:sh}
+endsnippet
+
+snippet %hgs "%hgs" i
+`!v expand("%:h:gs?[^/][^/]*?..?")`/
+endsnippet
+
+snippet %p. "%:p:." i
+`!v expand("%:p:.")`
+endsnippet
+
+snippet %pht "%pht" i
+`!v expand("%:p:h:t")`
+endsnippet
+
+snippet %tr "%:t:r" i
+`!v expand("%:t:r")`
+endsnippet
+
 snippet ) "()" i
 (
 	$1
 )
+endsnippet
+
+snippet dt "%Y-%m-%d %H:%M:%S" w
+`!v strftime("%Y-%m-%d %H:%M:%S")`
+endsnippet
+
+snippet pt "passthrough" w
+passthrough
 endsnippet
 
 snippet ] "[]" i
@@ -14,28 +42,4 @@ snippet } "{}" i
 {
 	$1
 }
-endsnippet
-
-snippet dt "%Y-%m-%d %H:%M:%S" w
-`!v strftime("%Y-%m-%d %H:%M:%S")`
-endsnippet
-
-snippet %p. "%:p:." i
-`!v expand("%:p:.")`
-endsnippet
-
-snippet %pht "%pht" i
-`!v expand("%:p:h:t")`
-endsnippet
-
-snippet %hgs "%hgs" i
-`!v expand("%:h:gs?[^/][^/]*?..?")`/
-endsnippet
-
-snippet %tr "%:t:r" i
-`!v expand("%:t:r")`
-endsnippet
-
-snippet #! "#!" b
-#!/usr/bin/env ${1:sh}
 endsnippet
