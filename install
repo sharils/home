@@ -59,42 +59,49 @@ main() {
 
     brew cask install \
         chromedriver \
+        chromium \
         clipy \
+        drawio \
         devdocs \
         firefox \
         firefox-developer-edition \
         gimp \
-        google-chrome \
         insomnia \
         karabiner-elements \
         keepassxc \
         keybase \
-        opera \
-        operadriver \
         postman \
         quicklook-json \
         remember-the-milk \
         slack \
         spectacle \
         squirrel \
-        toggl \
         vagrant \
         virtualbox \
-        virtualbox-extension-pack
+        virtualbox-extension-pack \
+        zoomus
 
     brew cask install \
         adobe-acrobat-reader \
-        android-file-transfer \
         anki \
+        brave-browser \
+        google-chrome \
         libreoffice \
         notion \
+        opera \
+        operadriver \
         origin \
         polar-bookshelf \
         rescuetime \
         skype \
         steam \
         syncthing-app \
-        tor-browser
+        toggl \
+        tor-browser \
+        vivaldi
+
+    # brew cask install \
+    #     android-file-transfer \
 
     npm --global install \
         typescript # for YouCompleteMe
