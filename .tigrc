@@ -156,6 +156,8 @@ bind main       gco.        !git checkout .
 bind status     gco.        !git checkout .
 bind main       gcp         !git cherry-pick %(commit)
 bind status     gcp         !git cherry-pick %(commit)
+bind main       gcv         !git cherry %(commit)
+bind status     gcv         !git cherry %(commit)
 bind main       gcf<ENTER>  !git commit --fixup %(commit)
 bind status     gcf<ENTER>  !git commit --fixup %(commit)
 bind main       gcfh        !git commit --fixup %(head)
