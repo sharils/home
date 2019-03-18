@@ -34,6 +34,7 @@ alias gcobu='git checkout -b "$(git config user.email | cut -d@ -f1)/$(git symbo
 alias gcobu='git checkout "$(git config user.email | cut -d@ -f1)/$(git symbolic-ref --short HEAD | cut -d"/" -f2)"'
 alias gcop='git checkout -p'
 alias gcot='git checkout --theirs'
+alias gcv='git cherry -v'
 alias gcrm='git commit --reuse-message'
 alias gcrmh='git commit --reuse-message HEAD'
 alias gd='git diff --patch-with-stat '
