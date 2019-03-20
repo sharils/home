@@ -138,6 +138,8 @@ bind status     gau         !git add --update
 bind refs       gau         !git add --update
 bind main       gap         !git add -p
 bind status     gap         !git add -p
+bind main       ga.         !git add .
+bind status     ga.         !git add .
 bind generic    gba         view-refs
 bind refs       gbd         !git branch --delete %(branch)
 bind refs       gbD         !git branch --delete --force %(branch)
