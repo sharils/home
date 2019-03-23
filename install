@@ -52,6 +52,7 @@ main() {
         tig \
         tldr \
         todo-txt \
+        typescript \
         vim \
         w3m \
         watchman \
@@ -102,9 +103,6 @@ main() {
 
     # brew cask install \
     #     android-file-transfer \
-
-    npm --global install \
-        typescript # for YouCompleteMe
 
     curl https://sh.rustup.rs -sSf | sh
 
