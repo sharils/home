@@ -42,6 +42,6 @@ nmap <leader>yGd :YcmCompleter GetDoc<CR>
 nmap <leader>yfi :YcmCompleter FixIt<CR>
 
 " java, javascript, typescript
-nmap <leader>yr :YcmCompleter RefactorRename<SPACE>
+nmap <leader>yr :YcmCompleter RefactorRename<SPACE><C-R><C-W>
 nmap <leader>yfm :YcmCompleter Format<CR>
 nmap <leader>yo :YcmCompleter OrganizeImports<CR>
