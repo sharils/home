@@ -1,72 +1,71 @@
-priority 3
+priority 2
+
+snippet :a ": any" w
+: any
+endsnippet
 
 snippet :b ": boolean" w
 : boolean
+endsnippet
+
+snippet :m ": null" w
+: null
 endsnippet
 
 snippet :n ": number" w
 : number
 endsnippet
 
-snippet :s ": string" w
-: string
-endsnippet
-
-snippet :a ": any" w
-: any
-endsnippet
-
-snippet :Ob ": Object" w
-: Object
-endsnippet
-
-snippet :v ": void" w
-: void
-endsnippet
-
-snippet :u ": undefined" w
-: undefined
-endsnippet
-
-snippet :nu ": null" w
-: null
-endsnippet
-
 snippet :ne ": never" w
 : never
 endsnippet
 
-snippet :o ": object" w
+snippet :oj ": object" w
 : object
+endsnippet
+
+snippet :oj ": Object" w
+: Object
+endsnippet
+
+snippet :s ": string" w
+: string
 endsnippet
 
 snippet :sy ": symbol" w
 : symbol
 endsnippet
 
-
-priority 2
-
-snippet p "public" w
-public $0
+snippet :u ": undefined" w
+: undefined
 endsnippet
 
-snippet pv "private" w
-private $0
-endsnippet
-
-snippet pt "protected" w
-protected $0
-endsnippet
-
-snippet ro "readonly" w
-readonly $0
+snippet :v ": void" w
+: void
 endsnippet
 
 snippet en "enum" w
 enum $1 { $2 }
 endsnippet
 
-snippet int "interface" w
-interface $1 { $2 }
+snippet in "interface" w
+interface $1 {
+	$2
+}
+endsnippet
+
+snippet p "public" w
+public $0
+endsnippet
+
+snippet pt "protected" w
+protected $0
+endsnippet
+
+snippet pv "private" w
+private $0
+endsnippet
+
+snippet ro "readonly" w
+readonly $0
 endsnippet

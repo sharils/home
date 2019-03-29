@@ -138,6 +138,10 @@ snippet c "const" w
 const $0
 endsnippet
 
+snippet ci "in" w
+const `!p snip.rv = singularize_idx(t[1])` in $1
+endsnippet
+
 snippet d "debugger" w
 debugger
 endsnippet
@@ -148,10 +152,6 @@ endsnippet
 
 snippet fu "function" w
 function $1($2) {$3}
-endsnippet
-
-snippet in "in" w
-const `!p snip.rv = singularize_idx(t[1])` in $1
 endsnippet
 
 snippet io "instanceof" w
