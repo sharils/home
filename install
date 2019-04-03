@@ -71,6 +71,7 @@ main() {
         karabiner-elements \
         keepassxc \
         keybase \
+        mongodb-compass-community \
         postman \
         quicklook-json \
         remember-the-milk \
