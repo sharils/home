@@ -1,1 +1,1 @@
-alias jqp='cat package.json | jq'
+alias jpj='jq < package.json'
