@@ -42,7 +42,10 @@ def around_require(snip):
     return 'require' in snip.buffer[snip.line]
 
 def around_switch(snip):
-    return re.search('break|return|switch', snip.buffer[snip.line - 1])
+    return re.search('break|switch', snip.buffer[snip.line - 1]) or (
+        'case' in snip.buffer[snip.line - 2] and
+        'return' in snip.buffer[snip.line - 1]
+    )
 
 def around_template_string(snip):
     return '`' in snip.buffer[snip.line]
