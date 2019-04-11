@@ -154,6 +154,10 @@ snippet fu "function" w
 function $1($2) {$3}
 endsnippet
 
+snippet i "(() => { $1; return ${VISUAL}; })()" w
+(v => { $1; return v; })(${VISUAL})
+endsnippet
+
 snippet io "instanceof" w
 instanceof $0
 endsnippet
@@ -207,8 +211,4 @@ endsnippet
 
 snippet > "=>" i
 ($1) => {$2}
-endsnippet
-
-snippet i "(() => { $1; return ${VISUAL}; })()" i
-(v => { $1; return v; })(${VISUAL})
 endsnippet
