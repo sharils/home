@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 alias tll='tig'
-alias tga='tig --all'
 alias tlla='tig --all'
 alias td='git diff | tig'
 alias tds='git diff --staged | tig'
