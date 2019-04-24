@@ -63,7 +63,6 @@ main() {
         chromium \
         clipy \
         drawio \
-        devdocs \
         firefox \
         firefox-developer-edition \
         gimp \
@@ -104,6 +103,7 @@ main() {
 
     # brew cask install \
     #     android-file-transfer \
+    #     devdocs \
 
     curl https://sh.rustup.rs -sSf | sh
 
