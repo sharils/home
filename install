@@ -104,6 +104,7 @@ main() {
     # brew cask install \
     #     android-file-transfer \
     #     devdocs \
+    #     squirrel \
 
     curl https://sh.rustup.rs -sSf | sh
 
