@@ -43,6 +43,7 @@ def around_require(snip):
 
 def around_switch(snip):
     return re.search('break|switch', snip.buffer[snip.line - 1]) or (
+        snip.line - 2 >= 0 and
         'case' in snip.buffer[snip.line - 2] and
         'return' in snip.buffer[snip.line - 1]
     )
