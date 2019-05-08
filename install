@@ -55,8 +55,7 @@ main() {
         typescript \
         vim \
         w3m \
-        watchman \
-        yarn
+        watchman
 
     brew cask install \
         chromedriver \
@@ -100,6 +99,9 @@ main() {
         toggl \
         tor-browser \
         vivaldi
+
+    # brew install \
+    #     yarn
 
     # brew cask install \
     #     android-file-transfer \
