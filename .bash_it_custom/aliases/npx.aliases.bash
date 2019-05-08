@@ -1,5 +1,6 @@
 alias backstopjs='npx backstopjs '
 alias browser-sync='npx browser-sync '
+alias browser-syncw='npx browser-sync --no-open --watch'
 alias cap='npx --package @capacitor/core --package @capacitor/cli cap '
 alias codecrumbs='npx codecrumbs '
 alias covgen='npx covgen'
