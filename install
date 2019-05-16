@@ -17,45 +17,50 @@ main() {
 
     brew install \
         autojump \
-        asciinema \
-        bash-completion \
-        bat \
+        cask-repair \
         ctags \
         direnv \
         elixir \
         erlang \
-        exercism \
-        fd \
-        fx \
-        fpp \
         fzf \
         git \
         git-crypt \
-        gitup \
-        gpg \
+        gitlab-gem \
+        gnupg \
         hr \
-        httpie \
         hub \
         jq \
-        lua \
+        mas \
         ncdu \
-        nnn \
+        node \
         node@10 \
         noti \
-        octave \
-        postgresql \
-        python-yq \
         ripgrep \
+        rmtrash \
+        screen \
         shellcheck \
         shfmt \
-        surfraw \
         tig \
         tldr \
-        todo-txt \
         typescript \
         vim \
-        w3m \
-        watchman
+        watchman \
+        zbar
+
+    # brew install \
+    #     asciinema \
+    #     bat \
+    #     exercism \
+    #     fd \
+    #     fpp \
+    #     gitup \
+    #     nnn \
+    #     octave \
+    #     phantomjs \
+    #     python-yq \
+    #     surfraw \
+    #     todo-txt \
+    #     w3m
 
     brew cask install \
         chromedriver \
@@ -99,9 +104,6 @@ main() {
         toggl \
         tor-browser \
         vivaldi
-
-    # brew install \
-    #     yarn
 
     # brew cask install \
     #     android-file-transfer \
@@ -155,7 +157,7 @@ main() {
         ! -name .gitmodules |
         sort |
         sed "s@^.@$PWD@" |
-        xargs -I {} ln -s {} ~
+        xargs -I {} ln -fs {} ~
 
     cp .gitconfig ~
 
