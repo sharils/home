@@ -23,5 +23,7 @@ alias bfg='docker run --interactive --rm --tty --volume $PWD:/home/nikovirtala n
 alias http='docker run --interactive --rm --tty alpine/httpie'
 alias speedtest-cli='docker run --rm moutten/speedtest-cli'
 alias swagger-codegen='docker run --interactive --rm --tty --volume ${PWD}:/${PWD} --workdir ${PWD} swaggerapi/swagger-codegen-cli generate'
+alias swagger-codegenes='docker run --interactive --rm --tty --volume ${PWD}:/${PWD} --workdir ${PWD} swaggerapi/swagger-codegen-cli generate --lang=javascript --additional-properties=usePromises=true,useES6=true'
+alias swagger-codegenjs='docker run --interactive --rm --tty --volume ${PWD}:/${PWD} --workdir ${PWD} swaggerapi/swagger-codegen-cli generate --lang=javascript --additional-properties=usePromises=true'
 alias toodles='docker run --interactive --rm --tty --publish 9001:9001 --volume $PWD:/repo aviaviavi/toodles'
 alias wraith='docker run --interactive --rm --tty bbcnews/wraith'

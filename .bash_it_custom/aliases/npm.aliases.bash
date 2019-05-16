@@ -13,3 +13,6 @@ alias ns='npm start'
 alias nsr='npm search'
 alias nt='npm test'
 alias nv='npm view'
+
+alias pje='jq $". + { \"engines\": { \"node\": \"^$(node -v | cut -c2-)\", \"npm\": \"^$(npm -v)\" } }" <<< "$(cat package.json)" > package.json'
+alias pjp='jq $". + { \"private\": true }" <<< "$(cat package.json)" > package.json'
