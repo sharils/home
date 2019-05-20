@@ -22,6 +22,7 @@ main() {
         direnv \
         elixir \
         erlang \
+        fd \
         fzf \
         git \
         git-crypt \
@@ -51,7 +52,6 @@ main() {
     #     asciinema \
     #     bat \
     #     exercism \
-    #     fd \
     #     fpp \
     #     gitup \
     #     nnn \
