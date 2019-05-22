@@ -45,8 +45,7 @@ main() {
         tldr \
         typescript \
         vim \
-        watchman \
-        zbar
+        watchman
 
     # brew install \
     #     asciinema \
@@ -60,7 +59,8 @@ main() {
     #     python-yq \
     #     surfraw \
     #     todo-txt \
-    #     w3m
+    #     w3m \
+    #     zbar
 
     brew cask install \
         chromedriver \
