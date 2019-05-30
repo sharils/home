@@ -76,14 +76,11 @@ main() {
         keybase \
         mongodb-compass-community \
         postman \
-        quicklook-json \
         remember-the-milk \
         slack \
         spectacle \
-        squirrel \
         vagrant \
         virtualbox \
-        virtualbox-extension-pack \
         zoomus
 
     brew cask install \
@@ -103,11 +100,13 @@ main() {
         syncthing-app \
         toggl \
         tor-browser \
+        virtualbox-extension-pack \
         vivaldi
 
     # brew cask install \
     #     android-file-transfer \
     #     devdocs \
+    #     quicklook-json \
     #     squirrel \
 
     curl https://sh.rustup.rs -sSf | sh
