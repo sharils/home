@@ -110,16 +110,18 @@ main() {
     #     squirrel \
 
     mas install \
-        # com.fasthatchapps.gifgrabberosx (4.1)
-        668208984 \
-        # com.rockysandstudio.Battery-Diag (2.4.3)
+    # com.rockysandstudio.Battery-Diag (2.4.3)
         836505650 \
-        # me.alvinzhu.Thor (1.3.1)
-        1120999687 \
-        # jp.naver.line.mac (5.16.2)
+    # com.fasthatchapps.gifgrabberosx (4.1)
+        668208984 \
+    # jp.naver.line.mac (5.16.2)
         539883307 \
-        # com.readitlater.PocketMac (1.8.2)
-        568494494
+    #app.metacode.metacode (1.8.15)
+        1454994142 \
+    # com.readitlater.PocketMac (1.8.2)
+        568494494 \
+    # me.alvinzhu.Thor (1.3.1)
+        1120999687
 
     curl https://sh.rustup.rs -sSf | sh
 
