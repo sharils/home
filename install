@@ -87,7 +87,6 @@ main() {
         adobe-acrobat-reader \
         anki \
         brave-browser \
-        google-chrome \
         libreoffice \
         notion \
         opera \
@@ -106,6 +105,7 @@ main() {
     # brew cask install \
     #     android-file-transfer \
     #     devdocs \
+    #     google-chrome \
     #     quicklook-json \
     #     squirrel \
 
