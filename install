@@ -104,11 +104,13 @@ main() {
 
     # brew cask install \
     #     android-file-transfer \
-    #     bcinf robo-3t \
     #     devdocs \
     #     google-chrome \
+    #     mongodb-compass \
     #     quicklook-json \
+    #     robo-3t \
     #     squirrel \
+    #     studio-3t \
 
     mas install \
     # com.rockysandstudio.Battery-Diag (2.4.3)
