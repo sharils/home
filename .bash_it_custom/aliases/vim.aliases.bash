@@ -23,8 +23,8 @@ alias vnc='vim next.config.js'
 alias vpj='vim package.json'
 alias vrm='vim README.md'
 alias vsj='vim server.js'
-alias vtgrc='vim ~/.tigrc'
-alias vtorc='vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc'
+alias vtigrc='vim ~/.tigrc'
+alias vtorrc='vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc'
 alias vvrc='vim ~/git/github.com/sharils/home/.vimrc'
 
 alias vt="vim /tmp/$USER-$RANDOM"
