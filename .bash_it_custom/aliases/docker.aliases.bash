@@ -23,6 +23,7 @@ alias bfg='docker run --interactive --rm --tty --volume $PWD:/home/nikovirtala n
 alias http='docker run --interactive --rm --tty alpine/httpie'
 alias mitmproxy='docker run --interactive --rm --tty --publish 8080:8080 --publish 127.0.0.1:8081:8081 mitmweb --web-iface 0.0.0.0'
 alias mitmproxyv='docker run --interactive --rm --tty --publish 8080:8080 --publish 127.0.0.1:8081:8081 --volume ~/.mitmproxy:/home/mitmproxy/.mitmproxy mitmproxy/mitmproxy mitmweb --web-iface 0.0.0.0'
+alias now='docker run --interactive --rm --tty --volume "$PWD/root/.now:/root/.now" smutdose/now'
 alias speedtest-cli='docker run --rm moutten/speedtest-cli'
 alias swagger-codegen='docker run --interactive --rm --tty --volume ${PWD}:/${PWD} --workdir ${PWD} swaggerapi/swagger-codegen-cli generate'
 alias swagger-codegenes='docker run --interactive --rm --tty --volume ${PWD}:/${PWD} --workdir ${PWD} swaggerapi/swagger-codegen-cli generate --lang=javascript --additional-properties=usePromises=true,useES6=true'
