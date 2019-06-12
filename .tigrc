@@ -232,8 +232,8 @@ bind main       gpohm       !git push origin %(head):master
 bind status     gpohm       !git push origin %(head):master
 bind main       gpu<ENTER>  !git push --set-upstream
 bind status     gpu<ENTER>  !git push --set-upstream
-bind main       gpuo<ENTER> !git push --set-upstream origin
-bind status     gpuo<ENTER> !git push --set-upstream origin
+bind main       gpuo<ENTER> !git push --set-upstream origin %(branch)
+bind status     gpuo<ENTER> !git push --set-upstream origin %(branch)
 bind main       gpuof       !git push --set-upstream origin --force
 bind status     gpuof       !git push --set-upstream origin --force
 bind main       grb<ENTER>  !git rebase %(commit)
