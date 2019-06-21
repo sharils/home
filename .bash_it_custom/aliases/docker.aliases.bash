@@ -20,6 +20,8 @@ alias dkp='docker push'
 alias dksd='docker system df'
 
 alias bfg='docker run --interactive --rm --tty --volume $PWD:/home/nikovirtala nikovirtala/bfg'
+alias gcloud='docker run --interactive --tty --name gcloud-config google/cloud-sdk:alpine gcloud'
+alias gsutil'docker run --interactive --rm --tty --volumes-from gcloud-config google/cloud-sdk:alpine gsutil'
 alias http='docker run --rm alpine/httpie'
 alias mitmproxy='docker run --interactive --rm --tty --publish 8080:8080 --publish 127.0.0.1:8081:8081 mitmweb --web-iface 0.0.0.0'
 alias mitmproxyv='docker run --interactive --rm --tty --publish 8080:8080 --publish 127.0.0.1:8081:8081 --volume ~/.mitmproxy:/home/mitmproxy/.mitmproxy mitmproxy/mitmproxy mitmweb --web-iface 0.0.0.0'
