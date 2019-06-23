@@ -107,10 +107,13 @@ main() {
     #     devdocs \
     #     google-chrome \
     #     mongodb-compass \
+    #     mongodb-compass-isolated-edition \
+    #     mongodb-compass-readonly \
     #     quicklook-json \
     #     robo-3t \
     #     squirrel \
     #     studio-3t \
+
 
     mas install \
     # com.rockysandstudio.Battery-Diag (2.4.3)
