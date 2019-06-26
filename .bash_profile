@@ -61,3 +61,5 @@ source ~/.bashrc
 # Load Bash It
 # shellcheck source=.bash_it/bash_it.sh
 source "$BASH_IT"/bash_it.sh
+
+export LC_ALL=en_US.UTF-8
