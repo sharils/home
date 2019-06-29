@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-# GIPHY Capture. The GIF Maker on the Mac App Store https://itunes.apple.com/app/id668208984
-# Thor on the Mac App Store https://itunes.apple.com/app/thor/id1120999687
+# Go Mono https://blog.golang.org/go-fonts#TOC_2.
 
 main() {
     if [ $# != 1 ]; then
@@ -122,7 +121,7 @@ main() {
         668208984 \
     # jp.naver.line.mac (5.16.2)
         539883307 \
-    #app.metacode.metacode (1.8.15)
+    # app.metacode.metacode (1.8.15)
         1454994142 \
     # com.readitlater.PocketMac (1.8.2)
         568494494 \
