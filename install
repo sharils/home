@@ -66,6 +66,7 @@ main() {
         chromium \
         clipy \
         drawio \
+        dropbox \
         firefox \
         firefox-developer-edition \
         gimp \
@@ -80,6 +81,7 @@ main() {
         spectacle \
         vagrant \
         virtualbox \
+        zoho-mail \
         zoomus
 
     brew cask install \
