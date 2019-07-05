@@ -38,7 +38,7 @@ Plug 'moll/vim-node', { 'for': 'jsx' }
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'tpope/vim-obsession'
 Plug 'sheerun/vim-polyglot'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-sensible'
