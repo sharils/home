@@ -19,6 +19,7 @@ alias dkt='docker tag'
 alias dkp='docker push'
 alias dksd='docker system df'
 
+alias aws='docker run --interactive --rm --tty -e AWS_ACCESS_KEY_ID -e AWS_DEFAULT_REGION -e AWS_SECRET_ACCESS_KEY mesosphere/aws-cli'
 alias bfg='docker run --interactive --rm --tty --volume $PWD:/home/nikovirtala nikovirtala/bfg'
 alias gcloud='docker run --interactive --tty --name gcloud-config google/cloud-sdk:alpine gcloud'
 alias gsutil='docker run --interactive --rm --tty --volumes-from gcloud-config google/cloud-sdk:alpine gsutil'

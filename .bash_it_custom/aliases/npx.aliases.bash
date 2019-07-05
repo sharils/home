@@ -1,39 +1,84 @@
+# Catch CSS curve balls
 alias backstopjs='npx backstopjs '
+
 alias browser-sync='npx browser-sync '
 alias browser-syncw='npx browser-sync --no-open --watch'
+
+# BundlePhobia ❘ cost of adding a npm package
+alias bundle-phobia='npx bundle-phobia-cli '
+
+# Capacitor: Universal Web Applications
 alias cap='npx --package @capacitor/core --package @capacitor/cli cap '
+
+# Codecrumbs standalone: learn and share your code knowledge!
 alias codecrumbs='npx codecrumbs '
-alias covgen='npx covgen'
+
+# `covgen` generates a code of conduct.
+alias covgen='npx covgen '
+
 alias create-react-app='npx create-react-app '
+
 alias create-react-native-app='npx create-react-native-app '
+
 alias cypress='npx cypress '
+
 alias eslint='npx eslint '
 alias eslintf='npx eslint --fix .'
-alias gemini='npx gemini '
+
 alias gitignore='npx gitignore '
+
 alias healthier='npx healthier '
+
+alias httpbin='npx npx @buzuli/httpbin '
+
 alias insomniac='npx insomniac '
+
 alias jscodeshift='npx jscodeshift '
+
 alias jscpd='npx jscpd '
+
 alias jsinspect='npx jsinspect '
+
 alias krampus='npx krampus '
+
 alias lerna='npx lerna '
-alias license='npx license '
+
 alias license-checker='npx license-checker '
+
+alias license='npx license '
+
 alias ncu='npx npm-check-updates '
+
 alias neutrinojs-project='npx @neutrinojs/create-project '
+
 alias newman='npx newman '
+
+alias nginx-linter='npx nginx-linter '
+
 alias npm-check='npx npm-check '
+
 alias nwb='npx nwb '
+
 alias pack='npx @pika/pack '
+
+alias packagephobia-cli='npx packagephobia-cli '
+
 alias pegjs='npx pegjs'
-alias prettier='npx prettier '
-alias prettierjs=$'npx prettier --write \'*.js\' \'**/*.js\' '
+
 alias prettier-package-json='npx prettier-package-json'
 alias prettier-package-jsonw='npx prettier-package-json --write'
+
+alias prettier='npx prettier '
+alias prettierjs=$'npx prettier --write \'*.js\' \'**/*.js\' '
+
 alias resume='npx resume-cli '
+
 alias selenium-side-runner='npx selenium-side-runner '
+
 alias serve='npx serve '
+
 alias tldr='npx tldr '
+
 alias yarn='npx yarn'
+
 alias zero='npx zero '
