@@ -13,6 +13,9 @@ alias cap='npx --package @capacitor/core --package @capacitor/cli cap '
 # Codecrumbs standalone: learn and share your code knowledge!
 alias codecrumbs='npx codecrumbs '
 
+# Find out which of your dependencies is slowing you down
+alias cost-of-modules='npx cost-of-modules '
+
 # `covgen` generates a code of conduct.
 alias covgen='npx covgen '
 
