@@ -7,7 +7,7 @@ set hlsearch
 set ignorecase
 set linebreak
 set list
-set listchars=eol:↵,tab:«\ »,trail:·,extends:›,precedes:‹,nbsp:⋯
+set listchars=tab:«\ »,trail:·,extends:›,precedes:‹,nbsp:⋯
 set modeline
 set mouse=a
 set number
