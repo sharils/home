@@ -60,6 +60,9 @@ alias nginx-linter='npx nginx-linter '
 
 alias npm-check='npx npm-check '
 
+# npm-merge-driver(1) -- git merge driver for automatic merging of lockfiles
+alias npm-merge-driver='npx npm-merge-driver '
+
 alias nwb='npx nwb '
 
 alias pack='npx @pika/pack '
