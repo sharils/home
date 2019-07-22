@@ -177,10 +177,13 @@ main() {
         -name '.*' \
         ! -name .git \
         ! -name .gitconfig \
-        ! -name .gitmodules |
+        ! -name .gitmodules \
+        ! -name .todo |
         sort |
         sed "s@^.@$PWD@" |
         xargs -I {} ln -fs {} ~
+
+    mkdir -p ~/.todo/ && ln -fs "$PWD/.todo/config" ~/.todo/config
 
     cp .gitconfig ~
 
