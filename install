@@ -61,6 +61,9 @@ main() {
     #     w3m \
     #     zbar
 
+    # brew tap browsh-org/homebrew-browsh && \
+    #     brew install browsh-org/browsh/browsh
+
     brew cask install \
         chromedriver \
         chromium \

@@ -83,8 +83,6 @@ alias selenium-side-runner='npx selenium-side-runner '
 
 alias serve='npx serve '
 
-alias tldr='npx tldr '
-
 alias yarn='npx yarn'
 
 alias zero='npx zero '
