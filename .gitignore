@@ -5,6 +5,7 @@ __pycache__
 /.bash_it_custom/aliases/custom.aliases.bash
 /.bash_it_custom/completion/custom.completion.bash
 /.bash_it_custom/plugins/custom.plugins.bash
+/.todo
 /.vim/.netrwhist
 /.vim/plugged/*
 !.vim/plugged/after

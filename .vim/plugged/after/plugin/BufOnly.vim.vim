@@ -1,1 +1,1 @@
-nmap <LEADER>bo :BufOnly<CR>
+" nmap <LEADER>bo :BufOnly<CR>
