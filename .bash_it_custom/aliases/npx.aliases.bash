@@ -19,6 +19,8 @@ alias cost-of-modules='npx cost-of-modules '
 # `covgen` generates a code of conduct.
 alias covgen='npx covgen '
 
+alias create-next-app='npx create-next-app '
+
 alias create-react-app='npx create-react-app '
 
 alias create-react-native-app='npx create-react-native-app '
