@@ -22,7 +22,7 @@ class $1 extends React.Component {
 }
 endsnippet
 
-snippet gss "getSnapshotBeforeUpdate" b
+snippet gsbu "getSnapshotBeforeUpdate" b
 getSnapshotBeforeUpdate(prevProps, prevState) {
 	$2
 }
@@ -34,13 +34,13 @@ static componentDidCatch(props, state) {
 }
 endsnippet
 
-snippet dsp "getDerivedStateFromError" b
+snippet gds "getDerivedStateFromError" b
 static getDerivedStateFromError(props, state) {
 	$2
 }
 endsnippet
 
-snippet dsp "getDerivedStateFromProps" b
+snippet gds "getDerivedStateFromProps" b
 static getDerivedStateFromProps(props, state) {
 	$2
 }
@@ -52,25 +52,19 @@ shouldComponentUpdate(nextProps, nextState) {
 }
 endsnippet
 
-snippet cwu "componentDidUpdate" b
-componentDidUpdate() {
-	$2
-}
-endsnippet
-
 snippet cdu "componentDidUpdate" b
 componentDidUpdate() {
 	$2
 }
 endsnippet
 
-snippet cdn "componentDidMount" b
+snippet cdm "componentDidMount" b
 componentDidMount() {
 	$2
 }
 endsnippet
 
-snippet rd "render" b
+snippet rr "render" b
 render() {
 	$2
 }
