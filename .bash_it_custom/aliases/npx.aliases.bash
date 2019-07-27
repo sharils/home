@@ -38,6 +38,9 @@ alias httpbin='npx npx @buzuli/httpbin '
 
 alias insomniac='npx insomniac '
 
+# 😎 Supercharged JavaScript REPL
+alias jay='npx jay-repl '
+
 alias jscodeshift='npx jscodeshift '
 
 alias jscpd='npx jscpd '
