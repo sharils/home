@@ -43,3 +43,7 @@ snippet } "{}" i
 	$1
 }
 endsnippet
+
+snippet todo "TODO: " b
+TODO (${2:`git config --get user.name`}): $1
+endsnippet
