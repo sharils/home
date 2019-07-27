@@ -183,6 +183,7 @@ main() {
         sed "s@^.@$PWD@" |
         xargs -I {} ln -fs {} ~
 
+    mkdir -p ~/.gnupg/ && ln -fs "$PWD/.gnupg/gpg-agent.conf" ~/.gnupg/gpg-agent.conf
     mkdir -p ~/.todo/ && ln -fs "$PWD/.todo/config" ~/.todo/config
 
     cp .gitconfig ~
