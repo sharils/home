@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 todoinit() {
     local TODO_CONFIG='.todo/config'
 
@@ -7,3 +9,9 @@ todoinit() {
     rm "$TODO_CONFIG.bak" && \
     echo 'export TODOTXT_CFG_FILE=$PWD/$TODO_CONFIG'
 }
+
+for priority in {a..z}; do
+    eval $"ta$priority() { todo.sh add \"($priority) \$*\"; }"
+    eval $"tp$priority() { todo.sh pri \"\$*\" $priority; }"
+done
+unset priority
