@@ -92,7 +92,6 @@ main() {
         anki \
         brave-browser \
         libreoffice \
-        notion \
         opera \
         operadriver \
         origin \
@@ -113,6 +112,7 @@ main() {
     #     mongodb-compass \
     #     mongodb-compass-isolated-edition \
     #     mongodb-compass-readonly \
+    #     notion \
     #     quicklook-json \
     #     robo-3t \
     #     squirrel \
