@@ -68,7 +68,6 @@ main() {
         chromedriver \
         chromium \
         clipy \
-        drawio \
         dropbox \
         firefox \
         firefox-developer-edition \
@@ -109,6 +108,7 @@ main() {
     # brew cask install \
     #     android-file-transfer \
     #     devdocs \
+    #     drawio \
     #     google-chrome \
     #     mongodb-compass \
     #     mongodb-compass-isolated-edition \
