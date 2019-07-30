@@ -121,17 +121,21 @@ main() {
 
 
     mas install \
-    # com.rockysandstudio.Battery-Diag (2.4.3)
+    # Battery-Diag (2.4.3)
         836505650 \
-    # com.fasthatchapps.gifgrabberosx (4.1)
+    # Be Focused (1.7.5)
+        973134470 \
+    # gifgrabberosx (4.1)
         # 668208984 \
-    # jp.naver.line.mac (5.16.2)
+    # KeyboardLocker (1.0)
+        1444996429 \
+    # LINE (5.16.2)
         539883307 \
-    # app.metacode.metacode (1.8.15)
+    # metacode (1.8.15)
         1454994142 \
-    # com.readitlater.PocketMac (1.8.2)
-        568494494 \
-    # me.alvinzhu.Thor (1.3.1)
+    # PocketMac (1.8.2)
+        # 568494494 \
+    # Thor (1.3.1)
         1120999687
 
     curl https://sh.rustup.rs -sSf | sh
