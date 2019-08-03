@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+export TODOTXT_DATE_ON_ADD=1
 
 todoinit() {
     local TODO_CONFIG='.todo/config'

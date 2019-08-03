@@ -40,7 +40,7 @@ export REPORT_FILE="$TODO_DIR/report.txt"
 # export LIGHT_PURPLE='\\033[1;35m'
 # export LIGHT_CYAN='\\033[1;36m'
 # export WHITE='\\033[1;37m'
-# export DEFAULT='\\033[0m'
+export DEFAULT='\\033[0m'
 
 # === COLORS ===
 
@@ -56,6 +56,21 @@ export REPORT_FILE="$TODO_DIR/report.txt"
 # export PRI_C=$LIGHT_BLUE    # color for C priority
 # export PRI_D=...            # define your own
 # export PRI_X=$WHITE         # color unless explicitly defined
+
+export PRI_A=$WHITE           # color for A priority
+export PRI_B=$LIGHT_PURPLE    # color for A priority
+export PRI_C=$PURPLE          # color for B priority
+export PRI_D=$LIGHT_RED       # color for C priority
+export PRI_E=$RED             # define your own
+export PRI_F=$YELLOW          # define your own
+export PRI_G=$BROWN           # define your own
+export PRI_H=$LIGHT_GREEN     # define your own
+export PRI_I=$GREEN           # define your own
+export PRI_J=$LIGHT_CYAN      # define your own
+export PRI_K=$CYAN            # define your own
+export PRI_L=$LIGHT_BLUE      # define your own
+export PRI_M=$BLUE            # define your own
+export PRI_N=$DARK_GREY       # define your own
 
 # There is highlighting for tasks that have been done,
 # but haven't been archived yet.
@@ -74,8 +89,8 @@ export REPORT_FILE="$TODO_DIR/report.txt"
 # TODOTXT_SORT_COMMAND will filter after line numbers are
 # inserted, but before colorization, and before hiding of
 # priority, context, and project.
-#
-# export TODOTXT_SORT_COMMAND='env LC_COLLATE=C sort -f -k2'
+
+export TODOTXT_SORT_COMMAND='env LC_COLLATE=C sort -f -k2 -r'
 
 # TODOTXT_FINAL_FILTER will filter list output after colorization,
 # priority hiding, context hiding, and project hiding. That is,
