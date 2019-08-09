@@ -9,6 +9,7 @@ alias dkbs='docker stop ${USER}_$(dkbasename)'
 alias dkrr='docker run --interactive --rm --tty --volume $PWD:$PWD --workdir $PWD'
 alias dkru='docker run --interactive --rm --tty --user $UID:$(id -g) --volume $PWD:$PWD --workdir $PWD'
 
+alias dkdi='ncdu --exclude-from .dockerignore'
 alias dkri='docker rmi'
 alias dkrm='docker rm'
 alias dkrmf='docker rm --force'
