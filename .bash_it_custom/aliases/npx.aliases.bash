@@ -88,6 +88,9 @@ alias selenium-side-runner='npx selenium-side-runner '
 
 alias serve='npx serve '
 
+# Quickly try out npm packages inside a container.
+alias try='npx try-pkg'
+
 alias yarn='npx yarn'
 
 alias zero='npx zero '
