@@ -177,13 +177,21 @@ main() {
         git \
         todo
 
+
     find . \
         -depth 1 \
-        -name '.*' \
-        ! -name .git \
-        ! -name .gitconfig \
-        ! -name .gitmodules \
-        ! -name .todo |
+        -name .bash_it_custom \
+        -name .bash_profile \
+        -name .bashrc \
+        -name .ctags \
+        -name .curlrc \
+        -name .fzf.bash \
+        -name .gitignore \
+        -name .inputrc \
+        -name .surfraw.conf \
+        -name .tigrc \
+        -name .vim \
+        -name .vimrc |
         sort |
         sed "s@^.@$PWD@" |
         xargs -I {} ln -fs {} ~
