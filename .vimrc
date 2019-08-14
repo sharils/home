@@ -21,6 +21,7 @@ Plug 'alunny/pegjs-vim', { 'for': 'pegjs' }
 Plug 'godlygeek/tabular'
 Plug 'majutsushi/tagbar'
 Plug 'tomtom/tcomment_vim'
+Plug 'freitass/todo.txt-vim'
 Plug 'SirVer/ultisnips'
 Plug 'tpope/vim-abolish'
 Plug 'PeterRincker/vim-argumentative'
