@@ -63,6 +63,7 @@ alias newman='npx newman '
 
 alias nginx-linter='npx nginx-linter '
 
+# Easily find and remove old and heavy node_modules folders ✨
 alias npkill='npx npkill '
 
 alias npm-check='npx npm-check '
