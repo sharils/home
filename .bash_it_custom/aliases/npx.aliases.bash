@@ -68,6 +68,9 @@ alias npm-check='npx npm-check '
 # npm-merge-driver(1) -- git merge driver for automatic merging of lockfiles
 alias npm-merge-driver='npx npm-merge-driver '
 
+# Run any Node.js version
+alias nve='npx nve '
+
 alias nwb='npx nwb '
 
 alias pack='npx @pika/pack '
