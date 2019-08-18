@@ -63,6 +63,8 @@ alias newman='npx newman '
 
 alias nginx-linter='npx nginx-linter '
 
+alias npkill='npx npkill '
+
 alias npm-check='npx npm-check '
 
 # npm-merge-driver(1) -- git merge driver for automatic merging of lockfiles
