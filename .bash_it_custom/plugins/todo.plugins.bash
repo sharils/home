@@ -13,7 +13,7 @@ todoinit() {
     echo 'export TODOTXT_CFG_FILE=$PWD/$TODO_CONFIG'
 }
 
-for priority in {a..z}; do
+for priority in {a..n}; do
     eval $"ta$priority() { todo.sh add \"($priority) \$*\"; }"
     eval $"tp$priority() { for id in \"\$@\"; do todo.sh pri \"\$id\" $priority; done }"
 done
