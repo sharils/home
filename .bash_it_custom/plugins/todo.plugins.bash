@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+export TODOTXT_AUTO_ARCHIVE=0
 export TODOTXT_DATE_ON_ADD=1
 
 todoinit() {
