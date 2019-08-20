@@ -57,30 +57,30 @@ export DEFAULT='\\033[0m'
 # export PRI_D=...            # define your own
 # export PRI_X=$WHITE         # color unless explicitly defined
 
-export PRI_A=$WHITE           # color for A priority
-export PRI_B=$LIGHT_PURPLE    # color for A priority
-export PRI_C=$PURPLE          # color for B priority
-export PRI_D=$LIGHT_RED       # color for C priority
-export PRI_E=$RED             # define your own
-export PRI_F=$YELLOW          # define your own
-export PRI_G=$BROWN           # define your own
-export PRI_H=$LIGHT_GREEN     # define your own
-export PRI_I=$GREEN           # define your own
-export PRI_J=$LIGHT_CYAN      # define your own
-export PRI_K=$CYAN            # define your own
-export PRI_L=$LIGHT_BLUE      # define your own
-export PRI_M=$BLUE            # define your own
-export PRI_N=$DARK_GREY       # define your own
+export PRI_A=$DARK_GREY       # color for A priority
+export PRI_B=$WHITE           # color for B priority
+export PRI_C=$LIGHT_PURPLE    # color for C priority
+export PRI_D=$PURPLE          # define your own
+export PRI_E=$LIGHT_RED       # define your own
+export PRI_F=$RED             # define your own
+export PRI_G=$YELLOW          # define your own
+export PRI_H=$BROWN           # define your own
+export PRI_I=$LIGHT_GREEN     # define your own
+export PRI_J=$GREEN           # define your own
+export PRI_K=$LIGHT_CYAN      # define your own
+export PRI_L=$CYAN            # define your own
+export PRI_M=$LIGHT_BLUE      # define your own
+export PRI_N=$BLUE            # define your own
 
 # There is highlighting for tasks that have been done,
 # but haven't been archived yet.
-#
-# export COLOR_DONE=$LIGHT_GREY
+
+export COLOR_DONE=$DARK_GREY
 
 # There is highlighting for projects and contexts.
-#
-# export COLOR_PROJECT=$RED
-# export COLOR_CONTEXT=$RED
+
+export COLOR_PROJECT=$RED
+export COLOR_CONTEXT=$RED
 
 # === BEHAVIOR ===
 
