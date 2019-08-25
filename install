@@ -19,13 +19,10 @@ main() {
         cask-repair \
         ctags \
         direnv \
-        elixir \
-        erlang \
         fd \
         fzf \
         git \
         git-crypt \
-        gitlab-gem \
         gnupg \
         hr \
         hub \
@@ -36,12 +33,9 @@ main() {
         node@10 \
         noti \
         ripgrep \
-        rmtrash \
-        screen \
         shellcheck \
         shfmt \
         tig \
-        tldr \
         typescript \
         vim \
         watchman
@@ -49,48 +43,59 @@ main() {
     # brew install \
     #     asciinema \
     #     bat \
+    #     elixir \
+    #     erlang \
     #     exercism \
     #     fpp \
+    #     gitlab-gem \
     #     gitup \
     #     nnn \
     #     octave \
+    #     rmtrash \
     #     phantomjs \
     #     python-yq \
     #     surfraw \
+    #     screen \
     #     todo-txt \
     #     w3m \
+    #     tldr \
     #     zbar
 
     # brew tap browsh-org/homebrew-browsh && \
     #     brew install browsh-org/browsh/browsh
 
     brew cask install \
-        chromedriver \
         chromium \
         clipy \
-        dropbox \
         firefox \
         firefox-developer-edition \
         gimp \
-        insomnia \
         karabiner-elements \
         keepassxc \
         keybase \
-        mongodb-compass-community \
-        postman \
+        mongodb-compass \
+        mongodb-compass-readonly \
         remember-the-milk \
         slack \
         spectacle \
         vagrant \
         virtualbox \
-        zoho-mail \
         zoomus
+
+    brew cask install \
+        dropbox \
+        wechatwebdevtools \
+        xmind-zen \
+        zoho-mail
+
+    brew cask install \
+        postman
 
     brew cask install \
         adobe-acrobat-reader \
         anki \
         brave-browser \
-        libreoffice \
+        chromedriver \
         michaelvillar-timer \
         opera \
         operadriver \
@@ -110,6 +115,8 @@ main() {
     #     devdocs \
     #     drawio \
     #     google-chrome \
+    #     insomnia \
+    #     libreoffice \
     #     mongodb-compass \
     #     mongodb-compass-isolated-edition \
     #     mongodb-compass-readonly \

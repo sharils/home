@@ -7,9 +7,8 @@ nmap <LEADER>gce :Gcommit --amend --no-edit<CR>
 nmap <LEADER>gcw :Gcommit --amend --only<CR>
 nmap <LEADER>gcva :Gcommit --verbose --amend<CR>
 nmap <LEADER>gcvc :Gcommit --verbose<CR>
-nmap <LEADER>gD :Gdiff<CR>
-nmap <LEADER>gds :Gsdiff<CR>
-nmap <LEADER>gdv :Gvdiff<CR>
+nmap <LEADER>gds :Gdiffsplit<CR>
+nmap <LEADER>gdv :Gvdiffsplit<CR>
 nmap <LEADER>gO :Gtabedit<CR>
 nmap <LEADER>go :Gsplit<CR>
 nmap <LEADER>gS :Gvsplit<CR>
