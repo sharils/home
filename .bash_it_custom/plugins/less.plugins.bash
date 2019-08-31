@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-export LESS=i
+export LESS='--ignore-case --RAW-CONTROL-CHARS'
