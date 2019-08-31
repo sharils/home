@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-export LESS='--ignore-case --RAW-CONTROL-CHARS'
+export LESS='--RAW-CONTROL-CHARS --ignore-case --no-init --quit-if-one-screen'
