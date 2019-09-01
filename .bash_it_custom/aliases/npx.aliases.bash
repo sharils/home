@@ -88,6 +88,8 @@ alias prettier-package-jsonw='npx prettier-package-json --write'
 alias prettier='npx prettier '
 alias prettierjs=$'npx prettier --write \'*.js\' \'**/*.js\' '
 
+alias readme-md-generator='npx readme-md-generator'
+
 alias resume='npx resume-cli '
 
 alias selenium-side-runner='npx selenium-side-runner '
