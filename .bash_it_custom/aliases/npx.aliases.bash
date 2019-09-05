@@ -31,6 +31,7 @@ alias eslint='npx eslint '
 alias eslintf='npx eslint --fix .'
 
 alias gitignore='npx gitignore '
+alias gitignoren='npx gitignore node'
 
 alias healthier='npx healthier '
 
