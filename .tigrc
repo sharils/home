@@ -144,6 +144,9 @@ bind generic    gba         view-refs
 bind refs       gbd         !git branch --delete %(branch)
 bind refs       gbD         !git branch --delete --force %(branch)
 bind refs       gbm         !git branch --move %(branch) %(prompt)
+bind main       gbb         !git bisect bad
+bind main       gbg         !git bisect good
+bind main       gbrs        !git bisect reset
 bind main       gbs         !git bisect start %(head) %(commit)
 bind main       gco<ENTER>  !git checkout %(commit)
 bind status     gco<ENTER>  !git checkout %(commit)
@@ -181,6 +184,7 @@ bind main       gcam        !git commit -v -am %(prompt)
 bind status     gcam        !git commit -v -am %(prompt)
 bind main       gcc         !git commit -v -m %(prompt)
 bind status     gcc         !git commit -v -m %(prompt)
+bind status     gclean      !git clean -d --force %(file)
 bind main       gcm         !git commit -v -m %(prompt)
 bind status     gcm         !git commit -v -m %(prompt)
 bind main       gd          !git diff %(commit) %(head)
