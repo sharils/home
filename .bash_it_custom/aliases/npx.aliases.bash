@@ -100,6 +100,9 @@ alias serve='npx serve '
 # Quickly try out npm packages inside a container.
 alias try='npx try-pkg'
 
+# Automatically change your desktop image every 21600 seconds
+alias unsplash-so-fancy='npx unsplash-so-fancy '
+
 alias yarn='npx yarn'
 
 alias zero='npx zero '
