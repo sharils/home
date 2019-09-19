@@ -15,7 +15,6 @@ todoinit() {
 }
 
 for priority in {a..n}; do
-    eval $"ta$priority() { todo.sh add \"($priority) \$*\"; }"
     eval $"tp$priority() { for id in \"\$@\"; do todo.sh pri \"\$id\" $priority; done }"
 done
 unset priority

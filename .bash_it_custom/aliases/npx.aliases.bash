@@ -103,6 +103,10 @@ alias try='npx try-pkg'
 # Automatically change your desktop image every 21600 seconds
 alias unsplash-so-fancy='npx unsplash-so-fancy '
 
+# 📦🔐A lightweight private npm proxy registry https://www.verdaccio.org/
+# NPM_CONFIG_REGISTRY=http://localhost:4873 npm i
+alias verdaccio='npx verdaccio'
+
 alias yarn='npx yarn'
 
 alias zero='npx zero '
