@@ -185,20 +185,21 @@ main() {
         todo
 
 
-    find . \
-        -depth 1 \
-        -name .bash_it_custom \
-        -name .bash_profile \
-        -name .bashrc \
-        -name .ctags \
-        -name .curlrc \
-        -name .fzf.bash \
-        -name .gitignore \
-        -name .inputrc \
-        -name .surfraw.conf \
-        -name .tigrc \
-        -name .vim \
-        -name .vimrc |
+    find . \( \
+            -name .bash_it_custom -or \
+            -name .bash_profile -or \
+            -name .bashrc -or \
+            -name .ctags -or \
+            -name .curlrc -or \
+            -name .fzf.bash -or \
+            -name .gitignore -or \
+            -name .inputrc -or \
+            -name .npmrc -or \
+            -name .surfraw.conf -or \
+            -name .tigrc -or \
+            -name .vim -or \
+            -name .vimrc \
+        \) -depth 1 |
         sort |
         sed "s@^.@$PWD@" |
         xargs -I {} ln -fs {} ~
