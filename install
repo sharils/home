@@ -194,7 +194,6 @@ main() {
             -name .fzf.bash -or \
             -name .gitignore -or \
             -name .inputrc -or \
-            -name .npmrc -or \
             -name .surfraw.conf -or \
             -name .tigrc -or \
             -name .vim -or \
@@ -207,7 +206,7 @@ main() {
     mkdir -p ~/.gnupg/ && ln -fs "$PWD/.gnupg/gpg-agent.conf" ~/.gnupg/gpg-agent.conf
     mkdir -p ~/.todo/ && ln -fs "$PWD/.todo/config" ~/.todo/config
 
-    cp .gitconfig ~
+    cp .gitconfig .npmrc ~
 
     mkdir -p ~/.cache/vim-gutentags
 
