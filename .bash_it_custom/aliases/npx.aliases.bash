@@ -1,112 +1,112 @@
 # Catch CSS curve balls
-alias backstopjs='npx backstopjs '
+alias backstopjs='pnpx backstopjs '
 
-alias browser-sync='npx browser-sync '
-alias browser-syncw='npx browser-sync --no-open --watch'
+alias browser-sync='pnpx browser-sync '
+alias browser-syncw='pnpx browser-sync --no-open --watch'
 
 # BundlePhobia ❘ cost of adding a npm package
-alias bundle-phobia='npx bundle-phobia-cli '
+alias bundle-phobia='pnpx bundle-phobia-cli '
 
 # Capacitor: Universal Web Applications
-alias cap='npx --package @capacitor/core --package @capacitor/cli cap '
+alias cap='pnpx --package @capacitor/core --package @capacitor/cli cap '
 
 # Codecrumbs standalone: learn and share your code knowledge!
-alias codecrumbs='npx codecrumbs '
+alias codecrumbs='pnpx codecrumbs '
 
 # Find out which of your dependencies is slowing you down
-alias cost-of-modules='npx cost-of-modules '
+alias cost-of-modules='pnpx cost-of-modules '
 
 # `covgen` generates a code of conduct.
-alias covgen='npx covgen '
+alias covgen='pnpx covgen '
 
-alias create-next-app='npx create-next-app '
+alias create-next-app='pnpx create-next-app '
 
-alias create-react-app='npx create-react-app '
+alias create-react-app='pnpx create-react-app '
 
-alias create-react-native-app='npx create-react-native-app '
+alias create-react-native-app='pnpx create-react-native-app '
 
-alias cypress='npx cypress '
+alias cypress='pnpx cypress '
 
-alias eslint='npx eslint '
-alias eslintf='npx eslint --fix .'
+alias eslint='pnpx eslint '
+alias eslintf='pnpx eslint --fix .'
 
-alias gitignore='npx gitignore '
-alias gitignoren='npx gitignore node'
+alias gitignore='pnpx gitignore '
+alias gitignoren='pnpx gitignore node'
 
-alias healthier='npx healthier '
+alias healthier='pnpx healthier '
 
-alias httpbin='npx npx @buzuli/httpbin '
+alias httpbin='pnpx npx @buzuli/httpbin '
 
-alias insomniac='npx insomniac '
+alias insomniac='pnpx insomniac '
 
 # 😎 Supercharged JavaScript REPL
-alias jay='npx jay-repl '
+alias jay='pnpx jay-repl '
 
-alias jscodeshift='npx jscodeshift '
+alias jscodeshift='pnpx jscodeshift '
 
-alias jscpd='npx jscpd '
+alias jscpd='pnpx jscpd '
 
-alias jsinspect='npx jsinspect '
+alias jsinspect='pnpx jsinspect '
 
-alias krampus='npx krampus '
+alias krampus='pnpx krampus '
 
-alias lerna='npx lerna '
+alias lerna='pnpx lerna '
 
-alias license-checker='npx license-checker '
+alias license-checker='pnpx license-checker '
 
-alias license='npx license '
+alias license='pnpx license '
 
-alias ncu='npx npm-check-updates '
+alias ncu='pnpx npm-check-updates '
 
-alias neutrinojs-project='npx @neutrinojs/create-project '
+alias neutrinojs-project='pnpx @neutrinojs/create-project '
 
-alias newman='npx newman '
+alias newman='pnpx newman '
 
-alias nginx-linter='npx nginx-linter '
+alias nginx-linter='pnpx nginx-linter '
 
 # Easily find and remove old and heavy node_modules folders ✨
-alias npkill='npx npkill '
+alias npkill='pnpx npkill '
 
-alias npm-check='npx npm-check '
+alias npm-check='pnpx npm-check '
 
 # npm-merge-driver(1) -- git merge driver for automatic merging of lockfiles
-alias npm-merge-driver='npx npm-merge-driver '
+alias npm-merge-driver='pnpx npm-merge-driver '
 
 # Run any Node.js version
-alias nve='npx nve '
+alias nve='pnpx nve '
 
-alias nwb='npx nwb '
+alias nwb='pnpx nwb '
 
-alias pack='npx @pika/pack '
+alias pack='pnpx @pika/pack '
 
-alias packagephobia-cli='npx packagephobia-cli '
+alias packagephobia-cli='pnpx packagephobia-cli '
 
-alias pegjs='npx pegjs'
+alias pegjs='pnpx pegjs'
 
-alias prettier-package-json='npx prettier-package-json'
-alias prettier-package-jsonw='npx prettier-package-json --write'
+alias prettier-package-json='pnpx prettier-package-json'
+alias prettier-package-jsonw='pnpx prettier-package-json --write'
 
-alias prettier='npx prettier '
-alias prettierjs=$'npx prettier --write \'*.js\' \'**/*.js\' '
+alias prettier='pnpx prettier '
+alias prettierjs=$'pnpx prettier --write \'*.js\' \'**/*.js\' '
 
-alias readme-md-generator='npx readme-md-generator'
+alias readme-md-generator='pnpx readme-md-generator'
 
-alias resume='npx resume-cli '
+alias resume='pnpx resume-cli '
 
-alias selenium-side-runner='npx selenium-side-runner '
+alias selenium-side-runner='pnpx selenium-side-runner '
 
-alias serve='npx serve '
+alias serve='pnpx serve '
 
 # Quickly try out npm packages inside a container.
-alias try='npx try-pkg'
+alias try='pnpx try-pkg'
 
 # Automatically change your desktop image every 21600 seconds
-alias unsplash-so-fancy='npx unsplash-so-fancy '
+alias unsplash-so-fancy='pnpx unsplash-so-fancy '
 
 # 📦🔐A lightweight private npm proxy registry https://www.verdaccio.org/
 # NPM_CONFIG_REGISTRY=http://localhost:4873 npm i
-alias verdaccio='npx verdaccio'
+alias verdaccio='pnpx verdaccio'
 
-alias yarn='npx yarn'
+alias yarn='pnpx yarn'
 
-alias zero='npx zero '
+alias zero='pnpx zero '
