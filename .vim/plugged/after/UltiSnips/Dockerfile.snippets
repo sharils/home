@@ -2,10 +2,6 @@ snippet a "ADD" b
 ADD $0
 endsnippet
 
-snippet ai "apt-get install -y" b
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y $0
-endsnippet
-
 snippet c "CMD" b
 CMD [$1]
 endsnippet
@@ -56,4 +52,12 @@ endsnippet
 
 snippet w "WORKDIR" b
 WORKDIR $0
+endsnippet
+
+snippet apk "apk add --no-cache --update" w
+apk add --no-cache --update $0
+endsnippet
+
+snippet apt "apt-get install -y" w
+DEBIAN_FRONTEND=noninteractive apt-get install -y $0
 endsnippet
