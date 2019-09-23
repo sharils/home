@@ -33,6 +33,9 @@ alias eslintf='pnpx eslint --fix .'
 alias gitignore='pnpx gitignore '
 alias gitignoren='pnpx gitignore node'
 
+# Utility to annotate console logging statements with timestamps and find slow processes
+alias gnomon='pnpx gnomon'
+
 alias healthier='pnpx healthier '
 
 alias httpbin='pnpx npx @buzuli/httpbin '
