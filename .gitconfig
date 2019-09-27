@@ -1,23 +1,8 @@
-[color]
-	ui = true
-[color "diff"]
-	meta = 11
-	frag = magenta bold
-	commit = yellow bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
 [commit]
 	gpgsign = true
 [core]
 	autocrlf = input
 	excludesfile = ~/.gitignore
-	pager = diff-so-fancy | less
 [merge]
 	conflictstyle = diff3
 	tool = vimdiff
