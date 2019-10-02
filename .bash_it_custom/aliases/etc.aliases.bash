@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-alias dsf='diff-so-fancy'
+alias dsf='diff-so-fancy | less'
 
 alias ascii='ascii-x'
 alias rfc4648='rfc4648-5'
