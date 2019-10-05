@@ -59,6 +59,8 @@ alias license-checker='pnpx license-checker '
 
 alias license='pnpx license '
 
+alias nanoprobe='pnpx nanoprobe'
+
 alias ncu='pnpx npm-check-updates '
 
 alias neutrinojs-project='pnpx @neutrinojs/create-project '
