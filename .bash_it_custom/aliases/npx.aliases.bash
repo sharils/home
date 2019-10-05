@@ -10,6 +10,8 @@ alias bundle-phobia='pnpx bundle-phobia-cli '
 # Capacitor: Universal Web Applications
 alias cap='pnpx --package @capacitor/core --package @capacitor/cli cap '
 
+alias citgm='pnpx citgm'
+
 # Codecrumbs standalone: learn and share your code knowledge!
 alias codecrumbs='pnpx codecrumbs '
 
