@@ -44,6 +44,9 @@ alias httpbin='pnpx npx @buzuli/httpbin '
 
 alias insomniac='pnpx insomniac '
 
+# finds publicly known security vulnerabilities in a website's frontend JavaScript libraries
+alias is-website-vulnerable='is-website-vulnerable'
+
 # 😎 Supercharged JavaScript REPL
 alias jay='pnpx jay-repl '
 
