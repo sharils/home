@@ -1,3 +1,5 @@
-alias dI='date +%Y-%m-%dT%H:%M:%S%z'
-alias ds='date +%s'
-alias dymd='date +%Y-%m-%d'
+alias dateI='date +%Y-%m-%dT%H:%M:%S%Z'
+alias dateII='date +%Y%m%dT%H%M%S%Z'
+alias dater='date <<<'
+alias dates='date +%s'
+alias dateymd='date +%Y-%m-%d'
