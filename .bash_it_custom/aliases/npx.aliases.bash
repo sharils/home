@@ -99,6 +99,9 @@ alias prettier-package-jsonw='pnpx prettier-package-json --write'
 alias prettier='pnpx prettier '
 alias prettierjs=$'pnpx prettier --write \'*.js\' \'**/*.js\' '
 
+# ⚡ Get Pretty Quick https://npm.im/pretty-quick
+alias pretty-quick='npx pretty-quick'
+
 alias readme-md-generator='pnpx readme-md-generator'
 
 alias resume='pnpx resume-cli '
