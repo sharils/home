@@ -149,7 +149,7 @@ bind main       gbg         !git bisect good
 bind main       gbrs        !git bisect reset
 bind main       gbs         !git bisect start %(head) %(commit)
 bind main       gco<ENTER>  !git checkout %(commit)
-bind status     gco<ENTER>  !git checkout %(commit)
+bind status     gco<ENTER>  !git checkout %(file)
 bind refs       gco<ENTER>  !git checkout %(branch)
 bind main       gco-        !git checkout -
 bind status     gco-        !git checkout -
