@@ -133,6 +133,7 @@ bind stage      O           edit
 bind stage      P           !git reset --patch %(file)
 bind stage      U           status-revert
 
+bind stage      gus         !git reset HEAD %(file)
 bind stage      ga          !git add %(file)
 bind main       gau         !git add --update
 bind status     gau         !git add --update
