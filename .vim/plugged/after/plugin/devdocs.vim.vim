@@ -1,4 +1,4 @@
-nmap <LEADER>K :DevDocs<SPACE>
+nmap <LEADER>K :DevDocs<SPACE><C-R><C-W>
 
 augroup plugin-devdocs
   autocmd!
