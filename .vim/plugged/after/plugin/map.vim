@@ -170,29 +170,6 @@ nmap <LEADER>tm :tabmove
 nmap <LEADER>to :tabonly<CR>
 nmap <LEADER>tt :tabedit<SPACE><C-R>=expand("%")<CR><CR><C-O>
 nmap <LEADER>vh :vertial help<SPACE>
-nmap <LEADER>w= <C-W><C-=>
-nmap <LEADER>wc <C-W><C-C>
-nmap <LEADER>wh <C-W><C-H>
-nmap <LEADER>wj <C-W><C-J>
-nmap <LEADER>wk <C-W><C-K>
-nmap <LEADER>wl <C-W><C-L>
-nmap <LEADER>wo <C-W><C-O>
-nmap <LEADER>wp <C-W><C-P>
-nmap <LEADER>ws <C-W><C-S>
-nmap <LEADER>wt <C-W><S-T>
-nmap <LEADER>wv <C-W><C-V>
-nmap <LEADER>ww <C-W><C-W>
-nmap <LEADER>wx <C-W><C-X>
-nmap <LEADER>wz <C-W><C-Z>
+nmap <LEADER>w <C-W>
 nmap <LEADER>w8 80<C-W><BAR>
 nmap <LEADER>w10 100<C-W><BAR>
-
-nmap <LEADER>b1 :buffer 1<CR>
-nmap <LEADER>b2 :buffer 2<CR>
-nmap <LEADER>b3 :buffer 3<CR>
-nmap <LEADER>b4 :buffer 4<CR>
-nmap <LEADER>b5 :buffer 5<CR>
-nmap <LEADER>b6 :buffer 6<CR>
-nmap <LEADER>b7 :buffer 7<CR>
-nmap <LEADER>b8 :buffer 8<CR>
-nmap <LEADER>b9 :buffer 9<CR>
