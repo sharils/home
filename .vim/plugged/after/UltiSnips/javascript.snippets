@@ -138,6 +138,14 @@ snippet c "const" w
 const $0
 endsnippet
 
+snippet ca "catch" w
+ catch (${2:e}) {
+	${1:/* eslint-disable-next-line no-console */
+	console.error(e);
+	throw e;}
+}
+endsnippet
+
 snippet ci "in" w
 const `!p snip.rv = singularize_idx(t[1])` in $1
 endsnippet
