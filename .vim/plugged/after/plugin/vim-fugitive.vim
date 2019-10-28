@@ -29,7 +29,7 @@ nmap <LEADER>gpuo :Gpush --set-upstream origin<CR>
 nmap <LEADER>gpuof :Gpush --set-upstream origin --force<CR>
 nmap <LEADER>gs<CR> :Gstatus<CR>
 
-nmap <LEADER>ge :Gedit %<CR>
+nmap <LEADER>ge :Gedit<CR>
 nmap <LEADER>gre :Gread<CR>
 nmap <LEADER>gw :Gwrite<CR>
 nmap <LEADER>gde :Gdelete<CR>
