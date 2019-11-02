@@ -100,7 +100,7 @@ alias prettier='pnpx prettier '
 alias prettierjs=$'pnpx prettier --write \'*.js\' \'**/*.js\' '
 
 # ⚡ Get Pretty Quick https://npm.im/pretty-quick
-alias pretty-quick='npx pretty-quick'
+alias pretty-quick='pnpx pretty-quick'
 
 alias readme-md-generator='pnpx readme-md-generator'
 
