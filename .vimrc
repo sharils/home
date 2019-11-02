@@ -31,6 +31,7 @@ Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-fugitive'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'yardnsm/vim-import-cost', { 'do': 'npm install' }
 Plug 'inkarkat/vim-ingo-library'
 Plug 'inkarkat/vim-mark'
 Plug 'moll/vim-node', { 'for': 'jsx' }
