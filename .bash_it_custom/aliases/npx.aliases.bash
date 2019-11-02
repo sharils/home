@@ -64,6 +64,9 @@ alias license-checker='pnpx license-checker '
 
 alias license='pnpx license '
 
+# Create graphs from your CommonJS, AMD or ES6 module dependencies
+alias madge='pnpx madge'
+
 alias nanoprobe='pnpx nanoprobe'
 
 alias ncu='pnpx npm-check-updates '
