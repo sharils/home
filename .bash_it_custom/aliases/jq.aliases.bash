@@ -1,1 +1,5 @@
+alias jpR='jq --raw-input'
+alias jpS='jq --sort-keys'
+alias jpc='jq --compact-output'
 alias jpj='jq < package.json'
+alias jpr='jq --raw-output'
