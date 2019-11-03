@@ -29,7 +29,11 @@ endsnippet
 
 snippet /^a/ "(async () => {})()" r
 (async () => {
-	${1:${VISUAL}}
+	try {
+		${1:${VISUAL}}
+	} catch (e) {$2
+	}
+}
 })();
 endsnippet
 
