@@ -1,3 +1,5 @@
+alias dateuI='date -u +%Y-%m-%dT%H:%M:%S%Z'
+alias dateuII='date -u +%Y%m%dT%H%M%S%Z'
 alias dateI='date +%Y-%m-%dT%H:%M:%S%Z'
 alias dateII='date +%Y%m%dT%H%M%S%Z'
 alias dater='date <<<'
