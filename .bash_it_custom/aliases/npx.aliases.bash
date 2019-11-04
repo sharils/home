@@ -64,6 +64,8 @@ alias license-checker='pnpx license-checker '
 
 alias license='pnpx license '
 
+alias lighthouse='pnpx lighthouse '
+
 # Create graphs from your CommonJS, AMD or ES6 module dependencies
 alias madge='pnpx madge'
 
