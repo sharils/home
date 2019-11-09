@@ -63,3 +63,6 @@ source ~/.bashrc
 source "$BASH_IT"/bash_it.sh
 
 export LC_ALL=en_US.UTF-8
+
+# https://www.addictivetips.com/mac-os/hide-default-interactive-shell-is-now-zsh-in-terminal-on-macos/
+export BASH_SILENCE_DEPRECATION_WARNING=1
