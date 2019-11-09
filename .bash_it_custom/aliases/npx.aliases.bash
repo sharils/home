@@ -40,6 +40,9 @@ alias gnomon='pnpx gnomon'
 
 alias healthier='pnpx healthier '
 
+# 💡 A hinting engine for the web https://webhint.io/
+alias hint='pnpx hint'
+
 alias httpbin='pnpx npx @buzuli/httpbin '
 
 alias insomniac='pnpx insomniac '
