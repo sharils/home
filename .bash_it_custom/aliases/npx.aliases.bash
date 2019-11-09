@@ -33,7 +33,7 @@ alias eslint='pnpx eslint '
 alias eslintf='pnpx eslint --fix .'
 
 alias gitignore='pnpx gitignore '
-alias gitignoren='pnpx gitignore node'
+alias gitignorejs='pnpx gitignore node'
 
 # Utility to annotate console logging statements with timestamps and find slow processes
 alias gnomon='pnpx gnomon'
