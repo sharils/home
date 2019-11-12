@@ -145,6 +145,11 @@ main() {
     # Thor (1.3.1)
         1120999687
 
+    npm install \
+    # for create-react-native-app
+        expo-cli \
+        pnpm
+
     curl https://sh.rustup.rs -sSf | sh
 
     git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it &&
