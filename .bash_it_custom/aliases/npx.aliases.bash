@@ -25,8 +25,6 @@ alias create-next-app='pnpx create-next-app '
 
 alias create-react-app='pnpx create-react-app '
 
-alias create-react-native-app='pnpx create-react-native-app '
-
 alias cypress='pnpx cypress '
 
 alias eslint='pnpx eslint '
@@ -111,6 +109,8 @@ alias prettierjs=$'pnpx prettier --write \'*.js\' \'**/*.js\' '
 alias pretty-quick='pnpx pretty-quick'
 
 alias readme-md-generator='pnpx readme-md-generator'
+
+alias react-native='pnpx react-native '
 
 alias resume='pnpx resume-cli '
 
