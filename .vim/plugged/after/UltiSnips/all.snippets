@@ -1,3 +1,7 @@
+snippet rbase36 "randb36" w
+`base64 < /dev/random | tr -d +/[:upper:] | head -c 6`
+endsnippet
+
 snippet #! "#!" b
 #!/usr/bin/env ${1:sh}
 endsnippet
