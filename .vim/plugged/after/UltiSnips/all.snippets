@@ -1,5 +1,13 @@
-snippet rbase36 "randb36" w
+snippet rbase36 "rbase36" w
 `base64 < /dev/random | tr -d +/[:upper:] | head -c 6`
+endsnippet
+
+snippet rbase62 "rbase62" w
+`base64 < /dev/random | tr -d +/ | head -c 5`
+endsnippet
+
+snippet rbase64 "rbase64" w
+`base64 < /dev/random | tr +/ -_ | head -c 5`
 endsnippet
 
 snippet #! "#!" b
