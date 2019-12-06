@@ -118,6 +118,9 @@ alias selenium-side-runner='pnpx selenium-side-runner '
 
 alias serve='pnpx serve '
 
+# Hauls your node.js source files around
+alias trucker='pnpx trucker '
+
 # Quickly try out npm packages inside a container.
 alias try='pnpx try-pkg'
 
