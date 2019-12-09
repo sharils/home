@@ -26,7 +26,6 @@ Plug 'PeterRincker/vim-argumentative'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-fugitive'
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'yardnsm/vim-import-cost', { 'do': 'npm install' }
 Plug 'inkarkat/vim-ingo-library' | Plug 'inkarkat/vim-mark'
 " Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'tpope/vim-obsession'
@@ -45,6 +44,7 @@ Plug 'vito-c/jq.vim', { 'for': 'jq' }
 Plug 'alunny/pegjs-vim', { 'for': 'pegjs' }
 Plug 'alvan/vim-closetag', { 'for': ['html', 'javascriptreact', 'typescriptreact', 'xhtml'] }
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
+Plug 'yardnsm/vim-import-cost', { 'for': ['javascript', 'javascriptreact', 'typescript', 'typescriptreact'], 'do': 'npm install' }
 Plug 'moll/vim-node', { 'for': ['javascriptreact', 'typescriptreact'] }
 Plug 'alampros/vim-styled-jsx', { 'for': ['javascriptreact', 'typescriptreact'] }
 Plug 'pedrohdz/vim-yaml-folds', { 'for': 'yaml' }
