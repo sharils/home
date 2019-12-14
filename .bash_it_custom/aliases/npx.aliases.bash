@@ -15,6 +15,9 @@ alias citgm='pnpx citgm'
 # Codecrumbs standalone: learn and share your code knowledge!
 alias codecrumbs='pnpx codecrumbs '
 
+# All importers & exporters for CodeSandbox
+alias codesandbox='pnpx codesandbox'
+
 # Find out which of your dependencies is slowing you down
 alias cost-of-modules='pnpx cost-of-modules '
 
