@@ -222,6 +222,8 @@ bind main       gpoc<ENTER> !git push origin %(commit):refs/heads/%(prompt)
 bind status     gpoc<ENTER> !git push origin %(commit):refs/heads/%(prompt)
 bind main       gpocf       !git push origin -f %(commit):refs/heads/%(prompt)
 bind status     gpocf       !git push origin -f (commit):refs/heads/%(prompt)
+bind main       gpocm       !git push origin %(commit):refs/heads/master
+bind status     gpocm       !git push origin %(commit):refs/heads/master
 bind main       gpof        !git push origin -f
 bind status     gpof        !git push origin -f
 bind main       gpom        !git push origin master
