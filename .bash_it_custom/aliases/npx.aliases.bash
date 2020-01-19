@@ -8,6 +8,9 @@ alias browser-syncw='pnpx browser-sync --no-open --watch'
 # BundlePhobia ❘ cost of adding a npm package
 alias bundle-phobia='pnpx bundle-phobia-cli '
 
+# ✨ Super Cool NPM Playground right on the Node REPL ✨🇱🇰🇱🇰
+alias baapan='pnpx baapan '
+
 # Capacitor: Universal Web Applications
 alias cap='pnpx --package @capacitor/core --package @capacitor/cli cap '
 
