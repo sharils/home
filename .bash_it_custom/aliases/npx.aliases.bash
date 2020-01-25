@@ -20,6 +20,10 @@ alias citgm='pnpx citgm'
 # Codecrumbs standalone: learn and share your code knowledge!
 alias codecrumbs='pnpx codecrumbs '
 
+# GraphQL code generator with flexible support for custom plugins and templates
+# https://graphql-code-generator.com
+alias graphql-codegen='pnpx -p graphql -p @graphql-codegen/cli -c graphql-codegen'
+
 # All importers & exporters for CodeSandbox
 alias codesandbox='pnpx codesandbox'
 
