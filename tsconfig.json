@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ESNext", "ScriptHost"],
-    "noImplicitThis": true,
-    "strictNullChecks": true,
+    "strict": true,
     "target": "ES2015"
   }
 }
