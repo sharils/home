@@ -10,13 +10,16 @@ main() {
 
     signingkey=$1
 
-    IFS='<' read -r name email <<< "$(gpg --list-key "$signingkey" | sed -n 's/uid           \[ultimate\] //; 3s/>//g; 3s/ </</; 3p')"
-
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    if brew --version; then
+        echo brew is already installed
+    else
+        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    fi
+    return
 
     brew install \
         autojump \
-        cask-repair \
+        # cask-repair \
         ctags \
         direnv \
         fd \
@@ -64,11 +67,12 @@ main() {
     # brew tap browsh-org/homebrew-browsh && \
     #     brew install browsh-org/browsh/browsh
 
+    brew cask install homebrew/cask-versions/firefox-developer-edition
+
     brew cask install \
         chromium \
         clipy \
         firefox \
-        firefox-developer-edition \
         gimp \
         karabiner-elements \
         keepassxc \
@@ -150,7 +154,11 @@ main() {
         expo-cli \
         pnpm
 
-    curl https://sh.rustup.rs -sSf | sh
+    if rustc --version; then
+        echo rust is installed
+    else
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    fi
 
     git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it &&
         ~/.bash_it/install.sh
@@ -216,6 +224,8 @@ main() {
     mkdir -p ~/.cache/vim-gutentags
 
     vim -S ~/.vim/snapshot.vim
+
+    IFS='<' read -r name email <<< "$(gpg --list-key "$signingkey" | sed -n 's/uid           \[ultimate\] //; 3s/>//g; 3s/ </</; 3p')"
 
     git config --global user.email "$email"
     git config --global user.name "$name"
