@@ -81,6 +81,7 @@ main() {
         keybase \
         mongodb-compass \
         mongodb-compass-readonly \
+        react-native-debugger \
         postman
         remember-the-milk \
         slack \
