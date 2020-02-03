@@ -101,12 +101,9 @@ main() {
         adobe-acrobat-reader \
         anki \
         chromedriver \
-        michaelvillar-timer \
         opera \
         operadriver \
         origin \
-        polar-bookshelf \
-        rescuetime \
         skype \
         steam \
         syncthing \
@@ -121,7 +118,9 @@ main() {
     #     insomnia \
     #     libreoffice \
     #     notion \
+    #     polar-bookshelf \
     #     quicklook-json \
+    #     rescuetime \
     #     robo-3t \
 
     mas install \
