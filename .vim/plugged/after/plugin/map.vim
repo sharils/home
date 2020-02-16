@@ -2,6 +2,11 @@ let mapleader = ' '
 
 map Y y$
 
+nmap <ScrollWheelUp> <C-Y>
+nmap <ScrollWheelDown> <C-E>
+imap <ScrollWheelUp> <C-O><C-Y>
+imap <ScrollWheelDown> <C-O><C-E>
+
 imap <C-X>, <C-O>m`<C-O>:s/[,;]*$/,/\|nohlsearch<CR><C-O>``
 imap <C-X>; <C-O>m`<C-O>:s/[,;]*$/;/\|nohlsearch<CR><C-O>``
 nmap <C-X>, m`:s/[,;]*$/,/\|nohlsearch<ESC>``
