@@ -4,3 +4,7 @@ devhints() {
     if [ $# -eq 0 ]; then path=''; else path="$*"; fi
     open "https://devhints.io/$path"
 }
+
+tldr() {
+    open "https://tldr.ostera.io/$*"
+}
