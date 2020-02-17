@@ -49,14 +49,12 @@
 # the column. Use zero (the default value) to auto-size the column based
 # on the content.
 
-set diff-highlight              = true
+# set diff-highlight              = true
 set diff-options                = --show-signature
 set ignore-case                 = smart-case
 set log-options                 = --show-signature
-set main-view                   = line-number:no,interval=1 id:yes date:relative-compact author:no commit-title:yes,graph,refs,overflow=no
 set mouse                       = yes
 set mouse-scroll                = 1
-set mouse-wheel-cursor          = yes
 set status-show-untracked-files = yes
 
 # User-defined commands
@@ -94,194 +92,21 @@ set status-show-untracked-files = yes
 #   %(diffargs)     The diff options from `diff-options` or `TIG_DIFF_OPTS`
 #   %(prompt)       Prompt for the argument value.
 
-bind generic    <C-F>   move-page-down
-bind generic    <C-B>   move-page-up
 bind generic    g       none
-bind generic    gg      move-first-line
-bind main       G       move-last-line
-bind generic    G       move-last-line
-bind diff       ]       none
-bind diff       [       none
-bind diff       ]c      :/^@@
-bind diff       [c      :?^@@
-bind pager      ]c      :/^@@
-bind pager      [c      :?^@@
-bind stage      ]       none
-bind stage      [       none
-bind stage      ]c      :/^@@
-bind stage      [c      :?^@@
-
-# Follow fugitive-:Gstatus
-bind status     !           none
-bind status     u           none
-bind status     -           status-update
-bind status     c           none
-bind status     ca          !git commit --amend
-bind status     cc          !git commit
-bind status     ce          !git commit --amend --no-edit
-bind status     cw          !git commit --amend --only
-bind status     cva         !git commit --verbose --amend
-bind status     cvc         !git commit --verbose
-bind status     D           enter
-bind status     O           edit
-bind status     P           !git add --patch %(file)
-bind status     U           status-revert
-bind stage      !           none
-bind stage      u           none
-bind stage      -           status-update
-bind stage      O           edit
-bind stage      P           !git reset --patch %(file)
-bind stage      U           status-revert
-
-bind stage      gus         !git reset HEAD %(file)
-bind stage      ga          !git add %(file)
-bind main       gau         !git add --update
-bind status     gau         !git add --update
-bind refs       gau         !git add --update
-bind main       gap         !git add -p
-bind status     gap         !git add -p
-bind main       ga.         !git add .
-bind status     ga.         !git add .
-bind generic    gba         view-refs
-bind refs       gbd         !git branch --delete %(branch)
-bind refs       gbD         !git branch --delete --force %(branch)
-bind refs       gbm         !git branch --move %(branch) %(prompt)
-bind main       gbb         !git bisect bad
-bind main       gbg         !git bisect good
-bind main       gbrs        !git bisect reset
-bind main       gbs         !git bisect start %(head) %(commit)
-bind main       gco<ENTER>  !git checkout %(commit)
-bind status     gco<ENTER>  !git checkout %(file)
-bind refs       gco<ENTER>  !git checkout %(branch)
-bind main       gco-        !git checkout -
-bind status     gco-        !git checkout -
-bind main       gcob        !git checkout -b %(prompt) %(commit)
-bind main       gcoom       !git checkout origin/master
-bind main       gcop        !git checkout -p
-bind status     gcop        !git checkout -p
-bind main       gco.        !git checkout .
-bind status     gco.        !git checkout .
-bind stage      gco         !git checkout %(file)
-bind status     gco         !git checkout %(file)
-bind main       gcp         !git cherry-pick %(commit)
-bind status     gcp         !git cherry-pick %(commit)
-bind main       gcv         !git cherry %(commit)
-bind status     gcv         !git cherry %(commit)
-bind main       gcf<ENTER>  !git commit --fixup %(commit)
-bind status     gcf<ENTER>  !git commit --fixup %(commit)
-bind main       gcfh        !git commit --fixup %(head)
-bind status     gcfh        !git commit --fixup %(head)
-bind main       gcs<ENTER>  !git commit --squash %(commit)
-bind status     gcs<ENTER>  !git commit --squash %(commit)
-bind main       gcsh        !git commit --squash %(head)
-bind status     gcsh        !git commit --squash %(head)
-bind main       gci         !git commit --interactive
-bind status     gci         !git commit --interactive
-bind main       gcrm        !git commit --reuse-message %(commit)
-bind status     gcrm        !git commit --reuse-message %(commit)
-bind main       gc<ENTER>   !git commit -v
-bind status     gc<ENTER>   !git commit -v
-bind main       gca<ENTER>  !git commit --amend
-bind status     gca<ENTER>  !git commit --amend
-bind main       gcam        !git commit -v -am %(prompt)
-bind status     gcam        !git commit -v -am %(prompt)
-bind main       gcc         !git commit -v -m %(prompt)
-bind status     gcc         !git commit -v -m %(prompt)
-bind status     gclean      !git clean -d --force %(file)
-bind main       gcm         !git commit -v -m %(prompt)
-bind status     gcm         !git commit -v -m %(prompt)
-bind main       gd          !git diff %(commit)..%(prompt)
-bind status     gd          !git diff %(commit)..%(prompt)
-bind main       gfb         !git filter-branch --force --msg-filter %(prompt) %(commit)..HEAD
-bind main       gf<ENTER>   !git fetch --all --prune
-bind status     gf<ENTER>   !git fetch --all --prune
-bind main       gft<ENTER>  !git fetch --all --prune --tags
-bind status     gft<ENTER>  !git fetch --all --prune --tags
-bind main       gftv        !git fetch --all --prune --tags --verbose
-bind status     gftv        !git fetch --all --prune --tags --verbose
-bind main       gfv         !git fetch --all --prune --verbose
-bind status     gfv         !git fetch --all --prune --verbose
-bind generic    ggr         view-blob
-bind main       gl<ENTER>   !git pull
-bind status     gl<ENTER>   !git pull
-bind generic    gll         view-main
-bind main       gpp         !git pull && git push
-bind status     gpp         !git pull && git push
-bind main       gpr         !git pull --rebase
-bind status     gpr         !git pull --rebase
-bind main       glum        !git pull upstream master
-bind status     glum        !git pull upstream master
-bind main       gp<ENTER>   !git push
-bind status     gp<ENTER>   !git push
-bind main       gpo<ENTER>  !git push origin
-bind status     gpo<ENTER>  !git push origin
-bind main       gpo:        !git push origin :%(prompt)
-bind status     gpo:        !git push origin :%(prompt)
-bind refs       gpo:        !git push %(remote) :%(branch)
-bind main       gpoc<ENTER> !git push origin %(commit):refs/heads/%(prompt)
-bind status     gpoc<ENTER> !git push origin %(commit):refs/heads/%(prompt)
-bind main       gpocf       !git push origin -f %(commit):refs/heads/%(prompt)
-bind status     gpocf       !git push origin -f (commit):refs/heads/%(prompt)
-bind main       gpocm       !git push origin %(commit):refs/heads/master
-bind status     gpocm       !git push origin %(commit):refs/heads/master
-bind main       gpof        !git push origin -f
-bind status     gpof        !git push origin -f
-bind main       gpom        !git push origin master
-bind status     gpom        !git push origin master
-bind main       gpoh<ENTER> !git push origin %(head):%(prompt)
-bind status     gpoh<ENTER> !git push origin %(head):%(prompt)
-bind main       gpohm       !git push origin %(head):master
-bind status     gpohm       !git push origin %(head):master
-bind main       gpu<ENTER>  !git push --set-upstream
-bind status     gpu<ENTER>  !git push --set-upstream
-bind main       gpuo<ENTER> !git push --set-upstream origin %(branch)
-bind status     gpuo<ENTER> !git push --set-upstream origin %(branch)
-bind main       gpuof       !git push --set-upstream origin %(branch) --force
-bind status     gpuof       !git push --set-upstream origin %(branch) --force
-bind main       grb<ENTER>  !git rebase %(commit)
-bind status     grb<ENTER>  !git rebase %(commit)
-bind refs       grb<ENTER>  !git rebase %(branch)
-bind main       grba        !git rebase --abort
-bind status     grba        !git rebase --abort
-bind main       grbk        !git rebase --autosquash --interactive %(commit)
-bind status     grbk        !git rebase --autosquash --interactive %(commit)
-bind main       grbs        !git rebase --autosquash --interactive %(commit)
-bind status     grbs        !git rebase --autosquash --interactive %(commit)
-bind main       grbc        !git rebase --continue
-bind status     grbc        !git rebase --continue
-bind main       grbi        !git rebase --interactive %(commit)
-bind status     grbi        !git rebase --interactive %(commit)
-bind main       grbo        !git rebase --onto %(prompt) %(commit)
-bind status     grbo        !git rebase --onto %(prompt) %(commit)
-bind main       grbm        !git rebase %(remote)/master
-bind status     grbm        !git rebase %(remote)/master
-bind main       grsh        !git reset --hard %(commit)
-bind status     grsh        !git reset --hard %(commit)
-bind main       grsm        !git reset --merge
-bind status     grsm        !git reset --merge
-bind main       gus         !git reset %(head)
-bind status     gus         !git reset %(head)
-bind main       grs^        !git reset %(head)^
-bind status     grs^        !git reset %(head)^
-bind main       grvt        !git revert %(commit)
-bind status     grvt        !git revert %(commit)
-bind generic    gs<ENTER>   view-status
-bind generic    gstl        view-stash
-bind main       gsta        !git stash push && git stash apply
-bind status     gsta        !git stash push && git stash apply
-bind main       gstd        !git stash drop
-bind status     gstd        !git stash drop
-bind stash      gstd        !git stash drop %(stash)
-bind main       gstk        !git stash --keep-index
-bind status     gstk        !git stash --keep-index
-bind main       gstP        !git stash pop
-bind status     gstP        !git stash pop
-bind main       gstp        !git stash push
-bind status     gstp        !git stash push
-bind generic    gt<ENTER>   view-refs
-bind main       gta         !git tag -a %(commit)
-bind refs       gtd         !git tag -d
-bind refs       gtl         !git tag -l
+bind generic    ggr     view-grep
+bind generic    gbsc    !git bisect start HEAD %(commit)
+bind generic    gcoc    !git checkout %(commit)
+bind generic    gcrmc   !git commit --reuse-message %(commit)
+bind generic    gcfc    !git commit --fixup %(commit)
+bind generic    gcfh    !git commit --fixup HEAD
+bind generic    gpoc    !git push origin %(commit):refs/heads/%(prompt)
+bind generic    gpofc   !git push origin --force %(commit):refs/heads/%(prompt)
+bind generic    grbc    !git rebase --interactive %(commit)
+bind generic    grboc   !git rebase --interactive --onto %(prompt) %(commit)
+bind generic    grbsc   !git rebase --autosquash --interactive %(commit)
+bind generic    grshc   !git reset --hard %(commit)
+bind generic    grvtc   !git revert %(commit)
+bind refs       gpo:    !git push %(remote) :%(ref)
 
 # Colors
 # ------
