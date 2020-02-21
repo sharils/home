@@ -103,23 +103,37 @@ bind status  Gau<Enter>  @git add --update
 
 bind main    Gbb<ENTER>  +git bisect bad
 bind main    Gbg<ENTER>  +git bisect good
-bind main    Gbr<ENTER>  +git bisect reset
+bind main    Gbrs<ENTER> +git bisect reset
 bind main    Gbs<ENTER>  !git bisect start HEAD %(commit)
 
+bind main    Gc<ENTER>   +git commit
+bind main    Gca<ENTER>  +git commit --amend
 bind main    Gcf<ENTER>  +git commit --fixup %(commit)
 bind main    Gcfh<ENTER> +git commit --fixup HEAD
 bind main    Gcrm<ENTER> +git commit --reuse-message %(commit)
 
 bind main    Gco<ENTER>  @git checkout %(commit)
+bind main    Gco-<Enter> @git checkout -
+bind refs    Gco-<Enter> @git checkout -
 bind main    Gcob<ENTER> @git checkout -b %(prompt) %(commit)
+bind refs    Gcoo<Enter> @git checkout --ours %(file)
+bind status  Gco.<Enter> ?git checkout .
 bind status  Gco.<Enter> ?git checkout .
 
-bind main    Gfbm<ENTER> !FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch --msg-filter 'if [ $GIT_COMMIT = %(commit) ]; then echo %(prompt); fi' %(commit)~..%(commit)
+bind main    Gclean<ENTER> ?git clean --force -d
+bind status  Gcl<Enter>    ?git clean --force %(file)
+bind status  Gclean<Enter> ?git clean --force -d
+
+# bind main    Gfbm<ENTER> !FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch --msg-filter 'if [ $GIT_COMMIT = %(commit) ]; then echo %(prompt); fi' %(commit)~..%(commit)
+
+bind main    Gf<ENTER>   !git fetch --prune
+bind refs    Gf<ENTER>   !git fetch --prune
 
 bind main    Gpo:<ENTER> ?git push %(remote) :%(branch)
 bind refs    Gpo:<ENTER> ?git push %(remote) :%(branch)
 bind main    Gpo<ENTER>  !git push %(remote) %(commit):refs/heads/%(prompt)
 bind refs    Gpo<ENTER>  !git push %(remote) %(branch)
+bind status  Gpo<ENTER>  !git push %(remote) %(branch)
 bind main    Gpof<ENTER> ?git push %(remote) --force %(commit):refs/heads/%(prompt)
 bind refs    Gpof<ENTER> ?git push %(remote) --force %(branch)
 
@@ -146,6 +160,9 @@ bind status  Gstk<ENTER> +git stash --keep-index
 bind main    Gstp<ENTER> +git stash push
 bind stash   Gstp<ENTER> +git stash push
 bind status  Gstp<ENTER> +git stash push
+
+bind generic Gbr<ENTER>  @hub browse
+bind generic Gbrc<ENTER> +sh -c 'hub browse --copy && hub browse --url'
 
 # Colors
 # ------
