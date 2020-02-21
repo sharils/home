@@ -92,21 +92,21 @@ set status-show-untracked-files = yes
 #   %(diffargs)     The diff options from `diff-options` or `TIG_DIFF_OPTS`
 #   %(prompt)       Prompt for the argument value.
 
-bind main   g<ENTER>        none
-bind main   ggr<ENTER>      view-grep
-bind main   gbsc<ENTER>     !git bisect start HEAD %(commit)
-bind main   gcoc<ENTER>     !git checkout %(commit)
-bind main   gcrmc<ENTER>    !git commit --reuse-message %(commit)
-bind main   gcfc<ENTER>     !git commit --fixup %(commit)
-bind main   gcfh<ENTER>     !git commit --fixup HEAD
-bind main   gpoc<ENTER>     !git push origin %(commit):refs/heads/%(prompt)
-bind main   gpofc<ENTER>    !git push origin --force %(commit):refs/heads/%(prompt)
-bind main   grbc<ENTER>     !git rebase --interactive %(commit)
-bind main   grboc<ENTER>    !git rebase --interactive --onto %(prompt) %(commit)
-bind main   grbsc<ENTER>    !git rebase --autosquash --interactive %(commit)
-bind main   grshc<ENTER>    !git reset --hard %(commit)
-bind main   grvtc<ENTER>    !git revert --mainline 1 %(commit)
-bind refs   gpo:<ENTER>     !git push %(remote) :%(ref)
+bind generic    g               none
+bind generic    ggr             view-grep
+bind main       gbsc<ENTER>     !git bisect start HEAD %(commit)
+bind main       gcoc<ENTER>     !git checkout %(commit)
+bind main       gcrmc<ENTER>    !git commit --reuse-message %(commit)
+bind main       gcfc<ENTER>     !git commit --fixup %(commit)
+bind main       gcfh<ENTER>     !git commit --fixup HEAD
+bind main       gpoc<ENTER>     !git push origin %(commit):refs/heads/%(prompt)
+bind main       gpofc<ENTER>    !git push origin --force %(commit):refs/heads/%(prompt)
+bind main       grbc<ENTER>     !git rebase --interactive %(commit)
+bind main       grboc<ENTER>    !git rebase --interactive --onto %(prompt) %(commit)
+bind main       grbsc<ENTER>    !git rebase --autosquash --interactive %(commit)
+bind main       grshc<ENTER>    !git reset --hard %(commit)
+bind main       grvtc<ENTER>    !git revert --mainline 1 %(commit)
+bind refs       gpo:<ENTER>     !git push %(remote) :%(ref)
 
 # Colors
 # ------
