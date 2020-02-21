@@ -92,22 +92,60 @@ set status-show-untracked-files = yes
 #   %(diffargs)     The diff options from `diff-options` or `TIG_DIFF_OPTS`
 #   %(prompt)       Prompt for the argument value.
 
-bind generic g           none
-bind generic ggr         view-grep
-bind main    gbs<ENTER>  !git bisect start HEAD %(commit)
-bind main    gcf<ENTER>  !git commit --fixup %(commit)
-bind main    gcfh<ENTER> !git commit --fixup HEAD
-bind main    gco<ENTER>  !git checkout %(commit)
-bind main    gcrm<ENTER> !git commit --reuse-message %(commit)
-bind main    gpo<ENTER>  !git push origin %(commit):refs/heads/%(prompt)
-bind main    gpof<ENTER> !git push origin --force %(commit):refs/heads/%(prompt)
-bind main    grb<ENTER>  !git rebase --interactive %(commit)
-bind main    grbo<ENTER> !git rebase --interactive --onto %(prompt) %(commit)
-bind main    grbs<ENTER> !git rebase --autosquash --interactive %(commit)
-bind main    grsh<ENTER> !git reset --hard %(commit)
-bind main    grvt<ENTER> !git revert --mainline 1 %(commit)
-bind refs    gpo:<ENTER> !git push %(remote) :%(ref)
-bind refs    grsh<ENTER> !git reset --hard %(commit)
+bind generic S           :source ~/.tigrc
+bind main    G           none
+bind reflog  C           @git checkout %(branch)
+bind refs    C           @git checkout %(branch)
+
+bind main    G<ENTER>   +sh -c 'pbcopy <<< %(commit); pbpaste'
+
+bind status  Gau<Enter>  @git add --update
+
+bind main    Gbb<ENTER>  +git bisect bad
+bind main    Gbg<ENTER>  +git bisect good
+bind main    Gbr<ENTER>  +git bisect reset
+bind main    Gbs<ENTER>  !git bisect start HEAD %(commit)
+
+bind main    Gcf<ENTER>  +git commit --fixup %(commit)
+bind main    Gcfh<ENTER> +git commit --fixup HEAD
+bind main    Gcrm<ENTER> +git commit --reuse-message %(commit)
+
+bind main    Gco<ENTER>  @git checkout %(commit)
+bind main    Gcob<ENTER> @git checkout -b %(prompt) %(commit)
+bind status  Gco.<Enter> ?git checkout .
+
+bind main    Gfbm<ENTER> !FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch --msg-filter 'if [ $GIT_COMMIT = %(commit) ]; then echo %(prompt); fi' %(commit)~..%(commit)
+
+bind main    Gpo:<ENTER> ?git push %(remote) :%(branch)
+bind refs    Gpo:<ENTER> ?git push %(remote) :%(branch)
+bind main    Gpo<ENTER>  !git push %(remote) %(commit):refs/heads/%(prompt)
+bind refs    Gpo<ENTER>  !git push %(remote) %(branch)
+bind main    Gpof<ENTER> ?git push %(remote) --force %(commit):refs/heads/%(prompt)
+bind refs    Gpof<ENTER> ?git push %(remote) --force %(branch)
+
+# bind main    Grb<ENTER>  !git rebase --interactive %(commit)
+bind main    Grbi<ENTER> !git rebase --interactive %(commit)
+bind main    GrbS<ENTER> @git rebase --skip
+bind main    Grba<ENTER> @git rebase --abort
+bind main    Grbc<ENTER> @git rebase --continue
+bind main    Grbo<ENTER> !git rebase --interactive --onto %(prompt) %(commit)
+bind main    Grbs<ENTER> !git rebase --autosquash --interactive %(commit)
+
+bind main    Grs~<ENTER> ?git reset %(head)~
+bind status  Grs~<ENTER> ?git reset %(head)~
+bind main    Grsh<ENTER> ?git reset --hard %(commit)
+bind main    Grsm<ENTER> ?git reset --merge
+bind refs    Grsh<ENTER> ?git reset --hard %(commit)
+bind status  Gus<Enter>  @git reset HEAD
+
+bind main    Grvt<ENTER> +git revert --mainline 1 %(commit)
+
+bind main    Gstk<ENTER> +git stash --keep-index
+bind stash   Gstk<ENTER> +git stash --keep-index
+bind status  Gstk<ENTER> +git stash --keep-index
+bind main    Gstp<ENTER> +git stash push
+bind stash   Gstp<ENTER> +git stash push
+bind status  Gstp<ENTER> +git stash push
 
 # Colors
 # ------
@@ -135,4 +173,3 @@ color cursor black green bold
 
 # - https://jonas.github.io/tig/doc/tigrc.5.html
 # - https://github.com/jonas/tig/blob/master/tigrc
-# - https://jonas.github.io/tig/doc/tigrc.5.html
