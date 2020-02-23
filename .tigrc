@@ -49,9 +49,10 @@
 # the column. Use zero (the default value) to auto-size the column based
 # on the content.
 
-# set diff-highlight              = true
-set diff-options                = --show-signature
+set diff-highlight              = true
+set diff-options                = --find-copies --show-signature
 set ignore-case                 = smart-case
+set blame-options               = -CCC
 set log-options                 = --show-signature
 set mouse                       = yes
 set mouse-scroll                = 1
@@ -102,17 +103,19 @@ bind generic <SPACE>              none
 
 bind main    <SPACE>g<ENTER>      +sh -c 'pbcopy <<< %(commit); pbpaste'
 
+bind main    <SPACE>gau<Enter>    @git add --update
 bind status  <SPACE>gau<Enter>    @git add --update
 
 bind main    <SPACE>gbb<ENTER>    +git bisect bad
 bind main    <SPACE>gbg<ENTER>    +git bisect good
 bind main    <SPACE>gbrs<ENTER>   +git bisect reset
-bind main    <SPACE>gbs<ENTER>    !git bisect start HEAD %(commit)
+bind main    <SPACE>gbs<ENTER>    !git bisect start %(head) %(commit)
 
-bind main    <SPACE>gc<ENTER>     +git commit
-bind main    <SPACE>gca<ENTER>    +git commit --amend
+bind main    <SPACE>gc<ENTER>     !git commit -vv
+bind main    <SPACE>gca<ENTER>    !git commit --amend
 bind main    <SPACE>gcf<ENTER>    +git commit --fixup %(commit)
-bind main    <SPACE>gcfh<ENTER>   +git commit --fixup HEAD
+bind main    <SPACE>gcfh<ENTER>   +git commit --fixup %(head)
+bind status  <SPACE>gcfh<ENTER>   +git commit --fixup %(head)
 bind main    <SPACE>gcrm<ENTER>   +git commit --reuse-message %(commit)
 
 bind main    <SPACE>gco<ENTER>    @git checkout %(commit)
@@ -132,13 +135,19 @@ bind status  <SPACE>gclean<Enter> ?git clean --force -d
 bind main    <SPACE>gf<ENTER>     !git fetch --prune
 bind refs    <SPACE>gf<ENTER>     !git fetch --prune
 
-bind main    <SPACE>gpo:<ENTER>   ?git push %(remote) :%(branch)
-bind refs    <SPACE>gpo:<ENTER>   ?git push %(remote) :%(branch)
-bind main    <SPACE>gpo<ENTER>    !git push %(remote) %(commit):refs/heads/%(prompt)
-bind refs    <SPACE>gpo<ENTER>    !git push %(remote) %(branch)
-bind status  <SPACE>gpo<ENTER>    !git push %(remote) %(branch)
-bind main    <SPACE>gpof<ENTER>   ?git push %(remote) --force %(commit):refs/heads/%(prompt)
-bind refs    <SPACE>gpof<ENTER>   ?git push %(remote) --force %(branch)
+bind main    <SPACE>gp<ENTER>     !git push %(remote) %(commit):refs/heads/%(prompt)
+bind main    <SPACE>gpf<ENTER>    ?git push --force %(remote) %(commit):refs/heads/%(prompt)
+bind main    <SPACE>gpb<ENTER>    !git push %(remote) %(branch)
+bind refs    <SPACE>gpb<ENTER>    !git push %(remote) %(branch)
+bind status  <SPACE>gpb<ENTER>    !git push %(remote) %(branch)
+bind main    <SPACE>gpbf<ENTER>   !git push --force %(remote) %(branch)
+bind refs    <SPACE>gpbf<ENTER>   !git push --force %(remote) %(branch)
+bind status  <SPACE>gpbf<ENTER>   !git push --force %(remote) %(branch)
+bind main    <SPACE>gp:<ENTER>    ?git push %(remote) :%(branch)
+bind refs    <SPACE>gp:<ENTER>    ?git push %(remote) :%(branch)
+bind main    <SPACE>gpo<ENTER>    !git push %(remote) %(head)
+bind refs    <SPACE>gpo<ENTER>    !git push %(remote) %(head)
+bind status  <SPACE>gpo<ENTER>    !git push %(remote) %(head)
 
 # bind main    <SPACE>grb<ENTER>    !git rebase --interactive %(commit)
 bind main    <SPACE>grbi<ENTER>   !git rebase --interactive %(commit)
@@ -153,9 +162,11 @@ bind status  <SPACE>grs~<ENTER>   ?git reset %(head)~
 bind main    <SPACE>grsh<ENTER>   ?git reset --hard %(commit)
 bind main    <SPACE>grsm<ENTER>   ?git reset --merge
 bind refs    <SPACE>grsh<ENTER>   ?git reset --hard %(commit)
-bind status  <SPACE>gus<Enter>    @git reset HEAD
+bind status  <SPACE>gus<Enter>    @git reset %(head)
 
 bind main    <SPACE>grvt<ENTER>   +git revert --mainline 1 %(commit)
+
+bind diff    <SPACE>grm<ENTER>    +git rm %(file)
 
 bind main    <SPACE>gstk<ENTER>   +git stash --keep-index
 bind stash   <SPACE>gstk<ENTER>   +git stash --keep-index
