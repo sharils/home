@@ -92,77 +92,80 @@ set status-show-untracked-files = yes
 #   %(diffargs)     The diff options from `diff-options` or `TIG_DIFF_OPTS`
 #   %(prompt)       Prompt for the argument value.
 
-bind generic S           :source ~/.tigrc
-bind main    G           none
-bind reflog  C           @git checkout %(branch)
-bind refs    C           @git checkout %(branch)
+bind generic S                    :source ~/.tigrc
+bind reflog  C                    @git checkout %(branch)
+bind refs    C                    @git checkout %(branch)
 
-bind main    G<ENTER>   +sh -c 'pbcopy <<< %(commit); pbpaste'
+bind generic <C-F>                move-page-down
+bind generic <C-B>                move-page-up
+bind generic <SPACE>              none
 
-bind status  Gau<Enter>  @git add --update
+bind main    <SPACE>g<ENTER>      +sh -c 'pbcopy <<< %(commit); pbpaste'
 
-bind main    Gbb<ENTER>  +git bisect bad
-bind main    Gbg<ENTER>  +git bisect good
-bind main    Gbrs<ENTER> +git bisect reset
-bind main    Gbs<ENTER>  !git bisect start HEAD %(commit)
+bind status  <SPACE>gau<Enter>    @git add --update
 
-bind main    Gc<ENTER>   +git commit
-bind main    Gca<ENTER>  +git commit --amend
-bind main    Gcf<ENTER>  +git commit --fixup %(commit)
-bind main    Gcfh<ENTER> +git commit --fixup HEAD
-bind main    Gcrm<ENTER> +git commit --reuse-message %(commit)
+bind main    <SPACE>gbb<ENTER>    +git bisect bad
+bind main    <SPACE>gbg<ENTER>    +git bisect good
+bind main    <SPACE>gbrs<ENTER>   +git bisect reset
+bind main    <SPACE>gbs<ENTER>    !git bisect start HEAD %(commit)
 
-bind main    Gco<ENTER>  @git checkout %(commit)
-bind main    Gco-<Enter> @git checkout -
-bind refs    Gco-<Enter> @git checkout -
-bind main    Gcob<ENTER> @git checkout -b %(prompt) %(commit)
-bind refs    Gcoo<Enter> @git checkout --ours %(file)
-bind status  Gco.<Enter> ?git checkout .
-bind status  Gco.<Enter> ?git checkout .
+bind main    <SPACE>gc<ENTER>     +git commit
+bind main    <SPACE>gca<ENTER>    +git commit --amend
+bind main    <SPACE>gcf<ENTER>    +git commit --fixup %(commit)
+bind main    <SPACE>gcfh<ENTER>   +git commit --fixup HEAD
+bind main    <SPACE>gcrm<ENTER>   +git commit --reuse-message %(commit)
 
-bind main    Gclean<ENTER> ?git clean --force -d
-bind status  Gcl<Enter>    ?git clean --force %(file)
-bind status  Gclean<Enter> ?git clean --force -d
+bind main    <SPACE>gco<ENTER>    @git checkout %(commit)
+bind main    <SPACE>gco-<Enter>   @git checkout -
+bind refs    <SPACE>gco-<Enter>   @git checkout -
+bind main    <SPACE>gcob<ENTER>   @git checkout -b %(prompt) %(commit)
+bind refs    <SPACE>gcoo<Enter>   @git checkout --ours %(file)
+bind status  <SPACE>gco.<Enter>   ?git checkout .
+bind status  <SPACE>gco.<Enter>   ?git checkout .
 
-# bind main    Gfbm<ENTER> !FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch --msg-filter 'if [ $GIT_COMMIT = %(commit) ]; then echo %(prompt); fi' %(commit)~..%(commit)
+bind main    <SPACE>gclean<ENTER> ?git clean --force -d
+bind status  <SPACE>gcl<Enter>    ?git clean --force %(file)
+bind status  <SPACE>gclean<Enter> ?git clean --force -d
 
-bind main    Gf<ENTER>   !git fetch --prune
-bind refs    Gf<ENTER>   !git fetch --prune
+# bind main    <SPACE>gfbm<ENTER>   !FILTER_BRANCH_SQUELCH_WARNIN<SPACE>g=1 git filter-branch --msg-filter 'if [ $<SPACE>gIT_COMMIT = %(commit) ]; then echo %(prompt); fi' %(commit)~..%(commit)
 
-bind main    Gpo:<ENTER> ?git push %(remote) :%(branch)
-bind refs    Gpo:<ENTER> ?git push %(remote) :%(branch)
-bind main    Gpo<ENTER>  !git push %(remote) %(commit):refs/heads/%(prompt)
-bind refs    Gpo<ENTER>  !git push %(remote) %(branch)
-bind status  Gpo<ENTER>  !git push %(remote) %(branch)
-bind main    Gpof<ENTER> ?git push %(remote) --force %(commit):refs/heads/%(prompt)
-bind refs    Gpof<ENTER> ?git push %(remote) --force %(branch)
+bind main    <SPACE>gf<ENTER>     !git fetch --prune
+bind refs    <SPACE>gf<ENTER>     !git fetch --prune
 
-# bind main    Grb<ENTER>  !git rebase --interactive %(commit)
-bind main    Grbi<ENTER> !git rebase --interactive %(commit)
-bind main    GrbS<ENTER> @git rebase --skip
-bind main    Grba<ENTER> @git rebase --abort
-bind main    Grbc<ENTER> @git rebase --continue
-bind main    Grbo<ENTER> !git rebase --interactive --onto %(prompt) %(commit)
-bind main    Grbs<ENTER> !git rebase --autosquash --interactive %(commit)
+bind main    <SPACE>gpo:<ENTER>   ?git push %(remote) :%(branch)
+bind refs    <SPACE>gpo:<ENTER>   ?git push %(remote) :%(branch)
+bind main    <SPACE>gpo<ENTER>    !git push %(remote) %(commit):refs/heads/%(prompt)
+bind refs    <SPACE>gpo<ENTER>    !git push %(remote) %(branch)
+bind status  <SPACE>gpo<ENTER>    !git push %(remote) %(branch)
+bind main    <SPACE>gpof<ENTER>   ?git push %(remote) --force %(commit):refs/heads/%(prompt)
+bind refs    <SPACE>gpof<ENTER>   ?git push %(remote) --force %(branch)
 
-bind main    Grs~<ENTER> ?git reset %(head)~
-bind status  Grs~<ENTER> ?git reset %(head)~
-bind main    Grsh<ENTER> ?git reset --hard %(commit)
-bind main    Grsm<ENTER> ?git reset --merge
-bind refs    Grsh<ENTER> ?git reset --hard %(commit)
-bind status  Gus<Enter>  @git reset HEAD
+# bind main    <SPACE>grb<ENTER>    !git rebase --interactive %(commit)
+bind main    <SPACE>grbi<ENTER>   !git rebase --interactive %(commit)
+bind main    <SPACE>grbS<ENTER>   @git rebase --skip
+bind main    <SPACE>grba<ENTER>   @git rebase --abort
+bind main    <SPACE>grbc<ENTER>   @git rebase --continue
+bind main    <SPACE>grbo<ENTER>   !git rebase --interactive --onto %(prompt) %(commit)
+bind main    <SPACE>grbs<ENTER>   !git rebase --autosquash --interactive %(commit)
 
-bind main    Grvt<ENTER> +git revert --mainline 1 %(commit)
+bind main    <SPACE>grs~<ENTER>   ?git reset %(head)~
+bind status  <SPACE>grs~<ENTER>   ?git reset %(head)~
+bind main    <SPACE>grsh<ENTER>   ?git reset --hard %(commit)
+bind main    <SPACE>grsm<ENTER>   ?git reset --merge
+bind refs    <SPACE>grsh<ENTER>   ?git reset --hard %(commit)
+bind status  <SPACE>gus<Enter>    @git reset HEAD
 
-bind main    Gstk<ENTER> +git stash --keep-index
-bind stash   Gstk<ENTER> +git stash --keep-index
-bind status  Gstk<ENTER> +git stash --keep-index
-bind main    Gstp<ENTER> +git stash push
-bind stash   Gstp<ENTER> +git stash push
-bind status  Gstp<ENTER> +git stash push
+bind main    <SPACE>grvt<ENTER>   +git revert --mainline 1 %(commit)
 
-bind generic Gbr<ENTER>  @hub browse
-bind generic Gbrc<ENTER> +sh -c 'hub browse --copy && hub browse --url'
+bind main    <SPACE>gstk<ENTER>   +git stash --keep-index
+bind stash   <SPACE>gstk<ENTER>   +git stash --keep-index
+bind status  <SPACE>gstk<ENTER>   +git stash --keep-index
+bind main    <SPACE>gstp<ENTER>   +git stash push
+bind stash   <SPACE>gstp<ENTER>   +git stash push
+bind status  <SPACE>gstp<ENTER>   +git stash push
+
+bind generic <SPACE>gbr<ENTER>    @hub browse
+bind generic <SPACE>gbrc<ENTER>   +sh -c 'hub browse --copy && hub browse --url'
 
 # Colors
 # ------
