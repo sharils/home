@@ -124,7 +124,7 @@ bind main    <SPACE>gco-<Enter>   @git checkout -
 bind refs    <SPACE>gco-<Enter>   @git checkout -
 bind main    <SPACE>gcob<ENTER>   @git checkout -b %(prompt) %(commit)
 bind refs    <SPACE>gcoo<Enter>   @git checkout --ours %(file)
-bind status  <SPACE>gco.<Enter>   ?git checkout .
+bind main    <SPACE>gco.<Enter>   ?git checkout .
 bind status  <SPACE>gco.<Enter>   ?git checkout .
 
 bind main    <SPACE>gclean<ENTER> ?git clean --force -d
