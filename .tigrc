@@ -143,11 +143,15 @@ bind status  <SPACE>gpb<ENTER>    !git push %(remote) %(branch)
 bind main    <SPACE>gpbf<ENTER>   !git push --force %(remote) %(branch)
 bind refs    <SPACE>gpbf<ENTER>   !git push --force %(remote) %(branch)
 bind status  <SPACE>gpbf<ENTER>   !git push --force %(remote) %(branch)
-bind main    <SPACE>gp:<ENTER>    ?git push %(remote) :%(branch)
-bind refs    <SPACE>gp:<ENTER>    ?git push %(remote) :%(branch)
+bind main    <SPACE>gpb:<ENTER>   ?git push %(remote) :%(branch)
+bind refs    <SPACE>gpb:<ENTER>   ?git push %(remote) :%(branch)
 bind main    <SPACE>gpo<ENTER>    !git push %(remote) %(head)
 bind refs    <SPACE>gpo<ENTER>    !git push %(remote) %(head)
 bind status  <SPACE>gpo<ENTER>    !git push %(remote) %(head)
+bind main    <SPACE>gpt<ENTER>    !git push %(remote) %(tag)
+bind refs    <SPACE>gpt<ENTER>    !git push %(remote) %(tag)
+bind main    <SPACE>gpt:<ENTER>   ?git push %(remote) :%(tag)
+bind refs    <SPACE>gpt:<ENTER>   ?git push %(remote) :%(tag)
 
 # bind main    <SPACE>grb<ENTER>    !git rebase --interactive %(commit)
 bind main    <SPACE>grbi<ENTER>   !git rebase --interactive %(commit)
@@ -168,12 +172,20 @@ bind main    <SPACE>grvt<ENTER>   +git revert --mainline 1 %(commit)
 
 bind diff    <SPACE>grm<ENTER>    +git rm %(file)
 
+bind main    <SPACE>gsht<ENTER>   !git show %(tag)
+bind refs    <SPACE>gsht<ENTER>   !git show %(tag)
+
 bind main    <SPACE>gstk<ENTER>   +git stash --keep-index
 bind stash   <SPACE>gstk<ENTER>   +git stash --keep-index
 bind status  <SPACE>gstk<ENTER>   +git stash --keep-index
 bind main    <SPACE>gstp<ENTER>   +git stash push
 bind stash   <SPACE>gstp<ENTER>   +git stash push
 bind status  <SPACE>gstp<ENTER>   +git stash push
+
+bind main    <SPACE>gt<ENTER>     !git tag --annotate --sign %(prompt) %(commit)
+
+bind main    <SPACE>gtd<ENTER>    +git tag --delete %(tag)
+bind refs    <SPACE>gtd<ENTER>    +git tag --delete %(tag)
 
 bind generic <SPACE>gbr<ENTER>    @hub browse
 bind generic <SPACE>gbrc<ENTER>   +sh -c 'hub browse --copy && hub browse --url'
