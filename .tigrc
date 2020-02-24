@@ -149,12 +149,12 @@ bind refs    <SPACE>gpbf<ENTER>   !git push --force %(remote) %(branch)
 bind status  <SPACE>gpbf<ENTER>   !git push --force %(remote) %(branch)
 bind main    <SPACE>gpb:<ENTER>   ?git push %(remote) :%(branch)
 bind refs    <SPACE>gpb:<ENTER>   ?git push %(remote) :%(branch)
-bind main    <SPACE>gpo<ENTER>    !git push %(remote) @
-bind refs    <SPACE>gpo<ENTER>    !git push %(remote) @
-bind status  <SPACE>gpo<ENTER>    !git push %(remote) @
-bind main    <SPACE>gpof<ENTER>   !git push --force %(remote) @
-bind refs    <SPACE>gpof<ENTER>   !git push --force %(remote) @
-bind status  <SPACE>gpof<ENTER>   !git push --force %(remote) @
+bind main    <SPACE>gpo<ENTER>    !git push %(remote) HEAD
+bind refs    <SPACE>gpo<ENTER>    !git push %(remote) HEAD
+bind status  <SPACE>gpo<ENTER>    !git push %(remote) HEAD
+bind main    <SPACE>gpof<ENTER>   !git push --force %(remote) HEAD
+bind refs    <SPACE>gpof<ENTER>   !git push --force %(remote) HEAD
+bind status  <SPACE>gpof<ENTER>   !git push --force %(remote) HEAD
 bind main    <SPACE>gpt<ENTER>    !git push %(remote) %(tag)
 bind refs    <SPACE>gpt<ENTER>    !git push %(remote) %(tag)
 bind main    <SPACE>gpt:<ENTER>   ?git push %(remote) :%(tag)
