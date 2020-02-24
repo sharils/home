@@ -113,7 +113,10 @@ bind main    <SPACE>gbs<ENTER>    !git bisect start %(head) %(commit)
 
 bind main    <SPACE>gc<ENTER>     !git commit -vv
 bind status  <SPACE>gc<ENTER>     !git commit -vv
+bind main    <SPACE>gcal<ENTER>   !git commit -vv --all
+bind status  <SPACE>gcal<ENTER>   !git commit -vv --all
 bind main    <SPACE>gca<ENTER>    !git commit --amend
+bind status  <SPACE>gca<ENTER>    !git commit --amend
 bind main    <SPACE>gcf<ENTER>    +git commit --fixup %(commit)
 bind main    <SPACE>gcfh<ENTER>   +git commit --fixup %(head)
 bind status  <SPACE>gcfh<ENTER>   +git commit --fixup %(head)
@@ -124,8 +127,8 @@ bind main    <SPACE>gco-<Enter>   @git checkout -
 bind refs    <SPACE>gco-<Enter>   @git checkout -
 bind main    <SPACE>gcob<ENTER>   @git checkout -b %(prompt) %(commit)
 bind refs    <SPACE>gcoo<Enter>   @git checkout --ours %(file)
-bind main    <SPACE>gco.<Enter>   ?git checkout .
-bind status  <SPACE>gco.<Enter>   ?git checkout .
+bind main    <SPACE>gco/<Enter>   ?git checkout :/
+bind status  <SPACE>gco/<Enter>   ?git checkout :/
 
 bind main    <SPACE>gclean<ENTER> ?git clean --force -d
 bind status  <SPACE>gcl<Enter>    ?git clean --force %(file)
@@ -149,6 +152,9 @@ bind refs    <SPACE>gpb:<ENTER>   ?git push %(remote) :%(branch)
 bind main    <SPACE>gpo<ENTER>    !git push %(remote) @
 bind refs    <SPACE>gpo<ENTER>    !git push %(remote) @
 bind status  <SPACE>gpo<ENTER>    !git push %(remote) @
+bind main    <SPACE>gpof<ENTER>   !git push --force %(remote) @
+bind refs    <SPACE>gpof<ENTER>   !git push --force %(remote) @
+bind status  <SPACE>gpof<ENTER>   !git push --force %(remote) @
 bind main    <SPACE>gpt<ENTER>    !git push %(remote) %(tag)
 bind refs    <SPACE>gpt<ENTER>    !git push %(remote) %(tag)
 bind main    <SPACE>gpt:<ENTER>   ?git push %(remote) :%(tag)
