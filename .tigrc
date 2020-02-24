@@ -112,6 +112,7 @@ bind main    <SPACE>gbrs<ENTER>   +git bisect reset
 bind main    <SPACE>gbs<ENTER>    !git bisect start %(head) %(commit)
 
 bind main    <SPACE>gc<ENTER>     !git commit -vv
+bind status  <SPACE>gc<ENTER>     !git commit -vv
 bind main    <SPACE>gca<ENTER>    !git commit --amend
 bind main    <SPACE>gcf<ENTER>    +git commit --fixup %(commit)
 bind main    <SPACE>gcfh<ENTER>   +git commit --fixup %(head)
@@ -184,8 +185,8 @@ bind status  <SPACE>gstp<ENTER>   +git stash push
 
 bind main    <SPACE>gt<ENTER>     !git tag --annotate --sign %(prompt) %(commit)
 
-bind main    <SPACE>gtd<ENTER>    +git tag --delete %(tag)
-bind refs    <SPACE>gtd<ENTER>    +git tag --delete %(tag)
+bind main    <SPACE>gtd<ENTER>    ?git tag --delete %(tag)
+bind refs    <SPACE>gtd<ENTER>    ?git tag --delete %(tag)
 
 bind generic <SPACE>gbr<ENTER>    @hub browse
 bind generic <SPACE>gbrc<ENTER>   +sh -c 'hub browse --copy && hub browse --url'
