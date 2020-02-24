@@ -165,8 +165,8 @@ bind main    <SPACE>grbs<ENTER>   !git rebase --autosquash --interactive %(commi
 bind main    <SPACE>grs~<ENTER>   ?git reset %(head)~
 bind status  <SPACE>grs~<ENTER>   ?git reset %(head)~
 bind main    <SPACE>grsh<ENTER>   ?git reset --hard %(commit)
-bind main    <SPACE>grsm<ENTER>   ?git reset --merge
 bind refs    <SPACE>grsh<ENTER>   ?git reset --hard %(commit)
+bind main    <SPACE>grsm<ENTER>   ?git reset --merge
 bind status  <SPACE>gus<Enter>    @git reset %(head)
 
 bind main    <SPACE>grvt<ENTER>   +git revert --mainline 1 %(commit)
