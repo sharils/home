@@ -134,6 +134,10 @@ bind main    <SPACE>gclean<ENTER> ?git clean --force -d
 bind status  <SPACE>gcl<Enter>    ?git clean --force %(file)
 bind status  <SPACE>gclean<Enter> ?git clean --force -d
 
+bind main    <SPACE>gch<ENTER>    !git cherry -v %(commit)
+
+bind main    <SPACE>gd<ENTER>     @git diff %(commit)
+
 # bind main    <SPACE>gfbm<ENTER>   !FILTER_BRANCH_SQUELCH_WARNIN<SPACE>g=1 git filter-branch --msg-filter 'if [ $<SPACE>gIT_COMMIT = %(commit) ]; then echo %(prompt); fi' %(commit)~..%(commit)
 
 bind main    <SPACE>gf<ENTER>     !git fetch --prune
