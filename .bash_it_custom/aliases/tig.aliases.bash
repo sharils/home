@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 
-alias tll='tig'
-alias tlog='tig log'
+alias tm='tig'
+alias tl='tig log'
 alias tsh='tig show'
-alias trl='tig reflog'
-alias tbl='tig blame'
-alias tgr='tig grep'
-alias tba='tig refs'
-alias tst='tig stash'
+alias tL='tig reflog'
+alias tb='tig blame'
+alias tg='tig grep'
+alias tR='tig refs'
+alias ty='tig stash'
 alias ts='tig status'
 
-alias tlla='tig --all'
+alias tma='tig --all'
 alias td='git diff | tig'
 alias tds='git diff --staged | tig'
 
