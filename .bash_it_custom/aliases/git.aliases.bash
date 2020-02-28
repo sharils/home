@@ -26,7 +26,7 @@
 # alias gci='git check-ignore'
 # alias gcs='git commit --squash'
 # alias gcsh='git commit --squash HEAD'
-# alias gcl1='git clone --depth=1'
+alias gcl1='git clone --depth=1'
 # alias gco-='git checkout -'
 # alias gco.='git checkout .'
 # alias gcoo='git checkout --ours'
