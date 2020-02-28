@@ -1,5 +1,17 @@
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
+let s:addr_other = has('patch-8.1.560') ? '-addr=other' : ''
+let s:addr_wins  = has('patch-7.4.542') ? '-addr=windows' : ''
+exe 'command! -bang -nargs=? -range=-1' s:addr_other '-complete=customlist,fugitive#PushComplete   Gp      exe fugitive#Command(<line1>, <count>, +"<range>", <bang>0, "<mods>", "push " . <q-args>)'
+exe 'command! -bang -bar     -range=-1' s:addr_other 'Gs exe fugitive#Command(<line1>, <count>, +"<range>", <bang>0, "<mods>", <q-args>)'
+exe 'command! -bang -nargs=? -range=-1' s:addr_other '-complete=customlist,fugitive#CommitComplete Gcc     exe fugitive#Command(<line1>, <count>, +"<range>", <bang>0, "<mods>", "commit " . <q-args>)'
+exe 'command! -bang -nargs=? -range=-1' s:addr_other '-complete=customlist,fugitive#CommitComplete Gca     exe fugitive#Command(<line1>, <count>, +"<range>", <bang>0, "<mods>", "commit --amend")'
+exe 'command! -bang -nargs=? -range=-1' s:addr_wins '-complete=customlist,fugitive#GrepComplete GG exe fugitive#Command(0, <count> > 0 ? <count> : 0, +"<range>", <bang>0, "<mods>", "grep " . <q-args>)'
+exe 'command! -bang -nargs=? -range=-1' s:addr_other '-complete=customlist,fugitive#FetchComplete  Gf      exe fugitive#Command(<line1>, <count>, +"<range>", <bang>0, "<mods>", "fetch " . <q-args>)'
+exe 'command! -bang -nargs=? -range=-1                -complete=customlist,fugitive#BlameComplete  Gb      exe fugitive#Command(<line1>, <count>, +"<range>", <bang>0, "<mods>", "blame " . <q-args>)'
+exe 'command! -bang -nargs=? -range=-1 -complete=customlist,fugitive#LogComplete Gl :exe fugitive#LogCommand(<line1>,<count>,+"<range>",<bang>0,"<mods>",<q-args>, "l")'
+exe 'command! -bar -bang -nargs=* -complete=customlist,fugitive#EditComplete Gdv exe fugitive#Diffsplit(0, <bang>0, "vert <mods>", <q-args>, [<f-args>])'
+
 " Follow fugitive-:Gstatus
 " nmap <LEADER>gca :Gcommit --amend<CR>
 " nmap <LEADER>gcc :Gcommit<CR>

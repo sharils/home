@@ -108,74 +108,9 @@ inoremap <C-E> <C-O>A
 inoremap <C-F> <C-O>l
 inoremap <C-[>O <ESC>O
 inoremap <C-[>} ’
-nmap <2-LeftMouse> :tjump <C-R><C-W><CR>
-nmap <LEADER><LEADER>lw :lclose<CR>
-nmap <LEADER><LEADER>w= <C-W><C-_><C-W><BAR>
-nmap <LEADER><LEADER>wh <C-W><C-H><C-W><C-_>80<C-W><BAR>
-nmap <LEADER><LEADER>wj <C-W><C-J><C-W><C-_>80<C-W><BAR>
-nmap <LEADER><LEADER>wk <C-W><C-K><C-W><C-_>80<C-W><BAR>
-nmap <LEADER><LEADER>wl <C-W><C-L><C-W><C-_>80<C-W><BAR>
-nmap <LEADER>- :.-
-nmap <LEADER>= :.+
 nmap <LEADER>E :edit!<CR>
-nmap <LEADER>bd :bdelete<CR>
-nmap <LEADER>bn :bnext<CR>
-nmap <LEADER>bp :bprevious<CR>
-nmap <LEADER>cc :cc<CR>
-nmap <LEADER>cn :cnext<CR>
-nmap <LEADER>cp :cprevious<CR>
-nmap <LEADER>cr :crewind<CR>
-" nmap <LEADER>cw :cwindow<CR>
-nmap <LEADER>eh :Hexplore<CR>
-nmap <LEADER>et :Texplore<CR>
-nmap <LEADER>ev :Vexplore<CR>
-nmap <LEADER>ex :Explore<CR>
 nmap <LEADER>g< :silent lgrep --fixed-strings '<<<<<<<' %<CR>zt<C-L>zt
-nmap <LEADER>gC :silent lgrep --fixed-strings 'class <C-R><C-W> ' *<CR><C-L>zt
-nmap <LEADER>gF :silent lgrep --fixed-strings 'function <C-R><C-W>(' *<CR><C-L>zt
 nmap <LEADER>gW :silent lgrep --fixed-strings <C-R><C-W> *<CR><C-L>zt
-nmap <LEADER>itr i<C-R>=expand("%:t:r")<CR><ESC>
-nmap <LEADER>ll :ll<CR>
-nmap <LEADER>ln :lnext<CR>
-nmap <LEADER>lp :lprevious<CR>
-nmap <LEADER>lr :lrewind<CR>
-nmap <LEADER>lw :lwindow<CR>
-nmap <LEADER>sf<CR> :set filetype=
-nmap <LEADER>sfbash :set filetype=bash<CR>
-nmap <LEADER>sfc<CR> :set filetype=c<CR>
-nmap <LEADER>sfcss<CR> :set filetype=css<CR>
-nmap <LEADER>sfeex :set filetype=elixir<CR>
-nmap <LEADER>sferl :set filetype=erlang<CR>
-nmap <LEADER>sfex<CR> :set filetype=elixir<CR>
-nmap <LEADER>sfexs :set filetype=elixir<CR>
-nmap <LEADER>sfhtml :set filetype=html<CR>
-nmap <LEADER>sfjava :set filetype=java<CR>
-nmap <LEADER>sfjq :set filetype=jq<CR>
-nmap <LEADER>sfjs<CR> :set filetype=javascript.jsx<CR>
-nmap <LEADER>sfjson :set filetype=json<CR>
-nmap <LEADER>sfjsx :set filetype=javascript.jsx<CR>
-nmap <LEADER>sflua :set filetype=lua<CR>
-nmap <LEADER>sfmd :set filetype=markdown<CR>
-nmap <LEADER>sfpegjs :set filetype=pegjs<CR>
-nmap <LEADER>sfphp :set filetype=php<CR>
-nmap <LEADER>sfpy :set filetype=python<CR>
-nmap <LEADER>sfrs :set filetype=rust<CR>
-nmap <LEADER>sfsh :set filetype=sh<CR>
-nmap <LEADER>sfsql :set filetype=sql<CR>
-nmap <LEADER>sfstory :set filetype=cucumber<CR>
-nmap <LEADER>sftxt :set filetype=text<CR>
-nmap <LEADER>sfxhtml :set filetype=html<CR>
-nmap <LEADER>sfyml :set filetype=yaml<CR>
-" nmap <LEADER>sfzep :set filetype=zep<CR>
+nmap <LEADER>so :source ~/.vimrc<CR>
 nmap <LEADER>ss :set spell!<CR>
-nmap <LEADER>t% :tabedit<SPACE><C-R>=expand("%")<CR>
-nmap <LEADER>t. :tabedit<SPACE><C-R>=expand("%:h")<CR>/
-nmap <LEADER>tc :tabclose<CR>
-nmap <LEADER>te :tabedit<SPACE>
-nmap <LEADER>tm :tabmove
-nmap <LEADER>to :tabonly<CR>
-nmap <LEADER>tt :tabedit<SPACE><C-R>=expand("%")<CR><CR><C-O>
-nmap <LEADER>vh :vertial help<SPACE>
-nmap <LEADER>w <C-W>
-nmap <LEADER>w8 80<C-W><BAR>
-nmap <LEADER>w10 100<C-W><BAR>
+nmap <LEADER>sw :set wrap!<CR>

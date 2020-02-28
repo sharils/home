@@ -7,12 +7,13 @@ set hlsearch
 set ignorecase
 set linebreak
 set list
-set listchars=tab:«\ »,trail:·,extends:›,precedes:‹,nbsp:⋯
+set listchars=tab:∼∼»,trail:·,extends:›,precedes:‹,nbsp:⋯
 set modeline
 set mouse=a
 set number
 set relativenumber
 set shiftwidth=0
+set showbreak=↪
 set showcmd
 set smartcase
 set tabstop=4
