@@ -1,4 +1,4 @@
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+set statusline=%<%f\ %h%m%r%{FugitiveStatusline()}%=%-14.(%l,%c%V%)\ %P
 
 let s:addr_other = has('patch-8.1.560') ? '-addr=other' : ''
 let s:addr_wins  = has('patch-7.4.542') ? '-addr=windows' : ''

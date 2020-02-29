@@ -27,6 +27,7 @@ alias vsj='vim server.js'
 alias vtigrc='vim ~/.tigrc'
 alias vtorrc='vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc'
 alias vvrc='vim ~/git/github.com/sharils/home/.vimrc'
+alias vautojump="vim $(autojump -s | tail -n1 | awk '{ print $2 }')"
 
 alias vt="vim /tmp/$USER-$RANDOM"
 alias vbash="vim /tmp/bash-$USER-$RANDOM.bash"
