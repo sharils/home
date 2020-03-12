@@ -97,8 +97,8 @@ bind generic S             :source ~/.tigrc
 bind reflog  C             @git checkout %(branch)
 bind refs    C             @git checkout %(branch)
 
-bind generic <C-F>         move-page-down
-bind generic <C-B>         move-page-up
+# bind generic <C-F>         move-page-down
+# bind generic <C-B>         move-page-up
 bind main    G             none
 
 bind main    G<ENTER>      +sh -c 'pbcopy <<< %(commit); pbpaste'
@@ -202,6 +202,8 @@ bind main    Gt<ENTER>     !git tag --annotate --sign %(prompt) %(commit)
 bind main    Gtd<ENTER>    ?git tag --delete %(tag)
 bind refs    Gtd<ENTER>    ?git tag --delete %(tag)
 
+bind generic Gprs<ENTER>   @hub pr show
+bind generic Gbp<ENTER>    @hub browse -- pulls
 bind generic Gbr<ENTER>    @hub browse
 bind generic Gbrc<ENTER>   +sh -c 'hub browse --copy && hub browse --url'
 
