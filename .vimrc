@@ -35,6 +35,7 @@ Plug 'inkarkat/vim-ingo-library' | Plug 'inkarkat/vim-mark'
 Plug 'tpope/vim-obsession'
 Plug 'sheerun/vim-polyglot'
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
+Plug 'ericbn/vim-relativize'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sensible'
 Plug 'vitalk/vim-shebang'
