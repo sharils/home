@@ -5,6 +5,8 @@
 	excludesfile = ~/.gitignore
 [merge]
 	conflictstyle = diff3
-	tool = vimdiff
+	tool = vim-conflicted
 [mergetool]
 	keepBackup = false
+[mergetool "vim-conflicted"]
+	cmd = vim +Conflicted
