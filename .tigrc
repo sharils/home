@@ -193,9 +193,9 @@ bind status  Gstk<ENTER>   +git stash --keep-index
 bind main    GstP<ENTER>   +git stash pop
 bind stash   GstP<ENTER>   +git stash pop
 bind status  GstP<ENTER>   +git stash pop
-bind main    Gstp<ENTER>   +git stash push
-bind stash   Gstp<ENTER>   +git stash push
-bind status  Gstp<ENTER>   +git stash push
+bind main    Gst<ENTER>    +git stash push
+bind stash   Gst<ENTER>    +git stash push
+bind status  Gst<ENTER>    +git stash push
 
 bind main    Gt<ENTER>     !git tag --annotate --sign %(prompt) %(commit)
 
