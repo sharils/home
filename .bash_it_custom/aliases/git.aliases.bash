@@ -82,3 +82,4 @@ alias gmt='git mergetool'
 # alias gstsi='git stash show --patch-with-stat --ignore-space-change '
 unalias gh
 alias gcd='cd "$(git rev-parse --show-toplevel)"'
+alias gca='git --amend'
