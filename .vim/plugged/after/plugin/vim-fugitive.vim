@@ -1,3 +1,4 @@
+" https://github.com/tpope/vim-fugitive/blob/9a4d730270882f9d39a411eb126143eda4d46963/plugin/fugitive.vim
 set statusline=%<%f\ %h%m%r%{FugitiveStatusline()}%=%-14.(%l,%c%V%)\ %P
 
 let s:addr_other = has('patch-8.1.560') ? '-addr=other' : ''
