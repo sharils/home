@@ -157,6 +157,9 @@ alias react-native='npx react-native '
 # The JSON Resume command line interface
 alias resume='npx resume-cli '
 
+# Calculate the real cost to run your JS app or lib to keep good performance. Show error in pull request if the cost exceeds the limit.
+alias size-limit='npx size-limit'
+
 # Run Selenium IDE projects in cli
 alias selenium-side-runner='npx selenium-side-runner '
 
