@@ -13,3 +13,5 @@ exe 'command! -bang -nargs=? -range=-1                -complete=customlist,fugit
 exe 'command! -bang -nargs=? -range=-1 -complete=customlist,fugitive#LogComplete Gl :exe fugitive#LogCommand(<line1>,<count>,+"<range>",<bang>0,"<mods>",<q-args>, "l")'
 exe 'command! -bar -bang -nargs=* -complete=customlist,fugitive#EditComplete Gdv exe fugitive#Diffsplit(0, <bang>0, "vert <mods>", <q-args>, [<f-args>])'
 exe 'command! -bar -bang -nargs=1 -complete=customlist,fugitive#CompleteObject Gmv   exe fugitive#MoveCommand(  <line1>, <count>, +"<range>", <bang>0, "<mods>", <q-args>, [<f-args>])'
+
+nmap <Leader>g :Git<CR>

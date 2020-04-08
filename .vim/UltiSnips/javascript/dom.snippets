@@ -56,16 +56,13 @@ endsnippet
 
 snippet cot "console.time()" w
 console.time(${1:`!p snip.rv = path_and_line()`})
+console.timeLog($1)
 ${2:${VISUAL}}
 console.timeEnd($1)
 endsnippet
 
 snippet cota "console.table()" w
 console.table($1)
-endsnippet
-
-snippet cotl "console.timeLog()" w
-console.timeLog($1)
 endsnippet
 
 snippet cotr "console.trace()" w
