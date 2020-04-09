@@ -101,7 +101,7 @@ bind refs    C             @git checkout %(branch)
 # bind generic <C-B>         move-page-up
 bind main    G             none
 
-bind main    G<ENTER>      +sh -c 'pbcopy <<< %(commit); pbpaste'
+bind main    <C-G>         +sh -c 'pbcopy <<< %(commit); pbpaste'
 
 bind main    Gau<ENTER>    @git add --update
 bind status  Gau<ENTER>    @git add --update
