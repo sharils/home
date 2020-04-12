@@ -81,6 +81,6 @@ alias grboh='git rebase `git symbolic-ref refs/remotes/origin/HEAD`'
 # alias gstp='git stash push'
 # alias gsts='git stash show --patch-with-stat '
 # alias gstsi='git stash show --patch-with-stat --ignore-space-change '
-unalias gh
+# unalias gh
 alias gcd='cd "$(git rev-parse --show-toplevel)"'
 alias gca='git commit --amend'
