@@ -166,6 +166,7 @@ bind refs    Gpt:<ENTER>   ?git push %(remote) :%(tag)
 
 # bind main    Grb<ENTER>    !git rebase --interactive %(commit)
 bind main    Grbi<ENTER>   !git rebase --interactive %(commit)
+bind refs    Grbi<ENTER>   !git rebase --interactive %(ref)
 bind main    GrbS<ENTER>   @git rebase --skip
 bind main    Grba<ENTER>   @git rebase --abort
 bind main    Grbc<ENTER>   @git rebase --continue
