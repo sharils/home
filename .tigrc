@@ -169,7 +169,7 @@ bind main    Grbi<ENTER>   !git rebase --interactive %(commit)
 bind refs    Grbi<ENTER>   !git rebase --interactive %(ref)
 bind main    GrbS<ENTER>   @git rebase --skip
 bind main    Grba<ENTER>   @git rebase --abort
-bind main    Grbc<ENTER>   @git rebase --continue
+bind main    Grbc<ENTER>   !git rebase --continue
 bind main    Grbo<ENTER>   !git rebase --interactive --onto %(prompt) %(commit)
 bind main    Grboh<ENTER>  !sh -c 'git rebase `git symbolic-ref refs/remotes/origin/HEAD`'
 bind main    Grbs<ENTER>   !git rebase --autosquash --interactive %(commit)
