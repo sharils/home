@@ -42,6 +42,9 @@ alias create-react-app='npx create-react-app '
 # Cypress.io end to end testing tool
 alias cypress='npx cypress '
 
+# Generate a report about your development environment for debugging and issue reporting
+alias envinfo='npx envinfo'
+
 # An AST-based pattern checker for JavaScript.
 alias eslint='npx eslint '
 alias eslintf='npx eslint --fix .'

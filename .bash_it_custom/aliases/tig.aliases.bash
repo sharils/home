@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-alias tm='tig'
+alias t='tig'
+
 alias tl='tig log'
 alias tsh='tig show'
 alias tL='tig reflog'
