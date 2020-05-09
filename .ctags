@@ -119,6 +119,7 @@
 --exclude=.map
 --exclude=.swp
 --exclude=.bak
+--exclude=.next
 --exclude=tags
 --exclude=node_modules
 --exclude=bower_components
