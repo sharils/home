@@ -203,6 +203,7 @@ main() {
             -name .tigrc -or \
             -name .vim -or \
             -name .vimrc \
+            -name tsconfig.json \
         \) -depth 1 |
         sort |
         sed "s@^.@$PWD@" |
