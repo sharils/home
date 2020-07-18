@@ -185,6 +185,9 @@ alias unsplash-so-fancy='npx unsplash-so-fancy '
 # NPM_CONFIG_REGISTRY=http://localhost:4873 npm i
 alias verdaccio='npx verdaccio'
 
+# wait-on - wait for files, ports, sockets, http(s) resources
+alias wait-on='npx wait-on '
+
 # Node is running but you don't know why? why-is-node-running is here to help you.
 alias why-is-node-running='npx why-is-node-running'
 
