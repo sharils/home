@@ -144,8 +144,12 @@ bind main    Gfrbp<ENTER>  !sh -c 'git fetch --all --prune && git rebase `git sy
 bind main    Gf<ENTER>     !git fetch --all --prune
 bind refs    Gf<ENTER>     !git fetch --all --prune
 
-bind main    Gp<ENTER>     !git push %(remote) %(commit):refs/heads/%(prompt)
-bind main    Gpf<ENTER>    ?git push --force %(remote) %(commit):refs/heads/%(prompt)
+bind main    Gp<ENTER>     !git push %(remote) HEAD
+bind refs    Gp<ENTER>     !git push %(remote) HEAD
+bind status  Gp<ENTER>     !git push %(remote) HEAD
+bind main    Gpf<ENTER>    !git push --force %(remote) HEAD
+bind refs    Gpf<ENTER>    !git push --force %(remote) HEAD
+bind status  Gpf<ENTER>    !git push --force %(remote) HEAD
 bind main    Gpb<ENTER>    !git push %(remote) %(branch)
 bind refs    Gpb<ENTER>    !git push %(remote) %(branch)
 bind status  Gpb<ENTER>    !git push %(remote) %(branch)
@@ -154,12 +158,8 @@ bind refs    Gpbf<ENTER>   !git push --force %(remote) %(branch)
 bind status  Gpbf<ENTER>   !git push --force %(remote) %(branch)
 bind main    Gpb:<ENTER>   ?git push %(remote) :%(branch)
 bind refs    Gpb:<ENTER>   ?git push %(remote) :%(branch)
-bind main    Gpo<ENTER>    !git push %(remote) HEAD
-bind refs    Gpo<ENTER>    !git push %(remote) HEAD
-bind status  Gpo<ENTER>    !git push %(remote) HEAD
-bind main    Gpof<ENTER>   !git push --force %(remote) HEAD
-bind refs    Gpof<ENTER>   !git push --force %(remote) HEAD
-bind status  Gpof<ENTER>   !git push --force %(remote) HEAD
+bind main    Gpc<ENTER>    !git push %(remote) %(commit):refs/heads/%(prompt)
+bind main    Gpcf<ENTER>   ?git push --force %(remote) %(commit):refs/heads/%(prompt)
 bind main    Gpt<ENTER>    !git push %(remote) %(tag)
 bind refs    Gpt<ENTER>    !git push %(remote) %(tag)
 bind main    Gpt:<ENTER>   ?git push %(remote) :%(tag)
