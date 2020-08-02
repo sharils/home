@@ -160,6 +160,9 @@ alias readme-md-generator='npx readme-md-generator'
 # A framework for building native apps using React
 alias react-native='npx react-native '
 
+# When run, this command line interface automatically generates a new GitHub Release and populates it with the changes (commits) made since the last release.
+alias release='npx release '
+
 # The JSON Resume command line interface
 alias resume='npx resume-cli '
 
