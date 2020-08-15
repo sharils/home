@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-alias fde='open -a firefox\ developer\ edition'
+alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
