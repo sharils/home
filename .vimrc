@@ -6,7 +6,7 @@ Plug '~/.vim/plugged/before'
 " Plug 'vim-scripts/BufOnly.vim'
 " Plug 'coot/CRDispatcher'
 " Plug 'coot/EnchantedVim'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --rust-completer' }
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --rust-completer' }
 Plug 'jnurmine/Zenburn'
 Plug 'w0rp/ale'
 " Plug 'skywind3000/asyncrun.vim'
