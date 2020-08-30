@@ -7,7 +7,7 @@ alias rfc4648='rfc4648-5'
 alias sshconfig='less ~/.ssh/config'
 
 alias ex='elixir -e'
-alias js='node -e'
+alias js='node -p'
 alias phr='php -r'
 alias py='python -c'
 
