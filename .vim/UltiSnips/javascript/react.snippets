@@ -4,11 +4,21 @@ snippet ir "import React from react" b
 import React from "react";
 endsnippet
 
-snippet pt "propTypes = {}" b
-propTypes = {$1};
+snippet ipt "import PropTypes from PropTypes" b
+import React from "prop-types";
 endsnippet
 
-snippet dp "defaultProps = {}" b
+snippet pt "PropTypes" w
+PropTypes
+endsnippet
+
+snippet PropTypes "propTypes" w
+propTypes = {
+	$1
+}
+endsnippet
+
+snippet defp "defaultProps = {}" b
 defaultProps = {$1};
 endsnippet
 

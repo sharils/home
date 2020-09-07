@@ -31,10 +31,26 @@ endsnippet
 
 priority 2
 
-snippet pe "process.env" w
-process.env
+snippet dev "process.env.NODE_ENV === 'development'" w
+process.env.NODE_ENV === "development"
 endsnippet
 
-snippet ne "process.env.NODE_ENV" w
-NODE_ENV
+snippet !dev "process.env.NODE_ENV !== 'development'" w
+process.env.NODE_ENV === "development"
+endsnippet
+
+snippet prod "process.env.NODE_ENV === 'production'" w
+process.env.NODE_ENV === "production"
+endsnippet
+
+snippet !prod "process.env.NODE_ENV !== 'production'" w
+process.env.NODE_ENV === "production"
+endsnippet
+
+snippet test "process.env.NODE_ENV === 'test'" w
+process.env.NODE_ENV === "test"
+endsnippet
+
+snippet !test "process.env.NODE_ENV !== 'test'" w
+process.env.NODE_ENV === "test"
 endsnippet

@@ -27,16 +27,6 @@ snippet < "(?<>)" "around_regex(snip)" ie
 (?<$1>$2)
 endsnippet
 
-snippet /^a/ "(async () => {})()" r
-(async () => {
-	try {
-		${1:${VISUAL}}
-	} catch (e) {$2
-	}
-}
-})();
-endsnippet
-
 snippet d "default" "around_export(snip)" we
 default $0
 endsnippet
@@ -63,8 +53,10 @@ endsnippet
 
 priority 3
 
-snippet cs "constructor" b
-constructor($1) { $2 }
+snippet con "constructor" b
+constructor($1) {
+	$2
+}
 endsnippet
 
 snippet su "super" b
@@ -119,7 +111,7 @@ const ${1:fn} = (${2}) => {
 $1($2)
 endsnippet
 
-snippet u "use strict" b
+snippet us "use strict" b
 "use strict";
 endsnippet
 
@@ -158,10 +150,6 @@ snippet d "debugger" w
 debugger
 endsnippet
 
-snippet f* "function" Aw
-function* $1($2) {$3}
-endsnippet
-
 snippet fu "function" w
 function $1($2) {$3}
 endsnippet
@@ -170,12 +158,30 @@ snippet i "iife" w
 (v => { ${1:debugger}; return v; })(${VISUAL})
 endsnippet
 
-snippet io "instanceof" w
+snippet iife "iife" w
+(async () => {
+	try {
+		${1:${VISUAL}}
+	} catch (e) {$2
+	}
+}
+})();
+endsnippet
+
+snippet ins "instanceof" w
 instanceof $0
+endsnippet
+
+snippet nu "number" w
+number
 endsnippet
 
 snippet nan "nan" w
 NaN
+endsnippet
+
+snippet o "object" w
+object
 endsnippet
 
 snippet of "in" w
@@ -192,6 +198,10 @@ snippet ovo "valueOf" w
 valueOf = () => {
 	$1
 };
+endsnippet
+
+snippet pr "prototype" w
+prototype
 endsnippet
 
 snippet to "typeof" w

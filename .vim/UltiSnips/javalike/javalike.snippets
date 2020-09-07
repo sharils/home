@@ -5,10 +5,6 @@ endglobal
 
 priority 5
 
-snippet e "extends" "around_class(snip)" we
-extends $0
-endsnippet
-
 
 priority 3
 
@@ -16,7 +12,7 @@ snippet tr "throw" b
 throw $0
 endsnippet
 
-snippet ty "try" b
+snippet try "try" b
 try {
 	${1:${VISUAL}}
 }
@@ -29,18 +25,34 @@ snippet cl "class" w
 class $1 {$2}
 endsnippet
 
+snippet ex "extends" w
+extends $0
+endsnippet
+
 snippet fi "finally" w
  finally {
 	${1:${VISUAL}}
 }
 endsnippet
 
-snippet m "null" w
+snippet n "null" w
 null
 endsnippet
 
-snippet st "static" w
+snippet im "implements" w
+implements
+endsnippet
+
+snippet in "interface" w
+interface $1 {$2}
+endsnippet
+
+snippet sta "static" w
 static $0
+endsnippet
+
+snippet su "super" w
+super
 endsnippet
 
 snippet th "this" w

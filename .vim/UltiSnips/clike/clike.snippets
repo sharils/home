@@ -9,10 +9,6 @@ snippet c "case" "around_switch(snip)" be
 case $1:
 endsnippet
 
-snippet d "default" "around_switch(snip)" be
-default:
-endsnippet
-
 
 priority 3
 
@@ -22,7 +18,7 @@ snippet /* "/* comment block */" b
  */
 endsnippet
 
-snippet b "break" b
+snippet br "break" b
 break;
 endsnippet
 
@@ -36,19 +32,19 @@ $1($2) {
 }
 endsnippet
 
-snippet fo "for" b
+snippet for "for" b
 for ($1) {
 	${2:${VISUAL}}
 }
 endsnippet
 
-snippet wh "while" b
+snippet whi "while" b
 while ($1) {
 	${2:${VISUAL}}
 }
 endsnippet
 
-snippet s "switch" b
+snippet sw "switch" b
 switch ($1) {
 	${2:${VISUAL}}
 }
@@ -64,6 +60,10 @@ endsnippet
 
 
 priority 2
+
+snippet def "default" w
+default
+endsnippet
 
 snippet el "else" w
  else {
