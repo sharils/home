@@ -53,10 +53,8 @@ endsnippet
 
 priority 3
 
-snippet con "constructor" b
-constructor($1) {
-	$2
-}
+snippet con "constructor" w
+constructor
 endsnippet
 
 snippet su "super" b
@@ -163,6 +161,7 @@ snippet iife "iife" w
 	try {
 		${1:${VISUAL}}
 	} catch (e) {$2
+		console.error(e);
 	}
 }
 })();
