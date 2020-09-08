@@ -77,38 +77,6 @@ snippet l "let" b
 let $0
 endsnippet
 
-snippet lt "let try" b
-let ${1};
-try {
-	$1 = $2;
-} catch (e) {
-	if ($3) {
-		$4
-	} else {
-		throw e;
-	}
-}
-endsnippet
-
-snippet ots "toString" b
-toString() {
-	$1
-};
-endsnippet
-
-snippet ovo "valueOf" b
-valueOf() {
-	$1
-};
-endsnippet
-
-snippet rf "refactor function" b
-const ${1:fn} = (${2}) => {
-	${3:${VISUAL}}
-}
-$1($2)
-endsnippet
-
 snippet us "use strict" b
 "use strict";
 endsnippet
@@ -132,7 +100,7 @@ snippet c "const" w
 const $0
 endsnippet
 
-snippet ca "catch" w
+snippet cat "catch" w
  catch (${2:e}) {
 	${1:// eslint-disable-next-line no-console
 	console.error(e);
