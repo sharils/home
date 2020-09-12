@@ -1,1 +1,2 @@
-nmap <LEADER>ap :call AutoPairsToggle()<CR>
+" autocmd FileType typescript,typescriptreact let b:AutoPairs = AutoPairsDefine({'\w\zs<': '>'})
+" autocmd FileType javascriptreact,typescriptreact let b:AutoPairs = AutoPairsDefine({'<>' : '</>'})
