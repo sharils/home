@@ -32,7 +32,7 @@ Plug 'christoomey/vim-conflicted' |
       Plug 'skywind3000/asyncrun.vim' |
     Plug 'shumphrey/fugitive-gitlab.vim' |
     Plug 'tpope/vim-rhubarb'
-Plug 'ludovicchabant/vim-gutentags'
+" Plug 'ludovicchabant/vim-gutentags'
 Plug 'inkarkat/vim-ingo-library' | Plug 'inkarkat/vim-mark'
 " Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'tpope/vim-obsession'
