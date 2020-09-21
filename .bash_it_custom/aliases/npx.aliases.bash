@@ -175,6 +175,9 @@ alias selenium-side-runner='npx selenium-side-runner '
 # Static file serving and directory listing
 alias serve='npx serve '
 
+# trello-cli is a CLI tool for Trello. Makes sense, right?
+alias trello-cli='npx trello-cli'
+
 # Hauls your node.js source files around
 alias trucker='npx trucker '
 
