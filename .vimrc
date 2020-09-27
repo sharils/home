@@ -48,7 +48,9 @@ Plug 'tpope/vim-surround'
 
 Plug 'ekalinin/Dockerfile.vim', { 'for': 'dockerfile' }
 Plug 'vito-c/jq.vim', { 'for': 'jq' }
+Plug 'chikamichi/mediawiki.vim', { 'for': 'mw' }
 Plug 'alunny/pegjs-vim', { 'for': 'pegjs' }
+Plug 'rust-lang/rust.vim', { 'for': 'rs' }
 Plug 'alvan/vim-closetag', { 'for': ['html', 'javascriptreact', 'typescriptreact', 'xhtml'] }
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'yardnsm/vim-import-cost', { 'for': ['javascript', 'javascriptreact', 'typescript', 'typescriptreact'], 'do': 'npm install' }
