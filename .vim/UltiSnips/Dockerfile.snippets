@@ -55,9 +55,9 @@ WORKDIR $0
 endsnippet
 
 snippet apk "apk add --no-cache --update" w
-apk add --no-cache --update $0
+apk add --no-cache --update ${0:package=version}
 endsnippet
 
 snippet apt "apt-get install -y" w
-DEBIAN_FRONTEND=noninteractive apt-get install -y $0
+DEBIAN_FRONTEND=noninteractive apt-get install -y ${0:package=version}
 endsnippet
