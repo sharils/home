@@ -7,7 +7,7 @@ CMD [$1]
 endsnippet
 
 snippet cp "COPY" b
-COPY $0
+COPY ${1:--chown="2147483647:2147483647"}
 endsnippet
 
 snippet e "ENV" b
@@ -43,7 +43,7 @@ RUN $0
 endsnippet
 
 snippet u "USER" b
-USER $0
+USER ${1:"2147483647:2147483647"}
 endsnippet
 
 snippet v "VOLUME" b
