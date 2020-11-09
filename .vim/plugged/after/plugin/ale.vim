@@ -1,6 +1,9 @@
 nmap <LEADER>ad :ALEDetail<CR>
 nmap <LEADER>af :ALEFix<CR>
 
+" avoid high cpu usage resulted from tsserver
+let g:ale_linters = {'javascript': ['eslint', 'prettier']}
+
 " let g:ale_fix_on_save       = 1
 let g:ale_fixers                 = {}
 let g:ale_fixers['*']            = ['remove_trailing_lines', 'trim_whitespace']
