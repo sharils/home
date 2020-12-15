@@ -108,6 +108,7 @@ inoremap <C-E> <C-O>A
 inoremap <C-F> <C-O>l
 inoremap <C-[>O <ESC>O
 inoremap <C-[>} ’
+cnoremap <C-[>} ’
 nmap <LEADER>E :edit!<CR>
 nmap <LEADER>g< :silent lgrep --fixed-strings '<<<<<<<' %<CR>zt<C-L>zt
 nmap <LEADER>gW :silent lgrep --fixed-strings <C-R><C-W> *<CR><C-L>zt
