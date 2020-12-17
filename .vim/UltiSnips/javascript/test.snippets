@@ -6,37 +6,37 @@ endglobal
 priority 3
 
 snippet taa "afterAll" b
-afterAll(function() {
+afterAll(() => {
 	${1:${VISUAL}}
 });
 endsnippet
 
 snippet tae "afterEach" b
-afterEach(function() {
+afterEach(() => {
 	${1:${VISUAL}}
 });
 endsnippet
 
 snippet taf "after" b
-after(function() {
+after(() => {
 	${1:${VISUAL}}
 });
 endsnippet
 
 snippet tba "beforeAll" b
-beforeAll(function() {
+beforeAll(() => {
 	${1:${VISUAL}}
 });
 endsnippet
 
 snippet tbe "beforeEach" b
-beforeEach(function() {
+beforeEach(() => {
 	${1:${VISUAL}}
 });
 endsnippet
 
 snippet tbf "before" b
-before(function() {
+before(() => {
 	${1:${VISUAL}}
 });
 endsnippet
@@ -46,7 +46,7 @@ expect($1)
 endsnippet
 
 snippet tde "describe" b
-describe("$1", function() {
+describe("$1", () => {
 	${2:${VISUAL}}
 });
 endsnippet
@@ -56,7 +56,7 @@ expect
 endsnippet
 
 snippet tit "it" b
-it("$1", $2function() {
+it("$1", $2() => {
 	${3:${VISUAL}}
 })
 endsnippet
