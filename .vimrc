@@ -54,7 +54,7 @@ Plug 'rust-lang/rust.vim', { 'for': 'rs' }
 Plug 'alvan/vim-closetag', { 'for': ['html', 'javascriptreact', 'typescriptreact', 'xhtml'] }
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'yardnsm/vim-import-cost', { 'for': ['javascript', 'javascriptreact', 'typescript', 'typescriptreact'], 'do': 'npm install' }
-Plug 'moll/vim-node', { 'for': ['javascriptreact', 'typescriptreact'] }
+Plug 'moll/vim-node'
 Plug 'alampros/vim-styled-jsx', { 'for': ['javascriptreact', 'typescriptreact'] }
 Plug 'pedrohdz/vim-yaml-folds', { 'for': 'yaml' }
 
