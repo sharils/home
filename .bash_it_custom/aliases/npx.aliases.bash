@@ -42,6 +42,9 @@ alias create-react-app='npx create-react-app '
 # Cypress.io end to end testing tool
 alias cypress='npx cypress '
 
+# Convert JSON to CSV or CSV to JSON
+alias csv2json='npx -p @mrodrig/json-2-csv-cli csv2json'
+
 # Generate a report about your development environment for debugging and issue reporting
 alias envinfo='npx envinfo'
 
