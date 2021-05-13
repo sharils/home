@@ -20,12 +20,11 @@ alias citgm='npx citgm'
 # Codecrumbs standalone: learn and share your code knowledge!
 alias codecrumbs='npx codecrumbs '
 
-# GraphQL code generator with flexible support for custom plugins and templates
-# https://graphql-code-generator.com
-alias graphql-codegen='npx -p graphql -p @graphql-codegen/cli -c graphql-codegen'
-
 # All importers & exporters for CodeSandbox
 alias codesandbox='npx codesandbox'
+
+# http://composerize.com - Turns docker run commands into docker-compose files!
+alias composerize='npx composerize '
 
 # Find out which of your dependencies is slowing you down
 alias cost-of-modules='npx cost-of-modules '
@@ -58,6 +57,10 @@ alias gitignorejs='npx gitignore node'
 
 # Utility to annotate console logging statements with timestamps and find slow processes
 alias gnomon='npx gnomon'
+
+# GraphQL code generator with flexible support for custom plugins and templates
+# https://graphql-code-generator.com
+alias graphql-codegen='npx -p graphql -p @graphql-codegen/cli -c graphql-codegen'
 
 # An opinionated code style agnostic linter – a friendly companion to Prettier.
 alias healthier='npx healthier '
