@@ -10,7 +10,7 @@ devhints() {
     open "https://devhints.io/$path"
 }
 
-tldr() {
-    if [ $# -eq 0 ]; then path=''; else path="$*"; fi
-    open "https://tldr.ostera.io/$path"
-}
+# tldr() {
+#     if [ $# -eq 0 ]; then path=''; else path="$*"; fi
+#     open "https://tldr.ostera.io/$path"
+# }
