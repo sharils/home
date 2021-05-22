@@ -35,6 +35,9 @@ alias covgen='npx covgen '
 # Create Next.js-powered React apps with one command
 alias create-next-app='npx create-next-app '
 
+# 📟 CLI to create new Node.js CLI applications. Learn to build Node.js CLI apps.
+alias create-node-cli='npx create-node-cli'
+
 # Create React apps with no build configuration.
 alias create-react-app='npx create-react-app '
 
