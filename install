@@ -10,6 +10,9 @@ main() {
 
     signingkey=$1
 
+    curl https://raw.githubusercontent.com/thameera/vimv/master/vimv > /usr/local/bin && \
+        chmod 755 /usr/local/bin
+
     if brew --version; then
         echo brew is already installed
     else
