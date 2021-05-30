@@ -19,7 +19,6 @@ main() {
 
     brew install \
         autojump \
-        # cask-repair \
         ctags \
         direnv \
         fd \
@@ -46,6 +45,7 @@ main() {
     # brew install \
     #     asciinema \
     #     bat \
+    #     cask-repair \
     #     elixir \
     #     erlang \
     #     exercism \
