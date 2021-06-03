@@ -1,1 +1,1 @@
-eval "$(thefuck --alias k)"
+eval "$(thefuck --alias ve)"
