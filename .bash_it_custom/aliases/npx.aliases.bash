@@ -20,6 +20,9 @@ alias citgm='npx citgm'
 # Codecrumbs standalone: learn and share your code knowledge!
 alias codecrumbs='npx codecrumbs '
 
+# codemod-cli is a command line tool for generating, testing, and publishing codemods.
+alias codemod-cli='npx codemod-cli'
+
 # All importers & exporters for CodeSandbox
 alias codesandbox='npx codesandbox'
 
