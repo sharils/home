@@ -74,6 +74,9 @@ alias healthier='npx healthier '
 # 💡 A hinting engine for the web https://webhint.io/
 alias hint='npx hint'
 
+# http-server: a command-line http server
+alias http-server='npx http-server'
+
 # HTTP server for debugging clients.
 alias httpbin='npx npx @buzuli/httpbin '
 
