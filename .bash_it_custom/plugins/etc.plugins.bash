@@ -102,3 +102,8 @@ rfc4648_5() {
     echo '        16 Q            33 h            50 y'
     echo ''
 }
+
+mvt() {
+    tmp="/tmp$PWD"
+    mkdir -p "$tmp" && mv "$@" "$tmp"
+}
