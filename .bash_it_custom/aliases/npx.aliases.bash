@@ -190,6 +190,9 @@ alias selenium-side-runner='npx selenium-side-runner '
 # Static file serving and directory listing
 alias serve='npx serve '
 
+# A super tiny and simple CLI utility to time the execution of another CLI command. Written in Javascript to minimize the number of dependencies (e.g. Golang, Rust etc.) to your package. The execution time overhead to your script is likely less than 0.1 seconds, which should be negligible in most cases.
+alias timecli='npx timecli '
+
 # trello-cli is a CLI tool for Trello. Makes sense, right?
 alias trello-cli='npx trello-cli'
 
