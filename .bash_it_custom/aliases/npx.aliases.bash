@@ -61,9 +61,6 @@ alias eslintf='npx eslint --fix .'
 alias gitignore='npx gitignore '
 alias gitignorejs='npx gitignore node'
 
-# Utility to annotate console logging statements with timestamps and find slow processes
-alias gnomon='npx gnomon'
-
 # GraphQL code generator with flexible support for custom plugins and templates
 # https://graphql-code-generator.com
 alias graphql-codegen='npx -p graphql -p @graphql-codegen/cli -c graphql-codegen'
