@@ -38,12 +38,16 @@ if [ $1 ]$2; then
 fi
 endsnippet
 
-snippet seto "set -o pipefail" b
-set -o pipefail
+snippet set "set -euo pipefail" b
+set -eu #o pipefail
 endsnippet
 
 snippet scd "# shellcheck disable=" b
 # shellcheck disable=
+endsnippet
+
+snippet tee "test echo exit" b
+[ $1 ] || 1>&2 echo ${2:'Error'} && exit ${3:1}
 endsnippet
 
 
@@ -108,7 +112,7 @@ snippet 9 "$9" i
 \$9
 endsnippet
 
-snippet seda "sed append" i
+snippet seda "sed a" i
 "$(printf 'a\\\n%s' "$1")"
 endsnippet
 
@@ -116,7 +120,7 @@ snippet seds "sed s" i
 s$1$2$3
 endsnippet
 
-snippet sed/ "sed/" i
+snippet sed/ "sed /" i
 \$1
 endsnippet
 
