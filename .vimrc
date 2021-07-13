@@ -55,6 +55,7 @@ Plug 'alvan/vim-closetag', { 'for': ['html', 'javascriptreact', 'typescriptreact
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'yardnsm/vim-import-cost', { 'for': ['javascript', 'javascriptreact', 'typescript', 'typescriptreact'], 'do': 'npm install' }
 Plug 'moll/vim-node'
+Plug 'acarapetis/vim-sh-heredoc-highlighting', { 'for': ['sh', 'bash'] }
 Plug 'alampros/vim-styled-jsx', { 'for': ['javascriptreact', 'typescriptreact'] }
 Plug 'pedrohdz/vim-yaml-folds', { 'for': 'yaml' }
 

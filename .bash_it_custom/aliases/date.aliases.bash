@@ -1,7 +1,7 @@
-alias dateuI='date -u +%Y-%m-%dT%H:%M:%SZ'
-alias dateuII='date -u +%Y%m%dT%H%M%SZ'
-alias dateI='date +%Y-%m-%dT%H:%M:%S%Z'
-alias dateII='date +%Y%m%dT%H%M%S%Z'
-alias dater='date <<<'
+#!/usr/bin/env sh
+alias dateU='date -u +%Y-%m-%dT%H:%M:%SZ'
+alias dateu='date -u +%Y%m%dT%H%M%SZ'
+alias dateI='date +%Y-%m-%dT%H:%M:%S%z'
+alias datei='date +%Y%m%dT%H%M%S%z'
 alias dates='date +%s'
-alias dateymd='date +%Y-%m-%d'
+alias dater='date -ujf %s +%Y-%m-%dT%H:%M:%SZ'

@@ -27,9 +27,15 @@ export $1='$2'
 endsnippet
 
 snippet fun "fun() {}" b
-$1() {
-	$2
+${1:f}() {
+	${2::}
 }
+endsnippet
+
+snippet if "if" b
+if [ $1 ]$2; then
+	${3::}
+fi
 endsnippet
 
 snippet seto "set -o pipefail" b
@@ -38,6 +44,13 @@ endsnippet
 
 snippet scd "# shellcheck disable=" b
 # shellcheck disable=
+endsnippet
+
+
+priority 2
+snippet << "<<'HEREDOC'" w
+<<'${1:SHELL}'
+$1
 endsnippet
 
 
