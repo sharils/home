@@ -14,7 +14,7 @@ endsnippet
 
 priority 3
 
-snippet $ "$PIPESTATUS[0]" b
+snippet $P "$PIPESTATUS[0]" b
 $PIPESTATUS[0]
 endsnippet
 
@@ -53,8 +53,16 @@ snippet << "<<'HEREDOC'" w
 $1
 endsnippet
 
+snippet sed "sed -i" w
+sed -i."$(date +%Y-%m-%dT%H:%M:%S%z)" $0
+endsnippet
+
 
 priority 1
+
+snippet $ "$" i
+"$$1"
+endsnippet
 
 snippet # "$#" i
 \$#
@@ -98,4 +106,20 @@ endsnippet
 
 snippet 9 "$9" i
 \$9
+endsnippet
+
+snippet seda "sed append" i
+"$(printf 'a\\\n%s' "$1")"
+endsnippet
+
+snippet seds "sed s" i
+s$1$2$3
+endsnippet
+
+snippet sed/ "sed/" i
+\$1
+endsnippet
+
+snippet $p "$(printf)" i
+"$(printf $1)"
 endsnippet
