@@ -18,7 +18,7 @@ snippet $P "$PIPESTATUS[0]" b
 $PIPESTATUS[0]
 endsnippet
 
-snippet e "export" b
+snippet ex "export" b
 export
 endsnippet
 
@@ -26,10 +26,16 @@ snippet export "export" b
 export $1='$2'
 endsnippet
 
-snippet fun "fun() {}" b
+snippet fu "fun() {}" b
 ${1:f}() {
 	${2::}
 }
+endsnippet
+
+snippet for "for" b
+for ${1::}; do
+	${2::}
+done
 endsnippet
 
 snippet if "if" b
@@ -59,6 +65,142 @@ endsnippet
 
 snippet sed "sed -i" w
 sed -i."$(date +%Y-%m-%dT%H:%M:%S%z)" $0
+endsnippet
+
+snippet -b "-b" w
+[ -b ${1:""} ]
+endsnippet
+
+snippet -c "-c" w
+[ -c ${1:""} ]
+endsnippet
+
+snippet -d "-d" w
+[ -d ${1:""} ]
+endsnippet
+
+snippet -e "-e" w
+[ -e ${1:""} ]
+endsnippet
+
+snippet -f "-f" w
+[ -f ${1:""} ]
+endsnippet
+
+snippet -g "-g" w
+[ -g ${1:""} ]
+endsnippet
+
+snippet -h "-h" w
+[ -h ${1:""} ]
+endsnippet
+
+snippet -k "-k" w
+[ -k ${1:""} ]
+endsnippet
+
+snippet -n "-n" w
+[ -n ${1:""} ]
+endsnippet
+
+snippet -p "-p" w
+[ -p ${1:""} ]
+endsnippet
+
+snippet -r "-r" w
+[ -r ${1:""} ]
+endsnippet
+
+snippet -s "-s" w
+[ -s ${1:""} ]
+endsnippet
+
+snippet -t "-t" w
+[ -t ${1:""} ]
+endsnippet
+
+snippet -u "-u" w
+[ -u ${1:""} ]
+endsnippet
+
+snippet -w "-w" w
+[ -w ${1:""} ]
+endsnippet
+
+snippet -x "-x" w
+[ -x ${1:""} ]
+endsnippet
+
+snippet -z "-z" w
+[ -z ${1:""} ]
+endsnippet
+
+snippet -L "-L" w
+[ -L ${1:""} ]
+endsnippet
+
+snippet -O "-O" w
+[ -O ${1:""} ]
+endsnippet
+
+snippet -G "-G" w
+[ -G ${1:""} ]
+endsnippet
+
+snippet -S "-S" w
+[ -S ${1:""} ]
+endsnippet
+
+snippet -nt "-nt" w
+[ ${1:""} -nt ${2:""} ]
+endsnippet
+
+snippet -ot "-ot" w
+[ ${1:""} -ot ${2:""} ]
+endsnippet
+
+snippet -ef "-ef" w
+[ ${1:""} -ef ${2:""} ]
+endsnippet
+
+snippet = "=" w
+[ ${1:""} = ${2:""} ]
+endsnippet
+
+snippet != "!=" w
+[ ${1:""} != ${2:""} ]
+endsnippet
+
+snippet < "<" w
+[ ${1:""} < ${2:""} ]
+endsnippet
+
+snippet > ">" w
+[ ${1:""} > ${2:""} ]
+endsnippet
+
+snippet -eq "-eq" w
+[ ${1:""} -eq ${2:""} ]
+endsnippet
+
+snippet -ne "-ne" w
+[ ${1:""} -ne ${2:""} ]
+endsnippet
+
+snippet -gt "-gt" w
+[ ${1:""} -gt ${2:""} ]
+endsnippet
+
+snippet -ge "-ge" w
+[ ${1:""} -ge ${2:""} ]
+endsnippet
+
+snippet -lt "-lt" w
+[ ${1:""} -lt ${2:""} ]
+endsnippet
+
+snippet -le "-le" w
+[ ${1:""} -le ${2:""} ]
 endsnippet
 
 
