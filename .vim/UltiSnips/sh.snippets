@@ -44,8 +44,12 @@ if [ $1 ]$2; then
 fi
 endsnippet
 
-snippet set "set -euo pipefail" b
-set -eu #o pipefail
+snippet set "set -eux" b
+set -eux
+endsnippet
+
+snippet 'set -eux' "-euxo pipefail" b
+set -euxo pipefail
 endsnippet
 
 snippet scd "# shellcheck disable=" b
@@ -61,6 +65,10 @@ priority 2
 snippet << "<<'HEREDOC'" w
 <<'${1:SHELL}'
 $1
+endsnippet
+
+snippet e "echo" w
+echo $0
 endsnippet
 
 snippet sed "sed -i" w
