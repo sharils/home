@@ -162,6 +162,7 @@ alias prettier-package-jsonw='npx --yes prettier-package-json --write'
 # Prettier is an opinionated code formatter
 alias prettier='npx --yes prettier '
 alias prettierjs=$'npx --yes prettier --write \'*.js\' \'**/*.js\' '
+alias prettiersh='npx --yes --package prettier --package prettier-plugin-sh prettier'
 
 # ⚡ Get Pretty Quick https://npm.im/pretty-quick
 alias pretty-quick='npx --yes pretty-quick'
