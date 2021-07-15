@@ -23,7 +23,32 @@ EXPOSE $0
 endsnippet
 
 snippet f "FROM" b
-FROM ${1:ubuntu}
+FROM ${1:ubuntu:20.04}
+endsnippet
+
+snippet fa "alpine" b
+# https://hub.docker.com/_/alpine
+FROM alpine:${1:3.14}
+endsnippet
+
+snippet fn "nginx" b
+# https://hub.docker.com/_/nginx
+FROM nginx:${1:1.21}-alpine
+endsnippet
+
+snippet fn "node" b
+# https://hub.docker.com/_/node
+FROM node:${1:16.5}-alpine${2:3.14}
+endsnippet
+
+snippet fp "python" b
+# https://hub.docker.com/_/python
+FROM python:${1:3.9}-alpine${2:3.14}
+endsnippet
+
+snippet fu "ubuntu" b
+# https://hub.docker.com/_/ubuntu
+FROM ubuntu:${1:20.04}
 endsnippet
 
 snippet l "LABEL" b
@@ -61,3 +86,5 @@ endsnippet
 snippet apt "apt-get install -y" w
 DEBIAN_FRONTEND=noninteractive apt-get install -y ${0:package=version}
 endsnippet
+
+# vim:filetype=snippets
