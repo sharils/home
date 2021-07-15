@@ -1,0 +1,121 @@
+snippet b "build" b
+build:
+endsnippet
+
+snippet c "command" b
+command: $0
+endsnippet
+
+snippet dn "domainname" b
+domainname: $0
+endsnippet
+
+snippet do "depends_on" b
+depends_on:
+	- $0
+endsnippet
+
+snippet e "environment" b
+environment:
+endsnippet
+
+snippet ep "entrypoint" b
+entrypoint: $0
+endsnippet
+
+snippet ex "expose" b
+expose:
+	- $0
+endsnippet
+
+snippet hn "hostname" b
+hostname: $0
+endsnippet
+
+snippet i "image" b
+image: $0
+endsnippet
+
+snippet log "logging.driver.awslogs" b
+logging:
+	driver: local
+	# https://docs.docker.com/config/containers/logging/awslogs/#amazon-cloudwatch-logs-options
+	options:
+		awslogs-group: ${2:myLogGroup}
+endsnippet
+
+snippet log "logging.driver.local" b
+logging:
+	driver: local
+	# https://docs.docker.com/config/containers/logging/local/#options
+	options:
+		max-size: 20m
+		max-file: 5
+endsnippet
+
+snippet log "logging.driver.syslog" b
+logging:
+	driver: syslog
+	# https://docs.docker.com/config/containers/logging/syslog/#options
+	options:
+		syslog-address: ${1:tcp://192.168.0.42:123}
+endsnippet
+
+snippet mongo "mongo" b
+db:
+	# https://hub.docker.com/_/mongo
+	image: mongo:5.0-focal
+	restart: always
+	environment:
+		MONGO_INITDB_DATABASE:
+		MONGO_INITDB_ROOT_PASSWORD:
+		MONGO_INITDB_ROOT_USERNAME:
+endsnippet
+
+snippet p "ports" b
+ports:
+	- $0
+endsnippet
+
+snippet pr "profiles" b
+profiles:
+	- $0
+endsnippet
+
+snippet r "restart: no" b
+restart: "no"
+endsnippet
+
+snippet r "restart: always" b
+restart: always
+endsnippet
+
+snippet r "restart: on-failure" b
+restart: on-failure
+endsnippet
+
+snippet r "restart: unless-stopped" b
+restart: unless-stopped
+endsnippet
+
+snippet s "services" b
+# https://docs.docker.com/compose/compose-file/compose-file-v3/
+version: "3.8"
+services:
+endsnippet
+
+snippet se "secret" b
+secrets:
+	- $0
+endsnippet
+
+snippet v "volumes" b
+volumes:
+	- type: ${1:bind|volume}
+		source: ./static
+		target: /opt/app/static
+endsnippet
+
+snippet w "working_dir" b
+working_dir: $0
+endsnippet
