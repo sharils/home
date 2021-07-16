@@ -78,8 +78,8 @@ snippet # "`#`" w
 \`#${VISUAL}\`
 endsnippet
 
-snippet << "<<'TXT'" w
-<<'${1:TXT}'`echo \\n`$2`echo \\n`$1
+snippet < "<<'EOF'" w
+<<'${1:EOF}'`echo \\n`$2`echo \\n`$1
 endsnippet
 
 snippet here "here document (here)"
@@ -212,32 +212,12 @@ snippet -S "-S" w
 [ -S ${1:""} ]
 endsnippet
 
-snippet -nt "-nt" w
-[ ${1:""} -nt ${2:""} ]
-endsnippet
-
-snippet -ot "-ot" w
-[ ${1:""} -ot ${2:""} ]
-endsnippet
-
-snippet -ef "-ef" w
-[ ${1:""} -ef ${2:""} ]
-endsnippet
-
 snippet = "=" w
 [ ${1:""} = ${2:""} ]
 endsnippet
 
 snippet != "!=" w
 [ ${1:""} != ${2:""} ]
-endsnippet
-
-snippet < "<" w
-[ ${1:""} < ${2:""} ]
-endsnippet
-
-snippet > ">" w
-[ ${1:""} > ${2:""} ]
 endsnippet
 
 snippet -eq "-eq" w
@@ -262,10 +242,6 @@ endsnippet
 
 snippet -le "-le" w
 [ ${1:""} -le ${2:""} ]
-endsnippet
-
-snippet w "description" w
-
 endsnippet
 
 snippet dateU "date -u +%Y-%m-%dT%H:%M:%SZ" w
