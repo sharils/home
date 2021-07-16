@@ -82,6 +82,12 @@ snippet << "<<'TXT'" w
 <<'${1:TXT}'`echo \\n`$2`echo \\n`$1
 endsnippet
 
+snippet here "here document (here)"
+<<-${2:'${1:TOKEN}'}
+	$0
+${1/['"`](.+)['"`]/$1/}
+endsnippet
+
 snippet gp "<<'GNUPLOT'" w
 <<'GNUPLOT'`echo \\n`$1`echo \\n`GNUPLOT
 endsnippet
@@ -256,10 +262,6 @@ endsnippet
 
 snippet -le "-le" w
 [ ${1:""} -le ${2:""} ]
-endsnippet
-
-snippet \1 "\2" w
-\2
 endsnippet
 
 snippet w "description" w
