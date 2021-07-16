@@ -18,7 +18,11 @@ snippet $P "$PIPESTATUS[0]" b
 $PIPESTATUS[0]
 endsnippet
 
-snippet c "command" b
+snippet c "cat" b
+cat $0
+endsnippet
+
+snippet co "command" b
 command
 endsnippet
 
@@ -70,9 +74,12 @@ endsnippet
 
 
 priority 2
-snippet << "<<'HEREDOC'" w
-<<'${1:SHELL}'
-$1
+snippet # "`#`" w
+\`#${VISUAL}\`
+endsnippet
+
+snippet << "<<'SHELL'" w
+<<'${1:SHELL}'`!p snip.rv = '\n' + t[1]`
 endsnippet
 
 snippet p "printf" w
@@ -227,6 +234,10 @@ snippet \1 "\2" w
 \2
 endsnippet
 
+snippet w "description" w
+
+endsnippet
+
 snippet dateU "date -u +%Y-%m-%dT%H:%M:%SZ" w
 date -u '+%Y-%m-%dT%H:%M:%SZ'
 endsnippet
@@ -256,10 +267,6 @@ priority 1
 
 snippet $ "$" i
 "$$1"
-endsnippet
-
-snippet # "$#" i
-\$#
 endsnippet
 
 snippet 0 "$0" i
@@ -300,6 +307,10 @@ endsnippet
 
 snippet 9 "$9" i
 \$9
+endsnippet
+
+snippet @ "$@" i
+"$@"
 endsnippet
 
 snippet seda "sed a" i

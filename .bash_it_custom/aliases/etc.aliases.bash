@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
+alias a='asciix'
 alias b='bat'
 alias l='less --quit-if-one-screen'
 
