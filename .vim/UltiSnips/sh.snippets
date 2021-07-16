@@ -18,6 +18,10 @@ snippet $P "$PIPESTATUS[0]" b
 $PIPESTATUS[0]
 endsnippet
 
+snippet c "command" b
+command
+endsnippet
+
 snippet ex "export" b
 export
 endsnippet
@@ -44,6 +48,10 @@ if [ $1 ]$2; then
 fi
 endsnippet
 
+snippet r "return" b
+return $0
+endsnippet
+
 snippet set "set -eux" b
 set -eux
 endsnippet
@@ -65,6 +73,10 @@ priority 2
 snippet << "<<'HEREDOC'" w
 <<'${1:SHELL}'
 $1
+endsnippet
+
+snippet p "printf" w
+printf $0
 endsnippet
 
 snippet e "echo" w
@@ -209,6 +221,34 @@ endsnippet
 
 snippet -le "-le" w
 [ ${1:""} -le ${2:""} ]
+endsnippet
+
+snippet \1 "\2" w
+\2
+endsnippet
+
+snippet dateU "date -u +%Y-%m-%dT%H:%M:%SZ" w
+date -u '+%Y-%m-%dT%H:%M:%SZ'
+endsnippet
+
+snippet dateu "date -u +%Y%m%dT%H%M%SZ" w
+date -u '+%Y%m%dT%H%M%SZ'
+endsnippet
+
+snippet dateI "date +%Y-%m-%dT%H:%M:%S%z" w
+date '+%Y-%m-%dT%H:%M:%S%z'
+endsnippet
+
+snippet datei "date +%Y%m%dT%H%M%S%z" w
+date '+%Y%m%dT%H%M%S%z'
+endsnippet
+
+snippet dates "date +%s" w
+date '+%s'
+endsnippet
+
+snippet dater "date -ujf %s +%Y-%m-%dT%H:%M:%SZ" w
+date -ujf '%s +%Y-%m-%dT%H:%M:%SZ'
 endsnippet
 
 
