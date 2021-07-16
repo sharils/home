@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ascii_d() {
+asciid() {
     echo ''
     echo '     The decimal set:'
     echo ''
@@ -23,7 +23,7 @@ ascii_d() {
     echo ''
 }
 
-ascii_x() {
+asciix() {
     echo ''
     echo '     The hexadecimal set:'
     echo ''
@@ -53,7 +53,7 @@ fibonacci() {
     echo ''
 }
 
-rfc4648_4() {
+rfc46484() {
     echo ''
     echo '                      Table 1: The Base 64 Alphabet'
     echo ''
@@ -78,7 +78,7 @@ rfc4648_4() {
     echo ''
 }
 
-rfc4648_5() {
+rfc46485() {
     echo ''
     echo '         Table 2: The "URL and Filename safe" Base 64 Alphabet'
     echo ''
