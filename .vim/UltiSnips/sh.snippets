@@ -53,11 +53,11 @@ return $0
 endsnippet
 
 snippet set "set -eux" b
-set -eux
+set -o errexit -o nounset -o xtrace
 endsnippet
 
-snippet 'set -eux' "-euxo pipefail" b
-set -euxo pipefail
+snippet 'set -o errexit -o nounset -o xtrace' "-o pipefail" b
+set -o errexit -o nounset -o xtrace -o pipefail
 endsnippet
 
 snippet scd "# shellcheck disable=" b

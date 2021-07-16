@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+
 alias dateU='date -u +%Y-%m-%dT%H:%M:%SZ'
 alias dateu='date -u +%Y%m%dT%H%M%SZ'
 alias dateI='date +%Y-%m-%dT%H:%M:%S%z'
