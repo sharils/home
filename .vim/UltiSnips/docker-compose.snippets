@@ -1,5 +1,14 @@
+snippet a "args" b
+args:
+	- $0
+endsnippet
+
 snippet b "build" b
 build:
+	context: ${1:.}
+	dockerfile: ${2:Dockerfile}
+	args:
+		buildno: 1
 endsnippet
 
 snippet c "command" b
@@ -102,6 +111,10 @@ snippet s "services" b
 # https://docs.docker.com/compose/compose-file/compose-file-v3/
 version: "3.8"
 services:
+endsnippet
+
+snippet t "target" b
+target; $0
 endsnippet
 
 snippet se "secret" b
