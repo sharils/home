@@ -1,7 +1,5 @@
 global !p
-import re
-def singular(word):
-	return re.sub(r'(s|es)$', '', word)
+from my_snippet_helpers import *
 endglobal
 
 
@@ -16,6 +14,10 @@ priority 3
 
 snippet $P "$PIPESTATUS[0]" b
 $PIPESTATUS[0]
+endsnippet
+
+snippet v "v=${v:?}" b
+${1:v}="\${$1:?}"
 endsnippet
 
 snippet c "cat" b
@@ -41,8 +43,8 @@ ${1:f}() {
 endsnippet
 
 snippet for "for" b
-for ${1::}; do
-	${2::}
+for ${1:item} in ${2:"$items"}; do
+	${3::}
 done
 endsnippet
 
@@ -68,10 +70,6 @@ snippet scd "# shellcheck disable=" b
 # shellcheck disable=
 endsnippet
 
-snippet tee "test echo exit" b
-[ $1 ] || 1>&2 echo ${2:'Error'} && exit ${3:1}
-endsnippet
-
 
 priority 2
 snippet # "`#`" w
@@ -80,12 +78,6 @@ endsnippet
 
 snippet < "<<'EOF'" w
 <<'${1:EOF}'`echo \\n`$2`echo \\n`$1
-endsnippet
-
-snippet here "here document (here)"
-<<-${2:'${1:TOKEN}'}
-	$0
-${1/['"`](.+)['"`]/$1/}
 endsnippet
 
 snippet gp "<<'GNUPLOT'" w
@@ -268,6 +260,12 @@ snippet dater "date -ujf %s +%Y-%m-%dT%H:%M:%SZ" w
 date -ujf '%s +%Y-%m-%dT%H:%M:%SZ'
 endsnippet
 
+
+priority 2
+
+snippet /(?<=")\$/ "description" r
+${$1}$0
+endsnippet
 
 priority 1
 
