@@ -116,3 +116,4 @@ nmap <LEADER>so :source ~/.vimrc<CR>
 nmap <LEADER>sr :set relativenumber! relativenumber?<CR>
 nmap <LEADER>ss :set spell! spell?<CR>
 nmap <LEADER>sw :set wrap! wrap?<CR>
+nmap <LEADER>0 :vertical resize 100<CR>

@@ -1,0 +1,59 @@
+priority 4
+
+snippet if "if" b
+if $1 {
+	$2
+}
+endsnippet
+
+snippet l "let" b
+let $0
+endsnippet
+
+snippet p "pub" b
+pub $0
+endsnippet
+
+snippet r "return" b
+return $0
+endsnippet
+
+
+priority 3
+
+snippet # "#[]" w
+#[$1]
+endsnippet
+
+snippet #t "#[test]" w
+#[test]
+endsnippet
+
+snippet R "Result<>" w
+Result<${1:()}, ${2:Box<dyn Error>}>
+endsnippet
+
+snippet el "else" w
+ else {
+	$1
+}
+endsnippet
+
+snippet mut "mut" w
+mut $0
+endsnippet
+
+
+priority 1
+
+snippet S "String" w
+String
+endsnippet
+
+snippet b "bool" i
+bool
+endsnippet
+
+snippet s "str" i
+str
+endsnippet
