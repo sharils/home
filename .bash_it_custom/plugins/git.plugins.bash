@@ -20,6 +20,9 @@ g() {
   cma)
     git commit --message "Apply $*"
     ;;
+  f)
+    git fetch --prune
+    ;;
   i)
     git init
     git commit --allow-empty --message "Initialize empty Git repository"
