@@ -8,39 +8,65 @@ g() {
     return
   fi
 
-  case $1 in
+  cmd=$1
+  shift
+  case $cmd in
+
   clt)
-    shift
     for last in "$@"; do :; done
     dir="/tmp/$(basename "${last%.*}")-$random"
-    echo "$dir"
     git clone "$@" "$dir"
     cd "$dir" || exit
     ;;
+
   cma)
     git commit --message "Apply $*"
     ;;
+
+  dl)
+    cd ~/Downloads || return
+    ;;
+
   f)
     git fetch --prune
     ;;
+
   i)
     git init
     git commit --allow-empty --message "Initialize empty Git repository"
     ;;
+
   ia)
     g i
     git add .
     git commit
     ;;
+
   r)
     tig refs
     ;;
+
   s)
     tig status
     ;;
-  *)
-    git "$@"
+
+  t)
+    if [ $# -eq 0 ]; then
+      cd /tmp || return
+    else
+      mkdir -p "/tmp/$*-$USER-$random"
+      cd "/tmp/$*-$USER-$random" || return
+    fi
     ;;
+
+  ~t)
+    cd ~/tmp || return
+    ;;
+
+  *)
+    git "$cmd" "$@"
+    ;;
+
   esac
 }
 
