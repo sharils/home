@@ -1,0 +1,70 @@
+# general
+/Users/**
+!/Users/*/.fdignore
+!/Users/*/Downloads
+!/Users/*/Downloads/*
+!/Users/*/tmp
+
+# git
+.git/*
+!.git/info
+.gitattributes
+.gitconfig
+.gitignore
+.gitmodules
+
+# ctags
+tags
+
+# elixir
+_build
+deps
+
+# javascript
+*.map
+.expo
+.next
+coverage
+node_modules
+package-lock.json
+tsconfig.tsbuildinfo
+yarn.lock
+
+# letsencrypt
+*.pem
+acme-staging{,-v02}.api.letsencrypt.org
+acme-v0{1,2}.api.letsencrypt.org
+
+# python
+*.pyc
+.pytest_cache
+__pycache__
+
+# rust
+/target
+Cargo.lock
+
+# ssh
+!/Users/*/.ssh
+!/Users/*/.ssh/config
+
+# syncthing
+!/Users/*/Sync
+!/Users/*/Sync/**
+.stversions
+.stfolder
+
+# vagrant
+.vagrant
+
+# vim
+.vim/plugged/*
+!.vim/plugged/{after,before}
+!.vim/plugged/vim-snippets
+.vim/plugged/vim-snippets/*
+!.vim/plugged/vim-snippets/UltiSnips
+Session.vim
+
+# macos
+.localized
+.DS_Store

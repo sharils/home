@@ -1,0 +1,280 @@
+snippet a "args" b
+args:
+	$0
+endsnippet
+
+snippet b "build" b
+build:
+	context: ${1:.}
+	dockerfile: ${2:Dockerfile}
+	args:
+		buildno: 1
+endsnippet
+
+snippet c "command" b
+command: $0
+endsnippet
+
+snippet cn "container_name" b
+container_name: $0
+endsnippet
+
+snippet dn "domainname" b
+domainname: $0
+endsnippet
+
+snippet do "depends_on" b
+depends_on:
+	- $0
+endsnippet
+
+snippet e "environment" b
+environment:
+endsnippet
+
+snippet ep "entrypoint" b
+entrypoint: $0
+endsnippet
+
+snippet ex "expose" b
+expose:
+	- $0
+endsnippet
+
+snippet hn "hostname" b
+hostname: $0
+endsnippet
+
+snippet i "image" b
+image: $0
+endsnippet
+
+snippet alpine "description" b
+# https://hub.docker.com/_/alpine
+image: alpine:${1:3.14}
+endsnippet
+
+snippet nginx "nginx" b
+# https://hub.docker.com/_/nginx
+image: nginx:${1:1.21}-alpine
+endsnippet
+
+snippet node "node" b
+# https://hub.docker.com/_/node
+image: node:${1:16.5}-alpine${2:3.14}
+endsnippet
+
+snippet python "python" b
+# https://hub.docker.com/_/python
+image: python:${1:3.9}-alpine${2:3.14}
+endsnippet
+
+snippet ubuntu "ubuntu" b
+# https://hub.docker.com/_/ubuntu
+image: ubuntu:${1:20.04}
+endsnippet
+
+snippet log "logging.driver.awslogs" b
+logging:
+	driver: local
+	# https://docs.docker.com/config/containers/logging/awslogs/#amazon-cloudwatch-logs-options
+	options:
+		awslogs-group: ${2:myLogGroup}
+endsnippet
+
+snippet log "logging.driver.local" b
+logging:
+	driver: local
+	# https://docs.docker.com/config/containers/logging/local/#options
+	options:
+		max-size: 20m
+		max-file: 5
+endsnippet
+
+snippet log "logging.driver.syslog" b
+logging:
+	driver: syslog
+	# https://docs.docker.com/config/containers/logging/syslog/#options
+	options:
+		syslog-address: ${1:tcp://192.168.0.42:123}
+endsnippet
+
+snippet mongosh "mongosh" b
+mongosh:
+	# https://hub.docker.com/_/mongo
+	image: mongo:6.0-focal
+	# export MONGO_URI="mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@db"
+	command: ${MONGO_URI}
+	entrypoint: mongosh
+	profiles:
+		- mongosh
+endsnippet
+
+snippet mariadb "mariadb" b
+db:
+	# https://hub.docker.com/_/mariadb
+	image: mariadb:10.7-focal
+	restart: always
+	environment:
+		MARIADB_USER:
+		MARIADB_PASSWORD:
+		MARIADB_ROOT_PASSWORD:
+endsnippet
+
+snippet mongo "mongo" b
+db:
+	# https://hub.docker.com/_/mongo
+	image: mongo:6.0-focal
+	restart: always
+	environment:
+		# export MONGO_INITDB_DATABASE='dev'
+		# export MONGO_INITDB_ROOT_PASSWORD='mongo'
+		# export MONGO_INITDB_ROOT_USERNAME='mongo'
+		MONGO_INITDB_DATABASE:
+		MONGO_INITDB_ROOT_PASSWORD:
+		MONGO_INITDB_ROOT_USERNAME:
+endsnippet
+
+snippet mysql "mysql" b
+mysql:
+	# https://hub.docker.com/_/mariadb
+	image: mariadb:10.7-focal
+	environment:
+		MYSQL_HOST:
+		MYSQL_PWD:
+		MYSQL_TCP_PORT:
+		MYSQL_USER:
+	command: --user=$MYSQL_USER
+	entrypoint: mysql
+	profiles:
+		- mysql
+endsnippet
+
+snippet p "ports" b
+ports:
+	- $0
+endsnippet
+
+snippet postgres "postgres" b
+db:
+	# https://hub.docker.com/_/postgres
+	image: postgres:14.5-alpine
+	restart: always
+	environment:
+		POSTGRES_USER:
+		POSTGRES_PASSWORD:
+		POSTGRES_DB:
+	ports:
+		- 5432:5432
+endsnippet
+
+snippet pr "profiles" b
+profiles:
+	- $0
+endsnippet
+
+snippet psql "psql" b
+psql:
+	image: postgres:14.5-alpine
+	environment:
+		PGHOST: db
+		PGUSER: ${POSTGRES_USER}
+		PGPASSWORD: ${POSTGRES_PASSWORD}
+		PGDATABASE: ${POSTGRES_DB}
+	entrypoint: psql
+	profiles:
+		- psql
+endsnippet
+
+snippet r "restart: no" b
+restart: "no"
+endsnippet
+
+snippet r "restart: always" b
+restart: always
+endsnippet
+
+snippet r "restart: on-failure" b
+restart: on-failure
+endsnippet
+
+snippet r "restart: unless-stopped" b
+restart: unless-stopped
+endsnippet
+
+snippet s "services" b
+# https://docs.docker.com/compose/compose-file/compose-file-v3/
+version: "3.8"
+services:
+endsnippet
+
+snippet t "target" b
+target; $0
+endsnippet
+
+snippet se "secret" b
+secrets:
+	- $0
+endsnippet
+
+snippet v "volumes" b
+volumes:
+	- type: ${1:bind|volume}
+		source: ${2:$PWD}
+		target: ${3:$PWD}
+endsnippet
+
+snippet w "working_dir" b
+working_dir: ${1:$PWD}
+endsnippet
+
+snippet pr "profiles" b
+profiles:
+	- $0
+endsnippet
+
+snippet r "restart: no" b
+restart: "no"
+endsnippet
+
+snippet r "restart: always" b
+restart: always
+endsnippet
+
+snippet r "restart: on-failure" b
+restart: on-failure
+endsnippet
+
+snippet r "restart: unless-stopped" b
+restart: unless-stopped
+endsnippet
+
+snippet s "services" b
+# https://docs.docker.com/compose/compose-file/compose-file-v3/
+version: "3.8"
+services:
+endsnippet
+
+snippet t "target" b
+target; $0
+endsnippet
+
+snippet se "secret" b
+secrets:
+	- $0
+endsnippet
+
+snippet v "volumes" b
+volumes:
+	- type: ${1:bind|volume}
+		source: ${2:$PWD}
+		target: ${3:$PWD}
+endsnippet
+
+snippet w "working_dir" b
+working_dir: ${1:$PWD}
+endsnippet
+
+snippet $ "${}" w
+${${1:PWD}}
+endsnippet

@@ -1,0 +1,234 @@
+extends common, strictequal, boolean
+
+
+priority 3
+
+snippet #! "#!/usr/bin/env elixir" b
+#!/usr/bin/env elixir
+endsnippet
+
+snippet #t "# TODO ($1)" b
+# TODO ($1)
+endsnippet
+
+snippet a "alias" b
+alias $0
+endsnippet
+
+
+
+priority 2
+
+snippet - "->" w
+-> $1
+endsnippet
+
+snippet E "Enum" w
+Enum
+endsnippet
+
+snippet S "String" w
+String
+endsnippet
+
+snippet 1 "&1" w
+&1
+endsnippet
+
+snippet 2 "&2" w
+&2
+endsnippet
+
+snippet :e ":error" w
+{:error, ${1:reason}}
+endsnippet
+
+snippet :nr ":noreply" w
+{:noreply, ${1:state}}
+endsnippet
+
+snippet :ok ":ok" w
+{:ok, ${1:state}}
+endsnippet
+
+snippet :r ":reply" w
+{:reply, ${1:reply}, ${2:state}}
+endsnippet
+
+snippet :s ":st" w
+{:stop, ${1:reason}}
+endsnippet
+
+snippet < "<-" w
+<- $1
+endsnippet
+
+snippet > "=>" w
+=> $1
+endsnippet
+
+snippet | "|>" w
+|> $1
+endsnippet
+
+snippet \ "\\" w
+\\\\ $0
+endsnippet
+
+snippet @ "@" w
+@impl ${1:true}
+endsnippet
+
+snippet af "after" w
+after $0
+endsnippet
+
+snippet ca "case" w
+case ${1:expressino} do
+end
+endsnippet
+
+snippet def "def" w
+def ${1:function_name}($2) do
+end
+endsnippet
+
+snippet defp "def" w
+defp ${1:function_name}($2) do
+end
+endsnippet
+
+snippet dm "defmodule" w
+defmodule ${1:ModuleName} do
+end
+endsnippet
+
+snippet do "do" w
+do$0
+end
+endsnippet
+
+snippet ds "defstruct" w
+defstruct $1
+endsnippet
+
+snippet ek "@enforce_keys" w
+@enforce_keys $1
+endsnippet
+
+snippet el "else" w
+else $0
+endsnippet
+
+snippet eua "assert" w
+assert $0
+endsnippet
+
+snippet eud "describe" w
+describe "$1" do$2
+end
+endsnippet
+
+snippet eus "setup" w
+setup do$0
+end
+endsnippet
+
+snippet eut "test" w
+test "$1" do$2
+end
+endsnippet
+
+snippet fn "fn" w
+fn $1 -> $2 end
+endsnippet
+
+snippet if "if" w
+if ${1:expression} do
+end
+endsnippet
+
+snippet ioi "IO.inspect" w
+IO.inspect($1)
+endsnippet
+
+snippet ioil "IO.inspect label" w
+IO.inspect($1, label: $2)
+endsnippet
+
+snippet lg "Logger" w
+require Logger
+endsnippet
+
+snippet lgd "Logger.debug" w
+Logger.debug($1)
+endsnippet
+
+snippet lge "Logger.error" w
+Logger.error($1)
+endsnippet
+
+snippet lgi "Logger.info" w
+Logger.info($1)
+endsnippet
+
+snippet lgw "Logger.warn" w
+Logger.warn($1)
+endsnippet
+
+snippet ra "description" w
+raise $0
+endsnippet
+
+snippet re "receive" w
+receive do$0
+end
+endsnippet
+
+snippet try "try catch" w
+try do$1
+catch$2
+end
+endsnippet
+
+snippet throw "throw" w
+throw $0
+endsnippet
+
+snippet tr "try rescue" w
+try do$1
+rescue$2
+end
+endsnippet
+
+snippet w "when" w
+when $1
+endsnippet
+
+snippet w/ "with" w
+with $1
+endsnippet
+
+
+
+priority 1
+
+snippet # "#{}" i
+#{$1}
+endsnippet
+
+snippet #i "#{inspect($1)}" i
+#{inspect(${1:error})}
+endsnippet
+
+snippet % "%{}" i
+%{$1}
+endsnippet
+
+snippet & "&()" i
+&($1)
+endsnippet
+
+snippet n "nil" i
+nil
+endsnippet

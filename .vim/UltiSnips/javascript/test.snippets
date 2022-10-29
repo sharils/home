@@ -1,0 +1,66 @@
+global !p
+from my_snippet_helpers import *
+endglobal
+
+
+priority 3
+
+snippet taa "afterAll" b
+afterAll(() => {
+	${1:${VISUAL}}
+});
+endsnippet
+
+snippet tae "afterEach" b
+afterEach(() => {
+	${1:${VISUAL}}
+});
+endsnippet
+
+snippet taf "after" b
+after(() => {
+	${1:${VISUAL}}
+});
+endsnippet
+
+snippet tba "beforeAll" b
+beforeAll(() => {
+	${1:${VISUAL}}
+});
+endsnippet
+
+snippet tbe "beforeEach" b
+beforeEach(() => {
+	${1:${VISUAL}}
+});
+endsnippet
+
+snippet tbf "before" b
+before(() => {
+	${1:${VISUAL}}
+});
+endsnippet
+
+snippet expect "expect" b
+expect(${1:actual}).${2:toEqual}(${3:expected});
+endsnippet
+
+snippet tde "describe" b
+describe("$1", () => {
+	${2:${VISUAL}}
+});
+endsnippet
+
+snippet tex "expect" b
+expect
+endsnippet
+
+snippet tit "it" b
+it("$1", $2() => {
+	${3:${VISUAL}}
+})
+endsnippet
+
+snippet ttodo "ttodo" b
+it.todo("$1")
+endsnippet

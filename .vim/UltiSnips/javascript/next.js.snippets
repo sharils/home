@@ -1,0 +1,88 @@
+global !p
+def around_link(snip):
+    return '<Link ' in snip.buffer[snip.line]
+
+def around_style(snip):
+    return '<style jsx' in snip.buffer[snip.line]
+endglobal
+
+
+priority 5
+
+snippet /^nxl/ "import Link from 'next/link';" r
+import Link from 'next/link';
+endsnippet
+
+snippet a "as" "around_link(snip)" we
+as="$1"
+endsnippet
+
+snippet g "global" "around_style(snip)" we
+global
+endsnippet
+
+snippet p "prefetch" "around_link(snip)" we
+prefetch
+endsnippet
+
+snippet ph "passHref" "around_link(snip)" we
+passHref
+endsnippet
+
+snippet r "replace" "around_link(snip)" we
+replace
+endsnippet
+
+snippet s "scroll" "around_link(snip)" we
+scroll={false}
+endsnippet
+
+
+priority 3
+
+snippet nxg "getInitialProps" b
+static async getInitialProps(${1:{
+	pathname,
+	query,
+	asPath,
+	req,
+	res,
+	jsonPageRes,
+	err,
+}}) {
+	$2
+}
+endsnippet
+
+snippet nxs "" b
+<style jsx$1>{\`
+	$2
+\`}</style>
+endsnippet
+
+
+priority 2
+
+snippet nx: ":global()" w
+:global($1)
+endsnippet
+
+snippet nxg "getInitialProps" w
+getInitialProps = async (${1:{
+	pathname,
+	query,
+	asPath,
+	req,
+	res,
+	jsonPageRes,
+	err,
+}}) => {
+	$2
+}
+endsnippet
+
+snippet nxl "<link>" w
+<Link href="$1"$2>
+	$3
+</Link>
+endsnippet

@@ -1,0 +1,527 @@
+priority 5
+
+snippet /</ "description" r
+<'a
+endsnippet
+
+snippet /'a/ "description" r
+'a, 'b
+endsnippet
+
+snippet /'b/ "description" r
+'b, 'c
+endsnippet
+
+snippet /'c/ "description" r
+'c, 'd
+endsnippet
+
+snippet /'d/ "description" r
+'d, 'e
+endsnippet
+
+snippet /(?<=pub )u/ "use" r
+use $0
+endsnippet
+
+snippet /(?<=use )c/ "crate" r
+crate::${1:*};
+endsnippet
+
+snippet /(?<=use )su/ "super" r
+super::${1:*};
+endsnippet
+
+snippet /(?<=use )s/ "std" r
+std::${1:error::Error};
+endsnippet
+
+snippet /(?<=thread):/ "description" r
+::spawn($1)
+endsnippet
+
+snippet /(?<={):/ "{:#?}" r
+:#?
+endsnippet
+
+snippet /unsafe / "unsafe {}" r
+unsafe {
+	$1
+}
+endsnippet
+
+snippet /(?<=pub )m/ "mod" r
+mod ${1:mod_name} {
+	$2
+}
+endsnippet
+
+snippet /(?<=\d)f/ "f32" r
+f32
+endsnippet
+
+snippet /(?<=\d)i/ "i32" r
+i${1:32}
+endsnippet
+
+snippet /(?<=\d)u/ "u32" r
+u${1:32}
+endsnippet
+
+snippet /(?<=#\[)a/ "allow()" r
+allow(${1:unused_variables})
+endsnippet
+
+snippet /(?<=#\[)c/ "cfg()" r
+cfg(${1:test})
+endsnippet
+
+snippet /(?<=#\[)m/ "macro_use" r
+macro_use
+endsnippet
+
+snippet /(?<=#\[)sp/ "should_panic(expected =)" r
+should_panic(expected = "$1")
+endsnippet
+
+snippet /(?<=#\[)t/ "test" r
+test
+endsnippet
+
+
+priority 4
+
+snippet # "#[]" b
+#[${1:derive(${2:Debug$3})}]
+endsnippet
+
+snippet i "impl" w
+impl${1/.+/</}$1${1/.+/>/} $2${3/.+/</}${3:$1}${3/.+/>/} $4${5: {
+	$6
+}}
+endsnippet
+
+snippet if "if" b
+if $1 {
+	$2
+}
+endsnippet
+
+snippet m "mod" b
+mod ${1:mod_name} {
+	$2
+}
+endsnippet
+
+snippet p "pub" b
+pub $0
+endsnippet
+
+snippet u "use " b
+use $0
+endsnippet
+
+snippet ty "type" b
+type $1 = $0
+endsnippet
+
+snippet _ "_ => unreachable!()," b
+_ => unreachable!("${1:`jot -cr 20 48 90 | tr -d ':;<=>?@ILOU\n' | head -c4`}$2"),
+endsnippet
+
+priority 3
+
+snippet & "&'static" w
+&'${1:static} $0
+endsnippet
+
+snippet - "->" w
+-> $0
+endsnippet
+
+snippet = "=>" w
+=> $0
+endsnippet
+
+snippet A "Arc" w
+Arc
+endsnippet
+
+snippet B "Box" w
+Box
+endsnippet
+
+snippet Box "Box::new" w
+Box::new($1)
+endsnippet
+
+snippet C "Clone" w
+Clone
+endsnippet
+
+snippet C "Copy" w
+Copy
+endsnippet
+
+snippet D "Debug" w
+Debug
+endsnippet
+
+snippet D "Deref" w
+Deref
+endsnippet
+
+snippet D "Display" w
+Display
+endsnippet
+
+snippet E "Err" w
+Err(${1:_})
+endsnippet
+
+snippet F "Fn() -> ()" w
+Fn($1) -> ${2:$1}
+endsnippet
+
+snippet FM "FnMut() -> ()" w
+FnMut($1) -> ${2:$1}
+endsnippet
+
+snippet FO "FnOnce() -> ()" w
+FnOnce($1) -> ${2:$1}
+endsnippet
+
+snippet FnOnce "Fn" w
+Fn
+endsnippet
+
+snippet Fn "FnMut" w
+FnMut
+endsnippet
+
+snippet FnMut "FnOnce" w
+FnOnce
+endsnippet
+
+snippet N "None" w
+None
+endsnippet
+
+snippet O "Option" w
+Option
+endsnippet
+
+snippet Option "option<>" w
+Option<$1>
+endsnippet
+
+snippet R "Result" w
+Result<${1:()}, ${2:Box<dyn Error>}>
+endsnippet
+
+snippet S "String" w
+String
+endsnippet
+
+snippet String "String::from" w
+String::from(${1:""})
+endsnippet
+
+snippet M "Some" w
+Some($1)
+endsnippet
+
+snippet Se "Self" w
+Self
+endsnippet
+
+snippet Self "Self::" w
+Self::
+endsnippet
+
+snippet V "Vec" w
+Vec
+endsnippet
+
+snippet Vec "Vec" w
+Vec<$1>
+endsnippet
+
+snippet a "as" w
+as $0
+endsnippet
+
+snippet br "break" w
+break
+endsnippet
+
+snippet c "const " w
+const $0
+endsnippet
+
+snippet cn "continue" w
+continue
+endsnippet
+
+snippet d "dyn" w
+dyn $0
+endsnippet
+
+snippet eif "else if" w
+ else if $1 {
+	$2
+}
+endsnippet
+
+snippet e "extern" w
+extern $0
+endsnippet
+
+snippet el "else" w
+ else {
+	 unreachable!("${1:`jot -cr 20 48 90 | tr -d ':;<=>?@ILOU\n' | head -c4`}$2")
+}
+endsnippet
+
+snippet en "enum" w
+enum $1 {
+	$2
+}
+endsnippet
+
+snippet k "Ok" w
+Ok(${1:()})
+endsnippet
+
+snippet l "let" w
+let $0
+endsnippet
+
+snippet f "false" w
+false
+endsnippet
+
+snippet fn "fn f(a) r" w
+fn ${1:new}($2) $3${4:{
+	$5
+}}
+endsnippet
+
+snippet fo "for " w
+for $0
+endsnippet
+
+snippet m "mut" w
+mut $0
+endsnippet
+
+snippet ma "match" w
+match ${1:_} {
+	${2:Some($3) => {$4
+	}
+	None => {$5
+	}}
+}
+endsnippet
+
+snippet r "return" w
+return $0
+endsnippet
+
+snippet se "self" w
+self
+endsnippet
+
+snippet st "struct" w
+struct ${1:S} ${2:{
+	$3
+}}
+endsnippet
+
+snippet sta "static" w
+static $0
+endsnippet
+
+snippet su "super" w
+super
+endsnippet
+
+snippet t "true" w
+true
+endsnippet
+
+snippet tr "trait" w
+trait ${1:T}${2/.+/</}$2${2/.+/>/} {
+	$3
+}
+endsnippet
+
+snippet un "unsafe" w
+unsafe $0
+endsnippet
+
+snippet v "move" w
+move 
+endsnippet
+
+snippet wh "while" w
+while ${1:false} {
+	$2
+}
+endsnippet
+
+
+snippet w "where" w
+where $0
+endsnippet
+
+snippet :: "::new()" i
+::new($1)
+endsnippet
+
+priority 1
+
+snippet & "&" i
+&self
+endsnippet
+
+snippet b "bool" i
+bool
+endsnippet
+
+snippet f32 "f64" i
+f64
+endsnippet
+
+snippet f64 "f32" i
+f32
+endsnippet
+
+snippet i32 "i16" i
+i16
+endsnippet
+
+snippet i16 "i8" i
+i8
+endsnippet
+
+snippet i8 "isize" i
+isize
+endsnippet
+
+snippet isize "i128" i
+i128
+endsnippet
+
+snippet i128 "i64" i
+i64
+endsnippet
+
+snippet i64 "i32" i
+i32
+endsnippet
+
+snippet s "str" i
+str
+endsnippet
+
+snippet u32 "u16" i
+u16
+endsnippet
+
+snippet u16 "u8" i
+u8
+endsnippet
+
+snippet u8 "u128" i
+usize
+endsnippet
+
+snippet usize "usize" i
+u128
+endsnippet
+
+snippet u128 "u64" i
+u64
+endsnippet
+
+snippet u64 "u32" i
+u32
+endsnippet
+
+snippet . ".." i
+..
+endsnippet
+
+snippet : "::" i
+::
+endsnippet
+
+snippet :#? ":?" i
+:?
+endsnippet
+
+snippet :? ":?" i
+:#?
+endsnippet
+
+
+priority 0
+
+snippet a! "assert!()" Aw
+assert!($1)
+endsnippet
+
+snippet ae! "assert_eq!()" Aw
+assert_eq!(${1:actual, expected})
+endsnippet
+
+snippet an! "assert_ne!()" Aw
+assert_ne!(${1:actual, expected})
+endsnippet
+
+snippet ?: "if {} else {}" Aw
+if $1 { $2 } else { $3 }
+endsnippet
+
+snippet d! "dbg!" Aw
+dbg!(${1:${VISUAL}})
+endsnippet
+
+snippet e! "env!" Aw
+env!($1)
+endsnippet
+
+snippet f! "format!" Aw
+format!(${1:"{:#?}"}$2)
+endsnippet
+
+snippet m! "macro_rules!" Aw
+macro_rules! ${1:my_macro} {
+	$2
+}
+endsnippet
+
+snippet oe! "option_env!" Aw
+option_env!($1)
+endsnippet
+
+snippet p! "println!" Aw
+println!(${1:"{:#?}"}$2)
+endsnippet
+
+snippet pa! "panic!" Aw
+panic!(${1:"{:#?}"}$2)
+endsnippet
+
+snippet t! "todo!" Aw
+todo!("${1:`jot -cr 20 48 90 | tr -d ':;<=>?@ILOU\n' | head -c4`}$2")
+endsnippet
+
+snippet u! "unreachable!" Aw
+unreachable!("${1:`jot -cr 20 48 90 | tr -d ':;<=>?@ILOU\n' | head -c4`}$2")
+endsnippet
+
+snippet v! "vec![]" Aw
+vec![$1]$0
+endsnippet

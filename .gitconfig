@@ -1,0 +1,18 @@
+[alias]
+    mt = mergetool
+[commit]
+	gpgsign = true
+[core]
+	autocrlf = input
+	excludesfile = ~/.gitignore
+[include]
+	path = ~/git/github.com/sharils/home/gitignore.gitconfig
+[init]
+	defaultBranch = main
+[merge]
+	conflictstyle = diff3
+	tool = vim-conflicted
+[mergetool]
+	keepBackup = false
+[mergetool	"vim-conflicted"]
+	cmd = vim +Conflicted

@@ -1,0 +1,179 @@
+priority -50
+
+snippet ! "python" i
+\`!p snip.rv = ${1:t[1]}\`
+endsnippet
+
+snippet $1 "${1:false}" i
+\${1:${1:false}}
+endsnippet
+
+snippet $2 "${2:false}" i
+\${2:${1:false}}
+endsnippet
+
+snippet $3 "${3:false}" i
+\${3:${1:false}}
+endsnippet
+
+snippet $4 "${4:false}" i
+\${4:${1:false}}
+endsnippet
+
+snippet $5 "${5:false}" i
+\${5:${1:false}}
+endsnippet
+
+snippet $6 "${6:false}" i
+\${6:${1:false}}
+endsnippet
+
+snippet $7 "${7:false}" i
+\${7:${1:false}}
+endsnippet
+
+snippet $8 "${8:false}" i
+\${8:${1:false}}
+endsnippet
+
+snippet $9 "${9:false}" i
+\${9:${1:false}}
+endsnippet
+
+snippet ${VISUAL "${VISUAL:false}" w
+\${VISUAL:${1:false}
+endsnippet
+
+snippet /(?<!\$)0/ "$0" r
+`!p snip.rv = "$0"`
+endsnippet
+
+snippet /(?<!\$)1/ "$1" r
+`!p snip.rv = "$1"`
+endsnippet
+
+snippet /(?<!\$)2/ "$2" r
+`!p snip.rv = "$2"`
+endsnippet
+
+snippet /(?<!\$)3/ "$3" r
+`!p snip.rv = "$3"`
+endsnippet
+
+snippet /(?<!\$)4/ "$4" r
+`!p snip.rv = "$4"`
+endsnippet
+
+snippet /(?<!\$)5/ "$5" r
+`!p snip.rv = "$5"`
+endsnippet
+
+snippet /(?<!\$)6/ "$6" r
+`!p snip.rv = "$6"`
+endsnippet
+
+snippet /(?<!\$)7/ "$7" r
+`!p snip.rv = "$7"`
+endsnippet
+
+snippet /(?<!\$)8/ "$8" r
+`!p snip.rv = "$8"`
+endsnippet
+
+snippet /(?<!\$)9/ "$9" r
+`!p snip.rv = "$9"`
+endsnippet
+
+snippet ab "snippet Ab" w
+`!p snip.rv = "snippet"` ${1:Ab} "${2:description}" Ab
+$3
+`!p snip.rv = "endsnippet"`
+endsnippet
+
+snippet ai "snippet Ai" i
+`!p snip.rv = "snippet"` ${1:Ai} "${2:description}" Ai
+$3
+`!p snip.rv = "endsnippet"`
+endsnippet
+
+snippet ar "snippet Ar" w
+`!p snip.rv = "snippet"` /${1:Ar}/ "${2:description}" Ar
+$3
+`!p snip.rv = "endsnippet"`
+endsnippet
+
+snippet aw "snippet Aw" w
+`!p snip.rv = "snippet"` ${1:Aw} "${2:description}" Aw
+$3
+`!p snip.rv = "endsnippet"`
+endsnippet
+
+snippet b "snippet b" w
+`!p snip.rv = "snippet"` ${1:b} "${2:description}" b
+$3
+`!p snip.rv = "endsnippet"`
+endsnippet
+
+snippet be "snippet be" w
+`!p snip.rv = "snippet"` ${1:be} "${2:description}" "${3:expression}" be
+$4
+`!p snip.rv = "endsnippet"`
+endsnippet
+
+snippet e "extends" b
+extends ${1:common}
+endsnippet
+
+snippet g "global !p" w
+global !p
+${1:from my_snippet_helpers import *}
+endglobal
+endsnippet
+
+snippet i "snippet i" w
+`!p snip.rv = "snippet"` ${1:i} "${2:description}" i
+$3
+`!p snip.rv = "endsnippet"`
+endsnippet
+
+snippet ie "snippet ie" w
+`!p snip.rv = "snippet"` ${1:ie} "${2:description}" "${3:expression}" ie
+$4
+`!p snip.rv = "endsnippet"`
+endsnippet
+
+snippet p "priority" b
+priority ${1:0}
+endsnippet
+
+snippet r "snippet r" w
+`!p snip.rv = "snippet"` /${1:r}/ "${2:description}" r
+$3
+`!p snip.rv = "endsnippet"`
+endsnippet
+
+snippet sb "snip.buffer" w
+snip.buffer
+endsnippet
+
+snippet sl "snip.line" w
+snip.line
+endsnippet
+
+snippet v "${VISUAL}" i
+\${VISUAL$1}
+endsnippet
+
+snippet w "snippet w" w
+`!p snip.rv = "snippet"` ${1:w} "${2:description}" w
+$3
+`!p snip.rv = "endsnippet"`
+endsnippet
+
+snippet we "snippet we" w
+`!p snip.rv = "snippet"` ${1:we} "${2:description}" "${3:expression}" we
+$4
+`!p snip.rv = "endsnippet"`
+endsnippet
+
+# vim:ft=snippets:

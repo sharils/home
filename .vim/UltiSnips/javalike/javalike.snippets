@@ -1,0 +1,64 @@
+global !p
+from my_snippet_helpers import *
+endglobal
+
+
+priority 5
+
+
+priority 3
+
+snippet tr "throw" b
+throw $0
+endsnippet
+
+snippet try "try" b
+try {
+	${1:${VISUAL}}
+}
+endsnippet
+
+
+priority 2
+
+snippet cl "class" w
+class $1 {$2}
+endsnippet
+
+snippet e "extends" w
+extends $0
+endsnippet
+
+snippet fin "finally" w
+ finally {
+	${1:${VISUAL}}
+}
+endsnippet
+
+snippet n "null" w
+null
+endsnippet
+
+snippet im "implements" w
+implements
+endsnippet
+
+snippet in "interface" w
+interface $1 {$2}
+endsnippet
+
+snippet sta "static" w
+static $0
+endsnippet
+
+snippet su "super" w
+super
+endsnippet
+
+snippet th "this" w
+this
+endsnippet
+
+snippet w "new" w
+new $1($2)
+endsnippet

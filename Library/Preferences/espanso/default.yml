@@ -1,0 +1,130 @@
+# espanso configuration file
+
+# This is the default configuration file, change it as you like it
+# You can refer to the official documentation:
+# https://espanso.org/docs/
+
+# Matches are the substitution rules, when you type the "trigger" string
+# it gets replaced by the "replace" string.
+show_icon: false
+matches:
+  - trigger: "0,."
+    replace: "0.0.0.0"
+  - trigger: "1,."
+    replace: "1.1.1.1"
+  - trigger: "12,."
+    replace: "127.0.0.1"
+  - trigger: "23,."
+    replace: "23:59"
+  - trigger: "[,."
+    replace: "- [ ] "
+  - trigger: "C,."
+    replace: "CHANGELOG.md"
+  - trigger: "R,."
+    replace: "README.md"
+  - trigger: "d1,."
+    replace: "--depth=1 "
+  - trigger: "dco,."
+    replace: "docker-compose.yml"
+  - trigger: "dk,."
+    replace: "Dockerfile"
+  - trigger: "e,."
+    replace: "example.com"
+  - trigger: "h,."
+    replace: "https$|$://"
+  - trigger: "js,."
+    replace: "javascript"
+  - trigger: "k2a,."
+    replace: "keepass2android"
+  - trigger: "lh,."
+    replace: "localhost"
+  - trigger: "pj,."
+    replace: "package.json"
+  - trigger: "thowt,."
+    replace: "A penny for your thoughts."
+
+  - trigger: "ruby,."
+    replace: <ruby><rp>$|$(</rp><rt></rt><rp>)</rp></ruby>
+
+  - trigger: "dateI,."
+    replace: "{{date}}"
+    vars:
+      - name: date
+        type: shell
+        params:
+          cmd: "date +%Y%m%dT%H%M%S%z | sed 's/00$//'"
+
+  - trigger: "datei,."
+    replace: "{{date}}"
+    vars:
+      - name: date
+        type: shell
+        params:
+          cmd: "date +%Y-%m-%dT%H:%M:%S%z | sed 's/00$//'"
+
+  - trigger: "dateU,."
+    replace: "{{date}}"
+    vars:
+      - name: date
+        type: shell
+        params:
+          cmd: "date -u +%Y%m%dT%H%M%SZ"
+
+  - trigger: "dateu,."
+    replace: "{{date}}"
+    vars:
+      - name: date
+        type: shell
+        params:
+          cmd: "date -u +%Y-%m-%dT%H:%M:%SZ"
+
+  - trigger: "today,."
+    replace: "{{date}}"
+    vars:
+      - name: date
+        type: shell
+        params:
+          cmd: "date +%Y-%m-%d"
+
+  - trigger: "now,."
+    replace: "{{date}}"
+    vars:
+      - name: date
+        type: shell
+        params:
+          cmd: "date +%H:%M:%S"
+
+  - trigger: "ip,."
+    replace: "{{ip}}"
+    vars:
+      - name: ip
+        type: shell
+        params:
+          cmd: "ipconfig getifaddr en0"
+
+  - trigger: "\\L,."
+    replace: "{{L}}"
+    vars:
+      - name: L
+        type: shell
+        params:
+          cmd: "pbpaste | tr '[:upper:]' '[:lower:]'"
+
+  - trigger: "\\d,."
+    replace: "{{d}}"
+    vars:
+      - name: d
+        type: shell
+        params:
+          cmd: "pbpaste | sed 's/[^[:digit:].]//g'"
+
+  - trigger: "`s,."
+    replace: |
+      ```suggestion
+      {{suggestion}}$|$
+      ```
+    vars:
+      - name: suggestion
+        type: shell
+        params:
+          cmd: "pbpaste"

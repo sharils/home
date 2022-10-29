@@ -1,0 +1,48 @@
+priority -1
+
+snippet b32 "b32" i
+`jot -cr 20 48 90 | tr -d ':;<=>?@ILOU\n' | head -c4``>?@ILOU\n' | head -c4`
+endsnippet
+
+snippet : ":" i
+`jot -r 1 49152 65535`
+endsnippet
+
+snippet #! "#!/usr/bin/env sh" b
+#!/usr/bin/env ${1:sh}
+endsnippet
+
+snippet \t "\t" it
+	
+endsnippet
+
+snippet "\t" "description" irt
+		
+endsnippet
+
+snippet dt "%Y-%m-%d %H:%M:%S" w
+`date +%FT%T%z | sed s/00$//`
+endsnippet
+
+snippet pt "passthrough" w
+passthrough
+endsnippet
+
+snippet sh "#!/usr/bin/env sh" b
+#!/usr/bin/env sh
+${1:set -o errexit -o nounset -o xtrace}
+
+$0`!v execute("set filetype=sh")`
+endsnippet
+
+snippet todo "TODO: " w
+TODO (${2:`git config --get user.name`}): $1
+endsnippet
+
+snippet vim "vim" w
+vim:filetype=${1:javascript}
+endsnippet
+
+snippet Vim "vim" w
+Vim:set filetype=${1:javascript}:
+endsnippet

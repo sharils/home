@@ -1,0 +1,254 @@
+# Settings
+# --------
+# Most of these settings can be toggleable, either via the toggle-*
+# actions or via the option menu (bound to `o` by default).
+
+# View settings
+#
+# Supported column types and their options:
+#
+#   author
+#    - display (enum) [no|full|abbreviated|email|email-user]
+#                                       : Show author information?
+#   commit-title
+#    - display (bool)                   : Show the commit title?
+#    - graph (enum) [no|v2|v1]          : Show the commit graph? (main view only)
+#    - refs (bool)                      : Show branches, tags and remotes? (main view only)
+#    - overflow (boolint)               : Highlight overflows? Defaults to 50 when enabled.
+#
+#   date
+#    - display (enum) [no|default|relative|relative-compact|custom]
+#                                       : Show dates?
+#    - local (bool)                     : Show local dates?
+#    - format (string)                  : Custom strftime(3) format
+#
+#   file-name
+#    - display (enum) [no|always|auto]  : Show file names?
+#
+#   file-size
+#    - display (enum) [no|default|units]    : Show file sizes?
+#
+#   id
+#    - display (bool)                   : Show commit/tree ID?
+#
+#   line-number
+#    - display (bool)                   : Show line numbers?
+#    - interval (int)                   : Interval between line numbers; defaults to 5
+#
+#   mode
+#    - display (bool)                   : Show file modes?
+#
+#   status
+#    - display (enum) [no|short|long]   : Show status label?
+#
+#   text
+#    - display (bool)                   : Show text?
+#    - commit-title-overflow (boolint)  : Highlight overflow in log and diff view?
+#
+# All columns also support a width option to configure the max width of
+# the column. Use zero (the default value) to auto-size the column based
+# on the content.
+
+set diff-highlight              = true
+set diff-options                = --find-copies --show-signature
+set ignore-case                 = smart-case
+set blame-options               = -CCC
+set log-options                 = --show-signature
+set mouse                       = yes
+set mouse-scroll                = 1
+set status-show-untracked-files = yes
+
+# User-defined commands
+# ---------------------
+# These commands allow to run shell commands directly from within Tig.
+# Unless otherwise specified, commands are run in the foreground with
+# their console output shown (as if '!' was specified). When multiple
+# command options are specified their behavior are combined, e.g. "?<git
+# commit" will prompt the user whether to execute the command and will
+# exit Tig after completion.
+#
+#   !   Run the command in the foreground with output shown.
+#   @   Run the command in the background with no output.
+#   ?   Prompt the user before executing the command.
+#   <   Exit Tig after executing the command.
+#
+# User-defined commands can optionally refer to Tig's internal state
+# using the following variable names, which are substituted before
+# commands are run:
+#
+#   %(head)         The current ref ID. Defaults to HEAD
+#   %(commit)       The current commit ID.
+#   %(blob)         The current blob ID.
+#   %(branch)       The current branch name.
+#   %(remote)       The current remote name.
+#   %(tag)          The current tag name.
+#   %(stash)        The current stash name.
+#   %(directory)    The current directory path in the tree view;
+#                   empty for the root directory.
+#   %(file)         The currently selected file.
+#   %(ref)          The reference given to blame or HEAD if undefined.
+#   %(revargs)      The revision arguments passed on the command line.
+#   %(fileargs)     The file arguments passed on the command line.
+#   %(cmdlineargs)  All other options passed on the command line.
+#   %(diffargs)     The diff options from `diff-options` or `TIG_DIFF_OPTS`
+#   %(prompt)       Prompt for the argument value.
+
+bind generic S             :source ~/.tigrc
+bind reflog  C             @git checkout %(branch)
+bind refs    C             @git checkout %(branch)
+
+# bind generic <C-F>         move-page-down
+# bind generic <C-B>         move-page-up
+bind main    G             none
+
+bind main    <C-G>         +sh -c 'pbcopy <<< %(commit); pbpaste'
+
+bind main    Ga<ENTER>     @git add %(prompt)
+bind status  Ga<ENTER>     @git add %(prompt)
+
+bind main    Gau<ENTER>    @git add --update
+bind status  Gau<ENTER>    @git add --update
+
+bind refs    Gbmf<ENTER>    @sh -c 'git branch -m "$(echo feature/%(prompt) | tr " " "-")"'
+
+bind main    Gbb<ENTER>    +git bisect bad
+bind main    Gbg<ENTER>    +git bisect good
+bind main    Gbrs<ENTER>   +git bisect reset
+bind main    Gbs<ENTER>    !git bisect start %(head) %(commit)
+
+bind main    Gc<ENTER>     !git commit -vv
+bind status  Gc<ENTER>     !git commit -vv
+bind main    Gcal<ENTER>   !git commit -vv --all
+bind status  Gcal<ENTER>   !git commit -vv --all
+bind main    Gca<ENTER>    !git commit --amend
+bind status  Gca<ENTER>    !git commit --amend
+bind main    GcF<ENTER>    !git commit --edit --file=.git/COMMIT_EDITMSG
+bind status  GcF<ENTER>    !git commit --edit --file=.git/COMMIT_EDITMSG
+bind main    Gcf<ENTER>    +git commit --fixup %(commit)
+bind status  Gcf<ENTER>    +git commit --fixup %(commit)
+bind main    Gcfh<ENTER>   +git commit --fixup %(head)
+bind status  Gcfh<ENTER>   +git commit --fixup %(head)
+bind main    Gcm<ENTER>    !git commit --message %(prompt)
+bind status  Gcm<ENTER>    !git commit --message %(prompt)
+bind main    Gcrm<ENTER>   +git commit --reuse-message %(commit)
+
+bind main    Gco<ENTER>    @git checkout %(commit)
+bind main    Gco-<ENTER>   @git checkout -
+bind refs    Gco-<ENTER>   @git checkout -
+bind main    Gcob<ENTER>   @git checkout -b %(prompt) %(commit)
+bind refs    Gcoo<ENTER>   @git checkout --ours %(file)
+bind main    Gco/<ENTER>   ?git checkout :/
+bind status  Gco/<ENTER>   ?git checkout :/
+
+bind main    Gclean<ENTER> ?git clean --force -d
+bind status  Gcl<ENTER>    ?git clean --force %(file)
+bind status  Gclean<ENTER> ?git clean --force -d
+
+bind main    Gch<ENTER>    !git cherry -v %(commit)
+
+bind main    Gd<ENTER>     !git diff %(commit) @
+
+# bind main    Gfbm<ENTER>   !FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch --msg-filter 'if [ $GIT_COMMIT = %(commit) ]; then echo %(prompt); fi' %(commit)~..%(commit)
+bind main    Gfrbp<ENTER>  !sh -c 'git fetch --all --prune && git rebase `git symbolic-ref refs/remotes/origin/HEAD` && git push --force %(remote) %(branch)'
+
+bind main    Gf<ENTER>     !git fetch --all --prune
+bind refs    Gf<ENTER>     !git fetch --all --prune
+
+bind main    Gp<ENTER>     !git push %(remote) HEAD
+bind refs    Gp<ENTER>     !git push %(remote) HEAD
+bind status  Gp<ENTER>     !git push %(remote) HEAD
+bind main    Gpf<ENTER>    !git push --force %(remote) HEAD
+bind refs    Gpf<ENTER>    !git push --force %(remote) HEAD
+bind status  Gpf<ENTER>    !git push --force %(remote) HEAD
+bind main    Gpb<ENTER>    !git push %(remote) %(branch)
+bind refs    Gpb<ENTER>    !git push %(remote) %(branch)
+bind status  Gpb<ENTER>    !git push %(remote) %(branch)
+bind main    Gpbf<ENTER>   !git push --force %(remote) %(branch)
+bind refs    Gpbf<ENTER>   !git push --force %(remote) %(branch)
+bind status  Gpbf<ENTER>   !git push --force %(remote) %(branch)
+bind main    Gpb:<ENTER>   ?git push %(remote) :%(branch)
+bind refs    Gpb:<ENTER>   ?git push %(remote) :%(branch)
+bind main    Gpc<ENTER>    !git push %(remote) %(commit):refs/heads/%(prompt)
+bind main    Gpcf<ENTER>   ?git push --force %(remote) %(commit):refs/heads/%(prompt)
+bind main    Gpt<ENTER>    !git push %(remote) %(tag)
+bind refs    Gpt<ENTER>    !git push %(remote) %(tag)
+bind main    Gpt:<ENTER>   ?git push %(remote) :%(tag)
+bind refs    Gpt:<ENTER>   ?git push %(remote) :%(tag)
+
+# bind main    Grb<ENTER>    !git rebase --interactive %(commit)
+bind main    Grbi<ENTER>   !git rebase --interactive %(commit)
+bind refs    Grbi<ENTER>   !git rebase --interactive %(ref)
+bind main    GrbS<ENTER>   @git rebase --skip
+bind main    Grba<ENTER>   @git rebase --abort
+bind status  Grba<ENTER>   @git rebase --abort
+bind main    Grbc<ENTER>   !git rebase --continue
+bind status  Grbc<ENTER>   !git rebase --continue
+bind main    Grbo<ENTER>   !git rebase --interactive --onto %(prompt) %(commit)
+bind main    Grboh<ENTER>  !sh -c 'git rebase `git symbolic-ref refs/remotes/origin/HEAD`'
+bind main    Grbs<ENTER>   !git rebase --autosquash --interactive %(commit)
+
+bind main    Grs~<ENTER>   ?git reset HEAD~
+bind status  Grs~<ENTER>   ?git reset HEAD~
+bind main    Grsh<ENTER>   ?git reset --hard %(commit)
+bind refs    Grsh<ENTER>   ?git reset --hard %(commit)
+bind main    Grsm<ENTER>   ?git reset --merge
+bind status  Grsm<ENTER>   ?git reset --merge
+bind status  Gus<ENTER>    @git reset %(head)
+
+bind main    Grvt<ENTER>   +git revert --mainline 1 %(commit)
+bind main    Grvtnc<ENTER> +git revert --no-commit %(commit)
+
+bind diff    Grm<ENTER>    +git rm %(file)
+
+bind main    Gsht<ENTER>   !git show %(tag)
+bind refs    Gsht<ENTER>   !git show %(tag)
+
+bind main    Gstk<ENTER>   +git stash --keep-index
+bind stash   Gstk<ENTER>   +git stash --keep-index
+bind status  Gstk<ENTER>   +git stash --keep-index
+bind main    Gstp<ENTER>   +git stash pop
+bind stash   Gstp<ENTER>   +git stash pop
+bind status  Gstp<ENTER>   +git stash pop
+bind main    Gst<ENTER>    +git stash
+bind stash   Gst<ENTER>    +git stash
+bind status  Gst<ENTER>    +git stash
+
+bind main    Gt<ENTER>     !git tag --annotate --sign %(prompt) %(commit)
+bind main    Gtmp<ENTER>   @sh -c 'git tag "$(date +%Y%m%dT%H%M%S%z | sed "s/00$//")" %(commit)'
+
+bind main    Gtd<ENTER>    ?git tag --delete %(tag)
+bind refs    Gtd<ENTER>    ?git tag --delete %(tag)
+
+bind generic Gffs<ENTER>   @sh -c 'git flow feature start "$(echo %(prompt) | tr " " "-")"'
+bind generic Gfff<ENTER>   !sh -c 'git flow feature finish "$(echo %(branch) | cut -f2- -d/)"'
+bind generic Gpr<ENTER>    @hub pr show
+bind generic Gbp<ENTER>    @hub browse -- pulls
+bind generic Gbr<ENTER>    @hub browse
+bind generic Gbrc<ENTER>   +sh -c 'hub browse --copy && hub browse --url'
+
+# Colors
+# ------
+
+# The colors in the UI can be customized. In addition to the colors used
+# for the UI you can also define new colors to use in the pager, blob,
+# diff, and stage views by placing the text to match for in quotes.
+#
+# Prefix the name of a view to set a color only for that view, e.g.
+#
+#   color grep.file blue default
+#
+# As an example, this setting will to color Signed-off-by lines with a
+# yellow foreground color and use the default background color.
+#
+#   color "    Signed-off-by"   yellow  default
+#
+# Note the four leading spaces in the string to match. This is because
+# Git automatically indents commit messages by four spaces.
+
+color cursor black green bold
+
+# Reference
+# ------
+
+# - https://jonas.github.io/tig/doc/tigrc.5.html
+# - https://github.com/jonas/tig/blob/master/tigrc

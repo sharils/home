@@ -1,0 +1,117 @@
+priority 3
+
+snippet ir "import React from react" b
+import React from "react";
+endsnippet
+
+snippet ipt "import PropTypes from PropTypes" b
+import React from "prop-types";
+endsnippet
+
+snippet pt "PropTypes" w
+PropTypes
+endsnippet
+
+snippet PropTypes "propTypes" w
+propTypes = {
+	$1
+}
+endsnippet
+
+snippet defp "defaultProps = {}" b
+defaultProps = {$1};
+endsnippet
+
+snippet rpc "class extends React.PureComponent" b
+class $1 extends React.PureComponent {
+}
+endsnippet
+
+snippet rc "class extends React.Component" b
+class $1 extends React.Component {
+}
+endsnippet
+
+snippet gsbu "getSnapshotBeforeUpdate" b
+getSnapshotBeforeUpdate(prevProps, prevState) {
+	$2
+}
+endsnippet
+
+snippet cdc "componentDidCatch" b
+componentDidCatch(props, state) {
+	$2
+}
+endsnippet
+
+snippet cwu "componentWillUnmount" b
+componentWillUnmount(props, state) {
+	$2
+}
+endsnippet
+
+snippet gds "getDerivedStateFromError" b
+static getDerivedStateFromError(props, state) {
+	$2
+}
+endsnippet
+
+snippet gds "getDerivedStateFromProps" b
+static getDerivedStateFromProps(props, state) {
+	$2
+}
+endsnippet
+
+snippet scu "shouldComponentUpdate" b
+shouldComponentUpdate(nextProps, nextState) {
+	$2
+}
+endsnippet
+
+snippet cdu "componentDidUpdate" b
+componentDidUpdate() {
+	$2
+}
+endsnippet
+
+snippet cdm "componentDidMount" b
+componentDidMount() {
+	$2
+}
+endsnippet
+
+snippet rr "render" b
+render() {
+	$2
+}
+endsnippet
+
+snippet rcc "constructor" b
+constructor(props) {
+	super(props);$2
+}
+endsnippet
+
+snippet ss "setState" b
+this.setState($1);
+endsnippet
+
+snippet stt "state = {}" b
+state = {$1};
+endsnippet
+
+
+priority 2
+
+snippet <> "<>" w
+<>
+	${1:${VISUAL}}
+</>
+endsnippet
+
+
+priority 1
+
+snippet fm "<React.Fragment></React.Fragment>" i
+<React.Fragment>${1:${VISUAL}}</React.Fragment>
+endsnippet

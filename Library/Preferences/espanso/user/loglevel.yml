@@ -1,0 +1,21 @@
+name: loglevel
+parent: default
+
+# https://github.com/logstash-plugins/logstash-filter-emoji/blob/9ce5b0a5044ca1c95a7eca4b1f4611c7d3fe3138/lib/logstash/filters/emoji.rb#L25-L40
+matches:
+  - trigger: "emergency,."
+    replace: "💥 "
+  - trigger: "alert,."
+    replace: "🚨 "
+  - trigger: "critical,."
+    replace: "🔥 "
+  - trigger: "error,."
+    replace: "❌ "
+  - trigger: "warning,."
+    replace: "⚠️ "
+  - trigger: "notice,."
+    replace: "👀 "
+  - trigger: "info,."
+    replace: "ℹ️ "
+  - trigger: "debug,."
+    replace: "🐛 "
