@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # The core Nx plugin contains the core functionality of Nx like the project graph, nx commands and task orchestration.
-nx() {
+x() {
   cmd=${1:-help}; shift
   case $cmd in
   at)
