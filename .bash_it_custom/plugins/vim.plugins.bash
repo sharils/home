@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-rand="$(awk 'BEGIN { srand(); print int(rand()*32768) }')"
+random="$(awk 'BEGIN { srand(); print int(rand()*32768) }')"
 
 v() {
   if [ $# -eq 0 ]; then
@@ -16,15 +16,15 @@ v() {
     ;;
 
   c)
-    vim "/tmp/c-$USER-$rand.c"
+    vim "/tmp/c-$USER-$random.c"
     ;;
 
   css)
-    vim "/tmp/css-$USER-$rand.css"
+    vim "/tmp/css-$USER-$random.css"
     ;;
 
   csv)
-    vim "/tmp/csv-$USER-$rand.csv"
+    vim "/tmp/csv-$USER-$random.csv"
     ;;
 
   d)
@@ -40,19 +40,19 @@ v() {
     ;;
 
   eex)
-    vim "/tmp/eex-$USER-$rand.eex"
+    vim "/tmp/eex-$USER-$random.eex"
     ;;
 
   erl)
-    vim "/tmp/erl-$USER-$rand.erl"
+    vim "/tmp/erl-$USER-$random.erl"
     ;;
 
   ex)
-    vim "/tmp/ex-$USER-$rand.ex"
+    vim "/tmp/ex-$USER-$random.ex"
     ;;
 
   exs)
-    vim "/tmp/exs-$USER-$rand.exs"
+    vim "/tmp/exs-$USER-$random.exs"
     ;;
 
   gi)
@@ -60,55 +60,55 @@ v() {
     ;;
 
   gql)
-    vim "/tmp/gql-$USER-$rand.gql"
+    vim "/tmp/gql-$USER-$random.gql"
     ;;
 
   html)
-    vim "/tmp/html-$USER-$rand.html"
+    vim "/tmp/html-$USER-$random.html"
     ;;
 
   java)
-    vim "/tmp/java-$USER-$rand.java"
+    vim "/tmp/java-$USER-$random.java"
     ;;
 
   jq)
-    vim "/tmp/jq-$USER-$rand.jq"
+    vim "/tmp/jq-$USER-$random.jq"
     ;;
 
   js)
-    vim "/tmp/js-$USER-$rand.js"
+    vim "/tmp/js-$USER-$random.js"
     ;;
 
   json)
-    vim "/tmp/json-$USER-$rand.json"
+    vim "/tmp/json-$USER-$random.json"
     ;;
 
   jsx)
-    vim "/tmp/jsx-$USER-$rand.jsx"
+    vim "/tmp/jsx-$USER-$random.jsx"
     ;;
 
   lua)
-    vim "/tmp/lua-$USER-$rand.lua"
+    vim "/tmp/lua-$USER-$random.lua"
     ;;
 
   md)
-    vim "/tmp/md-$USER-$rand.md"
+    vim "/tmp/md-$USER-$random.md"
     ;;
 
   mdx)
-    vim "/tmp/mdx-$USER-$rand.mdx"
+    vim "/tmp/mdx-$USER-$random.mdx"
     ;;
 
   mw)
-    vim "/tmp/mw-$USER-$rand.mw"
+    vim "/tmp/mw-$USER-$random.mw"
     ;;
 
   pegjs)
-    vim "/tmp/pegjs-$USER-$rand.pegjs"
+    vim "/tmp/pegjs-$USER-$random.pegjs"
     ;;
 
   php)
-    vim "/tmp/php-$USER-$rand.php"
+    vim "/tmp/php-$USER-$random.php"
     ;;
 
   pj)
@@ -116,7 +116,7 @@ v() {
     ;;
 
   py)
-    vim "/tmp/py-$USER-$rand.py"
+    vim "/tmp/py-$USER-$random.py"
     ;;
 
   rc)
@@ -124,59 +124,59 @@ v() {
     ;;
 
   rs)
-    vim "/tmp/rs-$USER-$rand.rs"
+    vim "/tmp/rs-$USER-$random.rs"
     ;;
 
   scss)
-    vim "/tmp/scss-$USER-$rand.scss"
+    vim "/tmp/scss-$USER-$random.scss"
     ;;
 
   sh)
-    vim "/tmp/sh-$USER-$rand.sh"
+    vim "/tmp/sh-$USER-$random.sh"
     ;;
 
   sql)
-    vim "/tmp/sql-$USER-$rand.sql"
+    vim "/tmp/sql-$USER-$random.sql"
     ;;
 
   story)
-    vim "/tmp/story-$USER-$rand.story"
+    vim "/tmp/story-$USER-$random.story"
     ;;
 
   t)
-    vim "/tmp/$USER-$rand"
+    vim "/tmp/$USER-$random"
     ;;
 
   ts)
-    vim "/tmp/ts-$USER-$rand.ts"
+    vim "/tmp/ts-$USER-$random.ts"
     ;;
 
   tsx)
-    vim "/tmp/tsx-$USER-$rand.tsx"
+    vim "/tmp/tsx-$USER-$random.tsx"
     ;;
 
   txt)
-    vim "/tmp/txt-$USER-$rand.txt"
+    vim "/tmp/txt-$USER-$random.txt"
     ;;
 
   wat)
-    vim "/tmp/wat-$USER-$rand.wat"
+    vim "/tmp/wat-$USER-$random.wat"
     ;;
 
   xhtml)
-    vim "/tmp/xhtml-$USER-$rand.xhtml"
+    vim "/tmp/xhtml-$USER-$random.xhtml"
     ;;
 
   yaml)
-    vim "/tmp/yaml-$USER-$rand.yaml"
+    vim "/tmp/yaml-$USER-$random.yaml"
     ;;
 
   yml)
-    vim "/tmp/yml-$USER-$rand.yml"
+    vim "/tmp/yml-$USER-$random.yml"
     ;;
 
   zep)
-    vim "/tmp/zep-$USER-$rand.zep"
+    vim "/tmp/zep-$USER-$random.zep"
     ;;
 
   *)
