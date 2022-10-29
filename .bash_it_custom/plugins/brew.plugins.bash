@@ -16,5 +16,9 @@ b() {
 	ls)
 		brew list "$@"
 		;;
+
+	sr)
+		brew search "$@"
+		;;
 	esac
 }
