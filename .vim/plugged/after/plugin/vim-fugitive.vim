@@ -1,1 +1,1 @@
-nmap <Leader>g :Git<CR>
+nmap <LEADER>g :Git<SPACE>
