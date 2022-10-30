@@ -4,16 +4,20 @@
 matches:
   - trigger: "0,."
     replace: 0.0.0.0
-  - trigger: "23,."
+
+  - trigger: "2,."
     replace: "23:59"
-  - trigger: "e,."
-    replace: example.com
-  - trigger: "thowt,."
-    replace: A penny for your thoughts.
-  - trigger: "\\d,."
+
+  - trigger: "d,."
     replace: "{{d}}"
     vars:
       - name: d
         type: shell
         params:
           cmd: "pbpaste | sed 's/[^[:digit:].]//g'"
+
+  - trigger: "e,."
+    replace: example.com
+
+  - trigger: "t,."
+    replace: A penny for your thoughts.
