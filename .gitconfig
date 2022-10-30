@@ -1,6 +1,7 @@
 [alias]
 	cF = commit --edit --file=.git/COMMIT_EDITMSG
 	mt = mergetool
+	ap = add --patch
 [commit]
 	gpgsign = true
 [core]
