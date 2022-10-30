@@ -4,6 +4,7 @@
 	ap = add --patch
 	c = commit
 	p = push
+	cm = commit -m
 [commit]
 	gpgsign = true
 [core]
