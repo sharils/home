@@ -4,7 +4,11 @@ random="$(awk 'BEGIN { srand(); print int(rand()*32768) }')"
 
 v() {
   if [ $# -eq 0 ]; then
-    vim -S Session.vim
+    if [ -s Session.vim ]; then
+      vim -S Session.vim
+    else
+      vim +Obsession
+    fi
     return
   fi
 
