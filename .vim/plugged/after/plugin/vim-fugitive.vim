@@ -1,1 +1,2 @@
-nmap <LEADER>g :Git!<SPACE>
+nmap <LEADER>g :G<SPACE>
+nmap <LEADER>G :G!
