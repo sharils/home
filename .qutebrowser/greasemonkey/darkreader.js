@@ -4112,6 +4112,7 @@
 //# sourceMappingURL=/sm/5a2bdc5d7663a0e643f0674a9ceaf6cfa7d1ed8f84448f8321084004e0f0d8af.map
 
 const isDark = () => {
+    // TODO (sharils): https://davidwalsh.name/detect-system-theme-preference-change-using-javascript
     const date = new Date();
     const hours = date.getHours();
     const minutes = date.getMinutes();
