@@ -3,6 +3,7 @@
 	mt = mergetool
 	ap = add --patch
 	c = commit
+	p = push
 [commit]
 	gpgsign = true
 [core]
