@@ -1,4 +1,5 @@
 [alias]
+	cF = commit --edit --file=.git/COMMIT_EDITMSG
 	mt = mergetool
 [commit]
 	gpgsign = true
