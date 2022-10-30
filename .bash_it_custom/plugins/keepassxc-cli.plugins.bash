@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-kpxc() {
+kp() {
   cmd=$1
   shift
 
