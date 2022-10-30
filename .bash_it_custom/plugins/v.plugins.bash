@@ -5,6 +5,7 @@ random="$(awk 'BEGIN { srand(); print int(rand()*32768) }')"
 v() {
   if [ $# -eq 0 ]; then
     vim -S Session.vim
+    return
   fi
 
   cmd=$1
