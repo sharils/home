@@ -1,5 +1,5 @@
 [alias]
-    mt = mergetool
+	mt = mergetool
 [commit]
 	gpgsign = true
 [core]
