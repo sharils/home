@@ -112,8 +112,6 @@ cnoremap <C-[>} ’
 inoremap <C-[>- –
 cnoremap <C-[>- –
 nmap <LEADER>E :edit!<CR>
-nmap <LEADER>g< :silent lgrep --fixed-strings '<<<<<<<' %<CR>zt<C-L>zt
-nmap <LEADER>gW :silent lgrep --fixed-strings <C-R><C-W> *<CR><C-L>zt
 nmap <LEADER>so :source ~/.vimrc<CR>
 nmap <LEADER>sr :set relativenumber! relativenumber?<CR>
 nmap <LEADER>ss :set spell! spell?<CR>
