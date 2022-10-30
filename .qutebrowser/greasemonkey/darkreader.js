@@ -2,7 +2,7 @@
 // @name          Dark Reader (Unofficial)
 // @icon          https://darkreader.org/images/darkreader-icon-256x256.png
 // @namespace     DarkReader
-// @description	  Inverts the brightness of pages to reduce eye strain
+// @description   Inverts the brightness of pages to reduce eye strain
 // @version       4.7.15
 // @author        https://github.com/darkreader/darkreader#contributors
 // @homepageURL   https://darkreader.org/ | https://github.com/darkreader/darkreader
@@ -4112,17 +4112,17 @@
 //# sourceMappingURL=/sm/5a2bdc5d7663a0e643f0674a9ceaf6cfa7d1ed8f84448f8321084004e0f0d8af.map
 
 const isDark = () => {
-  const date = new Date();
-  const hours = date.getHours();
-  const minutes = date.getMinutes();
+    const date = new Date();
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
 
-  return (hours <= 5 && minutes <= 30) || (hours >= 17 && minutes >= 30);
+    return (hours <= 5 && minutes <= 30) || (hours >= 17 && minutes >= 30);
 }
 
 isDark() && DarkReader.enable({
-	brightness: 100,
-	contrast: 90,
-	sepia: 10,
+    brightness: 100,
+    contrast: 90,
+    sepia: 10,
     darkSchemeBackgroundColor: "#282a36",
     darkSchemeTextColor: "#f8f8f2",
     // darkColorScheme: "Solarized",
