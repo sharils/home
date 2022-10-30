@@ -4111,18 +4111,6 @@
 }));
 //# sourceMappingURL=/sm/5a2bdc5d7663a0e643f0674a9ceaf6cfa7d1ed8f84448f8321084004e0f0d8af.map
 
-// DarkReader.auto({
-// 	brightness: 100,
-// 	contrast: 90,
-// 	sepia: 10,
-//     darkSchemeBackgroundColor: "#282a36",
-//     darkSchemeTextColor: "#f8f8f2",
-//     // darkColorScheme: "Solarized",
-//     lightSchemeBackgroundColor: "#44475a",
-//     lightSchemeTextColor: "#f8f8f2",
-//     // lightColorScheme: "Solarized"
-// });
-
 const isDark = () => {
   const date = new Date();
   const hours = date.getHours();
