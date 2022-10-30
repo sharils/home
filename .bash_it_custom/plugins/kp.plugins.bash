@@ -9,12 +9,12 @@ kp() {
   g)
     # alias kpxcg=$'keepassxc-cli generate --lower --numeric --special --upper --every-group --length 40 --exclude \$\'"\\" #$%&+,/:;<=>?@[\]^``{|}"\''
     keepassxc-cli generate --lower --numeric --special --upper --every-group --length 40 --exclude ' "#$%&+,/:;<=>?@[\]^`{|}' |
-      sed -E 's/^[[:space:]]*|[[:space:]]*$//g'
+      tr -d \\n
     ;;
 
   w)
     keepassxc-cli diceware --words 12 |
-      sed -E 's/^[[:space:]]*|[[:space:]]*$//g'
+      tr -d \\n
 
   esac
 }
