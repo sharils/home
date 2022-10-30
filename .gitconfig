@@ -2,6 +2,7 @@
 	cF = commit --edit --file=.git/COMMIT_EDITMSG
 	mt = mergetool
 	ap = add --patch
+	c = commit
 [commit]
 	gpgsign = true
 [core]
