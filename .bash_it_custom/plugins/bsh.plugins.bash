@@ -37,9 +37,11 @@ bsh() {
       ;;
     va)
       vim "$HOME/git/github.com/sharils/home/.bash_it_custom/aliases/$1.aliases.bash"
+      bash-it reload
       ;;
     vp)
       vim "$HOME/git/github.com/sharils/home/.bash_it_custom/plugins/$1.plugins.bash"
+      bash-it reload
       ;;
     *)
       bash-it "$cmd" "$@"
