@@ -24,8 +24,9 @@ v() {
     vim "$temp/$cmd"
     ;;
 
+  d | p) vim -"$cmd" "$@" ;;
+
   R) vim README.md ;;
-  d) vimdiff "$@" ;;
   dco) vim docker-compose.yml ;;
   dk) vim Dockerfile ;;
   gi) vim .gitignore ;;
