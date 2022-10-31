@@ -34,8 +34,7 @@ g() {
 
   ia)
     g i
-    git add .
-    git commit
+    git commit --all --untracked-files
     ;;
 
   r)
