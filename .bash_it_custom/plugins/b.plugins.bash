@@ -1,23 +1,23 @@
 #!/usr/bin/env sh
 
 b() {
-	cmd=$1
-	shift
+  cmd=$1
+  shift
 
-	case $cmd in
-	i)
-		brew install "$@"
-		;;
+  case $cmd in
+  i)
+    brew install "$@"
+    ;;
 
-	inf)
-		brew info "$@"
-		;;
+  inf)
+    brew info "$@"
+    ;;
 
-	sr)
-		brew search "$@"
-		;;
+  sr)
+    brew search "$@"
+    ;;
 
   *)
     brew "$cmd" "$@"
-	esac
+  esac
 }
