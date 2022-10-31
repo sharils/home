@@ -19,5 +19,8 @@ matches:
   - trigger: "e,."
     replace: example.com
 
+  - trigger: "h,."
+    replace: --help
+
   - trigger: "t,."
     replace: A penny for your thoughts.
