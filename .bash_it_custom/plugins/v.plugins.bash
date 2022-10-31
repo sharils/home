@@ -17,48 +17,21 @@ v() {
 
   case "$cmd" in
 
+  c | css | csv | eex | erl | ex | exs | gql | html | java | jq | js | json | \
+    jsx | lua | md | mdx | mw | pegjs | php | py | rs | scss | sh | sql | \
+    story | ts | tsx | txt | wat | xhtml | yaml | yml | zep)
+    vim "/tmp/$cmd-$USER-$random.$cmd"
+    ;;
+
   R) vim README.md ;;
-  c) vim "/tmp/c-$USER-$random.c" ;;
-  css) vim "/tmp/css-$USER-$random.css" ;;
-  csv) vim "/tmp/csv-$USER-$random.csv" ;;
   d) vimdiff "$@" ;;
   dco) vim docker-compose.yml ;;
   dk) vim Dockerfile ;;
-  eex) vim "/tmp/eex-$USER-$random.eex" ;;
-  erl) vim "/tmp/erl-$USER-$random.erl" ;;
-  ex) vim "/tmp/ex-$USER-$random.ex" ;;
-  exs) vim "/tmp/exs-$USER-$random.exs" ;;
   gi) vim .gitignore ;;
-  gql) vim "/tmp/gql-$USER-$random.gql" ;;
-  html) vim "/tmp/html-$USER-$random.html" ;;
-  java) vim "/tmp/java-$USER-$random.java" ;;
-  jq) vim "/tmp/jq-$USER-$random.jq" ;;
-  js) vim "/tmp/js-$USER-$random.js" ;;
-  json) vim "/tmp/json-$USER-$random.json" ;;
-  jsx) vim "/tmp/jsx-$USER-$random.jsx" ;;
-  lua) vim "/tmp/lua-$USER-$random.lua" ;;
-  md) vim "/tmp/md-$USER-$random.md" ;;
-  mdx) vim "/tmp/mdx-$USER-$random.mdx" ;;
-  mw) vim "/tmp/mw-$USER-$random.mw" ;;
-  pegjs) vim "/tmp/pegjs-$USER-$random.pegjs" ;;
-  php) vim "/tmp/php-$USER-$random.php" ;;
   pj) vim package.json ;;
-  py) vim "/tmp/py-$USER-$random.py" ;;
   rc) vim ~/git/github.com/sharils/home/.vimrc ;;
-  rs) vim "/tmp/rs-$USER-$random.rs" ;;
-  scss) vim "/tmp/scss-$USER-$random.scss" ;;
-  sh) vim "/tmp/sh-$USER-$random.sh" ;;
-  sql) vim "/tmp/sql-$USER-$random.sql" ;;
-  story) vim "/tmp/story-$USER-$random.story" ;;
   t) vim "/tmp/$USER-$random" ;;
-  ts) vim "/tmp/ts-$USER-$random.ts" ;;
-  tsx) vim "/tmp/tsx-$USER-$random.tsx" ;;
-  txt) vim "/tmp/txt-$USER-$random.txt" ;;
-  wat) vim "/tmp/wat-$USER-$random.wat" ;;
-  xhtml) vim "/tmp/xhtml-$USER-$random.xhtml" ;;
-  yaml) vim "/tmp/yaml-$USER-$random.yaml" ;;
-  yml) vim "/tmp/yml-$USER-$random.yml" ;;
-  zep) vim "/tmp/zep-$USER-$random.zep" ;;
+
   *) vim "$cmd" "$@" ;;
 
   esac
