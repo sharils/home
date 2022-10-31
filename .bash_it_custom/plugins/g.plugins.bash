@@ -28,6 +28,8 @@ g() {
 
   dl) cd ~/Downloads || return ;;
 
+  h) man git-"$*";;
+
   i)
     git init
     git commit --allow-empty --message "Initialize empty Git repository"
