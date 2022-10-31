@@ -6,6 +6,9 @@ g() {
   if [ $# -eq 0 ]; then
     tig
     return
+  elif [ -s "$1" ]; then
+    tig "$@"
+    return
   fi
 
   cmd=$1
