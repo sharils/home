@@ -15,7 +15,7 @@ g() {
   shift
   case $cmd in
 
-  cg) vim ~/.gitconfig;;
+  cg) vim ~/.gitconfig ;;
 
   clt)
     for last in "$@"; do :; done
@@ -28,7 +28,7 @@ g() {
 
   dl) cd ~/Downloads || return ;;
 
-  h) man git-"$*";;
+  h) man git-"$*" ;;
 
   i)
     git init
@@ -41,6 +41,8 @@ g() {
     ;;
 
   r) tig refs ;;
+
+  rs) git reset "$@" ;;
 
   s) tig status ;;
 
