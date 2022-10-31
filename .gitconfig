@@ -5,6 +5,7 @@
 	cf = commit --edit --file=.git/COMMIT_EDITMSG
 	cm = commit --message
 	f = fetch --prune
+	g = grep
 	l = log --graph --oneline
 	mt = mergetool
 	p = push
