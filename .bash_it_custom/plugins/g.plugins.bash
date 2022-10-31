@@ -40,8 +40,6 @@ g() {
 
   r) tig refs ;;
 
-  rs) git reset "$@" ;;
-
   s) tig status ;;
 
   t)

@@ -8,6 +8,7 @@
 	g = grep
 	l = log --graph --oneline
 	mt = mergetool
+	rs = reset
 	p = push
 [commit]
 	gpgsign = true
