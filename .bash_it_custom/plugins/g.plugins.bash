@@ -53,7 +53,7 @@ g() {
     fi
     ;;
 
-  v) vim ~/.gitconfig ;;
+  v) vim ~/git/github.com/sharils/home/.gitconfig ;;
 
   ~t) cd ~/tmp || return ;;
 
