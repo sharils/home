@@ -15,8 +15,6 @@ g() {
   shift
   case $cmd in
 
-  cg) vim ~/.gitconfig ;;
-
   clt)
     for last in "$@"; do :; done
     dir="/tmp/$(basename "${last%.*}")-$random"
@@ -54,6 +52,8 @@ g() {
       cd "/tmp/$*-$USER-$random" || return
     fi
     ;;
+
+  v) vim ~/.gitconfig ;;
 
   ~t) cd ~/tmp || return ;;
 
