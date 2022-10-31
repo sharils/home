@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
-random="$(awk 'BEGIN { srand(); print int(rand()*32768) }' /dev/null)"
-
+temp=''
 g() {
   if [ $# -eq 0 ]; then
     tig
@@ -17,7 +16,7 @@ g() {
 
   clt)
     for last in "$@"; do :; done
-    dir="/tmp/$(basename "${last%.*}")-$random"
+    dir="$(mktemp -d "/tmp/$(basename "${last%.*}")-$USER-XXXXXX")"
     git clone "$@" "$dir"
     cd "$dir" || return
     ;;
@@ -46,8 +45,8 @@ g() {
     if [ $# -eq 0 ]; then
       cd /tmp || return
     else
-      mkdir -p "/tmp/$*-$USER-$random"
-      cd "/tmp/$*-$USER-$random" || return
+      [ ! -d "$temp" ] && temp="$(mktemp -d "/tmp/$*-$USER-XXXXXX")"
+      cd "$temp" || return
     fi
     ;;
 
