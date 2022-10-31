@@ -23,5 +23,5 @@
 	tool = vim-conflicted
 [mergetool]
 	keepBackup = false
-[mergetool	"vim-conflicted"]
+[mergetool "vim-conflicted"]
 	cmd = vim +Conflicted
