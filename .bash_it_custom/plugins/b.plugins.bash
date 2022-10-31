@@ -13,10 +13,6 @@ b() {
 		brew info "$@"
 		;;
 
-	ls)
-		brew list "$@"
-		;;
-
 	sr)
 		brew search "$@"
 		;;
