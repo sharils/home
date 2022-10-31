@@ -16,5 +16,8 @@ b() {
 	sr)
 		brew search "$@"
 		;;
+
+  *)
+    brew "$cmd" "$@"
 	esac
 }
