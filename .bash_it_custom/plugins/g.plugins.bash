@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
+# dep: z.plugins.bash
 
-temp=''
 g() {
   if [ $# -eq 0 ]; then
     tig
@@ -16,14 +16,11 @@ g() {
 
   clt)
     for last in "$@"; do :; done
-    dir="$(mktemp -d "/tmp/$(basename "${last%.*}")-$USER-XXXXXX")"
-    git clone "$@" "$dir"
-    cd "$dir" || return
+    z t "$(basename "${last%.*}")"
+    git clone "$@" "$PWD"
     ;;
 
   cma) git commit --message "Apply $*" ;;
-
-  dl) cd ~/Downloads || return ;;
 
   h) man git-"$*" ;;
 
@@ -41,18 +38,7 @@ g() {
 
   s) tig status ;;
 
-  t)
-    if [ $# -eq 0 ]; then
-      cd /tmp || return
-    else
-      [ ! -d "$temp" ] && temp="$(mktemp -d "/tmp/$*-$USER-XXXXXX")"
-      cd "$temp" || return
-    fi
-    ;;
-
   v) vim ~/git/github.com/sharils/home/.gitconfig ;;
-
-  ~t) cd ~/tmp || return ;;
 
   *) git "$cmd" "$@" ;;
 
