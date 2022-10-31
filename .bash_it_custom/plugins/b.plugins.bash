@@ -13,14 +13,6 @@ b() {
     brew install "$@"
     ;;
 
-  inf)
-    brew info "$@"
-    ;;
-
-  sr)
-    brew search "$@"
-    ;;
-
   *)
     brew "$cmd" "$@"
   esac
