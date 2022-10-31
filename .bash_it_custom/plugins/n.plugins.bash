@@ -5,11 +5,9 @@ n() {
   shift
 
   case $cmd in
-    nc)
-      npx --yes npm-check "$@"
-      ;;
 
-    *)
-      npm "$cmd" "$*"
+  nc) npx --yes npm-check "$@" ;;
+  *) npm "$cmd" "$*" ;;
+
   esac
 }

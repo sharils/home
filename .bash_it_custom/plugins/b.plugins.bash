@@ -1,19 +1,12 @@
 #!/usr/bin/env sh
 
 b() {
-  if [ "$#" -eq 0 ]; then
-    brew
-    return
-  fi
-
-  cmd=$1
+  cmd="${1:-help}"
   shift
-  case $cmd in
-  i)
-    brew install "$@"
-    ;;
 
-  *)
-    brew "$cmd" "$@"
+  case "$cmd" in
+  i) cmd=install ;;
   esac
+
+  brew "$cmd" "$@"
 }

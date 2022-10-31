@@ -22,13 +22,9 @@ g() {
     cd "$dir" || return
     ;;
 
-  cma)
-    git commit --message "Apply $*"
-    ;;
+  cma) git commit --message "Apply $*" ;;
 
-  dl)
-    cd ~/Downloads || return
-    ;;
+  dl) cd ~/Downloads || return ;;
 
   i)
     git init
@@ -40,13 +36,9 @@ g() {
     git commit --all --untracked-files
     ;;
 
-  r)
-    tig refs
-    ;;
+  r) tig refs ;;
 
-  s)
-    tig status
-    ;;
+  s) tig status ;;
 
   t)
     if [ $# -eq 0 ]; then
@@ -57,13 +49,9 @@ g() {
     fi
     ;;
 
-  ~t)
-    cd ~/tmp || return
-    ;;
+  ~t) cd ~/tmp || return ;;
 
-  *)
-    git "$cmd" "$@"
-    ;;
+  *) git "$cmd" "$@" ;;
 
   esac
 }

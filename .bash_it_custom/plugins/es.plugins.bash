@@ -5,8 +5,10 @@ es() {
   shift
 
   case "$cmd" in
+
   r) cmd=restart ;;
   s) cmd=status ;;
+
   esac
 
   espanso "$cmd" "$@"

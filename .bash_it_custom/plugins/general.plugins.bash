@@ -61,18 +61,12 @@ ev() {
   shift
 
   case $cmd in
-  ex)
-    elixir -e "$*"
-    ;;
-  js)
-    node --print "$*"
-    ;;
-  php)
-    php -r "$*"
-    ;;
-  py)
-    python -c "$*"
-    ;;
+
+  ex) elixir -e "$*" ;;
+  js) node --print "$*" ;;
+  php) php -r "$*" ;;
+  py) python -c "$*" ;;
+
   esac
 }
 

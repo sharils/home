@@ -6,24 +6,18 @@ home() {
 
   case $cmd in
 
-  cd)
-    cd ~/git/github.com/sharils/home/ || return
-    ;;
+  cd) cd ~/git/github.com/sharils/home/ || return ;;
 
-  e)
-    vim ~/git/github.com/sharils/home/install
-    ;;
+  e) vim ~/git/github.com/sharils/home/install ;;
 
-  P|pull)
+  P | pull)
     git -C ~/git/github.com/sharils/home stash push
     git -C ~/git/github.com/sharils/home pull --prune --rebase
     vim -S ~/.vim/snapshot.vim
     bash-it reload
     ;;
 
-  p|push)
-    git -C ~/git/github.com/sharils/home push
-    ;;
+  p | push) git -C ~/git/github.com/sharils/home push ;;
 
   u)
     sudo --validate
