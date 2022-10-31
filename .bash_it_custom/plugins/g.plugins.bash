@@ -16,7 +16,7 @@ g() {
     for last in "$@"; do :; done
     dir="/tmp/$(basename "${last%.*}")-$random"
     git clone "$@" "$dir"
-    cd "$dir" || exit
+    cd "$dir" || return
     ;;
 
   cma)
