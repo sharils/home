@@ -3,7 +3,7 @@
 	ap = add --patch
 	c = commit
 	cf = commit --edit --file=.git/COMMIT_EDITMSG
-	cm = commit -m
+	cm = commit --message
 	mt = mergetool
 	p = push
 [commit]
