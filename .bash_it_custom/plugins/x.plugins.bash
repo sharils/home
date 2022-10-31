@@ -11,7 +11,7 @@ x() {
   b) npx --yes nx run-many --target=build --projects "$@" ;;
 
   e)
-    projects="$(echo "$1" | sed -e 's/[[:>:]]/-e2e/g')"
+    projects="$(echo "$1" | sed 's/[[:>:]]/-e2e/g')"
     shift
     npx --yes nx run-many --target=e2e --projects="$projects" "$@"
     ;;
@@ -19,11 +19,8 @@ x() {
   f) npx --yes nx format "$@" ;;
 
   g)
-    if [ $# -eq 0 ]; then
-      npx --yes nx graph
-    else
-      npx --yes nx generate "$@"
-    fi
+    [ $# -eq 0 ] && cmd=graph
+    npx --yes nx "$cmd" "$@"
     ;;
 
   l) npx --yes nx lint "$@" ;;
