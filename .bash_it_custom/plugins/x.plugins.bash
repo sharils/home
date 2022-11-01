@@ -1,5 +1,45 @@
 #!/usr/bin/env sh
 
+x() {
+  cmd="$1"
+  shift
+
+  case "$cmd" in
+
+  ex) elixir -e "$*" ;;
+
+  js) node --print "$*" ;;
+
+  krampus)
+    # Named after https://www.npmjs.com/package/krampus
+    pid="$(lsof -ti "$*")"
+    kill -TERM "$pid" || kill -KILL "$pid"
+    ;;
+
+  m)
+    mkdir "$@"
+    ;;
+
+  php) php -r "$*" ;;
+
+  py) python -c "$*" ;;
+
+  tel)
+    open "tel:$*"
+    ;;
+
+  tree)
+    find . -print | sed 's;[^/]*/;|____;g;s;____|; |;g'
+    ;;
+
+  whois)
+    for name in "$@"; do :; done
+    whois -c "${name##*.}" "$@"
+    ;;
+
+  esac
+}
+
 # rfc54241() {
 #   cat <<'TXT'
 #
@@ -55,31 +95,3 @@
 #
 # TXT
 # }
-
-ev() {
-  cmd=$1
-  shift
-
-  case $cmd in
-
-  ex) elixir -e "$*" ;;
-  js) node --print "$*" ;;
-  php) php -r "$*" ;;
-  py) python -c "$*" ;;
-
-  esac
-}
-
-# Named after https://www.npmjs.com/package/krampus
-krampus() {
-  pid="$(lsof -ti "$*")"
-  kill -TERM "$pid" || kill -KILL "$pid"
-}
-
-tel() {
-  open "tel:$*"
-}
-
-whoisc() {
-  whois -c "${1##*.}" "$1"
-}
