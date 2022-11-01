@@ -16,6 +16,8 @@ x() {
 
   ex) elixir -e "$*" ;;
 
+  gpg) echo | gpg --clearsign ;;
+
   js) node --print "$*" ;;
 
   krampus)
