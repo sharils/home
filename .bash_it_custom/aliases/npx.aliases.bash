@@ -104,7 +104,7 @@ alias gitignorejs='npx --yes gitignore node'
 #alias knip='npx --yes knip '
 
 # Kill processes occupying a port
-alias krampus='npx --yes krampus '
+# alias krampus='npx --yes krampus '
 
 # A tool for managing JavaScript projects with multiple packages.
 #alias lerna='npx --yes lerna '

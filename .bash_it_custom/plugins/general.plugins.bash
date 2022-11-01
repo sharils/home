@@ -70,6 +70,12 @@ ev() {
   esac
 }
 
+# Named after https://www.npmjs.com/package/krampus
+krampus() {
+  pid="$(lsof -ti "$*")"
+  kill -TERM "$pid" || kill -KILL "$pid"
+}
+
 tel() {
   open "tel:$*"
 }
