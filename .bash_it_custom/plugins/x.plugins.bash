@@ -6,6 +6,14 @@ x() {
 
   case "$cmd" in
 
+  erl)
+    if [ $# -eq 0 ]; then
+      erl -man erl
+    else
+      erl -noshell -eval "$*,init:stop()."
+    fi
+    ;;
+
   ex) elixir -e "$*" ;;
 
   js) node --print "$*" ;;
