@@ -5,6 +5,7 @@ b() {
   shift
 
   case "$cmd" in
+  h) cmd=help ;;
   i) cmd=install ;;
   esac
 
