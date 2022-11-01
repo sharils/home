@@ -28,6 +28,11 @@ snippet ? "${ENV}=${ENV:?}" b
 ${1:ENV}="\${$1:?}"
 endsnippet
 
+snippet ca "case);;" b
+${1:*})$0
+	;;
+endsnippet
+
 snippet eif "else if ${1::}; then" b
 elif ${1::}; then
 	${2::}
