@@ -22,7 +22,7 @@ x() {
 
   php) php -r "$*" ;;
 
-  py) python -c "$*" ;;
+  py) python3 -c "$*" ;;
 
   tel)
     open "tel:$*"
