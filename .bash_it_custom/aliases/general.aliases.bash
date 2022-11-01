@@ -2,3 +2,4 @@
 
 alias c='pbcopy '
 alias l='less '
+alias yarn='npx --yes yarn'
