@@ -20,6 +20,10 @@ snippet - "${ENV}=${ENV:-ENV}" b
 ${1:ENV}="\${$1:-$2}"
 endsnippet
 
+snippet -1 "${@: -1}" b
+for ${1:last} in "$@"; do :; done
+endsnippet
+
 snippet ? "${ENV}=${ENV:?}" b
 ${1:ENV}="\${$1:?}"
 endsnippet
