@@ -8,11 +8,11 @@ bsh() {
 
   enp) bash-it enable plugin "$@" ;;
 
-  ha) bash-it help alias ;;
+  ha) bash-it help alias "$@" ;;
 
   hc)
     if [ "$#" -eq 0 ]; then
-      bash-it help completions
+      bash-it help completions "$@"
     else
       $PAGER "$HOME/.bash_it/completion/available/$1.completion.bash"
     fi
@@ -20,7 +20,7 @@ bsh() {
 
   hp)
     if [ "$#" -eq 0 ]; then
-      bash-it help plugins
+      bash-it help plugins "$@"
     else
       $PAGER "$HOME/.bash_it/plugins/available/$1.plugin.bash"
     fi
@@ -28,11 +28,11 @@ bsh() {
 
   r) bash-it reload ;;
 
-  sa) bash-it show aliases ;;
+  sa) bash-it show aliases "$@" ;;
 
-  sc) bash-it show completions ;;
+  sc) bash-it show completions "$@" ;;
 
-  sp) bash-it show plugins ;;
+  sp) bash-it show plugins "$@" ;;
 
   va)
     vim "$HOME/git/github.com/sharils/home/.bash_it_custom/aliases/$1.aliases.bash"
