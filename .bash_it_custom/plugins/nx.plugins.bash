@@ -6,28 +6,34 @@ nx() {
   shift
   case $cmd in
 
-  at) npx --yes nx affected:test ;;
+  at) nx affected:test ;;
 
-  b) npx --yes nx run-many --target=build --projects "$@" ;;
+  b) nx r build "$@" ;;
 
   e)
     projects="$(echo "$1" | sed 's/[[:>:]]/-e2e/g')"
     shift
-    npx --yes nx run-many --target=e2e --projects="$projects" "$@"
+    nx r e2e "$projects" "$@"
     ;;
 
-  f) npx --yes nx format "$@" ;;
+  f) nx format "$@" ;;
 
   g)
     [ $# -eq 0 ] && cmd=graph
-    npx --yes nx "$cmd" "$@"
+    nx "$cmd" "$@"
     ;;
 
-  l) npx --yes nx lint "$@" ;;
+  l) nx lint "$@" ;;
 
-  s) npx --yes nx run-many --target=serve --projects "$@" ;;
+  r)
+    target="$1"
+    shift
+    nx run-many --target "$target" --projects "$@"
+    ;;
 
-  t) npx --yes nx run-many --target=test --projects "$@" ;;
+  s) nx r serve "$@" ;;
+
+  t) nx r test "$@" ;;
 
   *) npx --yes nx "$cmd" "$@" ;;
 
