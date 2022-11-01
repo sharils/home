@@ -4,7 +4,7 @@
 #alias backstopjs='npx --yes backstopjs '
 
 # Live CSS Reload & Browser Syncing
-#alias browser-syncw='npx --yes browser-sync --no-open --watch'
+# TODO alias browser-syncw='npx --yes browser-sync --no-open --watch'
 
 # Capacitor: Universal Web Applications
 #alias cap='npx --yes --package @capacitor/core --package @capacitor/cli cap '
@@ -19,29 +19,29 @@
 #alias codemod-cli='npx --yes codemod-cli'
 
 # Find out which of your dependencies is slowing you down
-# alias cost-of-modules='npx --yes cost-of-modules '
+# TODO alias cost-of-modules='npx --yes cost-of-modules '
 
 # `covgen` generates a code of conduct.
-#alias covgen='npx --yes covgen '
+# TODO alias covgen='npx --yes covgen '
 
 # 📟 CLI to create new Node.js CLI applications. Learn to build Node.js CLI apps.
-#alias create-node-cli='npx --yes create-node-cli'
+# TODO alias create-node-cli='npx --yes create-node-cli'
 
 # straightforward project scaffolding
-#alias degit='npx --yes degit '
+# TODO alias degit='npx --yes degit '
 
 # Generate a report about your development environment for debugging and issue reporting
 #alias envinfo='npx --yes envinfo'
 
 # An AST-based pattern checker for JavaScript.
-#alias eslintf='npx --yes eslint --fix .'
+# TODO alias eslintf='npx --yes eslint --fix .'
 
 # Automatically fetch gitignore files for any project type from github into your new project
-alias gitignorejs='npx --yes gitignore node'
+# TODO alias gitignorejs='npx --yes gitignore node'
 
 # GraphQL code generator with flexible support for custom plugins and templates
 # https://graphql-code-generator.com
-#alias graphql-codegen='npx --yes -p graphql -p @graphql-codegen/cli -c graphql-codegen'
+# TODO alias graphql-codegen='npx --yes -p graphql -p @graphql-codegen/cli -c graphql-codegen'
 
 # An opinionated code style agnostic linter – a friendly companion to Prettier.
 #alias healthier='npx --yes healthier '
@@ -50,16 +50,16 @@ alias gitignorejs='npx --yes gitignore node'
 #alias hint='npx --yes hint'
 
 # http-server: a command-line http server
-#alias http-server='npx --yes http-server'
+# TODO alias http-server='npx --yes http-server'
 
 # HTTP server for debugging clients.
-#alias httpbin='npx --yes @buzuli/httpbin '
+# TODO alias httpbin='npx --yes @buzuli/httpbin '
 
 # finds publicly known security vulnerabilities in a website's frontend JavaScript libraries
 #alias is-website-vulnerable='is-website-vulnerable'
 
 # 😎 Supercharged JavaScript REPL
-#alias jay='npx --yes jay-repl '
+# TODO alias jay='npx --yes jay-repl '
 
 # Detect structural similarities in your code
 #alias jsinspect='npx --yes jsinspect '
@@ -92,52 +92,52 @@ alias gitignorejs='npx --yes gitignore node'
 #alias pack='npx --yes @pika/pack '
 
 # Prettier formatter for package.json files
-#alias prettier-package-jsonw='npx --yes prettier-package-json --write'
+# TODO alias prettier-package-jsonw='npx --yes prettier-package-json --write'
 
 # Prettier is an opinionated code formatter
-#alias prettierjs='npx --yes prettier --write "*.js" "**/*.js" '
+# TODO alias prettierjs='npx --yes prettier --write "*.js" "**/*.js" '
 #alias prettiersh='npx --yes --package prettier --package prettier-plugin-sh prettier'
 #alias prettiersql='npx --yes --package prettier --package prettier-plugin-sql prettier'
 
 # A command-line tool for querying Troy Hunt's Have I been pwned? service using the hibp Node.js module.
-#alias pwned='npx --yes pwned '
+# TODO alias pwned='npx --yes pwned '
 
 # ⚡ Get Pretty Quick https://npm.im/pretty-quick
 #alias pretty-quick='npx --yes pretty-quick'
 
 #  🔍 cli utility for querying the node_modules directory
-# alias qnm='npx --yes qnm '
+# TODO alias qnm='npx --yes qnm '
 
 # CLI that generates beautiful README.md files.
-#alias readme-md-generator='npx --yes readme-md-generator'
+# TODO alias readme-md-generator='npx --yes readme-md-generator'
 
 # When run, this command line interface automatically generates a new GitHub Release and populates it with the changes (commits) made since the last release.
 #alias release='npx --yes release '
 
 # The JSON Resume command line interface
-#alias resume='npx --yes resume-cli '
+# TODO alias resume='npx --yes resume-cli '
 
 # Calculate the real cost to run your JS app or lib to keep good performance. Show error in pull request if the cost exceeds the limit.
-#alias size-limit='npx --yes size-limit'
+# TODO alias size-limit='npx --yes size-limit'
 
 # trello-cli is a CLI tool for Trello. Makes sense, right?
 #alias trello-cli='npx --yes trello-cli'
 
 # Quickly try out npm packages inside a container.
-#alias try='npx --yes try-pkg'
+# TODO alias try='npx --yes try-pkg'
 
 # Find and fix dangling files and unused dependencies in your JavaScript projects.
 #alias unimported='npx --yes unimported '
 
 # Automatically change your desktop image every 21600 seconds
-#alias unsplash-so-fancy='npx --yes unsplash-so-fancy '
+# TODO alias unsplash-so-fancy='npx --yes unsplash-so-fancy '
 
 # 📦🔐A lightweight private npm proxy registry https://www.verdaccio.org/
 # NPM_CONFIG_REGISTRY=http://localhost:4873 npm i
 #alias verdaccio='npx --yes verdaccio'
 
 # Node is running but you don't know why? why-is-node-running is here to help you.
-alias why-is-node-running='npx --yes why-is-node-running'
+# TODO alias why-is-node-running='npx --yes why-is-node-running'
 
 # Zero configuration web framework.
 #alias zero='npx --yes zero '
