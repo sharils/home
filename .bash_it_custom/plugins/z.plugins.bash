@@ -9,6 +9,8 @@ z() {
 
   dl) cd ~/Downloads || return ;;
 
+  ssh) cd ~/.ssh || return ;;
+
   t)
     if [ $# -ne 0 ]; then
       [ ! -d "$temp" ] && temp="$(mktemp -d "/tmp/$*-$USER-XXXXXX")"
