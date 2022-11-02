@@ -10,7 +10,6 @@ n() {
 
   next-app | react-app) npm init "$cmd" "$@" ;;
 
-  nc) npx --yes npm-check "$@" ;;
   v) n vercel --token="${VERCEL_TOKEN:?}" "$@" ;;
   *) npm "$cmd" "$*" ;;
 
