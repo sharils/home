@@ -16,7 +16,7 @@ x() {
 
   ex) elixir -e "$*" ;;
 
-  gpg) echo | gpg --clearsign ;;
+  gpg) echo | gpg --clearsign >/dev/null ;;
 
   js) node --print "$*" ;;
 
