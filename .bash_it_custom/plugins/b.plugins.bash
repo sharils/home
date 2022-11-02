@@ -7,6 +7,7 @@ b() {
   case "$cmd" in
   h) cmd=help ;;
   i) cmd=install ;;
+  out) cmd=outdated ;;
   esac
 
   brew "$cmd" "$@"
