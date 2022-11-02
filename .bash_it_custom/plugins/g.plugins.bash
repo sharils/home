@@ -44,6 +44,8 @@ g() {
 
   y) git stash "$@" ;;
 
+  yls) tig stash "$@" ;;
+
   *) git "$cmd" "$@" ;;
 
   esac
