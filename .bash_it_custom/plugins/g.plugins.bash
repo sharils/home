@@ -25,18 +25,18 @@ g() {
   h) man git-"$*" ;;
 
   i)
-    git init
+    git init "$@"
     git commit --allow-empty --message "Initialize empty Git repository"
     ;;
 
   ia)
-    g i
+    g i "$@"
     git commit --all --untracked-files
     ;;
 
-  r) tig refs ;;
+  r) tig refs "$@" ;;
 
-  s) tig status ;;
+  s) tig status "$@" ;;
 
   v) vim ~/git/github.com/sharils/home/.gitconfig ;;
 
