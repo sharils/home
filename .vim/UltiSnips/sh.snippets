@@ -81,6 +81,12 @@ ${1:cmd}="\$1"
 shift
 endsnippet
 
+snippet sw "case" b
+case "$cmd" in
+	*) $1 ;;
+esac
+endsnippet
+
 
 priority 2
 
