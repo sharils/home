@@ -42,6 +42,8 @@ g() {
 
   v) vim ~/git/github.com/sharils/home/.gitconfig ;;
 
+  y) git stash "$@" ;;
+
   *) git "$cmd" "$@" ;;
 
   esac
