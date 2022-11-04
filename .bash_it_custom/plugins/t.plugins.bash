@@ -22,7 +22,7 @@ t() {
 
   rc) rm ~/Sync/todo/todo.sync-conflict-*.txt ;;
 
-  v) vim -p ~/Sync/todo/todo.txt ~/Sync/todo/QuickNote.md ;;
+  v) vim -p ~/Sync/todo/todo.txt ~/Sync/todo/QuickNote.md ~/Sync/todo/infanoj.md ;;
 
   vc) vimdiff ~/Sync/todo/todo.txt ~/Sync/todo/todo.sync-conflict-*.txt ;;
 
