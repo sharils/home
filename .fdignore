@@ -6,7 +6,7 @@
 !/Users/*/tmp
 
 # git
-.git/*
+.git
 !.git/info
 .gitattributes
 .gitconfig
