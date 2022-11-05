@@ -98,6 +98,10 @@ set -o errexit -o nounset -o xtrace
 ROOT="$(dirname "\$0")"; export ROOT
 endsnippet
 
+snippet # "#" w
+$#
+endsnippet
+
 snippet < "<<'EOF'" w
 <<'${1:EOF}'`echo \\n`$2`echo \\n`$1
 endsnippet
