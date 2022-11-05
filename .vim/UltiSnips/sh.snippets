@@ -110,6 +110,10 @@ snippet c "cat" w
 cat $0
 endsnippet
 
+snippet cd "cd || return" w
+cd ${1:"$@"} || return
+endsnippet
+
 snippet gp "<<'GNUPLOT'" w
 <<'GNUPLOT'`echo \\n`$1`echo \\n`GNUPLOT
 endsnippet
