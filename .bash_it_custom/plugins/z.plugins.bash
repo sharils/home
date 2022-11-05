@@ -2,6 +2,10 @@
 
 temp=''
 z() {
+  if [ $# -eq 0 ]; then
+    cd - || return
+  fi
+
   cmd="$1"
   shift
 
