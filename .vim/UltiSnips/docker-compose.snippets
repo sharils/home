@@ -1,6 +1,15 @@
+snippet $ "${}" w
+${${1:PWD}}
+endsnippet
+
 snippet a "args" b
 args:
 	$0
+endsnippet
+
+snippet alpine "description" b
+# https://hub.docker.com/_/alpine
+image: alpine:${1:3.14}
 endsnippet
 
 snippet b "build" b
@@ -49,31 +58,6 @@ snippet i "image" b
 image: $0
 endsnippet
 
-snippet alpine "description" b
-# https://hub.docker.com/_/alpine
-image: alpine:${1:3.14}
-endsnippet
-
-snippet nginx "nginx" b
-# https://hub.docker.com/_/nginx
-image: nginx:${1:1.21}-alpine
-endsnippet
-
-snippet node "node" b
-# https://hub.docker.com/_/node
-image: node:${1:16.5}-alpine${2:3.14}
-endsnippet
-
-snippet python "python" b
-# https://hub.docker.com/_/python
-image: python:${1:3.9}-alpine${2:3.14}
-endsnippet
-
-snippet ubuntu "ubuntu" b
-# https://hub.docker.com/_/ubuntu
-image: ubuntu:${1:20.04}
-endsnippet
-
 snippet log "logging.driver.awslogs" b
 logging:
 	driver: local
@@ -97,17 +81,6 @@ logging:
 	# https://docs.docker.com/config/containers/logging/syslog/#options
 	options:
 		syslog-address: ${1:tcp://192.168.0.42:123}
-endsnippet
-
-snippet mongosh "mongosh" b
-mongosh:
-	# https://hub.docker.com/_/mongo
-	image: mongo:6.0-focal
-	# export MONGO_URI="mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@db"
-	command: ${MONGO_URI}
-	entrypoint: mongosh
-	profiles:
-		- mongosh
 endsnippet
 
 snippet mariadb "mariadb" b
@@ -135,6 +108,17 @@ db:
 		MONGO_INITDB_ROOT_USERNAME:
 endsnippet
 
+snippet mongosh "mongosh" b
+mongosh:
+	# https://hub.docker.com/_/mongo
+	image: mongo:6.0-focal
+	# export MONGO_URI="mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@db"
+	command: ${MONGO_URI}
+	entrypoint: mongosh
+	profiles:
+		- mongosh
+endsnippet
+
 snippet mysql "mysql" b
 mysql:
 	# https://hub.docker.com/_/mariadb
@@ -148,6 +132,16 @@ mysql:
 	entrypoint: mysql
 	profiles:
 		- mysql
+endsnippet
+
+snippet nginx "nginx" b
+# https://hub.docker.com/_/nginx
+image: nginx:${1:1.21}-alpine
+endsnippet
+
+snippet node "node" b
+# https://hub.docker.com/_/node
+image: node:${1:16.5}-alpine${2:3.14}
 endsnippet
 
 snippet p "ports" b
@@ -186,12 +180,17 @@ psql:
 		- psql
 endsnippet
 
-snippet r "restart: no" b
-restart: "no"
+snippet python "python" b
+# https://hub.docker.com/_/python
+image: python:${1:3.9}-alpine${2:3.14}
 endsnippet
 
 snippet r "restart: always" b
 restart: always
+endsnippet
+
+snippet r "restart: no" b
+restart: "no"
 endsnippet
 
 snippet r "restart: on-failure" b
@@ -208,13 +207,18 @@ version: "3.8"
 services:
 endsnippet
 
+snippet se "secret" b
+secrets:
+	- $0
+endsnippet
+
 snippet t "target" b
 target; $0
 endsnippet
 
-snippet se "secret" b
-secrets:
-	- $0
+snippet ubuntu "ubuntu" b
+# https://hub.docker.com/_/ubuntu
+image: ubuntu:${1:20.04}
 endsnippet
 
 snippet v "volumes" b
@@ -226,55 +230,4 @@ endsnippet
 
 snippet w "working_dir" b
 working_dir: ${1:$PWD}
-endsnippet
-
-snippet pr "profiles" b
-profiles:
-	- $0
-endsnippet
-
-snippet r "restart: no" b
-restart: "no"
-endsnippet
-
-snippet r "restart: always" b
-restart: always
-endsnippet
-
-snippet r "restart: on-failure" b
-restart: on-failure
-endsnippet
-
-snippet r "restart: unless-stopped" b
-restart: unless-stopped
-endsnippet
-
-snippet s "services" b
-# https://docs.docker.com/compose/compose-file/compose-file-v3/
-version: "3.8"
-services:
-endsnippet
-
-snippet t "target" b
-target; $0
-endsnippet
-
-snippet se "secret" b
-secrets:
-	- $0
-endsnippet
-
-snippet v "volumes" b
-volumes:
-	- type: ${1:bind|volume}
-		source: ${2:$PWD}
-		target: ${3:$PWD}
-endsnippet
-
-snippet w "working_dir" b
-working_dir: ${1:$PWD}
-endsnippet
-
-snippet $ "${}" w
-${${1:PWD}}
 endsnippet
