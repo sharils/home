@@ -6,6 +6,8 @@ x() {
 
   case "$cmd" in
 
+  bc) bc --mathlib --expression="$*" ;;
+
   erl)
     if [ $# -eq 0 ]; then
       erl -man erl
