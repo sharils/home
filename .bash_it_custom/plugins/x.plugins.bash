@@ -28,21 +28,15 @@ x() {
     kill -TERM "$pid" || kill -KILL "$pid"
     ;;
 
-  m)
-    mkdir -p "$@"
-    ;;
+  m) mkdir -p "$@" ;;
 
   php) php -r "$*" ;;
 
   py) python3 -c "$*" ;;
 
-  tel)
-    open "tel:$*"
-    ;;
+  tel) open "tel:$*" ;;
 
-  tree)
-    find . -print | sed 's;[^/]*/;|____;g;s;____|; |;g'
-    ;;
+  tree) find . -print | sed 's;[^/]*/;|____;g;s;____|; |;g' ;;
 
   whois)
     for name in "$@"; do :; done
