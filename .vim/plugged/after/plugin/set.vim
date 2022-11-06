@@ -13,7 +13,6 @@ if exists('$VIM_COLORSCHEME')
 endif
 
 set colorcolumn=80
-set directory=~/.cache//
 set expandtab
 set foldcolumn=1
 set hidden
