@@ -39,6 +39,7 @@ x() {
   tree) find . -print | sed 's;[^/]*/;|____;g;s;____|; |;g' ;;
 
   whois)
+    # support whois -b example.com
     for name in "$@"; do :; done
     whois -c "${name##*.}" "$@"
     ;;
