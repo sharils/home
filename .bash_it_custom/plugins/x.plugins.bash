@@ -27,7 +27,7 @@ x() {
     ;;
 
   m)
-    mkdir "$@"
+    mkdir -p "$@"
     ;;
 
   php) php -r "$*" ;;
