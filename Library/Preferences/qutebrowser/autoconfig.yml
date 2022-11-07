@@ -73,6 +73,7 @@ settings:
       u: https://search.brave.com/search?q=qutebrowser+{}
       w8: https://www.google.com/search?q=site%3Awenku8.net+{}
       wa: https://www.wolframalpha.com/input?i={}
+      wb: https://search.brave.com/search?q=whalebrew+{}
       wk: https://en.wiktionary.org/w/index.php?search={}&title=Special%3ASearch&ns0=1#Esperanto
       wo: https://eo.wikipedia.org/w/index.php?go=Ek&search={}&title=Speciala%C4%B5o%3ASer%C4%89i&ns0=1
       wp: https://www.wikipedia.org/search-redirect.php?family=wikipedia&language=en&search={}&language=en&go=Go
