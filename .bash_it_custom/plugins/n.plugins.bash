@@ -11,6 +11,17 @@ n() {
   # n nx-workspace firebase --name orgname --preset next --appName appName --style css --nxCloud
   next-app | nx-workspace | react-app | react-native-app) npm init --yes "$cmd" -- "$@" ;;
 
+  r)
+    if [ $# -eq 0 ]; then
+      npm run-script
+      return
+    fi
+
+    cmd="$1"
+    shift
+    npm run "$cmd" -- "$*"
+    ;;
+
   v) n vercel --token="${VERCEL_TOKEN:?}" "$@" ;;
   *) npm "$cmd" "$*" ;;
 
