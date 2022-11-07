@@ -6,7 +6,7 @@ n() {
 
   case $cmd in
 
-  browser-sync | bundle-phobia | baapan | clear-npx-cache | codesandbox | composerize | csv2json | cypress | eslint | gitignore | jscodeshift | jscpd | license | lighthouse | npm-check-updates | newman | nginx-linter | npkill | npm-check | npm-merge-driver | packagephobia-cli | pegjs | prettier | prettier-package-json | qrcode-terminal | react-native | selenium-side-runner | serve | trucker | vercel | wait-on) npx --yes "$cmd" "$@" ;;
+  baapan | browser-sync | bundle-phobia | clear-npx-cache | codesandbox | composerize | csv2json | cypress | eslint | gitignore | jscodeshift | jscpd | license | lighthouse | newman | nginx-linter | npkill | npm-check | npm-check-updates | npm-merge-driver | packagephobia-cli | pegjs | prettier | prettier-package-json | qrcode-terminal | react-native | selenium-side-runner | serve | trucker | vercel | wait-on) npx --yes "$cmd" "$@" ;;
 
   # n nx-workspace firebase --name orgname --preset next --appName appName --style css --nxCloud
   next-app | nx-workspace | react-app | react-native-app) npm init --yes "$cmd" -- "$@" ;;
