@@ -17,11 +17,13 @@ z() {
 
   t)
     [ ! -d "$__z_t_tmp" ] && __z_t_tmp="$(mktemp -d "/tmp/$USER-$(date +%m%d)-XXXXXX")"
-    if [ $# -ne 0 ]; then
+    if [ $# -eq 0 ]; then
+      dir="$__z_t_tmp"
+    elif [ $# -ne 0 ]; then
       dir="$__z_t_tmp/$*"
-      mkdir "$dir"
+      mkdir -p "$dir"
     fi
-    cd "${dir:-$__z_t_tmp}" || return
+    cd "$dir" || return
     ;;
 
   ~t) cd ~/tmp || return ;;
