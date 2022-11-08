@@ -25,6 +25,7 @@ v() {
   R) vim README.md ;;
   dco) vim docker-compose.yml ;;
   dk) vim Dockerfile ;;
+  mk) vim Makefile ;;
   pj) vim package.json ;;
   rc) vim ~/git/github.com/sharils/home/.vimrc ;;
 
@@ -44,7 +45,6 @@ v() {
 # alias vijs='vim index.js'
 # alias vijsx='vim index.jsx'
 # alias vits='vim index.ts'
-# alias vmf='vim Makefile'
 # alias vnc='vim next.config.js'
 # alias vsj='vim server.js'
 # alias vtigrc='vim ~/.tigrc'
