@@ -25,6 +25,7 @@ v() {
   R) vim README.md ;;
   dco) vim docker-compose.yml ;;
   dk) vim Dockerfile ;;
+  i) vim index."${*:-tsx}" ;;
   mk) vim Makefile ;;
   ns) vim server.js ;;
   pj) vim package.json ;;
@@ -41,11 +42,6 @@ v() {
 # alias vpu='vim +PlugUpdate'
 
 # alias vbh='vim ~/.bash_history'
-# alias vicss='vim index.css'
-# alias vihtml='vim index.html'
-# alias vijs='vim index.js'
-# alias vijsx='vim index.jsx'
-# alias vits='vim index.ts'
 # alias vnc='vim next.config.js'
 # alias vtigrc='vim ~/.tigrc'
 # alias vtorrc='vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc'
