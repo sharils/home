@@ -27,3 +27,6 @@ matches:
 
   - trigger: "t,."
     replace: A penny for your thoughts.
+
+  - trigger: "u,."
+    replace: qutebrowser
