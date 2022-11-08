@@ -28,7 +28,7 @@ n() {
     ;;
 
   v) n vercel --token="${VERCEL_TOKEN:?}" "$@" ;;
-  *) npm "$cmd" "$*" ;;
+  *) npm "$cmd" "$@" ;;
 
   esac
 }
