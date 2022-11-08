@@ -16,19 +16,16 @@ n() {
     n nx-workspace --name "$(basename "$PWD")" --preset next --appName "${cmd:-appName}" --style scss --nxCloud "$@"
     ;;
 
-  r)
-    if [ $# -eq 0 ]; then
-      npm run-script
-      return
-    fi
-
-    cmd="$1"
-    shift
-    npm run "$cmd" -- "$*"
-    ;;
-
   v) n vercel --token="${VERCEL_TOKEN:?}" "$@" ;;
-  *) npm "$cmd" "$@" ;;
+
+  *)
+    if script="$(npm pkg get "scripts.$cmd" 2>/dev/null)" &&
+      [ "$script" != '{}' ]; then
+      npm run "$cmd" -- "$@"
+    else
+      npm "$cmd" "$@"
+    fi
+    ;;
 
   esac
 }
