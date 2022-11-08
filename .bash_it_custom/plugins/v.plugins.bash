@@ -1,6 +1,5 @@
 #!/usr/bin/env sh
 
-temp=''
 v() {
   if [ $# -eq 0 ]; then
     if [ -s Session.vim ]; then
@@ -17,9 +16,8 @@ v() {
   case "$cmd" in
 
   c | css | csv | eex | erl | ex | exs | gql | html | java | jq | js | json | jsx | lua | md | mdx | mw | pegjs | php | py | rs | scss | sh | sql | story | t | ts | tsx | txt | wat | xhtml | yaml | yml | zep)
-    [ ! -d "$temp" ] && temp="$(mktemp -d "/tmp/$USER-XXXXXX")"
     [ "$cmd" != 't' ] && cmd="$cmd.$cmd"
-    vim "$temp/$cmd"
+    vim "$(z t && echo "$PWD")/$cmd"
     ;;
 
   d | p) vim -"$cmd" "$@" ;;
