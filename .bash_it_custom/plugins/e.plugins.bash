@@ -6,6 +6,7 @@ e() {
 
   case "$cmd" in
 
+  e) cmd=edit ;;
   r) cmd=restart ;;
   s) cmd=status ;;
 
