@@ -25,7 +25,6 @@ v() {
   R) vim README.md ;;
   dco) vim docker-compose.yml ;;
   dk) vim Dockerfile ;;
-  gi) vim .gitignore ;;
   pj) vim package.json ;;
   rc) vim ~/git/github.com/sharils/home/.vimrc ;;
 
@@ -40,7 +39,6 @@ v() {
 # alias vpu='vim +PlugUpdate'
 
 # alias vbh='vim ~/.bash_history'
-# alias vgie='vim .git/info/exclude'
 # alias vicss='vim index.css'
 # alias vihtml='vim index.html'
 # alias vijs='vim index.js'
