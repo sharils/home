@@ -22,5 +22,8 @@ matches:
   - trigger: "e,."
     replace: example.com
 
+  - trigger: "h,."
+    replace: https
+
   - trigger: "t,."
     replace: A penny for your thoughts.
