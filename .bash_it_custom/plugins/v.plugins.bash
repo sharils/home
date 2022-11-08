@@ -42,6 +42,3 @@ v() {
 # alias vpi='vim +PlugInstall'
 # alias vps="vim +'PlugSnapshot! ~/.vim/snapshot.vim'"
 # alias vpu='vim +PlugUpdate'
-
-# alias vbh='vim ~/.bash_history'
-# alias vnc='vim next.config.js'
