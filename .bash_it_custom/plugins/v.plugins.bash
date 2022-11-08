@@ -30,6 +30,7 @@ v() {
   ns) vim server.js ;;
   pj) vim package.json ;;
   rc) vim ~/git/github.com/sharils/home/.vimrc ;;
+  tor) vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc ;;
 
   *) vim "$cmd" "$@" ;;
 
@@ -44,4 +45,3 @@ v() {
 # alias vbh='vim ~/.bash_history'
 # alias vnc='vim next.config.js'
 # alias vtigrc='vim ~/.tigrc'
-# alias vtorrc='vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc'
