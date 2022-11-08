@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-es() {
+e() {
   cmd="${1:-edit}"
   shift
 
