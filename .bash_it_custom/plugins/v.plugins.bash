@@ -26,6 +26,7 @@ v() {
   dco) vim docker-compose.yml ;;
   dk) vim Dockerfile ;;
   mk) vim Makefile ;;
+  ns) vim server.js ;;
   pj) vim package.json ;;
   rc) vim ~/git/github.com/sharils/home/.vimrc ;;
 
@@ -46,6 +47,5 @@ v() {
 # alias vijsx='vim index.jsx'
 # alias vits='vim index.ts'
 # alias vnc='vim next.config.js'
-# alias vsj='vim server.js'
 # alias vtigrc='vim ~/.tigrc'
 # alias vtorrc='vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc'
