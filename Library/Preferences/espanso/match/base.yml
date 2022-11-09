@@ -22,6 +22,9 @@ matches:
   - trigger: "e,."
     replace: example.com
 
+  - trigger: "f,."
+    replace: favicon.ico
+
   - trigger: "h,."
     replace: https://$|$/
 
