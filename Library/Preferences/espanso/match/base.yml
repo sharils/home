@@ -23,7 +23,7 @@ matches:
     replace: example.com
 
   - trigger: "h,."
-    replace: https
+    replace: https://$|$/
 
   - trigger: "t,."
     replace: A penny for your thoughts.
