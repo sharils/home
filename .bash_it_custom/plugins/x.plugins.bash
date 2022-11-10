@@ -38,6 +38,8 @@ x() {
 
   tree) find . -print | sed 's;[^/]*/;|____;g;s;____|; |;g' ;;
 
+  ssh-keygen) ssh-keygen -f ~/.ssh/id_rsa -C "${@:?}" ;;
+
   whois)
     # support whois -b example.com
     for name in "$@"; do :; done
