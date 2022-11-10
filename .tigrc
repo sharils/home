@@ -221,6 +221,8 @@ bind refs    Gtd<ENTER>    ?git tag --delete %(tag)
 
 bind generic Gffs<ENTER>   @sh -c 'git flow feature start "$(echo %(prompt) | tr " " "-")"'
 bind generic Gfff<ENTER>   !sh -c 'git flow feature finish "$(echo %(branch) | cut -f2- -d/)"'
+bind generic Gfbs<ENTER>   @sh -c 'git flow bugfix start "$(echo %(prompt) | tr " " "-")"'
+bind generic Gfbf<ENTER>   !sh -c 'git flow bugfix finish "$(echo %(branch) | cut -f2- -d/)"'
 bind generic Gpr<ENTER>    @hub pr show
 bind generic Gbp<ENTER>    @hub browse -- pulls
 bind generic Gbr<ENTER>    @hub browse
