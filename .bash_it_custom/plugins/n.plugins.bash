@@ -18,6 +18,8 @@ n() {
 
   v) n vercel --token="${VERCEL_TOKEN:?}" "$@" ;;
 
+  yo) npx --yes --package yo --package "generator-$1" yo "$@" ;;
+
   *)
     if script="$(npm pkg get "scripts.$cmd" 2>/dev/null)" &&
       [ "$script" != '{}' ]; then
