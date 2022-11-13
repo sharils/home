@@ -5,6 +5,7 @@ dk() {
   shift
 
   case "$cmd" in
+    o) open -b com.docker.docker ;;
     *) docker "$cmd" "$@" ;;
   esac
 }
