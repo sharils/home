@@ -38,6 +38,8 @@ x() {
 
   tree) find . -print | sed 's;[^/]*/;|____;g;s;____|; |;g' ;;
 
+  screen) screen -xRRe^Gg "$@" ;;
+
   ssh-keygen) ssh-keygen -f ~/.ssh/id_rsa -C "${@:?}" ;;
 
   whois)
