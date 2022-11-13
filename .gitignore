@@ -4,10 +4,6 @@ Session.vim
 __pycache__
 tags
 gitignore.*
-/.bash_it_custom/aliases/_custom.aliases.bash
-/.bash_it_custom/aliases/custom.aliases.bash
-/.bash_it_custom/completion/custom.completion.bash
-/.bash_it_custom/plugins/custom.plugins.bash
 /.dbshell
 /.mongorc.js
 /.todo
