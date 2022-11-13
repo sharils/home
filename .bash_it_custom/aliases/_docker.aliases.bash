@@ -22,8 +22,6 @@
 # alias dkp='docker push'
 # alias dksd='docker system df'
 
-# alias dkq='osascript -e '\''quit app "Docker"'\'
-
 # alias aws='docker run --interactive --rm --tty -e AWS_ACCESS_KEY_ID -e AWS_DEFAULT_REGION -e AWS_SECRET_ACCESS_KEY amazon/aws-cli'
 # alias alpine='docker run --interactive --rm --tty alpine:3.14 '
 # alias bfg='docker run --interactive --rm --tty --volume $PWD:/home/nikovirtala nikovirtala/bfg'
