@@ -11,6 +11,10 @@ z() {
 
   case "$cmd" in
 
+  ...) cd ../.. ;;
+
+  ....) cd ../../.. ;;
+
   dl) cd ~/Downloads || return ;;
 
   ssh) cd ~/.ssh || return ;;
