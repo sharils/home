@@ -34,13 +34,14 @@ x() {
 
   py) python3 -c "$*" ;;
 
-  tel) open "tel:$*" ;;
-
-  tree) find . -print | sed 's;[^/]*/;|____;g;s;____|; |;g' ;;
 
   screen) screen -xRRe^Gg "$@" ;;
 
   ssh-keygen) ssh-keygen -f ~/.ssh/id_rsa -C "${@:?}" ;;
+
+  tel) open "tel:$*" ;;
+
+  tree) find . -print | sed 's;[^/]*/;|____;g;s;____|; |;g' ;;
 
   whois)
     # support whois -b example.com
