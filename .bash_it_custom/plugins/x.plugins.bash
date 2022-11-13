@@ -30,10 +30,13 @@ x() {
 
   m) mkdir -p "$@" ;;
 
+  o) open "${@:-.}" ;;
+
   php) php -r "$*" ;;
 
   py) python3 -c "$*" ;;
 
+  resetLaunchPad|showHidden) defaults write com.apple.dock "$cmd" -bool true; killall Dock ;;
 
   screen) screen -xRRe^Gg "$@" ;;
 
@@ -42,6 +45,8 @@ x() {
   tel) open "tel:$*" ;;
 
   tree) find . -print | sed 's;[^/]*/;|____;g;s;____|; |;g' ;;
+
+  unlockUIBecomesActive) log show --predicate 'eventMessage CONTAINS "unlockUIBecomesActive"' --last "${@:-30m}" ;;
 
   whois)
     # support whois -b example.com
