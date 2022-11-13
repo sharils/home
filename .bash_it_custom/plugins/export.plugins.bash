@@ -2,7 +2,7 @@
 
 export CLICOLOR='auto' # ls
 
-export EDITOR='vim'
+export EDITOR='vim -p'
 
 export GREP_OPTIONS='--color=auto'
 
