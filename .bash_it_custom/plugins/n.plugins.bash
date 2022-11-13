@@ -10,6 +10,8 @@ n() {
 
   expo-app | next-app | nx-workspace | react-app | react-native-app) npm init --yes "$cmd" -- "$@" ;;
 
+  g) npm --global "$@" ;;
+
   na)
     cmd="$1"
     shift
