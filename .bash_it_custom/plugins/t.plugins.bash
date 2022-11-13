@@ -8,6 +8,8 @@ t() {
 
   cd) cd ~/Sync/todo || return ;;
 
+  e) "$EDITOR" ~/Sync/todo/todo.txt ~/Sync/todo/QuickNote.md ~/Sync/todo/infanoj.md ;;
+
   gd)
     todo.sh -p ls | while IFS= read -r todo; do
       task="$(echo "$todo" | cut -d" " -f2-)"
@@ -21,8 +23,6 @@ t() {
   ls) todo.sh ls | grep -v " x " ;;
 
   rc) rm ~/Sync/todo/todo.sync-conflict-*.txt ;;
-
-  v) vim -p ~/Sync/todo/todo.txt ~/Sync/todo/QuickNote.md ~/Sync/todo/infanoj.md ;;
 
   vc) vimdiff ~/Sync/todo/todo.txt ~/Sync/todo/todo.sync-conflict-*.txt ;;
 
