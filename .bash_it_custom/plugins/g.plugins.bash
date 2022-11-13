@@ -22,6 +22,8 @@ g() {
 
   cma) git commit --message "Apply $*" ;;
 
+  e) "$EDITOR" ~/git/github.com/sharils/home/.gitconfig ;;
+
   f) git flow "$@" ;;
 
   h) man git-"$*" ;;
@@ -39,8 +41,6 @@ g() {
   r) tig refs "$@" ;;
 
   s) tig status "$@" ;;
-
-  v) vim ~/git/github.com/sharils/home/.gitconfig ;;
 
   y) git stash "$@" ;;
 
