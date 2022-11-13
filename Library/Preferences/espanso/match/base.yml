@@ -8,8 +8,14 @@ matches:
   - trigger: "0,."
     replace: 0.0.0.0
 
+  - trigger: "1,."
+    replace:  1.1.1.1
+
   - trigger: "2,."
-    replace: "23:59"
+    replace: 23:59
+
+  - trigger: "F,."
+    replace: 127.0.0.1
 
   - trigger: "d,."
     replace: "{{d}}"
