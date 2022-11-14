@@ -75,6 +75,9 @@ Cargo.lock
 !.vim/plugged/vim-snippets/UltiSnips
 Session.vim
 
+# vscode
+.vscode
+
 # macos
 .localized
 .DS_Store
