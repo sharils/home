@@ -13,12 +13,22 @@
 .gitignore
 .gitmodules
 
+# android
+.gradle
+build
+
 # ctags
 tags
 
 # elixir
 _build
 deps
+
+# intellij idea
+.idea
+
+# ios
+ios/Pods
 
 # javascript
 *.map
