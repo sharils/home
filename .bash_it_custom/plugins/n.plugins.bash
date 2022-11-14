@@ -18,6 +18,8 @@ n() {
     n nx-workspace --name "$(basename "$PWD")" --preset next --appName "${cmd:-appName}" --style scss --nxCloud "$@"
     ;;
 
+  ncu) npx --yes npm-check-updates "$@" ;;
+
   v) n vercel --token="${VERCEL_TOKEN:?}" "$@" ;;
 
   yo) npx --yes --package yo --package "generator-$1" yo "$@" ;;
