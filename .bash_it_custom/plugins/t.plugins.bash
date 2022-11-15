@@ -24,6 +24,11 @@ t() {
 
   rc) rm ~/Sync/todo/todo.sync-conflict-*.txt ;;
 
+  t)
+    [ $# -eq 0 ] && cmd=tui || cmd=post
+    toot "$cmd" "$@"
+    ;;
+
   vc) vimdiff ~/Sync/todo/todo.txt ~/Sync/todo/todo.sync-conflict-*.txt ;;
 
   *) todo.sh "$cmd" "$@" ;;
