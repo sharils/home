@@ -8,7 +8,14 @@ home() {
 
   cd) cd ~/git/github.com/sharils/home/ || return ;;
 
-  e) vim ~/git/github.com/sharils/home/install ;;
+  e)
+    if [ $# -eq 0 ]; then
+      cmd=install
+    else
+      cmd="shell_plugins/$*.sh"
+    fi
+    vim "$HOME/git/github.com/sharils/home/$cmd"
+    ;;
 
   P | pull)
     git -C ~/git/github.com/sharils/home stash push
