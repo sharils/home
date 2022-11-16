@@ -164,6 +164,10 @@ snippet r "return" w
 return $0
 endsnippet
 
+snippet read "IFS= read -r" w
+IFS= read -r -d '' ${1:file}
+endsnippet
+
 snippet sed "sed -i" w
 sed -i '' $0
 endsnippet
