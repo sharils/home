@@ -22,8 +22,6 @@ t() {
 
   h) todo.sh -vv help ;;
 
-  ls) todo.sh ls | grep -v " x " ;;
-
   rc) rm ~/Sync/todo/todo.sync-conflict-*.txt ;;
 
   t)
