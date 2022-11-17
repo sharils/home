@@ -18,6 +18,8 @@ home() {
       cmd=install
     elif [ "$1" = 'bp' ]; then
       cmd='.bash_profile'
+    elif [ "$1" = 'todo' ]; then
+      cmd='.todo.cfg'
     else
       cmd="shell_plugins/$*.sh"
     fi
