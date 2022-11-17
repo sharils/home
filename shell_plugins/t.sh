@@ -10,7 +10,7 @@ t() {
 
   cd) cd ~/Sync/todo || return ;;
 
-  e) "$EDITOR" ~/Sync/todo/todo.txt ~/Sync/todo/QuickNote.md ~/Sync/todo/infanoj.md ;;
+  e) $EDITOR ~/Sync/todo/todo.txt ~/Sync/todo/QuickNote.md ~/Sync/todo/infanoj.md ;;
 
   gd)
     todo.sh -p ls | while IFS= read -r todo; do
