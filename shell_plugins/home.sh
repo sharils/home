@@ -17,7 +17,7 @@ home() {
     if [ $# -eq 0 ]; then
       cmd=install
     elif [ "$1" = 'bp' ]; then
-      cmd=".bash_profile"
+      cmd='.bash_profile'
     else
       cmd="shell_plugins/$*.sh"
     fi
