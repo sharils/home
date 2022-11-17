@@ -6,6 +6,8 @@ x() {
 
   case "$cmd" in
 
+  args) xargs -I_ -n1 "$@" ;;
+
   bc) bc --mathlib --expression="$*" ;;
 
   erl)
