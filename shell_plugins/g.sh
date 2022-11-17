@@ -22,7 +22,7 @@ g() {
 
   cma) git commit --message "Apply $*" ;;
 
-  e) "$EDITOR" ~/git/github.com/sharils/home/.gitconfig ;;
+  e) $EDITOR ~/git/github.com/sharils/home/.gitconfig ;;
 
   f) git flow "$@" ;;
 
