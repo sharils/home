@@ -6,6 +6,11 @@ home() {
 
   case $cmd in
 
+  .)
+    # shellcheck source=/dev/null
+    . "$HOME/git/github.com/sharils/home/.bash_profile"
+    ;;
+
   cd) cd ~/git/github.com/sharils/home/ || return ;;
 
   e)
@@ -17,8 +22,7 @@ home() {
       cmd="shell_plugins/$*.sh"
     fi
     vim "$HOME/git/github.com/sharils/home/$cmd"
-    # shellcheck source=/dev/null
-    . "$HOME/git/github.com/sharils/home/.bash_profile"
+    home .
     ;;
 
   P | pull)
