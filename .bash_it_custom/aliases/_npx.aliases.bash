@@ -30,9 +30,6 @@
 # finds publicly known security vulnerabilities in a website's frontend JavaScript libraries
 #alias is-website-vulnerable='is-website-vulnerable'
 
-# 😎 Supercharged JavaScript REPL
-# TODO alias jay='npx --yes jay-repl '
-
 # Detect structural similarities in your code
 #alias jsinspect='npx --yes jsinspect '
 
@@ -62,9 +59,6 @@
 
 # @pika/pack helps you build amazing packages without the hassle:
 #alias pack='npx --yes @pika/pack '
-
-# Prettier formatter for package.json files
-# TODO alias prettier-package-jsonw='npx --yes prettier-package-json --write'
 
 # Prettier is an opinionated code formatter
 # TODO alias prettierjs='npx --yes prettier --write "*.js" "**/*.js" '
