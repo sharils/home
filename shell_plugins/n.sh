@@ -20,6 +20,8 @@ n() {
     done
     ;;
 
+  gi) n gitignore "${@:-node}" ;;
+
   krampus)
     # Named after https://www.npmjs.com/package/krampus
     pid="$(lsof -ti "$*")"
