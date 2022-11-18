@@ -15,9 +15,6 @@
 # codemod-cli is a command line tool for generating, testing, and publishing codemods.
 #alias codemod-cli='npx --yes codemod-cli'
 
-# 📟 CLI to create new Node.js CLI applications. Learn to build Node.js CLI apps.
-# TODO alias create-node-cli='npx --yes create-node-cli'
-
 # straightforward project scaffolding
 # TODO alias degit='npx --yes degit '
 

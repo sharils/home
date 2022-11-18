@@ -8,7 +8,7 @@ n() {
 
   baapan | browser-sync | bundle-phobia | codesandbox | composerize | cost-of-modules | covgen | csv2json | cypress | eslint | gitignore | jscodeshift | jscpd | license | lighthouse | newman | nginx-linter | npkill | npm-check | npm-check-updates | npm-merge-driver | nx | packagephobia-cli | pegjs | prettier | prettier-package-json | qrcode-terminal | react-native | selenium-side-runner | trucker | vercel | wait-on) npx --yes "$cmd" "$@" ;;
 
-  expo-app | next-app | nx-workspace | react-app | react-native-app) npm init --yes "$cmd" -- "$@" ;;
+  expo-app | next-app | node-cli | nx-workspace | react-app | react-native-app) npm init --yes "$cmd" -- "$@" ;;
 
   bs) n browser-sync --no-open --watch "$@" ;;
 
