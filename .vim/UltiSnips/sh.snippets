@@ -176,6 +176,12 @@ snippet setx "set -x && set +x" w
 set -x && ${VISUAL} && set +x
 endsnippet
 
+snippet wh "while do done" w
+while ${1:false}; do
+	${2::}
+done
+endsnippet
+
 snippet -b "-b" w
 [ -b ${1:""} ]
 endsnippet
