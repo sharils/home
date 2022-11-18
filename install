@@ -202,6 +202,7 @@ main() {
 .gitconfig,\
 .gitignore,\
 .inputrc,\
+.qutebrowser,\
 .surfraw.conf,\
 .tigrc,\
 .vim,\
