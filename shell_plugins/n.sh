@@ -32,7 +32,7 @@ n() {
     n nx-workspace --name "$(basename "$PWD")" --preset next --appName "${cmd:-appName}" --style scss --nxCloud "$@"
     ;;
 
-  ncu) npx --yes npm-check-updates "$@" ;;
+  ncu) n npm-check-updates "$@" ;;
 
   v) n vercel --token="${VERCEL_TOKEN:?}" "$@" ;;
 
