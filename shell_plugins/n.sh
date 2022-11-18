@@ -38,6 +38,8 @@ n() {
 
   gi) n gitignore "${@:-node}" ;;
 
+  graphql-codegen) npx --yes --package graphql --package @graphql-codegen/cli -- graphql-codegen "$@" ;;
+
   krampus)
     # Named after https://www.npmjs.com/package/krampus
     pid="$(lsof -ti "$*")"

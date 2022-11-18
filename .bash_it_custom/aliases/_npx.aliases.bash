@@ -15,9 +15,6 @@
 # codemod-cli is a command line tool for generating, testing, and publishing codemods.
 #alias codemod-cli='npx --yes codemod-cli'
 
-# straightforward project scaffolding
-# TODO alias degit='npx --yes degit '
-
 # Generate a report about your development environment for debugging and issue reporting
 #alias envinfo='npx --yes envinfo'
 
