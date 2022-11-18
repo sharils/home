@@ -54,6 +54,15 @@ n() {
 
   ncu) n npm-check-updates "$@" ;;
 
+  p)
+    cmd="$1"
+    shift
+    case "$cmd" in
+    sh | sql) npx --yes --package prettier --package "prettier-plugin-$cmd" -- prettier "$@" ;;
+    *) n prettier --write "**/*.js" "**/*.jsx" "**/*.ts" "**/*.tsx" "$@" ;;
+    esac
+    ;;
+
   qt) n qrcode-terminal "$@" ;;
 
   v) n vercel --token="${VERCEL_TOKEN:?}" "$@" ;;

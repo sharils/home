@@ -60,11 +60,6 @@
 # @pika/pack helps you build amazing packages without the hassle:
 #alias pack='npx --yes @pika/pack '
 
-# Prettier is an opinionated code formatter
-# TODO alias prettierjs='npx --yes prettier --write "*.js" "**/*.js" '
-#alias prettiersh='npx --yes --package prettier --package prettier-plugin-sh prettier'
-#alias prettiersql='npx --yes --package prettier --package prettier-plugin-sql prettier'
-
 # A command-line tool for querying Troy Hunt's Have I been pwned? service using the hibp Node.js module.
 # TODO alias pwned='npx --yes pwned '
 
