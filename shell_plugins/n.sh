@@ -20,6 +20,14 @@ n() {
     done
     ;;
 
+  esl)
+    if [ $# -eq 0 ]; then
+      n eslint --fix .
+    else
+      n eslint "$@"
+    fi
+    ;;
+
   gi) n gitignore "${@:-node}" ;;
 
   krampus)

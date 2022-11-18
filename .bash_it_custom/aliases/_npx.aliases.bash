@@ -33,9 +33,6 @@
 # Generate a report about your development environment for debugging and issue reporting
 #alias envinfo='npx --yes envinfo'
 
-# An AST-based pattern checker for JavaScript.
-# TODO alias eslintf='npx --yes eslint --fix .'
-
 # GraphQL code generator with flexible support for custom plugins and templates
 # https://graphql-code-generator.com
 # TODO alias graphql-codegen='npx --yes -p graphql -p @graphql-codegen/cli -c graphql-codegen'
