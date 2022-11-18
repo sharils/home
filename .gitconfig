@@ -10,6 +10,7 @@
 	l = log --graph --oneline
 	mt = mergetool
 	rs = reset
+	rsm = reset --merge
 	p = push
 [commit]
 	gpgsign = true
