@@ -10,6 +10,12 @@ n() {
 
   expo-app | next-app | nx-workspace | react-app | react-native-app) npm init --yes "$cmd" -- "$@" ;;
 
+  krampus)
+    # Named after https://www.npmjs.com/package/krampus
+    pid="$(lsof -ti "$*")"
+    kill -TERM "$pid" || kill -KILL "$pid"
+    ;;
+
   na)
     cmd="$1"
     shift

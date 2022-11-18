@@ -24,12 +24,6 @@ x() {
 
   js) node --print "$*" ;;
 
-  krampus)
-    # Named after https://www.npmjs.com/package/krampus
-    pid="$(lsof -ti "$*")"
-    kill -TERM "$pid" || kill -KILL "$pid"
-    ;;
-
   m) mkdir -p "$@" ;;
 
   o) open "${@:-.}" ;;
