@@ -66,9 +66,6 @@
 # ⚡ Get Pretty Quick https://npm.im/pretty-quick
 #alias pretty-quick='npx --yes pretty-quick'
 
-#  🔍 cli utility for querying the node_modules directory
-# TODO alias qnm='npx --yes qnm '
-
 # CLI that generates beautiful README.md files.
 # TODO alias readme-md-generator='npx --yes readme-md-generator'
 
