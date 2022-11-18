@@ -34,6 +34,8 @@ n() {
 
   ncu) n npm-check-updates "$@" ;;
 
+  qt) n qrcode-terminal "$@" ;;
+
   v) n vercel --token="${VERCEL_TOKEN:?}" "$@" ;;
 
   yo) npx --yes --package yo --package "generator-$1" yo "$@" ;;
