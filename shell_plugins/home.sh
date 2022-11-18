@@ -31,7 +31,7 @@ home() {
     git -C ~/git/github.com/sharils/home stash push
     git -C ~/git/github.com/sharils/home pull --prune --rebase
     vim -S ~/.vim/snapshot.vim
-    bash-it reload
+    home .
     ;;
 
   p | push) git -C ~/git/github.com/sharils/home push ;;
@@ -48,7 +48,6 @@ home() {
     rustup update stable
     sudo --reset-timestamp
 
-    bash-it update
     tldr --update
     npm --global update
 
