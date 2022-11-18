@@ -9,7 +9,7 @@
 	g = grep
 	l = log --graph --oneline
 	mt = mergetool
-	rsm = reset --merge
+	rm = reset --merge
 	p = push
 [commit]
 	gpgsign = true
