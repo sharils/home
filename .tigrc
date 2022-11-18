@@ -224,6 +224,7 @@ bind generic Gfff<ENTER>   !sh -c 'git flow feature finish "$(echo %(branch) | c
 bind generic Gffr<ENTER>   !sh -c 'git flow feature rebase "$(echo %(branch) | cut -f2- -d/)"'
 bind generic Gfbs<ENTER>   @sh -c 'git flow bugfix start "$(echo %(prompt) | tr " " "-")"'
 bind generic Gfbf<ENTER>   !sh -c 'git flow bugfix finish "$(echo %(branch) | cut -f2- -d/)"'
+bind generic Gfbr<ENTER>   !sh -c 'git flow bugfix rebase "$(echo %(branch) | cut -f2- -d/)"'
 bind generic Gpr<ENTER>    @hub pr show
 bind generic Gbp<ENTER>    @hub browse -- pulls
 bind generic Gbr<ENTER>    @hub browse
