@@ -18,10 +18,6 @@
 # Generate a report about your development environment for debugging and issue reporting
 #alias envinfo='npx --yes envinfo'
 
-# GraphQL code generator with flexible support for custom plugins and templates
-# https://graphql-code-generator.com
-# TODO alias graphql-codegen='npx --yes -p graphql -p @graphql-codegen/cli -c graphql-codegen'
-
 # An opinionated code style agnostic linter – a friendly companion to Prettier.
 #alias healthier='npx --yes healthier '
 
