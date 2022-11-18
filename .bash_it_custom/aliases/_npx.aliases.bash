@@ -18,9 +18,6 @@
 # Find out which of your dependencies is slowing you down
 # TODO alias cost-of-modules='npx --yes cost-of-modules '
 
-# `covgen` generates a code of conduct.
-# TODO alias covgen='npx --yes covgen '
-
 # 📟 CLI to create new Node.js CLI applications. Learn to build Node.js CLI apps.
 # TODO alias create-node-cli='npx --yes create-node-cli'
 
