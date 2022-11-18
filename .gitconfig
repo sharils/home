@@ -1,5 +1,6 @@
 [alias]
 	alias = !sh -c 'git config --get-regexp ^alias. | sed s/^alias.//'
+	a = add
 	c = commit
 	ca = commit --amend
 	cf = commit --edit --file=.git/COMMIT_EDITMSG
