@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-home() {
+h() {
   cmd=$1
   shift
 

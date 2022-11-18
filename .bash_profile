@@ -18,7 +18,6 @@ SHARILS_HOME=~/git/github.com/sharils/home
 
 . $SHARILS_HOME/shell_plugins/dco.sh
 . $SHARILS_HOME/shell_plugins/dk.sh
-. $SHARILS_HOME/shell_plugins/home.sh
 . $SHARILS_HOME/shell_plugins/kp.sh
 . $SHARILS_HOME/shell_plugins/nx.sh
 . $SHARILS_HOME/shell_plugins/wb.sh
@@ -29,6 +28,7 @@ SHARILS_HOME=~/git/github.com/sharils/home
 . $SHARILS_HOME/shell_plugins/d.sh
 . $SHARILS_HOME/shell_plugins/e.sh
 . $SHARILS_HOME/shell_plugins/g.sh
+. $SHARILS_HOME/shell_plugins/h.sh
 . $SHARILS_HOME/shell_plugins/l.sh
 . $SHARILS_HOME/shell_plugins/n.sh
 . $SHARILS_HOME/shell_plugins/t.sh
