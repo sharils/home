@@ -35,6 +35,8 @@ nx() {
 
   t) nx r test "$@" ;;
 
+  w) n nx-workspace "$@" ;;
+
   *) npx --yes nx "$cmd" "$@" ;;
 
   esac
