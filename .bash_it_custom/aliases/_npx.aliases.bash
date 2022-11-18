@@ -3,9 +3,6 @@
 # Catch CSS curve balls
 #alias backstopjs='npx --yes backstopjs '
 
-# Live CSS Reload & Browser Syncing
-# TODO alias browser-syncw='npx --yes browser-sync --no-open --watch'
-
 # Capacitor: Universal Web Applications
 #alias cap='npx --yes --package @capacitor/core --package @capacitor/cli cap '
 
@@ -42,9 +39,6 @@
 
 # 💡 A hinting engine for the web https://webhint.io/
 #alias hint='npx --yes hint'
-
-# http-server: a command-line http server
-# TODO alias http-server='npx --yes http-server'
 
 # HTTP server for debugging clients.
 # TODO alias httpbin='npx --yes @buzuli/httpbin '
