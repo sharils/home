@@ -9,10 +9,8 @@ k() {
   d) keepassxc-cli diceware --words "${@:-12}" | tr -d \\n ;;
 
   g)
-    # alias kpxcg=$'keepassxc-cli generate --lower --numeric --special --upper
-    # --every-group --length 40 --exclude \$\'"\\" #$%&+,/:;<=>?@[\]^``{|}"\''
-    keepassxc-cli generate --lower --numeric --special --upper --every-group \
-      --length "${@:-40}" --exclude ' "#$%&+,/:;<=>?@[\]^`{|}' | tr -d \\n
+    url_ok="!'()*-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~"
+    keepassxc-cli generate --custom "$url_ok" --length "${@:-40}" | tr -d \\n
     ;;
 
   esac
