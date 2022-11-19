@@ -6,9 +6,6 @@
 # Capacitor: Universal Web Applications
 #alias cap='npx --yes --package @capacitor/core --package @capacitor/cli cap '
 
-# The Canary in the Goldmine
-#alias citgm='npx --yes citgm'
-
 # Codecrumbs standalone: learn and share your code knowledge!
 #alias codecrumbs='npx --yes codecrumbs '
 
