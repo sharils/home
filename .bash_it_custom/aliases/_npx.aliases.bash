@@ -69,9 +69,6 @@
 # Find and fix dangling files and unused dependencies in your JavaScript projects.
 #alias unimported='npx --yes unimported '
 
-# Automatically change your desktop image every 21600 seconds
-# TODO alias unsplash-so-fancy='npx --yes unsplash-so-fancy '
-
 # 📦🔐A lightweight private npm proxy registry https://www.verdaccio.org/
 # NPM_CONFIG_REGISTRY=http://localhost:4873 npm i
 #alias verdaccio='npx --yes verdaccio'
