@@ -24,9 +24,6 @@
 # 💡 A hinting engine for the web https://webhint.io/
 #alias hint='npx --yes hint'
 
-# HTTP server for debugging clients.
-# TODO alias httpbin='npx --yes @buzuli/httpbin '
-
 # finds publicly known security vulnerabilities in a website's frontend JavaScript libraries
 #alias is-website-vulnerable='is-website-vulnerable'
 
