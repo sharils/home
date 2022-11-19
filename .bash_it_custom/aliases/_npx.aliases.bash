@@ -63,9 +63,6 @@
 # When run, this command line interface automatically generates a new GitHub Release and populates it with the changes (commits) made since the last release.
 #alias release='npx --yes release '
 
-# The JSON Resume command line interface
-# TODO alias resume='npx --yes resume-cli '
-
 # Calculate the real cost to run your JS app or lib to keep good performance. Show error in pull request if the cost exceeds the limit.
 # TODO alias size-limit='npx --yes size-limit'
 
