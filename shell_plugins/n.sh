@@ -22,6 +22,8 @@ n() {
     done
     ;;
 
+  d) npm docs "$@" ;;
+
   dg)
     for last in "$@"; do :; done
     z t "$(basename "${last%#*}")"
