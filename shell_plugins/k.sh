@@ -6,7 +6,7 @@ k() {
 
   case $cmd in
 
-  d) keepassxc-cli diceware --words "${@:-12}" | tr -d \\n ;;
+  d) keepassxc-cli diceware --words "${@:-12}" | tr -d \\n | pbcopy;;
 
   g)
     url_ok="!'()*-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~"
