@@ -77,7 +77,7 @@ n() {
 
   qt) n qrcode-terminal "$@" ;;
 
-  vercel) npx --yes vercel --token="${VERCEL_TOKEN:?}" "$@" ;;
+  vercel) n x vercel --token="${VERCEL_TOKEN:?}" "$@" ;;
 
   yo) n x --package yo --package "generator-$1" -- yo "$@" ;;
 
