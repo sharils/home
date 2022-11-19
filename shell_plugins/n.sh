@@ -44,6 +44,15 @@ n() {
 
   h) npm help "$@" ;;
 
+  i)
+    cmd="$1"
+    shift
+    case "$cmd" in
+    y) npm init --yes "$@" ;;
+    *) npm install "$cmd" "$@" ;;
+    esac
+    ;;
+
   krampus)
     # Named after https://www.npmjs.com/package/krampus
     pid="$(lsof -ti "$*")"
