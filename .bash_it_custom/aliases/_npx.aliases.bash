@@ -57,9 +57,6 @@
 # @pika/pack helps you build amazing packages without the hassle:
 #alias pack='npx --yes @pika/pack '
 
-# A command-line tool for querying Troy Hunt's Have I been pwned? service using the hibp Node.js module.
-# TODO alias pwned='npx --yes pwned '
-
 # ⚡ Get Pretty Quick https://npm.im/pretty-quick
 #alias pretty-quick='npx --yes pretty-quick'
 
