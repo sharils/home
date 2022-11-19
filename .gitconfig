@@ -7,6 +7,7 @@
 	ca = commit --amend
 	cf = commit --edit --file=.git/COMMIT_EDITMSG
 	cm = commit --message
+	cam = commit --all --message
 	f = fetch --prune
 	g = grep
 	l = log --graph --oneline
@@ -15,6 +16,7 @@
 	p = push
 [commit]
 	gpgsign = true
+	verbose = true
 [core]
 	autocrlf = input
 	excludesfile = ~/.gitignore
