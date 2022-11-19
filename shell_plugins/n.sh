@@ -70,7 +70,7 @@ n() {
     cmd="$1"
     shift
     case "$cmd" in
-    awk | eex | elm | groovy | nginx | packagejson | pegjs | pgsql | sh | sql | ssh-config | tsconfig) npx --yes --package prettier --package "prettier-plugin-$cmd" -- prettier "$@" ;;
+    awk | eex | elm | groovy | nginx | packagejson | pegjs | pgsql | sh | sql | ssh-config | tsconfig) n x --package prettier --package "prettier-plugin-$cmd" -- prettier "$@" ;;
     *) n prettier --write "**/*.js" "**/*.jsx" "**/*.ts" "**/*.tsx" "$@" ;;
     esac
     ;;
