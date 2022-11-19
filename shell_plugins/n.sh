@@ -79,7 +79,7 @@ n() {
 
   vercel) npx --yes vercel --token="${VERCEL_TOKEN:?}" "$@" ;;
 
-  yo) npx --yes --package yo --package "generator-$1" -- yo "$@" ;;
+  yo) n x --package yo --package "generator-$1" -- yo "$@" ;;
 
   x) npx --yes "$@" ;;
 
