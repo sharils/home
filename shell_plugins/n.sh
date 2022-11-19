@@ -38,7 +38,7 @@ n() {
 
   gi) n gitignore "${@:-node}" ;;
 
-  graphql-codegen) npx --yes --package graphql --package @graphql-codegen/cli -- graphql-codegen "$@" ;;
+  graphql-codegen) n x --package graphql --package @graphql-codegen/cli -- graphql-codegen "$@" ;;
 
   h) npm help "$@" ;;
 
