@@ -1,6 +1,7 @@
 [alias]
 	alias = !sh -c 'git config --get-regexp ^alias. | sed s/^alias.//'
 	a = add
+	au = add --update
 	bl = blame
 	c = commit
 	ca = commit --amend
