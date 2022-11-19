@@ -12,6 +12,7 @@
 	g = grep
 	l = log --graph --oneline
 	mt = mergetool
+	rsh = reset @~
 	rsm = reset --merge
 	p = push
 [commit]
