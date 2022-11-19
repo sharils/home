@@ -81,6 +81,8 @@ n() {
 
   yo) npx --yes --package yo --package "generator-$1" -- yo "$@" ;;
 
+  x) npx --yes "$@" ;;
+
   *)
     if script="$(npm pkg get "scripts.$cmd" 2>/dev/null)" &&
       [ "$script" != '{}' ]; then
