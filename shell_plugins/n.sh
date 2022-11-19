@@ -8,8 +8,6 @@ n() {
 
   baapan | browser-sync | bundle-phobia | chance-cli | codesandbox | composerize | cost-of-modules | covgen | csv2json | cypress | degit | eslint | gitignore | jscodeshift | jscpd | license | lighthouse | newman | nginx-linter | npkill | npm-check | npm-check-updates | npm-merge-driver | nve | nx | packagephobia-cli | pegjs | prettier | prettier-package-json | pwned | qnm | qrcode-terminal | react-native | readme-md-generator | resume-cli | selenium-side-runner | trucker | why-is-node-running | wait-on) npx --yes "$cmd" "$@" ;;
 
-  expo-app | next-app | node-cli | nx-workspace | react-app | react-native-app) npm init --yes "$cmd" -- "$@" ;;
-
   bs) n browser-sync --no-open --watch "$@" ;;
 
   clear-npx-cache)
@@ -48,6 +46,7 @@ n() {
     cmd="$1"
     shift
     case "$cmd" in
+    expo-app | next-app | node-cli | nx-workspace | react-app | react-native-app) n i y "$cmd" -- "$@" ;;
     y) npm init --yes "$@" ;;
     *) npm install "$cmd" "$@" ;;
     esac
