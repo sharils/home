@@ -73,8 +73,5 @@
 # NPM_CONFIG_REGISTRY=http://localhost:4873 npm i
 #alias verdaccio='npx --yes verdaccio'
 
-# Node is running but you don't know why? why-is-node-running is here to help you.
-# TODO alias why-is-node-running='npx --yes why-is-node-running'
-
 # Zero configuration web framework.
 #alias zero='npx --yes zero '

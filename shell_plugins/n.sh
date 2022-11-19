@@ -6,7 +6,7 @@ n() {
 
   case $cmd in
 
-  baapan | browser-sync | bundle-phobia | chance-cli | codesandbox | composerize | cost-of-modules | covgen | csv2json | cypress | degit | eslint | gitignore | jscodeshift | jscpd | license | lighthouse | newman | nginx-linter | npkill | npm-check | npm-check-updates | npm-merge-driver | nx | packagephobia-cli | pegjs | prettier | prettier-package-json | pwned | qnm | qrcode-terminal | react-native | readme-md-generator | resume-cli | selenium-side-runner | trucker | vercel | wait-on) npx --yes "$cmd" "$@" ;;
+  baapan | browser-sync | bundle-phobia | chance-cli | codesandbox | composerize | cost-of-modules | covgen | csv2json | cypress | degit | eslint | gitignore | jscodeshift | jscpd | license | lighthouse | newman | nginx-linter | npkill | npm-check | npm-check-updates | npm-merge-driver | nx | packagephobia-cli | pegjs | prettier | prettier-package-json | pwned | qnm | qrcode-terminal | react-native | readme-md-generator | resume-cli | selenium-side-runner | trucker | why-is-node-running | vercel | wait-on) npx --yes "$cmd" "$@" ;;
 
   expo-app | next-app | node-cli | nx-workspace | react-app | react-native-app) npm init --yes "$cmd" -- "$@" ;;
 
