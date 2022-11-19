@@ -42,6 +42,8 @@ n() {
 
   graphql-codegen) npx --yes --package graphql --package @graphql-codegen/cli -- graphql-codegen "$@" ;;
 
+  h) npm help "$@" ;;
+
   krampus)
     # Named after https://www.npmjs.com/package/krampus
     pid="$(lsof -ti "$*")"
