@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-kp() {
+k() {
   cmd=$1
   shift
 
