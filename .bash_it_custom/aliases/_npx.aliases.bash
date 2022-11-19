@@ -60,9 +60,6 @@
 # ⚡ Get Pretty Quick https://npm.im/pretty-quick
 #alias pretty-quick='npx --yes pretty-quick'
 
-# CLI that generates beautiful README.md files.
-# TODO alias readme-md-generator='npx --yes readme-md-generator'
-
 # When run, this command line interface automatically generates a new GitHub Release and populates it with the changes (commits) made since the last release.
 #alias release='npx --yes release '
 

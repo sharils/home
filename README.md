@@ -1,19 +1,10 @@
-# Prerequisite
+# Welcome to home 👋
+[![Version](https://img.shields.io/npm/v/home.svg)](https://www.npmjs.com/package/home)
 
-```sh
-gpg --generate-key
-```
+## Show your support
 
-# Install
+Give a ⭐️ if this project helped you!
 
-```sh
-git clone --depth=1 https://github.com/sharils/home ~/git/github.com/sharils/home && \
-cd ~/git/github.com/sharils/home && \
-./install <git_global_config_user.signingkey>
-```
 
-# Manual
-
-1. Clipy Snippets
-2. Contacts
-3. GPG
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
