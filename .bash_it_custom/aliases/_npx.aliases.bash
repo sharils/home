@@ -66,9 +66,6 @@
 # trello-cli is a CLI tool for Trello. Makes sense, right?
 #alias trello-cli='npx --yes trello-cli'
 
-# Quickly try out npm packages inside a container.
-# TODO alias try='npx --yes try-pkg'
-
 # Find and fix dangling files and unused dependencies in your JavaScript projects.
 #alias unimported='npx --yes unimported '
 
