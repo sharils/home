@@ -30,7 +30,7 @@ h() {
     h g stash push
     h g pull --prune --rebase
     vim -S ~/.vim/snapshot.vim
-    home .
+    h .
     ;;
 
   p) h g push ;;
