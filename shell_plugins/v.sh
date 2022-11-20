@@ -30,7 +30,7 @@ v() {
   mk) vim Makefile ;;
   ns) vim server.js ;;
   pj) vim package.json ;;
-  rc) vim ~/git/github.com/sharils/home/.vimrc ;;
+  rc) vim "$SHARILS_HOME/.vimrc" ;;
   tig) vim ~/git/github.com/sharils/home/.tigrc ;;
   tor) vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc ;;
 
