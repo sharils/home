@@ -29,7 +29,7 @@ h() {
     git -C "$SHARILS_HOME" "$@"
     ;;
 
-  P | pull)
+  P)
     h g stash push
     h g pull --prune --rebase
     vim -S ~/.vim/snapshot.vim
