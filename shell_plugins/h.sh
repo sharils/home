@@ -8,7 +8,7 @@ h() {
 
   .)
     # shellcheck source=/dev/null
-    . "$HOME/git/github.com/sharils/home/.bash_profile"
+    . "$SHARILS_HOME/.bash_profile"
     ;;
 
   e)
