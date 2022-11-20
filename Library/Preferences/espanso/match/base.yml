@@ -17,6 +17,9 @@ matches:
   - trigger: "A,."
     replace: "'Add $|$'"
 
+  - trigger: "C,."
+    replace: "'Change $|$'"
+
   - trigger: "F,."
     replace: 127.0.0.1
 
