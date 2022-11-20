@@ -19,7 +19,7 @@ h() {
       *) cmd="shell_plugins/$*.sh" ;;
     esac
     vim "$SHARILS_HOME/$cmd"
-    home .
+    h .
     ;;
 
   g)
