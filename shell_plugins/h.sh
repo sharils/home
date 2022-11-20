@@ -36,7 +36,7 @@ h() {
     home .
     ;;
 
-  p | push) git -C ~/git/github.com/sharils/home push ;;
+  p | push) h g push ;;
 
   u)
     sudo --validate
