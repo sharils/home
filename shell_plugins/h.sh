@@ -12,15 +12,12 @@ h() {
     ;;
 
   e)
-    if [ $# -eq 0 ]; then
-      cmd=install
-    elif [ "$1" = 'bp' ]; then
-      cmd='.bash_profile'
-    elif [ "$1" = 't' ]; then
-      cmd='.todo.cfg'
-    else
-      cmd="shell_plugins/$*.sh"
-    fi
+    case "${cmd:-i}" in
+      bp) cmd=.bash_profile ;;
+      i) cmd=install ;;
+      t) cmd=.todo.cfg ;;
+      *) cmd="shell_plugins/$*.sh" ;;
+    esac
     vim "$SHARILS_HOME/$cmd"
     home .
     ;;
