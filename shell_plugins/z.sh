@@ -10,7 +10,7 @@ z() {
 
   ....) cd ../../.. ;;
 
-  dl) cd ~/Downloads || return ;;
+  d) cd ~/Downloads || return ;;
 
   s) cd ~/Sync || return ;;
 
