@@ -12,6 +12,8 @@ z() {
 
   dl) cd ~/Downloads || return ;;
 
+  s) cd ~/Sync || return ;;
+
   ssh) cd ~/.ssh || return ;;
 
   t)
