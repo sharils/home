@@ -23,15 +23,13 @@ t() {
   p)
     case "$cmd" in
     1..999) todo.sh pri "$@" ;;
-    *) t t post "$@" ;;
+    *) toot post "$@" ;;
     esac
     ;;
 
   rc) rm ~/Sync/todo/todo.sync-conflict-*.txt ;;
 
-  t) toot "$@" ;;
-
-  ui) t t tui "$@" ;;
+  ui) toot tui "$@" ;;
 
   vc) vimdiff ~/Sync/todo/todo.txt ~/Sync/todo/todo.sync-conflict-*.txt ;;
 
