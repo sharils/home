@@ -56,9 +56,9 @@ h() {
     vim +PlugUpdate
     vim +'PlugSnapshot! ~/.vim/snapshot.vim'
 
-    git -C ~/git/github.com/sharils/home add .vim/snapshot.vim
-    git -C ~/git/github.com/sharils/home commit --message 'Pump vim plugin verions'
-    git -C ~/git/github.com/sharils/home push
+    h g add .vim/snapshot.vim
+    h g commit --message 'Pump vim plugin verions'
+    h g push
     ;;
 
   z) cd ~/git/github.com/sharils/home/ || return ;;
