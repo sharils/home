@@ -11,8 +11,6 @@ h() {
     . "$HOME/git/github.com/sharils/home/.bash_profile"
     ;;
 
-  cd) cd ~/git/github.com/sharils/home/ || return ;;
-
   e)
     if [ $# -eq 0 ]; then
       cmd=install
@@ -58,6 +56,8 @@ h() {
     git -C ~/git/github.com/sharils/home commit --message 'Pump vim plugin verions'
     git -C ~/git/github.com/sharils/home push
     ;;
+
+  z) cd ~/git/github.com/sharils/home/ || return ;;
 
   esac
 }
