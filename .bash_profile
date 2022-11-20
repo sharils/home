@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-SHARILS_HOME=~/git/github.com/sharils/home
+export SHARILS_HOME=~/git/github.com/sharils/home
 
 . $SHARILS_HOME/shell_plugins/export.sh
 . $SHARILS_HOME/shell_plugins/gitignore.sh
