@@ -1,8 +1,5 @@
 #!/usr/bin/env sh
 
-# Catch CSS curve balls
-#alias backstopjs='npx --yes backstopjs '
-
 # Capacitor: Universal Web Applications
 #alias cap='npx --yes --package @capacitor/core --package @capacitor/cli cap '
 
