@@ -14,6 +14,8 @@ z() {
 
   s) cd ~/Sync || return ;;
 
+  sc) cd ~/Sync/Camera || return ;;
+
   ssh) cd ~/.ssh || return ;;
 
   t)
