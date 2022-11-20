@@ -10,6 +10,8 @@ x() {
 
   bc) bc --mathlib --expression="$*" ;;
 
+  cal) cal -A4 -B4 ;;
+
   erl)
     if [ $# -eq 0 ]; then
       erl -man erl
