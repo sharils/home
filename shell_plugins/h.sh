@@ -21,7 +21,7 @@ h() {
     else
       cmd="shell_plugins/$*.sh"
     fi
-    vim "$HOME/git/github.com/sharils/home/$cmd"
+    vim "$SHARILS_HOME/$cmd"
     home .
     ;;
 
