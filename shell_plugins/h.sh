@@ -16,7 +16,7 @@ h() {
       cmd=install
     elif [ "$1" = 'bp' ]; then
       cmd='.bash_profile'
-    elif [ "$1" = 'todo' ]; then
+    elif [ "$1" = 't' ]; then
       cmd='.todo.cfg'
     else
       cmd="shell_plugins/$*.sh"
