@@ -20,13 +20,16 @@ t() {
 
   h) todo.sh -vv help ;;
 
+  p)
+    case "$cmd" in
+    1..999) todo.sh pri "$@" ;;
+    *) t t post "$@" ;;
+    esac
+    ;;
+
   rc) rm ~/Sync/todo/todo.sync-conflict-*.txt ;;
 
-  t)
-    cmd="${1-post}"
-    shift
-    toot "$cmd" "$@"
-    ;;
+  t) toot "$@" ;;
 
   ui) t t tui "$@" ;;
 
