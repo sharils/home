@@ -31,7 +31,7 @@ v() {
   ns) vim server.js ;;
   pj) vim package.json ;;
   rc) vim "$SHARILS_HOME/.vimrc" ;;
-  tig) vim ~/git/github.com/sharils/home/.tigrc ;;
+  tig) vim "$SHARILS_HOME/.tigrc" ;;
   tor) vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc ;;
 
   *) vim "$cmd" "$@" ;;
