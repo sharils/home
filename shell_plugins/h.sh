@@ -36,7 +36,7 @@ h() {
     home .
     ;;
 
-  p | push) h g push ;;
+  p) h g push ;;
 
   u)
     sudo --validate
