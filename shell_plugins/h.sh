@@ -30,8 +30,8 @@ h() {
     ;;
 
   P | pull)
-    git -C ~/git/github.com/sharils/home stash push
-    git -C ~/git/github.com/sharils/home pull --prune --rebase
+    h g stash push
+    h g pull --prune --rebase
     vim -S ~/.vim/snapshot.vim
     home .
     ;;
