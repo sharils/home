@@ -25,6 +25,10 @@ h() {
     home .
     ;;
 
+  g)
+    git -C "$SHARILS_HOME" "$@"
+    ;;
+
   P | pull)
     git -C ~/git/github.com/sharils/home stash push
     git -C ~/git/github.com/sharils/home pull --prune --rebase
