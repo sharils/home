@@ -61,7 +61,7 @@ h() {
     h g push
     ;;
 
-  z) cd ~/git/github.com/sharils/home/ || return ;;
+  z) cd "$SHARILS_HOME" || return ;;
 
   esac
 }
