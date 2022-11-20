@@ -2,13 +2,8 @@
 
 __z_t_tmp=''
 z() {
-  if [ $# -eq 0 ]; then
-    cd - || return
-  fi
-
-  cmd="$1"
+  cmd="${1:--}"
   shift
-
   case "$cmd" in
 
   ...) cd ../.. ;;
