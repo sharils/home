@@ -23,6 +23,9 @@ matches:
   - trigger: "F,."
     replace: 127.0.0.1
 
+  - trigger: "R,."
+    replace: "'Refactor $|$'"
+
   - trigger: "d,."
     replace: "{{d}}"
     vars:
