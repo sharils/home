@@ -42,7 +42,7 @@ x() {
 
   tel) open "tel:$*" ;;
 
-  tree) find . -print | sed 's;[^/]*/;|____;g;s;____|; |;g' ;;
+  tree) find "${@:-.}" -print | sed 's;[^/]*/;|____;g;s;____|; |;g' ;;
 
   unlockUIBecomesActive) log show --predicate 'eventMessage CONTAINS "unlockUIBecomesActive"' --last "${@:-30m}" ;;
 
