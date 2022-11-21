@@ -10,6 +10,8 @@ n() {
 
   S) n start "$@" ;;
 
+  b) n build "$@" ;;
+
   bs) n browser-sync --no-open --watch "$@" ;;
 
   clear-npx-cache)
