@@ -29,7 +29,6 @@ v() {
   mk) vim Makefile ;;
   ns) vim server.js ;;
   pj) vim package.json ;;
-  tig) vim "$SHARILS_HOME/.tigrc" ;;
   tor) vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc ;;
 
   *) vim "$cmd" "$@" ;;
