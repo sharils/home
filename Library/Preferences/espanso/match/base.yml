@@ -21,7 +21,7 @@ matches:
     replace: "'Change $|$'"
 
   - trigger: "F,."
-    replace: 127.0.0.1
+    replace: "'Fix $|$'"
 
   - trigger: "R,."
     replace: "'Refactor $|$'"
