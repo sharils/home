@@ -26,6 +26,8 @@ x() {
 
   js) node --print "$*" ;;
 
+  log) log show --predicate 'eventMessage CONTAINS "unlockUIBecomesActive"' --last "${@:-30m}" ;;
+
   m) mkdir -p "$@" ;;
 
   o) open "${@:-.}" ;;
@@ -43,8 +45,6 @@ x() {
   tel) open "tel:$*" ;;
 
   tree) find "${@:-.}" -print | sed 's;[^/]*/;|____;g;s;____|; |;g' ;;
-
-  unlockUIBecomesActive) log show --predicate 'eventMessage CONTAINS "unlockUIBecomesActive"' --last "${@:-30m}" ;;
 
   whois)
     # support whois -b example.com
