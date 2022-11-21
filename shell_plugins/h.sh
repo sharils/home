@@ -55,7 +55,7 @@ h() {
     vim +'PlugSnapshot! ~/.vim/snapshot.vim'
 
     h g add .vim/snapshot.vim
-    h g commit --message 'Pump vim plugin verions'
+    h g commit --message 'Apply vim +PlugUpdate'
     h g push
     ;;
 
