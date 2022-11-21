@@ -18,6 +18,8 @@ z() {
 
   ssh) cd ~/.ssh || return ;;
 
+  st) cd ~/Sync/todo || return ;;
+
   t)
     [ ! -d "$__z_t_tmp" ] && __z_t_tmp="$(mktemp -d "/tmp/$USER-$(date +%m%d)-XXXXXX")"
     if [ $# -eq 0 ]; then

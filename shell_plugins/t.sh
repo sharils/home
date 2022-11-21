@@ -33,8 +33,6 @@ t() {
 
   vc) vimdiff ~/Sync/todo/todo.txt ~/Sync/todo/todo.sync-conflict-*.txt ;;
 
-  z) cd ~/Sync/todo || return ;;
-
   *) todo.sh "$cmd" "$@" ;;
 
   esac
