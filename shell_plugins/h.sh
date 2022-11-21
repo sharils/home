@@ -13,12 +13,12 @@ h() {
 
   e)
     case "${1:-i}" in
-      bp) cmd=.bash_profile ;;
-      i) cmd=install ;;
-      t) cmd=.todo.cfg ;;
-      *) cmd="shell_plugins/$*.sh" ;;
+      bp) cmd=/.bash_profile ;;
+      i) cmd=/install ;;
+      t) cmd=/.todo.cfg ;;
+      *) cmd="/shell_plugins/$*.sh" ;;
     esac
-    vim "$SHARILS_HOME/$cmd"
+    vim "$SHARILS_HOME$cmd"
     h .
     ;;
 
