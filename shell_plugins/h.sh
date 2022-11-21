@@ -17,6 +17,7 @@ h() {
       i) cmd=/install ;;
       k) cmd=/.config/karabiner/karabiner.json ;;
       t) cmd=/.todo.cfg ;;
+      vim) cmd=/.vimrc ;;
       *) cmd="/shell_plugins/$*.sh" ;;
     esac
     vim "$SHARILS_HOME$cmd"
