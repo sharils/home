@@ -76,6 +76,10 @@ snippet sc "# shellcheck disable=" b
 # shellcheck disable=
 endsnippet
 
+snippet scs "# shellcheck disable=" b
+# shellcheck source=${1:/dev/null}
+endsnippet
+
 snippet sh "shift" b
 ${1:cmd}="\$1"
 shift
