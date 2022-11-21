@@ -198,7 +198,6 @@ main() {
 .ctags,\
 .curlrc,\
 .fdignore,\
-.fzf.bash,\
 .gitconfig,\
 .gitignore,\
 .inputrc,\
