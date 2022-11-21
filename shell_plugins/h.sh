@@ -15,7 +15,7 @@ h() {
     case "${1:-i}" in
       bp) cmd=/.bash_profile ;;
       i) cmd=/install ;;
-      k) cmd=/.config/karabiner/karabiner.json ;;
+      karabiner) cmd=/.config/karabiner/karabiner.json ;;
       todo) cmd=/.todo.cfg ;;
       tig) cmd=/.tigrc ;;
       vim) cmd=/.vimrc ;;
