@@ -7,6 +7,7 @@ b() {
   case "$cmd" in
   h) cmd=help ;;
   i) cmd=install ;;
+  ri) cmd=reinstall ;;
   out) cmd=outdated ;;
   esac
 
