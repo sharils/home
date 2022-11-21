@@ -25,9 +25,7 @@ h() {
     h .
     ;;
 
-  g)
-    git -C "$SHARILS_HOME" "$@"
-    ;;
+  g) git -C "$SHARILS_HOME" "$@" ;;
 
   P)
     h g stash push
