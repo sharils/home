@@ -12,7 +12,7 @@ h() {
     ;;
 
   e)
-    case "${cmd:-i}" in
+    case "${1:-i}" in
       bp) cmd=.bash_profile ;;
       i) cmd=install ;;
       t) cmd=.todo.cfg ;;
