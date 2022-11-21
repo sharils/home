@@ -26,7 +26,6 @@ v() {
   dco) vim docker-compose.yml ;;
   dk) vim Dockerfile ;;
   i) vim index."${*:-tsx}" ;;
-  karabiner) vim "$SHARILS_HOME/.config/karabiner/karabiner.json" ;;
   mk) vim Makefile ;;
   ns) vim server.js ;;
   pj) vim package.json ;;

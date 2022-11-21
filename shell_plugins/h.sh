@@ -15,6 +15,7 @@ h() {
     case "${1:-i}" in
       bp) cmd=/.bash_profile ;;
       i) cmd=/install ;;
+      k) cmd=/.config/karabiner/karabiner.json ;;
       t) cmd=/.todo.cfg ;;
       *) cmd="/shell_plugins/$*.sh" ;;
     esac
