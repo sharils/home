@@ -8,7 +8,7 @@ t() {
 
   A) todo.sh archive "$@" ;;
 
-  e) $EDITOR ~/Sync/todo/todo.txt ~/Sync/todo/QuickNote.md ~/Sync/todo/infanoj.md ;;
+  e) $EDITOR ~/Sync/todo/todo.txt ~/Sync/todo/QuickNote.md ;;
 
   h) todo.sh -vv help ;;
 
