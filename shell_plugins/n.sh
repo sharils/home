@@ -8,6 +8,8 @@ n() {
 
   baapan | backstopjs | browser-sync | bundle-phobia | chance-cli | codesandbox | composerize | cost-of-modules | covgen | csv2json | cypress | degit | eslint | gitignore | jscodeshift | jscpd | license | lighthouse | newman | nginx-linter | npkill | npm-check | npm-check-updates | npm-merge-driver | nve | nx | packagephobia-cli | pegjs | prettier | prettier-package-json | pwned | qnm | qrcode-terminal | react-native | readme-md-generator | resume-cli | selenium-side-runner | trucker | why-is-node-running | wait-on) n x "$cmd" "$@" ;;
 
+  S) n start "$@" ;;
+
   bs) n browser-sync --no-open --watch "$@" ;;
 
   clear-npx-cache)
