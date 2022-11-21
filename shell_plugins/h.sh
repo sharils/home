@@ -12,9 +12,9 @@ h() {
     ;;
 
   e)
-    case "${1:-i}" in
+    case "${1:-install}" in
       bp) cmd=/.bash_profile ;;
-      i) cmd=/install ;;
+      install) cmd=/install ;;
       karabiner) cmd=/.config/karabiner/karabiner.json ;;
       todo) cmd=/.todo.cfg ;;
       tig) cmd=/.tigrc ;;
