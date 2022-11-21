@@ -16,7 +16,7 @@ h() {
       bp) cmd=/.bash_profile ;;
       i) cmd=/install ;;
       k) cmd=/.config/karabiner/karabiner.json ;;
-      t) cmd=/.todo.cfg ;;
+      todo) cmd=/.todo.cfg ;;
       tig) cmd=/.tigrc ;;
       vim) cmd=/.vimrc ;;
       *) cmd="/shell_plugins/$*.sh" ;;
