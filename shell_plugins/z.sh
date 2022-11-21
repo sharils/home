@@ -21,7 +21,7 @@ z() {
   st) cd ~/Sync/todo || return ;;
 
   t)
-    [ ! -d "$__z_t_tmp" ] && __z_t_tmp="$(mktemp -d "/tmp/$USER-$(date +%m%d)-XXXXXX")"
+    z t_init
     if [ $# -eq 0 ]; then
       dir="$__z_t_tmp"
     elif [ $# -ne 0 ]; then
@@ -30,6 +30,8 @@ z() {
     fi
     cd "$dir" || return
     ;;
+
+  t_init) [ ! -d "$__z_t_tmp" ] && __z_t_tmp="$(mktemp -d "/tmp/$USER-$(date +%m%d)-XXXXXX")" ;;
 
   ~t) cd ~/tmp || return ;;
 
