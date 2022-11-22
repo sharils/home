@@ -12,6 +12,8 @@ t() {
 
   h) todo.sh -vv help ;;
 
+  n) toot notifications "$@" ;;
+
   p)
     case "$cmd" in
     1..999) todo.sh pri "$@" ;;
