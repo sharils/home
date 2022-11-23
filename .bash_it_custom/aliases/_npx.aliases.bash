@@ -9,9 +9,6 @@
 # Generate a report about your development environment for debugging and issue reporting
 #alias envinfo='npx --yes envinfo'
 
-# An opinionated code style agnostic linter – a friendly companion to Prettier.
-#alias healthier='npx --yes healthier '
-
 # 💡 A hinting engine for the web https://webhint.io/
 #alias hint='npx --yes hint'
 
