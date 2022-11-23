@@ -33,7 +33,7 @@ t() {
 
   tl) t t --local --reverse --count 1 "${@:---public}" ;;
 
-  tp) t t --once --public --reverse "$@" ;;
+  tp) t t --public --reverse --count 1 "$@" ;;
 
   tt) t t --once --tag "$@" ;;
 
