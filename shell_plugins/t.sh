@@ -25,6 +25,8 @@ t() {
 
   t) toot timeline "$@" ;;
 
+  tl) t t --once --local --reverse "${@:---public}" ;;
+
   ui) toot tui "$@" ;;
 
   vc) vimdiff ~/Sync/todo/todo.txt ~/Sync/todo/todo.sync-conflict-*.txt ;;
