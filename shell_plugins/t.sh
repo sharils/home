@@ -35,7 +35,7 @@ t() {
 
   tp) t t --public --reverse --count 1 "$@" ;;
 
-  tt) t t --once --tag "$@" ;;
+  tt) t t --reverse --count 1 --tag "$@" ;;
 
   ui) toot tui "$@" ;;
 
