@@ -29,6 +29,8 @@ t() {
 
   tp) t t --once --public --reverse "$@" ;;
 
+  tt) t t --once --tag "$@" ;;
+
   ui) toot tui "$@" ;;
 
   vc) vimdiff ~/Sync/todo/todo.txt ~/Sync/todo/todo.sync-conflict-*.txt ;;
