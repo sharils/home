@@ -64,6 +64,8 @@ n() {
 
   lpd) NPM_CONFIG_LEGACY_PEER_DEPS='1' "$@" ;;
 
+  lv) NPM_CONFIG_LOGLEVEL='verbose' "$@" ;;
+
   na)
     cmd="$1"
     shift
