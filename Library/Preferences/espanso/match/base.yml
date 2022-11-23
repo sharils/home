@@ -46,6 +46,9 @@ matches:
   - trigger: "h,."
     replace: https://$|$/
 
+  - trigger: "j,."
+    replace: javascript
+
   - trigger: "rm,."
     replace: "'Remove $|$'"
 
