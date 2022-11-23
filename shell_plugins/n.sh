@@ -62,6 +62,8 @@ n() {
     kill -TERM "$pid" || kill -KILL "$pid"
     ;;
 
+  lpd) NPM_CONFIG_LEGACY_PEER_DEPS='1' "$@" ;;
+
   na)
     cmd="$1"
     shift
