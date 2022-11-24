@@ -13,6 +13,8 @@ t() {
 
   Z) todo.sh archive "$@" ;;
 
+  aw) t A work.txt "$@" ;;
+
   e) $EDITOR ~/Sync/todo/todo.txt ~/Sync/todo/QuickNote.md ;;
 
   h) todo.sh -vv help ;;
