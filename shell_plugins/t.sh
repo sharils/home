@@ -6,7 +6,7 @@ t() {
 
   case $cmd in
 
-  A) todo.sh archive "$@" ;;
+  Z) todo.sh archive "$@" ;;
 
   e) $EDITOR ~/Sync/todo/todo.txt ~/Sync/todo/QuickNote.md ;;
 
