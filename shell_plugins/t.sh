@@ -6,6 +6,11 @@ t() {
 
   case $cmd in
 
+  A)
+    [ -f ~/Sync/todo/"$1" ] || touch ~/Sync/todo/"$1"
+    todo.sh addto "$@"
+    ;;
+
   Z) todo.sh archive "$@" ;;
 
   e) $EDITOR ~/Sync/todo/todo.txt ~/Sync/todo/QuickNote.md ;;
