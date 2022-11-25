@@ -15,7 +15,14 @@ t() {
 
   aw) t A work.txt "$@" ;;
 
-  e) $EDITOR ~/Sync/todo/todo.txt ~/Sync/todo/QuickNote.md ;;
+  e)
+    cmd="${1:-t}"
+    shift
+    case "$cmd" in
+    t) t e todo.txt ;;
+    *) $EDITOR ~/Sync/todo/"$cmd" ;;
+    esac
+    ;;
 
   h) todo.sh -vv help ;;
 
