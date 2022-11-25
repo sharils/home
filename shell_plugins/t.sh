@@ -19,6 +19,7 @@ t() {
     cmd="${1:-t}"
     shift
     case "$cmd" in
+    q) t e QuickNote.md ;;
     t) t e todo.txt ;;
     *) $EDITOR ~/Sync/todo/"$cmd" ;;
     esac
