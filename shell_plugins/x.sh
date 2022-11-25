@@ -22,6 +22,12 @@ x() {
 
   ex) elixir -e "$*" ;;
 
+  focus_mode)
+    now="$(date +%H%m)"
+    [ "$now" -lt '1330' ] || [ '1930' -lt "$now" ]
+    return $?
+    ;;
+
   gpg) echo | gpg --clearsign >/dev/null ;;
 
   js) node --print "$*" ;;
