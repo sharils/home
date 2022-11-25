@@ -5,6 +5,7 @@ wb() {
   shift
   case "$cmd" in
     -S) wb search "$@" ;;
+    i) wb install "$@" ;;
     *) whalebrew "$@" ;;
   esac
 }
