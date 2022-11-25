@@ -21,6 +21,7 @@ t() {
     case "$cmd" in
     q) t e QuickNote.md ;;
     t) t e todo.txt ;;
+    w) t e work.txt ;;
     *) $EDITOR ~/Sync/todo/"$cmd" ;;
     esac
     ;;
