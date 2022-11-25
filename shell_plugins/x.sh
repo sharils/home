@@ -36,7 +36,10 @@ x() {
 
   py) python3 -c "$*" ;;
 
-  resetLaunchPad|showHidden) defaults write com.apple.dock "$cmd" -bool true; killall Dock ;;
+  resetLaunchPad | showHidden)
+    defaults write com.apple.dock "$cmd" -bool true
+    killall Dock
+    ;;
 
   screen) screen -xRRe^Gg "$@" ;;
 
