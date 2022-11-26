@@ -2,6 +2,8 @@
 # Original file: user/emoji.yml
 
 matches:
+  - trigger: ":melting_face:"
+    replace: "🫠 "
   - trigger: ":smile:"
     replace: "😄 "
   - trigger: ":smiley:"
