@@ -2,7 +2,7 @@
 
 t() {
   case "$1" in
-  n | t) x focus_mode && echo >&2 focus mode && return ;;
+  n | t | ui) x focus_mode && echo >&2 focus mode && return ;;
   esac
 
   cmd=$1
