@@ -6,7 +6,14 @@ e() {
 
   case "$cmd" in
 
-  e) espanso edit "$@" ;;
+  e)
+    cmd="$1"
+    shift
+    case "$cmd" in
+      e) cmd=emoji ;;
+    esac
+    espanso edit "$cmd" "$@"
+    ;;
   r) espanso restart "$@" ;;
   s) espanso status "$@" ;;
 
