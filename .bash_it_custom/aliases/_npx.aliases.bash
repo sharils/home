@@ -15,9 +15,6 @@
 # finds publicly known security vulnerabilities in a website's frontend JavaScript libraries
 #alias is-website-vulnerable='is-website-vulnerable'
 
-# Detect structural similarities in your code
-#alias jsinspect='npx --yes jsinspect '
-
 # Find unused files, dependencies and exports in your JS/TS project
 #alias knip='npx --yes knip '
 
