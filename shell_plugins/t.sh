@@ -1,9 +1,12 @@
 #!/usr/bin/env sh
 
 t() {
+  case "$1" in
+  t) x focus_mode && echo >&2 focus mode && return ;;
+  esac
+
   cmd=$1
   shift
-
   case $cmd in
 
   A)
@@ -40,7 +43,6 @@ t() {
   rc) rm ~/Sync/todo/todo.sync-conflict-*.txt ;;
 
   t)
-    x focus_mode && echo >&2 focus mode && return
     if [ $# -eq 1 ] && expr "$1" : "[0-9][0-9]*" >/dev/null; then
       toot thread "$@"
     else
