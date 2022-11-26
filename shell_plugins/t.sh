@@ -28,7 +28,7 @@ t() {
 
   h) todo.sh -vv help ;;
 
-  n) toot notifications "$@" ;;
+  n) toot notifications "${@:---reverse}" ;;
 
   p)
     case "$cmd" in
