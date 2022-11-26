@@ -6,11 +6,9 @@ e() {
 
   case "$cmd" in
 
-  e) cmd=edit ;;
-  r) cmd=restart ;;
-  s) cmd=status ;;
+  e) espanso edit "$@" ;;
+  r) espanso restart "$@" ;;
+  s) espanso status "$@" ;;
 
   esac
-
-  espanso "$cmd" "$@"
 }
