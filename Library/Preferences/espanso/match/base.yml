@@ -29,14 +29,6 @@ matches:
   - trigger: "ap,."
     replace: "'Apply $|$'"
 
-  - trigger: "d,."
-    replace: "{{d}}"
-    vars:
-      - name: d
-        type: shell
-        params:
-          cmd: "pbpaste | sed 's/[^[:digit:].]//g'"
-
   - trigger: "e,."
     replace: example.com
 
@@ -48,6 +40,14 @@ matches:
 
   - trigger: "j,."
     replace: javascript
+
+  - trigger: "pd,."
+    replace: "{{d}}"
+    vars:
+      - name: d
+        type: shell
+        params:
+          cmd: "pbpaste | sed 's/[^[:digit:].]//g'"
 
   - trigger: "rm,."
     replace: "'Remove $|$'"
