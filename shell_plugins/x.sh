@@ -49,7 +49,7 @@ x() {
 
   screen) screen -xRRe^Gg "$@" ;;
 
-  ssh-keygen) ssh-keygen -f ~/.ssh/id_rsa -C "${@:?}" ;;
+  ssh-keygen) ssh-keygen -f ~/.ssh/id_rsa -t ed25519 -C "${@:?}" ;;
 
   tel) open "tel:$*" ;;
 
