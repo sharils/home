@@ -29,6 +29,14 @@ matches:
   - trigger: "ap,."
     replace: "'Apply $|$'"
 
+  - trigger: "d,."
+    replace: due:{{today}}
+    vars:
+      - name: today
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
   - trigger: "e,."
     replace: example.com
 
