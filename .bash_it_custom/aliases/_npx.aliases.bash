@@ -15,9 +15,6 @@
 # finds publicly known security vulnerabilities in a website's frontend JavaScript libraries
 #alias is-website-vulnerable='is-website-vulnerable'
 
-# Find unused files, dependencies and exports in your JS/TS project
-#alias knip='npx --yes knip '
-
 # Check license info for a package
 #alias license-checker='npx --yes license-checker '
 
