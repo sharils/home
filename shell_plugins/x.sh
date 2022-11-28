@@ -30,6 +30,8 @@ x() {
 
   gpg) echo | gpg --clearsign >/dev/null ;;
 
+  hostnameise) tr '[:upper:]' '[:lower:]' | sed -E 's/[^[:alnum:]]+/-/g' ;;
+
   js) node --print "$*" ;;
 
   log) log show --predicate 'eventMessage CONTAINS "unlockUIBecomesActive"' --last "${@:-30m}" ;;
