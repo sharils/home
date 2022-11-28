@@ -25,6 +25,7 @@ v() {
 
   R) vim README.md ;;
   dco) vim docker-compose.yml ;;
+  di) vim .dockerignore ;;
   dk) vim Dockerfile ;;
   i) vim index."${*:-tsx}" ;;
   mk) vim Makefile ;;
