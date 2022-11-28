@@ -15,9 +15,6 @@
 # finds publicly known security vulnerabilities in a website's frontend JavaScript libraries
 #alias is-website-vulnerable='is-website-vulnerable'
 
-# Check license info for a package
-#alias license-checker='npx --yes license-checker '
-
 # Create graphs from your CommonJS, AMD or ES6 module dependencies
 # alias madge='npx --yes madge'
 
