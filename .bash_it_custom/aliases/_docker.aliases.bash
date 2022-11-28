@@ -2,7 +2,6 @@
 
 # alias dk='docker '
 # alias dkbasename='echo $(basename $PWD | tr "[:upper:]" "[:lower:]")'
-# alias dkbri='docker rmi ${USER}/$(dkbasename)'
 # alias dkbrw='docker run --interactive --name ${USER}_$(dkbasename) --rm --tty --volume $PWD:$PWD --workdir $PWD ${USER}/$(basename $PWD)'
 # alias dkbs='docker stop ${USER}_$(dkbasename)'
 # alias dkrr='docker run --interactive --rm --tty --volume $PWD:$PWD --workdir $PWD'

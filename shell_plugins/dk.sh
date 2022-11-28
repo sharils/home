@@ -11,6 +11,7 @@ dk() {
     shift
     case "$cmd" in
     r) dk run --interactive --rm --tty --name "${USER}_$name" "$USER/$name" "$@" ;;
+    rmi) dk rmi "$USER/$name" "$@" ;;
     b | *) dk build --tag "$USER/$name" "${@:-.}" ;;
     esac
     ;;
