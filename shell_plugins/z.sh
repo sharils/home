@@ -2,9 +2,9 @@
 
 __z_t_tmp=''
 z() {
-  cmd="${1:--}"
+  _z_cmd="${1:--}"
   shift
-  case "$cmd" in
+  case "$_z_cmd" in
 
   ...) cd ../.. ;;
 
@@ -35,7 +35,8 @@ z() {
 
   ~t) cd ~/tmp || return ;;
 
-  *) __zoxide_z "$cmd" "$@" ;;
+  *) __zoxide_z "$_z_cmd" "$@" ;;
 
   esac
+  unset -v _z_cmd
 }
