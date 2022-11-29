@@ -14,11 +14,11 @@ w() {
 
   m) watchman-make "$@" ;;
 
-  py) w m --pattern '**/*.py' --run "$*" ;;
-
   rs) w m --pattern '**/*.rs' --run "${*:-cargo test}" ;;
 
   w) watchman-wait --max-events 0 "$@" ;;
+
+  py | sh) w m --pattern "**/*.$cmd" --run "$*" ;;
 
   esac
 }
