@@ -5,6 +5,7 @@ dco() {
   shift
 
   case "$cmd" in
+    b) dco build "$@" ;;
     *) docker compose "$cmd" "$@" ;;
   esac
 }

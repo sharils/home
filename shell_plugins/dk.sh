@@ -7,12 +7,12 @@ dk() {
   case "$cmd" in
   b)
     name="$(basename "$PWD" | x hostnameise)"
-    cmd="${1:-b}"
+    cmd="$1"
     shift
     case "$cmd" in
     r) dk run --interactive --rm --tty --name "${USER}_$name" "$USER/$name" "$@" ;;
     rmi) dk rmi "$USER/$name" "$@" ;;
-    b | *) dk build --tag "$USER/$name" "${@:-.}" ;;
+    *) dk build --tag "$USER/$name" "${@:-.}" ;;
     esac
     ;;
   o) open -b com.docker.docker ;;
