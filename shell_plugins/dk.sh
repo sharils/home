@@ -40,6 +40,7 @@ dk() {
     *) dk image "$cmd" "$@" ;;
     esac
     ;;
+  l) dk logs "$@" ;;
   o) open -b com.docker.docker ;;
   q) osascript -e 'quit app "Docker"' ;;
   s) dk system "$@" ;;
