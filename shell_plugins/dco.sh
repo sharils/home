@@ -9,6 +9,7 @@ dco() {
     d) dco down "$@" ;;
     e) dco exec "$@" ;;
     l) dco logs "$@" ;;
+    r) dco run "$@" ;;
     u) dco up "$@" ;;
     *) docker compose "$cmd" "$@" ;;
   esac
