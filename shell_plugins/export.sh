@@ -1,5 +1,9 @@
 #!/usr/bin/env sh
 
+export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
+export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
+export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
+
 export CLICOLOR='auto' # ls
 
 export EDITOR='vim -p'
@@ -11,3 +15,5 @@ export GREP_OPTIONS='--color=auto'
 export LESS='--RAW-CONTROL-CHARS --ignore-case --no-init --quit-if-one-screen'
 
 export PAGER='less'
+
+export PATH="$HOME/.cargo/bin:$PATH"
