@@ -18,5 +18,7 @@ w() {
 
   rs) w m --pattern '**/*.rs' --run "${*:-cargo test}" ;;
 
+  w) watchman-wait --max-events 0 "$@" ;;
+
   esac
 }
