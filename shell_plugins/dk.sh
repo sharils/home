@@ -6,13 +6,15 @@ dk() {
 
   case "$cmd" in
   b)
-    name="$(basename "$PWD" | x hostnameise)"
+    base="$(basename "$PWD" | x hostnameise)"
+    name="${base}_$USER"
+    tag="$base/$USER"
     cmd="$1"
     shift
     case "$cmd" in
-    r) dk run --interactive --rm --tty --name "${USER}_$name" "$USER/$name" "$@" ;;
-    rmi) dk rmi "$USER/$name" "$@" ;;
-    *) dk build --tag "$USER/$name" "${@:-.}" ;;
+    r) dk run --interactive --rm --tty --name "$name" "$tag" "$@" ;;
+    rmi) dk rmi "$tag" "$@" ;;
+    *) dk build --tag "$tag" "${@:-.}" ;;
     esac
     ;;
   i) dk image "${@:-ls}" ;;
