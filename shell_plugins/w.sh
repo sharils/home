@@ -16,7 +16,7 @@ w() {
 
   py) w m --pattern '**/*.py' --run "$*" ;;
 
-  rs) watchman-make --pattern "**/*.rs" --run "${*:-cargo test}" ;;
+  rs) w m --pattern '**/*.rs' --run "${*:-cargo test}" ;;
 
   esac
 }
