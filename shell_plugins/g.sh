@@ -16,7 +16,8 @@ g() {
 
   clt)
     for last in "$@"; do :; done
-    z t "$(basename "${last%.*}")"
+    last="$(basename "$last")"
+    z t "${last%.*}"
     git clone "$@" "$PWD"
     ;;
 
