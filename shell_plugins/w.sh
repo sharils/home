@@ -14,7 +14,7 @@ w() {
 
   m) watchman-make "$@" ;;
 
-  py) watchman-make --pattern "**/*.py" --run "$*" ;;
+  py) w m --pattern '**/*.py' --run "$*" ;;
 
   rs) watchman-make --pattern "**/*.rs" --run "${*:-cargo test}" ;;
 
