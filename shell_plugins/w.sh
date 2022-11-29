@@ -12,11 +12,11 @@ w() {
   js) watchman-make --pattern "**/*.js" "**/*.jsx" "**/*.ts" "**/*.tsx" \
     --run "${*:-npm test}" ;;
 
+  m) watchman-make "$@" ;;
+
   py) watchman-make --pattern "**/*.py" --run "$*" ;;
 
   rs) watchman-make --pattern "**/*.rs" --run "${*:-cargo test}" ;;
-
-  *) watchman-make "$cmd" "$@" ;;
 
   esac
 }
