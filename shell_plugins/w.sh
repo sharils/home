@@ -6,7 +6,7 @@ w() {
 
   case $cmd in
 
-  ex) watchman-make --pattern "**/*.ex" "**/*.exs" \
+  ex) w m --pattern '**/*.ex' '**/*.exs' \
     --run "${*:-mix test && mix format}" ;;
 
   js) watchman-make --pattern "**/*.js" "**/*.jsx" "**/*.ts" "**/*.tsx" \
