@@ -7,7 +7,7 @@ e() {
   case "$cmd" in
 
   e)
-    cmd="$1"
+    cmd="${1:-base}"
     shift
     case "$cmd" in
       e) cmd=emoji ;;
