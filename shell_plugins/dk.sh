@@ -30,7 +30,13 @@ dk() {
     cmd="${1:-ls}"
     shift
     case "$cmd" in
-      *) dk image "$cmd" "$@" ;;
+    s)
+      for image in "$@"; do :; done
+      image="$(echo "$image" | x hostnameise).tar.gz"
+      dk image save "$@" | gzip >"$image"
+      echo >&2 "docker load < $image # to load image"
+      ;;
+    *) dk image "$cmd" "$@" ;;
     esac
     ;;
   o) open -b com.docker.docker ;;
