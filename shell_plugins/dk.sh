@@ -17,6 +17,7 @@ dk() {
     ;;
   o) open -b com.docker.docker ;;
   q) osascript -e 'quit app "Docker"' ;;
+  s) dk system "$@" ;;
   *) docker "$cmd" "$@" ;;
   esac
 }
