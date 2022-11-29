@@ -7,6 +7,7 @@ dco() {
   case "$cmd" in
     b) dco build "$@" ;;
     d) dco down "$@" ;;
+    u) dco up "$@" ;;
     *) docker compose "$cmd" "$@" ;;
   esac
 }
