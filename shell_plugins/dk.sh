@@ -15,7 +15,10 @@ dk() {
     r) dk run --interactive --rm --tty --name "$name" "$@" "$tag" ;;
     rmi) dk rmi "$tag" "$@" ;;
     s) dk stop "$name" ;;
-    *) dk build --tag "$tag" "${@:-.}" ;;
+    *)
+      echo >&2 "DOCKER_DEFAULT_PLATFORM=linux/amd64 # prefix for aws"
+      dk build --tag "$tag" "${@:-.}"
+      ;;
     esac
     ;;
   copies)
