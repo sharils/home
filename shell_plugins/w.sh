@@ -9,7 +9,7 @@ w() {
   ex) w m --pattern '**/*.ex' '**/*.exs' \
     --run "${*:-mix test && mix format}" ;;
 
-  js) watchman-make --pattern "**/*.js" "**/*.jsx" "**/*.ts" "**/*.tsx" \
+  js) w m --pattern '**/*.js' '**/*.jsx' '**/*.ts' '**/*.tsx' \
     --run "${*:-npm test}" ;;
 
   m) watchman-make "$@" ;;
