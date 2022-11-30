@@ -25,7 +25,14 @@ nx() {
 
   l) nx lint "$@" ;;
 
-  ls) nx list "$@" ;;
+  ls)
+    cmd="$1"
+    shift
+    case "$cmd" in
+    jest | js | linter | workspace | angular | cypress | detox | esbuild | expo | express | nest | next | node | nx-plugin | react | react-native | rollup | storybook | web | webpack) nx ls "@nrwl/$cmd" "$@" ;;
+    *) nx list "$cmd" "$@" ;;
+    esac
+    ;;
 
   r)
     target="$1"
