@@ -25,6 +25,8 @@ nx() {
 
   l) nx lint "$@" ;;
 
+  ls) nx list "$@" ;;
+
   r)
     target="$1"
     shift
@@ -37,7 +39,7 @@ nx() {
 
   w) n nx-workspace "$@" ;;
 
-  *) n nx "$cmd" "$@";;
+  *) n nx "$cmd" "$@" ;;
 
   esac
 }
