@@ -4,6 +4,9 @@ export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
 
+# https://support.apple.com/kb/HT208050.
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
 export CLICOLOR='auto' # ls
 
 export EDITOR='vim -p'
