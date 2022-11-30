@@ -62,6 +62,7 @@ settings:
       od: http://www.oxfordlearnersdictionaries.com/search/english/?=english&q={}
       ol: https://openlibrary.org/search?mode=everything&q={}
       ptt: https://www.ptt.cc/bbs/{}/index.html
+      rd: https://www.reddit.com/search/?q={}
       rs: file:///Users/minniebavaro/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/std/index.html?search={}
       sc: https://github.com/koalaman/shellcheck/wiki/{}
       sn: https://www.grc.com/sn/sn-{}.htm
