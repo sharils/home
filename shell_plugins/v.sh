@@ -15,14 +15,6 @@ v() {
 
   case "$cmd" in
 
-  c | css | csv | eex | erl | ex | exs | gql | html | java | jq | js | json | jsx | lua | md | mdx | mw | pegjs | php | py | rs | scss | sh | sql | story | t | ts | tsx | txt | wat | xhtml | yaml | yml | zep)
-    [ "$cmd" != 't' ] && cmd="$cmd.$cmd"
-    z t_init
-    vim "$(z t && echo "$PWD")/$cmd"
-    ;;
-
-  d | p) vim -"$cmd" "$@" ;;
-
   R) vim README.md ;;
   dco) vim docker-compose.yml ;;
   di) vim .dockerignore ;;
@@ -32,6 +24,14 @@ v() {
   ns) vim server.js ;;
   pj) vim package.json ;;
   tor) vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc ;;
+
+  d | p) vim -"$cmd" "$@" ;;
+
+  c | css | csv | eex | erl | ex | exs | gql | html | java | jq | js | json | jsx | lua | md | mdx | mw | pegjs | php | py | rs | scss | sh | sql | story | t | ts | tsx | txt | wat | xhtml | yaml | yml | zep)
+    [ "$cmd" != 't' ] && cmd="$cmd.$cmd"
+    z t_init
+    vim "$(z t && echo "$PWD")/$cmd"
+    ;;
 
   *) vim "$cmd" "$@" ;;
 
