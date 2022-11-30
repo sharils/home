@@ -1,8 +1,5 @@
 #!/usr/bin/env sh
 
-# Capacitor: Universal Web Applications
-#alias cap='npx --yes --package @capacitor/core --package @capacitor/cli cap '
-
 # Codecrumbs standalone: learn and share your code knowledge!
 #alias codecrumbs='npx --yes codecrumbs '
 
