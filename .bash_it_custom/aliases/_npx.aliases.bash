@@ -1,8 +1,5 @@
 #!/usr/bin/env sh
 
-# Codecrumbs standalone: learn and share your code knowledge!
-#alias codecrumbs='npx --yes codecrumbs '
-
 # Create graphs from your CommonJS, AMD or ES6 module dependencies
 # alias madge='npx --yes madge'
 
@@ -39,3 +36,6 @@
 
 # finds publicly known security vulnerabilities in a website's frontend JavaScript libraries
 #alias is-website-vulnerable='is-website-vulnerable'
+
+# Codecrumbs standalone: learn and share your code knowledge!
+#alias codecrumbs='npx --yes codecrumbs '
