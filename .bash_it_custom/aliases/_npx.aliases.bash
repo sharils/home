@@ -6,9 +6,6 @@
 # Create graphs from your CommonJS, AMD or ES6 module dependencies
 # alias madge='npx --yes madge'
 
-# A CLI to help better understand the massive amount of information that surrounds Node.js versions.
-#alias nanoprobe='npx --yes nanoprobe'
-
 # Create and build modern JavaScript applications with zero initial configuration
 #alias neutrinojs-project='npx --yes @neutrinojs/create-project '
 
