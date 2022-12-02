@@ -15,9 +15,6 @@
 # When run, this command line interface automatically generates a new GitHub Release and populates it with the changes (commits) made since the last release.
 #alias release='npx --yes release '
 
-# trello-cli is a CLI tool for Trello. Makes sense, right?
-#alias trello-cli='npx --yes trello-cli'
-
 # Find and fix dangling files and unused dependencies in your JavaScript projects.
 #alias unimported='npx --yes unimported '
 
