@@ -59,7 +59,7 @@ x() {
 
   tel) open "tel:$*" ;;
 
-  tree) find "${@:-.}" -print | sed 's;[^/]*/;|____;g;s;____|; |;g' ;;
+  tree) find "${@:-/$HOME/Sync/Camera}" -print | sed 's;[^/]*/;|____;g;s;____|; |;g' ;;
 
   whois)
     # support whois -b example.com
