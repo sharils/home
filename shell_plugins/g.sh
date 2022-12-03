@@ -15,10 +15,8 @@ g() {
   case $cmd in
 
   clt)
-    for last in "$@"; do :; done
-    last="$(basename "$last")"
-    z t "${last%.*}"
-    git clone "$@" "$PWD"
+    z t
+    git clone "$@"
     ;;
 
   cma) git commit --message "Apply $*" ;;
