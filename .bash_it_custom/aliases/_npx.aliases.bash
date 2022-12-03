@@ -1,8 +1,5 @@
 #!/usr/bin/env sh
 
-# A toolkit for React, Preact & Inferno apps, React libraries and other npm modules for the web, with no configuration (until you need it)
-#alias nwb='npx --yes nwb '
-
 # @pika/pack helps you build amazing packages without the hassle:
 #alias pack='npx --yes @pika/pack '
 
