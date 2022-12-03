@@ -16,7 +16,7 @@ settings:
   content.notifications.enabled:
     global: false
   url.default_page:
-    global: qute://bookmarks/
+    global: qute://bookmarks/#bookmarks
   url.searchengines:
     global:
       DEFAULT: https://search.brave.com/search?q={}
@@ -74,4 +74,4 @@ settings:
       wz: https://zh.wikipedia.org/w/index.php?search={}&title=Special%3A%E6%90%9C%E7%B4%A2&go=%E5%9F%B7%E8%A1%8C&wprov=acrw1_-1
       yt: https://www.youtube.com/results?search_query={}
   url.start_pages:
-    global: qute://bookmarks/
+    global: qute://bookmarks/#bookmarks
