@@ -9,7 +9,7 @@
 	cg = config --global
 	cm = commit --message
 	cam = commit --all --message
-	f = fetch --prune
+	f = fetch
 	g = grep
 	l = log --graph --oneline
 	mt = mergetool
@@ -23,6 +23,8 @@
 [core]
 	autocrlf = input
 	excludesfile = ~/.gitignore
+[fetch]
+	prune = true
 [include]
 	path = ~/git/github.com/sharils/home/gitignore.gitconfig
 [init]
