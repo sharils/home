@@ -14,6 +14,8 @@ z() {
 
   g) cd ~/git || return ;;
 
+  gh) cd ~/git/github.com || return ;;
+
   s) cd ~/Sync || return ;;
 
   sc) cd ~/Sync/Camera || return ;;
