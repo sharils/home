@@ -12,6 +12,8 @@ z() {
 
   d) cd ~/Downloads || return ;;
 
+  g) cd ~/git || return ;;
+
   s) cd ~/Sync || return ;;
 
   sc) cd ~/Sync/Camera || return ;;
