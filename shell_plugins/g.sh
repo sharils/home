@@ -23,8 +23,6 @@ g() {
 
   cma) git commit --message "Apply $*" ;;
 
-  e) $EDITOR "$SHARILS_HOME/.gitconfig" ;;
-
   f) git flow "$@" ;;
 
   h) man git-"$*" ;;
