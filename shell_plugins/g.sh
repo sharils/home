@@ -18,6 +18,7 @@ g() {
     cmd="$1"
     shift
     case "$cmd" in
+    -e) git config --local "$cmd" "$@" ;;
     t)
       z t
       git clone "$@"
