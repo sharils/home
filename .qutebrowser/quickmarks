@@ -2,7 +2,7 @@ dco https://docs.docker.com/compose/compose-file/#build
 dd https://devdocs.io/
 dk https://docs.docker.com/engine/reference/builder/#from
 c; javascript:candies();
-g; javascript:{const%20q=new%20URLSearchParams(location.search).get("q"),g=new%20URL("https://www.google.com.tw/search?q=%s&hl=en");g.searchParams.set("q",q),location=g;}
+g; javascript:google();
 gt; javascript:location=`https://translate.google.com/translate?hl=&sl=auto&tl=zh-TW&u=${encodeURIComponent(location)}`
 id; javascript:id();
 mw; javascript:{const%20t=String(getSelection())||document.title;const%20p=`[${location}%20${t}]`;void%20prompt(p,p)}
