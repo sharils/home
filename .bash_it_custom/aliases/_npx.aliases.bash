@@ -1,8 +1,5 @@
 #!/usr/bin/env sh
 
-# @pika/pack helps you build amazing packages without the hassle:
-#alias pack='npx --yes @pika/pack '
-
 # When run, this command line interface automatically generates a new GitHub Release and populates it with the changes (commits) made since the last release.
 #alias release='npx --yes release '
 
