@@ -5,7 +5,7 @@ g; javascript:{const%20q=new%20URLSearchParams(location.search).get("q"),g=new%2
 gt; javascript:location=`https://translate.google.com/translate?hl=&sl=auto&tl=zh-TW&u=${encodeURIComponent(location)}`
 id; javascript:id();
 mw; javascript:{const%20t=String(getSelection())||document.title;const%20p=`[${location}%20${t}]`;void%20prompt(p,p)}
-np; javascript:{faviconUrl=`${location.origin}/favicon.ico`;serviceName="$SERVICE_NAME";serviceUrl=`${location.origin}/`;description=String(getSelection());rulesTitle=document.title;rulesUrl=String(location);markdown=`[<img%20src="${faviconUrl}"%20alt="${serviceName}"%20height="16"%20/>%20${serviceName}](${serviceUrl})%20-%20${description}%20-%20[${rulesTitle}](${rulesUrl})`;void%20prompt(markdown,markdown);}
+np; javascript:candies();
 sh; javascript:h123();
 t; javascript:{const%20t=String(getSelection())||document.title;const%20p=`${t}%20${location}`;void%20prompt(p,p)}
 wm; javascript:location=`https://web.archive.org/web/submit?url=${encodeURIComponent(location)}`
