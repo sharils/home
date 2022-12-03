@@ -22,6 +22,7 @@ g() {
       z t
       git clone "$@"
       ;;
+    *) git clone "$cmd" "$@" ;;
     esac
     ;;
 
