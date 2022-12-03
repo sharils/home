@@ -5,10 +5,10 @@
 	bl = blame
 	c = commit
 	ca = commit --amend
+	cam = commit --all --message
 	ceF = commit --edit --file=.git/COMMIT_EDITMSG
 	cg = config --global
 	cm = commit --message
-	cam = commit --all --message
 	f = fetch
 	g = grep
 	l = log --graph --oneline
