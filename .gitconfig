@@ -6,6 +6,7 @@
 	c = commit
 	ca = commit --amend
 	cf = commit --edit --file=.git/COMMIT_EDITMSG
+	cg = config --global
 	cm = commit --message
 	cam = commit --all --message
 	f = fetch --prune
