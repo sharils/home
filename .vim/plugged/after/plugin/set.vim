@@ -12,6 +12,7 @@ if exists('$VIM_COLORSCHEME')
     endif
 endif
 
+set backupcopy=yes
 set colorcolumn=80
 set expandtab
 set foldcolumn=1
