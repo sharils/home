@@ -14,7 +14,6 @@
 	l = log --graph --oneline
 	mt = mergetool
 	rsH = reset --hard
-	rsm = reset --merge
 	p = push
 [commit]
 	gpgsign = true
