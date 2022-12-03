@@ -1,8 +1,5 @@
 #!/usr/bin/env sh
 
-# Create and build modern JavaScript applications with zero initial configuration
-#alias neutrinojs-project='npx --yes @neutrinojs/create-project '
-
 # A toolkit for React, Preact & Inferno apps, React libraries and other npm modules for the web, with no configuration (until you need it)
 #alias nwb='npx --yes nwb '
 
