@@ -14,9 +14,15 @@ g() {
   shift
   case $cmd in
 
-  clt)
-    z t
-    git clone "$@"
+  cl)
+    cmd="$1"
+    shift
+    case "$cmd" in
+    t)
+      z t
+      git clone "$@"
+      ;;
+    esac
     ;;
 
   cma) git commit --message "Apply $*" ;;
