@@ -16,6 +16,8 @@ z() {
 
   gh) cd ~/git/github.com || return ;;
 
+  gs) cd ~/git/github.com/sharils || return ;;
+
   s) cd ~/Sync || return ;;
 
   sc) cd ~/Sync/Camera || return ;;
