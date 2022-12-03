@@ -15,10 +15,6 @@ settings:
     global: true
   content.notifications.enabled:
     global: false
-  content.register_protocol_handler:
-    https://calendar.google.com?cid=%25s: false
-    https://mail.google.com?extsrc=mailto&url=%25s: false
-    https://mail.proton.me#mailto=%25s: false
   url.default_page:
     global: qute://bookmarks/
   url.searchengines:
