@@ -23,8 +23,6 @@ g() {
 
   cma) git commit --message "Apply $*" ;;
 
-  f) git flow "$@" ;;
-
   h) man git-"$*" ;;
 
   i)
