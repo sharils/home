@@ -1,8 +1,5 @@
 #!/usr/bin/env sh
 
-# Create graphs from your CommonJS, AMD or ES6 module dependencies
-# alias madge='npx --yes madge'
-
 # Create and build modern JavaScript applications with zero initial configuration
 #alias neutrinojs-project='npx --yes @neutrinojs/create-project '
 
@@ -36,3 +33,6 @@
 
 # Codecrumbs standalone: learn and share your code knowledge!
 #alias codecrumbs='npx --yes codecrumbs '
+
+# Create graphs from your CommonJS, AMD or ES6 module dependencies
+# alias madge='npx --yes madge'
