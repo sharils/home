@@ -9,6 +9,7 @@
 	ceF = commit --edit --file=.git/COMMIT_EDITMSG
 	cg = config --global
 	cm = commit --message
+	cr = revert
 	f = fetch
 	g = grep
 	l = log --graph --oneline
