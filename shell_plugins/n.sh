@@ -8,6 +8,8 @@ n() {
 
   S) n start "$@" ;;
 
+  agpl) n license AGPL-3.0 "$@" ;;
+
   b) n build "$@" ;;
 
   bs) n browser-sync --no-open --watch "$@" ;;
