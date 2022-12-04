@@ -17,6 +17,10 @@ g() {
   cl)
     case "$1" in
     -e) git config --local "$@" ;;
+    gi)
+      shift
+      git config --file ~/git/github.com/sharils/home/gitignore.gitconfig "$@"
+      ;;
     t)
       shift
       z t
