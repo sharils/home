@@ -1,8 +1,5 @@
 #!/usr/bin/env sh
 
-# Zero configuration web framework.
-#alias zero='npx --yes zero '
-
 # Generate a report about your development environment for debugging and issue reporting
 #alias envinfo='npx --yes envinfo'
 
