@@ -1,9 +1,5 @@
 #!/usr/bin/env sh
 
-# 📦🔐A lightweight private npm proxy registry https://www.verdaccio.org/
-# NPM_CONFIG_REGISTRY=http://localhost:4873 npm i
-#alias verdaccio='npx --yes verdaccio'
-
 # Zero configuration web framework.
 #alias zero='npx --yes zero '
 
