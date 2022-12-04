@@ -59,7 +59,5 @@ h() {
     h g push
     ;;
 
-  z) cd "$SHARILS_HOME" || return ;;
-
   esac
 }
