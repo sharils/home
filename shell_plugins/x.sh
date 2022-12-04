@@ -55,7 +55,7 @@ x() {
 
   ssh-copy-id) ssh-copy-id -o PreferredAuthentications=password -i "$HOME/.ssh/id_rsa.pub" "$@" ;;
 
-  ssh-keygen) ssh-keygen -f ~/.ssh/id_rsa -t ed25519 -C "${@:?}" ;;
+  ssh-keygen) ssh-keygen -f ~/.ssh/id_ed25519 -t ed25519 -C "${@:?}" ;;
 
   tel) open "tel:$*" ;;
 
