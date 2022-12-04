@@ -58,7 +58,7 @@ t() {
 
   tt) t t --reverse --count 1 --tag "$@" ;;
 
-  ui) toot tui "$@" ;;
+  ui) t oot tui "$@" ;;
 
   vc) vimdiff ~/Sync/todo/todo.txt ~/Sync/todo/todo.sync-conflict-*.txt ;;
 
