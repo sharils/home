@@ -26,6 +26,8 @@
 	excludesfile = ~/.gitignore
 [fetch]
 	prune = true
+[gpg]
+	format = ssh
 [include]
 	path = ~/git/github.com/sharils/home/gitignore.gitconfig
 [init]
