@@ -11,6 +11,7 @@
 	cm = commit --message
 	cr = revert
 	f = fetch
+	fi = flow init
 	g = grep
 	l = log --graph --oneline
 	mt = mergetool
