@@ -33,6 +33,8 @@ t() {
 
   n) toot notifications "${@:---reverse}" ;;
 
+  oot) toot "$@" ;;
+
   p)
     case "$cmd" in
     1..999) todo.sh pri "$@" ;;
