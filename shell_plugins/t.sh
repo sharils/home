@@ -46,9 +46,9 @@ t() {
 
   t)
     if [ $# -eq 1 ] && expr "$1" : "[0-9][0-9]*" >/dev/null; then
-      toot thread "$@"
+      t oot thread "$@"
     else
-      toot timeline "$@"
+      t oot timeline "$@"
     fi
     ;;
 
