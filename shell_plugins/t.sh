@@ -31,7 +31,7 @@ t() {
 
   h) todo.sh -vv help ;;
 
-  n) toot notifications "${@:---reverse}" ;;
+  n) t oot notifications "${@:---reverse}" ;;
 
   oot) toot "$@" ;;
 
