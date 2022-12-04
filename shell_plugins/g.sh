@@ -15,15 +15,14 @@ g() {
   case $cmd in
 
   cl)
-    cmd="$1"
-    shift
-    case "$cmd" in
-    -e) git config --local "$cmd" "$@" ;;
+    case "$1" in
+    -e) git config --local "$@" ;;
     t)
+      shift
       z t
       git clone "$@"
       ;;
-    *) git clone "$cmd" "$@" ;;
+    *) git clone "$@" ;;
     esac
     ;;
 
