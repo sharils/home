@@ -62,7 +62,7 @@ t() {
 
   vc) vimdiff ~/Sync/todo/todo.txt ~/Sync/todo/todo.sync-conflict-*.txt ;;
 
-  w) toot whois "${@:-$TOOT_WHOAMI}" ;;
+  w) t oot whois "${@:-$TOOT_WHOAMI}" ;;
 
   *) todo.sh "$cmd" "$@" ;;
 
