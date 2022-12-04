@@ -22,7 +22,12 @@ g() {
       z t
       git clone "$@"
       ;;
-    *) git clone "$@" ;;
+    *)
+      git clone "$@"
+      for last in "$@"; do :; done
+      last="$(basename "$last")"
+      cd "${last%.*}" || return
+      ;;
     esac
     ;;
 
