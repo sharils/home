@@ -21,12 +21,11 @@ g() {
       shift
       git config --file ~/git/github.com/sharils/home/gitignore.gitconfig "$@"
       ;;
-    t)
-      shift
-      z t
-      git clone "$@"
-      ;;
-    *)
+    t | *)
+      if [ "$1" = 't' ]; then
+        shift
+        z t
+      fi
       git clone "$@"
       for last in "$@"; do :; done
       last="$(basename "$last")"
