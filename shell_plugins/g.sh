@@ -54,6 +54,7 @@ g() {
     d) glab mr diff "$@" ;;
     ls) glab mr list "$@" ;;
     m) glab mr merge "$@" --rebase --remove-source-branch --yes ;;
+    n) glab mr note "$@" ;;
     u) glab mr update "$@" ;;
     v) glab mr view "$@" ;;
     *) glab mr "$cmd" "$@" ;;
