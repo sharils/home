@@ -51,6 +51,7 @@ g() {
     shift
     case "$cmd" in
     c) glab mr create --assignee "${G_MR_ASSIGNEE:?}" --reviewer "${G_MR_REVIEWER:?}" --target-branch "${G_MR_TARGET_BRANCH:-develop}" "$@" ;;
+    u) glab mr update "$@" ;;
     *) glab mr "$cmd" "$@" ;;
     esac
     ;;
