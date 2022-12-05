@@ -34,6 +34,8 @@ g() {
 
   cma) git commit --message "Apply $*" ;;
 
+  cs) git-crypt status "$@" ;;
+
   h) man git-"$*" ;;
 
   i)
