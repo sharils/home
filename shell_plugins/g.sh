@@ -46,6 +46,8 @@ g() {
     git commit --all --untracked-files
     ;;
 
+  mr) glab mr create --assignee "${G_MR_ASSIGNEE:?}" --reviewer "${G_MR_REVIEWER:?}" --target-branch "${G_MR_TARGET_BRANCH:-develop}" "$@" ;;
+
   r) tig refs "$@" ;;
 
   s) tig status "$@" ;;
