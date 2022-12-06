@@ -1,7 +1,12 @@
 #!/usr/bin/env sh
 
 b() {
-  cmd="${1:-help}"
+  if [ $# -eq 0 ] || [ -r "$1" ]; then
+    bat "$@"
+    return
+  fi
+
+  cmd="$1"
   shift
 
   case "$cmd" in
