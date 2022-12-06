@@ -13,6 +13,7 @@
 	ceF = commit --edit --file=.git/COMMIT_EDITMSG
 	cg = config --global
 	cm = commit --message
+	co = checkout
 	cr = revert
 	f = fetch
 	fi = flow init
