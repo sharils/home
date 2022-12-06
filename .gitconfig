@@ -2,6 +2,7 @@
 	alias = !sh -c 'git config --get-regexp ^alias. | sed s/^alias.//'
 	a = add
 	au = add --update
+	bg = bisect good
 	bl = blame
 	br = bisect restart
 	bs = bisect start
