@@ -5,11 +5,11 @@ b() {
   shift
 
   case "$cmd" in
-  h) cmd=help ;;
-  i) cmd=install ;;
-  ri) cmd=reinstall ;;
-  out) cmd=outdated ;;
+  h) brew help "$@" ;;
+  i) brew install "$@" ;;
+  ri) brew reinstall "$@" ;;
+  out) brew outdated "$@" ;;
+  *) brew "$cmd" "$@"
   esac
 
-  brew "$cmd" "$@"
 }
