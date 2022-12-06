@@ -6,6 +6,7 @@ export SHARILS_HOME=~/git/github.com/sharils/home
 . $SHARILS_HOME/shell_plugins/gitignore.sh
 . $SHARILS_HOME/shell_plugins/history.sh
 
+. $SHARILS_HOME/shell_plugins/bat.sh
 . $SHARILS_HOME/shell_plugins/brew.sh
 . $SHARILS_HOME/shell_plugins/direnv.sh
 . $SHARILS_HOME/shell_plugins/fzf.sh
