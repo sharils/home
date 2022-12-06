@@ -3,6 +3,7 @@
 	a = add
 	au = add --update
 	bl = blame
+	bs = bisect start
 	c = commit
 	ca = commit --amend
 	cam = commit --all --message
