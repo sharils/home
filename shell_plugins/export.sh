@@ -9,7 +9,7 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 export CLICOLOR='auto' # ls
 
-export EDITOR='vim -p'
+export EDITOR='vim'
 
 export ERL_AFLAGS="-kernel shell_history enabled"
 
