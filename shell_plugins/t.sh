@@ -48,6 +48,8 @@ t() {
     esac
     ;;
 
+  r) t replace "$@" ;;
+
   rc) rm ~/Sync/todo/todo.sync-conflict-*.txt ;;
 
   su) TOOT_USING="${TOOT_SU:?}" t "$@" ;;
