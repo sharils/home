@@ -63,5 +63,8 @@ matches:
   - trigger: "t,."
     replace: A penny for your thoughts.
 
+  - trigger: "ts,."
+    replace: typescript
+
   - trigger: "u,."
     replace: qutebrowser
