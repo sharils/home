@@ -44,7 +44,7 @@ t() {
   p)
     case "$cmd" in
     1..999) todo.sh pri "$@" ;;
-    *) t oot post "${@:---editor=vim}" ;;
+    *) t oot post "${@:---editor}" ;;
     esac
     ;;
 
