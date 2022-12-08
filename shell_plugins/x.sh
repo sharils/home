@@ -16,6 +16,12 @@ x() {
 
   cal) cal -A4 -B4 ;;
 
+  data)
+    cmd="${1:-image/gif}"
+    shift
+    printf "data:%s;base64,%s" "$cmd" "$(base64 "$@")"
+    ;;
+
   editorconfig)
     cat <<'EOF' >.editorconfig
 root = true
