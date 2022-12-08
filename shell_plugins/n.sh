@@ -78,6 +78,7 @@ n() {
     cmd="$1"
     shift
     case "$cmd" in
+    init) echo {} >.prettierrc.json ;;
     awk | eex | elm | groovy | nginx | packagejson | pegjs | pgsql | sh | sql | ssh-config | tsconfig) n x --package prettier --package "prettier-plugin-$cmd" -- prettier "$@" ;;
     *) n prettier --write "**/*.js" "**/*.jsx" "**/*.ts" "**/*.tsx" "$@" ;;
     esac
