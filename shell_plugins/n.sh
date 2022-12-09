@@ -12,7 +12,7 @@ n() {
 
   b) n build "$@" ;;
 
-  bs) n browser-sync "${@:-.}" --no-open --watch ;;
+  bs) n browser-sync "${@:-.}" --no-open ;;
 
   clear-npx-cache)
     find "$(npm config get cache)/_npx" -depth 2 -name 'package.json' | while IFS= read -r package; do
