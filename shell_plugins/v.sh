@@ -24,6 +24,7 @@ v() {
     shift
     case "$cmd" in
       c) cmd=css ;;
+      h) cmd=html ;;
     esac
     vim "index.$cmd"
     ;;
