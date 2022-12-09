@@ -42,7 +42,7 @@ n() {
 
   gi) n gitignore "${@:-node}" ;;
 
-  graphql-codegen) n x --package graphql --package @graphql-codegen/cli -- graphql-codegen "$@" ;;
+  graphql-codegen) n y --package graphql --package @graphql-codegen/cli -- graphql-codegen "$@" ;;
 
   h) npm help "$@" ;;
 
@@ -79,8 +79,8 @@ n() {
     shift
     case "$cmd" in
     init) echo {} >.prettierrc.json ;;
-    awk | eex | elm | groovy | nginx | packagejson | pegjs | pgsql | sh | sql | ssh-config | tsconfig) n x --package prettier --package "prettier-plugin-$cmd" -- prettier "$@" ;;
-    *) n prettier --write "**/*.js" "**/*.jsx" "**/*.ts" "**/*.tsx" "$@" ;;
+    awk | eex | elm | groovy | nginx | packagejson | pegjs | pgsql | sh | sql | ssh-config | tsconfig) n y --package prettier --package "prettier-plugin-$cmd" -- prettier "$@" ;;
+    *) n y prettier --write "**/*.js" "**/*.jsx" "**/*.ts" "**/*.tsx" "$@" ;;
     esac
     ;;
 
@@ -88,11 +88,11 @@ n() {
 
   r) n run "$@" ;;
 
-  vercel) n x vercel --token="${VERCEL_TOKEN:?}" "$@" ;;
+  vercel) n y vercel --token="${VERCEL_TOKEN:?}" "$@" ;;
 
   y) npx --yes "$@" ;;
 
-  yo) n x --package yo --package "generator-$1" -- yo "$@" ;;
+  yo) n y --package yo --package "generator-$1" -- yo "$@" ;;
 
   *)
     if script="$(npm pkg get "scripts.$cmd" 2>/dev/null)" &&
@@ -102,7 +102,7 @@ n() {
     fi
 
     case "$cmd" in
-    @ionic/cli | @neutralinojs/neu | baapan | backstopjs | browser-sync | bundle-phobia | chance-cli | codesandbox | composerize | cost-of-modules | covgen | csv2json | cypress | degit | eslint | gitignore | jscodeshift | jscpd | knip | license | license-checker | lighthouse | mkcert | newman | nginx-linter | npkill | npm-check | npm-check-updates | npm-merge-driver | nve | nx | packagephobia-cli | pegjs | prettier | prettier-package-json | pwned | qnm | qrcode-terminal | react-native | readme-md-generator | resume-cli | selenium-side-runner | trello-cli | trucker | unimported | verdaccio | why-is-node-running | wait-on) n x "$cmd" "$@" ;;
+    @ionic/cli | @neutralinojs/neu | baapan | backstopjs | browser-sync | bundle-phobia | chance-cli | codesandbox | composerize | cost-of-modules | covgen | csv2json | cypress | degit | eslint | gitignore | jscodeshift | jscpd | knip | license | license-checker | lighthouse | mkcert | newman | nginx-linter | npkill | npm-check | npm-check-updates | npm-merge-driver | nve | nx | packagephobia-cli | pegjs | prettier | prettier-package-json | pwned | qnm | qrcode-terminal | react-native | readme-md-generator | resume-cli | selenium-side-runner | trello-cli | trucker | unimported | verdaccio | why-is-node-running | wait-on) n y "$cmd" "$@" ;;
 
     *) npm "$cmd" "$@" ;;
     esac
