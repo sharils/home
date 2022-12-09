@@ -19,7 +19,14 @@ v() {
   dco) vim docker-compose.yml ;;
   di) vim .dockerignore ;;
   dk) vim Dockerfile ;;
-  i) vim index."${*:-tsx}" ;;
+  i)
+    cmd="${1:-html}"
+    shift
+    case "$cmd" in
+      c) cmd=css ;;
+    esac
+    vim "index.$cmd"
+    ;;
   mk) vim Makefile ;;
   ns) vim server.js ;;
   pj) vim package.json ;;
