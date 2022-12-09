@@ -90,9 +90,9 @@ n() {
 
   vercel) n x vercel --token="${VERCEL_TOKEN:?}" "$@" ;;
 
-  yo) n x --package yo --package "generator-$1" -- yo "$@" ;;
+  y) npx --yes "$@" ;;
 
-  x) npx --yes "$@" ;;
+  yo) n x --package yo --package "generator-$1" -- yo "$@" ;;
 
   *)
     if script="$(npm pkg get "scripts.$cmd" 2>/dev/null)" &&
