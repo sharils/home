@@ -14,6 +14,7 @@ k() {
 
   d)
     keepassxc-cli diceware --words "${@:-12}" | tr -d \\n | pbcopy
+    pbpaste | wc
     ;;
 
   g)
