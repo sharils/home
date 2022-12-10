@@ -130,6 +130,10 @@ snippet cd "cd || return" w
 cd ${1:"$@"} || return
 endsnippet
 
+snippet e "echo" w
+echo $3${1:'==> ${2:index.html} <=='}
+endsnippet
+
 snippet gp "<<'GNUPLOT'" w
 <<'GNUPLOT'`echo \\n`$1`echo \\n`GNUPLOT
 endsnippet
