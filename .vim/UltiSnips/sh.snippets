@@ -399,8 +399,16 @@ snippet 8 "$8" i
 "\$8"
 endsnippet
 
-snippet 9 "$9" i
-"\$9"
+snippet /(?<!\$)9/ "$9" r
+"\$9$1"
+endsnippet
+
+snippet $9 "$9" i
+\${9}
+endsnippet
+
+snippet ${9} "${9}" i
+\${9:-$1}
 endsnippet
 
 snippet @ "$@" i
