@@ -2,13 +2,13 @@
 
 l() {
   if [ ! -t 0 ]; then
-    less
+    b "$@" --style=plain
     return
   fi
 
   for arg in "$@"; do
     if [ -f "$arg" ]; then
-      less "$@"
+      b -p "$@"
       return
     fi
   done
