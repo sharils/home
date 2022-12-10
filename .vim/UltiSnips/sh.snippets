@@ -371,8 +371,16 @@ snippet 1 "$1" i
 "\$1"
 endsnippet
 
-snippet 2 "$2" i
-"\$2"
+snippet /(?<!\$)2/ "$2" r
+"\$2$1"
+endsnippet
+
+snippet $2 "$2" i
+\${2}
+endsnippet
+
+snippet ${2} "${2}" i
+\${2:-$1}
 endsnippet
 
 snippet /(?<!\$)3/ "$3" r
