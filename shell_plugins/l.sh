@@ -1,9 +1,17 @@
 #!/usr/bin/env sh
 
 l() {
-  if [ -d "$1" ]; then
-    ls -ahl "$@"
-  else
-    less "$@"
+  if [ ! -t 0 ]; then
+    less
+    return
   fi
+
+  for arg in "$@"; do
+    if [ -f "$arg" ]; then
+      less "$@"
+      return
+    fi
+  done
+
+  ls "${@:--ahl}"
 }
