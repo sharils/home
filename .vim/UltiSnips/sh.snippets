@@ -387,8 +387,16 @@ snippet 5 "$5" i
 "\$5"
 endsnippet
 
-snippet 6 "$6" i
-"\$6"
+snippet /(?<!\$)6/ "$6" r
+"\$6$1"
+endsnippet
+
+snippet $6 "$6" i
+\${6}
+endsnippet
+
+snippet ${6} "${6}" i
+\${6:-$1}
 endsnippet
 
 snippet /(?<!\$)7/ "$7" r
