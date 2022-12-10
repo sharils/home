@@ -9,6 +9,10 @@ snippet /^a/ "alias" r
 alias $1='$2'
 endsnippet
 
+snippet /^e/ "alias" r
+export $0
+endsnippet
+
 
 priority 3
 
@@ -40,10 +44,6 @@ endsnippet
 snippet el "else" b
 else
 	${1::}
-endsnippet
-
-snippet e "export" b
-export $0
 endsnippet
 
 snippet fn "fn() {}" b
