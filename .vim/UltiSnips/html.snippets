@@ -1,12 +1,27 @@
 snippet h "html" "len(snip.buffer) == 1" e
+<!-- https://www.sitepoint.com/a-basic-html5-template/ -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="${1:en}">
 	<head>
-		<meta charset="utf-8">
-		<title>$1</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>${2:Example Domain}</title>
+		<meta name="description" content="${3:The domain names are used widely in books, tutorials, sample network configurations, and generally as examples for the use of domain names}" />
+		<meta name="author" content="${4:IANA}" />
+		<meta property="og:title" content="$2" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="${5:https://example.com}" />
+		<meta property="og:description" content="$3" />
+		<meta property="og:image" content="${6:image.png}" />
+		<link rel="icon" href="${7:/favicon.ico}" />
+		<link rel="icon" href="${8:/favicon.svg}" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="${9:/apple-touch-icon.png}" />
+		<link rel="stylesheet" href="${10:index.css?v=1.0}" />
 	</head>
+
 	<body>
-		$2
+		<!-- your content here... -->
+		<script src="${11:index.js}"></script>
 	</body>
 </html>
 endsnippet
