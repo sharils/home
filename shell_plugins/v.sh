@@ -25,6 +25,7 @@ v() {
     case "$cmd" in
       c) cmd=css ;;
       h) cmd=html ;;
+      j) cmd=jsx ;;
     esac
     vim "index.$cmd"
     ;;
