@@ -395,8 +395,16 @@ snippet 7 "$7" i
 "\$7"
 endsnippet
 
-snippet 8 "$8" i
-"\$8"
+snippet /(?<!\$)8/ "$8" r
+"\$8$1"
+endsnippet
+
+snippet $8 "$8" i
+\${8}
+endsnippet
+
+snippet ${8} "${8}" i
+\${8:-$1}
 endsnippet
 
 snippet /(?<!\$)9/ "$9" r
