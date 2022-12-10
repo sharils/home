@@ -8,6 +8,8 @@ x() {
 
   +) chmod -vv +x "$@" ;;
 
+  -) chmod -vv -x "$@" ;;
+
   5424) open 'https://www.rfc-editor.org/rfc/rfc5424.html#page-11' ;;
 
   8601) open 'https://en.wikipedia.org/wiki/ISO_8601' ;;
