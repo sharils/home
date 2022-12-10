@@ -363,8 +363,16 @@ snippet * "$*" i
 "$*"
 endsnippet
 
-snippet 0 "$0" i
-"\$0"
+snippet /(?<!\$)0/ "$0" r
+"\$0$1"
+endsnippet
+
+snippet $0 "$0" i
+\${0}
+endsnippet
+
+snippet ${0} "${0}" i
+\${0:-$1}
 endsnippet
 
 snippet /(?<!\$)1/ "$1" r
