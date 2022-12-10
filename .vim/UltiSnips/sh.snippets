@@ -16,8 +16,8 @@ endsnippet
 
 priority 3
 
-snippet node "export PATH=/usr/local/opt/node@16/bin:$PATH" b
-export PATH="/usr/local/opt/${1:node@16}/bin:$PATH"
+snippet 'set -o errexit -o nounset -o xtrace' "-o pipefail" b
+set -o errexit -o nounset -o xtrace -o pipefail
 endsnippet
 
 snippet - "${ENV}=${ENV:-ENV}" b
@@ -64,12 +64,8 @@ if ${1::}; then
 fi
 endsnippet
 
-snippet set "set -eux" b
-set -o errexit -o nounset -o xtrace
-endsnippet
-
-snippet 'set -o errexit -o nounset -o xtrace' "-o pipefail" b
-set -o errexit -o nounset -o xtrace -o pipefail
+snippet node "export PATH=/usr/local/opt/node@16/bin:$PATH" b
+export PATH="/usr/local/opt/${1:node@16}/bin:$PATH"
 endsnippet
 
 snippet sc "# shellcheck disable=" b
@@ -78,6 +74,10 @@ endsnippet
 
 snippet scs "# shellcheck disable=" b
 # shellcheck source=${1:/dev/null}
+endsnippet
+
+snippet set "set -eux" b
+set -o errexit -o nounset -o xtrace
 endsnippet
 
 snippet sh "shift" b
@@ -98,112 +98,28 @@ endsnippet
 
 priority 2
 
-snippet > ">&2" w
->&2
-endsnippet
-
-snippet E "$EDITOR" w
-$EDITOR
-endsnippet
-
-snippet ROOT "ROOT" w
-#!/usr/bin/env sh
-set -o errexit -o nounset -o xtrace
-
-[ "$(basename "\$0")" != "sh-minniebavaro-6780.sh" ] && echo 'EX_USAGE: no source' 1>&2 && exit 64
-ROOT="$(dirname "\$0")"; export ROOT
+snippet != "!=" w
+[ ${1:""} != ${2:""} ]
 endsnippet
 
 snippet # "#" w
 $#
 endsnippet
 
-snippet < "<<'EOF'" w
-<<'${1:EOF}'`echo \\n`$2`echo \\n`$1
+snippet -G "-G" w
+[ -G ${1:""} ]
 endsnippet
 
-snippet c "cat" w
-cat $0
+snippet -L "-L" w
+[ -L ${1:""} ]
 endsnippet
 
-snippet cd "cd || return" w
-cd ${1:"$@"} || return
+snippet -O "-O" w
+[ -O ${1:""} ]
 endsnippet
 
-snippet e "echo" w
-echo $3${1:'==> ${2:index.html} <=='}
-endsnippet
-
-snippet gp "<<'GNUPLOT'" w
-<<'GNUPLOT'`echo \\n`$1`echo \\n`GNUPLOT
-endsnippet
-
-snippet home "home" w
-"$HOME"
-endsnippet
-
-snippet json "<<'JSON'" w
-<<'JSON'`echo \\n`$1`echo \\n`JSON
-endsnippet
-
-snippet lua "<<'LUA'" w
-<<'LUA'`echo \\n`$1`echo \\n`LUA
-endsnippet
-
-snippet pl "<<'PERL'" w
-<<'PERL'`echo \\n`$1`echo \\n`PERL
-endsnippet
-
-snippet pwd "$PWD" w
-"$PWD"
-endsnippet
-
-snippet py "<<'PYTHON'" w
-<<'PYTHON'`echo \\n`$1`echo \\n`PYTHON
-endsnippet
-
-snippet sh "<<'SHELL'" w
-<<'SHELL'`echo \\n`set -o errexit -o nounset -o xtrace
-
-$1`echo \\n`SHELL
-endsnippet
-
-snippet txt "<<'TEXT'" w
-<<'TEXT'`echo \\n`$1`echo \\n`TEXT
-endsnippet
-
-snippet user "user" w
-"$USER"
-endsnippet
-
-snippet p "printf" w
-printf ${1:${2:%s} ${3:""}}
-endsnippet
-
-snippet p\ "printf %s " w
-printf '${1:a}\\\n%s' "$2"
-endsnippet
-
-snippet /(?<!-)r/ "return" r
-return $0
-endsnippet
-
-snippet read "IFS= read -r" w
-IFS= read -r ${1:file}
-endsnippet
-
-snippet sed "sed -i" w
-sed -i '' $0
-endsnippet
-
-snippet setx "set -x && set +x" w
-set -x && ${VISUAL} && set +x
-endsnippet
-
-snippet wh "while do done" w
-while ${1:false}; do
-	${2::}
-done
+snippet -S "-S" w
+[ -S ${1:""} ]
 endsnippet
 
 snippet -b "-b" w
@@ -222,12 +138,24 @@ snippet -e "-e" w
 [ -e ${1:""} ]
 endsnippet
 
+snippet -eq "-eq" w
+[ ${1:""} -eq ${2:""} ]
+endsnippet
+
 snippet -f "-f" w
 [ -f ${1:""} ]
 endsnippet
 
 snippet -g "-g" w
 [ -g ${1:""} ]
+endsnippet
+
+snippet -ge "-ge" w
+[ ${1:""} -ge ${2:""} ]
+endsnippet
+
+snippet -gt "-gt" w
+[ ${1:""} -gt ${2:""} ]
 endsnippet
 
 snippet -h "-h" w
@@ -238,8 +166,20 @@ snippet -k "-k" w
 [ -k ${1:""} ]
 endsnippet
 
+snippet -le "-le" w
+[ ${1:""} -le ${2:""} ]
+endsnippet
+
+snippet -lt "-lt" w
+[ ${1:""} -lt ${2:""} ]
+endsnippet
+
 snippet -n "-n" w
 [ -n ${1:""} ]
+endsnippet
+
+snippet -ne "-ne" w
+[ ${1:""} -ne ${2:""} ]
 endsnippet
 
 snippet -p "-p" w
@@ -274,76 +214,136 @@ snippet -z "-z" w
 [ -z ${1:""} ]
 endsnippet
 
-snippet -L "-L" w
-[ -L ${1:""} ]
+snippet /(?<!-)r/ "return" r
+return $0
 endsnippet
 
-snippet -O "-O" w
-[ -O ${1:""} ]
-endsnippet
-
-snippet -G "-G" w
-[ -G ${1:""} ]
-endsnippet
-
-snippet -S "-S" w
-[ -S ${1:""} ]
+snippet < "<<'EOF'" w
+<<'${1:EOF}'`echo \\n`$2`echo \\n`$1
 endsnippet
 
 snippet = "=" w
 [ ${1:""} = ${2:""} ]
 endsnippet
 
-snippet != "!=" w
-[ ${1:""} != ${2:""} ]
+snippet > ">&2" w
+>&2
 endsnippet
 
-snippet -eq "-eq" w
-[ ${1:""} -eq ${2:""} ]
+snippet E "$EDITOR" w
+$EDITOR
 endsnippet
 
-snippet -ne "-ne" w
-[ ${1:""} -ne ${2:""} ]
+snippet ROOT "ROOT" w
+#!/usr/bin/env sh
+set -o errexit -o nounset -o xtrace
+
+[ "$(basename "\$0")" != "sh-minniebavaro-6780.sh" ] && echo 'EX_USAGE: no source' 1>&2 && exit 64
+ROOT="$(dirname "\$0")"; export ROOT
 endsnippet
 
-snippet -gt "-gt" w
-[ ${1:""} -gt ${2:""} ]
+snippet c "cat" w
+cat $0
 endsnippet
 
-snippet -ge "-ge" w
-[ ${1:""} -ge ${2:""} ]
-endsnippet
-
-snippet -lt "-lt" w
-[ ${1:""} -lt ${2:""} ]
-endsnippet
-
-snippet -le "-le" w
-[ ${1:""} -le ${2:""} ]
-endsnippet
-
-snippet dateU "date -u +%Y-%m-%dT%H:%M:%SZ" w
-date -u '+%Y-%m-%dT%H:%M:%SZ'
-endsnippet
-
-snippet dateu "date -u +%Y%m%dT%H%M%SZ" w
-date -u '+%Y%m%dT%H%M%SZ'
+snippet cd "cd || return" w
+cd ${1:"$@"} || return
 endsnippet
 
 snippet dateI "date +%Y-%m-%dT%H:%M:%S%z" w
 date '+%Y-%m-%dT%H:%M:%S%z'
 endsnippet
 
+snippet dateU "date -u +%Y-%m-%dT%H:%M:%SZ" w
+date -u '+%Y-%m-%dT%H:%M:%SZ'
+endsnippet
+
 snippet datei "date +%Y%m%dT%H%M%S%z" w
 date '+%Y%m%dT%H%M%S%z'
+endsnippet
+
+snippet dater "date -ujf %s +%Y-%m-%dT%H:%M:%SZ" w
+date -ujf '%s +%Y-%m-%dT%H:%M:%SZ'
 endsnippet
 
 snippet dates "date +%s" w
 date '+%s'
 endsnippet
 
-snippet dater "date -ujf %s +%Y-%m-%dT%H:%M:%SZ" w
-date -ujf '%s +%Y-%m-%dT%H:%M:%SZ'
+snippet dateu "date -u +%Y%m%dT%H%M%SZ" w
+date -u '+%Y%m%dT%H%M%SZ'
+endsnippet
+
+snippet e "echo" w
+echo $3${1:'==> ${2:index.html} <=='}
+endsnippet
+
+snippet gp "<<'GNUPLOT'" w
+<<'GNUPLOT'`echo \\n`$1`echo \\n`GNUPLOT
+endsnippet
+
+snippet home "home" w
+"$HOME"
+endsnippet
+
+snippet json "<<'JSON'" w
+<<'JSON'`echo \\n`$1`echo \\n`JSON
+endsnippet
+
+snippet lua "<<'LUA'" w
+<<'LUA'`echo \\n`$1`echo \\n`LUA
+endsnippet
+
+snippet p "printf" w
+printf ${1:${2:%s} ${3:""}}
+endsnippet
+
+snippet p\ "printf %s " w
+printf '${1:a}\\\n%s' "$2"
+endsnippet
+
+snippet pl "<<'PERL'" w
+<<'PERL'`echo \\n`$1`echo \\n`PERL
+endsnippet
+
+snippet pwd "$PWD" w
+"$PWD"
+endsnippet
+
+snippet py "<<'PYTHON'" w
+<<'PYTHON'`echo \\n`$1`echo \\n`PYTHON
+endsnippet
+
+snippet read "IFS= read -r" w
+IFS= read -r ${1:file}
+endsnippet
+
+snippet sed "sed -i" w
+sed -i '' $0
+endsnippet
+
+snippet setx "set -x && set +x" w
+set -x && ${VISUAL} && set +x
+endsnippet
+
+snippet sh "<<'SHELL'" w
+<<'SHELL'`echo \\n`set -o errexit -o nounset -o xtrace
+
+$1`echo \\n`SHELL
+endsnippet
+
+snippet txt "<<'TEXT'" w
+<<'TEXT'`echo \\n`$1`echo \\n`TEXT
+endsnippet
+
+snippet user "user" w
+"$USER"
+endsnippet
+
+snippet wh "while do done" w
+while ${1:false}; do
+	${2::}
+done
 endsnippet
 
 
@@ -357,14 +357,6 @@ priority 1
 
 snippet $ "$" i
 "$$1"
-endsnippet
-
-snippet \ "'\\'" i
-'\\${VISUAL}'
-endsnippet
-
-snippet \' "'\''" i
-'\''
 endsnippet
 
 snippet * "$*" i
@@ -413,4 +405,12 @@ endsnippet
 
 snippet @ "$@" i
 "$@"
+endsnippet
+
+snippet \ "'\\'" i
+'\\${VISUAL}'
+endsnippet
+
+snippet \' "'\''" i
+'\''
 endsnippet
