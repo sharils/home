@@ -491,8 +491,16 @@ snippet ${9} "${9}" i
 \${9:-$1}
 endsnippet
 
-snippet @ "$@" i
-"$@"
+snippet /(?<!\$)@/ "$@" r
+"\$@$1"
+endsnippet
+
+snippet $@ "$@" i
+\${@}
+endsnippet
+
+snippet ${@} "${@}" i
+\${@:-$1}
 endsnippet
 
 snippet \ "'\\'" i
