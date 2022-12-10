@@ -26,6 +26,7 @@ v() {
       c) cmd=css ;;
       h) cmd=html ;;
       j) cmd=jsx ;;
+      t) cmd=tsx ;;
     esac
     vim "index.$cmd"
     ;;
