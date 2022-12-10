@@ -1,10 +1,17 @@
 #!/usr/bin/env sh
 
 b() {
-  if [ $# -eq 0 ] || [ -r "$1" ]; then
-    bat "$@"
+  if [ ! -t 0 ]; then
+    bat --language "$@"
     return
   fi
+
+  for arg in "$@"; do
+    if [ -f "$arg" ]; then
+      bat "$@"
+      return
+    fi
+  done
 
   cmd="$1"
   shift
