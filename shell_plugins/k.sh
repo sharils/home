@@ -13,7 +13,7 @@ k() {
     ;;
 
   d)
-    keepassxc-cli diceware --words "${@:-12}" | tr -d \\n | pbcopy
+    keepassxc-cli diceware --words "${@:-12}" | sed "s/$/ $(keepassxc-cli generate --numeric --length 1)/" | perl -pe 's/\b\w/\U$&/g' | xargs -n1 | sort -R | xargs | tr -d \\n | pbcopy
     pbpaste | wc
     ;;
 
