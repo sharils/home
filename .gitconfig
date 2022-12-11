@@ -36,6 +36,7 @@
 [gpg "ssh"]
 	allowedSignersFile = ~/git/github.com/sharils/home/gitignore.allowedSignersFile
 [include]
+	path = ~/git/github.com/sharils/home/delta.gitconfig
 	path = ~/git/github.com/sharils/home/gitignore.gitconfig
 [init]
 	defaultBranch = main
