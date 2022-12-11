@@ -38,12 +38,10 @@
 [include]
 	path = ~/git/github.com/sharils/home/delta.gitconfig
 	path = ~/git/github.com/sharils/home/gitignore.gitconfig
+	path = ~/git/github.com/sharils/home/vim-conflicted.gitconfig
 [init]
 	defaultBranch = main
 [merge]
 	conflictstyle = diff3
-	tool = vim-conflicted
 [mergetool]
 	keepBackup = false
-[mergetool "vim-conflicted"]
-	cmd = vim +Conflicted
