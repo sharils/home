@@ -72,7 +72,7 @@ n() {
     n nx-workspace --name "$(basename "$PWD")" --preset next --appName "${cmd:-appName}" --style scss --nxCloud "$@"
     ;;
 
-  ncu) n npm-check-updates "$@" ;;
+  cu) n npm-check-updates "$@" ;;
 
   p)
     cmd="$1"
