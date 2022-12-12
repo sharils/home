@@ -127,6 +127,25 @@ EOF
 
   screen) screen -xRRe^Gg "$@" ;;
 
+  sh)
+    cmd="$1"
+    shift
+    case "$cmd" in
+    t)
+      echo >&2 '==> sh <=='
+      x sh | tee sh
+      x + sh
+      ;;
+    *)
+      cat <<'EOF'
+#!/usr/bin/env sh
+
+echo 'Hello sh!'
+EOF
+      ;;
+    esac
+    ;;
+
   ssh) ssh -t "$@" screen -xRRe^Gg ;;
 
   ssh-copy-id) ssh-copy-id -o PreferredAuthentications=password -i "$HOME/.ssh/id_rsa.pub" "$@" ;;
