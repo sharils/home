@@ -41,12 +41,10 @@ g() {
   i)
     git init "$@"
     git commit --allow-empty --message "Initialize empty Git repository"
-    ;;
-
-  ia)
-    g i "$@"
-    git add .
-    git commit --all
+    if [ "$(git status --short)" != '' ]; then
+      git add .
+      git commit
+    fi
     ;;
 
   mr)
