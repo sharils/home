@@ -74,6 +74,14 @@ n() {
 
   cu) n npm-check-updates "$@" ;;
 
+  npkill)
+    if [ $# -eq 0 ]; then
+      rm -fr ./node_modules
+    else
+      n y npkill "$@"
+    fi
+    ;;
+
   p)
     cmd="$1"
     shift
