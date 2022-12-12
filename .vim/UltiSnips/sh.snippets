@@ -59,7 +59,7 @@ done
 endsnippet
 
 snippet if "if" b
-if ${1::}; then
+if ${1:[ $# -eq 0 ]}; then
 	${2::}
 fi
 endsnippet
