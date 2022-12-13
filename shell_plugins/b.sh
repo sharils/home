@@ -2,7 +2,7 @@
 
 b() {
   if [ ! -t 0 ]; then
-    bat --language "$@"
+    bat --language "${@:-txt}"
     return
   fi
 
