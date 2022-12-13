@@ -46,8 +46,17 @@
     "disabledApps" : {
 
     },
+    "dragFromStage" : {
+      "int" : 0
+    },
+    "enhancedUI" : {
+      "int" : 1
+    },
     "footprintAlpha" : {
       "float" : 0.30000001192092896
+    },
+    "footprintAnimationDurationMultiplier" : {
+      "float" : 0
     },
     "footprintBorderWidth" : {
       "float" : 2
@@ -84,6 +93,12 @@
     },
     "missionControlDragging" : {
       "int" : 1
+    },
+    "missionControlDraggingAllowedOffscreenDistance" : {
+      "float" : 25
+    },
+    "missionControlDraggingDisallowedDuration" : {
+      "int" : 250
     },
     "moveCursor" : {
       "int" : 0
@@ -161,7 +176,7 @@
       "int" : 0
     },
     "SUEnableAutomaticChecks" : {
-      "bool" : false
+      "bool" : true
     },
     "todo" : {
       "int" : 0
@@ -211,7 +226,7 @@
       "modifierFlags" : 262144
     },
     "nextDisplay" : {
-      "keyCode" : 69,
+      "keyCode" : 41,
       "modifierFlags" : 262144
     },
     "previousDisplay" : {
@@ -239,5 +254,5 @@
       "modifierFlags" : 262144
     }
   },
-  "version" : "65"
+  "version" : "70"
 }
