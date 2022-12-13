@@ -131,7 +131,7 @@ n() {
     fi
 
     case "$cmd" in
-    @ionic/cli | @neutralinojs/neu | baapan | backstopjs | browser-sync | bundle-phobia | chance-cli | codesandbox | composerize | cost-of-modules | covgen | csv2json | cypress | degit | eslint | gitignore | jscodeshift | jscpd | knip | license | license-checker | lighthouse | mkcert | newman | nginx-linter | npm-check | npm-check-updates | npm-merge-driver | nve | nx | packagephobia-cli | pegjs | prettier | prettier-package-json | pwned | qnm | qrcode-terminal | react-native | readme-md-generator | resume-cli | selenium-side-runner | trello-cli | trucker | unimported | verdaccio | why-is-node-running | wait-on) n y "$cmd" "$@" ;;
+    @ionic/cli | @neutralinojs/neu | baapan | backstopjs | browser-sync | bundle-phobia | chance-cli | codesandbox | composerize | cost-of-modules | covgen | csv2json | cypress | degit | eslint | gitignore | jscodeshift | jscpd | knip | license | license-checker | lighthouse | mkcert | nanoid | newman | nginx-linter | npm-check | npm-check-updates | npm-merge-driver | nve | nx | packagephobia-cli | pegjs | prettier | prettier-package-json | pwned | qnm | qrcode-terminal | react-native | readme-md-generator | resume-cli | selenium-side-runner | trello-cli | trucker | unimported | verdaccio | why-is-node-running | wait-on) n y "$cmd" "$@" ;;
 
     *) npm "$cmd" "$@" ;;
     esac
