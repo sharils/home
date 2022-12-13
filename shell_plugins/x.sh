@@ -139,6 +139,7 @@ EOF
     *)
       cat <<'EOF'
 #!/usr/bin/env sh
+set -o errexit -o nounset -o xtrace
 
 echo 'Hello sh!'
 EOF
