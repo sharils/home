@@ -74,14 +74,6 @@ n() {
 
   cu) n npm-check-updates "$@" ;;
 
-  npkill)
-    if [ $# -eq 0 ]; then
-      rm -fr ./node_modules
-    else
-      n y npkill "$@"
-    fi
-    ;;
-
   p)
     cmd="$1"
     shift
@@ -93,6 +85,14 @@ n() {
     awk | eex | elm | groovy | nginx | packagejson | pegjs | pgsql | sh | sql | ssh-config | tsconfig) n y --package prettier --package "prettier-plugin-$cmd" -- prettier "$@" ;;
     *) n y prettier --write "**/*.js" "**/*.jsx" "**/*.ts" "**/*.tsx" "$@" ;;
     esac
+    ;;
+
+  pkill)
+    if [ $# -eq 0 ]; then
+      rm -fr ./node_modules
+    else
+      n y npkill "$@"
+    fi
     ;;
 
   qt) n qrcode-terminal "$@" ;;
