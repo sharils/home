@@ -132,9 +132,10 @@ EOF
     shift
     case "$cmd" in
     t)
-      echo >&2 '==> sh <=='
-      x sh | tee sh
-      x + sh
+      cmd="${*:-sh}"
+      echo >&2 "==> $cmd <=="
+      x sh | tee "$cmd"
+      x + "$cmd"
       ;;
     *)
       cat <<'EOF'
