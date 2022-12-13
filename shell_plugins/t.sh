@@ -22,11 +22,10 @@ t() {
     cmd="${1:-t}"
     shift
     case "$cmd" in
-    q) cmd=QuickNote.md ;;
-    t) cmd=todo.txt ;;
-    w) cmd=work.txt ;;
+    q) $EDITOR "$@" ~/Sync/todo/QuickNote.md ;;
+    t) $EDITOR "$@" ~/Sync/todo/todo.txt ;;
+    w) $EDITOR "$@" ~/Sync/todo/work.txt ;;
     esac
-    $EDITOR ~/Sync/todo/"$cmd"
     ;;
 
   h) todo.sh -vv help ;;
