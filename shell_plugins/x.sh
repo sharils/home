@@ -26,6 +26,8 @@ x() {
     printf "data:%s;base64,%s" "$cmd" "$(base64 "$@")"
     ;;
 
+  diff) diff --color --unified "$@" ;;
+
   editorconfig)
     cat <<'EOF' >.editorconfig
 root = true
