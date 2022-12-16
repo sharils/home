@@ -18,6 +18,7 @@ d() {
   U) date -u +%Y%m%dT%H%M%SZ ;;
   u) date -u +%FT%TZ ;;
   s) date -u +%s ;;
+  v) date -jf %F -v"${1:-+0d}" "${2:-"$(date +%F)"}" +%F ;;
   *) date "$@" ;;
 
   esac
