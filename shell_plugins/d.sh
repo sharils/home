@@ -1,12 +1,7 @@
 #!/usr/bin/env sh
 
 d() {
-  if [ $# -eq 0 ]; then
-    date
-    return
-  fi
-
-  cmd="$1"
+  cmd="${1:-i}"
   shift
 
   case $cmd in
