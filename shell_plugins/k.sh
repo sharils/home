@@ -13,7 +13,26 @@ k() {
     ;;
 
   d)
-    keepassxc-cli diceware --words "${@:-12}" | sed "s/$/ $(keepassxc-cli generate --numeric --length 1)/" | perl -pe 's/\b\w/\U$&/g' | xargs -n1 | sort -R | xargs | tr -d \\n | pbcopy
+    # -4 for numeric and special
+    cmd="$((${1:-100} - 4))"
+    for words in {12..4}; do
+      pass="$(keepassxc-cli diceware --words "$words")"
+      [ "${#pass}" -lt "$cmd" ] && break
+    done
+    for _ in {1..10}; do
+      longer="$(keepassxc-cli diceware --words "$words")"
+      [ "${#pass}" -lt "${#longer}" ] && [ "${#longer}" -lt "$cmd" ] && pass="$longer"
+    done
+    printf '%s %s %s' "$pass" \
+      "$(keepassxc-cli generate --length 1 --numeric)" \
+      "$(keepassxc-cli generate --length 1 --custom "!'()*-.~")" |
+      xargs -n1 |
+      sort -R |
+      xargs |
+      perl -pe 's/\b\w/\U$&/g' |
+      tr -d \\n |
+      tr ' ' _ |
+      pbcopy
     pbpaste | wc
     ;;
 
