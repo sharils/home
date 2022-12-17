@@ -10,7 +10,7 @@ d() {
   e) direnv edit . && chmod 600 .envrc ;;
   I) d i "$@" | tr -d '[:punct:]' ;;
   i) date -Iseconds "$@" | sed "s/:00$//" ;;
-  U) date -u +%Y%m%dT%H%M%SZ ;;
+  U) d I -u ;;
   u) d i -u ;;
   s) date -u +%s ;;
   v) date -jf %F -v"${1:-+0d}" "${2:-"$(date +%F)"}" +%F ;;
