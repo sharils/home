@@ -8,7 +8,7 @@ d() {
 
   a) direnv allow ;;
   e) direnv edit . && chmod 600 .envrc ;;
-  I) date +%Y%m%dT%H%M%S%z | sed "s/00$//" ;;
+  I) d i "$@" | tr -d '[:punct:]' ;;
   i) date -Iseconds "$@" | sed "s/:00$//" ;;
   U) date -u +%Y%m%dT%H%M%SZ ;;
   u) date -u +%FT%TZ ;;
