@@ -25,7 +25,7 @@ k() {
     done
     printf '%s %s %s' "$pass" \
       "$(keepassxc-cli generate --length 1 --numeric)" \
-      "$(keepassxc-cli generate --length 1 --custom "!'()*-.~")" |
+      "$(keepassxc-cli generate --length 1 --custom "${K_D_CUSTOM:-"!'()*-.~"}")" |
       xargs -n1 |
       sort -R |
       xargs |
