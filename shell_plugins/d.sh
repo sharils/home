@@ -6,6 +6,7 @@ d() {
 
   case $cmd in
 
+  0) date -ujf%s 0 "${@:-+%FT%T}" ;;
   a) direnv allow ;;
   e) direnv edit . && chmod 600 .envrc ;;
   I) d i "$@" | tr -d '[:punct:]' ;;
