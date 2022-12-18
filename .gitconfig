@@ -29,6 +29,8 @@
 [core]
 	autocrlf = input
 	excludesfile = ~/.gitignore
+[diff]
+	tool = vimdiff
 [fetch]
 	prune = true
 [gpg]
