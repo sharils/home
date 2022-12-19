@@ -23,10 +23,10 @@ v() {
     cmd="${1:-html}"
     shift
     case "$cmd" in
-      c) cmd=css ;;
-      h) cmd=html ;;
-      j) cmd=jsx ;;
-      t) cmd=tsx ;;
+    c) cmd=css ;;
+    h) cmd=html ;;
+    j) cmd=jsx ;;
+    t) cmd=tsx ;;
     esac
     vim "index.$cmd"
     ;;
