@@ -7,6 +7,6 @@ wb() {
     -S) wb search "$@" ;;
     i) wb install "$@" ;;
     ls) wb list "$@" ;;
-    *) whalebrew "$@" ;;
+    *) whalebrew "$cmd" "$@" ;;
   esac
 }
