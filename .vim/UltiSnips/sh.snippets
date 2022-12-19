@@ -53,7 +53,7 @@ ${1:f}() {
 endsnippet
 
 snippet for "for" b
-for ${1:item} in ${2:"$items"}; do
+for ${1:arg} in ${2:"$@"}; do
 	${3::}
 done
 endsnippet
