@@ -45,9 +45,9 @@ t() {
     ;;
 
   p)
-    case "$cmd" in
-    1..999) todo.sh pri "$@" ;;
-    *) t oot post "${@:---editor}" ;;
+    case "$1" in
+    '' | *[!0-9]*) t oot post "${@:---editor}" ;;
+    *) todo.sh pri "$@" ;;
     esac
     ;;
 
