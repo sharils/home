@@ -58,7 +58,8 @@ g() {
     n) glab mr note "$@" ;;
     u) glab mr update "${@:---ready}" ;;
     v) glab mr view "$@" ;;
-    *) glab mr "$cmd" "$@" ;;
+    *[!0-9]*) glab mr "$cmd" "$@" ;;
+    *) g mr v "$cmd" "$@" ;;
     esac
     ;;
 
