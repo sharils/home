@@ -2,7 +2,7 @@
 
 v() {
   if [ $# -eq 0 ]; then
-    if [ -s Session.vim ]; then
+    if [ -f Session.vim ]; then
       vim -S Session.vim
     else
       vim +Obsession
