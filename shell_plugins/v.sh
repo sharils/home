@@ -53,8 +53,3 @@ v() {
 
   esac
 }
-
-# alias vpc='vim +PlugClean'
-# alias vpi='vim +PlugInstall'
-# alias vps="vim +'PlugSnapshot! ~/.vim/snapshot.vim'"
-# alias vpu='vim +PlugUpdate'
