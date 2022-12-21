@@ -56,7 +56,11 @@ g() {
     ls) g mr list "$@" ;;
     m) g mr merge "$@" --rebase --remove-source-branch --yes ;;
     n) g mr note "$@" ;;
-    u) g mr update "${@:---ready}" ;;
+    u)
+      cmd="$1"
+      shift
+      g mr update "$cmd" "${@:---ready}"
+      ;;
     r) g mr rebase "$@" ;;
     v) g mr view "$@" ;;
     *[!0-9]*) glab mr "$cmd" "$@" ;;
