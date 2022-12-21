@@ -1,13 +1,12 @@
 #!/usr/bin/env sh
 
 v() {
-  if [ $# -eq 0 ]; then
-    if [ -f Session.vim ]; then
-      vim -S Session.vim
-    else
-      vim +Obsession
-    fi
-    return
+  if [ $# -ge 1 ]; then
+    :
+  elif [ -f Session.vim ]; then
+    set -- -S Session.vim
+  else
+    set -- +Obsession
   fi
 
   cmd=$1
