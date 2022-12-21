@@ -229,6 +229,8 @@ bind generic Gbp<ENTER>    @hub browse -- pulls
 bind generic Gbr<ENTER>    @hub browse
 bind generic Gbrc<ENTER>   +sh -c 'hub browse --copy && hub browse --url'
 
+bind generic czz           !git stash push
+
 # Colors
 # ------
 
