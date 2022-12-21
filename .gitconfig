@@ -38,6 +38,8 @@
 	format = ssh
 [gpg "ssh"]
 	allowedSignersFile = ~/git/github.com/sharils/home/gitignore.allowedSignersFile
+[grep]
+	lineNumber = true
 [include]
 	path = ~/git/github.com/sharils/home/delta.gitconfig
 	path = ~/git/github.com/sharils/home/gitignore.gitconfig
