@@ -51,14 +51,14 @@ g() {
     cmd="${1:-ls}"
     shift
     case "$cmd" in
-    c) glab mr create --assignee "${G_MR_ASSIGNEE:?}" --reviewer "${G_MR_REVIEWER:?}" --target-branch "${G_MR_TARGET_BRANCH:-develop}" "$@" ;;
-    d) glab mr diff "$@" ;;
-    ls) glab mr list "$@" ;;
-    m) glab mr merge "$@" --rebase --remove-source-branch --yes ;;
-    n) glab mr note "$@" ;;
-    u) glab mr update "${@:---ready}" ;;
-    r) glab mr rebase "$@" ;;
-    v) glab mr view "$@" ;;
+    c) g mr create --assignee "${G_MR_ASSIGNEE:?}" --reviewer "${G_MR_REVIEWER:?}" --target-branch "${G_MR_TARGET_BRANCH:-develop}" "$@" ;;
+    d) g mr diff "$@" ;;
+    ls) g mr list "$@" ;;
+    m) g mr merge "$@" --rebase --remove-source-branch --yes ;;
+    n) g mr note "$@" ;;
+    u) g mr update "${@:---ready}" ;;
+    r) g mr rebase "$@" ;;
+    v) g mr view "$@" ;;
     *[!0-9]*) glab mr "$cmd" "$@" ;;
     *) g mr v "$cmd" "$@" ;;
     esac
