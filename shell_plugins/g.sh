@@ -54,7 +54,10 @@ g() {
     c) g mr create --assignee "${G_MR_ASSIGNEE:?}" --reviewer "${G_MR_REVIEWER:?}" --target-branch "${G_MR_TARGET_BRANCH:-develop}" "$@" ;;
     d) g mr diff "$@" ;;
     ls) g mr list "$@" ;;
-    m) g mr merge "$@" --rebase --remove-source-branch --yes ;;
+    m)
+      g mr merge "$@" --rebase --remove-source-branch --yes
+      g f
+      ;;
     n) g mr note "$@" ;;
     u)
       cmd="$1"
