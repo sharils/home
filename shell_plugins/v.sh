@@ -1,7 +1,10 @@
 #!/usr/bin/env sh
 
 v() {
-  if [ $# -ge 1 ]; then
+  if [ ! -t 0 ]; then
+    xargs -o vim "$@"
+    return
+  elif [ $# -ge 1 ]; then
     :
   elif [ -f Session.vim ]; then
     set -- -S Session.vim
