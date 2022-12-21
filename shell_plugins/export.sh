@@ -13,7 +13,7 @@ export EDITOR='vim'
 
 export ERL_AFLAGS="-kernel shell_history enabled"
 
-export GREP_OPTIONS='--color=auto'
+export GREP_OPTIONS='--line-number --color=auto'
 
 export LESS='--RAW-CONTROL-CHARS --ignore-case --no-init --quit-if-one-screen'
 
