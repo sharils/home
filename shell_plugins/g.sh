@@ -57,6 +57,7 @@ g() {
     m) glab mr merge "$@" --rebase --remove-source-branch --yes ;;
     n) glab mr note "$@" ;;
     u) glab mr update "${@:---ready}" ;;
+    r) glab mr rebase "$@" ;;
     v) glab mr view "$@" ;;
     *[!0-9]*) glab mr "$cmd" "$@" ;;
     *) g mr v "$cmd" "$@" ;;
