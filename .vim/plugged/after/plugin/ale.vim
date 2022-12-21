@@ -24,4 +24,3 @@ let g:ale_fixers.sh              = ['shfmt']
 let g:ale_fixers.typescript      = ['eslint', 'prettier']
 let g:ale_fixers.typescriptreact = ['eslint', 'prettier']
 let g:ale_fixers.yaml            = ['prettier']
-let g:ale_set_quickfix           = 1
