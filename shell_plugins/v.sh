@@ -2,7 +2,13 @@
 
 v() {
   if [ ! -t 0 ]; then
-    xargs -o vim "$@"
+    tmp="$(mktemp)"
+    cat >"$tmp"
+    if grep --extended-regexp ':\d+:' "$tmp" >/dev/null; then
+      echo "$tmp" | xargs -o vim +copen -q
+    else
+      xargs -o vim "$@" <"$tmp"
+    fi
     return
   elif [ $# -ge 1 ]; then
     :
