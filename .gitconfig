@@ -15,6 +15,7 @@
 	cm = commit --message
 	co = checkout
 	cr = revert
+	czz = stash push
 	f = fetch
 	fi = flow init
 	g = grep
