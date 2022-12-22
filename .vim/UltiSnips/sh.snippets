@@ -232,7 +232,7 @@ snippet = "=" w
 endsnippet
 
 snippet =~ "expr $var : $re > /dev/null" w
-expr ${1:"$var"} : ${2:".*foo[0-9]*"}> /dev/null
+expr ${1:"$var"} : ${2:'[0-9]*'} >/dev/null
 endsnippet
 
 snippet > ">&2" w
