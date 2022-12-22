@@ -60,9 +60,13 @@ g() {
       ;;
     n) g mr note "$@" ;;
     u)
-      cmd="$1"
-      shift
-      g mr update "$cmd" "${@:---ready}"
+      if ! expr "$*" : '^[[:space:][:digit:]][[:space:][:digit:]]*$' >/dev/null; then
+        g mr update "${@:---ready}"
+        return
+      fi
+      for cmd in "$@"; do
+        g mr update "$cmd" --ready
+      done
       ;;
     r) g mr rebase "$@" ;;
     v) g mr view "$@" ;;
