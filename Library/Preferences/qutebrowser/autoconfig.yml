@@ -8,6 +8,8 @@ config_version: 2
 settings:
   auto_save.session:
     global: true
+  content.headers.accept_language:
+    zh.wikipedia.org: zh-TW
   content.headers.user_agent:
     https://docs.google.com/presentation/*: Mozilla/5.0 (Macintosh; Intel Mac OS X
       10.15; rv:105.0) Gecko/20100101 Firefox/105.0
