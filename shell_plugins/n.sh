@@ -87,6 +87,8 @@ n() {
     esac
     ;;
 
+  pj) man "$@" package-json ;;
+
   pkill)
     if [ $# -eq 0 ]; then
       rm -fr ./node_modules
