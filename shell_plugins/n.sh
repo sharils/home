@@ -24,6 +24,8 @@ n() {
     done
     ;;
 
+  cu) n npm-check-updates "$@" ;;
+
   d) npm docs "$@" ;;
 
   dg)
@@ -71,8 +73,6 @@ n() {
     shift
     n nx-workspace --name "$(basename "$PWD")" --preset next --appName "${cmd:-appName}" --style scss --nxCloud "$@"
     ;;
-
-  cu) n npm-check-updates "$@" ;;
 
   p)
     cmd="$1"
