@@ -61,6 +61,21 @@ snippet con "constructor" w
 constructor
 endsnippet
 
+snippet copy "const copy = () => {}" w
+const copy = (d, data) => {
+	d.addEventListener(
+		"copy",
+		e => {
+			e.preventDefault();
+			e.clipboardData.clearData();
+			e.clipboardData.setData("text/plain", data);
+		},
+		{ once: true }
+	);
+	d.execCommand("copy");
+};
+endsnippet
+
 snippet e "export" b
 export $0
 endsnippet
