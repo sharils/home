@@ -231,6 +231,10 @@ snippet = "=" w
 [ ${1:""} = ${2:""} ]
 endsnippet
 
+snippet =~ "expr $var : $re > /dev/null" w
+expr ${1:"$var"} : ${2:".*foo[0-9]*"}> /dev/null
+endsnippet
+
 snippet > ">&2" w
 >&2
 endsnippet
