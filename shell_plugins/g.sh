@@ -55,17 +55,24 @@ g() {
     d) g mr diff "$@" ;;
     ls) g mr list "$@" ;;
     m)
-      g mr merge "$@" --rebase --remove-source-branch --yes
+      if ! expr "$*" : '^[[:space:][:digit:]][[:space:][:digit:]]*$' >/dev/null; then
+        g mr merge "$@" --rebase --remove-source-branch --yes
+        g f
+        return
+      fi
+      for cmd in "$@"; do
+        g mr merge "$cmd" --rebase --remove-source-branch --yes
+      done
       g f
       ;;
     n) g mr note "$@" ;;
     u)
       if ! expr "$*" : '^[[:space:][:digit:]][[:space:][:digit:]]*$' >/dev/null; then
-        g mr update "${@:---ready}"
+        until g mr update "${@:---ready}"; do sleep 1; done
         return
       fi
       for cmd in "$@"; do
-        g mr update "$cmd" --ready
+        g mr u "$cmd" --ready
       done
       ;;
     r) g mr rebase "$@" ;;
