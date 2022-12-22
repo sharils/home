@@ -293,6 +293,10 @@ snippet e "echo" w
 echo $3${1:'==> ${2:index.html} <=='}
 endsnippet
 
+snippet g "grep --extended-regexp >/dev/null" w
+grep --extended-regexp ${1:":\d+:"} ${2:README.md} >/dev/null
+endsnippet
+
 snippet gp "<<'GNUPLOT'" w
 <<'GNUPLOT'`echo \\n`$1`echo \\n`GNUPLOT
 endsnippet
