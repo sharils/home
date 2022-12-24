@@ -11,5 +11,11 @@ l() {
     return
   fi
 
-  lsd "$@"
+  cmd="$1"
+  shift
+  case "$cmd" in
+  '') lsd ;;
+  -*) lsd "$cmd" "$@" ;;
+  *) [ ! -e "$cmd" ] && l -"$cmd" "$@" ;;
+  esac
 }
