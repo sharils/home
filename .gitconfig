@@ -43,7 +43,6 @@
 [grep]
 	lineNumber = true
 [include]
-	path = ~/git/github.com/sharils/home/delta.gitconfig
 	path = ~/git/github.com/sharils/home/gitignore.gitconfig
 	path = ~/git/github.com/sharils/home/vim-conflicted.gitconfig
 [init]
