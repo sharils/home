@@ -95,7 +95,13 @@ g() {
 
   -*) grep "$cmd" "$@" ;;
 
-  *) git "$cmd" "$@" ;;
+  *)
+    if [ $# -eq 1 ] && [ -f "$1" ] && [ "$cmd" != a ] && [ "$cmd" != add ]; then
+      grep "$cmd" "$@"
+    else
+      git "$cmd" "$@"
+    fi
+    ;;
 
   esac
 }
