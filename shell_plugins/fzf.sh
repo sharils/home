@@ -13,6 +13,7 @@ export FZF_ALT_C_COMMAND="fd --hidden --unrestricted --color always --ignore-fil
 
 # https://github.com/junegunn/fzf/blob/master/README.md#supported-commands
 _fzf_setup_completion path v
+_fzf_setup_completion dir z
 
 _fzf_compgen_path() {
    $FZF_DEFAULT_COMMAND "$1"
