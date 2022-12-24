@@ -16,6 +16,7 @@ l() {
   case "$cmd" in
   '') lsd ;;
   -*) lsd "$cmd" "$@" ;;
+  t) l --tree "$@" ;;
   *) [ ! -e "$cmd" ] && l -"$cmd" "$@" ;;
   esac
 }
