@@ -11,5 +11,5 @@ l() {
     return
   fi
 
-  ls "${@:--Ahl}"
+  lsd "$@"
 }
