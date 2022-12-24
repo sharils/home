@@ -6,12 +6,10 @@ l() {
     return
   fi
 
-  for arg in "$@"; do
-    if [ -f "$arg" ]; then
-      b --plain "$@"
-      return
-    fi
-  done
+  if [ $# -eq 1 ] && [ -f "$1" ]; then
+    b --plain "$@"
+    return
+  fi
 
   ls "${@:--Ahl}"
 }
