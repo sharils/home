@@ -32,7 +32,7 @@ g() {
     esac
     ;;
 
-  cma) git commit --message "Apply $*" ;;
+  cma) g cm "Apply $*" ;;
 
   cs) git-crypt status "$@" ;;
 
