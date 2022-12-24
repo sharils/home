@@ -13,5 +13,5 @@ l() {
     fi
   done
 
-  ls "${@:--ahl}"
+  ls "${@:--Ahl}"
 }
