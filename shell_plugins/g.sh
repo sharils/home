@@ -86,8 +86,6 @@ g() {
 
   s) tig status "$@" ;;
 
-  y) git stash "$@" ;;
-
   yls) tig stash "$@" ;;
 
   *) git "$cmd" "$@" ;;
