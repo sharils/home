@@ -2,7 +2,7 @@
 
 l() {
   if [ ! -t 0 ]; then
-    b "${@:-txt}" --style=plain
+    b "${@:-man}" --style=plain
     return
   fi
 
