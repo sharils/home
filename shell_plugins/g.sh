@@ -2,6 +2,10 @@
 # dep: z.plugins.bash
 
 g() {
+  if ! [ -t 0 ]; then
+    grep "$@"
+    return
+  fi
   if [ $# -eq 0 ]; then
     tig
     return
