@@ -45,6 +45,7 @@ settings:
       gn: https://www.google.com.tw/search?q={}&lr=lang_zh-CN|lang_zh-TW&hl=zh-tw&tbs=lr:lang_1zh-CN|lang_1zh-TW,qdr:h,sbd:1&tbm=nws
       gt: https://www.google.com.tw/search?q={}&lr=lang_zh-CN|lang_zh-TW&sa=X&hl=zh-tw
       hex: https://hex.pm/packages?search={}&sort=recent_downloads
+      hn: https://hn.algolia.com/?q={}
       jc: https://www.junk-call.com/tw/{}
       jq: https://stedolan.github.io/jq/manual/#{}
       ma: https://search.marginalia.nu/search?query={}+&ref=opensearch
