@@ -191,7 +191,7 @@ EOF
 
   ssh) ssh -t "$@" screen -xRRe^Gg ;;
 
-  ssh-copy-id) ssh-copy-id -o PreferredAuthentications=password -i "$HOME/.ssh/id_rsa.pub" "$@" ;;
+  ssh-copy-id) ssh-copy-id -o PreferredAuthentications=password -i "$HOME/.ssh/id_ed25519.pub" "$@" ;;
 
   ssh-keygen)
     ssh-keygen -f ~/.ssh/id_ed25519 -t ed25519 -C "${@:?}"
