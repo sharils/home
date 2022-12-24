@@ -8,7 +8,7 @@ l() {
 
   for arg in "$@"; do
     if [ -f "$arg" ]; then
-      b -p "$@"
+      b --plain "$@"
       return
     fi
   done
