@@ -20,3 +20,5 @@ export LESS='--RAW-CONTROL-CHARS --ignore-case --no-init --quit-if-one-screen'
 export PAGER='less'
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+export RIPGREP_CONFIG_PATH="$SHARILS_HOME/.ripgreprc"
