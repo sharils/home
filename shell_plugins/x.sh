@@ -202,7 +202,10 @@ EOF
 
   tel) open "tel:$*" ;;
 
-  tree) (cd "${*:-"/$HOME/Sync/Camera"}" && find . -print | sed 's#[^/]*/#|____#g;s#____|# |#g') ;;
+  tree) (
+    cmd="${*:-$HOME/Sync/Camera}"
+    cd "$cmd" && find . -print | sed "s#[^/]*/#|____#g;s#____|# |#g;1s#.*#$cmd#"
+  ) ;;
 
   webp)
     cmd="$1"
