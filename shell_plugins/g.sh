@@ -88,6 +88,8 @@ g() {
 
   yls) tig stash "$@" ;;
 
+  -*) grep "$cmd" "$@" ;;
+
   *) git "$cmd" "$@" ;;
 
   esac
