@@ -2,7 +2,7 @@
 
 l() {
   if [ ! -t 0 ]; then
-    b "${@:-man}" --style=plain
+    LESS="$LESS --quit-if-one-screen" b "${@:-man}" --style=plain
     return
   fi
 
