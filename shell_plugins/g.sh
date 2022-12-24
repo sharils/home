@@ -3,6 +3,7 @@
 
 g() {
   if ! [ -t 0 ]; then
+    # g -n "$@" # Segmentation fault: 11
     grep "$@"
     return
   fi
