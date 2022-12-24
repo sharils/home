@@ -210,6 +210,8 @@ tsconfig.json} ~
 
     ln -fs "$PWD/.config/karabiner/karabiner.json" ~/.config/karabiner/karabiner.json
 
+    ln -fs "$PWD/.config/lsd" ~/.config/lsd
+
     ln -fs "$PWD/Library/Preferences/"{espanso,qutebrowser} ~/Library/Preferences
 
     mkdir -p ~/.gnupg/ && ln -fs "$PWD/.gnupg/gpg-agent.conf" ~/.gnupg/gpg-agent.conf
