@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+# https://github.com/junegunn/fzf/blob/master/README.md
 
 # shellcheck source=/dev/null
 [ -f ~/.fzf.bash ] && . ~/.fzf.bash
