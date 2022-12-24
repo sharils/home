@@ -11,7 +11,7 @@ d() {
   a) direnv allow ;;
   e) direnv edit . && chmod 600 .envrc ;;
   I) d i "$@" | tr -d '[:punct:]' ;;
-  i) date -Iseconds "$@" | sed "s/:00$//" ;;
+  i) date -Iseconds "$@" | sed 's/:00$//' ;;
   U) d I -u ;;
   u) d i -u ;;
   s) date -u +%s ;;
