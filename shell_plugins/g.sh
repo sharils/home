@@ -93,7 +93,7 @@ g() {
 
   s) tig status "$@" ;;
 
-  yls) tig stash "$@" ;;
+  y) tig stash "$@" ;;
 
   -*) grep "$cmd" "$@" ;;
 
