@@ -12,6 +12,7 @@ x() {
 
   0x)
     cat <<'TEXT'
+==> ASCII <<=
   0 00 nul    1 01 soh    2 02 stx    3 03 etx    4 04 eot    5 05 enq    6 06 ack    7 07 bel
   8 08 bs     9 09 ht    10 0a nl    11 0b vt    12 0c np    13 0d cr    14 0e so    15 0f si
  16 10 dle   17 11 dc1   18 12 dc2   19 13 dc3   20 14 dc4   21 15 nak   22 16 syn   23 17 etb
@@ -28,6 +29,18 @@ x() {
 104 68  h   105 69  i   106 6a  j   107 6b  k   108 6c  l   109 6d  m   110 6e  n   111 6f  o
 112 70  p   113 71  q   114 72  r   115 73  s   116 74  t   117 75  u   118 76  v   119 77  w
 120 78  x   121 79  y   122 7a  z   123 7b  {   124 7c  |   125 7d  }   126 7e  ~   127 7f del
+
+==> PRINTABLE <<=
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+
+==> URI <<=
+!'()*-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~
+
+==> POSIX <<=
+#%+-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~
+
+==> POSIX URI <<=
+-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~
 TEXT
     ;;
 
