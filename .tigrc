@@ -240,6 +240,7 @@ bind generic Gbrc<ENTER>   +sh -c 'hub browse --copy && hub browse --url'
 ## Commit maps
 
 ## Checkout/branch maps
+bind generic ;cf            @git commit --fixup %(commit)
 
 ## Stash maps
 bind generic ;czz           @git stash push
