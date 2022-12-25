@@ -228,6 +228,26 @@ bind generic Gbp<ENTER>    @hub browse -- pulls
 bind generic Gbr<ENTER>    @hub browse
 bind generic Gbrc<ENTER>   +sh -c 'hub browse --copy && hub browse --url'
 
+# Fugitive Maps
+
+## Staging/unstaging maps
+
+## Diff maps
+
+## Navigation maps
+
+## Commit maps
+
+## Checkout/branch maps
+
+## Stash maps
+
+## Rebase maps
+
+## Miscellaneous maps
+
+## Global maps
+
 # Colors
 # ------
 
