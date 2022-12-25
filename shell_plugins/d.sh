@@ -21,7 +21,7 @@ d() {
     esac
     ;;
   U) d I -u ;;
-  u) d i -u ;;
+  u) d i "$@" -u ;;
   s) date -u +%s ;;
   v) date -jf %F -v"${1:-+0d}" "${2:-"$(date +%F)"}" +%F ;;
 
