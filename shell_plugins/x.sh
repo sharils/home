@@ -293,7 +293,7 @@ EOF
     lang="${lang:="$(echo "$loc" | grep "^$(echo "$cmd" | sed 's/..$//')_$(echo "$cmd" | sed 's/^..//' | tr '[:lower:]' '[:upper:]')$")"}"
     lang="${lang:="$(echo "$loc" | grep "^${cmd}_..$")"}"
     lang="${lang:="$([ "$cmd" = 'en' ] && echo en_CA || echo '')"}"
-    LANG="$lang" "$@"
+    LC_ALL="$lang.UTF-8" "$@"
     ;;
 
   esac
