@@ -238,6 +238,7 @@ bind generic Gbrc<ENTER>   +sh -c 'hub browse --copy && hub browse --url'
 ## Navigation maps
 
 ## Commit maps
+bind generic ;crn           @git revert --no-commit %(commit)
 
 ## Checkout/branch maps
 bind generic ;cf            @git commit --fixup %(commit)
