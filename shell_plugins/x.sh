@@ -282,6 +282,8 @@ EOF
     "$@"
   ) ;;
 
+  zws) printf "\xe2\x80\x8b" | c ;;
+
   aud | cad | chf | cnh | cny | eur | gbp | hkd | jpy | mop | nzd | sek | sgd | thb | usd | zar)
     x fx "$cmd" | x bc "$(awk '{ print $3 }')" "$@"
     ;;
