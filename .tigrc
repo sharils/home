@@ -245,6 +245,7 @@ bind generic ;crn           @git revert --no-commit %(commit)
 
 ## Checkout/branch maps
 bind generic ;cf            @git commit --fixup %(commit)
+bind generic ;cF            @sh -c 'git commit --fixup %(commit) && git -c sequence.editor=true rebase --autosquash --interactive %(commit)~'
 
 ## Stash maps
 bind generic ;czz           @git stash push
