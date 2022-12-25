@@ -51,3 +51,5 @@
 	conflictstyle = diff3
 [mergetool]
 	keepBackup = false
+[rebase]
+	missingCommitsCheck = error
