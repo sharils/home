@@ -233,6 +233,10 @@ EOF
   tz)
     cmd="$1"
     shift
+    if [ -n "$cmd" ] && realpath -q "/usr/share/zoneinfo/$cmd" >/dev/null; then
+      TZ="$cmd" "$@"
+      return
+    fi
     tz="$(cd /usr/share/zoneinfo && find ./* -type f -name '*[[:upper:]]*' ! -name +VERSION | sed 's#^./##')"
     if [ "$cmd" = 'date' ]; then
       # shellcheck disable=SC2016 # in sh -c
