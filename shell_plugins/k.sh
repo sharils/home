@@ -7,8 +7,8 @@ k() {
   case $cmd in
 
   b)
-    crockfords_base32="0123456789ABCDEFGHJKMNPQRSTVWXYZ"
-    keepassxc-cli generate --custom "$crockfords_base32" --length "${@:-4}" | tr -d \\n | pbcopy
+    cmd="0123456789ABCDEFGHJKMNPQRSTVWXYZ"
+    keepassxc-cli generate --custom "$cmd" --length "${@:-4}" | tr -d \\n | pbcopy
     pbpaste
     ;;
 
