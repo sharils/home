@@ -55,7 +55,16 @@ t() {
 
   rc) rm ~/Sync/todo/todo.sync-conflict-*.txt ;;
 
-  su) TOOT_USING="${TOOT_SU:?}" t "$@" ;;
+  su)
+    cmd="$1"
+    shift
+    case "$cmd" in
+    *[!0-9]*) t su 1 "$cmd" "$@" ;;
+    *) auth="$(echo "${TOOT_SU}" | cut -d' ' -f "$cmd")" ;;
+    esac
+    echo "TOOT_USING=$auth" >&2
+    TOOT_USING="${auth:?}" t "$@"
+    ;;
 
   t)
     if [ $# -eq 1 ] && expr "$1" : "[0-9][0-9]*" >/dev/null; then
