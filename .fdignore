@@ -9,7 +9,6 @@
 .git
 !.git/info
 .gitattributes
-.gitignore
 .gitmodules
 
 # android
