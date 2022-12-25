@@ -262,6 +262,9 @@ bind generic ;re            !git rebase --edit-todo
 
 ## Global maps
 
+## Git alias
+bind generic ;gp            @git p
+
 # Colors
 # ------
 
