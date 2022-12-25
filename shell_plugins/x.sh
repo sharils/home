@@ -233,6 +233,15 @@ EOF
   tz)
     cmd="$1"
     shift
+    if [ "$cmd" = pdt ]; then
+      cmd=PST8PDT
+    elif [ "$cmd" = mdt ]; then
+      cmd=MST7MDT
+    elif [ "$cmd" = cdt ]; then
+      cmd=CST6CDT
+    elif [ "$cmd" = edt ]; then
+      cmd=EST5EDT
+    fi
     if [ -n "$cmd" ] && realpath -q "/usr/share/zoneinfo/$cmd" >/dev/null; then
       TZ="$cmd" "$@"
       return
@@ -266,19 +275,6 @@ EOF
     # support whois -b example.com
     for name in "$@"; do :; done
     whois -c "${name##*.}" "$@"
-    ;;
-
-  pst | pdt | mst | mdt | cdt | est | edt | utc | eet | cet | wet | prc | roc | rok)
-    if [ "$cmd" = pdt ]; then
-      cmd=PST8PDT
-    elif [ "$cmd" = mdt ]; then
-      cmd=MST7MDT
-    elif [ "$cmd" = cdt ]; then
-      cmd=CST6CDT
-    elif [ "$cmd" = edt ]; then
-      cmd=EST5EDT
-    fi
-    TZ="$cmd" "$@"
     ;;
 
   aud | cad | chf | cnh | cny | eur | gbp | hkd | jpy | mop | nzd | sek | sgd | thb | usd | zar)
