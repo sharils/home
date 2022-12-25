@@ -245,6 +245,7 @@ bind generic Gbrc<ENTER>   +sh -c 'hub browse --copy && hub browse --url'
 bind generic ;czz           @git stash push
 
 ## Rebase maps
+bind generic ;ri            !git rebase --interactive %(commit)~
 
 ## Miscellaneous maps
 
