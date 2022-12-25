@@ -50,6 +50,7 @@ h() {
 
     tldr --update
     npm --global update
+    pip list --outdated
 
     vim +PlugUpdate
     vim +'PlugSnapshot! ~/.vim/snapshot.vim'
