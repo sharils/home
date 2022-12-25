@@ -11,7 +11,7 @@ d() {
   F) date +%F ;;
   a) direnv allow ;;
   e) direnv edit . && chmod 600 .envrc ;;
-  I) d i "$@" | tr -d ':-' ;;
+  I) d i "$@" | tr -d ':~-' ;;
   i)
     cmd="$1"
     shift
