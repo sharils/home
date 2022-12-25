@@ -24,6 +24,7 @@
 	rs = reset
 	rsH = reset --hard
 	p = push
+	P = push --force
 	y = stash
 [commit]
 	gpgsign = true
