@@ -20,7 +20,7 @@ d() {
       *) date -Iseconds "$cmd" "$@" | sed 's/:00$//' | sed 's/+00$/Z/' ;;
     esac
     ;;
-  U) d I -u ;;
+  U) d I "$@" -u ;;
   u) d i "$@" -u ;;
   s) date -u +%s ;;
   v) date -jf %F -v"${1:-+0d}" "${2:-"$(date +%F)"}" +%F ;;
