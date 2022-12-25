@@ -289,8 +289,8 @@ EOF
   am | at | au | bg | br | by | cn | cz | de | dk | ee | et | fi | fr | gb | gr | hk | hr | hu | ie | il | is | it | jp | kr | kz | lt | nl | no | nz | pl | pt | ro | ru | se | si | sk | tr | tw | ua | us | yu | za | dech | frbe | frca | frch | itch | nlbe | ca | es | eu | en)
     unset -v lang loc
     loc="$(locale -a)"
-    lang="${lang:="$(echo "$loc" | grep "^.._$(echo "$cmd" | tr '[:lower:]' '[:upper:]')$")"}"
-    lang="${lang:="$(echo "$loc" | grep "^$(echo "$cmd" | sed 's/..$//')_$(echo "$cmd" | sed 's/^..//' | tr '[:lower:]' '[:upper:]')$")"}"
+    lang="${lang:="$(echo "$loc" | grep --ignore-case "^.._$cmd$")"}"
+    lang="${lang:="$(echo "$loc" | grep --ignore-case "^$(echo "$cmd" | sed 's/^\(..\)\(..\)$/\1_\2/')$")"}"
     lang="${lang:="$(echo "$loc" | grep "^${cmd}_..$")"}"
     lang="${lang:="$([ "$cmd" = 'en' ] && echo en_CA || echo '')"}"
     LC_ALL="$lang.UTF-8" "$@"
