@@ -15,6 +15,8 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 
 export GREP_OPTIONS='--color=auto'
 
+export LANG='en_US.UTF-8'
+
 export LESS='--RAW-CONTROL-CHARS --ignore-case --no-init'
 
 export PAGER='less'
