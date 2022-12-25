@@ -230,6 +230,12 @@ EOF
     cd "$cmd" && find . -print | sed "s#[^/]*/#|____#g;s#____|# |#g;1s#.*#$cmd#"
   ) ;;
 
+  tz)
+    tz="$(echo "$tz" | sort)"
+    echo "$tz" | grep /
+    echo "$tz" | grep -v /
+    ;;
+
   webp)
     cmd="$1"
     shift
