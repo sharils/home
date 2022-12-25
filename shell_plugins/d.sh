@@ -12,7 +12,14 @@ d() {
   a) direnv allow ;;
   e) direnv edit . && chmod 600 .envrc ;;
   I) d i "$@" | tr -d ':-' ;;
-  i) date -Iseconds "$@" | sed 's/:00$//' | sed 's/+00$/Z/' ;;
+  i)
+    cmd="$1"
+    shift
+    case "$cmd" in
+      ~) d i "$@" | tr : \~ ;;
+      *) date -Iseconds "$cmd" "$@" | sed 's/:00$//' | sed 's/+00$/Z/' ;;
+    esac
+    ;;
   U) d I -u ;;
   u) d i -u ;;
   s) date -u +%s ;;
