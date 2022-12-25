@@ -93,6 +93,8 @@ g() {
 
   s) tig status "$@" ;;
 
+  v) grep "$@" /Users/minniebavaro/git/github.com/sharils/home/.vim/plugged/vim-fugitive/autoload/fugitive.vim ;;
+
   y) tig stash "$@" ;;
 
   -*) grep "$cmd" "$@" ;;
