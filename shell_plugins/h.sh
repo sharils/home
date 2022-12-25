@@ -61,5 +61,7 @@ h() {
     h g push
     ;;
 
+  *) "$cmd" "$@" --help ;;
+
   esac
 }
