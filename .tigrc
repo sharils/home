@@ -244,6 +244,7 @@ bind generic ;cf            @git commit --fixup %(commit)
 
 ## Stash maps
 bind generic ;czz           @git stash push
+bind generic ;czp           @git stash pop --index
 
 ## Rebase maps
 bind generic ;ri            !git rebase --interactive %(commit)~
