@@ -19,6 +19,8 @@ g() {
   shift
   case $cmd in
 
+  L) tig reflog "$@" ;;
+
   cgi) git config --file ~/git/github.com/sharils/home/gitignore.gitconfig "$@" ;;
 
   cl)
