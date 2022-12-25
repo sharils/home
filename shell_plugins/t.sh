@@ -59,7 +59,17 @@ t() {
     cmd="$1"
     shift
     case "$cmd" in
-    *[!0-9]*) t su 1 "$cmd" "$@" ;;
+    *[!0-9]*)
+      if [ ${#cmd} -le 1 ]; then
+        t su 1 "$cmd" "$@"
+        return
+      fi
+      auth="$(echo "${TOOT_SU}" | xargs -n1 | grep "$cmd")"
+      if [ -z "$auth" ] || [ "$(echo "$auth" | wc -l)" -ne 1 ]; then
+        t su 1 "$cmd" "$@"
+        return
+      fi
+      ;;
     *) auth="$(echo "${TOOT_SU}" | cut -d' ' -f "$cmd")" ;;
     esac
     echo "TOOT_USING=$auth" >&2
