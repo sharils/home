@@ -249,6 +249,7 @@ bind generic ;cF            @sh -c 'git commit --fixup %(commit) && git -c seque
 
 ## Stash maps
 bind generic ;czz           @git stash push
+bind generic ;czw           @git stash push --keep-index
 bind generic ;czp           @git stash pop --index
 
 ## Rebase maps
