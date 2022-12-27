@@ -29,6 +29,7 @@ bind generic ;czp           @git stash pop --index
 bind generic ;ri            !git rebase --interactive %(commit)~
 bind generic ;rf            !git -c sequence.editor=true rebase --autosquash --interactive %(commit)~
 bind generic ;rr            !git rebase --continue
+bind generic ;rs            !git rebase --skip
 bind generic ;ra            @git rebase --abort
 bind generic ;re            !git rebase --edit-todo
 
