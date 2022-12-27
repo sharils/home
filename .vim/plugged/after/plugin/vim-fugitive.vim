@@ -6,5 +6,6 @@ nmap <LEADER>gcma :G cm 'Add '<LEFT>
 nmap <LEADER>gcmc :G cm 'Change '<LEFT>
 nmap <LEADER>gcmd :G cm 'Remove '<LEFT>
 nmap <LEADER>gcmf :G cm 'Fix '<LEFT>
+nmap <LEADER>gcmr :G cm 'Refactor '<LEFT>
 nmap <LEADER>gcz :Gllog -g stash<CR>
 nmap <LEADER>gp :G! p<SPACE>
