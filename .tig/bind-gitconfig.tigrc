@@ -2,5 +2,6 @@ bind generic ;gP            @git P
 bind generic ;gcC           @git c --reuse-message %(commit)
 bind generic ;gcob          @git checkout -b %(prompt) %(commit)
 bind generic ;gcm           !git cm %(prompt)
+bind generic ;gcrn          @sh -c 'git revert --no-edit %(commit) && git revert --no-commit @ && git reset @'
 bind generic ;gp            @git p
 bind generic ;gro           @git ro %(prompt) %(commit)
