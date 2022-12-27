@@ -7,6 +7,10 @@ g() {
     grep "$@"
     return
   fi
+  if ! [ -t 1 ] && [ "$1" = 's' ]; then
+    git status
+    return
+  fi
   if [ $# -eq 0 ]; then
     tig
     return
