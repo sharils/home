@@ -17,6 +17,7 @@
 	cr = revert
 	czp = stash pop --index
 	czz = stash push
+	d = diff
 	f = fetch
 	fi = flow init
 	g = grep
