@@ -159,8 +159,6 @@ EOF
 
   py) python3 -c "$*" ;;
 
-  re) man "$@" re_format ;;
-
   resetLaunchPad | showHidden)
     defaults write com.apple.dock "$cmd" -bool true
     killall Dock
