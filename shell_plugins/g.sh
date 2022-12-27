@@ -43,8 +43,6 @@ g() {
 
   cs) git-crypt status "$@" ;;
 
-  h) man git-"$*" ;;
-
   i)
     git init "$@"
     git commit --allow-empty --message "Initialize empty Git repository"
