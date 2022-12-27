@@ -29,8 +29,8 @@ matches:
   - trigger: "R,."
     replace: "Refactor "
 
-  - trigger: "ap,."
-    replace: "'Apply $|$'"
+  - trigger: "X,."
+    replace: "Apply "
 
   - trigger: "d,."
     replace: due:{{today}}
