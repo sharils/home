@@ -23,6 +23,9 @@ matches:
   - trigger: "C,."
     replace: "Change "
 
+  - trigger: "D,."
+    replace: "Remove "
+
   - trigger: "F,."
     replace: "Fix "
 
@@ -59,9 +62,6 @@ matches:
         type: shell
         params:
           cmd: "pbpaste | sed 's/[^[:digit:].]//g'"
-
-  - trigger: "rm,."
-    replace: "'Remove $|$'"
 
   - trigger: "t,."
     replace: A penny for your thoughts.
