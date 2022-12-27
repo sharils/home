@@ -27,7 +27,7 @@ matches:
     replace: "Fix "
 
   - trigger: "R,."
-    replace: "'Refactor $|$'"
+    replace: "Refactor "
 
   - trigger: "ap,."
     replace: "'Apply $|$'"
