@@ -21,7 +21,7 @@ matches:
     replace: "Add "
 
   - trigger: "C,."
-    replace: "'Change $|$'"
+    replace: "Change "
 
   - trigger: "F,."
     replace: "'Fix $|$'"
