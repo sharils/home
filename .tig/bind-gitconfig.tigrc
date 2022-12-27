@@ -1,3 +1,4 @@
 bind generic ;gP            @git P
 bind generic ;gcm           !git cm %(prompt)
 bind generic ;gp            @git p
+bind generic ;gro           @git ro %(prompt) %(commit)
