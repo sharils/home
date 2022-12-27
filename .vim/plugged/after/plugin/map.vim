@@ -111,5 +111,5 @@ inoremap <C-[>} ’
 cnoremap <C-[>} ’
 inoremap <C-[>- –
 cnoremap <C-[>- –
-nmap <LEADER>E :edit!<CR>
 nmap <LEADER>0 :vertical resize 100<CR>
+nmap <LEADER>E :edit!<CR>
