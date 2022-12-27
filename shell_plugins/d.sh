@@ -177,8 +177,6 @@ year:
 SH
       ;;
 
-    *) man strftime ;;
-
     esac
     ;;
 
