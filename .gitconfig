@@ -25,6 +25,7 @@
 	l = log --graph --oneline
 	mt = mergetool
 	r = rebase
+	ro = rebase --onto
 	rs = reset
 	rsH = reset --hard
 	p = push
