@@ -10,6 +10,7 @@
 	c = commit
 	ca = commit --amend
 	cam = commit --all --message
+	cb = branch
 	ceF = commit --edit --file=.git/COMMIT_EDITMSG
 	cg = config --global
 	cm = commit --message
