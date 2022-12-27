@@ -10,3 +10,4 @@ nmap <LEADER>gcmr :G cm 'Refactor '<LEFT>
 nmap <LEADER>gcmx :G cm 'Apply '<LEFT>
 nmap <LEADER>gcz :Gllog -g stash<CR>
 nmap <LEADER>gp :G! p<SPACE>
+nmap <LEADER>gw :Gwrite<CR>
