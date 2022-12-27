@@ -36,12 +36,7 @@ matches:
     replace: "Apply "
 
   - trigger: "d,."
-    replace: due:{{today}}
-    vars:
-      - name: today
-        type: date
-        params:
-          format: "%Y-%m-%d"
+    replace: develop
 
   - trigger: "e,."
     replace: example.com
