@@ -18,7 +18,7 @@ matches:
     replace: 23:59
 
   - trigger: "A,."
-    replace: "'Add $|$'"
+    replace: "Add "
 
   - trigger: "C,."
     replace: "'Change $|$'"
