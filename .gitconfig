@@ -18,6 +18,7 @@
 	czp = stash pop --index
 	czz = stash push
 	d = diff
+	ds = diff --staged
 	f = fetch
 	fi = flow init
 	g = grep
