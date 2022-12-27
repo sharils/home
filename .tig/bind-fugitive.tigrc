@@ -1,0 +1,36 @@
+# Fugitive Maps
+
+## Staging/unstaging maps
+
+## Diff maps
+
+## Navigation maps
+
+## Commit maps
+bind generic ;cc            !git commit
+bind generic ;ca            !git commit --amend
+bind generic ;ce            @git commit --amend --no-edit
+bind generic ;cw            !git commit --amend --only
+bind generic ;crc           @git revert %(commit)
+bind generic ;crn           @git revert --no-commit %(commit)
+
+## Checkout/branch maps
+bind generic ;cf            @git commit --fixup %(commit)
+bind generic ;cF            @sh -c 'git commit --fixup %(commit) && git -c sequence.editor=true rebase --autosquash --interactive %(commit)~'
+
+## Stash maps
+bind generic ;czz           @git stash push
+bind generic ;czw           @git stash push --keep-index
+bind generic ;cza           @git stash apply --index
+bind generic ;czp           @git stash pop --index
+
+## Rebase maps
+bind generic ;ri            !git rebase --interactive %(commit)~
+bind generic ;rf            !git -c sequence.editor=true rebase --autosquash --interactive %(commit)~
+bind generic ;rr            !git rebase --continue
+bind generic ;ra            @git rebase --abort
+bind generic ;re            !git rebase --edit-todo
+
+## Miscellaneous maps
+
+## Global maps

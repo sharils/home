@@ -1,0 +1,3 @@
+bind generic ;gcm           !git cm %(prompt)
+bind generic ;gp            @git p
+bind generic ;gP            @git P
