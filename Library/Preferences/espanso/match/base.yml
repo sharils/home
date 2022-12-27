@@ -50,6 +50,9 @@ matches:
   - trigger: "js,."
     replace: javascript
 
+  - trigger: "o,."
+    replace: origin
+
   - trigger: "pd,."
     replace: "{{d}}"
     vars:
