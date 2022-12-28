@@ -351,6 +351,10 @@ snippet sh "<<'SHELL'" w
 $1`echo \\n`SHELL
 endsnippet
 
+snippet til "until" w
+until ${1:${VISUAL::}}; do ${2:sleep 1}; done
+endsnippet
+
 snippet txt "<<'TEXT'" w
 <<'TEXT'`echo \\n`$1`echo \\n`TEXT
 endsnippet
