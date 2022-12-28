@@ -44,6 +44,9 @@ matches:
   - trigger: "f,."
     replace: favicon.ico
 
+  - trigger: "h,."
+    replace: help
+
   - trigger: "ht,."
     replace: https://$|$/
 
