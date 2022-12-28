@@ -54,6 +54,7 @@ TEXT
     case "$cmd" in
     l) set -- links "$@" ;;
     o) set -- open "$@" ;;
+    y) set -- lynx "$@" ;;
     *) set -- -I{} "$cmd" "$@" ;;
     esac
     xargs -o "$@"
