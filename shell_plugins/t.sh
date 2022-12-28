@@ -34,7 +34,7 @@ t() {
     esac
     ;;
 
-  h) todo.sh -vv help ;;
+  h) t -vv help ;;
 
   n) t oot notifications "${@:---reverse}" ;;
 
