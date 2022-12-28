@@ -11,7 +11,7 @@ t() {
 
   A)
     [ -f ~/Sync/todo/"$1" ] || touch ~/Sync/todo/"$1"
-    todo.sh addto "$@"
+    t addto "$@"
     ;;
 
   Z) todo.sh archive "$@" ;;
