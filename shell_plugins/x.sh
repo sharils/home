@@ -52,6 +52,7 @@ TEXT
     cmd="$1"
     shift
     case "$cmd" in
+    b) set -- browsh "$@" ;;
     l) set -- links "$@" ;;
     o) set -- open "$@" ;;
     y) set -- lynx "$@" ;;
