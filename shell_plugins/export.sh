@@ -24,6 +24,8 @@ export GREP_OPTIONS='--color=auto'
 
 export LANG='en_US.UTF-8'
 
+export MANPAGER="$PAGER --quit-if-one-screen"
+
 export LESS='--RAW-CONTROL-CHARS --ignore-case --no-init'
 
 export PATH="$HOME/.cargo/bin:$PATH"
