@@ -157,7 +157,7 @@ EOF
     esac
     ;;
 
-  py) python3 -c "$*" ;;
+  py) python3 -c "${*:-import this}" ;;
 
   resetLaunchPad | showHidden)
     defaults write com.apple.dock "$cmd" -bool true
