@@ -99,7 +99,6 @@ g() {
     case "$cmd" in
     c) g mr create --assignee "${G_MR_ASSIGNEE:?}" --reviewer "${G_MR_REVIEWER:?}" --target-branch "${G_MR_TARGET_BRANCH:-develop}" "$@" ;;
     d) g mr diff "$@" ;;
-    ls) g mr list "$@" ;;
     m)
       if expr "$*" : '^[[:space:][:digit:]][[:space:][:digit:]]*$' >/dev/null; then
         for cmd in "$@"; do
