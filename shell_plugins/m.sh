@@ -8,6 +8,8 @@ m() {
   pj) m package-json ;;
   re) m re_format ;;
   sft) m strftime ;;
-  *) man "$(echo "$*" | tr ' ' '-')" ;;
+  echo | false | kill | local | log | login | nice | nohup | printenv | printf | pwd | test | time | true | which | *)
+    man "$(echo "$*" | tr ' ' '-')"
+    ;;
   esac
 }
