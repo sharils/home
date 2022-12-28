@@ -29,7 +29,8 @@ t() {
     q) $EDITOR "$@" ~/Sync/todo/QuickNote.md ;;
     t) $EDITOR "$@" ~/Sync/todo/todo.txt ;;
     w) $EDITOR "$@" ~/Sync/todo/work.txt ;;
-    *) $EDITOR "$cmd" "$@" ~/Sync/todo/todo.txt ;;
+    *[!0-9]*) $EDITOR "$cmd" "$@" ~/Sync/todo/todo.txt ;;
+    *) $EDITOR "+$cmd" "$@" ~/Sync/todo/todo.txt ;;
     esac
     ;;
 
