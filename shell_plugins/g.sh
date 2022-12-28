@@ -25,6 +25,13 @@ g() {
 
   L) tig reflog "$@" ;;
 
+  cbc)
+    g f
+    g cb | sed 's#^.* ##' | while IFS= read -r branch; do
+      git r origin/develop "$branch" || break
+    done
+    ;;
+
   cgi) git config --file ~/git/github.com/sharils/home/gitignore.gitconfig "$@" ;;
 
   cl)
