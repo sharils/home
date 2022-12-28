@@ -69,7 +69,7 @@ g() {
           g mr merge "$cmd" --rebase --remove-source-branch --yes
         done
       else
-        g mr merge "$@" --rebase --remove-source-branch --yes
+        until g mr merge "$@" --rebase --remove-source-branch --yes; do sleep 1; done
       fi
       g f
       ;;
