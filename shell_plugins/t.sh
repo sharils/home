@@ -14,7 +14,7 @@ t() {
     t addto "$@"
     ;;
 
-  Z) todo.sh archive "$@" ;;
+  Z) t archive "$@" ;;
 
   aw) t A work.txt "$@" ;;
 
