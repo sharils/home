@@ -4,6 +4,7 @@ h() {
   cmd=$1
   shift
 
+  # shellcheck disable=SC1083
   case $cmd in
 
   '')
@@ -60,6 +61,8 @@ h() {
     h g commit --message 'Apply vim +PlugUpdate'
     h g push
     ;;
+
+  builtin | % | . | : | [ | { | alias | bg | bind | break | case | cd | command | complete | continue | dirs | echo | eval | exec | exit | export | false | fc | fg | for | getopts | hash | history | if | jobs | kill | local | log | logout | popd | printf | pushd | pwd | read | readonly | return | set | shift | source | suspend | test | time | times | trap | true | type | ulimit | umask | unalias | unset | until | wait | while) help "$cmd" "$@" ;;
 
   *) "$cmd" "$@" --help ;;
 
