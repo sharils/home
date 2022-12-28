@@ -1,7 +1,7 @@
 m() {
   case "$1" in
   erl) erl -man erl ;;
-  npm)
+  n | npm)
     shift
     npm help "$@"
     ;;
