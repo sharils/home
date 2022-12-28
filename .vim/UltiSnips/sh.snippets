@@ -46,6 +46,10 @@ else
 	${1::}
 endsnippet
 
+snippet eux "set -eux" b
+set -o errexit -o nounset -o xtrace
+endsnippet
+
 snippet fn "fn() {}" b
 ${1:f}() {
 	${2::}
@@ -74,10 +78,6 @@ endsnippet
 
 snippet scs "# shellcheck disable=" b
 # shellcheck source=${1:/dev/null}
-endsnippet
-
-snippet set "set -eux" b
-set -o errexit -o nounset -o xtrace
 endsnippet
 
 snippet sh "shift" b
