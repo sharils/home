@@ -52,6 +52,7 @@ TEXT
     cmd="$1"
     shift
     case "$cmd" in
+    l) set -- links "$@" ;;
     o) set -- open "$@" ;;
     *) set -- -I{} "$cmd" "$@" ;;
     esac
