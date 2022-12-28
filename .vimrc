@@ -31,6 +31,7 @@ Plug 'rhysd/devdocs.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
+
 " Plug 'godlygeek/tabular'
 " Plug 'majutsushi/tagbar'
 Plug 'tomtom/tcomment_vim'
@@ -63,6 +64,7 @@ Plug 'vim-scripts/VCard-syntax'
 
 Plug 'ekalinin/Dockerfile.vim', { 'for': 'dockerfile' }
 Plug 'vito-c/jq.vim', { 'for': 'jq' }
+Plug 'iamcco/markdown-preview.nvim', { 'for': 'md', 'do': 'cd app && npx --yes yarn install' }
 Plug 'chikamichi/mediawiki.vim', { 'for': 'mw' }
 Plug 'alunny/pegjs-vim', { 'for': 'pegjs' }
 Plug 'rust-lang/rust.vim', { 'for': 'rs' }
