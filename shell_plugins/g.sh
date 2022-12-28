@@ -26,10 +26,18 @@ g() {
   L) tig reflog "$@" ;;
 
   cbc)
+    upstream="${1:-origin/develop}"
+    current_branch="$(git rev-parse --abbrev-ref HEAD)"
     g f
-    g cb | sed 's#^.* ##' | while IFS= read -r branch; do
-      git r origin/develop "$branch" || break
-    done
+    g cb |
+      sed 's/^.* //' | grep -Ev '^(?:main|master|develop)$' |
+      xargs -I{} -n1 sh -c "git r $upstream {} || exit 255" ||
+      return $?
+
+    g co "$current_branch"
+    g cb --merged |
+      sed 's/^.* //' | grep -Ev '^(?:main|master|develop)$' |
+      xargs git cb --delete
     ;;
 
   cgi) git config --file ~/git/github.com/sharils/home/gitignore.gitconfig "$@" ;;
@@ -56,7 +64,6 @@ g() {
 
   f)
     cmd="$1"
-    shift
     case "$cmd" in
     i) cmd='init' ;;
     f) cmd='feature' ;;
@@ -66,10 +73,12 @@ g() {
     s) cmd='support' ;;
     l) cmd='log' ;;
     *)
-      git f "$cmd" "$@"
+      git f "$@"
       return
       ;;
     esac
+    # g f '' complains so shift after g f *
+    shift
 
     cmd1="$1"
     shift
