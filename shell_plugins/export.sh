@@ -15,6 +15,8 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 
 export GIT_PAGER="$PAGER --quit-if-one-screen"
 
+export GLAB_PAGER="$PAGER --quit-if-one-screen"
+
 export GREP_OPTIONS='--color=auto'
 
 export LANG='en_US.UTF-8'
