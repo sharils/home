@@ -3,8 +3,13 @@
 
 g() {
   if ! [ -t 0 ]; then
-    # g -n "$@" # Segmentation fault: 11
-    grep "$@"
+    cmd="$1"
+    shift
+    case "$cmd" in
+      url) grep -o "https\?://[^ '>]\+" ;;
+      # g -n "$@" # Segmentation fault: 11
+      *) grep "$@" ;;
+    esac
     return
   fi
   if ! [ -t 1 ] && [ "$1" = 's' ]; then
