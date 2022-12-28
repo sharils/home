@@ -1,12 +1,12 @@
 #!/usr/bin/env sh
 
 h() {
-  cmd=${1:-.}
+  cmd=$1
   shift
 
   case $cmd in
 
-  .)
+  '')
     # shellcheck source=/dev/null
     . "$SHARILS_HOME/.bash_profile"
     ;;
