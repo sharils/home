@@ -72,7 +72,7 @@ g() {
         return
       fi
       for cmd in "$@"; do
-        g mr update "$cmd" --ready
+        g mr u "$cmd" --ready
       done
       ;;
     r) g mr rebase "$@" ;;
