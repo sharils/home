@@ -64,14 +64,13 @@ g() {
     d) g mr diff "$@" ;;
     ls) g mr list "$@" ;;
     m)
-      if ! expr "$*" : '^[[:space:][:digit:]][[:space:][:digit:]]*$' >/dev/null; then
+      if expr "$*" : '^[[:space:][:digit:]][[:space:][:digit:]]*$' >/dev/null; then
+        for cmd in "$@"; do
+          g mr merge "$cmd" --rebase --remove-source-branch --yes
+        done
+      else
         g mr merge "$@" --rebase --remove-source-branch --yes
-        g f
-        return
       fi
-      for cmd in "$@"; do
-        g mr merge "$cmd" --rebase --remove-source-branch --yes
-      done
       g f
       ;;
     n) g mr note "$@" ;;
