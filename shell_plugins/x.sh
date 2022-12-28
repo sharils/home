@@ -48,7 +48,7 @@ TEXT
 
   8601) open 'https://en.wikipedia.org/wiki/ISO_8601' ;;
 
-  args) xargs -I_ -n1 "$@" ;;
+  args) xargs -o -I{} "$@" ;;
 
   bc) bc --mathlib --expression="$*" ;;
 
