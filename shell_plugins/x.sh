@@ -48,7 +48,15 @@ TEXT
 
   8601) open 'https://en.wikipedia.org/wiki/ISO_8601' ;;
 
-  args) xargs -o -I{} "$@" ;;
+  args)
+    cmd="$1"
+    shift
+    case "$cmd" in
+    o) set -- open "$@" ;;
+    *) set -- -I{} "$cmd" "$@" ;;
+    esac
+    xargs -o "$@"
+    ;;
 
   bc) bc --mathlib --expression="$*" ;;
 
