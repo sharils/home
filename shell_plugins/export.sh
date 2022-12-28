@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+# dependency stands out
+export PAGER='less'
+
 export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
@@ -22,8 +25,6 @@ export GREP_OPTIONS='--color=auto'
 export LANG='en_US.UTF-8'
 
 export LESS='--RAW-CONTROL-CHARS --ignore-case --no-init'
-
-export PAGER='less'
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
