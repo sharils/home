@@ -18,6 +18,12 @@ l() {
   -*) lsd "$cmd" "$@" ;;
   F) less +F "$@" ;;
   t) l --tree "$@" ;;
-  *) [ ! -e "$cmd" ] && l -"$cmd" "$@" ;;
+  *)
+    if [ -e "$cmd" ]; then
+      lsd "$cmd" "$@"
+    else
+      l -"$cmd" "$@"
+    fi
+    ;;
   esac
 }
