@@ -48,7 +48,7 @@ TEXT
 
   8601) open 'https://en.wikipedia.org/wiki/ISO_8601' ;;
 
-  args)
+  a)
     cmd="$1"
     shift
     case "$cmd" in
