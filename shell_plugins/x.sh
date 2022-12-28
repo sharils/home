@@ -106,6 +106,8 @@ EOF
     jq '([first.TitleInfo|splits("<.*?>")]|map(select(.!=""))[0][5:]|sub(" "; "T")) as $date|first.SubInfo|sort_by(.DataValue4)|map([$date,.DataValue4,.DataValue2,.DataValue3]|@tsv)[]' -r <"$cmd" | column -t
     ;;
 
+  fzf) fzf --select-1 --height=~14 --layout=reverse "$@" ;;
+
   gpg) echo | gpg --clearsign >/dev/null ;;
 
   gif)
