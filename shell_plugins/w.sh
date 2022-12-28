@@ -20,5 +20,7 @@ w() {
 
   py | sh) w m --pattern "**/*.$cmd" --run "$*" ;;
 
+  *) w o "$cmd" "$@" ;;
+
   esac
 }
