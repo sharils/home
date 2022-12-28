@@ -21,7 +21,6 @@
 	d = diff
 	ds = diff --staged
 	f = fetch
-	fi = flow init
 	g = grep
 	l = log --graph --oneline
 	mt = mergetool
