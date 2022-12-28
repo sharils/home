@@ -346,7 +346,7 @@ sed -i '' $0
 endsnippet
 
 snippet seds "sed 's###'" w
-sed 's#$1##'
+sed 's${4:/}$1$4$2$4$3'
 endsnippet
 
 snippet setx "set -x && set +x" w
