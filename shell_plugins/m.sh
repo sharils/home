@@ -9,7 +9,7 @@ m() {
   re) m re_format ;;
   sft) m strftime ;;
   echo | false | kill | local | log | login | nice | nohup | printenv | printf | pwd | test | time | true | which | *)
-    man "$(echo "$*" | tr ' ' '-')"
+    man "$(echo "$*" | sed 's# -.*##' | tr ' ' '-')"
     ;;
   esac
 }
