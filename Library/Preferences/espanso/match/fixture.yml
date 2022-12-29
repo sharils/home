@@ -1,3 +1,6 @@
 matches:
   - trigger: "+1,."
     replace: +12065550199
+
+  - trigger: "+44,."
+    replace: +441134960999
