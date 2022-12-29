@@ -211,6 +211,7 @@ tsconfig.json} ~
     ln -fs "$PWD/.config/karabiner/karabiner.json" ~/.config/karabiner/karabiner.json
 
     ln -fs "$PWD/.config/lsd" ~/.config/lsd
+    ln -fs "$PWD/.config/thefuck/rules" ~/.config/thefuck/rules
 
     ln -fs "$PWD/Library/Preferences/"{espanso,qutebrowser} ~/Library/Preferences
 
