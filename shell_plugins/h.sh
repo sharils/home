@@ -12,6 +12,11 @@ h() {
     . "$SHARILS_HOME/.bash_profile"
     ;;
 
+  b)
+    bind -p | grep --color=never ^#
+    bind -p | grep '"[^"]\+"' | grep -v 'self-insert\|do-lowercase-version\|digit-argument' | grep "$*"
+    ;;
+
   e)
     case "${1:-install}" in
     bp) cmd=/.bash_profile ;;
