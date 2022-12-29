@@ -56,6 +56,9 @@ matches:
   - trigger: "o,."
     replace: origin
 
+  - trigger: "ox,."
+    replace: 🙆 🙅
+
   - trigger: "pd,."
     replace: "{{d}}"
     vars:
