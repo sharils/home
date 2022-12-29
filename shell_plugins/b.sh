@@ -2,7 +2,7 @@
 
 b() {
   if [ ! -t 0 ]; then
-    bat --language "${@:-man}"
+    col -bx | bat --language "${@:-man}"
     return
   fi
 
