@@ -1,6 +1,6 @@
 m() {
   case "$1" in
-  aws) "$@" help ;;
+  aws) "$@" help | l;;
   erl) erl -man erl | l;;
   n | npm)
     shift
