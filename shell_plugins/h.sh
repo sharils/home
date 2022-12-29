@@ -12,6 +12,13 @@ h() {
     . "$SHARILS_HOME/.bash_profile"
     ;;
 
+  P)
+    h g stash push
+    h g pull --prune --rebase
+    vim -S ~/.vim/snapshot.vim
+    h .
+    ;;
+
   b)
     bind -p | grep --color=never ^#
     bind -p | grep '"[^"]\+"' | grep -v 'self-insert\|do-lowercase-version\|digit-argument' | grep "$*"
@@ -32,13 +39,6 @@ h() {
     ;;
 
   g) git -C "$SHARILS_HOME" "$@" ;;
-
-  P)
-    h g stash push
-    h g pull --prune --rebase
-    vim -S ~/.vim/snapshot.vim
-    h .
-    ;;
 
   p) h g push ;;
 
