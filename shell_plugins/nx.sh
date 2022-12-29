@@ -2,7 +2,7 @@
 
 # The core Nx plugin contains the core functionality of Nx like the project graph, nx commands and task orchestration.
 nx() {
-  cmd=${1:-help}
+  cmd=${1:---version}
   shift
   case $cmd in
 
