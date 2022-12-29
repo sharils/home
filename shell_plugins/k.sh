@@ -25,13 +25,13 @@ k() {
     done
     printf '%s %s %s' "$pass" \
       "$(keepassxc-cli generate --length 1 --numeric)" \
-      "$(keepassxc-cli generate --length 1 --custom "${K_D_CUSTOM:-"!'()*-.~"}")" |
+      "$(keepassxc-cli generate --length 1 --custom "${K_D_CUSTOM:-"!'()*._~"}")" |
       xargs -n1 |
       sort -R |
       xargs |
       perl -pe 's/\b\w/\U$&/g' |
       tr -d \\n |
-      tr ' ' _ |
+      tr ' ' - |
       pbcopy
     pbpaste | wc
     ;;
