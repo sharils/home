@@ -19,30 +19,7 @@ h() {
     h .
     ;;
 
-  b)
-    bind -p | grep --color=never ^#
-    bind -p | grep '"[^"]\+"' | grep -v 'self-insert\|do-lowercase-version\|digit-argument' | grep "$*"
-    ;;
-
-  e)
-    case "${1:-install}" in
-    bp) cmd=/.bash_profile ;;
-    install) cmd=/install ;;
-    karabiner) cmd=/.config/karabiner/karabiner.json ;;
-    todo) cmd=/.todo.cfg ;;
-    tig) cmd=/.tigrc ;;
-    vim) cmd=/.vimrc ;;
-    *) cmd="/shell_plugins/$*.sh" ;;
-    esac
-    vim "$SHARILS_HOME$cmd"
-    h .
-    ;;
-
-  g) git -C "$SHARILS_HOME" "$@" ;;
-
-  p) h g push ;;
-
-  u)
+  U)
     sudo --validate
     brew update
     # for less sudo timeout
@@ -66,6 +43,29 @@ h() {
     h g commit --message 'Apply vim +PlugUpdate'
     h g push
     ;;
+
+  b)
+    bind -p | grep --color=never ^#
+    bind -p | grep '"[^"]\+"' | grep -v 'self-insert\|do-lowercase-version\|digit-argument' | grep "$*"
+    ;;
+
+  e)
+    case "${1:-install}" in
+    bp) cmd=/.bash_profile ;;
+    install) cmd=/install ;;
+    karabiner) cmd=/.config/karabiner/karabiner.json ;;
+    todo) cmd=/.todo.cfg ;;
+    tig) cmd=/.tigrc ;;
+    vim) cmd=/.vimrc ;;
+    *) cmd="/shell_plugins/$*.sh" ;;
+    esac
+    vim "$SHARILS_HOME$cmd"
+    h .
+    ;;
+
+  g) git -C "$SHARILS_HOME" "$@" ;;
+
+  p) h g push ;;
 
   builtin | % | . | : | [ | { | alias | bg | bind | break | case | cd | command | complete | continue | dirs | echo | eval | exec | exit | export | false | fc | fg | for | getopts | hash | history | if | jobs | kill | local | log | logout | popd | printf | pushd | pwd | read | readonly | return | set | shift | source | suspend | test | time | times | trap | true | type | ulimit | umask | unalias | unset | until | wait | while) help "$cmd" "$@" ;;
 
