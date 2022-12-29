@@ -46,8 +46,6 @@ n() {
 
   graphql-codegen) n y --package graphql --package @graphql-codegen/cli -- graphql-codegen "$@" ;;
 
-  h) npm help "$@" ;;
-
   i)
     cmd="$1"
     shift
