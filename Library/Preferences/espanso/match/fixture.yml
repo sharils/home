@@ -1,0 +1,3 @@
+matches:
+  - trigger: "+1,."
+    replace: +12065550199
