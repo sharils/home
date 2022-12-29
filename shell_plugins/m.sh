@@ -4,7 +4,7 @@ m() {
   erl) erl -man erl ;;
   n | npm)
     shift
-    npm help "$@"
+    npm help "$@" | l
     ;;
   pj) m package-json ;;
   re) m re_format ;;
