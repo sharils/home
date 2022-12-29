@@ -17,7 +17,6 @@ b() {
   shift
 
   case "$cmd" in
-  h) brew help "$@" ;;
   i) brew install "$@" ;;
   ri) brew reinstall "$@" ;;
   out) brew outdated "$@" ;;
