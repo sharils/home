@@ -15,7 +15,7 @@ e() {
     espanso edit "$cmd" "$@"
     ;;
   r) espanso restart "$@" ;;
-  s) espanso status "$@" ;;
+  s) espanso service status "$@" ;;
 
   esac
 }
