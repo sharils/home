@@ -82,6 +82,9 @@ matches:
         params:
           cmd: "pbpaste | sed 's/[^[:digit:].]//g'"
 
+  - trigger: "sm,."
+    replace: sitemap.xml
+
   - trigger: "t,."
     replace: A penny for your thoughts.
 
