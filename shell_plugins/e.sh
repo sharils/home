@@ -14,8 +14,16 @@ e() {
     esac
     espanso edit "$cmd" "$@"
     ;;
-  r) espanso restart "$@" ;;
-  s) espanso service status "$@" ;;
+
+  s)
+    cmd="${1:-status}"
+    shift
+    case "$cmd" in
+      r) set -- restart "$@" ;;
+      *) set -- "$cmd" "$@" ;;
+    esac
+    espanso service "$@"
+    ;;
 
   esac
 }
