@@ -50,6 +50,9 @@ matches:
   - trigger: "X,."
     replace: "Apply "
 
+  - trigger: "bt,."
+    replace: robots.txt
+
   - trigger: "d,."
     replace: develop
 
