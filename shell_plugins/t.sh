@@ -18,14 +18,21 @@ t() {
 
   aw) t A work.txt "$@" ;;
 
+  d)
+    cmd="$1"
+    shift
+    case "$cmd" in
+    sc)
+      v d ~/Sync/todo/todo.txt ~/Sync/todo/todo.sync-conflict-*.txt
+      rm -i ~/Sync/todo/todo.sync-conflict-*.txt
+      ;;
+    esac
+    ;;
+
   e)
     cmd="${1:-t}"
     shift
     case "$cmd" in
-    c)
-      v d ~/Sync/todo/todo.txt ~/Sync/todo/todo.sync-conflict-*.txt
-      rm -i ~/Sync/todo/todo.sync-conflict-*.txt
-      ;;
     q) $EDITOR "$@" ~/Sync/todo/QuickNote.md ;;
     t) $EDITOR "$@" ~/Sync/todo/todo.txt ;;
     w) $EDITOR "$@" ~/Sync/todo/work.txt ;;
