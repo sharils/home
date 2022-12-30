@@ -22,6 +22,7 @@
 	ds = diff --staged
 	f = fetch
 	g = grep
+	gu = grep '^[<\\|=>]\\{7\\}'
 	l = log --graph --oneline
 	mt = mergetool
 	r = rebase
