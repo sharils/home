@@ -6,9 +6,9 @@ g() {
     cmd="$1"
     shift
     case "$cmd" in
-      url) grep -o "https\?://[^ '>]\+" ;;
-      # g -n "$@" # Segmentation fault: 11
-      *) grep "$@" ;;
+    url) grep -o "https\?://[^ '>]\+" ;;
+    # g -n "$@" # Segmentation fault: 11
+    *) grep "$@" ;;
     esac
     return
   fi
@@ -158,7 +158,8 @@ g() {
   -*) grep "$cmd" "$@" ;;
 
   *)
-    if [ $# -eq 1 ] && [ -f "$1" ] && [ "$cmd" != a ] && [ "$cmd" != add ]; then
+    if [ $# -eq 1 ] && [ -f "$1" ] && [ "$cmd" != a ] && [ "$cmd" != add ] &&
+      [ "$cmd" != rm ]; then
       grep "$cmd" "$@"
     else
       git "$cmd" "$@"
