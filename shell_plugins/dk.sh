@@ -38,6 +38,7 @@ dk() {
     cmd="${1:-ls}"
     shift
     case "$cmd" in
+    p) dk image prune "$@" ;;
     s)
       for image in "$@"; do :; done
       image="$(echo "$image" | x hostnameise).tar.gz"
