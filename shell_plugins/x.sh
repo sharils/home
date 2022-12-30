@@ -140,7 +140,7 @@ EOF
 
   log) log show --predicate 'eventMessage CONTAINS "unlockUIBecomesActive"' --last "${@:-30m}" ;;
 
-  m) mkdir -p "$@" ;;
+  mp) mkdir -p "$@" ;;
 
   o) open "${@:-.}" ;;
 
