@@ -26,6 +26,7 @@ t() {
       v d ~/Sync/todo/todo.txt ~/Sync/todo/todo.sync-conflict-*.txt
       rm -i ~/Sync/todo/todo.sync-conflict-*.txt
       ;;
+    w) v d ~/Sync/todo/todo.txt ~/Sync/todo/work.txt ;;
     esac
     ;;
 
