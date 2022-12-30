@@ -55,7 +55,12 @@ dk() {
       "$cmd" "${@:-env}"
     ;;
   q) osascript -e 'quit app "Docker"' ;;
-  s) dk system "$@" ;;
+  s)
+    case "$1" in
+    p) set -- prune "$@" && shift;;
+    esac
+    dk system "$@"
+    ;;
   v) dk volume "$@" ;;
   *) docker "$cmd" "$@" ;;
   esac
