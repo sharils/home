@@ -21,6 +21,7 @@ e() {
     case "$cmd" in
       R) set -- register "$@" ;;
       r) set -- restart "$@" ;;
+      s) set -- start "$@" ;;
       *) set -- "$cmd" "$@" ;;
     esac
     espanso service "$@"
