@@ -1,6 +1,10 @@
 #!/usr/bin/env sh
 
 dk() {
+  if [ $# -eq 0 ]; then
+    docker "$@"
+    return
+  fi
   cmd="$1"
   shift
 
