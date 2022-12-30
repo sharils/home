@@ -19,6 +19,7 @@ e() {
     cmd="${1:-status}"
     shift
     case "$cmd" in
+      R) set -- register "$@" ;;
       r) set -- restart "$@" ;;
       *) set -- "$cmd" "$@" ;;
     esac
