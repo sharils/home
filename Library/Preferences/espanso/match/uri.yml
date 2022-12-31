@@ -13,3 +13,6 @@ matches:
 
   - trigger: "h:,."
     replace: https://$|$/
+
+  - trigger: "sm,."
+    replace: sitemap.xml
