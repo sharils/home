@@ -8,9 +8,6 @@ matches:
   - trigger: "2,."
     replace: 23:59
 
-  - trigger: "R,."
-    replace: "Refactor "
-
   - trigger: "S,."
     form: |
       Yesterday/Last Friday, I:

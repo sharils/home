@@ -10,3 +10,6 @@ matches:
 
   - trigger: "F,."
     replace: "Fix "
+
+  - trigger: "R,."
+    replace: "Refactor "
