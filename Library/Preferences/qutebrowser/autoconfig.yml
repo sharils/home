@@ -13,6 +13,9 @@ settings:
   content.headers.user_agent:
     https://docs.google.com/presentation/*: Mozilla/5.0 (Macintosh; Intel Mac OS X
       10.15; rv:105.0) Gecko/20100101 Firefox/105.0
+  content.javascript.enabled:
+    global: false
+    qute://*: true
   content.notifications.enabled:
     global: false
   url.default_page:
