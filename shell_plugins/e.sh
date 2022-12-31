@@ -27,7 +27,7 @@ e() {
     espanso service "$@"
     ;;
 
-  *) espanso "$@" ;;
+  *) espanso "$cmd" "$@" ;;
 
   esac
 }
