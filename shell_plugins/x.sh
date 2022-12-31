@@ -56,6 +56,8 @@ EOF
 
   ex) elixir -e "$*" ;;
 
+  ff) /Applications/Firefox.app/Contents/MacOS/firefox "$@" ;;
+
   focus_mode)
     now="$(date +%H%m)"
     [ "$now" -lt '1330' ] || [ '1930' -lt "$now" ]
