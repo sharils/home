@@ -8,6 +8,9 @@ matches:
   - trigger: "\\D,."
     replace: "[^[:digit:]]"
 
+  - trigger: "\\S,."
+    replace: "[^[:space:]]"
+
   - trigger: "\\d,."
     replace: "[[:digit:]]"
 
