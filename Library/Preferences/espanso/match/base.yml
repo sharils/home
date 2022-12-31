@@ -2,9 +2,6 @@
 # Original file: default.yml
 
 matches:
-  - trigger: "100,."
-    replace: 100006臺北市中正區重慶南路1段122號
-
   - trigger: "S,."
     form: |
       Yesterday/Last Friday, I:

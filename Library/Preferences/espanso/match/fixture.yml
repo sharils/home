@@ -4,3 +4,6 @@ matches:
 
   - trigger: "+44,."
     replace: +441134960999
+
+  - trigger: "122,."
+    replace: 100006臺北市中正區重慶南路1段122號
