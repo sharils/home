@@ -5,3 +5,6 @@ matches:
 
   - trigger: "/r,."
     replace: "/remind "
+
+  - trigger: "/s,."
+    replace: "/status "
