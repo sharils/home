@@ -26,6 +26,8 @@ x() {
     xargs -o "$@"
     ;;
 
+  b) "$BROWSER" "$@" ;;
+
   bc) bc --mathlib --expression="$*" ;;
 
   cal) cal -A4 -B4 ;;
