@@ -23,6 +23,7 @@ l() {
   -*) lsd "$cmd" "$@" ;;
   F) less +F "$@" ;;
   t) l --tree "$@" ;;
+  x) lynx "$@" ;;
   *)
     if [ -e "$cmd" ]; then
       lsd "$cmd" "$@"
