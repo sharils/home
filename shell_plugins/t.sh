@@ -42,6 +42,8 @@ t() {
     esac
     ;;
 
+  m) t addm "$@" ;;
+
   n) t oot notifications "${@:---reverse}" ;;
 
   oot)
