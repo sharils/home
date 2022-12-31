@@ -11,6 +11,11 @@ l() {
     return
   fi
 
+  if echo "$1" | g url >/dev/null; then
+    lynx "$@"
+    return
+  fi
+
   cmd="$1"
   shift
   case "$cmd" in
