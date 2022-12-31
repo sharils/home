@@ -7,3 +7,6 @@ matches:
 
   - trigger: "D,."
     replace: "Remove "
+
+  - trigger: "F,."
+    replace: "Fix "
