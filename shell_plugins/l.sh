@@ -22,6 +22,7 @@ l() {
   '') lsd ;;
   -*) lsd "$cmd" "$@" ;;
   F) less +F "$@" ;;
+  b) bat "$@" --style=plain ;;
   s) less "$@" ;;
   t) l --tree "$@" ;;
   x) lynx "$@" ;;
