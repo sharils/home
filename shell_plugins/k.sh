@@ -48,5 +48,7 @@ k() {
     pbpaste | wc
     ;;
 
+  u) sed -n '3527,3842p' /Applications/qutebrowser.app/Contents/Resources/config/configdata.yml | grep "$*" ;;
+
   esac
 }

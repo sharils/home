@@ -64,8 +64,6 @@ h() {
 
   t) todo.sh -vv help ;;
 
-  u) sed -n '3527,3842p' /Applications/qutebrowser.app/Contents/Resources/config/configdata.yml | grep "$*" ;;
-
   builtin | % | . | : | [ | { | alias | bg | bind | break | case | cd | command | complete | continue | dirs | echo | eval | exec | exit | export | false | fc | fg | for | getopts | hash | history | if | jobs | kill | local | log | logout | popd | printf | pushd | pwd | read | readonly | return | set | shift | source | suspend | test | time | times | trap | true | type | ulimit | umask | unalias | unset | until | wait | while) help "$cmd" "$@" ;;
 
   *) "$cmd" "$@" --help | l ;;
