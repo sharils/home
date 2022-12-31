@@ -32,9 +32,6 @@ matches:
   - trigger: "js,."
     replace: javascript
 
-  - trigger: "o,."
-    replace: origin
-
   - trigger: "ox,."
     replace: 🙆 🙅
 

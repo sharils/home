@@ -19,3 +19,6 @@ matches:
 
   - trigger: "d,."
     replace: develop
+
+  - trigger: "o,."
+    replace: origin
