@@ -16,3 +16,6 @@ matches:
 
   - trigger: "\\s,."
     replace: "[^[:space:]]"
+
+  - trigger: "\\w,."
+    replace: "[[:alnum:]_]"
