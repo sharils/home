@@ -20,6 +20,9 @@ matches:
   - trigger: "h:,."
     replace: https://
 
+  - trigger: "ix,."
+    replace: index.html
+
   - trigger: "rb,."
     replace: robots.txt
 
