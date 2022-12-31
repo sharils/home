@@ -7,7 +7,7 @@ l() {
   fi
 
   if [ $# -eq 1 ] && [ -f "$1" ]; then
-    LESS="$LESS --quit-if-one-screen" b --style=plain "$@"
+    LESS="$LESS --quit-if-one-screen" b "$@" --style=plain
     return
   fi
 
