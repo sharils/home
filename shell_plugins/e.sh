@@ -12,7 +12,7 @@ e() {
     case "$cmd" in
       e) cmd=emoji ;;
     esac
-    espanso edit "$cmd" "$@"
+    e edit "$cmd" "$@"
     ;;
 
   l) e log "$@" ;;
