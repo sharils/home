@@ -1,4 +1,7 @@
 matches:
+  - trigger: "+,."
+    replace: "\\{1,\\}"
+
   - trigger: "\\<,."
     replace: "[[:<:]]"
 
