@@ -12,7 +12,7 @@ u() {
 
   o) open -b org.qt-project.Qt.QtWebEngineCore ;;
 
-  *) echo 'not implemented yet' ;;
+  *) qutebrowser "$@" ;;
 
   esac
 }
