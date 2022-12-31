@@ -19,8 +19,8 @@ x() {
     shift
     case "$cmd" in
     b) set -- browsh "$@" ;;
+    l) set -- lynx "$@" ;;
     o) set -- open "$@" ;;
-    y) set -- lynx "$@" ;;
     *) set -- -I{} "$cmd" "$@" ;;
     esac
     xargs -o "$@"
