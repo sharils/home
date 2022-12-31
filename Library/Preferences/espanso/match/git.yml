@@ -13,3 +13,6 @@ matches:
 
   - trigger: "R,."
     replace: "Refactor "
+
+  - trigger: "X,."
+    replace: "Apply "
