@@ -10,3 +10,6 @@ matches:
 
   - trigger: "\\d,."
     replace: "[[:digit:]]"
+
+  - trigger: "\\s,."
+    replace: "[^[:space:]]"
