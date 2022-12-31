@@ -10,7 +10,7 @@ u() {
 
   o) open -b org.qt-project.Qt.QtWebEngineCore ;;
 
-  rm) rm -fr "$HOME/Library/Application Support/qutebrowser/webengine" ;;
+  rm) rm -fir "$HOME/Library/Application Support/qutebrowser/webengine" ;;
 
   *) echo 'not implemented yet' ;;
 
