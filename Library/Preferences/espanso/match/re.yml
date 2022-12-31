@@ -5,5 +5,8 @@ matches:
   - trigger: "\\>,."
     replace: "[[:>:]]"
 
+  - trigger: "\\D,."
+    replace: "[^[:digit:]]"
+
   - trigger: "\\d,."
     replace: "[[:digit:]]"
