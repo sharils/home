@@ -18,7 +18,7 @@ matches:
     replace: favicon.ico
 
   - trigger: "h:,."
-    replace: https://$|$/
+    replace: https://
 
   - trigger: "rb,."
     replace: robots.txt
