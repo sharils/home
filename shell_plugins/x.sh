@@ -197,6 +197,8 @@ EOF
     cp ~/.ssh/id_ed25519.pub "$HOME/.ssh/$*.pub"
     ;;
 
+  tb) /Applications/Tor\ Browser.app/Contents/MacOS/firefox "$@" ;;
+
   tel) open "tel:$*" ;;
 
   tree) (
