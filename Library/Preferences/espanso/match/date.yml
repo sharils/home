@@ -1,4 +1,12 @@
 matches:
+  - trigger: "%F,."
+    replace: "{{F}}"
+    vars:
+      - name: "F"
+        type: date
+        params:
+          format: "%F"
+
   - trigger: "%R,."
     replace: "{{R}}"
     vars:
