@@ -15,6 +15,8 @@ e() {
     espanso edit "$cmd" "$@"
     ;;
 
+  l) e log "$@" ;;
+
   s)
     cmd="${1:-status}"
     shift
