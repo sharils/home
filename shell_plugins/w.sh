@@ -20,7 +20,7 @@ w() {
 
   py | sh) w m --pattern "**/*.$cmd" --run "$*" ;;
 
-  b | l | o | y) "$@" | g url | x fzf | x a "$cmd" ;;
+  b | l | o) "$@" | g url | x fzf | x a "$cmd" ;;
 
   *) w o "$cmd" "$@" ;;
 
