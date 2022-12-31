@@ -11,6 +11,9 @@ matches:
   - trigger: "\\S,."
     replace: "[^[:space:]]"
 
+  - trigger: "\\W,."
+    replace: "[^[:alnum:]_]"
+
   - trigger: "\\d,."
     replace: "[[:digit:]]"
 
