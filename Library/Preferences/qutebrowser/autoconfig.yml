@@ -16,6 +16,7 @@ settings:
   content.javascript.enabled:
     global: false
     qute://*: true
+    search.brave.com: true
   content.notifications.enabled:
     global: false
   url.default_page:
