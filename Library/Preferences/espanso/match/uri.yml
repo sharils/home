@@ -14,5 +14,8 @@ matches:
   - trigger: "h:,."
     replace: https://$|$/
 
+  - trigger: "rb,."
+    replace: robots.txt
+
   - trigger: "sm,."
     replace: sitemap.xml

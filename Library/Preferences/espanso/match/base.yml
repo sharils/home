@@ -23,9 +23,6 @@ matches:
       blocker:
         multiline: true
 
-  - trigger: "bt,."
-    replace: robots.txt
-
   - trigger: "h,."
     replace: help
 
