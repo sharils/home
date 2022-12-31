@@ -8,9 +8,6 @@ matches:
   - trigger: "2,."
     replace: 23:59
 
-  - trigger: "A,."
-    replace: "Add "
-
   - trigger: "C,."
     replace: "Change "
 
@@ -66,9 +63,6 @@ matches:
         type: shell
         params:
           cmd: "pbpaste | sed 's/[^[:digit:].]//g'"
-
-  - trigger: "sm,."
-    replace: sitemap.xml
 
   - trigger: "t,."
     replace: A penny for your thoughts.
