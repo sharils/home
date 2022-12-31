@@ -56,9 +56,6 @@ matches:
   - trigger: "h,."
     replace: help
 
-  - trigger: "ht,."
-    replace: https://$|$/
-
   - trigger: "js,."
     replace: javascript
 
