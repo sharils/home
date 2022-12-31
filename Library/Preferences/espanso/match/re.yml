@@ -4,3 +4,6 @@ matches:
 
   - trigger: "\\>,."
     replace: "[[:>:]]"
+
+  - trigger: "\\d,."
+    replace: "[[:digit:]]"
