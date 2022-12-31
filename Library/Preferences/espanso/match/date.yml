@@ -1,3 +1,11 @@
 matches:
+  - trigger: "%R,."
+    replace: "{{R}}"
+    vars:
+      - name: "R"
+        type: date
+        params:
+          format: "%R"
+
   - trigger: "0:,."
     replace: 23:59
