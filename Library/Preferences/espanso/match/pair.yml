@@ -7,3 +7,6 @@ matches:
 
   - trigger: "[[:,."
     replace: "[[:$|$:]]"
+
+  - trigger: "{,."
+    replace: "{$|$}"
