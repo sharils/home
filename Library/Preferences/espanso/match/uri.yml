@@ -5,5 +5,8 @@ matches:
   - trigger: "1,."
     replace:  1.1.1.1
 
+  - trigger: "eg,."
+    replace: example.com
+
   - trigger: "h:,."
     replace: https://$|$/
