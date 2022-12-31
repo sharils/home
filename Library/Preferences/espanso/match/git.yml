@@ -16,3 +16,6 @@ matches:
 
   - trigger: "X,."
     replace: "Apply "
+
+  - trigger: "d,."
+    replace: develop

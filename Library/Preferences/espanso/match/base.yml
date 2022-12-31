@@ -26,9 +26,6 @@ matches:
   - trigger: "bt,."
     replace: robots.txt
 
-  - trigger: "d,."
-    replace: develop
-
   - trigger: "h,."
     replace: help
 
