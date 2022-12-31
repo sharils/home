@@ -4,3 +4,6 @@ matches:
 
   - trigger: "C,."
     replace: "Change "
+
+  - trigger: "D,."
+    replace: "Remove "

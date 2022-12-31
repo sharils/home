@@ -8,9 +8,6 @@ matches:
   - trigger: "2,."
     replace: 23:59
 
-  - trigger: "D,."
-    replace: "Remove "
-
   - trigger: "F,."
     replace: "Fix "
 
