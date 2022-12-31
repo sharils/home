@@ -30,6 +30,8 @@ x() {
 
   cal) cal -A4 -B4 ;;
 
+  cr) /Applications/Chromium.app/Contents/MacOS/Chromium "$@" ;;
+
   data)
     cmd="${1:-image/gif}"
     shift
