@@ -14,6 +14,9 @@ matches:
   - trigger: "eg,."
     replace: example.com
 
+  - trigger: "f:,."
+    replace: file:///
+
   - trigger: "fi,."
     replace: favicon.ico
 
