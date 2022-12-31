@@ -8,5 +8,8 @@ matches:
   - trigger: "eg,."
     replace: example.com
 
+  - trigger: "fi,."
+    replace: favicon.ico
+
   - trigger: "h:,."
     replace: https://$|$/

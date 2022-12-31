@@ -47,9 +47,6 @@ matches:
   - trigger: "d,."
     replace: develop
 
-  - trigger: "f,."
-    replace: favicon.ico
-
   - trigger: "h,."
     replace: help
 
