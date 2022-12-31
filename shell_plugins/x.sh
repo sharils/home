@@ -190,7 +190,7 @@ EOF
     ssh-keygen -f ~/.ssh/id_ed25519 -t ed25519 -C "${@:?}"
     pbcopy <~/.ssh/id_ed25519.pub
     pbpaste
-    mv ~/.ssh/id_ed25519.pub "$HOME/.ssh/$*.pub"
+    cp ~/.ssh/id_ed25519.pub "$HOME/.ssh/$*.pub"
     ;;
 
   tel) open "tel:$*" ;;
