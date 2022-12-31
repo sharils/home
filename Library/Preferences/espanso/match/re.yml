@@ -2,6 +2,9 @@ matches:
   - trigger: "+,."
     replace: "\\{1,\\}"
 
+  - trigger: "?,."
+    replace: "\\{0,1\\}"
+
   - trigger: "\\<,."
     replace: "[[:<:]]"
 
