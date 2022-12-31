@@ -2,9 +2,6 @@
 # Original file: default.yml
 
 matches:
-  - trigger: "0,."
-    replace: 0.0.0.0
-
   - trigger: "1,."
     replace:  1.1.1.1
 
