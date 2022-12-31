@@ -26,7 +26,7 @@ e() {
       s) set -- start "$@" ;;
       *) set -- "$cmd" "$@" ;;
     esac
-    espanso service "$@"
+    e service "$@"
     ;;
 
   *) espanso "$cmd" "$@" ;;
