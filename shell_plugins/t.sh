@@ -22,6 +22,7 @@ t() {
     cmd="$1"
     shift
     case "$cmd" in
+    d) v d ~/Sync/todo/todo.txt ~/Sync/todo/.data/done.txt ;;
     sc)
       v d ~/Sync/todo/todo.txt ~/Sync/todo/todo.sync-conflict-*.txt
       rm -i ~/Sync/todo/todo.sync-conflict-*.txt
