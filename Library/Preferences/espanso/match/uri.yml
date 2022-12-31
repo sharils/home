@@ -26,6 +26,9 @@ matches:
   - trigger: "ix,."
     replace: index.html
 
+  - trigger: "r:,."
+    replace: rsync://
+
   - trigger: "rb,."
     replace: robots.txt
 
