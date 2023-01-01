@@ -24,6 +24,7 @@ PostgreSQL
 README
 RESTful
 Redux
+SNES
 SSR
 TL;DR
 TypeScript
@@ -33,4 +34,4 @@ devDependencies
 jQuery
 jscodeshift
 practices
-SNES
+qutebrowser
