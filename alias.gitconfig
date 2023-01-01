@@ -1,0 +1,37 @@
+[alias]
+	alias = !sh -c 'cat ~/git/github.com/sharils/home/alias.gitconfig'
+	P = push --force
+	a = add
+	au = add --update
+	bb = bisect bad
+	bg = bisect good
+	bl = blame
+	br = bisect restart
+	bs = bisect start
+	c = commit
+	ca = commit --amend
+	cam = commit --all --message
+	cb = branch
+	ceF = commit --edit --file=.git/COMMIT_EDITMSG
+	cg = config --global
+	cm = commit --message
+	cma = !sh -c 'git commit --message \"Add $*\"'
+	co = checkout
+	cr = revert
+	czp = stash pop --index
+	czz = stash push
+	d = diff
+	ds = diff --staged
+	f = fetch
+	g = grep
+	gu = grep '^[<\\|=>]\\{7\\}'
+	l = log --graph --oneline
+	mt = mergetool
+	p = push
+	r = rebase
+	ro = rebase --onto
+	rsH = reset --hard
+	u = reset
+	uH = reset --hard
+	uh = !sh -c 'git reset @~'
+	y = stash
