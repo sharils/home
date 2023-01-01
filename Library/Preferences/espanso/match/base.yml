@@ -17,9 +17,6 @@ matches:
       blocker:
         multiline: true
 
-  - trigger: "js,."
-    replace: javascript
-
   - trigger: "pd,."
     replace: "{{d}}"
     vars:
@@ -27,12 +24,3 @@ matches:
         type: shell
         params:
           cmd: "pbpaste | sed 's/[^[:digit:].]//g'"
-
-  - trigger: "t,."
-    replace: A penny for your thoughts.
-
-  - trigger: "ts,."
-    replace: typescript
-
-  - trigger: "u,."
-    replace: qutebrowser
