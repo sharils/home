@@ -29,8 +29,8 @@
 	p = push
 	r = rebase
 	ro = rebase --onto
-	rs = reset
 	rsH = reset --hard
+	u = reset
 	y = stash
 [commit]
 	gpgsign = true
