@@ -31,6 +31,7 @@
 	ro = rebase --onto
 	rsH = reset --hard
 	u = reset
+	uh = !sh -c 'git reset @~'
 	y = stash
 [commit]
 	gpgsign = true
