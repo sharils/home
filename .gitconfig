@@ -15,6 +15,7 @@
 	ceF = commit --edit --file=.git/COMMIT_EDITMSG
 	cg = config --global
 	cm = commit --message
+	cma = !sh -c 'git commit --message \"Add $*\"'
 	co = checkout
 	cr = revert
 	czp = stash pop --index
