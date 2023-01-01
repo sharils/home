@@ -63,7 +63,7 @@ g() {
     esac
     ;;
 
-  cma) g cm "Apply $*" ;;
+  cmx) g cm "Apply $*" ;;
 
   cs) git-crypt status "$@" ;;
 
