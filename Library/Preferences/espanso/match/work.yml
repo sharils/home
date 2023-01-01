@@ -1,0 +1,15 @@
+matches:
+  - trigger: "S,."
+    form: |
+      Yesterday/Last Friday, I:
+      [[yesterday]]
+      Today, I’m going to:
+      [[today]]
+      Blocker, [[blocker]]
+    form_fields:
+      yesterday:
+        multiline: true
+      today:
+        multiline: true
+      blocker:
+        multiline: true
