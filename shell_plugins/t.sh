@@ -25,7 +25,7 @@ t() {
       v d "$TODO_FILE" "$TODO_DIR"/todo.sync-conflict-*.txt
       rm -i "$TODO_DIR"/todo.sync-conflict-*.txt
       ;;
-    w) v d "$TODO_DIR/todo.txt" "$TODO_DIR/su.txt" ;;
+    su) v d "$TODO_DIR/todo.txt" "$TODO_DIR/su.txt" ;;
     esac
     ;;
 
