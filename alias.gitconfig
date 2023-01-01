@@ -20,6 +20,7 @@
 	cmd = !sh -c 'git commit --message \"Remove $0 $*\"'
 	cmf = !sh -c 'git commit --message \"Fix $0 $*\"'
 	cmr = !sh -c 'git commit --message \"Refactor $0 $*\"'
+	cmx = !sh -c 'git commit --message \"Apply $0 $*\"'
 	co = checkout
 	cr = revert
 	czp = stash pop --index
