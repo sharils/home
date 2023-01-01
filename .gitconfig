@@ -26,11 +26,11 @@
 	gu = grep '^[<\\|=>]\\{7\\}'
 	l = log --graph --oneline
 	mt = mergetool
+	p = push
 	r = rebase
 	ro = rebase --onto
 	rs = reset
 	rsH = reset --hard
-	p = push
 	y = stash
 [commit]
 	gpgsign = true
