@@ -23,7 +23,11 @@ d() {
   U) d I "$@" -u ;;
   u) d i "$@" -u ;;
   s) date -u +%s ;;
-  v) d i -jf%F -v"${1:-+0d}" "${2:-"$(date +%F)"}" ;;
+  v)
+    cmd="${1:-%F}"
+    shift
+    d i -jf"$cmd" -v"${1:-+0d}" "${2:-"$(date +"$cmd")"}"
+    ;;
 
   %)
     cmd="${1:-all}"
