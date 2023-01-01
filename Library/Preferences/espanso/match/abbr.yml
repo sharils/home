@@ -5,6 +5,9 @@ matches:
   - trigger: "t,."
     replace: A penny for your thoughts.
 
+  - trigger: "tldr,."
+    replace: Thereby hangs a tail.
+
   - trigger: "ts,."
     replace: typescript
 
