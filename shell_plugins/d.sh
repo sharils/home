@@ -17,7 +17,7 @@ d() {
     shift
     case "$cmd" in
     ~) d i "$@" | tr : \~ ;;
-    *) date -Iseconds "$cmd" "$@" | sed 's/:00$//' | sed 's/+00$/Z/' ;;
+    *) date -Iseconds "$cmd" "$@" | sed 's/:00$//;s/+00$/Z/' ;;
     esac
     ;;
   U) d I "$@" -u ;;
