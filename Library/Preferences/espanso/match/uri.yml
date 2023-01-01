@@ -20,6 +20,9 @@ matches:
   - trigger: "fi,."
     replace: favicon.ico
 
+  - trigger: "gt,."
+    replace: g0v.tw
+
   - trigger: "h:,."
     replace: https://
 
