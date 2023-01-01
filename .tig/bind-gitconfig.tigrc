@@ -1,3 +1,5 @@
+bind generic g              none
+bind generic g<ENTER>       view-grep
 bind generic ;gP            @git P
 bind generic ;gcC           @git c --reuse-message %(commit)
 bind generic ;gcma          !git cm 'Add %(prompt)'
