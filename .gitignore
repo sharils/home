@@ -6,7 +6,6 @@ tags
 gitignore.*
 /.dbshell
 /.mongorc.js
-/.todo
 /.vim/.netrwhist
 /.vim/plugged/*
 !.vim/plugged/after
