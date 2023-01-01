@@ -26,7 +26,7 @@ z() {
 
   ssh) cd ~/.ssh || return ;;
 
-  st) cd ~/Sync/todo || return ;;
+  st) cd "$TODO_DIR" || return ;;
 
   t)
     z t_init
