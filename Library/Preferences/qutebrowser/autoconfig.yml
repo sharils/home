@@ -13,8 +13,7 @@ settings:
   content.headers.accept_language:
     zh.wikipedia.org: zh-TW
   content.headers.user_agent:
-    https://docs.google.com/presentation/*: Mozilla/5.0 (Macintosh; Intel Mac OS X
-      10.15; rv:105.0) Gecko/20100101 Firefox/105.0
+    global: Mozilla/5.0 (Windows NT 10.0; rv:102.0) Gecko/20100101 Firefox/102.0
   content.javascript.enabled:
     global: false
     qute://*: true
