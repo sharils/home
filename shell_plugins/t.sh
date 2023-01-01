@@ -16,8 +16,6 @@ t() {
 
   Z) t archive "$@" ;;
 
-  aw) t A su.txt "$@" ;;
-
   d)
     cmd="$1"
     shift
