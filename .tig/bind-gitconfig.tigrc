@@ -5,7 +5,7 @@ bind generic gcC            @git c --reuse-message %(commit)
 bind generic gcma           !git cma '%(prompt Add )'
 bind generic gcmc           !git cmc '%(prompt Change )'
 bind generic gcmd           !git cmd '%(prompt Remove )'
-bind generic gcmf           !git cm 'Fix %(prompt)'
+bind generic gcmf           !git cmf '%(prompt Fix )'
 bind generic gcmr           !git cm 'Refactor %(prompt)'
 bind generic gcmx           !git cm 'Apply %(prompt)'
 bind generic gcob           @git co -b %(prompt) %(commit)
