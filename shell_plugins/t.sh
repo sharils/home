@@ -22,9 +22,9 @@ t() {
     cmd="$1"
     shift
     case "$cmd" in
-    d) v d "$TODO_DIR/todo.txt" "$TODO_DIR/.data/done.txt" ;;
+    d) v d "$TODO_FILE" "$TODO_DIR/.data/done.txt" ;;
     sc)
-      v d "$TODO_DIR/todo.txt" "$TODO_DIR"/todo.sync-conflict-*.txt
+      v d "$TODO_FILE" "$TODO_DIR"/todo.sync-conflict-*.txt
       rm -i "$TODO_DIR"/todo.sync-conflict-*.txt
       ;;
     w) v d "$TODO_DIR/todo.txt" "$TODO_DIR/su.txt" ;;
@@ -36,10 +36,10 @@ t() {
     shift
     case "$cmd" in
     q) $EDITOR "$@" "$TODO_DIR/QuickNote.md" ;;
-    t) $EDITOR "$@" "$TODO_DIR/todo.txt" ;;
+    t) $EDITOR "$@" "$TODO_FILE" ;;
     w) $EDITOR "$@" "$TODO_DIR/su.txt" ;;
-    *[!0-9]*) $EDITOR "$cmd" "$@" "$TODO_DIR/todo.txt" ;;
-    *) $EDITOR "+$cmd" "$@" "$TODO_DIR/todo.txt" ;;
+    *[!0-9]*) $EDITOR "$cmd" "$@" "$TODO_FILE" ;;
+    *) $EDITOR "+$cmd" "$@" "$TODO_FILE" ;;
     esac
     ;;
 
