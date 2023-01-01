@@ -12,6 +12,9 @@ settings:
     global: never
   content.headers.accept_language:
     zh.wikipedia.org: zh-TW
+  content.headers.custom:
+    global:
+      accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
   content.headers.user_agent:
     global: Mozilla/5.0 (Windows NT 10.0; rv:102.0) Gecko/20100101 Firefox/102.0
   content.javascript.enabled:
