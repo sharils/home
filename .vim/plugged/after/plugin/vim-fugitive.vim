@@ -1,6 +1,6 @@
 nmap <LEADER>g :G<SPACE>
 nmap <LEADER>g! :G!<SPACE>
-nmap <LEADER>gP :G! P<SPACE>
+nmap <LEADER>gP :G! P<CR>
 nmap <LEADER>gcm :G cm ''<LEFT>
 nmap <LEADER>gcma :G cm 'Add '<LEFT>
 nmap <LEADER>gcmc :G cm 'Change '<LEFT>
