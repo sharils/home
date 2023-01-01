@@ -35,7 +35,6 @@ t() {
     case "$cmd" in
     q) $EDITOR "$@" "$TODO_DIR/QuickNote.md" ;;
     t) $EDITOR "$@" "$TODO_FILE" ;;
-    w) $EDITOR "$@" "$TODO_DIR/su.txt" ;;
     *[!0-9]*) $EDITOR "$cmd" "$@" "$TODO_FILE" ;;
     *) $EDITOR "+$cmd" "$@" "$TODO_FILE" ;;
     esac
