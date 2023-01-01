@@ -17,6 +17,7 @@
 	cm = commit --message
 	cma = !sh -c 'git commit --message \"Add $0 $*\"'
 	cmc = !sh -c 'git commit --message \"Change $0 $*\"'
+	cmd = !sh -c 'git commit --message \"Remove $0 $*\"'
 	cmf = !sh -c 'git commit --message \"Fix $0 $*\"'
 	cmr = !sh -c 'git commit --message \"Refactor $0 $*\"'
 	co = checkout
