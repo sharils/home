@@ -10,7 +10,7 @@ t() {
   case $cmd in
 
   A)
-    [ -f ~/Sync/todo/"$1" ] || touch ~/Sync/todo/"$1"
+    [ -f "$TODO_DIR/$1" ] || touch "$TODO_DIR/$1"
     t addto "$@"
     ;;
 
@@ -22,12 +22,12 @@ t() {
     cmd="$1"
     shift
     case "$cmd" in
-    d) v d ~/Sync/todo/todo.txt ~/Sync/todo/.data/done.txt ;;
+    d) v d "$TODO_DIR/todo.txt" "$TODO_DIR/.data/done.txt" ;;
     sc)
-      v d ~/Sync/todo/todo.txt ~/Sync/todo/todo.sync-conflict-*.txt
-      rm -i ~/Sync/todo/todo.sync-conflict-*.txt
+      v d "$TODO_DIR/todo.txt" "$TODO_DIR"/todo.sync-conflict-*.txt
+      rm -i "$TODO_DIR"/todo.sync-conflict-*.txt
       ;;
-    w) v d ~/Sync/todo/todo.txt ~/Sync/todo/su.txt ;;
+    w) v d "$TODO_DIR/todo.txt" "$TODO_DIR/su.txt" ;;
     esac
     ;;
 
@@ -35,11 +35,11 @@ t() {
     cmd="${1:-t}"
     shift
     case "$cmd" in
-    q) $EDITOR "$@" ~/Sync/todo/QuickNote.md ;;
-    t) $EDITOR "$@" ~/Sync/todo/todo.txt ;;
-    w) $EDITOR "$@" ~/Sync/todo/su.txt ;;
-    *[!0-9]*) $EDITOR "$cmd" "$@" ~/Sync/todo/todo.txt ;;
-    *) $EDITOR "+$cmd" "$@" ~/Sync/todo/todo.txt ;;
+    q) $EDITOR "$@" "$TODO_DIR/QuickNote.md" ;;
+    t) $EDITOR "$@" "$TODO_DIR/todo.txt" ;;
+    w) $EDITOR "$@" "$TODO_DIR/su.txt" ;;
+    *[!0-9]*) $EDITOR "$cmd" "$@" "$TODO_DIR/todo.txt" ;;
+    *) $EDITOR "+$cmd" "$@" "$TODO_DIR/todo.txt" ;;
     esac
     ;;
 
@@ -64,7 +64,7 @@ t() {
 
   r) t replace "$@" ;;
 
-  rc) rm ~/Sync/todo/todo.sync-conflict-*.txt ;;
+  rc) rm "$TODO_DIR"/todo.sync-conflict-*.txt ;;
 
   su)
     cmd="$1"
