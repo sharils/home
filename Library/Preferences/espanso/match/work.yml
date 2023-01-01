@@ -1,5 +1,5 @@
 matches:
-  - trigger: "S,."
+  - trigger: "ds,."
     form: |
       Yesterday/Last Friday, I:
       [[yesterday]]
