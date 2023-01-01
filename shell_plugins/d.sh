@@ -28,6 +28,7 @@ d() {
     shift
     case "$cmd" in
       F) cmd=%F ;;
+      R) cmd=%R ;;
     esac
     d i -jf"$cmd" -v"${1:-+0d}" "${2:-"$(date +"$cmd")"}"
     ;;
