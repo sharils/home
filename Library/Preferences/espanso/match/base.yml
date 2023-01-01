@@ -36,6 +36,3 @@ matches:
 
   - trigger: "u,."
     replace: qutebrowser
-
-  - trigger: "vx,."
-    replace: ✅ ❌
