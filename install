@@ -21,6 +21,7 @@ main() {
     return
 
     brew install \
+        .lynx \
         autojump \
         ctags \
         direnv \
