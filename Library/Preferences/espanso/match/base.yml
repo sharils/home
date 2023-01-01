@@ -17,9 +17,6 @@ matches:
       blocker:
         multiline: true
 
-  - trigger: "h,."
-    replace: help
-
   - trigger: "js,."
     replace: javascript
 
