@@ -24,7 +24,7 @@ export GREP_OPTIONS='--color=auto'
 
 export LANG='en_US.UTF-8'
 
-export LYNX_CFG="$SHARILS_HOME/lynx.cfg"
+export LYNX_CFG="$SHARILS_HOME/.lynx/lynx.cfg"
 
 export MANPAGER="$PAGER --quit-if-one-screen"
 
