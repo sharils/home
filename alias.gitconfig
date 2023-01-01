@@ -16,6 +16,7 @@
 	cg = config --global
 	cm = commit --message
 	cma = !sh -c 'git commit --message \"Add $0 $*\"'
+	cmc = !sh -c 'git commit --message \"Change $0 $*\"'
 	co = checkout
 	cr = revert
 	czp = stash pop --index
