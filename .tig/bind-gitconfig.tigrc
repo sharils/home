@@ -7,7 +7,7 @@ bind generic ;gcmc          !git cm 'Change %(prompt)'
 bind generic ;gcmd          !git cm 'Remove %(prompt)'
 bind generic ;gcmr          !git cm 'Refactor %(prompt)'
 bind generic ;gcmx          !git cm 'Apply %(prompt)'
-bind generic ;gcob          @git checkout -b %(prompt) %(commit)
+bind generic ;gcob          @git co -b %(prompt) %(commit)
 bind generic ;gcrn          @sh -c 'git revert --no-edit %(commit) && git revert --no-commit @ && git reset @'
 bind generic ;gp            @git p
 bind generic ;gpc           @git push %(remote) %(commit):refs/heads/%(prompt)
