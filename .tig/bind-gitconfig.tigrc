@@ -2,7 +2,7 @@ bind generic g              none
 bind generic g<ENTER>       view-grep
 bind generic gP             @git P
 bind generic gcC            @git c --reuse-message %(commit)
-bind generic gcma           !git cm 'Add %(prompt)'
+bind generic gcma           !git cma '%(prompt Add )'
 bind generic gcmc           !git cmc '%(prompt Change )'
 bind generic gcmd           !git cm 'Remove %(prompt)'
 bind generic gcmf           !git cm 'Fix %(prompt)'
