@@ -10,5 +10,5 @@ nmap <LEADER>gcmr :G cm 'Refactor '<LEFT>
 nmap <LEADER>gcmx :G cm 'Exec '<LEFT>
 nmap <LEADER>gcz :Gllog -g stash<CR>
 nmap <LEADER>ggu :silent Ggrep '^[<\|\=>]\{7\}'<CR>
-nmap <LEADER>gp :G! p<SPACE>
+nmap <LEADER>gp :G! p<CR>
 nmap <LEADER>gw :Gwrite<CR>
