@@ -22,7 +22,7 @@ t() {
     cmd="$1"
     shift
     case "$cmd" in
-    d) v d "$TODO_FILE" "$TODO_DIR/.data/done.txt" ;;
+    d) v d "$TODO_FILE" "$TODO_DIR/$DONE_FILE" ;;
     sc)
       v d "$TODO_FILE" "$TODO_DIR"/todo.sync-conflict-*.txt
       rm -i "$TODO_DIR"/todo.sync-conflict-*.txt
