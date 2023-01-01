@@ -23,4 +23,4 @@ matches:
       - name: d
         type: shell
         params:
-          cmd: "pbpaste | sed 's/[^[:digit:].]//g'"
+          cmd: "pbpaste | tr -cd '[:digit:]'"
