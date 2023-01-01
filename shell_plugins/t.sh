@@ -16,7 +16,7 @@ t() {
 
   Z) t archive "$@" ;;
 
-  aw) t A work.txt "$@" ;;
+  aw) t A su.txt "$@" ;;
 
   d)
     cmd="$1"
@@ -27,7 +27,7 @@ t() {
       v d ~/Sync/todo/todo.txt ~/Sync/todo/todo.sync-conflict-*.txt
       rm -i ~/Sync/todo/todo.sync-conflict-*.txt
       ;;
-    w) v d ~/Sync/todo/todo.txt ~/Sync/todo/work.txt ;;
+    w) v d ~/Sync/todo/todo.txt ~/Sync/todo/su.txt ;;
     esac
     ;;
 
@@ -37,7 +37,7 @@ t() {
     case "$cmd" in
     q) $EDITOR "$@" ~/Sync/todo/QuickNote.md ;;
     t) $EDITOR "$@" ~/Sync/todo/todo.txt ;;
-    w) $EDITOR "$@" ~/Sync/todo/work.txt ;;
+    w) $EDITOR "$@" ~/Sync/todo/su.txt ;;
     *[!0-9]*) $EDITOR "$cmd" "$@" ~/Sync/todo/todo.txt ;;
     *) $EDITOR "+$cmd" "$@" ~/Sync/todo/todo.txt ;;
     esac
