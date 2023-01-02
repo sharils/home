@@ -7,6 +7,8 @@ export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
 # https://support.apple.com/kb/HT208050.
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
+export BROWSER='lynx'
+
 export CLICOLOR='auto' # ls
 
 export EDITOR='vim'
