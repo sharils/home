@@ -26,10 +26,11 @@ b() {
   ri) brew reinstall "$@" ;;
   out) brew outdated "$@" ;;
   v) brew abv "$@" ;;
-  l | o)
+  l | o | u)
     case "$cmd" in
       l) cmd=lynx ;;
       o) cmd=open ;;
+      u) cmd=qutebrowser ;;
     esac
     BROWSER="$cmd" "$@"
     ;;
