@@ -115,6 +115,8 @@ EOF
 
   mp) mkdir -p "$@" ;;
 
+  o) xargs -o "$@" ;;
+
   pdf)
     cmd="$1"
     shift
