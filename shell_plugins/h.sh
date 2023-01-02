@@ -62,7 +62,7 @@ h() {
 
   p) h g push ;;
 
-  t) todo.sh -vv help ;;
+  t) todo.sh -vv help | l ;;
 
   builtin | % | . | : | [ | { | alias | bg | bind | break | case | cd | command | complete | continue | dirs | echo | eval | exec | exit | export | false | fc | fg | for | getopts | hash | history | if | jobs | kill | local | log | logout | popd | printf | pushd | pwd | read | readonly | return | set | shift | source | suspend | test | time | times | trap | true | type | ulimit | umask | unalias | unset | until | wait | while) help "$cmd" "$@" ;;
 
