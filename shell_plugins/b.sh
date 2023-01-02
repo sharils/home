@@ -28,6 +28,7 @@ b() {
   v) brew abv "$@" ;;
   f | l | o | t | u | x)
     case "$cmd" in
+      c) cmd=/Applications/Chromium.app/Contents/MacOS/Chromium ;;
       f) cmd=/Applications/Firefox.app/Contents/MacOS/firefox ;;
       l) cmd=lynx ;;
       o) cmd=open ;;
