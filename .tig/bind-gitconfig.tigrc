@@ -1,6 +1,5 @@
 bind generic g              none
 bind generic g<ENTER>       view-grep
-bind generic gP             @git P
 bind generic gcC            @git c --reuse-message %(commit)
 bind generic gcma           !git cma '%(prompt Add )'
 bind generic gcmc           !git cmc '%(prompt Change )'
@@ -11,5 +10,6 @@ bind generic gcmx           !git cmx '%(prompt Apply )'
 bind generic gcob           @git co -b %(prompt) %(commit)
 bind generic gcrn           @sh -c 'git revert --no-edit %(commit) && git revert --no-commit @ && git reset @'
 bind generic gp<ENTER>      @git p
+bind generic gpf            @git pf
 bind generic gpc            @git push %(remote) %(commit):refs/heads/%(prompt)
 bind generic gro            @git ro %(prompt) %(commit)
