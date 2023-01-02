@@ -26,6 +26,9 @@ matches:
   - trigger: "h:,."
     replace: https://
 
+  - trigger: "lh,."
+    replace: localhost
+
   - trigger: "ix,."
     replace: index.html
 
