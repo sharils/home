@@ -26,9 +26,10 @@ b() {
   ri) brew reinstall "$@" ;;
   out) brew outdated "$@" ;;
   v) brew abv "$@" ;;
-  l)
+  l | o)
     case "$cmd" in
       l) cmd=lynx ;;
+      o) cmd=open ;;
     esac
     BROWSER="$cmd" "$@"
     ;;
