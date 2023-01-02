@@ -1,6 +1,5 @@
 [alias]
 	alias = !sh -c 'cat ~/git/github.com/sharils/home/alias.gitconfig'
-	P = push --force
 	a = add
 	au = add --update
 	bb = bisect bad
@@ -35,6 +34,7 @@
 	l = log --graph --oneline
 	mt = mergetool
 	p = push
+	pf = push --force
 	r = rebase
 	ro = rebase --onto
 	rsH = reset --hard
