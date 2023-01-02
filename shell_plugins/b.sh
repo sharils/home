@@ -26,11 +26,12 @@ b() {
   ri) brew reinstall "$@" ;;
   out) brew outdated "$@" ;;
   v) brew abv "$@" ;;
-  f | l | o | t | u | x)
+  f | l | n | o | t | u | x)
     case "$cmd" in
       c) cmd=/Applications/Chromium.app/Contents/MacOS/Chromium ;;
       f) cmd=/Applications/Firefox.app/Contents/MacOS/firefox ;;
       l) cmd=lynx ;;
+      n) cmd=none ;;
       o) cmd=open ;;
       u) cmd=qutebrowser ;;
       t) cmd=/Applications/Tor\ Browser.app/Contents/MacOS/firefox ;;
