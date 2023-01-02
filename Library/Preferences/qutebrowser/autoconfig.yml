@@ -10,6 +10,7 @@ settings:
     global: true
   content.cookies.accept:
     global: never
+    astexplorer.net: no-unknown-3rdparty
   content.headers.accept_language:
     global: en-US,en;q=0.5
     zh.wikipedia.org: zh-TW
@@ -23,6 +24,7 @@ settings:
   content.javascript.enabled:
     global: false
     qute://*: true
+    astexplorer.net: true
     localhost: true
     search.brave.com: true
   content.notifications.enabled:
