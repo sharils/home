@@ -26,8 +26,9 @@ b() {
   ri) brew reinstall "$@" ;;
   out) brew outdated "$@" ;;
   v) brew abv "$@" ;;
-  l | o | u)
+  f | l | o | u)
     case "$cmd" in
+      f) cmd=/Applications/Firefox.app/Contents/MacOS/firefox ;;
       l) cmd=lynx ;;
       o) cmd=open ;;
       u) cmd=qutebrowser ;;
