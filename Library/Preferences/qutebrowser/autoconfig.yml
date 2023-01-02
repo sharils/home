@@ -64,7 +64,7 @@ settings:
       moe: https://www.moedict.tw/{}
       nlpi: https://ipac.nlpi.edu.tw/search?searchField=FullText&searchInput={}
       npm: https://www.npmjs.com/search?q={}
-      od: http://www.oxfordlearnersdictionaries.com/search/english/?=english&q={}
+      od: https://www.oxfordlearnersdictionaries.com/search/english/?=english&q={}
       ol: https://openlibrary.org/search?mode=everything&q={}
       ptt: https://www.ptt.cc/bbs/{}/index.html
       rd: https://www.reddit.com/search/?q={}
