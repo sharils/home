@@ -27,6 +27,8 @@ settings:
     astexplorer.net: true
     localhost: true
     search.brave.com: true
+    stackoverflow.com: true
+    unix.stackexchange.com: true
   content.notifications.enabled:
     global: false
   url.default_page:
