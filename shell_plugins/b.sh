@@ -26,12 +26,13 @@ b() {
   ri) brew reinstall "$@" ;;
   out) brew outdated "$@" ;;
   v) brew abv "$@" ;;
-  f | l | o | u)
+  f | l | o | u | x)
     case "$cmd" in
       f) cmd=/Applications/Firefox.app/Contents/MacOS/firefox ;;
       l) cmd=lynx ;;
       o) cmd=open ;;
       u) cmd=qutebrowser ;;
+      x) cmd=/Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox "$@" ;;
     esac
     BROWSER="$cmd" "$@"
     ;;
