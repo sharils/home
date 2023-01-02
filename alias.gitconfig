@@ -24,6 +24,7 @@
 	cmx = !sh -c 'git commit --message \"Apply $0 $*\"'
 	co = checkout
 	cr = revert
+	cw = commit --amend --only
 	czp = stash pop --index
 	czz = stash push
 	d = diff
