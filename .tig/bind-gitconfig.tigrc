@@ -10,6 +10,6 @@ bind generic gcmr           !git cmr '%(prompt Refactor )'
 bind generic gcmx           !git cmx '%(prompt Apply )'
 bind generic gcob           @git co -b %(prompt) %(commit)
 bind generic gcrn           @sh -c 'git revert --no-edit %(commit) && git revert --no-commit @ && git reset @'
-bind generic gp             @git p
+bind generic gp<ENTER>      @git p
 bind generic gpc            @git push %(remote) %(commit):refs/heads/%(prompt)
 bind generic gro            @git ro %(prompt) %(commit)
