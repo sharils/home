@@ -1,0 +1,3 @@
+matches:
+  - trigger: "document,."
+    replace: "doc,."
