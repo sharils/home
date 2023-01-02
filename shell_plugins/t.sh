@@ -67,7 +67,7 @@ t() {
     cmd="$1"
     shift
     case "$cmd" in
-    add | a | addm | addto | append | app | archive | command | d | deduplicate | del | e | m | r | rm | depri | dp | done | do | help | list | ls | listall | lsa | listaddons | listcon | lsc | listfile | lf | listpri | lsp | listproj | lsprj | move | mv | prepend | prep | pri | replace | report | shorthelp)
+    Z | add | a | addm | addto | append | app | archive | command | d | deduplicate | del | e | m | r | rm | depri | dp | done | do | help | list | ls | listall | lsa | listaddons | listcon | lsc | listfile | lf | listpri | lsp | listproj | lsprj | move | mv | prepend | prep | pri | replace | report | shorthelp)
       TODO_FILE="$TODO_DIR/su.txt" t "$cmd" "$@"
       return
       ;;
