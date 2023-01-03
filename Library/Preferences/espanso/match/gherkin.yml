@@ -1,4 +1,7 @@
 matches:
+  - trigger: "G,."
+    replace: "Given "
+
   - trigger: "S:,."
     replace: "Scenario: "
 
