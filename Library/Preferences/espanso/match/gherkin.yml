@@ -1,0 +1,13 @@
+matches:
+  - trigger: "iai,."
+    form: |
+      In order to [[why]]
+      As [[who]]
+      I want to [[how]]
+    form_fields:
+      why:
+        multiline: true
+      who:
+        multiline: true
+      how:
+        multiline: true
