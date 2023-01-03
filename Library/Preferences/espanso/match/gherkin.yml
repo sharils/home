@@ -5,6 +5,9 @@ matches:
   - trigger: "S:,."
     replace: "Scenario: "
 
+  - trigger: "W,."
+    replace: "When "
+
   - trigger: "iai,."
     form: |
       In order to [[why]]
