@@ -1,4 +1,7 @@
 matches:
+  - trigger: "AC,."
+    replace: Accept Criteria
+
   - trigger: "ds,."
     form: |
       Yesterday/Last Friday, I:
