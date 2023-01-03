@@ -5,6 +5,9 @@ matches:
   - trigger: "G,."
     replace: "Given "
 
+  - trigger: "N,."
+    replace: "And "
+
   - trigger: "S:,."
     replace: "Scenario: "
 
