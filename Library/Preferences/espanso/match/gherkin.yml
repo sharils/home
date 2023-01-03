@@ -2,6 +2,9 @@ matches:
   - trigger: "B,."
     replace: "But "
 
+  - trigger: "BG,."
+    replace: "Background "
+
   - trigger: "G,."
     replace: "Given "
 
