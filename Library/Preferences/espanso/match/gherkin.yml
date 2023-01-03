@@ -5,6 +5,9 @@ matches:
   - trigger: "BG,."
     replace: "Background "
 
+  - trigger: "E:,."
+    replace: "Examples:"
+
   - trigger: "F:,."
     replace: "Feature: "
 
