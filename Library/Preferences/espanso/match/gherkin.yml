@@ -5,6 +5,9 @@ matches:
   - trigger: "S:,."
     replace: "Scenario: "
 
+  - trigger: "T,."
+    replace: "Then "
+
   - trigger: "W,."
     replace: "When "
 
