@@ -30,6 +30,7 @@ settings:
     search.brave.com: true
     stackoverflow.com: true
     unix.stackexchange.com: true
+    www.railway.gov.tw: true
   content.notifications.enabled:
     global: false
   url.default_page:
