@@ -25,6 +25,7 @@ settings:
     global: false
     qute://*: true
     astexplorer.net: true
+    devdocs.io: true
     localhost: true
     search.brave.com: true
     stackoverflow.com: true
