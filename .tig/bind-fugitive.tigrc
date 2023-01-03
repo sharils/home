@@ -27,6 +27,7 @@ bind generic ;czp           @git stash pop --index
 
 ## Rebase maps
 bind generic ;ri            !git rebase --interactive %(commit)~
+bind refs    ;ri            !git rebase --interactive %(ref)
 bind generic ;rf            !git -c sequence.editor=true rebase --autosquash --interactive %(commit)~
 bind generic ;rr            !git rebase --continue
 bind generic ;rs            !git rebase --skip
