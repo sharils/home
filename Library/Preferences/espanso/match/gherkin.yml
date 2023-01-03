@@ -1,4 +1,7 @@
 matches:
+  - trigger: "S:,."
+    replace: "Scenario: "
+
   - trigger: "iai,."
     form: |
       In order to [[why]]
