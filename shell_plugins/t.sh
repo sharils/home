@@ -16,6 +16,12 @@ t() {
 
   Z) t archive "$@" ;;
 
+  b)
+    cmd="$1"
+    shift
+    b "$cmd" w t ls "$@"
+    ;;
+
   d)
     cmd="$1"
     shift
