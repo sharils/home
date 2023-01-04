@@ -10,6 +10,8 @@ u() {
 
   e) $EDITOR "$HOME/.qutebrowser/bookmarks/urls" "$HOME/.qutebrowser/quickmarks" "$HOME/Library/Preferences/qutebrowser/autoconfig.yml" "$HOME/.qutebrowser/greasemonkey" ;;
 
+  l) l "$@" "$HOME/Library/Application Support/qutebrowser/webengine" ;;
+
   o) open -b org.qt-project.Qt.QtWebEngineCore ;;
 
   *) qutebrowser "$@" ;;
