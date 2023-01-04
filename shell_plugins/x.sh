@@ -97,6 +97,8 @@ EOF
     esac
     ;;
 
+  ip) ipconfig getifaddr "${@:-en0}" ;;
+
   js) node --print "$*" ;;
 
   log) log show --predicate 'eventMessage CONTAINS "unlockUIBecomesActive"' --last "${@:-30m}" ;;
