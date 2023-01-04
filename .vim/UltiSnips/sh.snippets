@@ -86,8 +86,8 @@ shift
 endsnippet
 
 snippet sw "case" b
-case "$cmd" in
-	*) $1 ;;
+case "\$1" in
+*) ${1:echo not implemented >&2} ;;
 esac
 endsnippet
 
