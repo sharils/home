@@ -17,6 +17,10 @@ t() {
   Z) t archive "$@" ;;
 
   b)
+    if [ $# -eq 0 ]; then
+      w t ls "$@"
+      return
+    fi
     cmd="$1"
     shift
     b "$cmd" w t ls "$@"
