@@ -28,7 +28,7 @@ dk() {
   copies)
     z t_init
     (
-      g clt --quiet "$PWD"
+      g cl t --quiet "$PWD"
       find -- * -type d -depth 0 -exec echo COPY {} /workdir/{} \;
       echo "COPY $(find -- * ! -name CHANGELOG.md ! -name Dockerfile ! -name README.md ! -name LICENSE ! -name docker-compose.yml -type f -depth 0 -exec echo {} \+) /workdir"
     )
