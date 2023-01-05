@@ -6,17 +6,17 @@ b() {
     return
   fi
 
-  if echo "$1" | g url >/dev/null; then
-    browsh "$@"
-    return
-  fi
-
   for arg in "$@"; do
     if [ -f "$arg" ]; then
       bat "$@"
       return
     fi
   done
+
+  if echo "$1" | g url >/dev/null; then
+    browsh "$@"
+    return
+  fi
 
   cmd="$1"
   shift
