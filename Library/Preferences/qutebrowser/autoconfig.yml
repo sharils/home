@@ -9,8 +9,8 @@ settings:
   auto_save.session:
     global: true
   content.cookies.accept:
-    global: never
     astexplorer.net: no-unknown-3rdparty
+    global: never
   content.headers.accept_language:
     global: en-US,en;q=0.5
     zh.wikipedia.org: zh-TW
@@ -22,13 +22,14 @@ settings:
   content.headers.user_agent:
     global: Mozilla/5.0 (Windows NT 10.0; rv:102.0) Gecko/20100101 Firefox/102.0
   content.javascript.enabled:
-    global: false
-    qute://*: true
     astexplorer.net: true
     devdocs.io: true
+    global: false
     localhost: true
+    qute://*: true
     search.brave.com: true
     stackoverflow.com: true
+    superuser.com: true
     unix.stackexchange.com: true
     www.railway.gov.tw: true
   content.notifications.enabled:
