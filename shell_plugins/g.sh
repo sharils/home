@@ -47,6 +47,18 @@ g() {
 
   cgi) git config --file ~/git/github.com/sharils/home/gitignore.gitconfig "$@" ;;
 
+  cbr)
+    upstream="${1:-origin/develop}"
+    current_branch="$(git rev-parse --abbrev-ref HEAD)"
+    g f
+    g cb |
+      sed 's/^.* //' | grep -Ev '^(?:main|master)$' |
+      xargs -I{} -n1 sh -c "git r $upstream {} || exit 255"
+    exit_code=$?
+    g co "$current_branch"
+    return $exit_code
+    ;;
+
   cl)
     case "$1" in
     -e) git config --local "$@" ;;
