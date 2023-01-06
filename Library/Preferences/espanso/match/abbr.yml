@@ -2,6 +2,9 @@ matches:
   - trigger: "js,."
     replace: javascript
 
+  - trigger: "gm,."
+    replace: "greasemonkey"
+
   - trigger: "t,."
     replace: A penny for your thoughts.
 
