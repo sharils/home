@@ -31,15 +31,7 @@ g() {
   L) tig reflog "$@" ;;
 
   cbc)
-    upstream="${1:-origin/develop}"
-    current_branch="$(git rev-parse --abbrev-ref HEAD)"
-    g f
-    g cb |
-      sed 's/^.* //' | grep -Ev '^(?:main|master|develop)$' |
-      xargs -I{} -n1 sh -c "git r $upstream {} || exit 255" ||
-      return $?
-
-    g co "$current_branch"
+    g cbr || return $?
     g cb --merged |
       sed 's/^.* //' | grep -Ev '^(?:main|master|develop)$' |
       xargs git cb --delete
