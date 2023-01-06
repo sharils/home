@@ -33,6 +33,10 @@ dk() {
       echo "COPY $(find -- * ! -name CHANGELOG.md ! -name Dockerfile ! -name README.md ! -name LICENSE ! -name docker-compose.yml -type f -depth 0 -exec echo {} \+) /workdir"
     )
     ;;
+  default.template)
+    mkdir -p ./etc/nginx/templates
+    docker run --interactive --rm --tty nginx:1.23-alpine cat /etc/nginx/conf.d/default.conf > ./etc/nginx/templates/default.template
+    ;;
   e) dk exec "$@" ;;
   i)
     cmd="${1:-ls}"
