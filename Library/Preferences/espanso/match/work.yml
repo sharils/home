@@ -2,7 +2,7 @@ matches:
   - trigger: "AC,."
     replace: Accept Criteria
 
-  - trigger: "ds,."
+  - trigger: "DS,."
     form: |
       Yesterday/Last Friday, I:
       [[yesterday]]
