@@ -9,3 +9,11 @@ matches:
         type: shell
         params:
           cmd: "pbpaste | tr -cd '[:digit:]'"
+
+  - trigger: "pu,."
+    replace: "{{d}}"
+    vars:
+      - name: d
+        type: shell
+        params:
+          cmd: "pbpaste | tr '[:lower:]' '[:upper:]'"
