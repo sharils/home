@@ -20,6 +20,9 @@ matches:
   - trigger: fi,.
     replace: favicon.ico
 
+  - trigger: gh,.
+    replace: github
+
   - trigger: gt,.
     replace: g0v.tw
 
