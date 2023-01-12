@@ -1,0 +1,3 @@
+matches:
+  - trigger: "e3,."
+    replace: 000
