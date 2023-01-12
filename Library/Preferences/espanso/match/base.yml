@@ -2,7 +2,7 @@
 # Original file: default.yml
 
 matches:
-  - trigger: "pd,."
+  - trigger: pd,.
     replace: "{{d}}"
     vars:
       - name: d
@@ -10,7 +10,7 @@ matches:
         params:
           cmd: "pbpaste | tr -cd '[:digit:]'"
 
-  - trigger: "pu,."
+  - trigger: pu,.
     replace: "{{d}}"
     vars:
       - name: d

@@ -1,35 +1,35 @@
 matches:
-  - trigger: "B,."
+  - trigger: B,.
     replace: "But "
 
-  - trigger: "BG,."
+  - trigger: BG,.
     replace: "Background "
 
-  - trigger: "E:,."
+  - trigger: E:,.
     replace: "Examples:"
 
-  - trigger: "F:,."
+  - trigger: F:,.
     replace: "Feature: "
 
-  - trigger: "G,."
+  - trigger: G,.
     replace: "Given "
 
-  - trigger: "N,."
+  - trigger: N,.
     replace: "And "
 
-  - trigger: "S:,."
+  - trigger: S:,.
     replace: "Scenario: "
 
-  - trigger: "SO:,."
+  - trigger: SO:,.
     replace: "Scenario Outline: "
 
-  - trigger: "T,."
+  - trigger: T,.
     replace: "Then "
 
-  - trigger: "W,."
+  - trigger: W,.
     replace: "When "
 
-  - trigger: "iai,."
+  - trigger: iai,.
     form: |
       In order to [[why]]
       As [[who]]

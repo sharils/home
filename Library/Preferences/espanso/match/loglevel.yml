@@ -2,19 +2,19 @@
 # Original file: user/loglevel.yml
 
 matches:
-  - trigger: "emergency,."
+  - trigger: emergency,.
     replace: "💥 "
-  - trigger: "alert,."
+  - trigger: alert,.
     replace: "🚨 "
-  - trigger: "critical,."
+  - trigger: critical,.
     replace: "🔥 "
-  - trigger: "error,."
+  - trigger: error,.
     replace: "❌ "
-  - trigger: "warning,."
+  - trigger: warning,.
     replace: "⚠️ "
-  - trigger: "notice,."
+  - trigger: notice,.
     replace: "👀 "
-  - trigger: "info,."
+  - trigger: info,.
     replace: "ℹ️ "
-  - trigger: "debug,."
+  - trigger: debug,.
     replace: "🐛 "

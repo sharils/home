@@ -1,10 +1,10 @@
 # https://slack.com/help/articles/201259356-Slash-commands-in-Slack#h_01EPZ2Z81EJ67RA2BGDKZ9M1AN
 matches:
-  - trigger: "/c,."
+  - trigger: /c,.
     replace: "/collapse"
 
-  - trigger: "/r,."
+  - trigger: /r,.
     replace: "///remind "
 
-  - trigger: "/s,."
+  - trigger: /s,.
     replace: "/status "

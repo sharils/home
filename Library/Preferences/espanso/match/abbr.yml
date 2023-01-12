@@ -1,18 +1,18 @@
 matches:
-  - trigger: "js,."
+  - trigger: js,.
     replace: javascript
 
-  - trigger: "gm,."
+  - trigger: gm,.
     replace: greasemonkey
 
-  - trigger: "t,."
+  - trigger: t,.
     replace: A penny for your thoughts.
 
-  - trigger: "tldr,."
+  - trigger: tldr,.
     replace: Thereby hangs a tail.
 
-  - trigger: "ts,."
+  - trigger: ts,.
     replace: typescript
 
-  - trigger: "u,."
+  - trigger: u,.
     replace: qutebrowser

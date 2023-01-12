@@ -2,7 +2,7 @@ matches:
   - trigger: "%F,."
     replace: "{{F}}"
     vars:
-      - name: "F"
+      - name: F
         type: date
         params:
           format: "%F"
@@ -10,10 +10,10 @@ matches:
   - trigger: "%R,."
     replace: "{{R}}"
     vars:
-      - name: "R"
+      - name: R
         type: date
         params:
           format: "%R"
 
-  - trigger: "0:,."
+  - trigger: 0:,.
     replace: 23:59
