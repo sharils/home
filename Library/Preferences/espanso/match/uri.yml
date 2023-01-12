@@ -43,3 +43,6 @@ matches:
 
   - trigger: sm,.
     replace: sitemap.xml
+
+  - trigger: wp,.
+    replace: wikipedia
