@@ -16,6 +16,8 @@ z() {
 
   gh) cd ~/git/github.com || return ;;
 
+  gl) cd ~/git/gitlab.com || return ;;
+
   gs) cd ~/git/github.com/sharils || return ;;
 
   h) cd "$SHARILS_HOME" || return ;;
