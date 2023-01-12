@@ -40,5 +40,4 @@
 	rsH = reset --hard
 	u = reset
 	uH = reset --hard
-	uh = !sh -c 'git reset @~'
 	y = stash
