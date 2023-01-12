@@ -3,7 +3,7 @@ matches:
     replace: javascript
 
   - trigger: "gm,."
-    replace: "greasemonkey"
+    replace: greasemonkey
 
   - trigger: "t,."
     replace: A penny for your thoughts.
