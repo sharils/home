@@ -155,6 +155,8 @@ g() {
 
   s) tig status "$@" ;;
 
+  stripspace) git grep -I --files-with-matches ' \{1,\}$' | xargs sed -i '' 's/ \{1,\}$//' ;;
+
   v) grep "$@" /Users/minniebavaro/git/github.com/sharils/home/.vim/plugged/vim-fugitive/autoload/fugitive.vim ;;
 
   y) tig stash "$@" ;;
