@@ -55,7 +55,7 @@ settings:
       fda: https://consumer.fda.gov.tw/food/tfnd.aspx?nodeID=178&k={}
       fx: https://addons.mozilla.org/en-GB/firefox/search/?q={}&type=extension
       g: https://www.google.com/search?client=firefox-b-d&gbv=1&q={}
-      ga: https://www.google.com/search?client=firefox-b-d&q=site%3Aarchive.org+{}
+      ga: https://www.google.com/search?client=firefox-b-d&gbv=1&q=site%3Aarchive.org+{}
       gg: http://grep.geek/?q={}
       gh: https://github.com/search?q={}&ref=opensearch
       gi: https://www.google.com/search?as_rights=(cc_publicdomain|cc_attribute|cc_sharealike).-(cc_noncommercial|cc_nonderived)&tbm=isch&as_q=site%3Awikimedia.org+{}
