@@ -60,7 +60,7 @@ settings:
       gh: https://github.com/search?q={}&ref=opensearch
       gi: https://www.google.com/search?client=firefox-b-d&gbv=1&as_rights=(cc_publicdomain|cc_attribute|cc_sharealike).-(cc_noncommercial|cc_nonderived)&tbm=isch&as_q=site%3Awikimedia.org+{}
       gm: https://www.google.com.tw/maps?q={}&hl=zh-TW
-      gn: https://www.google.com.tw/search?q={}&lr=lang_zh-CN|lang_zh-TW&hl=zh-tw&tbs=lr:lang_1zh-CN|lang_1zh-TW,qdr:h,sbd:1&tbm=nws
+      gn: https://www.google.com.tw/search?client=firefox-b-d&gbv=1&q={}&lr=lang_zh-CN|lang_zh-TW&hl=zh-tw&tbs=lr:lang_1zh-CN|lang_1zh-TW,qdr:h,sbd:1&tbm=nws
       gt: https://www.google.com.tw/search?q={}&lr=lang_zh-CN|lang_zh-TW&sa=X&hl=zh-tw
       hex: https://hex.pm/packages?search={}&sort=recent_downloads
       hn: https://hn.algolia.com/?q={}
