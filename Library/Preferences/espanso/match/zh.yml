@@ -1,0 +1,3 @@
+matches:
+  - trigger: tw,.
+    replace: 臺灣
