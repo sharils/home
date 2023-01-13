@@ -25,6 +25,7 @@ settings:
     '*.stackexchange.com': true
     astexplorer.net: true
     devdocs.io: true
+    developer.mozilla.org: true
     global: false
     localhost: true
     qute://*: true
