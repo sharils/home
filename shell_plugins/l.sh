@@ -25,7 +25,15 @@ l() {
   b) bat "$@" --style=plain ;;
   s) less "$@" ;;
   t) l --tree "$@" ;;
-  x) lynx "$@" ;;
+  x)
+    cmd="$1"
+    shift
+    case "$cmd" in
+      '') l x "$@" ;;
+      b) l x "https://search.brave.com/search?q=$*" ;;
+      *) lynx "$cmd" "$@" ;;
+    esac
+    ;;
   *)
     if [ -e "$cmd" ]; then
       lsd "$cmd" "$@"
