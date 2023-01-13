@@ -10,6 +10,7 @@ settings:
     global: true
   content.cookies.accept:
     astexplorer.net: no-unknown-3rdparty
+    developer.mozilla.org: no-unknown-3rdparty
     global: never
   content.headers.accept_language:
     global: en-US,en;q=0.5
