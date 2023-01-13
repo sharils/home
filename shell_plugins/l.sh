@@ -32,6 +32,7 @@ l() {
       '') l x "$@" ;;
       b) l x "https://search.brave.com/search?q=$*" ;;
       dg) l x "https://ddg.gg/lite/?q=$*" ;;
+      g) l x "https://www.google.com/search?client=firefox-b-d&gbv=1&q=$*" ;;
       wp) l x "https://en.wikipedia.org/wiki/Special:Search?go=Go&ns0=1&search=$*" ;;
       *) lynx "$cmd" "$@" ;;
     esac
