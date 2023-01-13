@@ -86,7 +86,7 @@ settings:
       tldr: https://tldr.ostera.io/{}
       tpl: https://ipac.library.taichung.gov.tw/webpac/search.cfm?m=ss&k0={}&t0=k&c0=and
       u: https://search.brave.com/search?q=qutebrowser+{}
-      w8: https://www.google.com/search?q=site%3Awenku8.net+{}
+      w8: https://www.google.com/search?client=firefox-b-d&gbv=1&q=site%3Awenku8.net+{}
       wa: https://www.wolframalpha.com/input?i={}
       wb: https://search.brave.com/search?q=whalebrew+{}
       wk: https://en.wiktionary.org/w/index.php?search={}&title=Special%3ASearch&ns0=1#Esperanto
