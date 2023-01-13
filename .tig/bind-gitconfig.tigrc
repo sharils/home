@@ -11,8 +11,8 @@ bind generic gcmx           !git cmx '%(prompt Apply )'
 bind generic gcob           @git co -b %(prompt) %(commit)
 bind generic gcrn           @sh -c 'git revert --no-edit %(commit) && git revert --no-commit @ && git reset @'
 bind generic gp<ENTER>      @git p
-bind generic gpf            @git pf
 bind generic gpc            @git push %(remote) %(commit):refs/heads/%(prompt)
+bind generic gpf            @git pf
 bind generic gro            @git ro %(prompt) %(commit)
 bind generic gu<SPACE>      @git u %(prompt)
 bind generic guh            @git uh %(commit)
