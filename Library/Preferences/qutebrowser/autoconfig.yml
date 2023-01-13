@@ -46,7 +46,7 @@ settings:
       conchita: http://ipa-reader.xyz/?voice=Conchita&text={}
       dco: https://docs.docker.com/compose/compose-file/#{}
       dd: https://devdocs.io/#q={}
-      dg: https://ddg.gg/?q={}&ia=web
+      dg: https://ddg.gg/lite/?q={}
       dh: https://hub.docker.com/search?type=image&image_filter=store%2Cofficial&q={}
       dj: https://devdocs.io/#q=js%20{}
       dk: https://docs.docker.com/engine/reference/builder/#{}
