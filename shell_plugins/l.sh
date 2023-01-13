@@ -31,6 +31,7 @@ l() {
     case "$cmd" in
       '') l x "$@" ;;
       b) l x "https://search.brave.com/search?q=$*" ;;
+      dg) l x "https://ddg.gg/lite/?q=$*" ;;
       *) lynx "$cmd" "$@" ;;
     esac
     ;;
