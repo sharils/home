@@ -14,6 +14,6 @@ bind generic gp<ENTER>      @git p
 bind generic gpf            @git pf
 bind generic gpc            @git push %(remote) %(commit):refs/heads/%(prompt)
 bind generic gro            @git ro %(prompt) %(commit)
-bind generic guH            @git uH %(commit)
+bind generic guh            @git uh %(commit)
 
 # vim:filetype=conf
