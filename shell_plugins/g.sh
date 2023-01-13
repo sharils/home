@@ -45,7 +45,7 @@ g() {
     g f
     g cb |
       sed 's/^.* //' | grep -Ev '^(?:main|master)$' |
-      xargs -I{} -n1 sh -c "git r $upstream {} || exit 255"
+      xargs -I{} -n1 sh -c "git -c advice.skippedCherryPicks=false r $upstream {} || exit 255"
     exit_code=$?
     g co "$current_branch"
     return $exit_code
