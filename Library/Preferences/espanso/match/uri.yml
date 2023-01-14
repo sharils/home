@@ -11,6 +11,9 @@ matches:
   - trigger: 192,.
     replace: 192.168.0.1
 
+  - trigger: H:,.
+    replace: http://
+
   - trigger: eg,.
     replace: example.com
 
