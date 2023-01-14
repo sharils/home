@@ -10,8 +10,6 @@ x() {
 
   -) chmod -vv -x "$@" ;;
 
-  5424) x b 'https://www.rfc-editor.org/rfc/rfc5424.html#page-11' ;;
-
   8601) x b 'https://en.wikipedia.org/wiki/ISO_8601' ;;
 
   b) "$BROWSER" "$@" ;;
@@ -146,7 +144,15 @@ EOF
     killall Dock
     ;;
 
-  rfc) l x "https://www.rfc-editor.org/rfc/rfc$*" ;;
+  rfc)
+    case "$1" in
+      5424)
+        shift
+        x rfc 5424#page-11
+        ;;
+      *) l x "https://www.rfc-editor.org/rfc/rfc$*" ;;
+    esac
+    ;;
 
   rm)
     args=$(printf '%s\n' "$@")
