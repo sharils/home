@@ -5,7 +5,7 @@ matches:
   - trigger: 1.,.
     replace: 1.1.1.1
 
-  - trigger: 127,.
+  - trigger: 127.,.
     replace: 127.0.0.1
 
   - trigger: 192,.
