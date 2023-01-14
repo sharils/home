@@ -103,6 +103,12 @@ EOF
 
   log) log show --predicate 'eventMessage CONTAINS "unlockUIBecomesActive"' --last "${@:-30m}" ;;
 
+  mh)
+    cmd="$HOME/tmp/miraheze/$(d F)"
+    x mp "$cmd"
+    mv ~/Downloads/smilingpuffinwiki_xml_*.xml.gz "$cmd"
+    ;;
+
   mp) mkdir -p "$@" ;;
 
   o) xargs -o "$@" ;;
