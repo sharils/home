@@ -146,6 +146,8 @@ EOF
     killall Dock
     ;;
 
+  rfc) l x "https://www.rfc-editor.org/rfc/rfc$*" ;;
+
   rm)
     args=$(printf '%s\n' "$@")
     printf '%s\n' "$args" | while read -r arg; do
