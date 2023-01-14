@@ -38,6 +38,9 @@ matches:
   - trigger: ix,.
     replace: index.html
 
+  - trigger: ns3.sg,.
+    replace: 172.104.162.222
+
   - trigger: r:,.
     replace: rsync://
 
