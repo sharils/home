@@ -8,7 +8,7 @@ matches:
   - trigger: 127.,.
     replace: 127.0.0.1
 
-  - trigger: 192,.
+  - trigger: 192.,.
     replace: 192.168.0.1
 
   - trigger: H:,.
