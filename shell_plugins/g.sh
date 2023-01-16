@@ -161,6 +161,12 @@ g() {
 
   y) tig stash "$@" ;;
 
+  w)
+    cmd="$(git config remote.origin.url | tr ':' /)"
+    cmd="${cmd%%.git}"
+    w echo "https://${cmd##git@}"
+    ;;
+
   -*) grep "$cmd" "$@" ;;
 
   *)
