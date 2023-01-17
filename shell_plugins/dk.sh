@@ -35,7 +35,7 @@ dk() {
     ;;
   default.template)
     mkdir -p ./etc/nginx/templates
-    docker run --interactive --rm --tty nginx:1.23-alpine cat /etc/nginx/conf.d/default.conf > ./etc/nginx/templates/default.template
+    docker run --interactive --rm --tty nginx:1.23-alpine cat /etc/nginx/conf.d/default.conf >./etc/nginx/templates/default.template
     ;;
   e) dk exec "$@" ;;
   i)
@@ -66,7 +66,7 @@ dk() {
   q) osascript -e 'quit app "Docker"' ;;
   s)
     case "$1" in
-    p) set -- prune "$@" && shift;;
+    p) set -- prune "$@" && shift ;;
     esac
     dk system "$@"
     ;;
