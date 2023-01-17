@@ -66,7 +66,7 @@ dk() {
   q) osascript -e 'quit app "Docker"' ;;
   s)
     case "$1" in
-    p) set -- prune "$@" && shift ;;
+    p) shift && set -- prune "$@" ;;
     esac
     dk system "$@"
     ;;
