@@ -1,0 +1,442 @@
+matches:
+  - trigger: aliceblue,.
+    replace: f0f8ff
+
+  - trigger: antiquewhite,.
+    replace: faebd7
+
+  - trigger: aqua,.
+    replace: 00ffff
+
+  - trigger: aquamarine,.
+    replace: 7fffd4
+
+  - trigger: azure,.
+    replace: f0ffff
+
+  - trigger: beige,.
+    replace: f5f5dc
+
+  - trigger: bisque,.
+    replace: ffe4c4
+
+  - trigger: black,.
+    replace: 000000
+
+  - trigger: blanchedalmond,.
+    replace: ffebcd
+
+  - trigger: blue,.
+    replace: 0000ff
+
+  - trigger: blueviolet,.
+    replace: 8a2be2
+
+  - trigger: brown,.
+    replace: a52a2a
+
+  - trigger: burlywood,.
+    replace: deb887
+
+  - trigger: cadetblue,.
+    replace: 5f9ea0
+
+  - trigger: chartreuse,.
+    replace: 7fff00
+
+  - trigger: chocolate,.
+    replace: d2691e
+
+  - trigger: coral,.
+    replace: ff7f50
+
+  - trigger: cornflowerblue,.
+    replace: 6495ed
+
+  - trigger: cornsilk,.
+    replace: fff8dc
+
+  - trigger: crimson,.
+    replace: dc143c
+
+  - trigger: cyan,.
+    replace: 00ffff
+
+  - trigger: darkblue,.
+    replace: 00008b
+
+  - trigger: darkcyan,.
+    replace: 008b8b
+
+  - trigger: darkgoldenrod,.
+    replace: b8860b
+
+  - trigger: darkgray,.
+    replace: a9a9a9
+
+  - trigger: darkgreen,.
+    replace: 006400
+
+  - trigger: darkgrey,.
+    replace: a9a9a9
+
+  - trigger: darkkhaki,.
+    replace: bdb76b
+
+  - trigger: darkmagenta,.
+    replace: 8b008b
+
+  - trigger: darkolivegreen,.
+    replace: 556b2f
+
+  - trigger: darkorange,.
+    replace: ff8c00
+
+  - trigger: darkorchid,.
+    replace: 9932cc
+
+  - trigger: darkred,.
+    replace: 8b0000
+
+  - trigger: darksalmon,.
+    replace: e9967a
+
+  - trigger: darkseagreen,.
+    replace: 8fbc8f
+
+  - trigger: darkslateblue,.
+    replace: 483d8b
+
+  - trigger: darkslategray,.
+    replace: 2f4f4f
+
+  - trigger: darkslategrey,.
+    replace: 2f4f4f
+
+  - trigger: darkturquoise,.
+    replace: 00ced1
+
+  - trigger: darkviolet,.
+    replace: 9400d3
+
+  - trigger: deeppink,.
+    replace: ff1493
+
+  - trigger: deepskyblue,.
+    replace: 00bfff
+
+  - trigger: dimgray,.
+    replace: 696969
+
+  - trigger: dimgrey,.
+    replace: 696969
+
+  - trigger: dodgerblue,.
+    replace: 1e90ff
+
+  - trigger: firebrick,.
+    replace: b22222
+
+  - trigger: floralwhite,.
+    replace: fffaf0
+
+  - trigger: forestgreen,.
+    replace: 228b22
+
+  - trigger: fuchsia,.
+    replace: ff00ff
+
+  - trigger: gainsboro,.
+    replace: dcdcdc
+
+  - trigger: ghostwhite,.
+    replace: f8f8ff
+
+  - trigger: gold,.
+    replace: ffd700
+
+  - trigger: goldenrod,.
+    replace: daa520
+
+  - trigger: gray,.
+    replace: 808080
+
+  - trigger: green,.
+    replace: 008000
+
+  - trigger: greenyellow,.
+    replace: adff2f
+
+  - trigger: grey,.
+    replace: 808080
+
+  - trigger: honeydew,.
+    replace: f0fff0
+
+  - trigger: hotpink,.
+    replace: ff69b4
+
+  - trigger: indianred,.
+    replace: cd5c5c
+
+  - trigger: indigo,.
+    replace: 4b0082
+
+  - trigger: ivory,.
+    replace: fffff0
+
+  - trigger: khaki,.
+    replace: f0e68c
+
+  - trigger: lavender,.
+    replace: e6e6fa
+
+  - trigger: lavenderblush,.
+    replace: fff0f5
+
+  - trigger: lawngreen,.
+    replace: 7cfc00
+
+  - trigger: lemonchiffon,.
+    replace: fffacd
+
+  - trigger: lightblue,.
+    replace: add8e6
+
+  - trigger: lightcoral,.
+    replace: f08080
+
+  - trigger: lightcyan,.
+    replace: e0ffff
+
+  - trigger: lightgoldenrodyellow,.
+    replace: fafad2
+
+  - trigger: lightgray,.
+    replace: d3d3d3
+
+  - trigger: lightgreen,.
+    replace: 90ee90
+
+  - trigger: lightgrey,.
+    replace: d3d3d3
+
+  - trigger: lightpink,.
+    replace: ffb6c1
+
+  - trigger: lightsalmon,.
+    replace: ffa07a
+
+  - trigger: lightseagreen,.
+    replace: 20b2aa
+
+  - trigger: lightskyblue,.
+    replace: 87cefa
+
+  - trigger: lightslategray,.
+    replace: 778899
+
+  - trigger: lightslategrey,.
+    replace: 778899
+
+  - trigger: lightsteelblue,.
+    replace: b0c4de
+
+  - trigger: lightyellow,.
+    replace: ffffe0
+
+  - trigger: lime,.
+    replace: 00ff00
+
+  - trigger: limegreen,.
+    replace: 32cd32
+
+  - trigger: linen,.
+    replace: faf0e6
+
+  - trigger: magenta,.
+    replace: ff00ff
+
+  - trigger: maroon,.
+    replace: 800000
+
+  - trigger: mediumaquamarine,.
+    replace: 66cdaa
+
+  - trigger: mediumblue,.
+    replace: 0000cd
+
+  - trigger: mediumorchid,.
+    replace: ba55d3
+
+  - trigger: mediumpurple,.
+    replace: 9370db
+
+  - trigger: mediumseagreen,.
+    replace: 3cb371
+
+  - trigger: mediumslateblue,.
+    replace: 7b68ee
+
+  - trigger: mediumspringgreen,.
+    replace: 00fa9a
+
+  - trigger: mediumturquoise,.
+    replace: 48d1cc
+
+  - trigger: mediumvioletred,.
+    replace: c71585
+
+  - trigger: midnightblue,.
+    replace: 191970
+
+  - trigger: mintcream,.
+    replace: f5fffa
+
+  - trigger: mistyrose,.
+    replace: ffe4e1
+
+  - trigger: moccasin,.
+    replace: ffe4b5
+
+  - trigger: navajowhite,.
+    replace: ffdead
+
+  - trigger: navy,.
+    replace: 000080
+
+  - trigger: oldlace,.
+    replace: fdf5e6
+
+  - trigger: olive,.
+    replace: 808000
+
+  - trigger: olivedrab,.
+    replace: 6b8e23
+
+  - trigger: orange,.
+    replace: ffa500
+
+  - trigger: orangered,.
+    replace: ff4500
+
+  - trigger: orchid,.
+    replace: da70d6
+
+  - trigger: palegoldenrod,.
+    replace: eee8aa
+
+  - trigger: palegreen,.
+    replace: 98fb98
+
+  - trigger: paleturquoise,.
+    replace: afeeee
+
+  - trigger: palevioletred,.
+    replace: db7093
+
+  - trigger: papayawhip,.
+    replace: ffefd5
+
+  - trigger: peachpuff,.
+    replace: ffdab9
+
+  - trigger: peru,.
+    replace: cd853f
+
+  - trigger: pink,.
+    replace: ffc0cb
+
+  - trigger: plum,.
+    replace: dda0dd
+
+  - trigger: powderblue,.
+    replace: b0e0e6
+
+  - trigger: purple,.
+    replace: 800080
+
+  - trigger: red,.
+    replace: ff0000
+
+  - trigger: rosybrown,.
+    replace: bc8f8f
+
+  - trigger: royalblue,.
+    replace: 4169e1
+
+  - trigger: saddlebrown,.
+    replace: 8b4513
+
+  - trigger: salmon,.
+    replace: fa8072
+
+  - trigger: sandybrown,.
+    replace: f4a460
+
+  - trigger: seagreen,.
+    replace: 2e8b57
+
+  - trigger: seashell,.
+    replace: fff5ee
+
+  - trigger: sienna,.
+    replace: a0522d
+
+  - trigger: silver,.
+    replace: c0c0c0
+
+  - trigger: skyblue,.
+    replace: 87ceeb
+
+  - trigger: slateblue,.
+    replace: 6a5acd
+
+  - trigger: slategray,.
+    replace: 708090
+
+  - trigger: slategrey,.
+    replace: 708090
+
+  - trigger: snow,.
+    replace: fffafa
+
+  - trigger: springgreen,.
+    replace: 00ff7f
+
+  - trigger: steelblue,.
+    replace: 4682b4
+
+  - trigger: tan,.
+    replace: d2b48c
+
+  - trigger: teal,.
+    replace: 008080
+
+  - trigger: thistle,.
+    replace: d8bfd8
+
+  - trigger: tomato,.
+    replace: ff6347
+
+  - trigger: turquoise,.
+    replace: 40e0d0
+
+  - trigger: violet,.
+    replace: ee82ee
+
+  - trigger: wheat,.
+    replace: f5deb3
+
+  - trigger: white,.
+    replace: ffffff
+
+  - trigger: whitesmoke,.
+    replace: f5f5f5
+
+  - trigger: yellow,.
+    replace: ffff00
+
+  - trigger: yellowgreen,.
+    replace: 9acd32
+
