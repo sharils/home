@@ -2,6 +2,9 @@ matches:
   - trigger: js,.
     replace: javascript
 
+  - trigger: gi,.
+    replace: gitignore
+
   - trigger: gm,.
     replace: greasemonkey
 
