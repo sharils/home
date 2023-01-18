@@ -90,7 +90,7 @@ t() {
         t su 1 "$cmd" "$@"
         return
       fi
-      auth="$(echo "${TOOT_SU}" | xargs -n1 | grep "$cmd")"
+      auth="$(t su | xargs -n1 | grep "$cmd")"
       if [ -z "$auth" ] || [ "$(echo "$auth" | wc -l)" -ne 1 ]; then
         t su 1 "$cmd" "$@"
         return
