@@ -2,6 +2,10 @@ m() {
   case "$1" in
   aws) "$@" help | l ;;
   erl) erl -man erl | l ;;
+  i)
+    shift
+    m install "$@"
+    ;;
   n | npm)
     shift
     npm help "$@" | l
