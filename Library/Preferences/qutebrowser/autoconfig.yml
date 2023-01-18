@@ -30,6 +30,7 @@ settings:
     global: false
     localhost: true
     qute://*: true
+    schema.org: true
     search.brave.com: true
     stackoverflow.com: true
     stedolan.github.io: true
