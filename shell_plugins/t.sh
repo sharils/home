@@ -96,7 +96,7 @@ t() {
         return
       fi
       ;;
-    *) auth="$(echo "${TOOT_SU}" | cut -d' ' -f "$cmd")" ;;
+    *) auth="$(t su | cut -d' ' -f "$cmd")" ;;
     esac
     echo "TOOT_USING=$auth" >&2
     TOOT_USING="${auth:?}" t "$@"
