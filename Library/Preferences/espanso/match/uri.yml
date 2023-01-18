@@ -1,4 +1,7 @@
 matches:
+  - trigger: .s,.
+    replace: .social
+
   - trigger: 0.,.
     replace: 0.0.0.0
 
@@ -26,7 +29,7 @@ matches:
   - trigger: gh,.
     replace: github
 
-  - trigger: gv,.
+  - trigger: go,.
     replace: g0v
 
   - trigger: h:,.
