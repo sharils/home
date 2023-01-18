@@ -26,6 +26,9 @@ matches:
   - trigger: gh,.
     replace: github
 
+  - trigger: gv,.
+    replace: g0v
+
   - trigger: h:,.
     replace: https://
 
