@@ -32,6 +32,7 @@ settings:
     qute://*: true
     search.brave.com: true
     stackoverflow.com: true
+    stedolan.github.io: true
     superuser.com: true
     www.railway.gov.tw: true
   content.notifications.enabled:
