@@ -12,6 +12,10 @@ m() {
     ;;
   pj) m package-json ;;
   re) m re_format ;;
+  s)
+    shift
+    m search "$@"
+    ;;
   sft) m strftime ;;
 
   account | help | home | info | install | list | lucky | open | outdated | purchase | reset | search | signin | signout | uninstall | upgrade | vendor | version) mas "$@" ;;
