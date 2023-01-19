@@ -19,7 +19,18 @@ settings:
     global:
       accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
   content.headers.do_not_track:
-    global: null
+    '*.stackexchange.com': true
+    astexplorer.net: true
+    devdocs.io: true
+    developer.mozilla.org: true
+    schema.org: true
+    search.brave.com: true
+    stackoverflow.com: true
+    stedolan.github.io: true
+    superuser.com: true
+    www.google.com.tw: true
+    www.railway.gov.tw: true
+    www.youtube.com: true
   content.headers.user_agent:
     global: Mozilla/5.0 (Windows NT 10.0; rv:102.0) Gecko/20100101 Firefox/102.0
   content.javascript.enabled:
