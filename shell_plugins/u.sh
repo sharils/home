@@ -8,7 +8,7 @@ u() {
 
   clean) rm "${@:--fir}" "$HOME/Library/Application Support/qutebrowser/webengine" ;;
 
-  e) $EDITOR "$HOME/.qutebrowser/bookmarks/urls" "$HOME/.qutebrowser/quickmarks" "$HOME/Library/Preferences/qutebrowser/autoconfig.yml" "$HOME/.qutebrowser/greasemonkey" ;;
+  e) $EDITOR "$HOME/Library/Preferences/qutebrowser/autoconfig.yml" "$HOME/.qutebrowser/bookmarks/urls" "$HOME/.qutebrowser/quickmarks" "$HOME/.qutebrowser/greasemonkey" ;;
 
   l) l "$@" "$HOME/Library/Application Support/qutebrowser/webengine" ;;
 
