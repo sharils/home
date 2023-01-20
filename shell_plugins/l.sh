@@ -23,7 +23,7 @@ l() {
   -*) lsd "$cmd" "$@" ;;
   F) less +F "$@" ;;
   b) l x "https://search.brave.com/search?q=$*" ;;
-  dg) l x "https://ddg.gg/lite/?q=$*" ;;
+  dg) l x "https://lite.duckduckgo.com/lite/?q=$*" ;;
   g) l x "https://www.google.com/search?client=firefox-b-d&gbv=1&q=$*" ;;
   s) less "$@" ;;
   t) l --tree "$@" ;;
