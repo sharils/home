@@ -28,6 +28,7 @@ settings:
     devdocs.io: true
     developer.mozilla.org: true
     lernu.net: true
+    randomwordgenerator.com: true
     schema.org: true
     search.brave.com: true
     stackoverflow.com: true
@@ -43,6 +44,7 @@ settings:
     c.im: true
     devdocs.io: true
     developer.mozilla.org: true
+    randomwordgenerator.com: true
     global: false
     lernu.net: true
     localhost: true
