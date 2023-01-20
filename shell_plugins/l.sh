@@ -30,6 +30,7 @@ l() {
   t) l --tree "$@" ;;
   wk) l x "https://en.wiktionary.org/wiki/$*#Esperanto" ;;
   wp) l x "https://en.wikipedia.org/wiki/Special:Search?go=Go&ns0=1&search=$*" ;;
+  wz) l x "https://zh.wikipedia.org/wiki/$*" ;;
   x) lynx "$@" ;;
   *)
     if [ -e "$cmd" ]; then
