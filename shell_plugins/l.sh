@@ -22,7 +22,6 @@ l() {
   '') lsd ;;
   -*) lsd "$cmd" "$@" ;;
   F) less +F "$@" ;;
-  b) bat "$@" --style=plain ;;
   dg) l x "https://ddg.gg/lite/?q=$*" ;;
   g) l x "https://www.google.com/search?client=firefox-b-d&gbv=1&q=$*" ;;
   s) less "$@" ;;
