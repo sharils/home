@@ -22,6 +22,7 @@ l() {
   '') lsd ;;
   -*) lsd "$cmd" "$@" ;;
   F) less +F "$@" ;;
+  b) l x "https://search.brave.com/search?q=$*" ;;
   dg) l x "https://ddg.gg/lite/?q=$*" ;;
   g) l x "https://www.google.com/search?client=firefox-b-d&gbv=1&q=$*" ;;
   s) less "$@" ;;
@@ -32,7 +33,6 @@ l() {
     shift
     case "$cmd" in
       '') l x "$@" ;;
-      b) l x "https://search.brave.com/search?q=$*" ;;
       *) lynx "$cmd" "$@" ;;
     esac
     ;;
