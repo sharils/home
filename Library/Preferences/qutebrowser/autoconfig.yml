@@ -116,7 +116,7 @@ settings:
       w8: https://www.google.com/search?client=firefox-b-d&gbv=1&q=site%3Awenku8.net+{}
       wa: https://www.wolframalpha.com/input?i={}
       wb: https://search.brave.com/search?q=whalebrew+{}
-      wk: https://en.wiktionary.org/w/index.php?search={}&title=Special%3ASearch&ns0=1#Esperanto
+      wk: https://en.wiktionary.org/wiki/{}#Esperanto
       wo: https://eo.wikipedia.org/w/index.php?go=Ek&search={}&title=Speciala%C4%B5o%3ASer%C4%89i&ns0=1
       wp: https://www.wikipedia.org/search-redirect.php?family=wikipedia&language=en&search={}&language=en&go=Go
       wz: https://zh.wikipedia.org/w/index.php?search={}&title=Special%3A%E6%90%9C%E7%B4%A2&go=%E5%9F%B7%E8%A1%8C&wprov=acrw1_-1
