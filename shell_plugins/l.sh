@@ -28,14 +28,7 @@ l() {
   s) less "$@" ;;
   t) l --tree "$@" ;;
   wp) l x "https://en.wikipedia.org/wiki/Special:Search?go=Go&ns0=1&search=$*" ;;
-  x)
-    cmd="$1"
-    shift
-    case "$cmd" in
-      '') l x "$@" ;;
-      *) lynx "$cmd" "$@" ;;
-    esac
-    ;;
+  x) lynx "$@" ;;
   *)
     if [ -e "$cmd" ]; then
       lsd "$cmd" "$@"
