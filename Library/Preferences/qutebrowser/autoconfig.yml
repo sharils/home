@@ -24,6 +24,7 @@ settings:
   content.headers.do_not_track:
     '*.stackexchange.com': true
     astexplorer.net: true
+    c.im: true
     devdocs.io: true
     developer.mozilla.org: true
     lernu.net: true
@@ -39,6 +40,7 @@ settings:
   content.javascript.enabled:
     '*.stackexchange.com': true
     astexplorer.net: true
+    c.im: true
     devdocs.io: true
     developer.mozilla.org: true
     global: false
