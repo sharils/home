@@ -27,6 +27,7 @@ l() {
   g) l x "https://www.google.com/search?client=firefox-b-d&gbv=1&q=$*" ;;
   s) less "$@" ;;
   t) l --tree "$@" ;;
+  wk) l x "https://en.wiktionary.org/wiki/$*#Esperanto" ;;
   wp) l x "https://en.wikipedia.org/wiki/Special:Search?go=Go&ns0=1&search=$*" ;;
   x) lynx "$@" ;;
   *)
