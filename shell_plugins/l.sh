@@ -24,6 +24,7 @@ l() {
   F) less +F "$@" ;;
   b) bat "$@" --style=plain ;;
   dg) l x "https://ddg.gg/lite/?q=$*" ;;
+  g) l x "https://www.google.com/search?client=firefox-b-d&gbv=1&q=$*" ;;
   s) less "$@" ;;
   t) l --tree "$@" ;;
   wp) l x "https://en.wikipedia.org/wiki/Special:Search?go=Go&ns0=1&search=$*" ;;
@@ -33,7 +34,6 @@ l() {
     case "$cmd" in
       '') l x "$@" ;;
       b) l x "https://search.brave.com/search?q=$*" ;;
-      g) l x "https://www.google.com/search?client=firefox-b-d&gbv=1&q=$*" ;;
       *) lynx "$cmd" "$@" ;;
     esac
     ;;
