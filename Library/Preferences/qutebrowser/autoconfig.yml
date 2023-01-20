@@ -12,6 +12,7 @@ settings:
     astexplorer.net: no-unknown-3rdparty
     developer.mozilla.org: no-unknown-3rdparty
     global: never
+    lernu.net: no-unknown-3rdparty
   content.headers.accept_language:
     global: en-US,en;q=0.5
     zh.wikipedia.org: zh-TW
@@ -23,6 +24,7 @@ settings:
     astexplorer.net: true
     devdocs.io: true
     developer.mozilla.org: true
+    lernu.net: true
     schema.org: true
     search.brave.com: true
     stackoverflow.com: true
@@ -38,6 +40,7 @@ settings:
     devdocs.io: true
     developer.mozilla.org: true
     global: false
+    lernu.net: true
     localhost: true
     qute://*: true
     schema.org: true
