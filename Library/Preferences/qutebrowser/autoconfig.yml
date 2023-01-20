@@ -47,18 +47,9 @@ settings:
     superuser.com: true
     www.railway.gov.tw: true
   content.local_storage:
-    '*.stackexchange.com': false
     astexplorer.net: true
-    devdocs.io: false
     developer.mozilla.org: true
-    schema.org: false
-    search.brave.com: false
-    stackoverflow.com: false
-    stedolan.github.io: false
-    superuser.com: false
-    www.google.com.tw: false
-    www.railway.gov.tw: false
-    www.youtube.com: false
+    global: false
   content.notifications.enabled:
     global: false
   url.default_page:
