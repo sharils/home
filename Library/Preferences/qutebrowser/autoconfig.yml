@@ -44,11 +44,11 @@ settings:
     c.im: true
     devdocs.io: true
     developer.mozilla.org: true
-    randomwordgenerator.com: true
     global: false
     lernu.net: true
     localhost: true
     qute://*: true
+    randomwordgenerator.com: true
     schema.org: true
     search.brave.com: true
     stackoverflow.com: true
