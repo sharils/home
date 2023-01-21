@@ -28,6 +28,7 @@ settings:
     devdocs.io: true
     developer.mozilla.org: true
     lernu.net: true
+    randomuser.me: true
     randomwordgenerator.com: true
     schema.org: true
     search.brave.com: true
@@ -48,6 +49,7 @@ settings:
     lernu.net: true
     localhost: true
     qute://*: true
+    randomuser.me: true
     randomwordgenerator.com: true
     schema.org: true
     search.brave.com: true
