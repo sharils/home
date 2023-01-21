@@ -104,7 +104,7 @@ EOF
   mh)
     cmd="$HOME/tmp/miraheze/$(d F)"
     x mp "$cmd"
-    mv ~/Downloads/smilingpuffinwiki_xml_*.xml.gz "$cmd"
+    mv -v ~/Downloads/smilingpuffinwiki_xml_*.xml.gz "$cmd"
     ;;
 
   mp) mkdir -pv "$@" ;;
