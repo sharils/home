@@ -107,7 +107,7 @@ EOF
     mv ~/Downloads/smilingpuffinwiki_xml_*.xml.gz "$cmd"
     ;;
 
-  mp) mkdir -p "$@" ;;
+  mp) mkdir -pv "$@" ;;
 
   o) xargs -o "$@" ;;
 
