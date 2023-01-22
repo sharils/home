@@ -191,6 +191,16 @@ EOF
     esac
     ;;
 
+  sn)
+    # shellcheck disable=2087
+    ssh no sh <<EOF
+set -o errexit -o nounset -o xtrace
+for arg in $@; do
+  curl --location --continue-at - --output sn/sn-\$arg.mp3 https://media.grc.com/sn/sn-\$arg.mp3
+done
+EOF
+    ;;
+
   ssh) ssh -t "$@" screen -xRRe^Gg ;;
 
   ssh-copy-id) ssh-copy-id -o PreferredAuthentications=password -i "$HOME/.ssh/id_ed25519.pub" "$@" ;;
