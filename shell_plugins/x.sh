@@ -146,8 +146,8 @@ EOF
 
   rfc)
     case "$1" in
-      5424) x rfc "$*#page-11" ;;
-      *) l x "https://www.rfc-editor.org/rfc/rfc$*" ;;
+    5424) x rfc "$*#page-11" ;;
+    *) l x "https://www.rfc-editor.org/rfc/rfc$*" ;;
     esac
     ;;
 
