@@ -7,6 +7,8 @@
 	pager = less --quit-if-one-screen
 [diff]
 	tool = vimdiff
+[difftool]
+	prompt = false
 [fetch]
 	prune = true
 [gpg]
