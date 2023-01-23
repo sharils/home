@@ -16,11 +16,11 @@ export SHARILS_HOME=~/git/github.com/sharils/home
 . $SHARILS_HOME/shell_plugins/todo.sh.sh
 . $SHARILS_HOME/shell_plugins/zoxide.sh
 
+. $SHARILS_HOME/shell_plugins/alias.sh
 . $SHARILS_HOME/shell_plugins/dco.sh
 . $SHARILS_HOME/shell_plugins/dk.sh
 . $SHARILS_HOME/shell_plugins/nx.sh
 . $SHARILS_HOME/shell_plugins/wb.sh
-. $SHARILS_HOME/shell_plugins/yarn.sh
 
 . $SHARILS_HOME/shell_plugins/b.sh
 . $SHARILS_HOME/shell_plugins/c.sh
