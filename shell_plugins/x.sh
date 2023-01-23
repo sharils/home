@@ -250,6 +250,19 @@ EOF
     fi
     ;;
 
+  venv)
+    if type deactivate >/dev/null 2>&1; then
+      deactivate
+      return
+    fi
+    cmd="${1:-.venv}"
+    [ ! -e "$cmd" ] && python3 -m venv "$cmd"
+    cmd="$cmd/bin/activate"
+    echo "+ . $cmd" >&2
+    # shellcheck source=/dev/null
+    . "$cmd"
+    ;;
+
   webp)
     cmd="$1"
     shift
