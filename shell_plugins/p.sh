@@ -5,7 +5,14 @@ p() {
   shift
   case "$cmd" in
   '') python ;;
-  a) poetry add "$@" ;;
+  a)
+    case "$1" in
+    D)
+      shift
+      poetry --group dev "$@" ;;
+    *) poetry add "$@" ;;
+    esac
+    ;;
   i) poetry install "$@" ;;
   m) python -m "$@" ;;
   r)
