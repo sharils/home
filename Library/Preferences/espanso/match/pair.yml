@@ -2,6 +2,9 @@ matches:
   - trigger: "',."
     replace: "'$|$'"
 
+  - trigger: (,.
+    replace: ($|$)
+
   - trigger: "[,."
     replace: "[$|$]"
 
