@@ -10,6 +10,7 @@ d() {
   0) date -ujf%s 0 "${@:-+%FT%T}" ;;
   F) date +%F ;;
   I) d i "$@" | tr -d ':~-' ;;
+  U) d I "$@" -u ;;
   a) direnv allow ;;
   e) direnv edit . && chmod 600 .envrc ;;
   i)
@@ -21,7 +22,6 @@ d() {
     *) date -Iseconds "$@" | sed 's/:00$//;s/+00$/Z/' ;;
     esac
     ;;
-  U) d I "$@" -u ;;
   u) d i "$@" -u ;;
   s) date -u +%s ;;
   v)
