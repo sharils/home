@@ -13,11 +13,12 @@ d() {
   e) direnv edit . && chmod 600 .envrc ;;
   I) d i "$@" | tr -d ':~-' ;;
   i)
-    cmd="$1"
-    shift
-    case "$cmd" in
-    ~) d i "$@" | tr : \~ ;;
-    *) date -Iseconds "$cmd" "$@" | sed 's/:00$//;s/+00$/Z/' ;;
+    case "$1" in
+    ~)
+      shift
+      d i "$@" | tr : \~
+      ;;
+    *) date -Iseconds "$@" | sed 's/:00$//;s/+00$/Z/' ;;
     esac
     ;;
   U) d I "$@" -u ;;
@@ -27,8 +28,8 @@ d() {
     cmd="${1:-%F}"
     shift
     case "$cmd" in
-      F) cmd=%F ;;
-      R) cmd=%R ;;
+    F) cmd=%F ;;
+    R) cmd=%R ;;
     esac
     d i -jf"$cmd" -v"${1:-+0d}" "${2:-"$(date +"$cmd")"}"
     ;;
