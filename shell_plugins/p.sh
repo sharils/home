@@ -7,6 +7,7 @@ p() {
   a) poetry add "$@" ;;
   i) poetry install "$@" ;;
   m) python -m "$@" ;;
+  r) poetry run "$@" ;;
   *) echo not implemented >&2 ;;
   esac
 }
