@@ -28,6 +28,12 @@ d() {
       shift
       d j runserver "$@"
       ;;
+    sp)
+      shift
+      cmd="${1:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')"}"
+      shift
+      p r django-admin startproject --verbosity 2 "$cmd" "${@:-.}"
+      ;;
     *)
       p r p manage.py "$@"
       ;;
