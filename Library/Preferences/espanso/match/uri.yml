@@ -2,6 +2,9 @@ matches:
   - trigger: .s,.
     replace: .social
 
+  - trigger: /dn,.
+    replace: /dev/null
+
   - trigger: 0.,.
     replace: 0.0.0.0
 
