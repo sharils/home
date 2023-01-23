@@ -5,6 +5,7 @@ p() {
   shift
   case "$cmd" in
   a) poetry add "$@" ;;
+  i) poetry install "$@" ;;
   m) python -m "$@" ;;
   *) echo not implemented >&2 ;;
   esac
