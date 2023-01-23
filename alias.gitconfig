@@ -41,4 +41,5 @@
 	rsH = reset --hard
 	u = reset
 	uh = reset --hard
+	up = reset --patch
 	y = stash
