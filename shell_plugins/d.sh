@@ -22,6 +22,7 @@ d() {
     *) date -Iseconds "$@" | sed 's/:00$//;s/+00$/Z/' ;;
     esac
     ;;
+  j) p r p manage.py "$@" ;;
   u) d i "$@" -u ;;
   s) date -u +%s ;;
   v)
