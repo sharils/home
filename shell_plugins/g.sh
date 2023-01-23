@@ -6,7 +6,7 @@ g() {
     cmd="$1"
     shift
     case "$cmd" in
-    url) grep --extended-regexp --only-matching "(https?://)?[[:alnum:]-]+(\.[[:alnum:]-]+)*\.(?:com|geek|gg|org)/[^ '>]+" ;;
+    url) grep --extended-regexp --only-matching "https?://[[:alnum:]-]+(?:\.[[:alnum:]-]+)*[^>]*|[[:alnum:]-]+(\.[[:alnum:]-]+)*\.(?:com|geek|gg|org)/[^ '>]+" ;;
     # g -n "$@" # Segmentation fault: 11
     *) grep "$@" ;;
     esac
