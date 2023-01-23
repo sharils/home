@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+alias ..='z ..'
+
 __z_t_tmp=''
 z() {
   _z_cmd="${1:--}"
