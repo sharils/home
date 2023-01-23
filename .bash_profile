@@ -32,6 +32,7 @@ export SHARILS_HOME=~/git/github.com/sharils/home
 . $SHARILS_HOME/shell_plugins/l.sh
 . $SHARILS_HOME/shell_plugins/m.sh
 . $SHARILS_HOME/shell_plugins/n.sh
+. $SHARILS_HOME/shell_plugins/p.sh
 . $SHARILS_HOME/shell_plugins/t.sh
 . $SHARILS_HOME/shell_plugins/u.sh
 . $SHARILS_HOME/shell_plugins/v.sh
