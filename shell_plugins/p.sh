@@ -7,7 +7,15 @@ p() {
   a) poetry add "$@" ;;
   i) poetry install "$@" ;;
   m) python -m "$@" ;;
-  r) poetry run "$@" ;;
+  r)
+    case "$1" in
+    p)
+      shift
+      poetry run python "$@"
+      ;;
+    *) poetry run "$@" ;;
+    esac
+    ;;
   *) echo not implemented >&2 ;;
   esac
 }
