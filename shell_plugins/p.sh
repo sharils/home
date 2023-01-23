@@ -24,6 +24,10 @@ p() {
     *) poetry run "$@" ;;
     esac
     ;;
+  venv)
+    # shellcheck source=/dev/null
+    cmd="$(poetry env info --path)" && x venv "$cmd"
+    ;;
   *) echo not implemented >&2 ;;
   esac
 }
