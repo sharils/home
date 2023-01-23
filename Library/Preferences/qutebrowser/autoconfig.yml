@@ -27,6 +27,7 @@ settings:
     c.im: true
     devdocs.io: true
     developer.mozilla.org: true
+    hub.docker.com: true
     lernu.net: true
     randomuser.me: true
     randomwordgenerator.com: true
@@ -46,6 +47,7 @@ settings:
     devdocs.io: true
     developer.mozilla.org: true
     global: false
+    hub.docker.com: true
     lernu.net: true
     localhost: true
     qute://*: true
