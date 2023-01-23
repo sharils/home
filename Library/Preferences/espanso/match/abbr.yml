@@ -8,6 +8,9 @@ matches:
   - trigger: gm,.
     replace: greasemonkey
 
+  - trigger: py,.
+    replace: python
+
   - trigger: t,.
     replace: A penny for your thoughts.
 
