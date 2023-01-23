@@ -5,6 +5,7 @@ p() {
   shift
   case "$cmd" in
   '') python ;;
+  I) poetry init "$@" ;;
   a)
     case "$1" in
     D)
