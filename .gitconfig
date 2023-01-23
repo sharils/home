@@ -9,6 +9,8 @@
 	tool = vimdiff
 [difftool]
 	prompt = false
+[difftool "vimdiff"]
+	cmd = vimdiff '+:winc w' '+norm ]c' '+set foldlevel=1' $LOCAL $REMOTE
 [fetch]
 	prune = true
 [gpg]
