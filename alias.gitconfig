@@ -28,6 +28,7 @@
 	czz = stash push
 	d = diff
 	ds = diff --staged
+	dt = difftool
 	f = fetch
 	g = grep
 	gu = grep '^[<\\|=>]\\{7\\}'
