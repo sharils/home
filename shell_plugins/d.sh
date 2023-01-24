@@ -24,6 +24,10 @@ d() {
     ;;
   j)
     case "$1" in
+    m)
+      shift
+      d j migrate "$@"
+      ;;
     r)
       shift
       d j runserver "$@"
