@@ -312,5 +312,7 @@ EOF
     LC_ALL="$lang.UTF-8" "$@"
     ;;
 
+  *) echo not implemented >&2 ;;
+
   esac
 }
