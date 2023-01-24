@@ -12,6 +12,14 @@ x() {
 
   8601) x b 'https://en.wikipedia.org/wiki/ISO_8601' ;;
 
+  ai)
+    if [ $# -eq 0 ]; then
+      openai repl
+    else
+      echo "$*" | openai complete -
+    fi
+    ;;
+
   b) "$BROWSER" "$@" ;;
 
   bc) bc --mathlib --expression="$*" ;;
