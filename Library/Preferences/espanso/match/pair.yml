@@ -5,6 +5,9 @@ matches:
   - trigger: (,.
     replace: ($|$)
 
+  - trigger: __,.
+    replace: __$|$__
+
   - trigger: "[,."
     replace: "[$|$]"
 
