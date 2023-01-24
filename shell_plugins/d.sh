@@ -28,6 +28,10 @@ d() {
       shift
       d j runserver "$@"
       ;;
+    sa)
+      shift
+      d j startapp --verbosity 2 "${@:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')_app"}"
+      ;;
     sp)
       shift
       cmd="${1:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')"}"
