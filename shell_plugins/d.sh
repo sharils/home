@@ -245,7 +245,11 @@ SH
       shift
       d j migrate "$@"
       ;;
-    r)
+    mm)
+      shift
+      d j makemigrations "$@"
+      ;;
+    rs)
       shift
       d j runserver "$@"
       ;;
