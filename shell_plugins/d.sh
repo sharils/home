@@ -9,6 +9,7 @@ d() {
   -1) (set -x && date -ujf%s -v-1S 0 "${@:-+%+%t%G-W%V}") ;;
   0) date -ujf%s 0 "${@:-+%FT%T}" ;;
   F) date +%F ;;
+  I) date -Iseconds "$@" | sed 's/:00$//;s/+00$/Z/' ;;
   a) direnv allow ;;
   c)
     cmd="$1"
@@ -33,7 +34,6 @@ d() {
     esac
     ;;
   e) direnv edit . && chmod 600 .envrc ;;
-  i) date -Iseconds "$@" | sed 's/:00$//;s/+00$/Z/' ;;
   j)
     case "$1" in
     m)
