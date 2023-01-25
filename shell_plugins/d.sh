@@ -164,7 +164,7 @@ SH
   -1) (set -x && date -ujf%s -v-1S 0 "${@:-+%+%t%G-W%V}") ;;
   0) date -ujf%s 0 "${@:-+%FT%T}" ;;
   F) date +%F ;;
-  I) date -Iseconds "$@" | sed 's/:00$//;s/+00$/Z/' ;;
+  I) date -Iseconds "$@" | sed 's/:00$//;s/+00$/Z/' | tr -d '[:space:]' ;;
   a) direnv allow ;;
 
   b)
