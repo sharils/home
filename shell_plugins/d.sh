@@ -33,15 +33,7 @@ d() {
     esac
     ;;
   e) direnv edit . && chmod 600 .envrc ;;
-  i)
-    case "$1" in
-    ~)
-      shift
-      d i "$@" | tr : \~
-      ;;
-    *) date -Iseconds "$@" | sed 's/:00$//;s/+00$/Z/' ;;
-    esac
-    ;;
+  i) date -Iseconds "$@" | sed 's/:00$//;s/+00$/Z/' ;;
   j)
     case "$1" in
     m)
