@@ -64,7 +64,13 @@ EOF
     fi
     ;;
 
-  ex) elixir -e "$*" ;;
+  ex)
+    if [ $# -eq 0 ]; then
+      iex
+    else
+      elixir -e "$*"
+    fi
+    ;;
 
   ff) /Applications/Firefox.app/Contents/MacOS/firefox "$@" ;;
 
