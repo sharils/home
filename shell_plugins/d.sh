@@ -215,7 +215,5 @@ SH
     esac
     ;;
 
-  *) date "$@" ;;
-
   esac
 }
