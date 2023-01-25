@@ -257,6 +257,10 @@ SH
       shift
       d j startapp --verbosity 2 "${@:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')_app"}"
       ;;
+    sm)
+      shift
+      d j sqlmigrate "$@"
+      ;;
     sp)
       shift
       cmd="${1:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')"}"
