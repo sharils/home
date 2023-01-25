@@ -22,7 +22,13 @@ x() {
 
   b) "$BROWSER" "$@" ;;
 
-  bc) bc --mathlib --expression="$*" ;;
+  bc)
+    if [ $# -eq 0 ]; then
+      bc --mathlib
+    else
+      bc --mathlib --expression="$*"
+    fi
+    ;;
 
   cal) cal -A4 -B4 ;;
 
