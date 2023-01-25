@@ -6,60 +6,6 @@ d() {
 
   case $cmd in
 
-  -1) (set -x && date -ujf%s -v-1S 0 "${@:-+%+%t%G-W%V}") ;;
-  0) date -ujf%s 0 "${@:-+%FT%T}" ;;
-  F) date +%F ;;
-  I) date -Iseconds "$@" | sed 's/:00$//;s/+00$/Z/' ;;
-  a) direnv allow ;;
-  c)
-    cmd="$1"
-    shift
-
-    case "$cmd" in
-    b) d c build "$@" ;;
-    d) d c down "$@" ;;
-    l) d c logs "$@" ;;
-    r) d c run "$@" ;;
-    u)
-      case "$1" in
-      b)
-        shift
-        set -- --build "$@"
-        ;;
-      esac
-      d c up "$@"
-      ;;
-    x) d c exec "$@" ;;
-    *) docker compose "$cmd" "$@" ;;
-    esac
-    ;;
-  e) direnv edit . && chmod 600 .envrc ;;
-  j)
-    case "$1" in
-    m)
-      shift
-      d j migrate "$@"
-      ;;
-    r)
-      shift
-      d j runserver "$@"
-      ;;
-    sa)
-      shift
-      d j startapp --verbosity 2 "${@:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')_app"}"
-      ;;
-    sp)
-      shift
-      cmd="${1:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')"}"
-      shift
-      p r django-admin startproject --verbosity 2 "$cmd" "${@:-.}"
-      ;;
-    *)
-      p r p manage.py "$@"
-      ;;
-    esac
-    ;;
-
   %)
     cmd="${1:-all}"
     shift
@@ -212,6 +158,60 @@ year:
 SH
       ;;
 
+    esac
+    ;;
+
+  -1) (set -x && date -ujf%s -v-1S 0 "${@:-+%+%t%G-W%V}") ;;
+  0) date -ujf%s 0 "${@:-+%FT%T}" ;;
+  F) date +%F ;;
+  I) date -Iseconds "$@" | sed 's/:00$//;s/+00$/Z/' ;;
+  a) direnv allow ;;
+  c)
+    cmd="$1"
+    shift
+
+    case "$cmd" in
+    b) d c build "$@" ;;
+    d) d c down "$@" ;;
+    l) d c logs "$@" ;;
+    r) d c run "$@" ;;
+    u)
+      case "$1" in
+      b)
+        shift
+        set -- --build "$@"
+        ;;
+      esac
+      d c up "$@"
+      ;;
+    x) d c exec "$@" ;;
+    *) docker compose "$cmd" "$@" ;;
+    esac
+    ;;
+  e) direnv edit . && chmod 600 .envrc ;;
+  j)
+    case "$1" in
+    m)
+      shift
+      d j migrate "$@"
+      ;;
+    r)
+      shift
+      d j runserver "$@"
+      ;;
+    sa)
+      shift
+      d j startapp --verbosity 2 "${@:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')_app"}"
+      ;;
+    sp)
+      shift
+      cmd="${1:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')"}"
+      shift
+      p r django-admin startproject --verbosity 2 "$cmd" "${@:-.}"
+      ;;
+    *)
+      p r p manage.py "$@"
+      ;;
     esac
     ;;
 
