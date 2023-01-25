@@ -76,7 +76,7 @@ settings:
       bg: https://biggo.com.tw/s/?q={}&view=l&sort=lp
       bs: https://blogsurf.io/?query={}
       conchita: http://ipa-reader.xyz/?voice=Conchita&text={}
-      dco: https://docs.docker.com/compose/compose-file/#{}
+      dc: https://docs.docker.com/compose/compose-file/#{}
       dd: https://devdocs.io/#q={}
       dg: https://lite.duckduckgo.com/lite/?q={}
       dh: https://hub.docker.com/search?type=image&image_filter=store%2Cofficial&q={}
