@@ -17,7 +17,6 @@ export SHARILS_HOME=~/git/github.com/sharils/home
 . $SHARILS_HOME/shell_plugins/zoxide.sh
 
 . $SHARILS_HOME/shell_plugins/alias.sh
-. $SHARILS_HOME/shell_plugins/dk.sh
 . $SHARILS_HOME/shell_plugins/nx.sh
 . $SHARILS_HOME/shell_plugins/wb.sh
 

@@ -166,6 +166,24 @@ SH
   F) date +%F ;;
   I) date -Iseconds "$@" | sed 's/:00$//;s/+00$/Z/' ;;
   a) direnv allow ;;
+
+  b)
+    base="$(basename "$PWD" | x hostnameise)"
+    name="${base}_$USER"
+    tag="$base/$USER"
+    cmd="$1"
+    shift
+    case "$cmd" in
+    r) d run --interactive --rm --tty --name "$name" "$@" "$tag" ;;
+    rmi) d rmi "$tag" "$@" ;;
+    s) d stop "$name" ;;
+    *)
+      echo >&2 "DOCKER_DEFAULT_PLATFORM=linux/amd64 # prefix for aws"
+      d build --tag "$tag" "${@:-.}"
+      ;;
+    esac
+    ;;
+
   c)
     cmd="$1"
     shift
@@ -188,7 +206,38 @@ SH
     *) docker compose "$cmd" "$@" ;;
     esac
     ;;
+
+  copies)
+    z t_init
+    (
+      g cl t --quiet "$PWD"
+      find -- * -type d -depth 0 -exec echo COPY {} /workdir/{} \;
+      echo "COPY $(find -- * ! -name CHANGELOG.md ! -name Dockerfile ! -name README.md ! -name LICENSE ! -name docker-compose.yml -type f -depth 0 -exec echo {} \+) /workdir"
+    )
+    ;;
+
+  default.template)
+    mkdir -p ./etc/nginx/templates
+    docker run --interactive --rm --tty nginx:1.23-alpine cat /etc/nginx/conf.d/default.conf >./etc/nginx/templates/default.template
+    ;;
+
   e) direnv edit . && chmod 600 .envrc ;;
+
+  i)
+    cmd="${1:-ls}"
+    shift
+    case "$cmd" in
+    p) d image prune "$@" ;;
+    s)
+      for image in "$@"; do :; done
+      image="$(echo "$image" | x hostnameise).tar.gz"
+      d image save "$@" | gzip >"$image"
+      echo >&2 "docker load < $image # to load image"
+      ;;
+    *) d image "$cmd" "$@" ;;
+    esac
+    ;;
+
   j)
     case "$1" in
     m)
@@ -214,6 +263,28 @@ SH
       ;;
     esac
     ;;
+
+  l) d logs "$@" ;;
+  o) open -b com.docker.docker ;;
+  r)
+    cmd="${1:-alpine:3.17}"
+    shift
+    docker run --interactive --rm --tty \
+      --user "$(id -u):$(id -g)" \
+      --volume "$PWD:$PWD" \
+      --workdir "$PWD" \
+      "$cmd" "${@:-env}"
+    ;;
+  q) osascript -e 'quit app "Docker"' ;;
+  s)
+    case "$1" in
+    p) shift && set -- prune "$@" ;;
+    esac
+    d system "$@"
+    ;;
+  v) d volume "$@" ;;
+  x) d exec "$@" ;;
+  *) docker "$cmd" "$@" ;;
 
   esac
 }
