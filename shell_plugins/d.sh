@@ -245,6 +245,10 @@ SH
       shift
       d j check "$@"
       ;;
+    db)
+      shift
+      d j dbshell "$@"
+      ;;
     m)
       shift
       d j migrate "$@"
