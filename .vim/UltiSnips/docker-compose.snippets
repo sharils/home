@@ -152,7 +152,7 @@ endsnippet
 snippet postgres "postgres" b
 db:
 	# https://hub.docker.com/_/postgres
-	image: postgres:14.5-alpine
+	image: postgres:15.1-alpine
 	restart: always
 	environment:
 		POSTGRES_USER:
@@ -169,7 +169,7 @@ endsnippet
 
 snippet psql "psql" b
 psql:
-	image: postgres:14.5-alpine
+	image: postgres:15.1-alpine
 	environment:
 		PGHOST: db
 		PGUSER: ${POSTGRES_USER}
