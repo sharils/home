@@ -56,7 +56,13 @@ insert_final_newline = true
 EOF
     ;;
 
-  erl) erl -noshell -eval "$*,init:stop()." ;;
+  erl)
+    if [ $# -eq 0 ]; then
+      erl
+    else
+      erl -noshell -eval "$*,init:stop()."
+    fi
+    ;;
 
   ex) elixir -e "$*" ;;
 
