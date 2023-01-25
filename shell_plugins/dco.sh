@@ -11,11 +11,11 @@ dco() {
   l) dco logs "$@" ;;
   r) dco run "$@" ;;
   u)
-    cmd="$1"
-    shift
-    case "$cmd" in
-      b) set -- --build "$@" ;;
-      *) set -- "$cmd" "$@" ;;
+    case "$1" in
+    b)
+      shift
+      set -- --build "$@"
+      ;;
     esac
     dco up "$@"
     ;;
