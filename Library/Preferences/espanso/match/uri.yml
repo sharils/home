@@ -20,6 +20,9 @@ matches:
   - trigger: H:,.
     replace: http://
 
+  - trigger: dc,.
+    replace: docker-compose.yml
+
   - trigger: eg,.
     replace: example.com
 
