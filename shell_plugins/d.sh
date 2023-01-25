@@ -18,7 +18,6 @@ d() {
     case "$cmd" in
     b) d c build "$@" ;;
     d) d c down "$@" ;;
-    e) d c exec "$@" ;;
     l) d c logs "$@" ;;
     r) d c run "$@" ;;
     u)
@@ -30,6 +29,7 @@ d() {
       esac
       d c up "$@"
       ;;
+    x) d c exec "$@" ;;
     *) docker compose "$cmd" "$@" ;;
     esac
     ;;
