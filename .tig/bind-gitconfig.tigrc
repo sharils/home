@@ -8,6 +8,7 @@ bind generic gcmd           !git cmd '%(prompt Remove )'
 bind generic gcmf           !git cmf '%(prompt Fix )'
 bind generic gcmr           !git cmr '%(prompt Refactor )'
 bind generic gcmx           !git cmx '%(prompt Apply )'
+bind generic gco<SPACE>     @git co %(prompt)
 bind generic gcob           @git co -b %(prompt) %(commit)
 bind generic gcrn           @sh -c 'git revert --no-edit %(commit) && git revert --no-commit @ && git reset @'
 bind generic gp<ENTER>      @git p
