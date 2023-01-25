@@ -46,6 +46,12 @@ else
 	${1::}
 endsnippet
 
+snippet ep "export POSTGRES_" b
+export POSTGRES_USER='usr-`keepassxc-cli generate --custom 0123456789ABCDEFGHJKMNPQRSTVWXYZ --length 4 | tr -d \\n`'
+export POSTGRES_PASSWORD='psw-`keepassxc-cli generate --custom 0123456789ABCDEFGHJKMNPQRSTVWXYZ --length 4 | tr -d \\n`'
+export POSTGRES_DB='db-`keepassxc-cli generate --custom 0123456789ABCDEFGHJKMNPQRSTVWXYZ --length 4 | tr -d \\n`'
+endsnippet
+
 snippet eux "set -eux" b
 set -o errexit -o nounset -o xtrace
 endsnippet
