@@ -9,7 +9,6 @@ d() {
   -1) (set -x && date -ujf%s -v-1S 0 "${@:-+%+%t%G-W%V}") ;;
   0) date -ujf%s 0 "${@:-+%FT%T}" ;;
   F) date +%F ;;
-  I) d i "$@" | tr -d ':~-' ;;
   a) direnv allow ;;
   c)
     cmd="$1"
