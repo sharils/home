@@ -12,6 +12,28 @@ d() {
   I) d i "$@" | tr -d ':~-' ;;
   U) d I "$@" -u ;;
   a) direnv allow ;;
+  c)
+    cmd="$1"
+    shift
+
+    case "$cmd" in
+    b) d c build "$@" ;;
+    d) d c down "$@" ;;
+    e) d c exec "$@" ;;
+    l) d c logs "$@" ;;
+    r) d c run "$@" ;;
+    u)
+      case "$1" in
+      b)
+        shift
+        set -- --build "$@"
+        ;;
+      esac
+      d c up "$@"
+      ;;
+    *) docker compose "$cmd" "$@" ;;
+    esac
+    ;;
   e) direnv edit . && chmod 600 .envrc ;;
   i)
     case "$1" in
