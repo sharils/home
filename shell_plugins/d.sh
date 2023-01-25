@@ -70,7 +70,6 @@ d() {
     esac
     ;;
   u) d i "$@" -u ;;
-  s) date -u +%s ;;
   v)
     cmd="${1:-%F}"
     shift
