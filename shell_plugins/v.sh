@@ -24,7 +24,7 @@ v() {
   case "$cmd" in
 
   R) vim README.md ;;
-  dco) vim docker-compose.yml ;;
+  dc) vim docker-compose.yml ;;
   di) vim .dockerignore ;;
   dk) vim Dockerfile ;;
   hosts) EDITOR=vim sudo --edit /etc/hosts "$@" ;;

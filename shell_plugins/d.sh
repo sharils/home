@@ -191,6 +191,7 @@ SH
     case "$cmd" in
     b) d c build "$@" ;;
     d) d c down "$@" ;;
+    e) $EDITOR "${@:-docker-compose.yml}" ;;
     l) d c logs "$@" ;;
     r) d c run "$@" ;;
     u)
