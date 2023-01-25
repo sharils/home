@@ -241,6 +241,10 @@ SH
 
   j)
     case "$1" in
+    c)
+      shift
+      d j check "$@"
+      ;;
     m)
       shift
       d j migrate "$@"
