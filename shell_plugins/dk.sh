@@ -37,7 +37,6 @@ dk() {
     mkdir -p ./etc/nginx/templates
     docker run --interactive --rm --tty nginx:1.23-alpine cat /etc/nginx/conf.d/default.conf >./etc/nginx/templates/default.template
     ;;
-  e) dk exec "$@" ;;
   i)
     cmd="${1:-ls}"
     shift
@@ -71,6 +70,7 @@ dk() {
     dk system "$@"
     ;;
   v) dk volume "$@" ;;
+  x) dk exec "$@" ;;
   *) docker "$cmd" "$@" ;;
   esac
 }
