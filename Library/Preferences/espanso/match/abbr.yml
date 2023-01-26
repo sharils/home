@@ -1,4 +1,7 @@
 matches:
+  - trigger: as,.
+    replace: applescript
+
   - trigger: js,.
     replace: javascript
 
