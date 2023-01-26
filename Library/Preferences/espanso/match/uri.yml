@@ -44,7 +44,7 @@ matches:
   - trigger: lh,.
     replace: localhost
 
-  - trigger: ix,.
+  - trigger: idx,.
     replace: index.html
 
   - trigger: ns3.sg,.
