@@ -198,6 +198,7 @@ main() {
 .bashrc,\
 .ctags,\
 .curlrc,\
+.editrc,\
 .fdignore,\
 .gitconfig,\
 .gitignore,\
