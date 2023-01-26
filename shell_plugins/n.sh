@@ -111,7 +111,7 @@ n() {
     if ! [ -e ./ca.crt ] && ! [ -e ./ca.key ]; then
       n y mkcert create-ca --organization '!!! npx -y mkcert create-ca !!!' --validity 1
     elif ! [ -e ./ca.crt ] || ! [ -e ./ca.key ]; then
-      echo ! [ -e ./ca.crt ] || ! [ -e ./ca.key ] >&2
+      echo >&2 ! [ -e ./ca.crt ] || ! [ -e ./ca.key ]
       return 1
     fi
 
