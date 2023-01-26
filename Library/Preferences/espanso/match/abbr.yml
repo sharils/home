@@ -2,6 +2,9 @@ matches:
   - trigger: as,.
     replace: applescript
 
+  - trigger: dj,.
+    replace: django
+
   - trigger: js,.
     replace: javascript
 
