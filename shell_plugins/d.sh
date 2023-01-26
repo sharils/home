@@ -247,6 +247,7 @@ SH
       shift
       p r django-admin startproject --verbosity 2 "$cmd" "${@:-.}"
       ;;
+    *) p r django-admin "$@" ;;
     esac
     ;;
 
