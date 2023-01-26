@@ -178,7 +178,7 @@ SH
     rmi) d rmi "$tag" "$@" ;;
     s) d stop "$name" ;;
     *)
-      echo >&2 "DOCKER_DEFAULT_PLATFORM=linux/amd64 # prefix for aws"
+      echo "DOCKER_DEFAULT_PLATFORM=linux/amd64 # prefix for aws" >&2
       d build --tag "$tag" "${@:-.}"
       ;;
     esac
