@@ -132,21 +132,8 @@ n() {
   r) n run "$@" ;;
 
   serve)
-    if ! [ -e ./ca.crt ] && ! [ -e ./ca.key ]; then
-      n y mkcert create-ca --organization '!!! npx -y mkcert create-ca !!!' --validity 1
-    elif ! [ -e ./ca.crt ] || ! [ -e ./ca.key ]; then
-      echo >&2 ! [ -e ./ca.crt ] || ! [ -e ./ca.key ]
-      return 1
-    fi
-
-    if ! [ -e ./cert.crt ] && ! [ -e ./cert.key ]; then
-      n y mkcert create-cert --validity 1 --domains "${N_SERVE_DOMAINS:-localhost,127.0.0.1}"
-    elif ! [ -e ./cert.crt ] || ! [ -e ./cert.key ]; then
-      echo >&2 ! [ -e ./cert.crt ] || ! [ -e ./cert.key ]
-      return 2
-    fi
-
-    n y serve --ssl-cert cert.crt --ssl-key cert.key "$@"
+    [ -f cert.crt ] && [ -f cert.key ] && set -- --ssl-cert cert.crt --ssl-key cert.key
+    n y serve "$@"
     ;;
 
   vercel) n y vercel --token="${VERCEL_TOKEN:?}" "$@" ;;
