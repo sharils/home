@@ -208,7 +208,7 @@ APPLESCRIPT
     case "$cmd" in
     t)
       cmd="${*:-sh}"
-      echo >&2 "==> $cmd <=="
+      echo "==> $cmd <==" >&2
       x sh | tee "$cmd"
       x + "$cmd"
       ;;
