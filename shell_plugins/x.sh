@@ -290,7 +290,7 @@ EOF
     cmd="${1:-.venv}"
     [ ! -e "$cmd" ] && python3 -m venv "$cmd"
     cmd="$cmd/bin/activate"
-    echo "+ . $cmd" >&2
+    echo >&2 "+ . $cmd"
     # shellcheck source=/dev/null
     . "$cmd"
     ;;
