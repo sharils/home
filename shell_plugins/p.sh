@@ -15,7 +15,6 @@ p() {
     esac
     ;;
   i) poetry install "$@" ;;
-  m) python -m "$@" ;;
   r)
     case "$1" in
     p)
