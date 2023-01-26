@@ -1,11 +1,8 @@
 #!/usr/bin/env sh
 
 h() {
-  cmd=$1
-  shift
-
   # shellcheck disable=SC1083
-  case $cmd in
+  case "$1" in
 
   '')
     # shellcheck source=/dev/null
@@ -45,6 +42,7 @@ h() {
     ;;
 
   e)
+    shift
     case "${1:-install}" in
     bp) cmd=/.bash_profile ;;
     install) cmd=/install ;;
@@ -58,15 +56,20 @@ h() {
     h .
     ;;
 
-  g) git -C "$SHARILS_HOME" "$@" ;;
+  g)
+    shift
+    git -C "$SHARILS_HOME" "$@"
+    ;;
 
   p) h g push ;;
 
   t) todo.sh -vv help | l ;;
 
-  builtin | % | . | : | [ | { | alias | bg | bind | break | case | cd | command | complete | continue | dirs | echo | eval | exec | exit | export | false | fc | fg | for | getopts | hash | history | if | jobs | kill | local | log | logout | popd | printf | pushd | pwd | read | readonly | return | set | shift | source | suspend | test | time | times | trap | true | type | ulimit | umask | unalias | unset | until | wait | while) help "$cmd" "$@" | l;;
+  builtin | % | . | : | [ | { | alias | bg | bind | break | case | cd | command | complete | continue | dirs | echo | eval | exec | exit | export | false | fc | fg | for | getopts | hash | history | if | jobs | kill | local | log | logout | popd | printf | pushd | pwd | read | readonly | return | set | shift | source | suspend | test | time | times | trap | true | type | ulimit | umask | unalias | unset | until | wait | while)
+    help "$@" | l
+    ;;
 
-  *) "$cmd" "$@" --help | l ;;
+  *) "$@" --help | l ;;
 
   esac
 }
