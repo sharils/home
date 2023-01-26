@@ -15,6 +15,47 @@ p() {
     esac
     ;;
   i) poetry install "$@" ;;
+
+  m)
+    case "$1" in
+    c)
+      shift
+      p m check "$@"
+      ;;
+    db)
+      shift
+      p m dbshell "$@"
+      ;;
+    m)
+      shift
+      p m migrate "$@"
+      ;;
+    mm)
+      shift
+      p m makemigrations "$@"
+      ;;
+    rs)
+      shift
+      p m runserver "$@"
+      ;;
+    sa)
+      shift
+      p m startapp --verbosity 2 "${@:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')_app"}"
+      ;;
+    sh)
+      shift
+      p m shell "$@"
+      ;;
+    sm)
+      shift
+      p m sqlmigrate "$@"
+      ;;
+    *)
+      p r p manage.py "$@"
+      ;;
+    esac
+    ;;
+
   r)
     case "$1" in
     p)

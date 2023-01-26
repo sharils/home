@@ -241,46 +241,11 @@ SH
 
   j)
     case "$1" in
-    c)
-      shift
-      d j check "$@"
-      ;;
-    db)
-      shift
-      d j dbshell "$@"
-      ;;
-    m)
-      shift
-      d j migrate "$@"
-      ;;
-    mm)
-      shift
-      d j makemigrations "$@"
-      ;;
-    rs)
-      shift
-      d j runserver "$@"
-      ;;
-    sa)
-      shift
-      d j startapp --verbosity 2 "${@:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')_app"}"
-      ;;
-    sh)
-      shift
-      d j shell "$@"
-      ;;
-    sm)
-      shift
-      d j sqlmigrate "$@"
-      ;;
     sp)
       shift
       cmd="${1:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')"}"
       shift
       p r django-admin startproject --verbosity 2 "$cmd" "${@:-.}"
-      ;;
-    *)
-      p r p manage.py "$@"
       ;;
     esac
     ;;
