@@ -9,6 +9,7 @@ settings:
   auto_save.session:
     global: true
   content.cookies.accept:
+    127.0.0.1: no-unknown-3rdparty
     astexplorer.net: no-unknown-3rdparty
     developer.mozilla.org: no-unknown-3rdparty
     global: never
