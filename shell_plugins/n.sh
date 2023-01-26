@@ -81,12 +81,12 @@ n() {
       cmd="$1"
       shift
       case "$cmd" in
-        s)
-          cmd="$1"
-          shift
-          n p s scripts."$cmd"="$*"
-          ;;
-        *) npm pkg set "$cmd" "$@" ;;
+      s)
+        cmd="$1"
+        shift
+        n p s scripts."$cmd"="$*"
+        ;;
+      *) npm pkg set "$cmd" "$@" ;;
       esac
       ;;
     init) echo {} >.prettierrc.json ;;
