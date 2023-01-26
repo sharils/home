@@ -22,6 +22,10 @@ p() {
       shift
       p m check "$@"
       ;;
+    csu)
+      shift
+      p m createsuperuser "$@"
+      ;;
     db)
       shift
       p m dbshell "$@"
