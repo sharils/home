@@ -4,8 +4,11 @@ p() {
   cmd="$1"
   shift
   case "$cmd" in
+
   '') python ;;
+
   I) poetry init "$@" ;;
+
   a)
     case "$1" in
     D)
@@ -15,6 +18,7 @@ p() {
     *) poetry add "$@" ;;
     esac
     ;;
+
   i) poetry install "$@" ;;
 
   m)
@@ -77,6 +81,8 @@ p() {
     # shellcheck source=/dev/null
     cmd="$(poetry env info --path)" && x venv "$cmd"
     ;;
+
   *) echo not implemented >&2 ;;
+
   esac
 }
