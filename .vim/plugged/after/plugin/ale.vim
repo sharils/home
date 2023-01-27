@@ -24,3 +24,5 @@ let g:ale_fixers.sh              = ['shfmt']
 let g:ale_fixers.typescript      = ['eslint', 'prettier']
 let g:ale_fixers.typescriptreact = ['eslint', 'prettier']
 let g:ale_fixers.yaml            = ['prettier']
+
+let g:ale_python_auto_poetry = 1
