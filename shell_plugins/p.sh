@@ -35,9 +35,7 @@ p() {
 
   r)
     shift
-    case "$1" in
-    p) shift && set -- python "$@" ;;
-    esac
+    [ "$1" = p ] && shift && set -- python "$@"
     poetry run "$@"
     ;;
 
