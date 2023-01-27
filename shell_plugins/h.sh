@@ -10,7 +10,7 @@ h() {
     ;;
 
   P)
-    h g stash push
+    h g czz
     h g pull --prune --rebase
     vim -S ~/.vim/snapshot.vim
     h
@@ -36,9 +36,9 @@ h() {
     vim +PlugUpdate
     vim +'PlugSnapshot! ~/.vim/snapshot.vim'
 
-    h g add .vim/snapshot.vim
-    h g commit --message 'Apply vim +PlugUpdate'
-    h g push
+    h g a .vim/snapshot.vim
+    h g cm 'Apply vim +PlugUpdate'
+    h g p
     ;;
 
   e)
