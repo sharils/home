@@ -248,6 +248,11 @@ EOF
 
   tel) open "tel:$*" ;;
 
+  touch)
+    x mp "$(dirname "$*")"
+    touch "$*"
+    ;;
+
   tree) (
     cmd="${*:-$HOME/Sync/Camera}"
     cd "$cmd" && find . -print | sed "s#[^/]*/#|____#g;s#____|# |#g;1s#.*#$cmd#"
