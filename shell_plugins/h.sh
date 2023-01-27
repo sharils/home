@@ -61,7 +61,7 @@ h() {
     git -C "$SHARILS_HOME" "$@"
     ;;
 
-  p) h g p ;;
+  push) h g p ;;
 
   t) todo.sh -vv help | l ;;
 
