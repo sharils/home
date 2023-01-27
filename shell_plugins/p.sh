@@ -36,9 +36,9 @@ p() {
   r)
     shift
     case "$1" in
-    p) shift && poetry run python "$@" ;;
-    *) poetry run "$@" ;;
+    p) shift && set -- python "$@" ;;
     esac
+    poetry run "$@"
     ;;
 
   rm) shift && poetry remove "$@" ;;
