@@ -10,7 +10,8 @@ p() {
     case "$1" in
     D)
       shift
-      poetry --group dev "$@" ;;
+      poetry --group dev "$@"
+      ;;
     *) poetry add "$@" ;;
     esac
     ;;
