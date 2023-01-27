@@ -108,6 +108,7 @@ settings:
       npm: https://www.npmjs.com/search?q={}
       od: https://www.oxfordlearnersdictionaries.com/search/english/?=english&q={}
       ol: https://openlibrary.org/search?mode=everything&q={}
+      pl: https://lite.duckduckgo.com/lite/?q=site%3Avald-phoenix.github.io%20{}
       ptt: https://www.ptt.cc/bbs/{}/index.html
       rd: https://www.reddit.com/search/?q={}
       rs: file:///Users/minniebavaro/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/std/index.html?search={}
