@@ -1,35 +1,27 @@
 #!/usr/bin/env sh
 
 e() {
-  cmd="${1:-edit}"
-  shift
-
-  case "$cmd" in
+  case "${1:-edit}" in
 
   e)
-    cmd="${1:-base}"
     shift
-    case "$cmd" in
-      e) cmd=emoji ;;
-    esac
-    e edit "$cmd" "$@"
+    [ "$1" = e ] && shift && set -- emoji "$@"
+    e edit "${@:-base}"
     ;;
 
-  l) e log "$@" ;;
+  l) shift && e log "$@" ;;
 
   s)
-    cmd="${1:-status}"
     shift
-    case "$cmd" in
-      R) set -- register "$@" ;;
-      r) set -- restart "$@" ;;
-      s) set -- start "$@" ;;
-      *) set -- "$cmd" "$@" ;;
+    case "$2" in
+      R) shift && set -- register "$@" ;;
+      r) shift && set -- restart "$@" ;;
+      s) shift && set -- start "$@" ;;
     esac
-    e service "$@"
+    e service "${@:-status}"
     ;;
 
-  *) espanso "$cmd" "$@" ;;
+  *) espanso "$@" ;;
 
   esac
 }
