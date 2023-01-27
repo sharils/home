@@ -11,7 +11,7 @@ l() {
     return
   fi
 
-  if echo "$1" | g url >/dev/null; then
+  if echo "$1" | g uri >/dev/null; then
     lynx "$@"
     return
   fi
