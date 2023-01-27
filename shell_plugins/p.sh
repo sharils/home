@@ -77,10 +77,7 @@ p() {
 
   rm) poetry remove "$@" ;;
 
-  venv)
-    # shellcheck source=/dev/null
-    cmd="$(poetry env info --path)" && x venv "$cmd"
-    ;;
+  venv) x venv "$(poetry env info --path)" ;;
 
   *) echo not implemented >&2 ;;
 
