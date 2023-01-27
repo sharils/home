@@ -26,3 +26,4 @@ let g:ale_fixers.typescriptreact = ['eslint', 'prettier']
 let g:ale_fixers.yaml            = ['prettier']
 
 let g:ale_python_auto_poetry = 1
+let g:ale_python_pylint_use_msg_id = 1
