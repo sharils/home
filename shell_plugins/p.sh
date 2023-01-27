@@ -31,44 +31,42 @@ p() {
     case "$1" in
     c)
       shift
-      p m check "$@"
+      set -- check "$@"
       ;;
     csu)
       shift
-      p m createsuperuser "$@"
+      set -- createsuperuser "$@"
       ;;
     db)
       shift
-      p m dbshell "$@"
+      set -- dbshell "$@"
       ;;
     m)
       shift
-      p m migrate "$@"
+      set -- migrate "$@"
       ;;
     mm)
       shift
-      p m makemigrations "$@"
+      set -- makemigrations "$@"
       ;;
     rs)
       shift
-      p m runserver "$@"
+      set -- runserver "$@"
       ;;
     sa)
       shift
-      p m startapp --verbosity 2 "${@:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')_app"}"
+      set -- startapp --verbosity 2 "${@:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')_app"}"
       ;;
     sh)
       shift
-      p m shell "$@"
+      set -- shell "$@"
       ;;
     sm)
       shift
-      p m sqlmigrate "$@"
-      ;;
-    *)
-      p r p manage.py "$@"
+      set -- sqlmigrate "$@"
       ;;
     esac
+    p r p manage.py "$@"
     ;;
 
   r)
