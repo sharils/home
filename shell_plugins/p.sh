@@ -3,7 +3,7 @@
 p() {
   case "$1" in
 
-  '') python ;;
+  '') p r p ;;
 
   I) shift && poetry init "$@" ;;
 
