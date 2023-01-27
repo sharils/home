@@ -70,6 +70,9 @@ p() {
     *) poetry run "$@" ;;
     esac
     ;;
+
+  rm) poetry remove "$@" ;;
+
   venv)
     # shellcheck source=/dev/null
     cmd="$(poetry env info --path)" && x venv "$cmd"
