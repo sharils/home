@@ -1,15 +1,17 @@
 #!/usr/bin/env sh
 
 p() {
-  cmd="$1"
-  shift
-  case "$cmd" in
+  case "$1" in
 
   '') python ;;
 
-  I) poetry init "$@" ;;
+  I)
+    shift
+    poetry init "$@"
+    ;;
 
   a)
+    shift
     case "$1" in
     D)
       shift
@@ -19,9 +21,13 @@ p() {
     esac
     ;;
 
-  i) poetry install "$@" ;;
+  i)
+    shift
+    poetry install "$@"
+    ;;
 
   m)
+    shift
     case "$1" in
     c)
       shift
@@ -66,6 +72,7 @@ p() {
     ;;
 
   r)
+    shift
     case "$1" in
     p)
       shift
@@ -75,7 +82,10 @@ p() {
     esac
     ;;
 
-  rm) poetry remove "$@" ;;
+  rm)
+    shift
+    poetry remove "$@"
+    ;;
 
   venv) x venv "$(poetry env info --path)" ;;
 
