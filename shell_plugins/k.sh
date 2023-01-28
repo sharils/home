@@ -48,7 +48,6 @@ TEXT
     bind -p | grep '"[^"]\+"' | grep -v 'self-insert\|do-lowercase-version\|digit-argument' | grep "$*"
     ;;
 
-
   d)
     shift
     # -4 for numeric and special
