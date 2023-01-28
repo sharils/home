@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 
 k() {
-  cmd=$1
-  shift
-
-  case $cmd in
+  case "$1" in
 
   0x)
     cat <<'TEXT'
@@ -47,12 +44,14 @@ TEXT
     ;;
 
   bind)
+    shift
     bind -p | grep --color=never ^#
     bind -p | grep '"[^"]\+"' | grep -v 'self-insert\|do-lowercase-version\|digit-argument' | grep "$*"
     ;;
 
 
   d)
+    shift
     # -4 for numeric and special
     cmd="$((${1:-100} - 4))"
     for words in {12..4}; do
@@ -82,7 +81,7 @@ TEXT
     pbpaste | wc
     ;;
 
-  u) sed -n '3527,3842p' /Applications/qutebrowser.app/Contents/Resources/config/configdata.yml | grep "$*" ;;
+  u) shift && sed -n '3527,3842p' /Applications/qutebrowser.app/Contents/Resources/config/configdata.yml | grep "$*" ;;
 
   esac
 }
