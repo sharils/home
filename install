@@ -196,7 +196,7 @@ main() {
     ln -fs "$PWD/"{.bash_it_custom,\
 .bash_profile,\
 .bashrc,\
-.ctags,\
+.ctags.d,\
 .curlrc,\
 .editrc,\
 .fdignore,\
