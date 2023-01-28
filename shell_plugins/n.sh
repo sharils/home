@@ -46,12 +46,10 @@ n() {
   graphql-codegen) n y --package graphql --package @graphql-codegen/cli -- graphql-codegen "$@" ;;
 
   i)
-    cmd="$1"
-    shift
-    case "$cmd" in
-    y) npm init --yes "$@" ;;
-    @capacitor/app | expo-app | next-app | node-cli | nx-workspace | react-app | react-native-app) n i y "$cmd" -- "${@:-"$cmd"}" ;;
-    *) npm install "$cmd" "$@" ;;
+    case "$1" in
+    y) shift && npm init --yes "$@" ;;
+    @capacitor/app | expo-app | next-app | node-cli | nx-workspace | react-app | react-native-app) n i y "$1" -- "${@:-"$1"}" ;;
+    *) npm install "$@" ;;
     esac
     ;;
 
