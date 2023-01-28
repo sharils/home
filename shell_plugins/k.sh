@@ -38,8 +38,7 @@ TEXT
     ;;
 
   b)
-    cmd="0123456789ABCDEFGHJKMNPQRSTVWXYZ"
-    keepassxc-cli generate --custom "$cmd" --length "${@:-4}" | tr -d \\n | pbcopy
+    keepassxc-cli generate --custom '0123456789ABCDEFGHJKMNPQRSTVWXYZ' --length "${@:-4}" | tr -d \\n | pbcopy
     pbpaste
     ;;
 
