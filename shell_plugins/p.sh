@@ -29,7 +29,16 @@ p() {
     sa) shift && set -- startapp --verbosity 2 "${@:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')_app"}" ;;
     sh) shift && set -- shell "$@" ;;
     sm) shift && set -- sqlmigrate "$@" ;;
-    t) shift && set -- test "$@" ;;
+    t)
+      shift
+      case "$1" in
+      w)
+        w py 'poetry run python manage.py test'
+        return
+        ;;
+      esac
+      set -- test "$@"
+      ;;
     esac
     p r p manage.py "$@"
     ;;
