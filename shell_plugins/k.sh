@@ -79,6 +79,12 @@ TEXT
     pbpaste | wc
     ;;
 
+  printable)
+    cat <<'TEXT'
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+TEXT
+    ;;
+
   u) shift && sed -n '3527,3842p' /Applications/qutebrowser.app/Contents/Resources/config/configdata.yml | grep "$*" ;;
 
   esac
