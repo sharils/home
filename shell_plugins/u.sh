@@ -1,16 +1,13 @@
 #!/usr/bin/env sh
 
 u() {
-  cmd="$1"
-  shift
+  case "$1" in
 
-  case "$cmd" in
-
-  clean) rm "${@:--fir}" "$HOME/Library/Application Support/qutebrowser/webengine" ;;
+  clean) shift && rm "${@:--fir}" "$HOME/Library/Application Support/qutebrowser/webengine" ;;
 
   e) $EDITOR "$HOME/Library/Preferences/qutebrowser/autoconfig.yml" "$HOME/.qutebrowser/bookmarks/urls" "$HOME/.qutebrowser/quickmarks" "$HOME/.qutebrowser/greasemonkey" ;;
 
-  l) l "$@" "$HOME/Library/Application Support/qutebrowser/webengine" ;;
+  l) shift && l "$@" "$HOME/Library/Application Support/qutebrowser/webengine" ;;
 
   o) open -b org.qt-project.Qt.QtWebEngineCore ;;
 
