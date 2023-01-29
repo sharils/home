@@ -46,6 +46,7 @@ p() {
   r)
     shift
     case "$1" in
+    c) shift && set -- coverage "$@" ;;
     p) shift && set -- python "$@" ;;
     esac
     poetry run "$@"
