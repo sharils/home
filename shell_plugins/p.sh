@@ -15,7 +15,13 @@ p() {
     poetry add "$@"
     ;;
 
-  c) shift && p r c "$@" ;;
+  c)
+    shift
+    case "$1" in
+    r) shift && set -- report "$@" ;;
+    esac
+    p r c "$@"
+    ;;
 
   i) shift && poetry install "$@" ;;
 
