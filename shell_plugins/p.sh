@@ -18,7 +18,13 @@ p() {
   c)
     shift
     case "$1" in
-    m) shift && set -- run manage.py "$@" ;;
+    m)
+      shift
+      case "$1" in
+      t) shift && set -- test "$@" ;;
+      esac
+      set -- run manage.py "$@"
+      ;;
     r) shift && set -- report "$@" ;;
     esac
     p r c "$@"
