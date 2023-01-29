@@ -15,6 +15,8 @@ p() {
     poetry add "$@"
     ;;
 
+  c) shift && p r c "$@" ;;
+
   i) shift && poetry install "$@" ;;
 
   m)
