@@ -10,6 +10,14 @@ matches:
         params:
           cmd: "pbpaste | tr -cd '[:digit:]'"
 
+  - trigger: pl,.
+    replace: "{{d}}"
+    vars:
+      - name: d
+        type: shell
+        params:
+          cmd: "pbpaste | xargs"
+
   - trigger: pu,.
     replace: "{{d}}"
     vars:
