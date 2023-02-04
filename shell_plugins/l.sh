@@ -28,6 +28,13 @@ l() {
   pl) l x "https://lite.duckduckgo.com/lite/?q=site%3Avald-phoenix.github.io%20$*" ;;
   od) l x "https://www.oxfordlearnersdictionaries.com/definition/english/$*_1" ;;
   pep) l x "https://peps.python.org/pep-$(printf "%04d" "$*")/" ;;
+  rfc)
+    case "$1" in
+    5424) set -- "$*#page-11" ;;
+    2119 | 6570) ;;
+    esac
+    l x "https://www.rfc-editor.org/rfc/rfc$*"
+    ;;
   s) less "$@" ;;
   t) l --tree "$@" ;;
   wk) l x "https://en.wiktionary.org/wiki/$*#Esperanto" ;;
