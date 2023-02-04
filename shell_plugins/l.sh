@@ -29,6 +29,15 @@ l() {
   od) l x "https://www.oxfordlearnersdictionaries.com/definition/english/$*_1" ;;
   pep) l x "https://peps.python.org/pep-$(printf "%04d" "$*")/" ;;
   rfc)
+    if [ $# -eq 0 ]; then
+      cat <<'EOF'
+2119 RFC Key Words
+5424 The Syslog Protocol
+6570 URI Template
+severity Syslog Message Severities
+EOF
+      return
+    fi
     case "$1" in
     severity) set -- "5424#page-11" ;;
     2119 | 6570) ;;
