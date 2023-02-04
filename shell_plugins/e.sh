@@ -23,6 +23,9 @@ e() {
 
   x)
     shift
+    case "$1" in
+    s) shift && set -- submit "$@" ;;
+    esac
     exercism "$@"
     ;;
 
