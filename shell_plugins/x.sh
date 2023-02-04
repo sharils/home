@@ -20,6 +20,9 @@ x() {
     case "$1" in
     # https://www.facebook.com/photo/?fbid=112335851759941&set=pcb.112341338426059
     crafting-business-canvas-models) shift && set -- "Generate a business canvas model for ${*:-an agriculture tech product that helps farmers increase their crop yield.}" ;;
+
+    # https://www.facebook.com/photo/?fbid=112335928426600&set=pcb.112341338426059
+    market-sizing) shift && set -- "Act as a Product Manager. Assume TAM is Total Addressable Market, SAM is Serviceable Available Market and SOM is Serviceable Obtainable Market. How should I go about estimating the TAM, SAM and SOM for ${*:-an Al-based online form builder tool?}? Please give examples of research sources I should check out." ;;
     esac
     echo "$*" | openai complete -
     ;;
