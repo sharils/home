@@ -6,8 +6,7 @@ w() {
 
   case $cmd in
 
-  ex) w m --pattern '**/*.ex' '**/*.exs' \
-    --run "${*:-mix test && mix format}" ;;
+  ex) w m --pattern '**/*.ex' '**/*.exs' --run "${*:-mix test && mix format}" ;;
 
   js) w m --pattern '**/*.js' '**/*.jsx' '**/*.ts' '**/*.tsx' --run "${*:-npm test}" ;;
 
