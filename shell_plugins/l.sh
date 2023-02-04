@@ -27,6 +27,7 @@ l() {
   g) l x "https://www.google.com/search?client=firefox-b-d&gbv=1&q=$*" ;;
   pl) l x "https://lite.duckduckgo.com/lite/?q=site%3Avald-phoenix.github.io%20$*" ;;
   od) l x "https://www.oxfordlearnersdictionaries.com/definition/english/$*_1" ;;
+  pep) l x "https://peps.python.org/pep-$(printf "%04d" "$*")/" ;;
   s) less "$@" ;;
   t) l --tree "$@" ;;
   wk) l x "https://en.wiktionary.org/wiki/$*#Esperanto" ;;
