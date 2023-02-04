@@ -14,9 +14,9 @@ e() {
   s)
     shift
     case "$2" in
-      R) shift && set -- register "$@" ;;
-      r) shift && set -- restart "$@" ;;
-      s) shift && set -- start "$@" ;;
+    R) shift && set -- register "$@" ;;
+    r) shift && set -- restart "$@" ;;
+    s) shift && set -- start "$@" ;;
     esac
     e service "${@:-status}"
     ;;
