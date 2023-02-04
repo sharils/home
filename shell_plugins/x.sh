@@ -15,9 +15,9 @@ x() {
   ai)
     if [ $# -eq 0 ]; then
       openai repl
-    else
-      echo "$*" | openai complete -
+      return
     fi
+    echo "$*" | openai complete -
     ;;
 
   b) "$BROWSER" "$@" ;;
