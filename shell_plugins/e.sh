@@ -21,6 +21,11 @@ e() {
     e service "${@:-status}"
     ;;
 
+  x)
+    shift
+    exercism "$@"
+    ;;
+
   *) espanso "$@" ;;
 
   esac
