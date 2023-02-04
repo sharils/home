@@ -15,3 +15,6 @@ matches:
 
   - trigger: 198.,.
     replace: 198.51.100.0
+
+  - trigger: admin,.
+    replace: admin@example.com
