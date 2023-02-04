@@ -8,6 +8,8 @@ export TODO_FILE="$TODO_DIR/todo.txt"
 export DONE_FILE="$TODO_DIR/.data/done.txt"
 export REPORT_FILE="$TODO_DIR/.data/report.txt"
 
+export TODO_SU="$TODO_DIR/su.txt"
+
 # You can customize your actions directory location
 #export TODO_ACTIONS_DIR="$HOME/.todo.actions.d"
 

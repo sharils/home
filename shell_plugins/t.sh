@@ -35,7 +35,7 @@ t() {
       v d "$TODO_FILE" "$TODO_DIR"/todo.sync-conflict-*.txt
       rm -i "$TODO_DIR"/todo.sync-conflict-*.txt
       ;;
-    su) v d "$TODO_DIR/todo.txt" "$TODO_DIR/su.txt" ;;
+    su) v d "$TODO_DIR/todo.txt" "$TODO_SU" ;;
     esac
     ;;
 
@@ -82,7 +82,7 @@ t() {
       return
       ;;
     Z | add | a | addm | addto | append | app | archive | command | d | deduplicate | del | e | m | r | rm | depri | dp | done | do | help | list | ls | listall | lsa | listaddons | listcon | lsc | listfile | lf | listpri | lsp | listproj | lsprj | move | mv | prepend | prep | pri | replace | report | shorthelp)
-      TODO_FILE="$TODO_DIR/su.txt" t "$cmd" "$@"
+      TODO_FILE="$TODO_SU" t "$cmd" "$@"
       return
       ;;
     *[!0-9]*)
