@@ -40,7 +40,6 @@ EOF
     fi
     case "$1" in
     severity) set -- "5424#page-11" ;;
-    2119 | 6570) ;;
     esac
     l x "https://www.rfc-editor.org/rfc/rfc$*"
     ;;
