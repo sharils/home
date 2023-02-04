@@ -10,7 +10,7 @@
 bind generic ;cc            !git commit
 bind generic ;ca            !git commit --amend
 bind generic ;ce            @git commit --amend --no-edit
-bind generic ;cw            !git commit --amend --only
+bind generic ;cw            !git cw
 bind generic ;crc           @git revert %(commit)
 bind generic ;crn           @git revert --no-commit %(commit)
 
