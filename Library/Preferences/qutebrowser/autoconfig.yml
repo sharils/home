@@ -14,6 +14,7 @@ settings:
     developer.mozilla.org: no-unknown-3rdparty
     global: never
     lernu.net: no-unknown-3rdparty
+    www.sharedrop.io: no-unknown-3rdparty
   content.cookies.store:
     global: false
   content.headers.accept_language:
