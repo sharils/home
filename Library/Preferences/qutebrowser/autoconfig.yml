@@ -29,6 +29,7 @@ settings:
     c.im: true
     devdocs.io: true
     developer.mozilla.org: true
+    github.com: true
     hub.docker.com: true
     lernu.net: true
     randomuser.me: true
@@ -49,6 +50,7 @@ settings:
     c.im: true
     devdocs.io: true
     developer.mozilla.org: true
+    github.com: true
     global: false
     hub.docker.com: true
     lernu.net: true
