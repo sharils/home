@@ -27,6 +27,7 @@ b() {
   o) shift && BROWSER=open "$@" ;;
   out) shift && brew outdated "$@" ;;
   ri) shift && brew reinstall "$@" ;;
+  s) shift && brew -S "$@" ;;
   t) shift && BROWSER=/Applications/Tor\ Browser.app/Contents/MacOS/firefox "$@" ;;
   u) shift && BROWSER=qutebrowser "$@" ;;
   v) shift && brew abv "$@" ;;
