@@ -23,6 +23,9 @@ x() {
 
     # https://www.facebook.com/photo/?fbid=112335928426600&set=pcb.112341338426059
     market-sizing) shift && set -- "Act as a Product Manager. Assume TAM is Total Addressable Market, SAM is Serviceable Available Market and SOM is Serviceable Obtainable Market. How should I go about estimating the TAM, SAM and SOM for ${*:-an Al-based online form builder tool?}? Please give examples of research sources I should check out." ;;
+
+    # https://www.facebook.com/photo/?fbid=112336035093256&set=pcb.112341338426059
+    expanding-product-lines) shift && set -- "I am a Product Manager of ${*:-an ed tech platform that helps students of any age learn how to code and start taking up freelance projects}. I am already monetizing this service well and now want to branch off to other areas. What adjacent product or services can I offer that leverages my strengths and can quickly turn a profit?" ;;
     esac
     echo "$*" | openai complete -
     ;;
