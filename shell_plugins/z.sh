@@ -28,6 +28,8 @@ z() {
 
   sc) cd ~/Sync/Camera || return ;;
 
+  sk) cd ~/Sync/KeePass || return ;;
+
   ssh) cd ~/.ssh || return ;;
 
   st) cd "$TODO_DIR" || return ;;
