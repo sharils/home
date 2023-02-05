@@ -90,6 +90,7 @@ settings:
       dj: https://devdocs.io/#q=js%20{}
       dk: https://docs.docker.com/engine/reference/builder/#{}
       dl: https://devdocs.io/#q=_%20{}
+      ec: https://www.ecosia.org/search?q={}
       et: https://www.etymonline.com/search?q={}
       fda: https://consumer.fda.gov.tw/food/tfnd.aspx?nodeID=178&k={}
       fx: https://addons.mozilla.org/en-GB/firefox/search/?q={}&type=extension
