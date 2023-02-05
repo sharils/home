@@ -60,6 +60,7 @@ Plug 'https://github.com/vitalk/vim-shebang'
 " Plug 'https://github.com/tpope/vim-sleuth'
 Plug 'https://github.com/honza/vim-snippets'
 Plug 'https://github.com/tpope/vim-surround'
+Plug 'https://github.com/puremourning/vimspector'
 Plug 'https://github.com/vim-scripts/VCard-syntax'
 
 Plug 'https://github.com/ekalinin/Dockerfile.vim', { 'for': 'dockerfile' }
