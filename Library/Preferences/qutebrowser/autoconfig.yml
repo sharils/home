@@ -38,6 +38,7 @@ settings:
     stedolan.github.io: true
     superuser.com: true
     www.railway.gov.tw: true
+    www.sharedrop.io: true
     www.youtube.com: true
   content.headers.user_agent:
     global: Mozilla/5.0 (Windows NT 10.0; rv:102.0) Gecko/20100101 Firefox/102.0
@@ -61,10 +62,12 @@ settings:
     superuser.com: true
     translate.google.com: true
     www.railway.gov.tw: true
+    www.sharedrop.io: true
   content.local_storage:
     astexplorer.net: true
     developer.mozilla.org: true
     global: false
+    www.sharedrop.io: true
   content.notifications.enabled:
     global: false
   url.default_page:
