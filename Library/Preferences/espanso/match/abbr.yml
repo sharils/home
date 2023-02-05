@@ -26,6 +26,9 @@ matches:
   - trigger: tldr,.
     replace: Thereby hangs a tail.
 
+  - trigger: trpl,.
+    replace: The Rust Programming Language
+
   - trigger: ts,.
     replace: typescript
 
