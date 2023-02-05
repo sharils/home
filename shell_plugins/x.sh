@@ -82,7 +82,7 @@ EOF
     fi
     ;;
 
-  ff) /Applications/Firefox.app/Contents/MacOS/firefox "$@" ;;
+  f) /Applications/Firefox.app/Contents/MacOS/firefox "$@" ;;
 
   fde) /Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox "$@" ;;
 
