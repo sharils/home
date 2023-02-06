@@ -26,6 +26,9 @@ x() {
 
     # https://www.facebook.com/photo/?fbid=112336035093256&set=pcb.112341338426059
     expanding-product-lines) shift && set -- "I am a Product Manager of ${*:-an ed tech platform that helps students of any age learn how to code and start taking up freelance projects}. I am already monetizing this service well and now want to branch off to other areas. What adjacent product or services can I offer that leverages my strengths and can quickly turn a profit?" ;;
+
+    # https://www.facebook.com/photo/?fbid=112336091759917&set=pcb.112341338426059
+    aiding-product-ideation) shift && set -- "Suggest ${1:-3 tech product ideas} I could pursue in the ${2:-solar energy domain} that could turn a profit in ${3:-less than 2 years}. Describe the idea and also share how it will make money." ;;
     esac
     echo "$*" | openai complete -
     ;;
