@@ -29,6 +29,9 @@ x() {
 
     # https://www.facebook.com/photo/?fbid=112336091759917&set=pcb.112341338426059
     aiding-product-ideation) shift && set -- "Suggest ${1:-3 tech product ideas} I could pursue in the ${2:-solar energy domain} that could turn a profit in ${3:-less than 2 years}. Describe the idea and also share how it will make money." ;;
+
+    # https://www.facebook.com/photo/?fbid=112336188426574&set=pcb.112341338426059
+    aligning-teams-with-a-1-pager-memo) shift && set -- "I am a Product Manager planning to build ${1:-a new mobile app that is like Uber for petrol}. It helps busy people ${2:-order fuel for their car on-demand and get a refill while they are at home or office}. Write a 1-pager that I can share with my engineering and design team to explain the product vision & the product components that will most likely be involved." ;;
     esac
     echo "$*" | openai complete -
     ;;
