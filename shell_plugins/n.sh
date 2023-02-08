@@ -14,6 +14,8 @@ n() {
 
   bs) n browser-sync "${@:-.}" --no-open ;;
 
+  bsd) n license BSD-3-Clause "$@" ;;
+
   cnc | clear-npx-cache)
     find "$(npm config get cache)/_npx" -depth 2 -name 'package.json' | while IFS= read -r package; do
       if [ "$(jq -r '.dependencies | keys | first' <"$package")" = "${1:?}" ]; then
