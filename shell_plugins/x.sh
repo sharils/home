@@ -32,6 +32,9 @@ x() {
 
     # https://www.facebook.com/photo/?fbid=112336188426574&set=pcb.112341338426059
     aligning-teams-with-a-1-pager-memo) shift && set -- "I am a Product Manager planning to build ${1:-a new mobile app that is like Uber for petrol}. It helps busy people ${2:-order fuel for their car on-demand and get a refill while they are at home or office}. Write a 1-pager that I can share with my engineering and design team to explain the product vision & the product components that will most likely be involved." ;;
+
+    # https://www.facebook.com/photo/?fbid=112336248426568&set=pcb.112341338426059
+    work-backwards-from-a-press-release-amazon) shift && set -- "Assume you’re building a ${1:-fitness app that recommends workout routines to a user based on their goals and habits}. You’re launching a new feature that will give users ${2:-virtual points for their personal milestones that they can redeem for gift cards}. Using Amazon’s Working Backwards model, write a press release for this product feature. Include some impressive metrics. Give it a catchy title." ;;
     esac
     echo "$*" | openai complete -
     ;;
