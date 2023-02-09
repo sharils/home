@@ -35,6 +35,11 @@ x() {
 
     # https://www.facebook.com/photo/?fbid=112336248426568&set=pcb.112341338426059
     work-backwards-from-a-press-release-amazon) shift && set -- "Assume you’re building a ${1:-fitness app that recommends workout routines to a user based on their goals and habits}. You’re launching a new feature that will give users ${2:-virtual points for their personal milestones that they can redeem for gift cards}. Using Amazon’s Working Backwards model, write a press release for this product feature. Include some impressive metrics. Give it a catchy title." ;;
+
+    # Training ChatGPT on the stategy framework first https://www.facebook.com/photo?fbid=112336305093229&set=pcb.112341338426059
+    drafting-a-product-strategy-based-on-a-framework) shift && set -- "Gibson Biddle has a product strategy framework called the
+DHM Model. D stands for delight (how does the product delight customers and add real value), H stands for hard-to-copy (what is an advantage that your product has that is hard to copy and compete with) and M stands for margin-enhancing (how will the product generate a profit and sustain the business). In short, the DHM model dims to answer: \"How will your product delight customers, in hard-to-copy, margin-enhancing ways?\".
+Now, act as a Product Manager for ${*:-a web analytics tool like Google Analytics}. Give me a product strategy for this product using Biddle’s DHM model." ;;
     esac
     echo "$*" | openai complete -
     ;;
