@@ -5,6 +5,9 @@ matches:
   - trigger: dj,.
     replace: django
 
+  - trigger: eo,.
+    replace: Esperanto
+
   - trigger: ex,.
     replace: exercism
 
