@@ -8,7 +8,8 @@ matches:
       [[yesterday]]
       Today, I’m going to:
       [[today]]
-      Blocker, [[blocker]]
+      Blocker,
+      [[blocker]]
     form_fields:
       yesterday:
         multiline: true
