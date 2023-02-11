@@ -329,7 +329,7 @@ EOF
     esac
     ;;
 
-  wenku8) (set -x && curl --compressed --location --silent --output "$HOME/Sync/Libera PRO/next/$2.txt" "https://dl1.wenku8.com/down.php?type=big5&id=$1") ;;
+  wenku8) (set -x && curl --compressed --location --silent --output "$HOME/Sync/Libera PRO/next/${2:?}.txt" "https://dl1.wenku8.com/down.php?type=big5&id=${1:?}") ;;
 
   whois)
     # support whois -b example.com
