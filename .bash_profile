@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+export LANG='en_US.UTF-8'
+
 export SHARILS_HOME=~/git/github.com/sharils/home
 
 . $SHARILS_HOME/shell_plugins/brew.sh
