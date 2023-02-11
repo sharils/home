@@ -159,6 +159,8 @@ EOF
 
   mp) mkdir -pv "$@" ;;
 
+  o) open "${@:-.}" ;;
+
   pdf)
     cmd="$1"
     shift
