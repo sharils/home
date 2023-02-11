@@ -20,7 +20,7 @@ w() {
 
   sh) w m --pattern "**/*.$cmd" --run "$*" ;;
 
-  *) "$cmd" "$@" | g uri | x fzf | x o "$BROWSER" ;;
+  *) "$cmd" "$@" | g uri | x fzf | xargs -o "$BROWSER" ;;
 
   esac
 }

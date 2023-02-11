@@ -159,8 +159,6 @@ EOF
 
   mp) mkdir -pv "$@" ;;
 
-  o) xargs -o "$@" ;;
-
   pdf)
     cmd="$1"
     shift
