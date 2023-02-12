@@ -20,6 +20,9 @@ matches:
   - trigger: gm,.
     replace: greasemonkey
 
+  - trigger: gql,.
+    replace: GraphQL
+
   - trigger: py,.
     replace: python
 
