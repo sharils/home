@@ -36,6 +36,7 @@ l() {
 6570 URI Template
 9110 HTTP Semantics
 9111 HTTP Caching
+9112 HTTP/1.1
 severity Syslog Message Severities
 EOF
       return
