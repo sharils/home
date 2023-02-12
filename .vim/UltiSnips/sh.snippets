@@ -36,6 +36,10 @@ snippet ca "case);;" b
 ${1:*}) $0 ;;
 endsnippet
 
+snippet ea "export ASDF__VERSION=12.22.12" b
+export ASDF_${1:NODEJS}_VERSION='${2:12.22.12}'
+endsnippet
+
 snippet eif "else if ${1::}; then" b
 elif ${1::}; then
 	${2:return}
