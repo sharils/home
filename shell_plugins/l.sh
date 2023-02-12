@@ -34,6 +34,7 @@ l() {
 2119 RFC Key Words
 5424 The Syslog Protocol
 6570 URI Template
+9111 HTTP Caching
 severity Syslog Message Severities
 EOF
       return
