@@ -72,7 +72,7 @@ Plug 'https://github.com/rust-lang/rust.vim', { 'for': 'rs' }
 Plug 'https://github.com/alvan/vim-closetag', { 'for': ['html', 'javascriptreact', 'mediawiki', 'typescriptreact', 'xhtml'] }
 Plug 'https://github.com/hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'https://github.com/elixir-editors/vim-elixir', { 'for': ['elixir', 'eelixir'] }
-Plug 'https://github.com/yardnsm/vim-import-cost', { 'for': ['javascript', 'javascriptreact', 'typescript', 'typescriptreact'], 'do': 'npm install --production' }
+" Plug 'https://github.com/yardnsm/vim-import-cost', { 'for': ['javascript', 'javascriptreact', 'typescript', 'typescriptreact'], 'do': 'npm install --production' }
 Plug 'https://github.com/moll/vim-node'
 Plug 'https://github.com/acarapetis/vim-sh-heredoc-highlighting', { 'for': ['sh', 'bash'] }
 Plug 'https://github.com/alampros/vim-styled-jsx', { 'for': ['javascriptreact', 'typescriptreact'] }
