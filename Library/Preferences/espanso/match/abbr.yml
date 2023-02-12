@@ -26,6 +26,9 @@ matches:
   - trigger: py,.
     replace: python
 
+  - trigger: rest,.
+    replace: RESTful
+
   - trigger: t,.
     replace: A penny for your thoughts.
 
