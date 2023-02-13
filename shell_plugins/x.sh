@@ -40,6 +40,9 @@ x() {
     drafting-a-product-strategy-based-on-a-framework) shift && set -- "Gibson Biddle has a product strategy framework called the
 DHM Model. D stands for delight (how does the product delight customers and add real value), H stands for hard-to-copy (what is an advantage that your product has that is hard to copy and compete with) and M stands for margin-enhancing (how will the product generate a profit and sustain the business). In short, the DHM model dims to answer: \"How will your product delight customers, in hard-to-copy, margin-enhancing ways?\".
 Now, act as a Product Manager for ${*:-a web analytics tool like Google Analytics}. Give me a product strategy for this product using Biddle’s DHM model." ;;
+
+    # https://www.facebook.com/photo/?fbid=112336381759888&set=pcb.112341338426059
+    competitive-intelligence-summaries) shift && set -- "I’m developing ${1:-a SaaS product that helps restaurants directly sell to their consumers through branded websites & mobile apps without going to a marketplace}. We are serving the ${2:-US market for now}. We help users ${3:-build a personalized website with their branding, customize the menu, launch a white-labelled mobile app & run loyalty deals}. Our unique value prop is that we ${4:-auto-suggest seasonal push notification & email campaigns}. Can you write a competitive intelligence report comparing us to other players that I can share in an investor brief?" ;;
     esac
     echo "$*" | openai complete -
     ;;
