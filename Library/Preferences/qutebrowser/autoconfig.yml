@@ -29,6 +29,7 @@ settings:
     c.im: true
     devdocs.io: true
     developer.mozilla.org: true
+    docs.expo.dev: true
     github.com: true
     https://www.google.com.tw/maps?*: true
     hub.docker.com: true
@@ -53,6 +54,7 @@ settings:
     c.im: true
     devdocs.io: true
     developer.mozilla.org: true
+    docs.expo.dev: true
     github.com: true
     global: false
     https://www.google.com.tw/maps?*: true
