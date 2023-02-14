@@ -29,6 +29,9 @@ matches:
   - trigger: rest,.
     replace: RESTful
 
+  - trigger: rn,.
+    replace: React Native
+
   - trigger: t,.
     replace: A penny for your thoughts.
 
