@@ -96,6 +96,7 @@ settings:
       dl: https://devdocs.io/#q=_%20{}
       ec: https://www.ecosia.org/search?q={}
       et: https://www.etymonline.com/search?q={}
+      expo: https://docs.expo.dev/versions/v47.0.0/sdk/{}/
       fda: https://consumer.fda.gov.tw/food/tfnd.aspx?nodeID=178&k={}
       fx: https://addons.mozilla.org/en-GB/firefox/search/?q={}&type=extension
       g: https://www.google.com/search?client=firefox-b-d&gbv=1&q={}
