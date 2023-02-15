@@ -44,15 +44,15 @@ h() {
   e)
     shift
     case "${1:-install}" in
-    bp) cmd=/.bash_profile ;;
-    install) cmd=/install ;;
-    karabiner) cmd=/.config/karabiner/karabiner.json ;;
-    todo) cmd=/.todo.cfg ;;
-    tig) cmd=/.tigrc ;;
-    vim) cmd=/.vimrc ;;
-    *) cmd="/shell_plugins/$*.sh" ;;
+    bp) cmd=.bash_profile ;;
+    install) cmd=install ;;
+    karabiner) cmd=.config/karabiner/karabiner.json ;;
+    todo) cmd=.todo.cfg ;;
+    tig) cmd=.tigrc ;;
+    vim) cmd=.vimrc ;;
+    *) cmd="shell_plugins/$*.sh" ;;
     esac
-    vim "$SHARILS_HOME$cmd"
+    vim "$SHARILS_HOME/$cmd"
     h
     ;;
 
