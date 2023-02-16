@@ -1,4 +1,5 @@
 matches:
+
   - trigger: as,.
     replace: applescript
 
@@ -31,6 +32,9 @@ matches:
 
   - trigger: rest,.
     replace: RESTful
+
+  - trigger: rm,.
+    replace: README
 
   - trigger: rn,.
     replace: React Native
