@@ -71,11 +71,11 @@ TEXT
     printf '%s %s %s' "$pass" \
       "$(keepassxc-cli generate --length 1 --numeric)" \
       "$(keepassxc-cli generate --length 1 --custom "${K_D_CUSTOM:-"!'()*._~"}")" |
-      xargs -n1 |
+      tr ' ' '\n' |
       sort -R |
-      xargs |
+      tr '\n' ' ' |
       perl -pe 's/\b\w/\U$&/g' |
-      tr -d \\n |
+      sed 's/[[:space:]][[:space:]]*$//'|
       tr ' ' - |
       pbcopy
     pbpaste | wc
