@@ -5,6 +5,9 @@ matches:
   - trigger: dj,.
     replace: django
 
+  - trigger: env,.
+    replace: environment
+
   - trigger: eo,.
     replace: Esperanto
 
