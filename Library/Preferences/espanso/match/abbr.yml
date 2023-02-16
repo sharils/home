@@ -51,6 +51,9 @@ matches:
   - trigger: ts,.
     replace: typescript
 
+  - trigger: ttu,.
+    replace: twd to usd
+
   - trigger: u,.
     replace: qutebrowser
 
