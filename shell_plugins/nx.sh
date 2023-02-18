@@ -2,47 +2,49 @@
 
 # The core Nx plugin contains the core functionality of Nx like the project graph, nx commands and task orchestration.
 nx() {
-  cmd=${1:---version} && shift
-  case $cmd in
+  case "${1:---version}" in
 
-  at) nx affected:test "$@" ;;
+  at) shift && nx affected:test "$@" ;;
 
-  b) nx r build "$@" ;;
+  b) shift && nx r build "$@" ;;
 
-  e)
-    projects="$(echo "$1" | sed 's/[[:>:]]/-e2e/g')" && shift
-    nx r e2e "$projects" "$@"
-    ;;
+  e) shift && nx r e2e "$*-e2e" ;;
 
-  f) nx format "$@" ;;
+  f) shift && nx format "$@" ;;
 
   g)
-    [ $# -eq 0 ] && cmd=graph || cmd=generate
-    nx "$cmd" "$@"
+    shift
+    if [ $# -eq 0 ]; then
+      set -- graph "$@"
+    else
+      set -- generate "$@"
+    fi
+    nx "$@"
     ;;
 
-  l) nx lint "$@" ;;
+  l) shift && nx lint "$@" ;;
 
   ls)
-    cmd="$1" && shift
-    case "$cmd" in
-    jest | js | linter | workspace | angular | cypress | detox | esbuild | expo | express | nest | next | node | nx-plugin | react | react-native | rollup | storybook | web | webpack) nx ls "@nrwl/$cmd" "$@" ;;
-    *) nx list "$cmd" "$@" ;;
+    shift
+    case "$*" in
+    jest | js | linter | workspace | angular | cypress | detox | esbuild | expo | express | nest | next | node | nx-plugin | react | react-native | rollup | storybook | web | webpack) nx ls "@nrwl/$*" "$@" ;;
+    *) nx list "$@" ;;
     esac
     ;;
 
   r)
+    shift
     target="$1" && shift
     nx run-many --target "$target" --projects "$@"
     ;;
 
-  s) nx r serve "$@" ;;
+  s) shift && nx r serve "$@" ;;
 
-  t) nx r test "$@" ;;
+  t) shift && nx r test "$@" ;;
 
-  ws) n i nx-workspace "$@" ;;
+  ws) shift && n i nx-workspace "$@" ;;
 
-  *) n nx "$cmd" "$@" ;;
+  *) n nx "$@" ;;
 
   esac
 }
