@@ -5,7 +5,7 @@ nx() {
   cmd=${1:---version} && shift
   case $cmd in
 
-  at) nx affected:test ;;
+  at) nx affected:test "$@" ;;
 
   b) nx r build "$@" ;;
 
