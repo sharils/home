@@ -2,8 +2,7 @@
 
 # The core Nx plugin contains the core functionality of Nx like the project graph, nx commands and task orchestration.
 nx() {
-  cmd=${1:---version}
-  shift
+  cmd=${1:---version} && shift
   case $cmd in
 
   at) nx affected:test ;;
@@ -11,8 +10,7 @@ nx() {
   b) nx r build "$@" ;;
 
   e)
-    projects="$(echo "$1" | sed 's/[[:>:]]/-e2e/g')"
-    shift
+    projects="$(echo "$1" | sed 's/[[:>:]]/-e2e/g')" && shift
     nx r e2e "$projects" "$@"
     ;;
 
@@ -26,8 +24,7 @@ nx() {
   l) nx lint "$@" ;;
 
   ls)
-    cmd="$1"
-    shift
+    cmd="$1" && shift
     case "$cmd" in
     jest | js | linter | workspace | angular | cypress | detox | esbuild | expo | express | nest | next | node | nx-plugin | react | react-native | rollup | storybook | web | webpack) nx ls "@nrwl/$cmd" "$@" ;;
     *) nx list "$cmd" "$@" ;;
@@ -35,8 +32,7 @@ nx() {
     ;;
 
   r)
-    target="$1"
-    shift
+    target="$1" && shift
     nx run-many --target "$target" --projects "$@"
     ;;
 
