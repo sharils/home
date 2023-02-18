@@ -14,6 +14,7 @@ settings:
     developer.mozilla.org: no-unknown-3rdparty
     global: never
     lernu.net: no-unknown-3rdparty
+    nx.dev: no-unknown-3rdparty
     www.sharedrop.io: no-unknown-3rdparty
   content.cookies.store:
     global: false
@@ -34,6 +35,7 @@ settings:
     https://www.google.com.tw/maps?*: true
     hub.docker.com: true
     lernu.net: true
+    nx.dev: true
     randomuser.me: true
     randomwordgenerator.com: true
     reactnative.dev: true
@@ -63,6 +65,7 @@ settings:
     hub.docker.com: true
     lernu.net: true
     localhost: true
+    nx.dev: true
     qute://*: true
     randomuser.me: true
     randomwordgenerator.com: true
@@ -81,6 +84,7 @@ settings:
     astexplorer.net: true
     developer.mozilla.org: true
     global: false
+    nx.dev: true
     www.sharedrop.io: true
   content.notifications.enabled:
     global: false
