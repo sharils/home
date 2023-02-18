@@ -44,7 +44,7 @@ nx() {
 
   t) nx r test "$@" ;;
 
-  w) n nx-workspace "$@" ;;
+  ws) n nx-workspace "$@" ;;
 
   *) n nx "$cmd" "$@" ;;
 
