@@ -142,6 +142,7 @@ settings:
       w8: https://www.google.com/search?client=firefox-b-d&gbv=1&q=site%3Awenku8.net+{}
       wa: https://www.wolframalpha.com/input?i={}
       wb: https://search.brave.com/search?q=whalebrew+{}
+      wd: https://www.wikidata.org/w/index.php?search=taiwan&search={}&title=Special%3ASearch&go=Go&wprov=acrw1_-1
       wk: https://en.wiktionary.org/wiki/{}#Esperanto
       wo: https://eo.wikipedia.org/w/index.php?go=Ek&search={}&title=Speciala%C4%B5o%3ASer%C4%89i&ns0=1
       wp: https://www.wikipedia.org/search-redirect.php?family=wikipedia&language=en&search={}&language=en&go=Go

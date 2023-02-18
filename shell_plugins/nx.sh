@@ -17,7 +17,7 @@ nx() {
   f) nx format "$@" ;;
 
   g)
-    [ $# -eq 0 ] && cmd=graph
+    [ $# -eq 0 ] && cmd=graph || cmd=generate
     nx "$cmd" "$@"
     ;;
 
