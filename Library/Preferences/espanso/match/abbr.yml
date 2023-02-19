@@ -12,6 +12,9 @@ matches:
   - trigger: eo,.
     replace: Esperanto
 
+  - trigger: ep,.
+    replace: episode
+
   - trigger: ex,.
     replace: exercism
 
