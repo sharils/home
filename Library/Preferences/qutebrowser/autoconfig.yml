@@ -9,6 +9,7 @@ settings:
   auto_save.session:
     global: true
   content.cookies.accept:
+    '*.wikidata.org': no-unknown-3rdparty
     127.0.0.1: no-unknown-3rdparty
     astexplorer.net: no-unknown-3rdparty
     developer.mozilla.org: no-unknown-3rdparty
@@ -26,6 +27,7 @@ settings:
       accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
   content.headers.do_not_track:
     '*.stackexchange.com': true
+    '*.wikidata.org': true
     astexplorer.net: true
     c.im: true
     devdocs.io: true
@@ -55,6 +57,7 @@ settings:
     global: Mozilla/5.0 (Windows NT 10.0; rv:102.0) Gecko/20100101 Firefox/102.0
   content.javascript.enabled:
     '*.stackexchange.com': true
+    '*.wikidata.org': true
     127.0.0.1: true
     astexplorer.net: true
     c.im: true
@@ -84,6 +87,7 @@ settings:
     www.railway.gov.tw: true
     www.sharedrop.io: true
   content.local_storage:
+    '*.wikidata.org': true
     astexplorer.net: true
     developer.mozilla.org: true
     global: false
