@@ -3,6 +3,7 @@ dd https://devdocs.io/
 dk https://docs.docker.com/engine/reference/builder/#from
 c; javascript:candies();
 b; javascript:brave();
+dg; javascript:duckduckgo();
 g; javascript:google();
 gt; javascript:location=`https://translate.google.com/translate?hl=&sl=auto&tl=zh-TW&u=${encodeURIComponent(location)}`
 id; javascript:id();
