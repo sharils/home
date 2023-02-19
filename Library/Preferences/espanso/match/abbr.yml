@@ -30,6 +30,9 @@ matches:
   - trigger: gql,.
     replace: GraphQL
 
+  - trigger: posa,.
+    replace: Pattern-Oriented Software Architecture
+
   - trigger: py,.
     replace: python
 
