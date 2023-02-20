@@ -35,7 +35,7 @@ t() {
       v d "$TODO_FILE" "$TODO_DIR"/todo.sync-conflict-*.txt
       rm -i "$TODO_DIR"/todo.sync-conflict-*.txt
       ;;
-    su) v d "$TODO_FILE" "$TODO_SU" ;;
+    su) v d "$TODO_SU" "$TODO_FILE" ;;
     esac
     ;;
 
