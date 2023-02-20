@@ -40,6 +40,10 @@ p() {
     c) shift && set -- check "$@" ;;
     csu) shift && set -- createsuperuser "$@" ;;
     db) shift && set -- dbshell "$@" ;;
+    e)
+      shift && $EDITOR "$@" ./**/settings.py
+      return
+      ;;
     m) shift && set -- migrate "$@" ;;
     mm) shift && set -- makemigrations "$@" ;;
     rs) shift && set -- runserver "$@" ;;
