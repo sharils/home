@@ -47,6 +47,9 @@ matches:
   - trigger: idx,.
     replace: index.html
 
+  - trigger: ipy,.
+    replace: __init__.py
+
   - trigger: ns3.sg,.
     replace: 172.104.162.222
 
