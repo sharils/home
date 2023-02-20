@@ -43,6 +43,9 @@ Now, act as a Product Manager for ${*:-a web analytics tool like Google Analytic
 
     # https://www.facebook.com/photo/?fbid=112336381759888&set=pcb.112341338426059
     competitive-intelligence-summaries) shift && set -- "I’m developing ${1:-a SaaS product that helps restaurants directly sell to their consumers through branded websites & mobile apps without going to a marketplace}. We are serving the ${2:-US market for now}. We help users ${3:-build a personalized website with their branding, customize the menu, launch a white-labelled mobile app & run loyalty deals}. Our unique value prop is that we ${4:-auto-suggest seasonal push notification & email campaigns}. Can you write a competitive intelligence report comparing us to other players that I can share in an investor brief?" ;;
+
+    # https://www.facebook.com/photo/?fbid=112336425093217&set=pcb.112341338426059
+    questions-to-uncover-jobs-to-be-done) shift && set -- "Assume I’m a Product Manager for ${1:-a grocery delivery mobile app}. It will be serving the ${2:-Toronto GTA region only}. I want to conduct some consumer research to figure out my consumer's jobs-to-be-done. What personas should I target and then what questions should I be asking them to elicit their job-to-be-done. Take inspiration from the book \"Mom Test\"" ;;
     esac
     echo "$*" | openai complete -
     ;;
