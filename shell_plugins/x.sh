@@ -12,7 +12,7 @@ x() {
 
   8601) x b 'https://en.wikipedia.org/wiki/ISO_8601' ;;
 
-  ai)
+  ai) # https://www.explainthis.io/zh-hant/chatgpt
     if [ $# -eq 0 ]; then
       openai repl
       return
