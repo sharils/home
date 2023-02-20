@@ -45,6 +45,9 @@ matches:
   - trigger: rn,.
     replace: React Native
 
+  - trigger: ssot,.
+    replace: single source of truth
+
   - trigger: t,.
     replace: A penny for your thoughts.
 
