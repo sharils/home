@@ -30,6 +30,8 @@ p() {
     p r c "$@"
     ;;
 
+  e) shift && $EDITOR "$@" pyproject.toml ;;
+
   i) shift && poetry install "$@" ;;
 
   m)
