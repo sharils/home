@@ -48,6 +48,9 @@ matches:
   - trigger: rn,.
     replace: React Native
 
+  - trigger: sla,.
+    replace: service-level agreement
+
   - trigger: ssot,.
     replace: single source of truth
 
