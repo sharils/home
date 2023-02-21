@@ -15,6 +15,9 @@ matches:
   - trigger: ep,.
     replace: episode
 
+  - trigger: eula,.
+    replace: end-user license agreement
+
   - trigger: ex,.
     replace: exercism
 
