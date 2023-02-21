@@ -24,6 +24,9 @@ matches:
   - trigger: js,.
     replace: javascript
 
+  - trigger: jsdg,.
+    replace: "JavaScript: The Definitive Guide"
+
   - trigger: gi,.
     replace: gitignore
 
