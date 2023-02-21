@@ -54,6 +54,9 @@ matches:
   - trigger: tldr,.
     replace: Thereby hangs a tail.
 
+  - trigger: tos,.
+    replace: terms of service
+
   - trigger: trpl,.
     replace: The Rust Programming Language
 
