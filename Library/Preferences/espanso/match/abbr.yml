@@ -1,5 +1,8 @@
 matches:
 
+  - trigger: apollo,.
+    replace: Apollo GraphQL
+
   - trigger: as,.
     replace: applescript
 
