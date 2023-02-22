@@ -36,6 +36,9 @@ matches:
   - trigger: jsdg,.
     replace: "JavaScript: The Definitive Guide"
 
+  - trigger: next,.
+    replace: Next.js
+
   - trigger: node,.
     replace: Node.js
 
