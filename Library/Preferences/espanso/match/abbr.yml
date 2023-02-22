@@ -39,6 +39,9 @@ matches:
   - trigger: jsdg,.
     replace: "JavaScript: The Definitive Guide"
 
+  - trigger: lehv,.
+    replace: low effort and high value
+
   - trigger: next,.
     replace: Next.js
 
