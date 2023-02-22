@@ -36,6 +36,9 @@ matches:
   - trigger: gql,.
     replace: GraphQL
 
+  - trigger: pg,.
+    replace: PostgreSQL
+
   - trigger: posa,.
     replace: Pattern-Oriented Software Architecture
 
