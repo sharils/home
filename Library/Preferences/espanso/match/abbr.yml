@@ -36,6 +36,9 @@ matches:
   - trigger: jsdg,.
     replace: "JavaScript: The Definitive Guide"
 
+  - trigger: node,.
+    replace: Node.js
+
   - trigger: pg,.
     replace: PostgreSQL
 
