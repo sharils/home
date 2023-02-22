@@ -54,6 +54,9 @@ matches:
   - trigger: node,.
     replace: Node.js
 
+  - trigger: noti,.
+    replace: notification
+
   - trigger: pg,.
     replace: PostgreSQL
 
