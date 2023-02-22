@@ -51,6 +51,14 @@ x() {
       return
       ;;
 
+    write-unit-tests-for-this-python-module-named-fib)
+      shift && (
+        printf 'Write unit tests for this Python module named "fib":\n'
+        cat "$@"
+      ) | openai complete -
+      return
+      ;;
+
     # https://www.facebook.com/photo/?fbid=112335851759941&set=pcb.112341338426059
     crafting-business-canvas-models) shift && set -- "Generate a business canvas model for ${*:-an agriculture tech product that helps farmers increase their crop yield.}" ;;
 
