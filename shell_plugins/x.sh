@@ -44,6 +44,13 @@ x() {
       return
       ;;
 
+    write-python-function-to-calculate-fibonacci-numbers)
+      shift && (
+        echo 'Write Python function to calculate Fibonacci numbers'
+      ) | openai complete -
+      return
+      ;;
+
     # https://www.facebook.com/photo/?fbid=112335851759941&set=pcb.112341338426059
     crafting-business-canvas-models) shift && set -- "Generate a business canvas model for ${*:-an agriculture tech product that helps farmers increase their crop yield.}" ;;
 
