@@ -18,6 +18,15 @@ x() {
       return
     fi
     case "$1" in
+
+    add-type-annotations-for-this-python-code)
+      shift && (
+        echo 'Add type annotations for this Python code'
+        cat "$@"
+      ) | openai complete -
+      return
+      ;;
+
     # https://www.facebook.com/photo/?fbid=112335851759941&set=pcb.112341338426059
     crafting-business-canvas-models) shift && set -- "Generate a business canvas model for ${*:-an agriculture tech product that helps farmers increase their crop yield.}" ;;
 
