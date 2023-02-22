@@ -21,12 +21,6 @@ matches:
   - trigger: ex,.
     replace: exercism
 
-  - trigger: js,.
-    replace: javascript
-
-  - trigger: jsdg,.
-    replace: "JavaScript: The Definitive Guide"
-
   - trigger: gi,.
     replace: gitignore
 
@@ -35,6 +29,12 @@ matches:
 
   - trigger: gql,.
     replace: GraphQL
+
+  - trigger: js,.
+    replace: javascript
+
+  - trigger: jsdg,.
+    replace: "JavaScript: The Definitive Guide"
 
   - trigger: pg,.
     replace: PostgreSQL
