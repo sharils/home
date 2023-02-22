@@ -6,6 +6,9 @@ matches:
   - trigger: as,.
     replace: applescript
 
+  - trigger: bt,.
+    replace: Backlog Triage
+
   - trigger: dj,.
     replace: django
 
