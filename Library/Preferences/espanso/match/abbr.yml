@@ -57,6 +57,9 @@ matches:
   - trigger: lsc,.
     replace: lightsail container
 
+  - trigger: mysql,.
+    replace: MySQL
+
   - trigger: next,.
     replace: Next.js
 
