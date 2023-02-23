@@ -44,6 +44,7 @@ p() {
       shift && $EDITOR "$@" ./**/settings.py
       return
       ;;
+    h) shift && set -- help "$@" ;;
     m) shift && set -- migrate "$@" ;;
     mm) shift && set -- makemigrations "$@" ;;
     rs) shift && set -- runserver "$@" ;;
