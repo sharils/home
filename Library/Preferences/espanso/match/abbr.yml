@@ -39,9 +39,6 @@ matches:
   - trigger: gi,.
     replace: gitignore
 
-  - trigger: gl,.
-    replace: gitlab
-
   - trigger: gm,.
     replace: greasemonkey
 

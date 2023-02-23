@@ -38,6 +38,9 @@ matches:
   - trigger: gh,.
     replace: github
 
+  - trigger: gl,.
+    replace: gitlab
+
   - trigger: go,.
     replace: g0v
 
