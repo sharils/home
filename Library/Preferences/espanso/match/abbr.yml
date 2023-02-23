@@ -1,5 +1,8 @@
 matches:
 
+  - trigger: api,.
+    replace: API
+
   - trigger: apollo,.
     replace: Apollo GraphQL
 
