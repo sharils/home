@@ -12,6 +12,9 @@ matches:
   - trigger: cf,.
     replace: cloudfront
 
+  - trigger: db,.
+    replace: database
+
   - trigger: dep,.
     replace: dependency
 
