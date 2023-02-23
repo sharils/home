@@ -56,6 +56,9 @@ matches:
   - trigger: ipy,.
     replace: __init__.py
 
+  - trigger: js,.
+    replace: javascript
+
   - trigger: ns3.sg,.
     replace: 172.104.162.222
 
