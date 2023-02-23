@@ -26,6 +26,9 @@ matches:
   - trigger: eg,.
     replace: example.com
 
+  - trigger: ex,.
+    replace: exercism
+
   - trigger: f:,.
     replace: file:///
 

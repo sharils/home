@@ -36,9 +36,6 @@ matches:
   - trigger: eula,.
     replace: end-user license agreement
 
-  - trigger: ex,.
-    replace: exercism
-
   - trigger: gi,.
     replace: gitignore
 
