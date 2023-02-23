@@ -57,6 +57,9 @@ matches:
   - trigger: lsc,.
     replace: lightsail container
 
+  - trigger: mongo,.
+    replace: MongoDB
+
   - trigger: mysql,.
     replace: MySQL
 
