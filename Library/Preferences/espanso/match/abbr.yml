@@ -9,6 +9,9 @@ matches:
   - trigger: bt,.
     replace: Backlog Triage
 
+  - trigger: dep,.
+    replace: dependency
+
   - trigger: dj,.
     replace: django
 

@@ -198,7 +198,7 @@ SH
     b) d c build "$@" ;;
     d) d c down "$@" ;;
     e) $EDITOR "${@:-docker-compose.yml}" ;;
-    l) d c logs "$@" ;;
+    l) d c logs "${@:---follow}" ;;
     r) d c run "$@" ;;
     rs) d c restart "$@" ;;
     u)
