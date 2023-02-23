@@ -201,6 +201,7 @@ SH
     l) d c logs "${@:---follow}" ;;
     r) d c run "$@" ;;
     rs) d c restart "$@" ;;
+    s) d c start "$@" ;;
     u)
       case "$1" in
       b)
