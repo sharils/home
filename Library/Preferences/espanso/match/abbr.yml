@@ -128,3 +128,6 @@ matches:
 
   - trigger: utt,.
     replace: usd to twd
+
+  - trigger: wd,.
+    replace: WikiData
