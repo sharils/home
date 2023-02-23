@@ -47,9 +47,6 @@ matches:
   - trigger: h:,.
     replace: https://
 
-  - trigger: lh,.
-    replace: localhost
-
   - trigger: idx,.
     replace: index.html
 
@@ -58,6 +55,9 @@ matches:
 
   - trigger: js,.
     replace: javascript
+
+  - trigger: lh,.
+    replace: localhost
 
   - trigger: ns3.sg,.
     replace: 172.104.162.222
