@@ -200,6 +200,7 @@ SH
     e) $EDITOR "${@:-docker-compose.yml}" ;;
     l) d c logs "$@" ;;
     r) d c run "$@" ;;
+    rs) d c restart "$@" ;;
     u)
       case "$1" in
       b)
