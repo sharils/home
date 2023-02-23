@@ -12,6 +12,9 @@ matches:
   - trigger: dep,.
     replace: dependency
 
+  - trigger: depr,.
+    replace: deprecated
+
   - trigger: dj,.
     replace: django
 
