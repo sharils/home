@@ -9,6 +9,9 @@ matches:
   - trigger: bt,.
     replace: Backlog Triage
 
+  - trigger: cf,.
+    replace: cloudfront
+
   - trigger: dep,.
     replace: dependency
 
