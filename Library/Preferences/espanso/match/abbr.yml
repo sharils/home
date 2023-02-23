@@ -54,6 +54,9 @@ matches:
   - trigger: lehv,.
     replace: low effort and high value
 
+  - trigger: ls,.
+    replace: lightsail
+
   - trigger: next,.
     replace: Next.js
 
