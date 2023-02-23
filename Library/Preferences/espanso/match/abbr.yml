@@ -75,6 +75,9 @@ matches:
   - trigger: py,.
     replace: python
 
+  - trigger: rdbms,.
+    replace: relational database management system
+
   - trigger: rest,.
     replace: RESTful
 
