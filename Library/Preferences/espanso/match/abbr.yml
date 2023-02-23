@@ -57,6 +57,9 @@ matches:
   - trigger: ls,.
     replace: lightsail
 
+  - trigger: lsc,.
+    replace: lightsail container
+
   - trigger: next,.
     replace: Next.js
 
