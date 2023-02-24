@@ -96,6 +96,9 @@ matches:
   - trigger: rn,.
     replace: React Native
 
+  - trigger: sb,.
+    replace: somebody
+
   - trigger: sla,.
     replace: service-level agreement
 
@@ -133,4 +136,4 @@ matches:
     replace: usd to twd
 
   - trigger: wd,.
-    replace: WikiData
+    replace: Wikidata
