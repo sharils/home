@@ -126,14 +126,14 @@ matches:
   - trigger: ts,.
     replace: typescript
 
+  - trigger: tt,.
+    replace: to twd
+
   - trigger: ttu,.
     replace: twd to usd
 
   - trigger: u,.
     replace: qutebrowser
-
-  - trigger: utt,.
-    replace: usd to twd
 
   - trigger: wd,.
     replace: WikiData
