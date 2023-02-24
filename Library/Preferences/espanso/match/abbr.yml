@@ -102,6 +102,9 @@ matches:
   - trigger: ssot,.
     replace: single source of truth
 
+  - trigger: sth,.
+    replace: something
+
   - trigger: t,.
     replace: A penny for your thoughts.
 
