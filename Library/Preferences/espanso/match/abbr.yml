@@ -136,4 +136,7 @@ matches:
     replace: usd to twd
 
   - trigger: wd,.
-    replace: Wikidata
+    replace: WikiData
+
+  - trigger: wp,.
+    replace: Wikipedia
