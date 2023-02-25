@@ -84,6 +84,9 @@ matches:
   - trigger: noti,.
     replace: notification
 
+  - trigger: os,.
+    replace: open source
+
   - trigger: pg,.
     replace: PostgreSQL
 
