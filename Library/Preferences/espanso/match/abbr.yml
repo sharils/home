@@ -136,7 +136,7 @@ matches:
     replace: qutebrowser
 
   - trigger: wd,.
-    replace: WikiData
+    replace: Wikidata
 
   - trigger: wp,.
     replace: Wikipedia
