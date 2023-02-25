@@ -63,6 +63,9 @@ matches:
   - trigger: mongo,.
     replace: MongoDB
 
+  - trigger: mw,.
+    replace: MediaWiki
+
   - trigger: mysql,.
     replace: MySQL
 
