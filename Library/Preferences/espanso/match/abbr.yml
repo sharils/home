@@ -60,6 +60,9 @@ matches:
   - trigger: lsc,.
     replace: lightsail container
 
+  - trigger: wb,.
+    replace: Wikibase
+
   - trigger: mongo,.
     replace: MongoDB
 
