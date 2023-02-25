@@ -3,6 +3,9 @@ matches:
   - trigger: api,.
     replace: API
 
+  - trigger: app,.
+    replace: application
+
   - trigger: arch,.
     replace: architecture
 
