@@ -3,6 +3,9 @@ matches:
   - trigger: api,.
     replace: API
 
+  - trigger: arch,.
+    replace: architecture
+
   - trigger: apollo,.
     replace: Apollo GraphQL
 
