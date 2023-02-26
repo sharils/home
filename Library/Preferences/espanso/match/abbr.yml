@@ -72,6 +72,9 @@ matches:
   - trigger: lsc,.
     replace: lightsail container
 
+  - trigger: lv,.
+    replace: LiveView
+
   - trigger: wb,.
     replace: Wikibase
 
