@@ -45,6 +45,9 @@ matches:
   - trigger: eula,.
     replace: end-user license agreement
 
+  - trigger: fw,.
+    replace: framework
+
   - trigger: gi,.
     replace: gitignore
 
