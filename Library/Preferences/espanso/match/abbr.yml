@@ -99,6 +99,9 @@ matches:
   - trigger: os,.
     replace: open source
 
+  - trigger: phx,.
+    replace: Phoenix
+
   - trigger: pg,.
     replace: PostgreSQL
 
