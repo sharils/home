@@ -60,6 +60,9 @@ matches:
   - trigger: jsdg,.
     replace: "JavaScript: The Definitive Guide"
 
+  - trigger: lat,.
+    replace: latitude
+
   - trigger: lehv,.
     replace: low effort and high value
 
