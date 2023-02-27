@@ -78,6 +78,9 @@ matches:
   - trigger: wb,.
     replace: Wikibase
 
+  - trigger: maria,.
+    replace: MariaDB
+
   - trigger: mongo,.
     replace: MongoDB
 
