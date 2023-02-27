@@ -69,6 +69,9 @@ matches:
   - trigger: lib,.
     replace: library
 
+  - trigger: lng,.
+    replace: longitude
+
   - trigger: ls,.
     replace: lightsail
 
