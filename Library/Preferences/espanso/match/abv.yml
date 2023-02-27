@@ -81,6 +81,9 @@ matches:
   - trigger: mongo,.
     replace: MongoDB
 
+  - trigger: mysql,.
+    replace: MySQL
+
   - trigger: mw,.
     replace: MediaWiki
 
