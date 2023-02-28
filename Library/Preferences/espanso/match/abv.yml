@@ -21,6 +21,9 @@ matches:
   - trigger: cf,.
     replace: cloudfront
 
+  - trigger: chat,.
+    replace: ChatGPT
+
   - trigger: db,.
     replace: database
 
