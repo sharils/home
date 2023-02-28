@@ -123,6 +123,9 @@ matches:
   - trigger: posa,.
     replace: Pattern-Oriented Software Architecture
 
+  - trigger: prod,.
+    replace: production
+
   - trigger: py,.
     replace: python
 
