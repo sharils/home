@@ -33,6 +33,9 @@ matches:
   - trigger: depr,.
     replace: deprecated
 
+  - trigger: dev,.
+    replace: development
+
   - trigger: dj,.
     replace: django
 
