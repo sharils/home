@@ -105,6 +105,9 @@ matches:
   - trigger: mysql,.
     replace: MySQL
 
+  - trigger: nav,.
+    replace: navigation
+
   - trigger: next,.
     replace: Next.js
 
