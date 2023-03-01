@@ -57,7 +57,7 @@ n() {
 
   krampus)
     # Named after https://www.npmjs.com/package/krampus
-    pid="$(lsof -ti "$*")"
+    pid="$(lsof -ti "tcp:$*")"
     kill -TERM "$pid" || kill -KILL "$pid"
     ;;
 
