@@ -135,7 +135,6 @@ settings:
       mhr: https://www.google.com.tw/search?client=firefox-b-d&gbv=1&q=site:www.manhuaren.com/manhua-*%20{}
       moe: https://www.moedict.tw/{}
       nlpi: https://ipac.nlpi.edu.tw/search?searchField=FullText&searchInput={}
-      npm: https://www.npmjs.com/search?q={}
       od: https://www.oxfordlearnersdictionaries.com/search/english/?=english&q={}
       ol: https://openlibrary.org/search?mode=everything&q={}
       pl: https://lite.duckduckgo.com/lite/?q=site%3Avald-phoenix.github.io%20{}
