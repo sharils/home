@@ -1,5 +1,8 @@
 matches:
 
+  - trigger: CS,.
+    replace: computer science
+
   - trigger: api,.
     replace: API
 
