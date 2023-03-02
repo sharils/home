@@ -45,6 +45,9 @@ matches:
   - trigger: dj,.
     replace: django
 
+  - trigger: eng,.
+    replace: engineering
+
   - trigger: env,.
     replace: environment
 
@@ -71,6 +74,9 @@ matches:
 
   - trigger: jsdg,.
     replace: "JavaScript: The Definitive Guide"
+
+  - trigger: kano,.
+    replace: 1️⃣ like it. 2️⃣ expect it. 3️⃣ neutral. 4️⃣ can tolerate it. 5️⃣ dislike it.
 
   - trigger: lat,.
     replace: latitude
