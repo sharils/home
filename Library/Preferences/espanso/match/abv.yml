@@ -200,6 +200,3 @@ matches:
 
   - trigger: wd,.
     replace: Wikidata
-
-  - trigger: wp,.
-    replace: Wikipedia
