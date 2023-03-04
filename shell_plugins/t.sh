@@ -32,7 +32,7 @@ t() {
     case "$cmd" in
     d) v d "$TODO_FILE" "$TODO_DIR/$DONE_FILE" ;;
     sc)
-      v d "$TODO_FILE" "$TODO_DIR"/todo.sync-conflict-*.txt
+      v d "$TODO_DIR"/todo.sync-conflict-*.txt "$TODO_FILE"
       rm -i "$TODO_DIR"/todo.sync-conflict-*.txt
       ;;
     su) v d "$TODO_SU" "$TODO_FILE" ;;
