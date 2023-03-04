@@ -197,6 +197,3 @@ matches:
 
   - trigger: u,.
     replace: qutebrowser
-
-  - trigger: wd,.
-    replace: Wikidata

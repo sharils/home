@@ -71,5 +71,8 @@ matches:
   - trigger: sm,.
     replace: sitemap.xml
 
+  - trigger: wd,.
+    replace: wikidata
+
   - trigger: wp,.
     replace: wikipedia
