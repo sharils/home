@@ -71,6 +71,9 @@ matches:
   - trigger: sm,.
     replace: sitemap.xml
 
+  - trigger: tg,.
+    replace: Telegram
+
   - trigger: wd,.
     replace: Wikidata
 

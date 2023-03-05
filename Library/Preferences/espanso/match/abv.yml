@@ -174,9 +174,6 @@ matches:
   - trigger: t,.
     replace: A penny for your thoughts.
 
-  - trigger: tg,.
-    replace: Telegram
-
   - trigger: tldr,.
     replace: Thereby hangs a tail.
 
