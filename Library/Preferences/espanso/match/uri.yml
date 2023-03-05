@@ -39,7 +39,7 @@ matches:
     replace: github
 
   - trigger: gl,.
-    replace: gitlab
+    replace: GitLab
 
   - trigger: go,.
     replace: g0v
