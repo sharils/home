@@ -197,3 +197,6 @@ matches:
 
   - trigger: u,.
     replace: qutebrowser
+
+  - trigger: utt,.
+    replace: usd to twd
