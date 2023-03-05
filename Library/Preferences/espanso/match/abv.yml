@@ -60,6 +60,9 @@ matches:
   - trigger: eula,.
     replace: end-user license agreement
 
+  - trigger: ex,.
+    replace: elixir
+
   - trigger: fw,.
     replace: framework
 
