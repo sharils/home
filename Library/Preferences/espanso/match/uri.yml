@@ -72,7 +72,7 @@ matches:
     replace: sitemap.xml
 
   - trigger: wd,.
-    replace: wikidata
+    replace: Wikidata
 
   - trigger: wp,.
     replace: wikipedia
