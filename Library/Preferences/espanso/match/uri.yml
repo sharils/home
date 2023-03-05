@@ -36,7 +36,7 @@ matches:
     replace: favicon.ico
 
   - trigger: gh,.
-    replace: github
+    replace: GitHub
 
   - trigger: gl,.
     replace: GitLab
