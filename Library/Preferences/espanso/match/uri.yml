@@ -29,6 +29,9 @@ matches:
   - trigger: f:,.
     replace: file:///
 
+  - trigger: fb,.
+    replace: Facebook
+
   - trigger: fi,.
     replace: favicon.ico
 
