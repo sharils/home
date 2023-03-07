@@ -30,7 +30,7 @@ matches:
     replace: file:///
 
   - trigger: fb,.
-    replace: Facebook
+    replace: facebook
 
   - trigger: fi,.
     replace: favicon.ico
