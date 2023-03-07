@@ -49,6 +49,8 @@ n() {
     fi
     ;;
 
+  g) npm --global "$@" ;;
+
   gi) n gitignore "${@:-node}" ;;
 
   graphql-codegen) n y --package graphql --package @graphql-codegen/cli -- graphql-codegen "$@" ;;
