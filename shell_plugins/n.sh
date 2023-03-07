@@ -27,7 +27,13 @@ n() {
 
   cu) n npm-check-updates "$@" ;;
 
-  d) npm docs "$@" ;;
+  d)
+    if [ $# -eq 0 ]; then
+      npm run dev
+      return
+    fi
+    npm docs "$@"
+    ;;
 
   dg)
     for last in "$@"; do :; done
