@@ -66,6 +66,9 @@ matches:
   - trigger: fba,.
     replace: Firebase Auth
 
+  - trigger: fbs,.
+    replace: Firestore
+
   - trigger: fw,.
     replace: framework
 
