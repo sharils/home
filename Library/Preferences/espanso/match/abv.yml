@@ -63,6 +63,9 @@ matches:
   - trigger: ex,.
     replace: elixir
 
+  - trigger: fba,.
+    replace: Firebase Auth
+
   - trigger: fw,.
     replace: framework
 
