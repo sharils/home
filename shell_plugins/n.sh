@@ -158,7 +158,7 @@ n() {
     fi
 
     case "$cmd" in
-    @ionic/cli | @neutralinojs/neu | @sandworm/audit | baapan | backstopjs | browser-sync | bundle-phobia | chance-cli | codesandbox | composerize | cost-of-modules | covgen | csv2json | cypress | degit | depcruise | eslint | expo | gitignore | jscodeshift | jscpd | knip | license | license-checker | lighthouse | mkcert | nanoid | newman | nginx-linter | npm-check | npm-check-updates | npm-merge-driver | nve | nx | packagephobia-cli | pegjs | prettier | prettier-package-json | pwned | pythagora | qnm | qrcode-terminal | react-devtools | react-native | readme-md-generator | resume-cli | selenium-side-runner | trello-cli | trucker | twify | unimported | verdaccio | why-is-node-running | wait-on) n y "$cmd" "$@" ;;
+    @ionic/cli | @neutralinojs/neu | @sandworm/audit | baapan | backstopjs | browser-sync | bundle-phobia | chance-cli | codesandbox | composerize | cost-of-modules | covgen | csv2json | cypress | degit | depcruise | eslint | expo | gitignore | jscodeshift | jscpd | knip | license | license-checker | lighthouse | mkcert | nanoid | newman | nginx-linter | npm-check | npm-check-updates | npm-merge-driver | nve | nx | packagephobia-cli | pegjs | prettier | prettier-package-json | pwned | pythagora | qnm | qrcode-terminal | react-devtools | react-native | readme-md-generator | resume-cli | selenium-side-runner | trello-cli | trucker | tsc | twify | unimported | verdaccio | why-is-node-running | wait-on) n y "$cmd" "$@" ;;
 
     *) npm "$cmd" "$@" ;;
     esac
