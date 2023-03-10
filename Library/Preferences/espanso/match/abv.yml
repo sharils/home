@@ -209,3 +209,6 @@ matches:
 
   - trigger: utt,.
     replace: usd to twd
+
+  - trigger: zh,.
+    replace: 中文
