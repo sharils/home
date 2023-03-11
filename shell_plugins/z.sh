@@ -24,9 +24,12 @@ z() {
 
   h) cd "$SHARILS_HOME" || return ;;
 
-  s) cd ~/Sync || return ;;
-
-  sc) cd ~/Sync/Camera || return ;;
+  s)
+    case "$1" in
+    c) cd ~/Sync/Camera || return ;;
+    *) cd ~/Sync || return ;;
+    esac
+    ;;
 
   sk) cd ~/Sync/KeePass || return ;;
 
