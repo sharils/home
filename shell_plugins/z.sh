@@ -28,11 +28,10 @@ z() {
     case "$1" in
     c) cd ~/Sync/Camera || return ;;
     k) cd ~/Sync/KeePass || return ;;
+    l) cd ~/Sync/Libera\ PRO || return ;;
     *) cd ~/Sync || return ;;
     esac
     ;;
-
-  sl) cd ~/Sync/Libera\ PRO || return ;;
 
   ssh) cd ~/.ssh || return ;;
 
