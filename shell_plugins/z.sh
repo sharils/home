@@ -30,6 +30,8 @@ z() {
 
   sk) cd ~/Sync/KeePass || return ;;
 
+  sl) cd ~/Sync/Libera\ PRO || return ;;
+
   ssh) cd ~/.ssh || return ;;
 
   st) cd "$TODO_DIR" || return ;;
