@@ -14,6 +14,7 @@ settings:
     astexplorer.net: no-unknown-3rdparty
     developer.mozilla.org: no-unknown-3rdparty
     global: never
+    hn.algolia.com: no-unknown-3rdparty
     lernu.net: no-unknown-3rdparty
     nx.dev: no-unknown-3rdparty
     www.sharedrop.io: no-unknown-3rdparty
@@ -34,6 +35,7 @@ settings:
     developer.mozilla.org: true
     docs.expo.dev: true
     github.com: true
+    hn.algolia.com: true
     https://www.google.com.tw/maps?*: true
     hub.docker.com: true
     lernu.net: true
@@ -67,6 +69,7 @@ settings:
     docs.expo.dev: true
     github.com: true
     global: false
+    hn.algolia.com: true
     https://www.google.com.tw/maps?*: true
     hub.docker.com: true
     lernu.net: true
@@ -93,6 +96,7 @@ settings:
     astexplorer.net: true
     developer.mozilla.org: true
     global: false
+    hn.algolia.com: true
     nx.dev: true
     www.sharedrop.io: true
   content.notifications.enabled:
