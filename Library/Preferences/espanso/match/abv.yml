@@ -139,7 +139,7 @@ matches:
     replace: Next.js
 
   - trigger: node,.
-    replace: Node.js
+    replace: nodejs
 
   - trigger: noti,.
     replace: notification
