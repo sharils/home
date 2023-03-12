@@ -180,7 +180,7 @@ SH
     cmd="$1"
     shift
     case "$cmd" in
-    r) d run --interactive --rm --tty --name "$name" "$@" "$tag" ;;
+    r) d run --interactive --rm --tty --name "$name" "$tag" "$@" ;;
     rmi) d rmi "$tag" "$@" ;;
     s) d stop "$name" ;;
     *)
