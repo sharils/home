@@ -69,7 +69,13 @@ h() {
     help "$@" | l
     ;;
 
-  *) "$@" --help | l ;;
+  *)
+    if [ -f "$*" ]; then
+      head "$*"
+      return
+    fi
+    "$@" --help | l
+    ;;
 
   esac
 }
