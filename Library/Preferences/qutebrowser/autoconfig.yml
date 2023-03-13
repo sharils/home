@@ -95,7 +95,7 @@ settings:
     '*.wikidata.org': true
     astexplorer.net: true
     developer.mozilla.org: true
-    global: false
+    global: true
     hn.algolia.com: true
     nx.dev: true
     www.sharedrop.io: true
