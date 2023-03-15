@@ -122,6 +122,7 @@ g() {
     cmd="${1:-ls}"
     shift
     case "$cmd" in
+    a) g mr approve "$@" ;;
     c) g mr create --assignee "${G_MR_ASSIGNEE:?}" --reviewer "${G_MR_REVIEWER:?}" --target-branch "${G_MR_TARGET_BRANCH:-develop}" "$@" ;;
     d) g mr diff "$@" ;;
     m)
