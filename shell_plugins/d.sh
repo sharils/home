@@ -184,7 +184,9 @@ SH
     rmi) d rmi "$tag" "$@" ;;
     s) d stop "$name" ;;
     *)
-      echo "DOCKER_DEFAULT_PLATFORM=linux/amd64 # prefix for aws" >&2
+      cat <<EOF >&2
+# DOCKER_DEFAULT_PLATFORM=linux/amd64 docker build --tag "$tag" "${@:-.}" # prefix for AWS
+EOF
       d build --tag "$tag" "${@:-.}"
       ;;
     esac
