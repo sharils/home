@@ -14,6 +14,7 @@
 	ce = commit --amend --no-edit
 	ceF = commit --edit --file=.git/COMMIT_EDITMSG
 	cg = config --global
+	cu = config --get remote.origin.url
 	cm = commit --message
 	cma = !sh -c 'git commit --message \"Add $0 $*\"'
 	cmc = !sh -c 'git commit --message \"Change $0 $*\"'
