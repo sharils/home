@@ -225,7 +225,7 @@ snippet v "volumes" b
 volumes:
 	- type: ${1:bind|volume}
 		source: ${2:$PWD}
-		target: ${3:$PWD}
+		target: ${3:/workdir}
 endsnippet
 
 snippet w "working_dir" b
