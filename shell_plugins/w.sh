@@ -6,6 +6,8 @@ w() {
 
   case $cmd in
 
+  dk) w m --pattern 'Dockerfile' --run 'docker build .' ;;
+
   ex) w m --pattern '**/*.ex' '**/*.exs' --run "${*:-mix test && mix format}" ;;
 
   js) w m --pattern '**/*.js' '**/*.jsx' '**/*.ts' '**/*.tsx' --run "${*:-npm test}" ;;
