@@ -201,6 +201,7 @@ EOF
     d) d c down "$@" ;;
     e) $EDITOR "${@:-docker-compose.yml}" ;;
     l) d c logs "${@:---follow}" ;;
+    p) d c --profile "$@" ;;
     r) d c run "$@" ;;
     rs) d c restart "$@" ;;
     s) d c start "$@" ;;
