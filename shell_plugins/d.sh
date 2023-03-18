@@ -177,11 +177,9 @@ SH
     base="$(basename "$PWD" | x hostnameise)"
     name="${base}_$USER"
     tag="$base/$USER"
-    cmd="$1"
-    shift
-    case "$cmd" in
-    r) d run --interactive --rm --tty --name "$name" "$tag" "$@" ;;
-    rmi) d rmi "$tag" "$@" ;;
+    case "$1" in
+    r) shift && d run --interactive --rm --tty --name "$name" "$tag" "$@" ;;
+    rmi) shift && d rmi "$tag" "$@" ;;
     s) d stop "$name" ;;
     *)
       cat <<EOF >&2
