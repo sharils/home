@@ -117,6 +117,7 @@ settings:
       dh: https://hub.docker.com/search?type=image&image_filter=store%2Cofficial&q={}
       dj: https://devdocs.io/#q=js%20{}
       dk: https://docs.docker.com/engine/reference/builder/#{}
+      dl: https://github.com/hadolint/hadolint/wiki/{}
       ec: https://www.ecosia.org/search?q={}
       et: https://www.etymonline.com/search?q={}
       expo: https://docs.expo.dev/versions/v47.0.0/sdk/{}/
