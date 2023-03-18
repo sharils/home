@@ -182,6 +182,11 @@ SH
     r) shift && d run --interactive --rm --tty --name "$name" "$tag" "$@" ;;
     rmi) shift && d rmi "$tag" "$@" ;;
     s) d stop "$name" ;;
+    t)
+      shift
+      target="$1" && shift
+      d b --target "$target" "${@:-.}"
+      ;;
     *)
       cat <<EOF >&2
 # DOCKER_DEFAULT_PLATFORM=linux/amd64 docker build --tag "$tag" "${@:-.}" # prefix for AWS
