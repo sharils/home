@@ -167,7 +167,8 @@ SH
     shift
     cmd="$1"
     shift
-    date -jf"${*:-%F}" -v"$v" "${cmd:-$(date +"${*:-%F}")}" +"${*:-%F}" ;;
+    date -jf"${*:-%F}" -v"$v" "${cmd:-$(date +"${*:-%F}")}" +"${*:-%F}"
+    ;;
   0) date -ujf%s 0 "${@:-+%FT%T}" ;;
   F) date +%F ;;
   I) date -Iseconds "$@" | sed 's/:00$//;s/+00$/Z/' | tr -d '[:space:]' ;;
