@@ -88,7 +88,7 @@ apk add --no-cache --update ${0:package=version}
 endsnippet
 
 snippet apt "apt-get install -y" w
-apt update && DEBIAN_FRONTEND=noninteractive apt-get install --yes ${0:package=version} && rm -rf /var/lib/apt/lists/*
+apt update && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends --yes ${0:package=version} && rm -rf /var/lib/apt/lists/*
 endsnippet
 
 snippet wait-for "wait-for" b
