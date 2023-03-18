@@ -1,4 +1,4 @@
-dco https://docs.docker.com/compose/compose-file/#build
+dc https://docs.docker.com/compose/compose-file/#build
 dd https://devdocs.io/
 dk https://docs.docker.com/engine/reference/builder/#from
 c; javascript:candies();
