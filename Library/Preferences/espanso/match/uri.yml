@@ -23,6 +23,9 @@ matches:
   - trigger: dc,.
     replace: docker-compose.yml
 
+  - trigger: ddg,.
+    replace: duckduckgo
+
   - trigger: eg,.
     replace: example.com
 
