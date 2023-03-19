@@ -64,6 +64,7 @@ t() {
 
   p)
     case "$1" in
+    e) shift && t p --editor "$EDITOR" "$@" ;;
     '' | *[!0-9]*) t oot post "$@" ;;
     *) todo.sh pri "$@" ;;
     esac
