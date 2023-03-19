@@ -63,6 +63,9 @@ matches:
   - trigger: ep,.
     replace: episode
 
+  - trigger: et,.
+    replace: etymology
+
   - trigger: eula,.
     replace: end-user license agreement
 
