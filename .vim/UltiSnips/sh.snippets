@@ -90,10 +90,6 @@ snippet scs "# shellcheck disable=" b
 # shellcheck source=${1:/dev/null}
 endsnippet
 
-snippet sh "shift" b
-shift
-endsnippet
-
 snippet sw "case" b
 case "\$1" in
 *) ${1:echo not implemented >&2} ;;
@@ -368,6 +364,10 @@ endsnippet
 
 snippet setx "set -x && set +x" w
 (set -x && ${VISUAL})
+endsnippet
+
+snippet sh "shift" w
+shift
 endsnippet
 
 snippet til "until" w
