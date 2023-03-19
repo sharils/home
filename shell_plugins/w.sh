@@ -11,15 +11,15 @@ w() {
 
   m) shift && watchman-make "$@" ;;
 
-  rs) shift && w m --pattern '**/*.rs' --run "${*:-cargo test}" ;;
-
-  w) shift && watchman-wait --max-events 0 "$@" ;;
-
   py) shift && w m --pattern '**/*.py' --run "${*:-pytest}" ;;
 
   pytest) shift && w py "pytest $*" ;;
 
+  rs) shift && w m --pattern '**/*.rs' --run "${*:-cargo test}" ;;
+
   sh) shift && w m --pattern '**/*.sh' --run "$*" ;;
+
+  w) shift && watchman-wait --max-events 0 "$@" ;;
 
   *) "$@" | g uri | x fzf | xargs -o "$BROWSER" ;;
 
