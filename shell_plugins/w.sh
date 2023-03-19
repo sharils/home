@@ -22,7 +22,7 @@ w() {
 
   pytest) w py "pytest $*" ;;
 
-  sh) w m --pattern "**/*.$cmd" --run "$*" ;;
+  sh) w m --pattern '**/*.sh' --run "$*" ;;
 
   *) "$cmd" "$@" | g uri | x fzf | xargs -o "$BROWSER" ;;
 
