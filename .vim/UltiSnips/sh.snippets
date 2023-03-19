@@ -370,12 +370,6 @@ snippet setx "set -x && set +x" w
 (set -x && ${VISUAL})
 endsnippet
 
-snippet sh "<<'SHELL'" w
-<<'SHELL'`echo \\n`set -o errexit -o nounset -o xtrace
-
-$1`echo \\n`SHELL
-endsnippet
-
 snippet til "until" w
 until ${1:${VISUAL::}}; do ${2:sleep 1}; done
 endsnippet
