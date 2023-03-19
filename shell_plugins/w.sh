@@ -5,6 +5,8 @@ w() {
 
   dk) w m --pattern 'Dockerfile' --run 'docker build .' ;;
 
+  eslint) shift && w js "npx eslint $*" ;;
+
   ex) shift && w m --pattern '**/*.ex' '**/*.exs' --run "${*:-mix test && mix format}" ;;
 
   js) shift && w m --pattern '**/*.js' '**/*.jsx' '**/*.ts' '**/*.tsx' --run "${*:-npm test}" ;;
