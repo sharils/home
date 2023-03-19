@@ -1,30 +1,27 @@
 #!/usr/bin/env sh
 
 w() {
-  cmd=$1
-  shift
-
-  case $cmd in
+  case "$1" in
 
   dk) w m --pattern 'Dockerfile' --run 'docker build .' ;;
 
-  ex) w m --pattern '**/*.ex' '**/*.exs' --run "${*:-mix test && mix format}" ;;
+  ex) shift && w m --pattern '**/*.ex' '**/*.exs' --run "${*:-mix test && mix format}" ;;
 
-  js) w m --pattern '**/*.js' '**/*.jsx' '**/*.ts' '**/*.tsx' --run "${*:-npm test}" ;;
+  js) shift && w m --pattern '**/*.js' '**/*.jsx' '**/*.ts' '**/*.tsx' --run "${*:-npm test}" ;;
 
-  m) watchman-make "$@" ;;
+  m) shift && watchman-make "$@" ;;
 
-  rs) w m --pattern '**/*.rs' --run "${*:-cargo test}" ;;
+  rs) shift && w m --pattern '**/*.rs' --run "${*:-cargo test}" ;;
 
-  w) watchman-wait --max-events 0 "$@" ;;
+  w) shift && watchman-wait --max-events 0 "$@" ;;
 
-  py) w m --pattern '**/*.py' --run "${*:-pytest}" ;;
+  py) shift && w m --pattern '**/*.py' --run "${*:-pytest}" ;;
 
-  pytest) w py "pytest $*" ;;
+  pytest) shift && w py "pytest $*" ;;
 
-  sh) w m --pattern '**/*.sh' --run "$*" ;;
+  sh) shift && w m --pattern '**/*.sh' --run "$*" ;;
 
-  *) "$cmd" "$@" | g uri | x fzf | xargs -o "$BROWSER" ;;
+  *) "$@" | g uri | x fzf | xargs -o "$BROWSER" ;;
 
   esac
 }
