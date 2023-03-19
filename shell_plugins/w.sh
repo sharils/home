@@ -19,6 +19,8 @@ w() {
 
   sh) shift && w m --pattern '**/*.sh' --run "$*" ;;
 
+  tsc) shift && w js "npx tsc ${*:---noEmit}" ;;
+
   w) shift && watchman-wait --max-events 0 "$@" ;;
 
   *) "$@" | g uri | x fzf | xargs -o "$BROWSER" ;;
