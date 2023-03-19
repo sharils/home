@@ -20,6 +20,8 @@ w() {
 
   py) w m --pattern "**/*.$cmd" --run "${*:-pytest}" ;;
 
+  pytest) w py "pytest $*" ;;
+
   sh) w m --pattern "**/*.$cmd" --run "$*" ;;
 
   *) "$cmd" "$@" | g uri | x fzf | xargs -o "$BROWSER" ;;
