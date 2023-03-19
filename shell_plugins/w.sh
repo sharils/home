@@ -18,7 +18,7 @@ w() {
 
   w) watchman-wait --max-events 0 "$@" ;;
 
-  py) w m --pattern "**/*.$cmd" --run "${*:-pytest}" ;;
+  py) w m --pattern '**/*.py' --run "${*:-pytest}" ;;
 
   pytest) w py "pytest $*" ;;
 
