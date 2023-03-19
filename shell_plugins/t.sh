@@ -64,7 +64,7 @@ t() {
 
   p)
     case "$1" in
-    '' | *[!0-9]*) t oot post "${@:---editor}" ;;
+    '' | *[!0-9]*) t oot post "$@" ;;
     *) todo.sh pri "$@" ;;
     esac
     ;;
