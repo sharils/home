@@ -79,7 +79,7 @@ fi
 endsnippet
 
 snippet node "export PATH=/usr/local/opt/node@18/bin:$PATH" b
-export PATH="/usr/local/opt/${1:node@18}/bin:$PATH"
+export PATH="$HOMEBREW_PREFIX/opt/${1:node@18}/bin:$PATH"
 endsnippet
 
 snippet sc "# shellcheck disable=" b
