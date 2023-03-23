@@ -17,21 +17,7 @@ h() {
     ;;
 
   U)
-    sudo --validate
-    brew update
-    # for less sudo timeout
-    for outdated in $(brew outdated); do
-      sudo --validate
-      brew upgrade "$outdated"
-    done
-    sudo --validate
-    rustup update stable
-    sudo --reset-timestamp
-
-    tldr --update
-    npm --global update
-    pip list --outdated
-    pip3 list --outdated
+    h u "$@"
 
     vim +PlugUpdate
     vim +'PlugSnapshot! ~/.vim/snapshot.vim'
@@ -64,6 +50,24 @@ h() {
   push) h g p ;;
 
   t) todo.sh -vv help | l ;;
+
+  u)
+    sudo --validate
+    brew update
+    # for less sudo timeout
+    for outdated in $(brew outdated); do
+      sudo --validate
+      brew upgrade "$outdated"
+    done
+    sudo --validate
+    rustup update stable
+    sudo --reset-timestamp
+
+    tldr --update
+    npm --global update
+    pip list --outdated
+    pip3 list --outdated
+    ;;
 
   builtin | % | . | : | [ | { | alias | bg | bind | break | case | cd | command | complete | continue | dirs | echo | eval | exec | exit | export | false | fc | fg | for | getopts | hash | history | if | jobs | kill | local | log | logout | popd | printf | pushd | pwd | read | readonly | return | set | shift | source | suspend | test | time | times | trap | true | type | ulimit | umask | unalias | unset | until | wait | while)
     help "$@" | l
