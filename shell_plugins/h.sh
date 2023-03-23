@@ -30,16 +30,14 @@ h() {
   e)
     shift
     case "${1:-install}" in
-    bp) cmd=.bash_profile ;;
-    install) cmd=install ;;
-    karabiner) cmd=.config/karabiner/karabiner.json ;;
-    todo) cmd=.todo.cfg ;;
-    tig) cmd=.tigrc ;;
-    vim) cmd=.vimrc ;;
-    *) cmd="shell_plugins/$*.sh" ;;
+    bp) vim "$SHARILS_HOME/bash_profile" ;;
+    install) vim "$SHARILS_HOME/install" ;;
+    karabiner) vim "$SHARILS_HOME/config/karabiner/karabiner.json" ;;
+    todo) vim "$SHARILS_HOME/todo.cfg" ;;
+    tig) vim "$SHARILS_HOME/tigrc" ;;
+    vim) vim "$SHARILS_HOME/vimrc" ;;
+    *) vim "$SHARILS_HOME/shell_plugins/$*.sh" ;;
     esac
-    vim "$SHARILS_HOME/$cmd"
-    h
     ;;
 
   g)
