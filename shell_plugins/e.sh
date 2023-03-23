@@ -13,7 +13,7 @@ e() {
 
   s)
     shift
-    case "$2" in
+    case "$1" in
     R) shift && set -- register "$@" ;;
     r) shift && set -- restart "$@" ;;
     s) shift && set -- start "$@" ;;
