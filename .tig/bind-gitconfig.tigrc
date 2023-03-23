@@ -12,6 +12,7 @@ bind generic gco<SPACE>     @git co %(prompt)
 bind generic gcob           @git co -b %(prompt) %(commit)
 bind generic gcrn           @sh -c 'git revert --no-edit %(commit) && git revert --no-commit @ && git reset @'
 bind generic gp<ENTER>      @git p
+bind generic gpb:           @git push %(remote) :%(branch)
 bind generic gpc            @git push %(remote) %(commit):refs/heads/%(prompt)
 bind generic gpf            @git pf
 bind generic gro            @git ro %(prompt) %(commit)
