@@ -36,7 +36,14 @@ h() {
     todo) vim "$SHARILS_HOME/todo.cfg" ;;
     tig) vim "$SHARILS_HOME/tigrc" ;;
     vim) vim "$SHARILS_HOME/vimrc" ;;
-    *) vim "$SHARILS_HOME/shell_plugins/$*.sh" ;;
+    *)
+      if [ $# -le 1 ]; then
+        vim "$SHARILS_HOME/shell_plugins/$*.sh"
+      else
+        cmd="$1" && shift
+        grep --extended-regexp --line-number --with-filename "^\s+\b$*\)" "shell_plugins/$cmd.sh" | v
+      fi
+      ;;
     esac
     ;;
 
