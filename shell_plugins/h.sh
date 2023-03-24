@@ -70,7 +70,6 @@ h() {
 
     tldr --update
     npm --global update
-    pip list --outdated
     pip3 list --outdated
     ;;
 
