@@ -218,7 +218,7 @@ EOF
   log) log show --predicate 'eventMessage CONTAINS "unlockUIBecomesActive"' --last "${@:-1h}" ;;
 
   mh)
-    dir="$HOME/tmp/miraheze/$(d F)"
+    dir="$HOME/git/github.com/sharils/~miraheze/$(d F)"
     x mp "$dir"
     mv -v ~/Downloads/smilingpuffinwiki_xml_*.xml.gz "$dir"
     ;;
