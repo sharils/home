@@ -45,10 +45,9 @@ n() {
 
   esl)
     if [ $# -eq 0 ]; then
-      n eslint --fix .
-    else
-      n eslint "$@"
+      set -- --fix . "$@"
     fi
+    n eslint "$@"
     ;;
 
   g) npm --global "$@" ;;
