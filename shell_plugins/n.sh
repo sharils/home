@@ -43,13 +43,6 @@ n() {
     n degit "$@"
     ;;
 
-  esl)
-    if [ $# -eq 0 ]; then
-      set -- --fix . "$@"
-    fi
-    n eslint "$@"
-    ;;
-
   g) npm --global "$@" ;;
 
   gi) n gitignore "${@:-node}" ;;
@@ -68,6 +61,13 @@ n() {
     # Named after https://www.npmjs.com/package/krampus
     pid="$(lsof -ti "tcp:$*")"
     kill -TERM "$pid" || kill -KILL "$pid"
+    ;;
+
+  l)
+    if [ $# -eq 0 ]; then
+      set -- --fix . "$@"
+    fi
+    n eslint "$@"
     ;;
 
   lpd) NPM_CONFIG_LEGACY_PEER_DEPS='1' "$@" ;;
