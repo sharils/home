@@ -43,6 +43,8 @@ n() {
     n degit "$@"
     ;;
 
+  eas) n eas-cli "$@" ;;
+
   g) npm --global "$@" ;;
 
   gi) n gitignore "${@:-node}" ;;
