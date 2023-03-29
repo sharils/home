@@ -10,6 +10,8 @@ n() {
 
   agpl) n license AGPL-3.0 "$@" ;;
 
+  a) n android "$@" ;;
+
   b) n build "$@" ;;
 
   bs) n browser-sync "${@:-.}" --no-open ;;
