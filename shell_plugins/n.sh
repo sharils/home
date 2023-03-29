@@ -150,6 +150,8 @@ n() {
 
   vercel) n y vercel --token="${VERCEL_TOKEN:?}" "$@" ;;
 
+  w) n web "$@" ;;
+
   y) npx --yes "$@" ;;
 
   yo) n y --package yo --package "generator-$1" -- yo "$@" ;;
