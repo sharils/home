@@ -44,7 +44,7 @@ v() {
   pj) vim package.json ;;
   tor) vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc ;;
 
-  d | p) vim -"$cmd" "$@" ;;
+  p) vim -"$cmd" "$@" ;;
 
   applescript | c | css | csv | eex | erl | ex | exs | gql | html | java | jq | js | json | jsx | lua | md | mdx | mw | nginx | pegjs | php | py | rs | scss | sh | sql | story | t | ts | tsx | txt | wat | xhtml | yaml | yml | zep)
     if [ -f "$cmd" ]; then
