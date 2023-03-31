@@ -6,6 +6,8 @@ nx() {
 
   S) shift && nx r start "$@" ;;
 
+  android) shift && nx r run-android "$@" ;;
+
   at) shift && nx affected:test "$@" ;;
 
   b) shift && nx r build "$@" ;;
