@@ -24,6 +24,8 @@ nx() {
     nx "$@"
     ;;
 
+  ios) shift && nx r run-ios "$@" ;;
+
   l) shift && nx lint "$@" ;;
 
   ls)
