@@ -6,8 +6,6 @@ nx() {
 
   S) shift && nx r start "$@" ;;
 
-  android) shift && nx r run-android "$@" ;;
-
   at) shift && nx affected:test "$@" ;;
 
   b) shift && nx r build "$@" ;;
@@ -49,6 +47,8 @@ nx() {
   t) shift && nx r test "$@" ;;
 
   ws) shift && n i nx-workspace "$@" ;;
+
+  a | android) shift && nx r run-android "$@" ;;
 
   w | web) shift && nx S "$@" ;;
 
