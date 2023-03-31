@@ -4,6 +4,8 @@
 nx() {
   case "${1:---version}" in
 
+  S) shift && nx r start "$@" ;;
+
   at) shift && nx affected:test "$@" ;;
 
   b) shift && nx r build "$@" ;;
