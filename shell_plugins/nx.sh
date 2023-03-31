@@ -44,9 +44,9 @@ nx() {
 
   t) shift && nx r test "$@" ;;
 
-  web) shift && nx S "$@" ;;
-
   ws) shift && n i nx-workspace "$@" ;;
+
+  w | web) shift && nx S "$@" ;;
 
   *) n nx "$@" ;;
 
