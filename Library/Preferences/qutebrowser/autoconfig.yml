@@ -17,6 +17,7 @@ settings:
     hn.algolia.com: no-unknown-3rdparty
     lernu.net: no-unknown-3rdparty
     nx.dev: no-unknown-3rdparty
+    vimeo.com: no-unknown-3rdparty
     www.sharedrop.io: no-unknown-3rdparty
   content.cookies.store:
     global: false
@@ -51,6 +52,7 @@ settings:
     superuser.com: true
     temp-mail.org: true
     translate.google.com: true
+    vimeo.com: true
     wormhole.app: true
     www.ecosia.org: true
     www.railway.gov.tw: true
@@ -88,6 +90,7 @@ settings:
     superuser.com: true
     temp-mail.org: true
     translate.google.com: true
+    vimeo.com: true
     wormhole.app: true
     www.ecosia.org: true
     www.railway.gov.tw: true
@@ -99,6 +102,7 @@ settings:
     global: true
     hn.algolia.com: true
     nx.dev: true
+    vimeo.com: true
     www.sharedrop.io: true
   content.notifications.enabled:
     global: false
@@ -156,6 +160,7 @@ settings:
       tldr: https://tldr.ostera.io/{}
       tpl: https://ipac.library.taichung.gov.tw/webpac/search.cfm?m=ss&k0={}&t0=k&c0=and
       u: https://search.brave.com/search?q=qutebrowser+{}
+      vm: https://vimeo.com/search?q={}
       w8: https://www.google.com/search?client=firefox-b-d&gbv=1&q=site%3Awenku8.net+{}
       wa: https://www.wolframalpha.com/input?i={}
       wb: https://search.brave.com/search?q=whalebrew+{}
