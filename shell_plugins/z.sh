@@ -16,11 +16,14 @@ z() {
 
   g) cd ~/git || return ;;
 
-  gh) cd ~/git/github.com || return ;;
+  gh)
+    case "$1" in
+    s) set -- /sharils ;;
+    esac
+    cd "$HOME/git/github.com$*" || return
+    ;;
 
   gl) cd ~/git/gitlab.com || return ;;
-
-  gs) cd ~/git/github.com/sharils || return ;;
 
   h) cd "$SHARILS_HOME" || return ;;
 
