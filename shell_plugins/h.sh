@@ -41,7 +41,7 @@ h() {
         vim "$SHARILS_HOME/shell_plugins/$*.sh"
       else
         cmd="$1" && shift
-        grep --extended-regexp --line-number --with-filename "^\s+\b$*\)" "shell_plugins/$cmd.sh" | v
+        grep --extended-regexp --line-number --with-filename "^\s+\b$*\)" "$SHARILS_HOME/shell_plugins/$cmd.sh" | v
       fi
       ;;
     esac
