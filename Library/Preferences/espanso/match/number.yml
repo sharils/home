@@ -2,6 +2,9 @@ matches:
   - trigger: e3,.
     replace: 000
 
+  - trigger: e4,.
+    replace: 0000
+
   - trigger: k,.
     replace: 000
 
