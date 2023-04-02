@@ -1,3 +1,6 @@
 matches:
   - trigger: e3,.
     replace: 000
+
+  - trigger: k,.
+    replace: 000
