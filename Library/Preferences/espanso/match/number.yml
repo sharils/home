@@ -7,3 +7,6 @@ matches:
 
   - trigger: m,.
     replace: 000000
+
+  - trigger: w,.
+    replace: 0000
