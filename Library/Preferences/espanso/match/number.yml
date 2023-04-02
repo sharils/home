@@ -4,3 +4,6 @@ matches:
 
   - trigger: k,.
     replace: 000
+
+  - trigger: m,.
+    replace: 000000
