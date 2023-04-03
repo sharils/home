@@ -235,7 +235,7 @@ EOF
     mv -v ~/Downloads/smilingpuffinwiki_xml_*.xml.gz "$dir"
     ;;
 
-  mp) mkdir -pv "$@" ;;
+  mp) mkdir -pv "$@" && cd "$@" || return ;;
 
   o) open "${@:-.}" ;;
 
