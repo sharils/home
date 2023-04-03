@@ -52,6 +52,15 @@ h() {
     git -C "$SHARILS_HOME" "$@"
     ;;
 
+  mix)
+    shift
+    if [ $# -eq 0 ]; then
+      mix --help | l
+      return
+    fi
+    mix help "$@" | l md
+    ;;
+
   push) h g p ;;
 
   t) todo.sh -vv help | l ;;
