@@ -5,7 +5,13 @@ m() {
 
   erl) erl -man erl | l ;;
 
-  i) shift && m install "$@" ;;
+  i)
+    if [ $# -eq 0 ]; then
+      iex -S mix "$@"
+      return
+    fi
+    shift && m install "$@"
+    ;;
 
   n | npm) shift && npm help "$@" | l ;;
 
