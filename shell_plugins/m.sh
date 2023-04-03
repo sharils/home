@@ -9,6 +9,11 @@ m() {
 
   n | npm) shift && npm help "$@" | l ;;
 
+  p)
+    cmd="phx" && shift
+    mix "$cmd" "$@"
+    ;;
+
   pj) m package-json ;;
 
   re) m re_format ;;
