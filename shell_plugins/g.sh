@@ -58,10 +58,9 @@ g() {
     case "$1" in
     -e) git config --local "$@" ;;
     t | *)
-      if [ "$1" = 't' ]; then
-        shift
-        z t
-      fi
+      case "$1" in
+      t) shift && z t ;;
+      esac
       git clone "$@"
       for last in "$@"; do :; done
       last="$(basename "$last")"
