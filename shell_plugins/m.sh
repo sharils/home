@@ -11,6 +11,9 @@ m() {
 
   p)
     cmd="phx" && shift
+    case "$1" in
+    s) shift && cmd="$cmd.server" ;;
+    esac
     mix "$cmd" "$@"
     ;;
 
