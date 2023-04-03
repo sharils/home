@@ -59,6 +59,7 @@ g() {
     -e) git config --local "$@" ;;
     t | *)
       case "$1" in
+      ~) shift && x mp "$HOME$(dirname "$(echo "$*" | sed 's#https:/#git#;s#[@:]#/#g;s#^#/#')")" ;;
       t) shift && z t ;;
       esac
       git clone "$@"
