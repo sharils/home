@@ -153,14 +153,14 @@ matches:
   - trigger: phx,.
     replace: Phoenix
 
-  - trigger: pg,.
-    replace: PostgreSQL
-
   - trigger: posa,.
     replace: Pattern-Oriented Software Architecture
 
   - trigger: prod,.
     replace: production
+
+  - trigger: psql,.
+    replace: PostgreSQL
 
   - trigger: py,.
     replace: python
