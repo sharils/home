@@ -21,14 +21,6 @@ e() {
     e service "${@:-status}"
     ;;
 
-  x)
-    shift
-    case "$1" in
-    s) shift && set -- submit "$@" ;;
-    esac
-    exercism "$@"
-    ;;
-
   *) espanso "$@" ;;
 
   esac
