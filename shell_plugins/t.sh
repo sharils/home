@@ -21,8 +21,7 @@ t() {
       w t ls "$@"
       return
     fi
-    cmd="$1"
-    shift
+    cmd="$1" && shift
     b "$cmd" w t ls "$@"
     ;;
 
