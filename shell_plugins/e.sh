@@ -23,11 +23,7 @@ e() {
 
   x) shift && exercism submit "$@" ;;
 
-  *)
-    case "$PWD" in
-    $(exercism workspace)*) exercism "${@:-submit}" ;;
-    *) espanso "$@" ;;
-    esac
-    ;;
+  *) espanso "$@" ;;
+
   esac
 }
