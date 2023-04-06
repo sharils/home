@@ -41,13 +41,13 @@ t() {
     ;;
 
   e)
-    cmd="${1:-t}"
-    shift
-    case "$cmd" in
-    q) $EDITOR "$@" "$TODO_DIR/QuickNote.md" ;;
-    t) $EDITOR "$@" "$TODO_FILE" ;;
-    *[!0-9]*) $EDITOR "$cmd" "$@" "$TODO_FILE" ;;
-    *) $EDITOR "+$cmd" "$@" "$TODO_FILE" ;;
+    case "${1:-t}" in
+    q) shift && $EDITOR "$@" "$TODO_DIR/QuickNote.md" ;;
+    t) shift && $EDITOR "$@" "$TODO_FILE" ;;
+    *[!0-9]*) $EDITOR "$@" "$TODO_FILE" ;;
+    *)
+      cmd="$1" && shift
+      $EDITOR "+$cmd" "$@" "$TODO_FILE" ;;
     esac
     ;;
 
