@@ -14,6 +14,14 @@ z() {
 
   d) cd ~/Downloads || return ;;
 
+  e)
+    case "$1" in
+    e) set -- /elixir ;;
+    p) set -- /python ;;
+    esac
+    cd "$HOME/Exercism$*" || return
+    ;;
+
   g) cd ~/git || return ;;
 
   gh)
