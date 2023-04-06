@@ -30,12 +30,12 @@ t() {
     cmd="$1"
     shift
     case "$cmd" in
-    d) v d "$TODO_FILE" "$TODO_DIR/$DONE_FILE" ;;
+    d) v -d "$TODO_FILE" "$TODO_DIR/$DONE_FILE" ;;
     sc)
-      v d "$TODO_DIR"/todo.sync-conflict-*.txt "$TODO_FILE"
+      v -d "$TODO_DIR"/todo.sync-conflict-*.txt "$TODO_FILE"
       rm -i "$TODO_DIR"/todo.sync-conflict-*.txt
       ;;
-    su) v d "$TODO_SU" "$TODO_FILE" ;;
+    su) v -d "$TODO_SU" "$TODO_FILE" ;;
     esac
     ;;
 
