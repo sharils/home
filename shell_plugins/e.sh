@@ -1,6 +1,13 @@
 #!/usr/bin/env sh
 
 e() {
+  case "$PWD" in
+  "$(exercism workspace)"/*)
+    exercism "$@"
+    return $?
+    ;;
+  esac
+
   case "${1:-edit}" in
 
   e)
