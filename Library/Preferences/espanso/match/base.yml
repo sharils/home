@@ -18,6 +18,14 @@ matches:
         params:
           cmd: "pbpaste | fold -w3 | tr '\n' ' '"
 
+  - trigger: p4,.
+    replace: "{{d}}"
+    vars:
+      - name: d
+        type: shell
+        params:
+          cmd: "pbpaste | fold -w4 | tr '\n' ' '"
+
   - trigger: pd,.
     replace: "{{d}}"
     vars:
