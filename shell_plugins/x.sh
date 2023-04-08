@@ -398,9 +398,8 @@ EOF
   w8)
     cmd="$HOME/Sync/Libera PRO/${2:?}.txt"
     curl --compressed --location --silent --output "$cmd" "https://dl1.wenku8.com/down.php?type=big5&id=${1:?}"
-    pbcopy <<EOF
-$cmd
-EOF
+    echo "$cmd" | pbcopy
+    pbpaste
     ;;
 
   webp)
