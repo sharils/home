@@ -56,7 +56,7 @@ matches:
       - name: d
         type: shell
         params:
-          cmd: "pbpaste | xargs"
+          cmd: "pbpaste | tr '\n' ' '"
 
   - trigger: pu,.
     replace: "{{d}}"
