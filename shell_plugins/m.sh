@@ -13,7 +13,7 @@ m() {
     shift && m install "$@"
     ;;
 
-  n | npm) shift && npm help "$@" | l ;;
+  npm) shift && npm help "$@" | l ;;
 
   p)
     cmd="phx" && shift
