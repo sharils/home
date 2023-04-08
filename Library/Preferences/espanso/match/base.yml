@@ -2,6 +2,14 @@
 # Original file: default.yml
 
 matches:
+  - trigger: p3,.
+    replace: "{{d}}"
+    vars:
+      - name: d
+        type: shell
+        params:
+          cmd: "pbpaste | fold -w3 | tr '\n' ' '"
+
   - trigger: pd,.
     replace: "{{d}}"
     vars:
