@@ -55,9 +55,9 @@ n() {
     case "$1" in
     y) shift && npm init --yes "$@" ;;
     @capacitor/app | expo-app | next-app | node-cli | nx-workspace | react-app | react-native-app)
-      cmd="$1" && shift
-      n i y "$cmd" -- "${@:-$cmd}"
-      cd "${1:-$cmd}" || return ;;
+      app="$1" && shift
+      n i y "$app" -- "${@:-$app}"
+      cd "${1:-$app}" || return ;;
     *) npm install "$@" ;;
     esac
     ;;
