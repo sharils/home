@@ -1,5 +1,10 @@
 #!/usr/bin/env sh
 
 c() {
-  pbcopy "$@"
+  if ! [ -t 0 ]; then
+    pbcopy "$@"
+    return
+  fi
+
+  echo 'not implemented' >&2
 }
