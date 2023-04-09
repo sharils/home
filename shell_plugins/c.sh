@@ -6,5 +6,5 @@ c() {
     return
   fi
 
-  echo 'not implemented' >&2
+  cargo "$@"
 }
