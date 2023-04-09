@@ -122,6 +122,8 @@ BC
 
   cal) cal -A4 -B4 ;;
 
+  chunk) fold -w "${@:-3}" | tr '\n' ' ' ;;
+
   cr) /Applications/Chromium.app/Contents/MacOS/Chromium "$@" ;;
 
   data)
