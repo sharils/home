@@ -75,7 +75,7 @@ TEXT
       sort -R |
       tr '\n' ' ' |
       perl -pe 's/\b\w/\U$&/g' |
-      sed 's/[[:space:]][[:space:]]*$//'|
+      sed 's/[[:space:]][[:space:]]*$//' |
       tr ' ' - |
       pbcopy
     pbpaste | wc
