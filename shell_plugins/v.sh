@@ -18,10 +18,7 @@ v() {
     set -- +Obsession
   fi
 
-  cmd=$1
-  shift
-
-  case "$cmd" in
+  case "$1" in
 
   R) vim README.md ;;
   dc) vim docker-compose.yml ;;
@@ -43,16 +40,16 @@ v() {
   tor) vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc ;;
 
   applescript | c | css | csv | eex | erl | ex | exs | gql | html | java | jq | js | json | jsx | lua | md | mdx | mw | nginx | pegjs | php | py | rs | scss | sh | sql | story | t | ts | tsx | txt | wat | xhtml | yaml | yml | zep)
-    if [ -f "$cmd" ]; then
-      vim "$cmd"
+    if [ -f "$1" ]; then
+      vim "$1"
       return
     fi
-    [ "$cmd" != 't' ] && cmd="$cmd.$cmd"
+    [ "$1" != 't' ] && set -- "$1.$1"
     z t_init
-    vim "$(z t && echo "$PWD")/$cmd"
+    vim "$(z t && echo "$PWD")/$1"
     ;;
 
-  *) vim "$cmd" "$@" ;;
+  *) vim "$@" ;;
 
   esac
 }
