@@ -30,6 +30,7 @@ settings:
   content.headers.do_not_track:
     '*.stackexchange.com': true
     '*.wikidata.org': true
+    127.0.0.1: true
     astexplorer.net: true
     c.im: true
     devdocs.io: true
