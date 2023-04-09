@@ -7,6 +7,7 @@ c() {
   fi
 
   case "$1" in
+  a) shift && set -- add "$@" ;;
   n) shift && set -- new "${@:-rust-app}" ;;
   esac
   cargo "$@"
