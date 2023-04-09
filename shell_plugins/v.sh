@@ -37,6 +37,7 @@ v() {
   mk) vim Makefile ;;
   ns) vim server.js ;;
   pj) vim package.json ;;
+  s) vim server.js ;;
   tor) vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc ;;
 
   applescript | c | css | csv | eex | erl | ex | exs | gql | html | java | jq | js | json | jsx | lua | md | mdx | mw | nginx | pegjs | php | py | rs | scss | sh | sql | story | t | ts | tsx | txt | wat | xhtml | yaml | yml | zep)
