@@ -130,6 +130,7 @@ settings:
       dl: https://github.com/hadolint/hadolint/wiki/{}
       ec: https://www.ecosia.org/search?q={}
       et: https://www.etymonline.com/search?q={}
+      ex: https://hexdocs.pm/elixir/search.html?q={}
       expo: https://docs.expo.dev/versions/v47.0.0/sdk/{}/
       fda: https://consumer.fda.gov.tw/food/tfnd.aspx?nodeID=178&k={}
       fx: https://addons.mozilla.org/en-GB/firefox/search/?q={}&type=extension
