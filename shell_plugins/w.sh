@@ -17,6 +17,10 @@ w() {
 
   py) shift && w m --pattern '**/*.py' --run "${*:-pytest}" ;;
 
+  # -o OVERRIDE_INI, --override-ini=OVERRIDE_INI
+  # -v, --verbose         Increase verbosity
+  # -x, --exitfirst       Exit instantly on first error or failed test
+  # --ff, --failed-first  Run all tests, but run the last failures first. This may
   pytest) shift && w py "pytest $*" ;;
 
   rs) shift && w m --pattern '**/*.rs' --run "${*:-cargo test}" ;;
