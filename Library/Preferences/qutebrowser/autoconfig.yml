@@ -30,6 +30,7 @@ settings:
   content.headers.do_not_track:
     '*.stackexchange.com': true
     '*.wikidata.org': true
+    'file://*': true
     127.0.0.1: true
     astexplorer.net: true
     c.im: true
@@ -64,6 +65,7 @@ settings:
   content.javascript.enabled:
     '*.stackexchange.com': true
     '*.wikidata.org': true
+    'file://*': true
     127.0.0.1: true
     astexplorer.net: true
     c.im: true
