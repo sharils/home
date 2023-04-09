@@ -5,6 +5,7 @@ e() {
   "$(exercism workspace)"/*)
     case "$1" in
     ex) v -O README.md ./**/*.ex ./**/*_test.exs && return $? ;;
+    h) shift && set -- help "$@" ;;
     esac
     exercism "$@"
     return $?
