@@ -27,7 +27,13 @@ m() {
 
   s) shift && m search "$@" ;;
 
-  t) shift && m test "$@" ;;
+  t)
+    shift
+    case "$1" in
+    f) shift && set -- --failed "$@";;
+    esac
+    m test "$@"
+    ;;
 
   sft) m strftime ;;
 
