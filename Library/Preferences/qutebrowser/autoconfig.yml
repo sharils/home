@@ -37,6 +37,7 @@ settings:
     devdocs.io: true
     developer.mozilla.org: true
     docs.expo.dev: true
+    docs.rs: true
     github.com: true
     hn.algolia.com: true
     https://www.google.com.tw/maps?*: true
@@ -73,6 +74,7 @@ settings:
     developer.mozilla.org: true
     docs.expo.dev: true
     docs.python.org: true
+    docs.rs: true
     github.com: true
     global: false
     hn.algolia.com: true
