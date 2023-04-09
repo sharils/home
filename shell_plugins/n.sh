@@ -58,7 +58,13 @@ n() {
       app="$1" && shift
       n i y "$app" -- "${@:-$app}"
       cd "${1:-$app}" || return ;;
-    *) npm install "$@" ;;
+    *)
+      if [ -f package.json ]; then
+        npm install "$@"
+      else
+        npm init "$@"
+      fi
+      ;;
     esac
     ;;
 
