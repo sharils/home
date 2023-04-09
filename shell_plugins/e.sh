@@ -5,6 +5,11 @@ e() {
   "$(exercism workspace)"/*)
     case "$1" in
     ex) v -O README.md ./**/*.ex ./**/*_test.exs && return $? ;;
+    o)
+      dir="$(dirname "$PWD")"
+      base="https://exercism.org/tracks/${dir##*/}/exercises/${PWD##*/}"
+      b f x b "$base" "$base/solutions"
+      ;;
     h) shift && set -- help "$@" ;;
     esac
     exercism "$@"
