@@ -23,6 +23,7 @@ l() {
   -*) lsd "$cmd" "$@" ;;
   F) less +F "$@" ;;
   b) l x "https://search.brave.com/search?q=$*" ;;
+  cctld) l x 'https://en.wikipedia.org/wiki/Template:CcTLD#bodyContent' ;;
   d) l x "https://lite.duckduckgo.com/lite/?q=$*" ;;
   g) l x "https://www.google.com/search?client=firefox-b-d&gbv=1&q=$*" ;;
   pl) l x "https://lite.duckduckgo.com/lite/?q=site%3Avald-phoenix.github.io%20$*" ;;
