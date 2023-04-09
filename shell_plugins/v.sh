@@ -29,15 +29,13 @@ v() {
   dk) vim Dockerfile ;;
   hosts) EDITOR=vim sudo --edit /etc/hosts "$@" ;;
   i)
-    cmd="${1:-html}"
-    shift
-    case "$cmd" in
-    c) cmd=css ;;
-    h) cmd=html ;;
-    j) cmd=jsx ;;
-    t) cmd=tsx ;;
+    case "${1:-html}" in
+    c) shift && set -- css ;;
+    h) shift && set -- html ;;
+    j) shift && set -- jsx ;;
+    t) shift && set -- tsx ;;
     esac
-    vim "index.$cmd"
+    vim "index.$1"
     ;;
   mk) vim Makefile ;;
   ns) vim server.js ;;
