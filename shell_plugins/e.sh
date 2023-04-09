@@ -13,6 +13,8 @@ e() {
       base="https://exercism.org/tracks/${dir##*/}/exercises/${PWD##*/}"
       b f x b "$base" "$base/solutions"
       ;;
+
+    py) v -O README.md ./*.py && return $? ;;
     esac
     exercism "$@"
     return $?
