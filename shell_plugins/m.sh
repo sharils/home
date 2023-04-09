@@ -31,6 +31,7 @@ m() {
     shift
     case "$1" in
     f) shift && set -- --failed "$@";;
+    mf) shift && set -- --max-failures "$@";;
     esac
     m test "$@"
     ;;
