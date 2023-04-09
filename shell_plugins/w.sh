@@ -3,6 +3,8 @@
 w() {
   case "$1" in
 
+  c) shift && w rs cargo "$@" ;;
+
   dk) w m --pattern 'Dockerfile' --run 'docker build .' ;;
 
   eslint) shift && w js "npx eslint $*" ;;
