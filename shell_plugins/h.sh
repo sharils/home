@@ -52,6 +52,8 @@ h() {
     git -C "$SHARILS_HOME" "$@"
     ;;
 
+  m) echo 'h mix <command> instead' >&2 ;;
+
   mix)
     shift
     if [ $# -eq 0 ]; then
