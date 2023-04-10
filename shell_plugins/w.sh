@@ -13,7 +13,13 @@ w() {
 
   js) shift && w m --pattern '**/*.js' '**/*.jsx' '**/*.ts' '**/*.tsx' --run "${*:-npm test}" ;;
 
-  m) shift && watchman-make "$@" ;;
+  m)
+    shift
+    case "$1" in
+    t) shift && w ex mix test "$@" ;;
+    *) watchman-make "$@" ;;
+    esac
+    ;;
 
   py) shift && w m --pattern '**/*.py' --run "${*:-pytest}" ;;
 
