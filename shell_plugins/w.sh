@@ -16,7 +16,13 @@ w() {
   m)
     shift
     case "$1" in
-    t) shift && w ex mix test "$@" ;;
+    t)
+      shift
+      case "$1" in
+      f) shift && set -- --failed "$@";;
+      esac
+      w ex mix test "$@"
+      ;;
     *) watchman-make "$@" ;;
     esac
     ;;
