@@ -1,5 +1,6 @@
 bind generic g              none
 bind generic g<SPACE>       view-grep
+bind generic gau            @git au
 bind generic gcC            @git c --reuse-message %(commit)
 bind generic gcm<SPACE>     !git cm '%(prompt)'
 bind generic gcma           !git cma '%(prompt Add )'
