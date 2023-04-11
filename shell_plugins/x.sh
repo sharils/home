@@ -320,6 +320,8 @@ EOF
     esac
     ;;
 
+  shuf) tr ' ' '\n' | sort --random-sort | tr '\n' ' ' ;;
+
   sn)
     # shellcheck disable=2087
     ssh no sh <<EOF
