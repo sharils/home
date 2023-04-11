@@ -20,7 +20,6 @@ v() {
 
   case "$1" in
 
-  R) vim README.md ;;
   dc) vim docker-compose.yml ;;
   di) vim .dockerignore ;;
   dk) vim Dockerfile ;;
@@ -37,6 +36,7 @@ v() {
   mk) vim Makefile ;;
   ns) vim server.js ;;
   pj) vim package.json ;;
+  rm) vim README.md ;;
   s) vim server.js ;;
   tor) vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc ;;
 
