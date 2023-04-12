@@ -20,7 +20,7 @@ w() {
       shift
       case "$1" in
       f) shift && set -- --failed "$@";;
-      mf) shift && set -- --max-failures "$@";;
+      mf) shift && set -- --max-failures "${@:-1}";;
       esac
       w ex mix test "$@"
       ;;
