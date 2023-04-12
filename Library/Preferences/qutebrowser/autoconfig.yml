@@ -14,6 +14,7 @@ settings:
     astexplorer.net: no-unknown-3rdparty
     developer.mozilla.org: no-unknown-3rdparty
     global: never
+    hexdocs.pm: no-unknown-3rdparty
     hn.algolia.com: no-unknown-3rdparty
     lernu.net: no-unknown-3rdparty
     nx.dev: no-unknown-3rdparty
@@ -39,6 +40,7 @@ settings:
     docs.expo.dev: true
     docs.rs: true
     github.com: true
+    hexdocs.pm: true
     hn.algolia.com: true
     https://www.google.com.tw/maps?*: true
     hub.docker.com: true
@@ -77,6 +79,7 @@ settings:
     docs.rs: true
     github.com: true
     global: false
+    hexdocs.pm: true
     hn.algolia.com: true
     https://www.google.com.tw/maps?*: true
     hub.docker.com: true
