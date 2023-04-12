@@ -41,7 +41,7 @@ e() {
     e service "${@:-status}"
     ;;
 
-  *) espanso "$@" ;;
+  edit | log | service) espanso "$@" ;;
 
   esac
 }
