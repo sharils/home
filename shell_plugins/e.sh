@@ -43,5 +43,7 @@ e() {
 
   edit | log | service) espanso "$@" ;;
 
+  *) elixir "$@" ;;
+
   esac
 }
