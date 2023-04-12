@@ -29,6 +29,8 @@ e() {
     e edit "${@:-base}"
     ;;
 
+  h) shift && e --eval "require IEx.Helpers; IEx.Helpers.h($*)" | l md ;;
+
   l) shift && e log "$@" ;;
 
   s)
