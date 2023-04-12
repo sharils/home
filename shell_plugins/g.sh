@@ -156,7 +156,13 @@ g() {
     esac
     ;;
 
-  r) tig refs "$@" ;;
+  r)
+    if [ $# -eq 0 ]; then
+      tig refs
+    else
+      git r "$@"
+    fi
+    ;;
 
   s) tig status "$@" ;;
 
