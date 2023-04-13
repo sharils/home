@@ -357,6 +357,8 @@ EOF
     cd "$cmd" && find . -print | sed "s#[^/]*/#|____#g;s#____|# |#g;1s#.*#$cmd#"
   ) ;;
 
+  ts) n y ts-node "$@" ;;
+
   tz)
     cmd="$1"
     shift
