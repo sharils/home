@@ -25,6 +25,7 @@ v() {
   dk) vim Dockerfile ;;
   hosts) EDITOR=vim sudo --edit /etc/hosts "$@" ;;
   i)
+    shift
     case "${1:-html}" in
     c) shift && set -- css ;;
     h) shift && set -- html ;;
