@@ -21,6 +21,9 @@ matches:
   - trigger: as,.
     replace: applescript
 
+  - trigger: auth,.
+    replace: authorization
+
   - trigger: bm,.
     replace: bookmark
 
