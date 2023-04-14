@@ -129,9 +129,6 @@ matches:
   - trigger: pt,.
     replace: plaintext
 
-  - trigger: wb,.
-    replace: Wikibase
-
   - trigger: maria,.
     replace: MariaDB
 
@@ -230,6 +227,9 @@ matches:
 
   - trigger: utt,.
     replace: usd to twd
+
+  - trigger: wb,.
+    replace: Wikibase
 
   - trigger: zh,.
     replace: 中文
