@@ -21,7 +21,6 @@ l() {
   -*) shift && lsd "$1" "$@" ;;
   F) shift && less +F "$@" ;;
   b) shift && l x "https://search.brave.com/search?q=$*" ;;
-  cctld) shift && l x 'https://en.wikipedia.org/wiki/Template:CcTLD#bodyContent' ;;
   d) shift && l x "https://lite.duckduckgo.com/lite/?q=$*" ;;
   g) shift && l x "https://www.google.com/search?client=firefox-b-d&gbv=1&q=$*" ;;
   node)
@@ -58,6 +57,7 @@ EOF
     ;;
   s) shift && less "$@" ;;
   t) shift && l --tree "$@" ;;
+  tld) shift && l x 'https://en.wikipedia.org/wiki/Template:CcTLD#bodyContent' ;;
   wk) shift && l x "https://en.wiktionary.org/wiki/$*#Esperanto" ;;
   wp) shift && l x "https://en.wikipedia.org/wiki/Special:Search?go=Go&ns0=1&search=$*" ;;
   wz) shift && l x "https://zh.wikipedia.org/wiki/$*" ;;
