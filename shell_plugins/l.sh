@@ -24,7 +24,13 @@ l() {
   cctld) shift && l x 'https://en.wikipedia.org/wiki/Template:CcTLD#bodyContent' ;;
   d) shift && l x "https://lite.duckduckgo.com/lite/?q=$*" ;;
   g) shift && l x "https://www.google.com/search?client=firefox-b-d&gbv=1&q=$*" ;;
-  node) shift && l x "https://nodejs.org/dist/latest-v18.x/docs/api/$*" ;;
+  node)
+    shift
+    if [ $# -gt 0 ]; then
+      set -- "$*.html"
+    fi
+    l x "https://nodejs.org/dist/latest-v18.x/docs/api/$*"
+    ;;
   od) shift && l x "https://www.oxfordlearnersdictionaries.com/definition/english/$*_1" ;;
   pep) shift && l x "https://peps.python.org/pep-$(printf "%04d" "$*")/" ;;
   pl) shift && l x "https://lite.duckduckgo.com/lite/?q=site%3Avald-phoenix.github.io%20$*" ;;
