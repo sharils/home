@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 e() {
-  case "$PWD" in
+  which exercism >/dev/null && case "$PWD" in
   "$(exercism workspace)"/*)
     case "$1" in
     ex) v -O README.md ./**/*.ex && return $? ;;
