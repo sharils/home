@@ -26,9 +26,9 @@ l() {
   cctld) l x 'https://en.wikipedia.org/wiki/Template:CcTLD#bodyContent' ;;
   d) l x "https://lite.duckduckgo.com/lite/?q=$*" ;;
   g) l x "https://www.google.com/search?client=firefox-b-d&gbv=1&q=$*" ;;
-  pl) l x "https://lite.duckduckgo.com/lite/?q=site%3Avald-phoenix.github.io%20$*" ;;
   od) l x "https://www.oxfordlearnersdictionaries.com/definition/english/$*_1" ;;
   pep) l x "https://peps.python.org/pep-$(printf "%04d" "$*")/" ;;
+  pl) l x "https://lite.duckduckgo.com/lite/?q=site%3Avald-phoenix.github.io%20$*" ;;
   port) l x 'https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports' ;;
   rfc)
     if [ $# -eq 0 ]; then
