@@ -126,6 +126,9 @@ matches:
   - trigger: lv,.
     replace: LiveView
 
+  - trigger: pt,.
+    replace: plaintext
+
   - trigger: wb,.
     replace: Wikibase
 
