@@ -24,6 +24,9 @@ matches:
   - trigger: auth,.
     replace: authorization
 
+  - trigger: authen,.
+    replace: authentication
+
   - trigger: bm,.
     replace: bookmark
 
