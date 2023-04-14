@@ -26,6 +26,7 @@ l() {
   cctld) l x 'https://en.wikipedia.org/wiki/Template:CcTLD#bodyContent' ;;
   d) l x "https://lite.duckduckgo.com/lite/?q=$*" ;;
   g) l x "https://www.google.com/search?client=firefox-b-d&gbv=1&q=$*" ;;
+  node) l x "https://nodejs.org/dist/latest-v18.x/docs/api/$*" ;;
   od) l x "https://www.oxfordlearnersdictionaries.com/definition/english/$*_1" ;;
   pep) l x "https://peps.python.org/pep-$(printf "%04d" "$*")/" ;;
   pl) l x "https://lite.duckduckgo.com/lite/?q=site%3Avald-phoenix.github.io%20$*" ;;
