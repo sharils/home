@@ -39,6 +39,9 @@ matches:
   - trigger: chat,.
     replace: ChatGPT
 
+  - trigger: ct,.
+    replace: ciphertext
+
   - trigger: db,.
     replace: database
 
