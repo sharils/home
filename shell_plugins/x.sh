@@ -112,12 +112,7 @@ x() {
 
   venv) "$SHARILS_HOME/shell_plugins/x/venv.sh" "$@" ;;
 
-  w8)
-    cmd="$HOME/Sync/Libera PRO/${2:?}.txt"
-    curl --compressed --location --silent --output "$cmd" "https://dl1.wenku8.com/down.php?type=big5&id=${1:?}"
-    echo "$cmd" | pbcopy
-    pbpaste
-    ;;
+  w8) "$SHARILS_HOME/shell_plugins/x/w8.sh" "$@" ;;
 
   webp) "$SHARILS_HOME/shell_plugins/x/webp.sh" "$@" ;;
 
