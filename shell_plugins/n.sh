@@ -15,15 +15,6 @@ n() {
 
   bsd) shift && n license BSD-3-Clause "$@" ;;
 
-  cnc | clear-npx-cache)
-    find "$(npm config get cache)/_npx" -depth 2 -name 'package.json' | while IFS= read -r package; do
-      if [ "$(jq -r '.dependencies | keys | first' <"$package")" = "${1:?}" ]; then
-        (set -x && rm -fr "${package%/package.json}")
-        return
-      fi
-    done
-    ;;
-
   cu) shift && n npm-check-updates "$@" ;;
 
   d)
@@ -101,6 +92,8 @@ n() {
   y) shift && npx --yes "$@" ;;
 
   yo) shift && n y --package yo --package "generator-$1" -- yo "$@" ;;
+
+  cnc | clear-npx-cache) "$SHARILS_HOME/shell_plugins/n/clear-npx-cache.sh" "$@" ;;
 
   @ionic/cli | @neutralinojs/neu | @sandworm/audit | baapan | backstopjs | browser-sync | bundle-phobia | chance-cli | codesandbox | composerize | cost-of-modules | covgen | csv2json | cypress | degit | depcruise | eas-cli | eslint | expo | gitignore | jscodeshift | jscpd | knip | license | license-checker | lighthouse | nanoid | newman | nginx-linter | npm-check | npm-check-updates | npm-merge-driver | nve | nx | packagephobia-cli | pegjs | prettier | prettier-package-json | pwned | pythagora | qnm | qrcode-terminal | react-devtools | react-native | readme-md-generator | resume-cli | selenium-side-runner | trello-cli | trucker | ts-node | twify | unimported | verdaccio | why-is-node-running | wait-on) n y "$@" ;;
 
