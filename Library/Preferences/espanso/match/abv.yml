@@ -186,6 +186,9 @@ matches:
   - trigger: rn,.
     replace: react-native
 
+  - trigger: s:,.
+    replace: "site:"
+
   - trigger: sb,.
     replace: somebody
 
