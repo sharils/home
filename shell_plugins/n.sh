@@ -72,12 +72,6 @@ n() {
 
   mkcert) "$SHARILS_HOME/shell_plugins/n/mkcert.sh" "$@" ;;
 
-  na)
-    cmd="$1"
-    shift
-    n nx-workspace --name "$(basename "$PWD")" --preset next --appName "${cmd:-appName}" --style scss --nxCloud "$@"
-    ;;
-
   p) "$SHARILS_HOME/shell_plugins/n/p.sh" "$@" ;;
 
   pkill)
