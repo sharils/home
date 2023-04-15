@@ -125,10 +125,7 @@ x() {
 
   zws) printf "\xe2\x80\x8b" | c ;;
 
-  resetLaunchPad | showHidden)
-    defaults write com.apple.dock "$cmd" -bool true
-    killall Dock
-    ;;
+  resetLaunchPad | showHidden) "$SHARILS_HOME/shell_plugins/x/resetLaunchPad.sh" "$@" ;;
 
   aud | cad | chf | cnh | cny | eur | gbp | hkd | jpy | mop | nzd | sek | sgd | thb | usd | zar)
     x fx "$cmd" | x bc "$(awk '{ print $3 }')" "$@"
