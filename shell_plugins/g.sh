@@ -15,11 +15,9 @@ g() {
     return
   fi
 
-  cmd=$1
-  shift
-  case $cmd in
+  case "$1" in
 
-  L) tig reflog "$@" ;;
+  L) shift && tig reflog "$@" ;;
 
   cbc)
     g cbr || return $?
@@ -28,19 +26,20 @@ g() {
       xargs git cb --delete
     ;;
 
-  cgi) git config --file ~/git/github.com/sharils/home/gitignore.gitconfig "$@" ;;
+  cgi) shift && git config --file ~/git/github.com/sharils/home/gitignore.gitconfig "$@" ;;
 
-  cbr) "$SHARILS_HOME/shell_plugins/g/cbr.sh" "$@" ;;
+  cbr) shift && "$SHARILS_HOME/shell_plugins/g/cbr.sh" "$@" ;;
 
-  cl) "$SHARILS_HOME/shell_plugins/g/cl.sh" "$@" ;;
+  cl) shift && "$SHARILS_HOME/shell_plugins/g/cl.sh" "$@" ;;
 
-  cmx) g cm "Apply $*" ;;
+  cmx) shift && g cm "Apply $*" ;;
 
-  cs) git-crypt status "$@" ;;
+  cs) shift && git-crypt status "$@" ;;
 
-  f) "$SHARILS_HOME/shell_plugins/g/f.sh" "$@" ;;
+  f) shift && "$SHARILS_HOME/shell_plugins/g/f.sh" "$@" ;;
 
   i)
+    shift
     git init "$@"
     [ -n "$G_I" ] && "$G_I"
     git commit --allow-empty --message "Initialize empty Git repository"
@@ -50,9 +49,10 @@ g() {
     fi
     ;;
 
-  mr) "$SHARILS_HOME/shell_plugins/g/mr.sh" "$@" ;;
+  mr) shift && "$SHARILS_HOME/shell_plugins/g/mr.sh" "$@" ;;
 
   r)
+    shift
     if [ $# -eq 0 ]; then
       tig refs
     else
@@ -60,13 +60,13 @@ g() {
     fi
     ;;
 
-  s) tig status "$@" ;;
+  s) shift && tig status "$@" ;;
 
-  stripspace) git grep -I --files-with-matches ' \{1,\}$' | xargs sed -i '' 's/ \{1,\}$//' ;;
+  stripspace) shift && git grep -I --files-with-matches ' \{1,\}$' | xargs sed -i '' 's/ \{1,\}$//' ;;
 
-  v) grep "$@" /Users/minniebavaro/git/github.com/sharils/home/.vim/plugged/vim-fugitive/autoload/fugitive.vim ;;
+  v) shift && grep "$@" /Users/minniebavaro/git/github.com/sharils/home/.vim/plugged/vim-fugitive/autoload/fugitive.vim ;;
 
-  y) tig stash "$@" ;;
+  y) shift && tig stash "$@" ;;
 
   w)
     cmd="$(git config remote.origin.url | tr ':' /)"
@@ -74,14 +74,14 @@ g() {
     w echo "https://${cmd##git@}"
     ;;
 
-  -*) grep "$cmd" "$@" ;;
+  -*) shift && grep "$@" ;;
 
   *)
-    if [ $# -eq 1 ] && [ -f "$1" ] && [ "$cmd" != a ] && [ "$cmd" != add ] &&
-      [ "$cmd" != rm ]; then
-      grep "$cmd" "$@"
+    if [ $# -eq 1 ] && [ -f "$1" ] && [ "$1" != a ] && [ "$1" != add ] &&
+      [ "$1" != rm ]; then
+      grep "$@"
     else
-      git "$cmd" "$@"
+      git "$@"
     fi
     ;;
 
