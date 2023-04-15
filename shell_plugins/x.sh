@@ -32,13 +32,7 @@ x() {
 
   editorconfig) "$SHARILS_HOME/shell_plugins/x/editorconfig.sh" "$@" ;;
 
-  erl)
-    if [ $# -eq 0 ]; then
-      erl
-    else
-      erl -noshell -eval "$*,init:stop()."
-    fi
-    ;;
+  erl) "$SHARILS_HOME/shell_plugins/x/erl.sh" "$@" ;;
 
   ex)
     if [ $# -eq 0 ]; then
