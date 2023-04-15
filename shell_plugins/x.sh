@@ -116,11 +116,7 @@ x() {
 
   webp) "$SHARILS_HOME/shell_plugins/x/webp.sh" "$@" ;;
 
-  whois)
-    # support whois -b example.com
-    for name in "$@"; do :; done
-    whois -c "${name##*.}" "$@"
-    ;;
+  whois) "$SHARILS_HOME/shell_plugins/x/whois.sh" "$@" ;;
 
   x) (
     set -x
