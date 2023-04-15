@@ -114,26 +114,7 @@ x() {
 
   screen) screen -xRRe^Gg "$@" ;;
 
-  sh)
-    cmd="$1"
-    shift
-    case "$cmd" in
-    t)
-      cmd="${*:-sh}"
-      echo "==> $cmd <==" >&2
-      x sh | tee "$cmd"
-      x + "$cmd"
-      ;;
-    *)
-      cat <<'EOF'
-#!/usr/bin/env sh
-set -o errexit -o nounset -o xtrace
-
-echo 'Hello sh!'
-EOF
-      ;;
-    esac
-    ;;
+  sh) "$SHARILS_HOME/shell_plugins/x/sh.sh" "$@" ;;
 
   shuf) tr ' ' '\n' | sort --random-sort | tr '\n' ' ' ;;
 
