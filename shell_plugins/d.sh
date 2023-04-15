@@ -1,9 +1,7 @@
 #!/usr/bin/env sh
 
 d() {
-  cmd="${1:-i}"
-  shift
-
+  cmd="${1:-i}" && shift
   case $cmd in
 
   %)
@@ -163,10 +161,8 @@ SH
 
   -1) (set -x && date -ujf%s -v-1S 0 "${@:-+%+%t%G-W%V}") ;;
   -v)
-    v="$1"
-    shift
-    cmd="$1"
-    shift
+    v="$1" && shift
+    cmd="$1" && shift
     date -jf"${*:-%F}" -v"$v" "${cmd:-$(date +"${*:-%F}")}" +"${*:-%F}"
     ;;
   0) date -ujf%s 0 "${@:-+%FT%T}" ;;
@@ -235,8 +231,7 @@ EOF
   e) direnv edit . && chmod 600 .envrc ;;
 
   i)
-    cmd="${1:-ls}"
-    shift
+    cmd="${1:-ls}" && shift
     case "$cmd" in
     p) d image prune "$@" ;;
     s)
@@ -253,8 +248,7 @@ EOF
     case "$1" in
     sp)
       shift
-      cmd="${1:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')"}"
-      shift
+      cmd="${1:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')"}" && shift
       d j startproject --verbosity 2 "$cmd" "${@:-.}"
       ;;
     *) p r p -mdjango "$@" ;;
@@ -264,8 +258,7 @@ EOF
   l) d logs "$@" ;;
   o) open -b com.docker.docker ;;
   r)
-    cmd="${1:-alpine:3.17}"
-    shift
+    cmd="${1:-alpine:3.17}" && shift
     docker run --interactive --rm --tty \
       --user "$(id -u):$(id -g)" \
       --volume "$PWD:$PWD" \
