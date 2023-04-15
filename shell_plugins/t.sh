@@ -46,7 +46,8 @@ t() {
     *[!0-9]*) $EDITOR "$@" "$TODO_FILE" ;;
     *)
       cmd="$1" && shift
-      $EDITOR "+$cmd" "$@" "$TODO_FILE" ;;
+      $EDITOR "+$cmd" "$@" "$TODO_FILE"
+      ;;
     esac
     ;;
 
