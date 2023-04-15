@@ -1,22 +1,19 @@
 #!/usr/bin/env sh
 
 n() {
-  cmd="$1"
-  shift
+  case $1 in
 
-  case $cmd in
+  S) shift && n start "$@" ;;
 
-  S) n start "$@" ;;
+  agpl) shift && n license AGPL-3.0 "$@" ;;
 
-  agpl) n license AGPL-3.0 "$@" ;;
+  a) shift && n android "$@" ;;
 
-  a) n android "$@" ;;
+  b) shift && n build "$@" ;;
 
-  b) n build "$@" ;;
+  bs) shift && n browser-sync "${@:-.}" --no-open ;;
 
-  bs) n browser-sync "${@:-.}" --no-open ;;
-
-  bsd) n license BSD-3-Clause "$@" ;;
+  bsd) shift && n license BSD-3-Clause "$@" ;;
 
   cnc | clear-npx-cache)
     find "$(npm config get cache)/_npx" -depth 2 -name 'package.json' | while IFS= read -r package; do
@@ -27,9 +24,10 @@ n() {
     done
     ;;
 
-  cu) n npm-check-updates "$@" ;;
+  cu) shift && n npm-check-updates "$@" ;;
 
   d)
+    shift
     if [ $# -eq 0 ]; then
       npm run dev
       return
@@ -38,43 +36,45 @@ n() {
     ;;
 
   dg)
+    shift
     for last in "$@"; do :; done
     z t "$(basename "${last%#*}")"
     n degit "$@"
     ;;
 
-  eas) n eas-cli "$@" ;;
+  eas) shift && n eas-cli "$@" ;;
 
-  g) npm --global "$@" ;;
+  g) shift && npm --global "$@" ;;
 
-  gi) n gitignore "${@:-node}" ;;
+  gi) shift && n gitignore "${@:-node}" ;;
 
-  graphql-codegen) n y --package graphql --package @graphql-codegen/cli -- graphql-codegen "$@" ;;
+  graphql-codegen) shift && n y --package graphql --package @graphql-codegen/cli -- graphql-codegen "$@" ;;
 
-  i) "$SHARILS_HOME/shell_plugins/n/i.sh" "$@" ;;
+  i) shift && "$SHARILS_HOME/shell_plugins/n/i.sh" "$@" ;;
 
   krampus)
+    shift
     # Named after https://www.npmjs.com/package/krampus
     pid="$(lsof -ti "tcp:$*")"
     kill -TERM "$pid" || kill -KILL "$pid"
     ;;
 
   l)
-    if [ $# -eq 0 ]; then
-      set -- --fix . "$@"
-    fi
+    shift
+    [ $# -eq 0 ] && set -- --fix . "$@"
     n eslint "$@"
     ;;
 
-  lpd) NPM_CONFIG_LEGACY_PEER_DEPS='1' "$@" ;;
+  lpd) shift && NPM_CONFIG_LEGACY_PEER_DEPS='1' "$@" ;;
 
-  lv) NPM_CONFIG_LOGLEVEL='verbose' "$@" ;;
+  lv) shift && NPM_CONFIG_LOGLEVEL='verbose' "$@" ;;
 
-  mkcert) "$SHARILS_HOME/shell_plugins/n/mkcert.sh" "$@" ;;
+  mkcert) shift && "$SHARILS_HOME/shell_plugins/n/mkcert.sh" "$@" ;;
 
-  p) "$SHARILS_HOME/shell_plugins/n/p.sh" "$@" ;;
+  p) shift && "$SHARILS_HOME/shell_plugins/n/p.sh" "$@" ;;
 
   pkill)
+    shift
     if [ $# -eq 0 ]; then
       rm -fr ./node_modules
     else
@@ -82,33 +82,33 @@ n() {
     fi
     ;;
 
-  qt) n qrcode-terminal "$@" ;;
+  qt) shift && n qrcode-terminal "$@" ;;
 
-  r) n run "$@" ;;
+  r) shift && n run "$@" ;;
 
   serve)
+    shift
     [ -f cert.crt ] && [ -f cert.key ] && set -- --ssl-cert cert.crt --ssl-key cert.key
     n y serve "$@"
     ;;
 
-  tsc) n y tsc --noEmit "$@" ;;
+  tsc) shift && n y tsc --noEmit "$@" ;;
 
-  vercel) n y vercel --token="${VERCEL_TOKEN:?}" "$@" ;;
+  vercel) shift && n y vercel --token="${VERCEL_TOKEN:?}" "$@" ;;
 
-  w) n web "$@" ;;
+  w) shift && n web "$@" ;;
 
-  y) npx --yes "$@" ;;
+  y) shift && npx --yes "$@" ;;
 
-  yo) n y --package yo --package "generator-$1" -- yo "$@" ;;
+  yo) shift && n y --package yo --package "generator-$1" -- yo "$@" ;;
 
-  @ionic/cli | @neutralinojs/neu | @sandworm/audit | baapan | backstopjs | browser-sync | bundle-phobia | chance-cli | codesandbox | composerize | cost-of-modules | covgen | csv2json | cypress | degit | depcruise | eas-cli | eslint | expo | gitignore | jscodeshift | jscpd | knip | license | license-checker | lighthouse | nanoid | newman | nginx-linter | npm-check | npm-check-updates | npm-merge-driver | nve | nx | packagephobia-cli | pegjs | prettier | prettier-package-json | pwned | pythagora | qnm | qrcode-terminal | react-devtools | react-native | readme-md-generator | resume-cli | selenium-side-runner | trello-cli | trucker | ts-node | twify | unimported | verdaccio | why-is-node-running | wait-on) n y "$cmd" "$@" ;;
+  @ionic/cli | @neutralinojs/neu | @sandworm/audit | baapan | backstopjs | browser-sync | bundle-phobia | chance-cli | codesandbox | composerize | cost-of-modules | covgen | csv2json | cypress | degit | depcruise | eas-cli | eslint | expo | gitignore | jscodeshift | jscpd | knip | license | license-checker | lighthouse | nanoid | newman | nginx-linter | npm-check | npm-check-updates | npm-merge-driver | nve | nx | packagephobia-cli | pegjs | prettier | prettier-package-json | pwned | pythagora | qnm | qrcode-terminal | react-devtools | react-native | readme-md-generator | resume-cli | selenium-side-runner | trello-cli | trucker | ts-node | twify | unimported | verdaccio | why-is-node-running | wait-on) n y "$@" ;;
 
   *)
-    if [ "$(npm pkg get "scripts.$cmd" 2>/dev/null)" != '{}' ]; then
-      npm run "$cmd" -- "$@"
-    else
-      npm "$cmd" "$@"
+    if [ "$(npm pkg get "scripts.$1" 2>/dev/null)" != '{}' ]; then
+      tmp="$1" && shift && set -- run "$tmp" -- "$@"
     fi
+    npm "$@"
     ;;
 
   esac
