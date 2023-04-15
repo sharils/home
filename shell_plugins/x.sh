@@ -96,13 +96,7 @@ x() {
 
   tel) open "tel:$*" ;;
 
-  touch)
-    x mp "$(dirname "$*")"
-    touch "$*"
-    if [ ! -t 0 ]; then
-      cat >"$*"
-    fi
-    ;;
+  touch) "$SHARILS_HOME/shell_plugins/x/touch.sh" "$@" ;;
 
   tree) "$SHARILS_HOME/shell_plugins/x/tree.sh" "$@" ;;
 
