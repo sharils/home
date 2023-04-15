@@ -95,6 +95,12 @@ case ${1:expressino} do
 end
 endsnippet
 
+snippet co "cond" w
+cond do$2
+	true -> ${1:nil}
+end
+endsnippet
+
 snippet def "def" w
 def ${1:function_name}($2)${3:, do:}
 endsnippet
