@@ -21,9 +21,9 @@ n() {
     shift
     if [ $# -eq 0 ]; then
       npm run dev
-      return
+    else
+      npm docs "$@"
     fi
-    npm docs "$@"
     ;;
 
   dg)
