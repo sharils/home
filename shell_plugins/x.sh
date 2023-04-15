@@ -40,10 +40,7 @@ x() {
 
   fde) /Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox "$@" ;;
 
-  focus)
-    now="$(date +%H%m)"
-    [ "$now" -lt '1900' ] || [ '1930' -lt "$now" ]
-    ;;
+  focus) "$SHARILS_HOME/shell_plugins/x/focus.sh" "$@" ;;
 
   fx) "$SHARILS_HOME/shell_plugins/x/fx.sh" "$@" ;;
 
