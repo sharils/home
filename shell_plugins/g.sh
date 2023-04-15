@@ -86,39 +86,7 @@ g() {
     fi
     ;;
 
-  mr)
-    cmd="${1:-ls}"
-    shift
-    case "$cmd" in
-    a) g mr approve "$@" ;;
-    c) g mr create --assignee "${G_MR_ASSIGNEE:?}" --reviewer "${G_MR_REVIEWER:?}" --target-branch "${G_MR_TARGET_BRANCH:-develop}" "$@" ;;
-    d) g mr diff "$@" ;;
-    m)
-      if expr "$*" : '^[[:space:][:digit:]][[:space:][:digit:]]*$' >/dev/null; then
-        for cmd in "$@"; do
-          g mr merge "$cmd" --rebase --remove-source-branch --yes
-        done
-      else
-        until g mr merge "$@" --rebase --remove-source-branch --yes; do sleep 1; done
-      fi
-      g f
-      ;;
-    n) g mr note "$@" ;;
-    u)
-      if ! expr "$*" : '^[[:space:][:digit:]][[:space:][:digit:]]*$' >/dev/null; then
-        g mr update "${@:---ready}"
-        return
-      fi
-      for cmd in "$@"; do
-        g mr u "$cmd" --ready
-      done
-      ;;
-    r) g mr rebase "$@" ;;
-    v) g mr view "$@" ;;
-    *[!0-9]*) glab mr "$cmd" "$@" ;;
-    *) g mr v "$cmd" "$@" ;;
-    esac
-    ;;
+  mr) "$SHARILS_HOME/shell_plugins/g/mr.sh" "$@" ;;
 
   r)
     if [ $# -eq 0 ]; then
