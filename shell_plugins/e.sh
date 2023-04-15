@@ -6,7 +6,7 @@ e() {
     case "$1" in
     ex) v -O README.md ./**/*.ex && return $? ;;
 
-    h) shift && set -- help "$@" ;;
+    h) exercism help "$@" && return $? ;;
 
     o)
       dir="$(dirname "$PWD")"
