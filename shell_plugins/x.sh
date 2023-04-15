@@ -62,11 +62,7 @@ x() {
 
   log) log show --predicate 'eventMessage CONTAINS "unlockUIBecomesActive"' --last "${@:-1h}" ;;
 
-  mh)
-    dir="$HOME/git/github.com/sharils/~miraheze/$(d F)"
-    x mp "$dir"
-    mv -v ~/Downloads/smilingpuffinwiki_xml_*.xml.gz "$dir"
-    ;;
+  mh) "$SHARILS_HOME/shell_plugins/x/mh.sh" "$@" ;;
 
   mp) mkdir -pv "$@" && cd "$@" || return ;;
 
