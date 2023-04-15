@@ -112,10 +112,7 @@ x() {
 
   whois) "$SHARILS_HOME/shell_plugins/x/whois.sh" "$@" ;;
 
-  x) (
-    set -x
-    "$@"
-  ) ;;
+  x) (set -x && "$@") ;;
 
   zws) printf "\xe2\x80\x8b" | c ;;
 
