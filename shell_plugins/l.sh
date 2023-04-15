@@ -17,8 +17,7 @@ l() {
   fi
 
   case "$1" in
-  '') lsd ;;
-  -*) shift && lsd "$1" "$@" ;;
+  -*) shift && lsd "$@" ;;
   F) shift && less +F "$@" ;;
   b) shift && l x "https://search.brave.com/search?q=$*" ;;
   d) shift && l x "https://lite.duckduckgo.com/lite/?q=$*" ;;
@@ -63,11 +62,13 @@ EOF
   wz) shift && l x "https://zh.wikipedia.org/wiki/$*" ;;
   x) shift && lynx "$@" ;;
   *)
-    shift
-    if [ -e "$1" ]; then
-      lsd "$1" "$@"
+    if [ $# -eq 0 ]; then
+      lsd
+    elif [ -e "$1" ]; then
+      lsd "$@"
     else
-      l -"$1" "$@"
+      cmd="$1" && shift
+      l -"$cmd" "$@"
     fi
     ;;
   esac
