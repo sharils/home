@@ -19,6 +19,7 @@ settings:
     lernu.net: no-unknown-3rdparty
     nx.dev: no-unknown-3rdparty
     vimeo.com: no-unknown-3rdparty
+    www.phind.com: no-unknown-3rdparty
     www.sharedrop.io: no-unknown-3rdparty
   content.cookies.store:
     global: false
@@ -60,6 +61,7 @@ settings:
     vimeo.com: true
     wormhole.app: true
     www.ecosia.org: true
+    www.phind.com: true
     www.railway.gov.tw: true
     www.sharedrop.io: true
     www.youtube.com: true
@@ -101,6 +103,7 @@ settings:
     vimeo.com: true
     wormhole.app: true
     www.ecosia.org: true
+    www.phind.com: true
     www.railway.gov.tw: true
     www.sharedrop.io: true
   content.local_storage:
@@ -157,6 +160,7 @@ settings:
       od: https://www.oxfordlearnersdictionaries.com/search/english/?=english&q={}
       ol: https://openlibrary.org/search?mode=everything&q={}
       pl: https://lite.duckduckgo.com/lite/?q=site%3Avald-phoenix.github.io%20{}
+      ph: https://www.phind.com/search?q={}
       ptt: https://www.ptt.cc/bbs/{}/index.html
       py: https://docs.python.org/3/search.html?q={}&check_keywords=yes&area=default
       rd: https://www.reddit.com/search/?q={}
