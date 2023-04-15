@@ -34,13 +34,7 @@ x() {
 
   erl) "$SHARILS_HOME/shell_plugins/x/erl.sh" "$@" ;;
 
-  ex)
-    if [ $# -eq 0 ]; then
-      iex
-    else
-      elixir -e "$*"
-    fi
-    ;;
+  ex) "$SHARILS_HOME/shell_plugins/x/ex.sh" "$@" ;;
 
   f) /Applications/Firefox.app/Contents/MacOS/firefox "$@" ;;
 
