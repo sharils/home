@@ -16,9 +16,10 @@ e() {
       ;;
 
     py) v -O README.md ./*.py && return $? ;;
+
+    # c | d | p | t | debug | u | v | w
+    configure | download | help | open | prepare | s | submit | troubleshoot | upgrade | version | workspace) exercism "$@" && return $? ;;
     esac
-    exercism "$@"
-    return $?
     ;;
   esac
 
