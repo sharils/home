@@ -26,11 +26,7 @@ x() {
 
   cr) /Applications/Chromium.app/Contents/MacOS/Chromium "$@" ;;
 
-  data)
-    cmd="${1:-image/gif}"
-    shift
-    printf "data:%s;base64,%s" "$cmd" "$(base64 "$@")"
-    ;;
+  data) "$SHARILS_HOME/shell_plugins/x/data.sh" "$@" ;;
 
   diff) diff --color --unified "$@" ;;
 
