@@ -49,7 +49,28 @@ h() {
 
   g)
     shift
-    git -C "$SHARILS_HOME" "$@"
+    base="$SHARILS_HOME/shell_plugins/$1"
+    if [ ! -f "$base.sh" ]; then
+      git -C "$SHARILS_HOME" "$@"
+      return $?
+    fi
+
+    cat <<SH | x touch "$base/$2.sh"
+#!/usr/bin/env sh
+
+$2() {
+  :
+}
+
+$2 "\$@"
+SH
+
+    x + "$base/$2.sh"
+    if [ "$3" = "e" ]; then
+      $EDITOR "$base/$2.sh"
+    fi
+    h g a "$base/$2.sh"
+    echo "  $2) \"\$SHARILS_HOME/shell_plugins/$1/$2.sh\" \"\$@\" ;;" | pbcopy
     ;;
 
   m) echo 'h mix <command> instead' >&2 ;;
