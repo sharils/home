@@ -3,10 +3,8 @@
 
 g() {
   if ! [ -t 0 ]; then
-    cmd="$1"
-    shift
-    case "$cmd" in
-    uri) grep --extended-regexp --only-matching "(?:file:///|https?://)[[:alnum:]-]+(?:\.[[:alnum:]-]+)*[^>]*|[[:alnum:]-]+(\.[[:alnum:]-]+)*\.(?:com|geek|gg|org)/[^ '>]+" ;;
+    case "$1" in
+    uri) shift && grep --extended-regexp --only-matching "(?:file:///|https?://)[[:alnum:]-]+(?:\.[[:alnum:]-]+)*[^>]*|[[:alnum:]-]+(\.[[:alnum:]-]+)*\.(?:com|geek|gg|org)/[^ '>]+" ;;
     # g -n "$@" # Segmentation fault: 11
     *) grep "$@" ;;
     esac
