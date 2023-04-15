@@ -225,7 +225,7 @@ snippet -z "-z" w
 endsnippet
 
 snippet /(?<!-)r/ "return" r
-return $0
+return ${1:$?}
 endsnippet
 
 snippet < "<<'EOF'" w
