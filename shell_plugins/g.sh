@@ -3,12 +3,8 @@
 
 g() {
   if ! [ -t 0 ]; then
-    case "$1" in
-    uri) shift && grep --extended-regexp --only-matching "(?:file:///|https?://)[[:alnum:]-]+(?:\.[[:alnum:]-]+)*[^>]*|[[:alnum:]-]+(\.[[:alnum:]-]+)*\.(?:com|geek|gg|org)/[^ '>]+" ;;
-    # g -n "$@" # Segmentation fault: 11
-    *) grep "$@" ;;
-    esac
-    return
+    "$SHARILS_HOME/shell_plugins/g/STDIN.sh" "$@"
+    return $?
   fi
   if ! [ -t 1 ] && [ "$1" = 's' ]; then
     git status
