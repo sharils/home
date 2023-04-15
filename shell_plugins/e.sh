@@ -12,6 +12,7 @@ e() {
       dir="$(dirname "$PWD")"
       base="https://exercism.org/tracks/${dir##*/}/exercises/${PWD##*/}"
       b f x b "$base" "$base/solutions"
+      return $?
       ;;
 
     py) v -O README.md ./*.py && return $? ;;
