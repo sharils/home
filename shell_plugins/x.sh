@@ -129,15 +129,7 @@ x() {
 
   aud | cad | chf | cnh | cny | eur | gbp | hkd | jpy | mop | nzd | sek | sgd | thb | usd | zar) x fx "$cmd" | x bc "$(awk '{ print $3 }')" "$@" ;;
 
-  am | at | au | bg | br | by | cn | cz | de | dk | ee | et | fi | fr | gb | gr | hk | hr | hu | ie | il | is | it | jp | kr | kz | lt | nl | no | nz | pl | pt | ro | ru | se | si | sk | tr | tw | ua | us | yu | za | dech | frbe | frca | frch | itch | nlbe | ca | es | eu | en)
-    unset -v lang loc
-    loc="$(locale -a)"
-    lang="${lang:="$(echo "$loc" | grep --ignore-case "^.._$cmd$")"}"
-    lang="${lang:="$(echo "$loc" | grep --ignore-case "^$(echo "$cmd" | sed 's/^\(..\)\(..\)$/\1_\2/')$")"}"
-    lang="${lang:="$(echo "$loc" | grep "^${cmd}_..$")"}"
-    lang="${lang:="$([ "$cmd" = 'en' ] && echo en_CA || echo '')"}"
-    LC_ALL="$lang.UTF-8" "$@"
-    ;;
+  am | at | au | bg | br | by | cn | cz | de | dk | ee | et | fi | fr | gb | gr | hk | hr | hu | ie | il | is | it | jp | kr | kz | lt | nl | no | nz | pl | pt | ro | ru | se | si | sk | tr | tw | ua | us | yu | za | dech | frbe | frca | frch | itch | nlbe | ca | es | eu | en) "$SHARILS_HOME/shell_plugins/x/currency.sh" "$@" ;;
 
   *) echo not implemented >&2 ;;
 
