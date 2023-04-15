@@ -70,7 +70,13 @@ t() {
     esac
     ;;
 
-  r) t replace "$@" ;;
+  r)
+    if [ $# -eq 0 ]; then
+      tput reset
+    else
+      t replace "$@"
+    fi
+    ;;
 
   rc) rm "$TODO_DIR"/todo.sync-conflict-*.txt ;;
 
