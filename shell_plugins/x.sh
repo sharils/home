@@ -40,7 +40,7 @@ x() {
 
   fde) /Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox "$@" ;;
 
-  focus_mode)
+  focus)
     now="$(date +%H%m)"
     [ "$now" -lt '1900' ] || [ '1930' -lt "$now" ]
     ;;
