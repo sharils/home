@@ -79,25 +79,24 @@ n() {
     ;;
 
   p)
-    cmd="$1"
-    shift
-    case "$cmd" in
-    d) npm pkg delete "$@" ;;
-    g) npm pkg get "$@" ;;
+    case "$1" in
+    d) shift && npm pkg delete "$@" ;;
+    g) shift && npm pkg get "$@" ;;
     s)
-      cmd="$1"
       shift
-      case "$cmd" in
+      case "$1" in
       s)
-        cmd="$1"
         shift
-        n p s scripts."$cmd"="$*"
+        cmd="$1" && shift
+        p s scripts."$cmd"="$*"
         ;;
-      *) npm pkg set "$cmd" "$@" ;;
+      *) npm pkg set "$@" ;;
       esac
       ;;
     init) echo {} >.prettierrc.json ;;
-    awk | eex | elm | groovy | nginx | packagejson | pegjs | pgsql | sh | sql | ssh-config | tsconfig) n y --package prettier --package "prettier-plugin-$cmd" -- prettier --parser "$cmd" "$@" ;;
+
+    awk | eex | elm | groovy | nginx | packagejson | pegjs | pgsql | sh | sql | ssh-config | tsconfig) n y --package prettier --package "prettier-plugin-$1" -- prettier --parser "$@" ;;
+
     *) n y prettier --write "**/*.js" "**/*.jsx" "**/*.ts" "**/*.tsx" "$@" ;;
     esac
     ;;
