@@ -10,10 +10,7 @@ g() {
     git status
     return
   fi
-  if [ $# -eq 0 ]; then
-    tig
-    return
-  elif [ -s "$1" ]; then
+  if [ $# -eq 0 ] || [ -f "$1" ]; then
     tig "$@"
     return
   fi
