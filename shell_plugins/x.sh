@@ -119,6 +119,9 @@ x() {
   touch)
     x mp "$(dirname "$*")"
     touch "$*"
+    if [ ! -t 0 ]; then
+      cat >"$*"
+    fi
     ;;
 
   tree) (
