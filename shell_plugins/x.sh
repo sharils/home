@@ -74,13 +74,7 @@ x() {
 
   png) "$SHARILS_HOME/shell_plugins/x/png.sh" "$@" ;;
 
-  py)
-    if [ $# -eq 0 ]; then
-      python3
-    else
-      python3 -c "$*"
-    fi
-    ;;
+  py) "$SHARILS_HOME/shell_plugins/x/py.sh" "$@" ;;
 
   resetLaunchPad | showHidden)
     defaults write com.apple.dock "$cmd" -bool true
