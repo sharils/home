@@ -90,12 +90,7 @@ x() {
 
   ssh-copy-id) ssh-copy-id -o PreferredAuthentications=password -i "$HOME/.ssh/id_ed25519.pub" "$@" ;;
 
-  ssh-keygen)
-    ssh-keygen -f ~/.ssh/id_ed25519 -t ed25519 -C "${@:?}"
-    pbcopy <~/.ssh/id_ed25519.pub
-    pbpaste
-    cp ~/.ssh/id_ed25519.pub "$HOME/.ssh/$*.pub"
-    ;;
+  ssh-keygen) "$SHARILS_HOME/shell_plugins/x/ssh-keygen.sh" "$@" ;;
 
   tb) /Applications/Tor\ Browser.app/Contents/MacOS/firefox "$@" ;;
 
