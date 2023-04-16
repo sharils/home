@@ -3,7 +3,9 @@
 p() {
   case "$1" in
   d) shift && npm pkg delete "$@" ;;
+
   g) shift && npm pkg get "$@" ;;
+
   s)
     shift
     case "$1" in
