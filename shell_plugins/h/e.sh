@@ -2,7 +2,7 @@
 
 e() {
   case "${1:-install}" in
-  bp) vim "$SHARILS_HOME/bash_profile" ;;
+  bp) vim "$SHARILS_HOME/.bash_profile" ;;
   install) vim "$SHARILS_HOME/install" ;;
   karabiner) vim "$SHARILS_HOME/config/karabiner/karabiner.json" ;;
   todo) vim "$SHARILS_HOME/todo.cfg" ;;
