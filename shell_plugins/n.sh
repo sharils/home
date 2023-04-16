@@ -58,11 +58,7 @@ n() {
 
   r) shift && n run "$@" ;;
 
-  serve)
-    shift
-    [ -f cert.crt ] && [ -f cert.key ] && set -- --ssl-cert cert.crt --ssl-key cert.key
-    n y serve "$@"
-    ;;
+  serve) shift && "$SHARILS_HOME/shell_plugins/n/serve.sh" "$@" ;;
 
   tsc) shift && n y tsc --noEmit "$@" ;;
 
