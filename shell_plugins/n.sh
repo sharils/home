@@ -36,12 +36,7 @@ n() {
 
   i) shift && "$SHARILS_HOME/shell_plugins/n/i.sh" "$@" ;;
 
-  krampus)
-    shift
-    # Named after https://www.npmjs.com/package/krampus
-    pid="$(lsof -ti "tcp:$*")"
-    kill -TERM "$pid" || kill -KILL "$pid"
-    ;;
+  krampus) shift && "$SHARILS_HOME/shell_plugins/n/krampus.sh" "$@" ;;
 
   l)
     shift
