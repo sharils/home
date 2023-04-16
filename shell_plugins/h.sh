@@ -70,22 +70,7 @@ SH
 
   t) todo.sh -vv help | l ;;
 
-  u)
-    sudo --validate
-    brew update
-    # for less sudo timeout
-    for outdated in $(brew outdated); do
-      sudo --validate
-      brew upgrade "$outdated"
-    done
-    sudo --validate
-    rustup update stable
-    sudo --reset-timestamp
-
-    tldr --update
-    npm --global update
-    pip3 list --outdated
-    ;;
+  u) shift && "$SHARILS_HOME/shell_plugins/h/u.sh" "$@" ;;
 
   wc) find "$SHARILS_HOME/shell_plugins" -type f -exec wc -l {} ';' | sed "s#$SHARILS_HOME/shell_plugins/##" | sort ;;
 
