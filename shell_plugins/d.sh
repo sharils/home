@@ -41,27 +41,7 @@ EOF
     esac
     ;;
 
-  c)
-    case "$1" in
-    b) shift && d c build "$@" ;;
-    d) shift && d c down "$@" ;;
-    e) shift && $EDITOR "${@:-docker-compose.yml}" ;;
-    l) shift && d c logs "${@:---follow}" ;;
-    p) shift && d c --profile "$@" ;;
-    r) shift && d c run "$@" ;;
-    rs) shift && d c restart "$@" ;;
-    s) shift && d c start "$@" ;;
-    u)
-      shift
-      case "$1" in
-      b) shift && set -- --build "$@" ;;
-      esac
-      d c up "$@"
-      ;;
-    x) shift && d c exec "$@" ;;
-    *) docker compose "$@" ;;
-    esac
-    ;;
+  c) "$SHARILS_HOME/shell_plugins/d/c.sh" "$@" ;;
 
   copies)
     z t_init
