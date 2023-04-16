@@ -79,9 +79,9 @@ SH
   *)
     if [ -f "$*" ]; then
       head "$*"
-      return
+    else
+      "$@" --help | l
     fi
-    "$@" --help | l
     ;;
 
   esac
