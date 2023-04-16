@@ -19,27 +19,7 @@ d() {
 
   a) direnv allow ;;
 
-  b)
-    base="$(basename "$PWD" | x hostnameise)"
-    name="${base}_$USER"
-    tag="$base/$USER"
-    case "$1" in
-    r) shift && d run --interactive --rm --tty --name "$name" "$tag" "$@" ;;
-    rmi) shift && d rmi "$tag" "$@" ;;
-    s) d stop "$name" ;;
-    t)
-      shift
-      target="$1" && shift
-      d b --target "$target" "${@:-.}"
-      ;;
-    *)
-      cat <<EOF >&2
-# DOCKER_DEFAULT_PLATFORM=linux/amd64 docker build --tag "$tag" "${@:-.}" # prefix for AWS
-EOF
-      d build --tag "$tag" "${@:-.}"
-      ;;
-    esac
-    ;;
+  b) "$SHARILS_HOME/shell_plugins/d/b.sh" "$@" ;;
 
   c) "$SHARILS_HOME/shell_plugins/d/c.sh" "$@" ;;
 
