@@ -57,14 +57,7 @@ g() {
 
   mr) shift && "$SHARILS_HOME/shell_plugins/g/mr.sh" "$@" ;;
 
-  r)
-    shift
-    if [ $# -eq 0 ]; then
-      tig refs
-    else
-      git r "$@"
-    fi
-    ;;
+  r) shift && "$SHARILS_HOME/shell_plugins/g/r.sh" "$@" ;;
 
   s) shift && tig status "$@" ;;
 
