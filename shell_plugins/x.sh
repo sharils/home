@@ -28,7 +28,6 @@ x() {
   tb) shift && /Applications/Tor\ Browser.app/Contents/MacOS/firefox "$@" ;;
   tel) shift && open "tel:$*" ;;
   ts) shift && n y ts-node "$@" ;;
-  x) shift && (set -x && "$@") ;;
   zws) printf "\xe2\x80\x8b" | c ;;
 
   resetLaunchPad | showHidden) "$SHARILS_HOME/shell_plugins/x/resetLaunchPad.sh" "$@" ;;
@@ -45,6 +44,6 @@ x() {
 
   am | at | au | bg | br | by | cn | cz | de | dk | ee | et | fi | fr | gb | gr | hk | hr | hu | ie | il | is | it | jp | kr | kz | lt | nl | no | nz | pl | pt | ro | ru | se | si | sk | tr | tw | ua | us | yu | za | dech | frbe | frca | frch | itch | nlbe | ca | es | eu | en) "$SHARILS_HOME/shell_plugins/x/currency.sh" "$@" ;;
 
-  *) echo not implemented >&2 ;;
+  *) (set -x && "$@") ;;
   esac
 }
