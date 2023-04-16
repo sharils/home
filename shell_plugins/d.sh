@@ -44,8 +44,7 @@ d() {
   j)
     case "$1" in
     sp)
-      shift
-      cmd="${1:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')"}" && shift
+      cmd="${2:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')"}" && shift 2
       d j startproject --verbosity 2 "$cmd" "${@:-.}"
       ;;
     *) p r p -mdjango "$@" ;;
