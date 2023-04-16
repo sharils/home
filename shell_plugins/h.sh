@@ -61,9 +61,9 @@ SH
     shift
     if [ $# -eq 0 ]; then
       mix --help | l
-      return
+    else
+      mix help "$@" | l md
     fi
-    mix help "$@" | l md
     ;;
 
   push) h g p ;;
