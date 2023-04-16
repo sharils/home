@@ -33,14 +33,7 @@ t() {
 
   n) shift && t oot notifications "${@:---reverse}" ;;
 
-  oot)
-    shift
-    if [ -n "$TOOT_USING" ]; then
-      toot "$@" --using "$TOOT_USING"
-    else
-      toot "$@"
-    fi
-    ;;
+  oot) shift && "$SHARILS_HOME/shell_plugins/t/oot.sh" "$@" ;;
 
   p)
     shift
