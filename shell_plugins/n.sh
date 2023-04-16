@@ -52,14 +52,7 @@ n() {
 
   p) shift && "$SHARILS_HOME/shell_plugins/n/p.sh" "$@" ;;
 
-  pkill)
-    shift
-    if [ $# -eq 0 ]; then
-      rm -fr ./node_modules
-    else
-      n y npkill "$@"
-    fi
-    ;;
+  pkill) shift && "$SHARILS_HOME/shell_plugins/n/pkill.sh" "$@" ;;
 
   qt) shift && n qrcode-terminal "$@" ;;
 
