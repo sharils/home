@@ -4,6 +4,8 @@ p() {
   case "$1" in
   d) shift && npm pkg delete "$@" ;;
 
+  e) shift && $EDITOR package.json "$@" ;;
+
   g) shift && npm pkg get "$@" ;;
 
   s)
