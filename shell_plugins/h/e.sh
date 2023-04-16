@@ -13,7 +13,11 @@ e() {
       vim "$SHARILS_HOME/shell_plugins/$*.sh"
     else
       cmd="$1" && shift
-      grep --extended-regexp --line-number --with-filename "^\s+\b$*\)" "$SHARILS_HOME/shell_plugins/$cmd.sh" | v
+      tmp="$(mktemp)"
+      grep --extended-regexp --line-number --with-filename "^\s+\b$*\)" "$SHARILS_HOME/shell_plugins/$cmd.sh" >"$tmp"
+      set -- -q "$tmp"
+      [ "$(wc -l < "$tmp")" -ge 2 ] && set -- +copen "$@"
+      vim "$@"
     fi
     ;;
   esac
