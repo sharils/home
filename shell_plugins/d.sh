@@ -32,10 +32,7 @@ d() {
     )
     ;;
 
-  default.template)
-    mkdir -p ./etc/nginx/templates
-    docker run --interactive --rm --tty nginx:1.23-alpine cat /etc/nginx/conf.d/default.conf >./etc/nginx/templates/default.template
-    ;;
+  default.template) "$SHARILS_HOME/shell_plugins/d/default.template.sh" "$@" ;;
 
   e) direnv edit . && chmod 600 .envrc ;;
 
