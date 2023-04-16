@@ -38,6 +38,8 @@ t() {
     esac
     ;;
 
+  l) shift && t oot timeline "$@" ;;
+
   r) shift && t replace "$@" ;;
 
   rc) shift && rm "$TODO_DIR"/todo.sync-conflict-*.txt ;;
@@ -55,14 +57,7 @@ t() {
     TOOT_USING="${auth:?}" t "$@"
     ;;
 
-  t)
-    shift
-    if [ $# -eq 1 ] && expr "$1" : "[0-9][0-9]*" >/dev/null; then
-      t oot thread "$@"
-    else
-      t oot timeline "$@"
-    fi
-    ;;
+  t) t oot thread "$@" ;;
 
   tl) shift && t t --local --reverse --count 1 "${@:---public}" ;;
 
