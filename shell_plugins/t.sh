@@ -25,20 +25,7 @@ t() {
     b "$cmd" w t ls "$@"
     ;;
 
-  d)
-    shift
-    case "$1" in
-    d) shift && v -d "$TODO_FILE" "$TODO_DIR/$DONE_FILE" ;;
-
-    sc)
-      shift
-      v -d "$TODO_DIR"/todo.sync-conflict-*.txt "$TODO_FILE"
-      rm -i "$TODO_DIR"/todo.sync-conflict-*.txt
-      ;;
-
-    su) shift && v -d "$TODO_SU" "$TODO_FILE" ;;
-    esac
-    ;;
+  d) shift && "$SHARILS_HOME/shell_plugins/t/d.sh" "$@" ;;
 
   e)
     shift
