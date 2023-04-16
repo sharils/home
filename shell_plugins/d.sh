@@ -56,14 +56,7 @@ d() {
 
   o) open -b com.docker.docker ;;
 
-  r)
-    cmd="${1:-alpine:3.17}" && shift
-    docker run --interactive --rm --tty \
-      --user "$(id -u):$(id -g)" \
-      --volume "$PWD:$PWD" \
-      --workdir "$PWD" \
-      "$cmd" "${@:-env}"
-    ;;
+  r) "$SHARILS_HOME/shell_plugins/d/r.sh" "$@" ;;
 
   q) osascript -e 'quit app "Docker"' ;;
 
