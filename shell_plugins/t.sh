@@ -7,12 +7,6 @@ t() {
 
   case $1 in
 
-  A)
-    shift
-    [ -f "$TODO_DIR/$1" ] || touch "$TODO_DIR/$1"
-    t addto "$@"
-    ;;
-
   Z) shift && t archive "$@" ;;
 
   b)
