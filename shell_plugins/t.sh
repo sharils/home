@@ -88,26 +88,24 @@ t() {
 
   su)
     shift
-    cmd="$1"
-    shift
-    case "$cmd" in
+    case "$1" in
     '') toot auth --no-color | grep @ | sort -k3 | cut -d' ' -f2 | xargs && return ;;
 
-    Z | add | a | addm | addto | append | app | archive | command | d | deduplicate | del | e | m | r | rm | depri | dp | done | do | help | list | ls | listall | lsa | listaddons | listcon | lsc | listfile | lf | listpri | lsp | listproj | lsprj | move | mv | prepend | prep | pri | replace | report | shorthelp) TODO_FILE="$TODO_SU" t "$cmd" "$@" && return ;;
+    Z | add | a | addm | addto | append | app | archive | command | d | deduplicate | del | e | m | r | rm | depri | dp | done | do | help | list | ls | listall | lsa | listaddons | listcon | lsc | listfile | lf | listpri | lsp | listproj | lsprj | move | mv | prepend | prep | pri | replace | report | shorthelp) TODO_FILE="$TODO_SU" t "$@" && return ;;
 
     *[!0-9]*)
-      if [ ${#cmd} -le 1 ]; then
-        t su 1 "$cmd" "$@"
+      if [ ${#1} -le 1 ]; then
+        t su 1 "$@"
         return
       fi
-      auth="$(t su | xargs -n1 | grep "$cmd")"
+      auth="$(t su | xargs -n1 | grep "$1")"
       if [ -z "$auth" ] || [ "$(echo "$auth" | wc -l)" -ne 1 ]; then
-        t su 1 "$cmd" "$@"
+        t su 1 "$@"
         return
       fi
       ;;
 
-    *) auth="$(t su | cut -d' ' -f "$cmd")" ;;
+    *) auth="$(t su | cut -d' ' -f "$1")" ;;
     esac
 
     echo >&2 "TOOT_USING=$auth"
