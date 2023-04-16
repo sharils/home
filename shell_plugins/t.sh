@@ -5,18 +5,18 @@ t() {
   n | t | ui) x focus && echo focus! >&2 && return ;;
   esac
 
-  cmd=$1
-  shift
-  case $cmd in
+  case $1 in
 
   A)
+    shift
     [ -f "$TODO_DIR/$1" ] || touch "$TODO_DIR/$1"
     t addto "$@"
     ;;
 
-  Z) t archive "$@" ;;
+  Z) shift && t archive "$@" ;;
 
   b)
+    shift
     if [ $# -eq 0 ]; then
       w t ls "$@"
       return
@@ -26,6 +26,7 @@ t() {
     ;;
 
   d)
+    shift
     case "$1" in
     d) shift && v -d "$TODO_FILE" "$TODO_DIR/$DONE_FILE" ;;
 
@@ -40,6 +41,7 @@ t() {
     ;;
 
   e)
+    shift
     case "$1" in
     q) shift && $EDITOR "$@" "$TODO_DIR/QuickNote.md" ;;
     t) shift && $EDITOR "$@" "$TODO_FILE" ;;
@@ -51,11 +53,12 @@ t() {
     esac
     ;;
 
-  m) t addm "$@" ;;
+  m) shift && t addm "$@" ;;
 
-  n) t oot notifications "${@:---reverse}" ;;
+  n) shift && t oot notifications "${@:---reverse}" ;;
 
   oot)
+    shift
     if [ -n "$TOOT_USING" ]; then
       toot "$@" --using "$TOOT_USING"
     else
@@ -64,6 +67,7 @@ t() {
     ;;
 
   p)
+    shift
     case "$1" in
     e) shift && t p --editor "$EDITOR" "$@" ;;
     '' | *[!0-9]*) t oot post "$@" ;;
@@ -72,6 +76,7 @@ t() {
     ;;
 
   r)
+    shift
     if [ $# -eq 0 ]; then
       tput reset
     else
@@ -79,9 +84,10 @@ t() {
     fi
     ;;
 
-  rc) rm "$TODO_DIR"/todo.sync-conflict-*.txt ;;
+  rc) shift && rm "$TODO_DIR"/todo.sync-conflict-*.txt ;;
 
   su)
+    shift
     cmd="$1"
     shift
     case "$cmd" in
@@ -109,6 +115,7 @@ t() {
     ;;
 
   t)
+    shift
     if [ $# -eq 1 ] && expr "$1" : "[0-9][0-9]*" >/dev/null; then
       t oot thread "$@"
     else
@@ -116,22 +123,23 @@ t() {
     fi
     ;;
 
-  tl) t t --local --reverse --count 1 "${@:---public}" ;;
+  tl) shift && t t --local --reverse --count 1 "${@:---public}" ;;
 
-  tp) t t --public --reverse --count 1 "$@" ;;
+  tp) shift && t t --public --reverse --count 1 "$@" ;;
 
-  tt) t t --reverse --count 1 --tag "$@" ;;
+  tt) shift && t t --reverse --count 1 --tag "$@" ;;
 
-  ui) t oot tui "$@" ;;
+  ui) shift && t oot tui "$@" ;;
 
   w)
+    shift
     [ $# -eq 0 ] && cmd=whoami || cmd=whois
     t oot "$cmd"
     ;;
 
-  add | a | addm | addto | append | app | archive | command | deduplicate | del | rm | depri | dp | done | do | help | list | ls | listall | lsa | listaddons | listcon | lsc | listfile | lf | listpri | lsp | listproj | lsprj | move | mv | prepend | prep | pri | replace | report | shorthelp) todo.sh "$cmd" "$@" ;;
+  add | a | addm | addto | append | app | archive | command | deduplicate | del | rm | depri | dp | done | do | help | list | ls | listall | lsa | listaddons | listcon | lsc | listfile | lf | listpri | lsp | listproj | lsprj | move | mv | prepend | prep | pri | replace | report | shorthelp) todo.sh "$@" ;;
 
-  *) tldr "$cmd" "$@" ;;
+  *) tldr "$@" ;;
 
   esac
 }
