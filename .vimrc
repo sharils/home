@@ -63,7 +63,7 @@ Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/puremourning/vimspector'
 Plug 'https://github.com/vim-scripts/VCard-syntax'
 
-Plug 'https://github.com/slashmili/alchemist.vim', { 'for': 'elixir' }
+Plug 'https://github.com/slashmili/alchemist.vim', { 'for': 'elixir', 'branch': 'main' }
 Plug 'https://github.com/ekalinin/Dockerfile.vim', { 'for': 'dockerfile' }
 Plug 'https://github.com/vito-c/jq.vim', { 'for': 'jq' }
 Plug 'https://github.com/iamcco/markdown-preview.nvim', { 'for': 'md', 'do': 'cd app && npx --yes yarn install' }
