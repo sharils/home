@@ -53,16 +53,7 @@ g() {
 
   f) shift && "$SHARILS_HOME/shell_plugins/g/f.sh" "$@" ;;
 
-  i)
-    shift
-    git init "$@"
-    [ -n "$G_I" ] && "$G_I"
-    git commit --allow-empty --message "Initialize empty Git repository"
-    if [ "$(git status --short)" != '' ]; then
-      git add .
-      git commit
-    fi
-    ;;
+  i) shift && "$SHARILS_HOME/shell_plugins/g/i.sh" "$@" ;;
 
   mr) shift && "$SHARILS_HOME/shell_plugins/g/mr.sh" "$@" ;;
 
