@@ -44,14 +44,7 @@ t() {
     esac
     ;;
 
-  r)
-    shift
-    if [ $# -eq 0 ]; then
-      tput reset
-    else
-      t replace "$@"
-    fi
-    ;;
+  r) shift && t replace "$@" ;;
 
   rc) shift && rm "$TODO_DIR"/todo.sync-conflict-*.txt ;;
 
