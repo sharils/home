@@ -160,14 +160,19 @@ SH
     ;;
 
   -1) (set -x && date -ujf%s -v-1S 0 "${@:-+%+%t%G-W%V}") ;;
+
   -v)
     v="$1" && shift
     cmd="$1" && shift
     date -jf"${*:-%F}" -v"$v" "${cmd:-$(date +"${*:-%F}")}" +"${*:-%F}"
     ;;
+
   0) date -ujf%s 0 "${@:-+%FT%T}" ;;
+
   F) date +%F ;;
+
   I) date -Iseconds "$@" | sed 's/:00$//;s/+00$/Z/' | tr -d '[:space:]' ;;
+
   a) direnv allow ;;
 
   b)
@@ -256,7 +261,9 @@ EOF
     ;;
 
   l) d logs "$@" ;;
+
   o) open -b com.docker.docker ;;
+
   r)
     cmd="${1:-alpine:3.17}" && shift
     docker run --interactive --rm --tty \
@@ -265,15 +272,20 @@ EOF
       --workdir "$PWD" \
       "$cmd" "${@:-env}"
     ;;
+
   q) osascript -e 'quit app "Docker"' ;;
+
   s)
     case "$1" in
     p) shift && set -- prune "$@" ;;
     esac
     d system "$@"
     ;;
+
   v) d volume "$@" ;;
+
   x) d exec "$@" ;;
+
   *) docker "$cmd" "$@" ;;
 
   esac
