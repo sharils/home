@@ -39,19 +39,7 @@ d() {
 
   e) direnv edit . && chmod 600 .envrc ;;
 
-  i)
-    cmd="${1:-ls}" && shift
-    case "$cmd" in
-    p) d image prune "$@" ;;
-    s)
-      for image in "$@"; do :; done
-      image="$(echo "$image" | x hostnameise).tar.gz"
-      d image save "$@" | gzip >"$image"
-      echo "docker load < $image # to load image" >&2
-      ;;
-    *) d image "$cmd" "$@" ;;
-    esac
-    ;;
+  i) "$SHARILS_HOME/shell_plugins/d/i.sh" "$@" ;;
 
   j)
     case "$1" in
