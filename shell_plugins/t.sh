@@ -43,6 +43,7 @@ t() {
     case "$1" in
     l) shift && set -- --local --reverse --count 1 "${@:---public}" ;;
     p) shift && set -- --public --reverse --count 1 "$@" ;;
+    t) shift && set -- --reverse --count 1 --tag "$@" ;;
     esac
     t oot timeline "$@"
     ;;
@@ -65,8 +66,6 @@ t() {
     ;;
 
   t) t oot thread "$@" ;;
-
-  tt) shift && t t --reverse --count 1 --tag "$@" ;;
 
   ui) shift && t oot tui "$@" ;;
 
