@@ -49,28 +49,28 @@ h() {
 
   g)
     shift
-    base="$SHARILS_HOME/shell_plugins/$1"
-    if [ ! -f "$base.sh" ]; then
+    base="$SHARILS_HOME/shell_plugins"
+    if [ ! -f "$base/$1.sh" ]; then
       git -C "$SHARILS_HOME" "$@"
       return $?
     fi
 
-    cat <<SH | x touch "$base/$2.sh"
+    path="$(echo "$*" | tr ' ' '/')"
+    for last in "$@"; do :; done
+    cat <<SH | x touch "$base/$path.sh"
 #!/usr/bin/env sh
 
-$2() {
+$last() {
   :
 }
 
-$2 "\$@"
+$last "\$@"
 SH
 
-    x + "$base/$2.sh"
-    if [ "$3" = "e" ]; then
-      $EDITOR "$base/$2.sh"
-    fi
-    h g a "$base/$2.sh"
-    echo "  $2) \"\$SHARILS_HOME/shell_plugins/$1/$2.sh\" \"\$@\" ;;" | pbcopy
+    x + "$base/$path.sh"
+    [ -n "$EDITOR" ] && $EDITOR "$base/$path.sh"
+    h g a "$base/$path.sh"
+    echo "  $last) \"\$SHARILS_HOME/shell_plugins/$path.sh\" \"\$@\" ;;" | pbcopy
     ;;
 
   m) echo 'h mix <command> instead' >&2 ;;
