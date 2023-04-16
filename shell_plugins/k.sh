@@ -5,11 +5,9 @@ k() {
 
   %)
     case "${2:-all}" in
-    all)
-      for cmd in datetime date time year month week day hour minute second timezone literal extension; do
-        k % "$cmd"
-      done
-      ;;
+    all) for cmd in datetime date time year month week day hour minute second timezone literal extension; do
+      k % "$cmd"
+    done ;;
 
     date)
       cat <<SH
