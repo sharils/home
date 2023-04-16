@@ -4,8 +4,7 @@ h() {
   # shellcheck disable=SC1083
   case "$1" in
 
-  '')
-    # shellcheck source=/dev/null
+  '') # shellcheck source=/dev/null
     . "$SHARILS_HOME/.bash_profile"
     ;;
 
