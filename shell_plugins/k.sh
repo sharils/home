@@ -4,10 +4,7 @@ k() {
   case "$1" in
 
   %)
-    shift
-    cmd="${1:-all}"
-    shift
-    case "$cmd" in
+    case "${2:-all}" in
     all)
       for cmd in datetime date time year month week day hour minute second timezone literal extension; do
         k % "$cmd"
