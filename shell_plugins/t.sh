@@ -38,7 +38,13 @@ t() {
     esac
     ;;
 
-  l) shift && t oot timeline "$@" ;;
+  l)
+    shift
+    case "$1" in
+    l) shift && set -- --local --reverse --count 1 "${@:---public}" ;;
+    esac
+    t oot timeline "$@"
+    ;;
 
   r) shift && t replace "$@" ;;
 
@@ -58,8 +64,6 @@ t() {
     ;;
 
   t) t oot thread "$@" ;;
-
-  tl) shift && t t --local --reverse --count 1 "${@:---public}" ;;
 
   tp) shift && t t --public --reverse --count 1 "$@" ;;
 
