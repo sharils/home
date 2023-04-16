@@ -17,14 +17,7 @@ n() {
 
   cu) shift && n npm-check-updates "$@" ;;
 
-  d)
-    shift
-    if [ $# -eq 0 ]; then
-      npm run dev
-    else
-      npm docs "$@"
-    fi
-    ;;
+  d) shift && "$SHARILS_HOME/shell_plugins/n/d.sh" "$@" ;;
 
   dg)
     shift
