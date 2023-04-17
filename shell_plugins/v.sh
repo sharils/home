@@ -22,7 +22,6 @@ v() {
 
   case "$1" in
 
-  dk) vim Dockerfile ;;
   hosts) EDITOR=vim sudo --edit /etc/hosts "$@" ;;
   i)
     shift

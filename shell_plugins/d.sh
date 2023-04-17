@@ -36,6 +36,7 @@ d() {
 
   e)
     case "${1:-e}" in
+    f) $EDITOR Dockerfile ;;
     i) $EDITOR .dockerignore ;;
     e) direnv edit . && chmod 600 .envrc ;;
     esac
