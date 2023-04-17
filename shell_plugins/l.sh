@@ -22,13 +22,7 @@ l() {
   b) shift && l x "https://search.brave.com/search?q=$*" ;;
   d) shift && l x "https://lite.duckduckgo.com/lite/?q=$*" ;;
   g) shift && l x "https://www.google.com/search?client=firefox-b-d&gbv=1&q=$*" ;;
-  node)
-    shift
-    if [ $# -gt 0 ]; then
-      set -- "$*.html"
-    fi
-    l x "https://nodejs.org/dist/latest-v18.x/docs/api/$*"
-    ;;
+  node) shift && "$SHARILS_HOME/shell_plugins/l/node.sh" "$@" ;;
   od) shift && l x "https://www.oxfordlearnersdictionaries.com/definition/english/$*_1" ;;
   pep) shift && l x "https://peps.python.org/pep-$(printf "%04d" "$*")/" ;;
   pl) shift && l x "https://lite.duckduckgo.com/lite/?q=site%3Avald-phoenix.github.io%20$*" ;;
