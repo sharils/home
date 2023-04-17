@@ -22,6 +22,8 @@ z() {
     cd "$HOME/Exercism$*" || return
     ;;
 
+  e2) z e e ;;
+
   g) cd ~/git || return ;;
 
   gh)
