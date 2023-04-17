@@ -36,7 +36,6 @@ v() {
     vim "index.$1"
     ;;
   mk) vim Makefile ;;
-  ns) vim server.js ;;
   rm) vim README.md ;;
   s) vim server.js ;;
   tor) vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc ;;
