@@ -14,9 +14,9 @@ e() {
     else
       cmd="$1" && shift
       tmp="$(mktemp)"
-      grep --extended-regexp --line-number --with-filename "^\s+\b$*\)" "$SHARILS_HOME/shell_plugins/$cmd.sh" >"$tmp"
+      grep --extended-regexp --line-number --with-filename "(?:^|\|)\s+\b$*\)" "$SHARILS_HOME/shell_plugins/$cmd.sh" >"$tmp"
       set -- -q "$tmp"
-      [ "$(wc -l < "$tmp")" -ge 2 ] && set -- +copen "$@"
+      [ "$(wc -l < "$tmp" | tr -d '[:space:]')" -ge 2 ] && set -- +copen "$@"
       vim "$@"
     fi
     ;;
