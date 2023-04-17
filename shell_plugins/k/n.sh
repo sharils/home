@@ -17,10 +17,10 @@ const NEXT = {
   8: [1, /* 2, */ 3, 4, 5, 6, 7, /* 8, */ 9],
   9: [/* 1, */ 2, /* 3, */ 4, 5, 6, /* 7, */ 8, /* 9 */],
 };
-const length = Number(process.env.LENGTH ?? process.argv[2] ?? LENGTH);
-const nodes = Array(length);
+const nodesLength = Number(process.env.LENGTH ?? process.argv[2] ?? LENGTH);
+const nodes = Array(nodesLength);
 let states = Object.keys(NEXT).map(Number);
-for (nodeIdx = 0; nodeIdx < nodes.length; nodeIdx++) {
+for (nodeIdx = 0; nodeIdx < nodesLength; nodeIdx++) {
   const stateIdx = Math.floor(Math.random() * states.length);
   const state = states[stateIdx];
   nodes[nodeIdx] = state;
