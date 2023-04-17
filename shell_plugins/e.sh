@@ -6,6 +6,8 @@ e() {
     case "$1" in
     ex) v -O README.md ./**/*.ex && return $? ;;
 
+    rs) v -O README.md ./**/*.rs && return $? ;;
+
     h) exercism help "$@" && return $? ;;
 
     o)
