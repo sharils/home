@@ -4,7 +4,21 @@ p() {
   case "$1" in
   d) shift && npm pkg delete "$@" ;;
 
-  e) shift && $EDITOR package.json "$@" ;;
+  e)
+    shift
+    if [ $# -ge 1 ]; then
+      quickfix="$(mktemp)"
+      grep --line-number --with-filename "$1" package.json >"$quickfix"
+      shift
+      case "$(wc -l <"$quickfix" | tr -d '[:space:]')" in
+      0) return 1 ;;
+      1) ;; # noop
+      *) set -- +copen "$@" ;;
+      esac
+      set -- -q "$quickfix" "$@"
+    fi
+    $EDITOR "${@:-package.json}"
+    ;;
 
   g) shift && npm pkg get "$@" ;;
 
