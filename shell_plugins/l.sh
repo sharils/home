@@ -31,6 +31,7 @@ l() {
   s) shift && less "$@" ;;
   t) shift && l --tree "$@" ;;
   tld) shift && l x 'https://en.wikipedia.org/wiki/Template:CcTLD#bodyContent' ;;
+  trpl) shift && l x "file://$HOME/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/book/index.html" "$@" ;;
   wk) shift && l x "https://en.wiktionary.org/wiki/$*#Esperanto" ;;
   wp) shift && l x "https://en.wikipedia.org/wiki/Special:Search?go=Go&ns0=1&search=$*" ;;
   wz) shift && l x "https://zh.wikipedia.org/wiki/$*" ;;
