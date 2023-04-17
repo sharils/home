@@ -27,27 +27,7 @@ l() {
   pep) shift && l x "https://peps.python.org/pep-$(printf "%04d" "$*")/" ;;
   pl) shift && l x "https://lite.duckduckgo.com/lite/?q=site%3Avald-phoenix.github.io%20$*" ;;
   port) shift && l x 'https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports' ;;
-  rfc)
-    shift
-    if [ $# -eq 0 ]; then
-      cat <<'EOF'
-2119 RFC Key Words
-2441 Working with Jon
-2468 I Remember IANA
-5424 The Syslog Protocol
-6570 URI Template
-9110 HTTP Semantics
-9111 HTTP Caching
-9112 HTTP/1.1
-severity Syslog Message Severities
-EOF
-      return
-    fi
-    case "$1" in
-    severity) set -- "5424#page-11" ;;
-    esac
-    l x "https://www.rfc-editor.org/rfc/rfc$*"
-    ;;
+  rfc) shift && "$SHARILS_HOME/shell_plugins/l/rfc.sh" "$@" ;;
   s) shift && less "$@" ;;
   t) shift && l --tree "$@" ;;
   tld) shift && l x 'https://en.wikipedia.org/wiki/Template:CcTLD#bodyContent' ;;
