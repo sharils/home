@@ -34,7 +34,11 @@ d() {
 
   default.template) "$SHARILS_HOME/shell_plugins/d/default.template.sh" "$@" ;;
 
-  e) direnv edit . && chmod 600 .envrc ;;
+  e)
+    case "${1:-e}" in
+    e) direnv edit . && chmod 600 .envrc ;;
+    esac
+    ;;
 
   i) "$SHARILS_HOME/shell_plugins/d/i.sh" "$@" ;;
 
