@@ -3,7 +3,7 @@
 whois() {
   # support whois -b example.com
   for name in "$@"; do :; done
-  whois -c "${name##*.}" "$@"
+  /usr/bin/env whois -c "${name##*.}" "$@"
 }
 
 whois "$@"
