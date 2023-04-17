@@ -38,7 +38,6 @@ v() {
     ;;
   mk) vim Makefile ;;
   ns) vim server.js ;;
-  pj) vim package.json ;;
   rm) vim README.md ;;
   s) vim server.js ;;
   tor) vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc ;;
