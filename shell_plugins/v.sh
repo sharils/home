@@ -22,7 +22,6 @@ v() {
 
   case "$1" in
 
-  dc) vim docker-compose.yml ;;
   di) vim .dockerignore ;;
   dk) vim Dockerfile ;;
   hosts) EDITOR=vim sudo --edit /etc/hosts "$@" ;;
