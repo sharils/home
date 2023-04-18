@@ -5,9 +5,9 @@ v() {
     tmp="$(mktemp)"
     cat >"$tmp"
     if grep --extended-regexp ':\d+:' "$tmp" >/dev/null; then
-      set -- -q "$tmp"
+      set -- -q
       [ "$(wc -l < "$tmp")" -ge 2 ] && set -- +copen "$@"
-      vim "$@"
+      echo "$tmp" | xargs -o vim "$@"
     else
       xargs -o vim "$@" <"$tmp"
     fi
