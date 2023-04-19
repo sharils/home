@@ -1,6 +1,10 @@
 #!/usr/bin/env sh
 
 r() {
+  if [ -f "$1" ] && [ "${1##*.}" = "rs" ]; then
+    rustc "$@"
+    return $?
+  fi
   case "$1" in
   d)
     shift
