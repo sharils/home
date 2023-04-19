@@ -6,11 +6,11 @@ d() {
 
   sc)
     shift
-    v -d "$TODO_DIR"/todo.sync-conflict-*.txt "$TODO_FILE"
+    vim -d "$TODO_DIR"/todo.sync-conflict-*.txt "$TODO_FILE"
     rm -i "$TODO_DIR"/todo.sync-conflict-*.txt
     ;;
 
-  su) shift && v -d "$TODO_SU" "$TODO_FILE" ;;
+  su) shift && vim -d "$TODO_SU" "$TODO_FILE" ;;
   esac
 }
 
