@@ -8,6 +8,7 @@ c() {
 
   case "$1" in
   a) shift && set -- add "$@" ;;
+  b) shift && set -- build "$@" ;;
   e) [ -f Cargo.toml ] && $EDITOR Cargo.toml || return $? ;;
   n) shift && set -- new "${@:-rust-app}" ;;
   esac
