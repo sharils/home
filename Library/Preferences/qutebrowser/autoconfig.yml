@@ -49,6 +49,7 @@ settings:
     lernu.net: true
     lite.duckduckgo.com: true
     nx.dev: true
+    play.rust-lang.org: true
     randomuser.me: true
     randomwordgenerator.com: true
     reactnative.dev: true
@@ -91,6 +92,7 @@ settings:
     lite.duckduckgo.com: true
     localhost: true
     nx.dev: true
+    play.rust-lang.org: true
     qute://*: true
     randomuser.me: true
     randomwordgenerator.com: true
