@@ -45,6 +45,7 @@ settings:
     hn.algolia.com: true
     https://www.google.com.tw/maps?*: true
     hub.docker.com: true
+    jqplay.org: true
     lernu.net: true
     lite.duckduckgo.com: true
     nx.dev: true
@@ -85,6 +86,7 @@ settings:
     hn.algolia.com: true
     https://www.google.com.tw/maps?*: true
     hub.docker.com: true
+    jqplay.org: true
     lernu.net: true
     lite.duckduckgo.com: true
     localhost: true
