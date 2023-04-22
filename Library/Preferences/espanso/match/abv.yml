@@ -181,7 +181,7 @@ matches:
     replace: RESTful
 
   - trigger: rm,.
-    replace: README
+    replace: README.md
 
   - trigger: rn,.
     replace: react-native
