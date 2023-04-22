@@ -99,6 +99,9 @@ matches:
   - trigger: gen,.
     replace: generate
 
+  - trigger: gfm,.
+    replace: github flavoured markdown
+
   - trigger: gi,.
     replace: gitignore
 
