@@ -176,9 +176,17 @@ snippet fn "fn" w
 fn $1 -> $2 end
 endsnippet
 
+snippet i "integer()" w
+integer()
+endsnippet
+
 snippet if "if" w
 if ${1:expression} do
 end
+endsnippet
+
+snippet integer() "non_neg_integer()" w
+non_neg_integer()
 endsnippet
 
 snippet ioi "IO.inspect" w
