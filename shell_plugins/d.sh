@@ -25,7 +25,7 @@ d() {
 
   cmd) "$SHARILS_HOME/shell_plugins/d/cmd.sh" "$@" ;;
 
-  copies)
+  copy)
     z t_init
     (
       g cl t --quiet "$PWD"
