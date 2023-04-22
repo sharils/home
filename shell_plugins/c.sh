@@ -15,6 +15,11 @@ c() {
     esac
     set -- build "$@"
     ;;
+  d)
+    case "$2" in
+    o) shift 2 && set -- d --open "$@" ;;
+    esac
+    ;;
   e) [ -f Cargo.toml ] && $EDITOR Cargo.toml || return $? ;;
   n)
     shift
