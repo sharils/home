@@ -147,6 +147,9 @@ matches:
   - trigger: mongo,.
     replace: MongoDB
 
+  - trigger: msg,.
+    replace: message
+
   - trigger: mysql,.
     replace: MySQL
 
