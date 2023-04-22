@@ -23,6 +23,7 @@ c() {
     g i
     return $?
     ;;
+  u) set -- update "$@" ;;
   esac
   cargo "$@"
 }
