@@ -29,6 +29,10 @@ snippet /^i/ "import" r
 import $0
 endsnippet
 
+snippet s "@spec longer_than?(String.t(), non_neg_integer()) :: boolean()" b
+@spec ${1:fn}($2) :: $3
+endsnippet
+
 
 priority 2
 
