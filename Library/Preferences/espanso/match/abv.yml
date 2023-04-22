@@ -186,6 +186,9 @@ matches:
   - trigger: py,.
     replace: python
 
+  - trigger: ref,.
+    replace: reference
+
   - trigger: rdbms,.
     replace: relational database management system
 
