@@ -9,7 +9,7 @@ r() {
   d)
     shift
     case "$1" in
-    b) shift && set -- --book "$@";;
+    b) shift && set -- --book "$@" ;;
     esac
     rustup docs "$@"
     ;;
