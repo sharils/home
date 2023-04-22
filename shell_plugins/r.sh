@@ -13,7 +13,13 @@ r() {
     esac
     rustup docs "$@"
     ;;
-  e) shift && rustc --explain "$@" | l md ;;
+  e)
+    shift
+    case "$1" in
+    '') $EDITOR ./src/main.rs ;;
+    *) rustc --explain "$@" | l md ;;
+    esac
+    ;;
   *) reset ;;
   esac
 }
