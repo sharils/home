@@ -20,6 +20,7 @@ k() {
   0x) "$SHARILS_HOME/shell_plugins/k/0x.sh" "$@" ;;
 
   b)
+    shift
     keepassxc-cli generate --custom '0123456789ABCDEFGHJKMNPQRSTVWXYZ' --length "${@:-4}" | tr -d \\n | pbcopy
     pbpaste
     ;;
