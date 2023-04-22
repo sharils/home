@@ -90,6 +90,9 @@ matches:
   - trigger: fw,.
     replace: framework
 
+  - trigger: gen,.
+    replace: generate
+
   - trigger: gi,.
     replace: gitignore
 
