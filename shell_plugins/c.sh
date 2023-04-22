@@ -16,7 +16,13 @@ c() {
     set -- build "$@"
     ;;
   e) [ -f Cargo.toml ] && $EDITOR Cargo.toml || return $? ;;
-  n) shift && set -- new "${@:-rust-app}" ;;
+  n)
+    shift
+    cargo new "${@:-rust-app}"
+    cd "$1" || return $?
+    g i
+    return $?
+    ;;
   esac
   cargo "$@"
 }
