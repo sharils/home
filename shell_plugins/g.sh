@@ -33,7 +33,7 @@ g() {
   cl)
     shift
     case "$1" in
-    -e) git config --local "$@" ;;
+    e) git config --local "$@" ;;
     t | *)
       case "$1" in
       ~) shift && x mp "$HOME$(dirname "$(echo "$*" | sed 's#https:/#git#;s#[@:]#/#g;s#^#/#')")" ;;
