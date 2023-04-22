@@ -207,6 +207,9 @@ matches:
   - trigger: sth,.
     replace: something
 
+  - trigger: sh,.
+    replace: shell
+
   - trigger: t,.
     replace: A penny for your thoughts.
 
