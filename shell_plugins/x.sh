@@ -21,6 +21,7 @@ x() {
   log) shift && log show --predicate 'eventMessage CONTAINS "unlockUIBecomesActive"' --last "${@:-1h}" ;;
   mp) shift && mkdir -pv "$@" && cd "$@" || return ;;
   o) shift && open "${@:-.}" ;;
+  perm) shift && python -c 'import itertools,pprint,sys;pprint.pprint(sorted(itertools.permutations(sys.argv[1:])))' "$@" ;;
   php) shift && php -r "$*" ;;
   screen) shift && screen -xRRe^Gg "$@" ;;
   shuf) tr ' ' '\n' | sort --random-sort | tr '\n' ' ' ;;
