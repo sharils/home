@@ -281,7 +281,7 @@ cat $0
 endsnippet
 
 snippet cd "cd || return" w
-cd ${1:"$@"} || return
+cd ${1:"$@"} || return $?
 endsnippet
 
 snippet dateI "date +%Y-%m-%dT%H:%M:%S%z" w
