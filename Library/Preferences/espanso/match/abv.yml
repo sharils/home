@@ -45,6 +45,9 @@ matches:
   - trigger: db,.
     replace: database
 
+  - trigger: ddx,.
+    replace: differential diagnosis
+
   - trigger: dep,.
     replace: dependency
 
