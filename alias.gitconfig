@@ -23,6 +23,7 @@
 	cmr = !sh -c 'git commit --message \"Refactor $0 $*\"'
 	cmx = !sh -c 'git commit --message \"Apply $0 $*\"'
 	co = checkout
+	co- = checkout -
 	cod = rebase origin/develop develop
 	com = rebase origin/main main
 	cr = revert
