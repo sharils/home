@@ -23,6 +23,8 @@ d() {
 
   c) "$SHARILS_HOME/shell_plugins/d/c.sh" "$@" ;;
 
+  cmd) "$SHARILS_HOME/shell_plugins/d/cmd.sh" "$@" ;;
+
   copies)
     z t_init
     (
