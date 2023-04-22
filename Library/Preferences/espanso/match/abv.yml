@@ -90,6 +90,9 @@ matches:
   - trigger: fw,.
     replace: framework
 
+  - trigger: gbv,.
+    replace: gross booking value
+
   - trigger: gen,.
     replace: generate
 
