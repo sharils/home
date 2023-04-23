@@ -7,7 +7,7 @@ d() {
   -1) (set -x && date -ujf%s -v-1S 0 "${@:-+%+%t%G-W%V}") ;;
 
   -v)
-    v="$1" && shift && cmd="$1" && shift
+    v="${1:-+30d}" && cmd="$1" && shift && shift
     date -jf"${*:-%F}" -v"$v" "${cmd:-$(date +"${*:-%F}")}" +"${*:-%F}"
     ;;
 
