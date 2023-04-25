@@ -23,8 +23,12 @@ c() {
   e) [ -f Cargo.toml ] && $EDITOR Cargo.toml || return $? ;;
   n)
     shift
+    case "$1" in
+    l) shift && set -- --lib "${@:-rust-app}" ;;
+    esac
     cargo new "${@:-rust-app}"
-    cd "$1" || return $?
+    for last in "$@"; do :; done
+    cd "$last" || return $?
     G_I_M="Exec cargo new ${*:-rust-app}" g i
     return $?
     ;;
