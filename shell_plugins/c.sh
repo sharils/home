@@ -29,7 +29,7 @@ c() {
     cargo new "${@:-rust-app}"
     for last in "$@"; do :; done
     cd "$last" || return $?
-    G_I_M="Exec cargo new ${*:-rust-app}" g i
+    G_I_M="Execute cargo new ${*:-rust-app}" g i
     return $?
     ;;
   u) set -- update "$@" ;;
