@@ -47,7 +47,7 @@ g() {
     esac
     ;;
 
-  cmx) shift && g cm "Apply $*" ;;
+  cmx) shift && g cm "Execute $*" ;;
 
   cs) shift && git-crypt status "$@" ;;
 

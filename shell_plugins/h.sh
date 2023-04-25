@@ -22,7 +22,7 @@ h() {
     vim +'PlugSnapshot! ~/.vim/snapshot.vim'
 
     h g a .vim/snapshot.vim
-    h g cm 'Apply vim +PlugUpdate'
+    h g cm 'Execute vim +PlugUpdate'
     h g p
     ;;
 
