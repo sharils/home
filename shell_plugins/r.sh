@@ -16,7 +16,7 @@ r() {
   e)
     shift
     case "$1" in
-    '') $EDITOR ./src/main.rs ;;
+    '') $EDITOR "$(find src/ -name main.rs -o -name lib.rs)" ;;
     *) rustc --explain "$@" | l md ;;
     esac
     ;;
