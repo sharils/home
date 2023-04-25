@@ -25,7 +25,7 @@ c() {
     shift
     cargo new "${@:-rust-app}"
     cd "$1" || return $?
-    g i
+    G_I_M="Exec cargo new ${*:-rust-app}" g i
     return $?
     ;;
   u) set -- update "$@" ;;
