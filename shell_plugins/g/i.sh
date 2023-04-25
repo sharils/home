@@ -6,7 +6,8 @@ i() {
   git commit --allow-empty --message "Initialize empty Git repository"
   if [ "$(git status --short)" != '' ]; then
     git add .
-    git commit
+    [ -n "$G_I_M" ] && set -- --message "$G_I_M"
+    git commit "$@"
   fi
 }
 
