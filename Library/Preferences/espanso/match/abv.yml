@@ -189,6 +189,9 @@ matches:
   - trigger: py,.
     replace: python
 
+  - trigger: re,.
+    replace: regular expression
+
   - trigger: ref,.
     replace: reference
 
