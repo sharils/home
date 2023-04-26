@@ -8,8 +8,6 @@ e() {
 
   karabiner) vim "$SHARILS_HOME/config/karabiner/karabiner.json" ;;
 
-  todo) vim "$SHARILS_HOME/todo.cfg" ;;
-
   tig) vim "$SHARILS_HOME/tigrc" ;;
 
   *)
