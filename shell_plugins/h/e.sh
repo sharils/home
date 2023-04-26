@@ -2,8 +2,6 @@
 
 e() {
   case "${1:-install}" in
-  bp) vim "$SHARILS_HOME/.bash_profile" ;;
-
   install) vim "$SHARILS_HOME/install" ;;
 
   tig) vim "$SHARILS_HOME/tigrc" ;;
