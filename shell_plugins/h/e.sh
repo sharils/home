@@ -4,8 +4,6 @@ e() {
   case "${1:-install}" in
   install) vim "$SHARILS_HOME/install" ;;
 
-  tig) vim "$SHARILS_HOME/tigrc" ;;
-
   *)
     if [ $# -le 1 ]; then
       vim "$SHARILS_HOME/shell_plugins/$*.sh"

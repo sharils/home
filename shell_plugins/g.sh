@@ -53,6 +53,8 @@ g() {
 
   f) shift && "$SHARILS_HOME/shell_plugins/g/f.sh" "$@" ;;
 
+  e) shift && $EDITOR "$@" ~/.tigrc ;;
+
   i) shift && "$SHARILS_HOME/shell_plugins/g/i.sh" "$@" ;;
 
   mr) shift && "$SHARILS_HOME/shell_plugins/g/mr.sh" "$@" ;;
