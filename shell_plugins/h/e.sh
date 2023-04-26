@@ -6,8 +6,6 @@ e() {
 
   install) vim "$SHARILS_HOME/install" ;;
 
-  karabiner) vim "$SHARILS_HOME/config/karabiner/karabiner.json" ;;
-
   tig) vim "$SHARILS_HOME/tigrc" ;;
 
   *)

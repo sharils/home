@@ -33,6 +33,8 @@ k() {
 
   d) "$SHARILS_HOME/shell_plugins/k/d.sh" "$@" ;;
 
+  e) $EDITOR "$@" ~/.config/karabiner/karabiner.json ;;
+
   g)
     shift
     no_url_encode="!'()*-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~"
