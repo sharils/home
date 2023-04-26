@@ -12,8 +12,6 @@ e() {
 
   tig) vim "$SHARILS_HOME/tigrc" ;;
 
-  vim) vim "$SHARILS_HOME/vimrc" ;;
-
   *)
     if [ $# -le 1 ]; then
       vim "$SHARILS_HOME/shell_plugins/$*.sh"

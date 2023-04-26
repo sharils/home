@@ -22,6 +22,7 @@ v() {
 
   case "$1" in
 
+  e) vim ~/.vimrc ;;
   hosts) EDITOR=vim sudo --edit /etc/hosts "$@" ;;
   i)
     shift
