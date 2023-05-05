@@ -75,7 +75,8 @@ n() {
   @ionic/cli | @neutralinojs/neu | @sandworm/audit | baapan | backstopjs | browser-sync | bundle-phobia | chance-cli | codesandbox | composerize | cost-of-modules | covgen | csv2json | cypress | degit | depcruise | eas-cli | eslint | expo | gitignore | jscodeshift | jscpd | knip | license | license-checker | lighthouse | nanoid | newman | nginx-linter | npm-check | npm-check-updates | npm-merge-driver | nve | nx | packagephobia-cli | pegjs | prettier | prettier-package-json | pwned | pythagora | qnm | qrcode-terminal | react-devtools | react-native | readme-md-generator | resume-cli | selenium-side-runner | trello-cli | trucker | ts-node | twify | unimported | verdaccio | why-is-node-running | wait-on) n y "$@" ;;
 
   *)
-    if [ "$(npm pkg get "scripts.$1" 2>/dev/null)" != '{}' ]; then
+    tmp="$(npm pkg get "scripts.$1" 2>/dev/null)"
+    if [ -n "$tmp" ] && [ "$tmp" != '{}' ] ; then
       tmp="$1" && shift && set -- run "$tmp" -- "$@"
     fi
     npm "$@"
