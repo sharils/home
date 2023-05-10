@@ -231,6 +231,9 @@ matches:
   - trigger: spa,.
     replace: single page application
 
+  - trigger: ssr,.
+    replace: server side rendering
+
   - trigger: t,.
     replace: A penny for your thoughts.
 
