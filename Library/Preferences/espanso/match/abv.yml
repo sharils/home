@@ -228,6 +228,9 @@ matches:
   - trigger: sh,.
     replace: shell
 
+  - trigger: spa,.
+    replace: single page application
+
   - trigger: t,.
     replace: A penny for your thoughts.
 
