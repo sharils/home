@@ -57,6 +57,9 @@ matches:
   - trigger: dev,.
     replace: development
 
+  - trigger: diff,.
+    replace: different
+
   - trigger: dj,.
     replace: django
 
