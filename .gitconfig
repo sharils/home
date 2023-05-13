@@ -25,6 +25,7 @@
 	# git config -f gitignore.gitconfig user.name $name
 	# git config -f gitignore.gitconfig user.email $id+$name@users.noreply.github.com.pub
 	# git config -f gitignore.gitconfig user.signingKey ~/.ssh/$email.pub
+	# git config -f gitignore.gitconfig core.sshCommand ~/.ssh/$email.pub
 	path = ~/git/github.com/sharils/home/gitignore.gitconfig
 	path = ~/git/github.com/sharils/home/vim-conflicted.gitconfig
 [init]
