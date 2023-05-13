@@ -1,3 +1,4 @@
+---
 matches:
   - trigger: AC,.
     replace: Acceptance Criteria
@@ -5,18 +6,11 @@ matches:
   - trigger: DS,.
     form: |
       Yesterday/Last Friday, I:
-      [[yesterday]]
+        -
       Today, I’m going to:
-      [[today]]
-      Blocker,
-      [[blocker]]
-    form_fields:
-      yesterday:
-        multiline: true
-      today:
-        multiline: true
-      blocker:
-        multiline: true
+        -
+      Blocker:
+        -
 
   - trigger: rsp,.
     replace: Retrospective and Spring Planning
