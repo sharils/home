@@ -18,5 +18,5 @@ matches:
       blocker:
         multiline: true
 
-  - trigger: RSP,.
+  - trigger: rsp,.
     replace: Retrospective and Spring Planning
