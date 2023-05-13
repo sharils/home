@@ -3,7 +3,7 @@ matches:
   - trigger: AC,.
     replace: Acceptance Criteria
 
-  - trigger: DS,.
+  - trigger: ds,.
     form: |
       Yesterday/Last Friday, I:
         -
