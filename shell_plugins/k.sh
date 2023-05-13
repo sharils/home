@@ -31,7 +31,7 @@ k() {
     bind -p | grep '"[^"]\+"' | grep -v 'self-insert\|do-lowercase-version\|digit-argument' | grep "$*"
     ;;
 
-  d) "$SHARILS_HOME/shell_plugins/k/d.sh" "$@" ;;
+  d) shift && "$SHARILS_HOME/shell_plugins/k/d.sh" "$@" ;;
 
   e) $EDITOR "$@" ~/.config/karabiner/karabiner.json ;;
 
