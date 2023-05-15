@@ -20,6 +20,7 @@ x() {
   js) node --print "$*" ;;
   log) shift && log show --predicate 'eventMessage CONTAINS "unlockUIBecomesActive"' --last "${@:-1h}" ;;
   mp) shift && mkdir -pv "$@" && cd "$@" || return ;;
+  ncal) shift && ncal -wB4 -A7 ;;
   o) shift && open "${@:-.}" ;;
   perm) shift && python -c 'import itertools,pprint,sys;pprint.pprint(sorted(itertools.permutations(sys.argv[1:])))' "$@" ;;
   php) shift && php -r "$*" ;;
