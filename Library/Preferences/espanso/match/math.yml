@@ -5,6 +5,9 @@ matches:
   - trigger: eq,.
     replace: equal to
 
+  - trigger: gt,.
+    replace: greater than
+
   - trigger: lt,.
     replace: less than
 
