@@ -194,9 +194,6 @@ matches:
   - trigger: psql,.
     replace: PostgreSQL
 
-  - trigger: py,.
-    replace: python
-
   - trigger: re,.
     replace: regular expression
 

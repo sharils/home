@@ -17,5 +17,8 @@ matches:
   - trigger: gql,.
     replace: GraphQL
 
+  - trigger: py,.
+    replace: python
+
   - trigger: zh,.
     replace: 中文
