@@ -1,0 +1,6 @@
+---
+
+matches:
+
+  - trigger: en,.
+    replace: English

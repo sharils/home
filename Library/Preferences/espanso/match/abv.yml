@@ -78,9 +78,6 @@ matches:
   - trigger: dj,.
     replace: django
 
-  - trigger: en,.
-    replace: English
-
   - trigger: eng,.
     replace: engineering
 
