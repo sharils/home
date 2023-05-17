@@ -105,9 +105,6 @@ matches:
   - trigger: gm,.
     replace: greasemonkey
 
-  - trigger: gte,.
-    replace: greater than or equal to
-
   - trigger: kano,.
     replace: >
       1️⃣ like it.
