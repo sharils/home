@@ -161,9 +161,6 @@ matches:
   - trigger: msg,.
     replace: message
 
-  - trigger: mysql,.
-    replace: MySQL
-
   - trigger: mw,.
     replace: MediaWiki
 
