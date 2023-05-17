@@ -8,5 +8,8 @@ matches:
   - trigger: eo,.
     replace: Esperanto
 
+  - trigger: ex,.
+    replace: elixir
+
   - trigger: zh,.
     replace: 中文
