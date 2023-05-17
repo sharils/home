@@ -132,6 +132,9 @@ matches:
   - trigger: gt,.
     replace: greater than
 
+  - trigger: gte,.
+    replace: greater than or equal to
+
   - trigger: jsdg,.
     replace: "JavaScript: The Definitive Guide"
 
