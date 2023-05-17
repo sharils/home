@@ -167,6 +167,9 @@ matches:
   - trigger: lsc,.
     replace: lightsail container
 
+  - trigger: lt,.
+    replace: less than
+
   - trigger: lv,.
     replace: LiveView
 
