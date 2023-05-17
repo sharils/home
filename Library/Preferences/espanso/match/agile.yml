@@ -15,5 +15,8 @@ matches:
       Blocker:
         -
 
+  - trigger: lehv,.
+    replace: low effort and high value
+
   - trigger: rsp,.
     replace: Retrospective and Spring Planning

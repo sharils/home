@@ -125,9 +125,6 @@ matches:
   - trigger: lat,.
     replace: latitude
 
-  - trigger: lehv,.
-    replace: low effort and high value
-
   - trigger: lib,.
     replace: library
 
