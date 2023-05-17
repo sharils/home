@@ -20,5 +20,8 @@ matches:
   - trigger: py,.
     replace: python
 
+  - trigger: sh,.
+    replace: shell
+
   - trigger: zh,.
     replace: 中文

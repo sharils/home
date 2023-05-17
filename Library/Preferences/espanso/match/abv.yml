@@ -227,9 +227,6 @@ matches:
   - trigger: sth,.
     replace: something
 
-  - trigger: sh,.
-    replace: shell
-
   - trigger: spa,.
     replace: single page application
 
