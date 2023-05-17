@@ -3,6 +3,9 @@ matches:
   - trigger: AC,.
     replace: Acceptance Criteria
 
+  - trigger: bt,.
+    replace: Backlog Triage
+
   - trigger: ds,.
     form: |
       Yesterday/Last Friday, I:
