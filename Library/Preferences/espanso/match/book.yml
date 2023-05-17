@@ -4,3 +4,6 @@ matches:
 
   - trigger: jsdg,.
     replace: "JavaScript: The Definitive Guide"
+
+  - trigger: posa,.
+    replace: Pattern-Oriented Software Architecture

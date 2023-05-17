@@ -132,9 +132,6 @@ matches:
   - trigger: gte,.
     replace: greater than or equal to
 
-  - trigger: jsdg,.
-    replace: "JavaScript: The Definitive Guide"
-
   - trigger: kano,.
     replace: >
       1️⃣ like it.
@@ -211,9 +208,6 @@ matches:
 
   - trigger: phx,.
     replace: Phoenix
-
-  - trigger: posa,.
-    replace: Pattern-Oriented Software Architecture
 
   - trigger: prod,.
     replace: production
