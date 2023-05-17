@@ -269,9 +269,6 @@ matches:
   - trigger: tos,.
     replace: terms of service
 
-  - trigger: trpl,.
-    replace: The Rust Programming Language
-
   - trigger: ts,.
     replace: TypeScript
 

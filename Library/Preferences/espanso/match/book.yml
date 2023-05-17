@@ -7,3 +7,6 @@ matches:
 
   - trigger: posa,.
     replace: Pattern-Oriented Software Architecture
+
+  - trigger: trpl,.
+    replace: The Rust Programming Language
