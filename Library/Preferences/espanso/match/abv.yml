@@ -105,9 +105,6 @@ matches:
   - trigger: ex,.
     replace: elixir
 
-  - trigger: fbs,.
-    replace: Firestore
-
   - trigger: fw,.
     replace: framework
 
