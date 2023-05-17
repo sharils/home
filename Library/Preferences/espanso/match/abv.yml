@@ -108,9 +108,6 @@ matches:
   - trigger: gm,.
     replace: greasemonkey
 
-  - trigger: gql,.
-    replace: GraphQL
-
   - trigger: gt,.
     replace: greater than
 

@@ -14,5 +14,8 @@ matches:
   - trigger: gfm,.
     replace: github flavoured markdown
 
+  - trigger: gql,.
+    replace: GraphQL
+
   - trigger: zh,.
     replace: 中文
