@@ -129,6 +129,9 @@ matches:
   - trigger: gql,.
     replace: GraphQL
 
+  - trigger: gt,.
+    replace: greater than
+
   - trigger: jsdg,.
     replace: "JavaScript: The Definitive Guide"
 
