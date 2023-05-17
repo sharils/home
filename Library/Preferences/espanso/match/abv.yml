@@ -45,9 +45,6 @@ matches:
   - trigger: bm,.
     replace: bookmark
 
-  - trigger: bt,.
-    replace: Backlog Triage
-
   - trigger: cf,.
     replace: cloudfront
 
@@ -96,9 +93,6 @@ matches:
   - trigger: eula,.
     replace: end-user license agreement
 
-  - trigger: ex,.
-    replace: elixir
-
   - trigger: fw,.
     replace: framework
 
@@ -107,9 +101,6 @@ matches:
 
   - trigger: gen,.
     replace: generate
-
-  - trigger: gfm,.
-    replace: github flavoured markdown
 
   - trigger: gi,.
     replace: gitignore

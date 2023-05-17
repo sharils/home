@@ -11,5 +11,8 @@ matches:
   - trigger: ex,.
     replace: elixir
 
+  - trigger: gfm,.
+    replace: github flavoured markdown
+
   - trigger: zh,.
     replace: 中文
