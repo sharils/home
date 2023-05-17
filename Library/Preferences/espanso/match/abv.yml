@@ -251,8 +251,5 @@ matches:
   - trigger: us,.
     replace: user story
 
-  - trigger: utt,.
-    replace: usd to twd
-
   - trigger: wb,.
     replace: Wikibase
