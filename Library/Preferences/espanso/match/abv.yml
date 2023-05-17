@@ -137,9 +137,6 @@ matches:
   - trigger: lsc,.
     replace: lightsail container
 
-  - trigger: lte,.
-    replace: less than or equal to
-
   - trigger: lv,.
     replace: LiveView
 
