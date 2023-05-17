@@ -245,9 +245,6 @@ matches:
   - trigger: tt,.
     replace: to twd
 
-  - trigger: ttu,.
-    replace: twd to usd
-
   - trigger: tu,.
     replace: to usd
 

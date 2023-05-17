@@ -1,0 +1,6 @@
+---
+
+matches:
+
+  - trigger: ttu,.
+    replace: twd to usd
