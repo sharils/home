@@ -4,3 +4,6 @@ matches:
 
   - trigger: en,.
     replace: English
+
+  - trigger: eo,.
+    replace: Esperanto

@@ -84,9 +84,6 @@ matches:
   - trigger: env,.
     replace: environment
 
-  - trigger: eo,.
-    replace: Esperanto
-
   - trigger: ep,.
     replace: episode
 
