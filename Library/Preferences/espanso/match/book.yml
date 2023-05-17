@@ -1,0 +1,6 @@
+---
+
+matches:
+
+  - trigger: jsdg,.
+    replace: "JavaScript: The Definitive Guide"
