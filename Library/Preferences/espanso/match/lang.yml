@@ -7,3 +7,6 @@ matches:
 
   - trigger: eo,.
     replace: Esperanto
+
+  - trigger: zh,.
+    replace: 中文

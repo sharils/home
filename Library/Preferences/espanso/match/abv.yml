@@ -286,6 +286,3 @@ matches:
 
   - trigger: wb,.
     replace: Wikibase
-
-  - trigger: zh,.
-    replace: 中文
