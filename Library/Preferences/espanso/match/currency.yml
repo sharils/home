@@ -4,3 +4,6 @@ matches:
 
   - trigger: ttu,.
     replace: twd to usd
+
+  - trigger: tu,.
+    replace: to usd
