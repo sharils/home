@@ -84,9 +84,6 @@ matches:
   - trigger: ep,.
     replace: episode
 
-  - trigger: eq,.
-    replace: equal to
-
   - trigger: et,.
     replace: etymology
 

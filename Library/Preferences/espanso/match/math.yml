@@ -2,6 +2,9 @@
 
 matches:
 
+  - trigger: eq,.
+    replace: equal to
+
   - trigger: lt,.
     replace: less than
 
