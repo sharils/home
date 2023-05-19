@@ -7,20 +7,11 @@ matches:
   - trigger: SE,.
     replace: software engineering
 
-  - trigger: api,.
-    replace: API
-
   - trigger: app,.
     replace: application
 
   - trigger: arch,.
     replace: architecture
-
-  - trigger: apollo,.
-    replace: Apollo GraphQL
-
-  - trigger: as,.
-    replace: applescript
 
   - trigger: auth,.
     replace: authorization
@@ -31,14 +22,8 @@ matches:
   - trigger: bm,.
     replace: bookmark
 
-  - trigger: chat,.
-    replace: ChatGPT
-
   - trigger: ct,.
     replace: ciphertext
-
-  - trigger: db,.
-    replace: database
 
   - trigger: ddx,.
     replace: differential diagnosis
@@ -55,9 +40,6 @@ matches:
   - trigger: diff,.
     replace: different
 
-  - trigger: dj,.
-    replace: django
-
   - trigger: eng,.
     replace: engineering
 
@@ -73,17 +55,11 @@ matches:
   - trigger: eula,.
     replace: end-user license agreement
 
-  - trigger: fw,.
-    replace: framework
-
   - trigger: gbv,.
     replace: gross booking value
 
   - trigger: gen,.
     replace: generate
-
-  - trigger: gm,.
-    replace: greasemonkey
 
   - trigger: kano,.
     replace: >
@@ -102,26 +78,11 @@ matches:
   - trigger: lng,.
     replace: longitude
 
-  - trigger: lv,.
-    replace: LiveView
-
   - trigger: pt,.
     replace: plaintext
 
-  - trigger: maria,.
-    replace: MariaDB
-
-  - trigger: mongo,.
-    replace: MongoDB
-
   - trigger: msg,.
     replace: message
-
-  - trigger: mw,.
-    replace: MediaWiki
-
-  - trigger: mysql,.
-    replace: MySQL
 
   - trigger: nav,.
     replace: navigation
@@ -135,14 +96,8 @@ matches:
   - trigger: pd,.
     replace: per discussion
 
-  - trigger: phx,.
-    replace: Phoenix
-
   - trigger: prod,.
     replace: production
-
-  - trigger: psql,.
-    replace: PostgreSQL
 
   - trigger: re,.
     replace: regular expression
@@ -150,32 +105,17 @@ matches:
   - trigger: ref,.
     replace: reference
 
-  - trigger: rdbms,.
-    replace: relational database management system
-
-  - trigger: rest,.
-    replace: RESTful
-
   - trigger: s:,.
     replace: "site:"
 
   - trigger: sb,.
     replace: somebody
 
-  - trigger: sla,.
-    replace: service-level agreement
-
   - trigger: ssot,.
     replace: single source of truth
 
   - trigger: sth,.
     replace: something
-
-  - trigger: spa,.
-    replace: single page application
-
-  - trigger: ssr,.
-    replace: server side rendering
 
   - trigger: t,.
     replace: A penny for your thoughts.
@@ -185,9 +125,3 @@ matches:
 
   - trigger: tos,.
     replace: terms of service
-
-  - trigger: u,.
-    replace: qutebrowser
-
-  - trigger: wb,.
-    replace: Wikibase

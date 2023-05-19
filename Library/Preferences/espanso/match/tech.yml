@@ -1,0 +1,67 @@
+---
+matches:
+  - trigger: api,.
+    replace: API
+
+  - trigger: apollo,.
+    replace: Apollo GraphQL
+
+  - trigger: as,.
+    replace: applescript
+
+  - trigger: chat,.
+    replace: ChatGPT
+
+  - trigger: db,.
+    replace: database
+
+  - trigger: dj,.
+    replace: django
+
+  - trigger: fw,.
+    replace: framework
+
+  - trigger: gm,.
+    replace: greasemonkey
+
+  - trigger: lv,.
+    replace: LiveView
+
+  - trigger: maria,.
+    replace: MariaDB
+
+  - trigger: mongo,.
+    replace: MongoDB
+
+  - trigger: mw,.
+    replace: MediaWiki
+
+  - trigger: mysql,.
+    replace: MySQL
+
+  - trigger: phx,.
+    replace: Phoenix
+
+  - trigger: psql,.
+    replace: PostgreSQL
+
+  - trigger: rdbms,.
+    replace: relational database management system
+
+  - trigger: rest,.
+    replace: RESTful
+
+  - trigger: sla,.
+    replace: service-level agreement
+
+  - trigger: spa,.
+    replace: single page application
+
+  - trigger: ssr,.
+    replace: server side rendering
+
+  - trigger: u,.
+    replace: qutebrowser
+
+  - trigger: wb,.
+    replace: Wikibase
