@@ -1,3 +1,5 @@
+---
+
 matches:
   - trigger: doc,.
     replace: document
