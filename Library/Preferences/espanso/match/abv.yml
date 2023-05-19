@@ -126,12 +126,6 @@ matches:
   - trigger: nav,.
     replace: navigation
 
-  - trigger: next,.
-    replace: Next.js
-
-  - trigger: node,.
-    replace: nodejs
-
   - trigger: noti,.
     replace: notification
 
