@@ -2,3 +2,6 @@
 matches:
   - trigger: cf,.
     replace: cloudfront
+
+  - trigger: ls,.
+    replace: lightsail

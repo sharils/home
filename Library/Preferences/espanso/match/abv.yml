@@ -102,9 +102,6 @@ matches:
   - trigger: lng,.
     replace: longitude
 
-  - trigger: ls,.
-    replace: lightsail
-
   - trigger: lsc,.
     replace: lightsail container
 
