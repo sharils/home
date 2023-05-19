@@ -48,6 +48,9 @@ matches:
   - trigger: rdbms,.
     replace: relational database management system
 
+  - trigger: re,.
+    replace: regular expression
+
   - trigger: rest,.
     replace: RESTful
 

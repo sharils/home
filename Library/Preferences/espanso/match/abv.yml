@@ -99,9 +99,6 @@ matches:
   - trigger: prod,.
     replace: production
 
-  - trigger: re,.
-    replace: regular expression
-
   - trigger: ref,.
     replace: reference
 
