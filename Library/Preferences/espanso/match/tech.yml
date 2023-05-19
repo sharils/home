@@ -1,5 +1,11 @@
 ---
 matches:
+  - trigger: CS,.
+    replace: computer science
+
+  - trigger: SE,.
+    replace: software engineering
+
   - trigger: api,.
     replace: API
 
