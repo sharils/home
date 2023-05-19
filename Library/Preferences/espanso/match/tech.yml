@@ -12,6 +12,9 @@ matches:
   - trigger: apollo,.
     replace: Apollo GraphQL
 
+  - trigger: app,.
+    replace: application
+
   - trigger: as,.
     replace: applescript
 

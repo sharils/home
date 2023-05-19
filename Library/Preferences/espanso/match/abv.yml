@@ -1,9 +1,6 @@
 ---
 
 matches:
-  - trigger: app,.
-    replace: application
-
   - trigger: arch,.
     replace: architecture
 
