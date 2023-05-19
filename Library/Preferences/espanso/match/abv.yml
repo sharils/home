@@ -82,9 +82,6 @@ matches:
   - trigger: gen,.
     replace: generate
 
-  - trigger: gi,.
-    replace: gitignore
-
   - trigger: gm,.
     replace: greasemonkey
 
