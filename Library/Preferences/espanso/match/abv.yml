@@ -102,9 +102,6 @@ matches:
   - trigger: lng,.
     replace: longitude
 
-  - trigger: lsc,.
-    replace: lightsail container
-
   - trigger: lv,.
     replace: LiveView
 
