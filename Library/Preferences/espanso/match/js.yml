@@ -1,5 +1,7 @@
 ---
-
 matches:
   - trigger: doc,.
     replace: document
+
+  - trigger: node,.
+    replace: nodejs
