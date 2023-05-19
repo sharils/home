@@ -189,8 +189,5 @@ matches:
   - trigger: u,.
     replace: qutebrowser
 
-  - trigger: us,.
-    replace: user story
-
   - trigger: wb,.
     replace: Wikibase

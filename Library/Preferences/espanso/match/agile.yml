@@ -20,3 +20,6 @@ matches:
 
   - trigger: rsp,.
     replace: Retrospective and Spring Planning
+
+  - trigger: us,.
+    replace: user story
