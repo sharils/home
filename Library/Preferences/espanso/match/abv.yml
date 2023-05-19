@@ -1,5 +1,4 @@
 ---
-
 matches:
   - trigger: arch,.
     replace: architecture
