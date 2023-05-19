@@ -156,9 +156,6 @@ matches:
   - trigger: rest,.
     replace: RESTful
 
-  - trigger: rm,.
-    replace: README.md
-
   - trigger: rn,.
     replace: react-native
 

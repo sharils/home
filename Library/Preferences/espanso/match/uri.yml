@@ -74,6 +74,9 @@ matches:
   - trigger: rb,.
     replace: robots.txt
 
+  - trigger: rm,.
+    replace: README.md
+
   - trigger: sm,.
     replace: sitemap.xml
 
