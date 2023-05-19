@@ -8,3 +8,6 @@ matches:
 
   - trigger: node,.
     replace: nodejs
+
+  - trigger: rn,.
+    replace: react-native
