@@ -1,0 +1,4 @@
+---
+matches:
+  - trigger: cf,.
+    replace: cloudfront
