@@ -1,3 +1,4 @@
+---
 matches:
   - trigger: +1,.
     replace: +120655501{{RANDOM}}
