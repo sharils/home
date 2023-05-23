@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-0x() {
+k_0x() {
     cat <<'TEXT'
 00 nul   01 soh   02 stx   03 etx   04 eot   05 enq   06 ack   07 bel
 08 bs    09 ht    0a nl    0b vt    0c np    0d cr    0e so    0f si
@@ -21,4 +21,4 @@
 TEXT
 }
 
-0x "$@"
+k_0x "$@"
