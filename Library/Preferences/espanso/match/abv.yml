@@ -24,6 +24,9 @@ matches:
   - trigger: depr,.
     replace: deprecated
 
+  - trigger: desc,.
+    replace: description
+
   - trigger: dev,.
     replace: development
 
