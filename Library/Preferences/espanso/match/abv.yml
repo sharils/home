@@ -12,6 +12,9 @@ matches:
   - trigger: bm,.
     replace: bookmark
 
+  - trigger: char,.
+    replace: character
+
   - trigger: ct,.
     replace: ciphertext
 
