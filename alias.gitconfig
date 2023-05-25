@@ -21,6 +21,7 @@
 	cmd = !sh -c 'git commit --message \"Remove $0 $*\"'
 	cmf = !sh -c 'git commit --message \"Fix $0 $*\"'
 	cmr = !sh -c 'git commit --message \"Refactor $0 $*\"'
+	cmw = !sh -c 'git commit --message \"wip! $0 $*\"'
 	cmx = !sh -c 'git commit --message \"Execute $0 $*\"'
 	co = checkout
 	co- = checkout -
