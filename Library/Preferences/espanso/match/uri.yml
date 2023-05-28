@@ -56,6 +56,9 @@ matches:
   - trigger: idx,.
     replace: index.html
 
+  - trigger: ig,.
+    replace: instagram
+
   - trigger: ipy,.
     replace: __init__.py
 
