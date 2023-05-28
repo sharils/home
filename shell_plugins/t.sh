@@ -7,8 +7,6 @@ t() {
 
   case $1 in
 
-  Z) shift && t archive "$@" ;;
-
   b)
     shift
     if [ $# -eq 0 ]; then
@@ -57,7 +55,7 @@ t() {
     case "$1" in
     '') toot auth --no-color | grep @ | cut -d' ' -f2 && return ;;
 
-    Z | add | a | addm | addto | append | app | archive | b | command | d | deduplicate | del | e | m | r | rm | depri | dp | done | do | help | list | ls | listall | lsa | listaddons | listcon | lsc | listfile | lf | listpri | lsp | listproj | lsprj | move | mv | prepend | prep | pri | replace | report | shorthelp) TODO_FILE="$TODO_SU" t "$@" && return ;;
+    add | a | addm | addto | append | app | archive | b | command | d | deduplicate | del | e | m | r | rm | depri | dp | done | do | help | list | ls | listall | lsa | listaddons | listcon | lsc | listfile | lf | listpri | lsp | listproj | lsprj | move | mv | prepend | prep | pri | replace | report | shorthelp | z) TODO_FILE="$TODO_SU" t "$@" && return ;;
     esac
 
     auth="$(t su | grep "$1" | x fzf)" && shift
@@ -74,6 +72,8 @@ t() {
     [ $# -eq 0 ] && cmd=whoami || cmd=whois
     t oot "$cmd"
     ;;
+
+  z) shift && t archive "$@" ;;
 
   add | a | addm | addto | append | app | archive | command | deduplicate | del | rm | depri | dp | done | do | help | list | ls | listall | lsa | listaddons | listcon | lsc | listfile | lf | listpri | lsp | listproj | lsprj | move | mv | prepend | prep | pri | replace | report | shorthelp) todo.sh "$@" ;;
 
