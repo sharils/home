@@ -44,13 +44,12 @@ z() {
     c) set -- /Camera ;;
     k) set -- /KeePass ;;
     l) set -- /Libera\ PRO ;;
+    t) cd "$TODO_DIR" || return ;;
     esac
     cd "$HOME/Sync$*" || return
     ;;
 
   ssh) cd ~/.ssh || return ;;
-
-  st) cd "$TODO_DIR" || return ;;
 
   t)
     z t_init
