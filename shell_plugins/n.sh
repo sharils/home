@@ -26,6 +26,8 @@ n() {
     n degit "$@"
     ;;
 
+  e) shift && $EDITOR ./package.json ;;
+
   eas) shift && n eas-cli "$@" ;;
 
   g) shift && npm --global "$@" ;;
