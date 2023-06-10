@@ -51,6 +51,9 @@ matches:
   - trigger: eula,.
     replace: end-user license agreement
 
+  - trigger: fix,.
+    replace: fixture
+
   - trigger: gbv,.
     replace: gross booking value
 
