@@ -1,3 +1,4 @@
+---
 matches:
   - trigger: A,.
     replace: "Add "

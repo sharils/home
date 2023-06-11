@@ -1,3 +1,4 @@
+---
 matches:
   - trigger: cjk,.
     replace: 龍龙竜용

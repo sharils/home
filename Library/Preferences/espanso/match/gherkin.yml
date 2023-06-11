@@ -1,3 +1,4 @@
+---
 matches:
   - trigger: B,.
     replace: "But "

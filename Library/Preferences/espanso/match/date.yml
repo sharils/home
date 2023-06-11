@@ -1,3 +1,4 @@
+---
 matches:
   - trigger: "%F,."
     replace: "{{F}}"

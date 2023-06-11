@@ -1,3 +1,4 @@
+---
 matches:
   - trigger: xsis,.
     replace: xargs sed -i '' 's/$|$//'
