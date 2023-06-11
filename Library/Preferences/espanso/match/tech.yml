@@ -66,6 +66,9 @@ matches:
   - trigger: sla,.
     replace: service-level agreement
 
+  - trigger: so,.
+    replace: stack overflow
+
   - trigger: spa,.
     replace: single page application
 
