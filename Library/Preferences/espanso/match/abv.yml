@@ -54,6 +54,9 @@ matches:
   - trigger: fix,.
     replace: fixture
 
+  - trigger: gbf,.
+    replace: Dragon Boat Festival
+
   - trigger: gbv,.
     replace: gross booking value
 
