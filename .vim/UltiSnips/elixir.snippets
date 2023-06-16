@@ -21,6 +21,10 @@ snippet a "alias" b
 alias $0
 endsnippet
 
+snippet c "@doc" b
+@callback ${1:callback}(${2:collection :: any}) :: ${3:pos_integer}
+endsnippet
+
 snippet d "@doc" b
 @doc """$1
 """
