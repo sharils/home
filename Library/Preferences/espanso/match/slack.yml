@@ -5,7 +5,7 @@ matches:
     replace: "/collapse"
 
   - trigger: /r,.
-    replace: "/remind "
+    replace: /remind me "$|$" next week
 
   - trigger: /s,.
     replace: "/status "
