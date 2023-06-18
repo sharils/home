@@ -20,7 +20,7 @@ c() {
     o) shift 2 && set -- d --open "$@" ;;
     esac
     ;;
-  e) shift && $EDITOR Cargo.toml || return $? ;;
+  e) shift && $EDITOR Cargo.toml && true && return $? ;;
   n)
     shift
     case "$1" in
