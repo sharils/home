@@ -44,11 +44,7 @@ z() {
     c) set -- /Camera ;;
     k) set -- /KeePass ;;
     l) set -- /Libera\ PRO ;;
-    t)
-      # shellcheck disable=SC2164
-      cd "$TODO_DIR"
-      return $?
-      ;;
+    t) cd "$TODO_DIR" && true && return $?  ;;
     esac
     cd "$HOME/Sync$*" || return
     ;;
