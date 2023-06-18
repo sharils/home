@@ -4,6 +4,9 @@ matches:
   - trigger: jsdg,.
     replace: "JavaScript: The Definitive Guide"
 
+  - trigger: lyse,.
+    replace: Learn You Some Erlang for great good
+
   - trigger: posa,.
     replace: Pattern-Oriented Software Architecture
 
