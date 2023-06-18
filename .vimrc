@@ -24,6 +24,7 @@ Plug 'https://github.com/Valloric/YouCompleteMe', { 'do': './install.py --clang-
 Plug 'https://github.com/w0rp/ale'
 " Plug 'https://github.com/skywind3000/asyncrun.vim'
 Plug 'https://github.com/jiangmiao/auto-pairs'
+Plug 'https://github.com/github/copilot.vim', { 'branch': 'release' }
 " Plug 'https://github.com/Shougo/deoplete.nvim'
 "   Plug 'https://github.com/roxma/nvim-yarp'
 "   Plug 'https://github.com/roxma/vim-hug-neovim-rpc'
