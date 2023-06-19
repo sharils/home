@@ -42,6 +42,12 @@ snippet ek "@enforce_keys" b
 @enforce_keys [$1]
 endsnippet
 
+snippet hc "handle_call" b
+@impl GenServer
+def handle_call(${1:message}, ${2:_from}, ${3:state}) do
+end
+endsnippet
+
 snippet md "@moduledoc" b
 @moduledoc """$1
 """
