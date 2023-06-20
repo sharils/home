@@ -42,6 +42,7 @@
 	p = push
 	pf = push --force
 	r = rebase
+	rc = rebase --continue
 	ro = rebase --onto
 	rsH = reset --hard
 	u = reset
