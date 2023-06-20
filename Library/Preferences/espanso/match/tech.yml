@@ -54,6 +54,9 @@ matches:
   - trigger: psql,.
     replace: PostgreSQL
 
+  - trigger: pwa,.
+    replace: progressive web app
+
   - trigger: rdbms,.
     replace: relational database management system
 
