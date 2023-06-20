@@ -43,11 +43,11 @@ Plug 'https://github.com/PeterRincker/vim-argumentative'
 " Plug 'https://github.com/bling/vim-bufferline'
 " Plug 'https://github.com/easymotion/vim-easymotion'
 Plug 'https://github.com/christoomey/vim-conflicted' |
-  Plug 'https://github.com/tpope/vim-fugitive' |
-    Plug 'https://github.com/tpope/vim-dispatch'|
-      Plug 'https://github.com/skywind3000/asyncrun.vim' |
-    Plug 'https://github.com/shumphrey/fugitive-gitlab.vim' |
-    Plug 'https://github.com/tpope/vim-rhubarb'
+  Plug 'https://github.com/tpope/vim-fugitive'
+    " Plug 'https://github.com/tpope/vim-dispatch'|
+    "   Plug 'https://github.com/skywind3000/asyncrun.vim' |
+    " Plug 'https://github.com/shumphrey/fugitive-gitlab.vim' |
+    " Plug 'https://github.com/tpope/vim-rhubarb'
 Plug 'https://github.com/ludovicchabant/vim-gutentags'
 Plug 'https://github.com/inkarkat/vim-ingo-library' | Plug 'inkarkat/vim-mark'
 " Plug 'https://github.com/jeffkreeftmeijer/vim-numbertoggle'
