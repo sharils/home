@@ -6,11 +6,12 @@ Plug '~/.vim/plugged/before'
 Plug 'https://github.com/Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --rust-completer --ts-completer' }
 
 Plug 'https://github.com/w0rp/ale'
-Plug 'https://github.com/jiangmiao/auto-pairs'
+" Plug 'https://github.com/jiangmiao/auto-pairs'
 Plug 'https://github.com/github/copilot.vim', { 'branch': 'release' }
 Plug 'https://github.com/editorconfig/editorconfig-vim'
 Plug 'https://github.com/junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'https://github.com/junegunn/fzf.vim'
+Plug 'https://github.com/cohama/lexima.vim'
 " Plug 'https://github.com/godlygeek/tabular'
 " Plug 'https://github.com/majutsushi/tagbar'
 Plug 'https://github.com/tomtom/tcomment_vim'
