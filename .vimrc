@@ -11,7 +11,6 @@ Plug 'https://github.com/github/copilot.vim', { 'branch': 'release' }
 Plug 'https://github.com/editorconfig/editorconfig-vim'
 Plug 'https://github.com/junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'https://github.com/junegunn/fzf.vim'
-
 " Plug 'https://github.com/godlygeek/tabular'
 " Plug 'https://github.com/majutsushi/tagbar'
 Plug 'https://github.com/tomtom/tcomment_vim'
