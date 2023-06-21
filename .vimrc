@@ -6,15 +6,15 @@ Plug '~/.vim/plugged/before'
 " colorscheme neverland-darker
 Plug 'https://github.com/trapd00r/neverland-vim-theme'
 " colorscheme framer_syntax_dark
-Plug 'https://github.com/balanceiskey/vim-framer-syntax', { 'branch': 'main' }
+" Plug 'https://github.com/balanceiskey/vim-framer-syntax', { 'branch': 'main' }
 " colorscheme pixelmuerto
-Plug 'https://github.com/juanpabloaj/vim-pixelmuerto'
+" Plug 'https://github.com/juanpabloaj/vim-pixelmuerto'
 
 " colorscheme fairy-garden
 " colorscheme ice-age
-Plug 'https://github.com/sainnhe/archived-colors'
+" Plug 'https://github.com/sainnhe/archived-colors'
 " colorscheme leya
-Plug 'https://github.com/marlun/vim-starwars'
+" Plug 'https://github.com/marlun/vim-starwars'
 
 " Plug 'https://github.com/vim-scripts/BufOnly.vim'
 " Plug 'https://github.com/coot/CRDispatcher'
