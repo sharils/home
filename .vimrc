@@ -3,19 +3,6 @@ let mapleader = ' '
 call plug#begin('~/.vim/plugged')
 Plug '~/.vim/plugged/before'
 
-" colorscheme neverland-darker
-Plug 'https://github.com/trapd00r/neverland-vim-theme'
-" colorscheme framer_syntax_dark
-" Plug 'https://github.com/balanceiskey/vim-framer-syntax', { 'branch': 'main' }
-" colorscheme pixelmuerto
-" Plug 'https://github.com/juanpabloaj/vim-pixelmuerto'
-
-" colorscheme fairy-garden
-" colorscheme ice-age
-" Plug 'https://github.com/sainnhe/archived-colors'
-" colorscheme leya
-" Plug 'https://github.com/marlun/vim-starwars'
-
 Plug 'https://github.com/Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --rust-completer --ts-completer' }
 
 Plug 'https://github.com/w0rp/ale'
@@ -58,6 +45,19 @@ Plug 'https://github.com/moll/vim-node'
 Plug 'https://github.com/acarapetis/vim-sh-heredoc-highlighting', { 'for': ['sh', 'bash'] }
 " Plug 'https://github.com/dhruvasagar/vim-table-mode', { 'for': 'markdown' }
 Plug 'https://github.com/pedrohdz/vim-yaml-folds', { 'for': 'yaml' }
+
+" colorscheme neverland-darker
+Plug 'https://github.com/trapd00r/neverland-vim-theme'
+" colorscheme framer_syntax_dark
+" Plug 'https://github.com/balanceiskey/vim-framer-syntax', { 'branch': 'main' }
+" colorscheme pixelmuerto
+" Plug 'https://github.com/juanpabloaj/vim-pixelmuerto'
+
+" colorscheme fairy-garden
+" colorscheme ice-age
+" Plug 'https://github.com/sainnhe/archived-colors'
+" colorscheme leya
+" Plug 'https://github.com/marlun/vim-starwars'
 
 Plug '~/.vim/plugged/after'
 call plug#end()
