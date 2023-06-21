@@ -30,7 +30,6 @@ Plug 'https://github.com/junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'https://github.com/tomtom/tcomment_vim'
 Plug 'https://github.com/SirVer/ultisnips'
 Plug 'https://github.com/tpope/vim-abolish'
-" Plug 'https://github.com/PeterRincker/vim-argumentative'
 Plug 'https://github.com/christoomey/vim-conflicted' |
   Plug 'https://github.com/tpope/vim-fugitive'
     " Plug 'https://github.com/shumphrey/fugitive-gitlab.vim' |
@@ -40,12 +39,10 @@ Plug 'https://github.com/inkarkat/vim-ingo-library' | Plug 'inkarkat/vim-mark'
 Plug 'https://github.com/tpope/vim-obsession'
 Plug 'https://github.com/sheerun/vim-polyglot'
 Plug 'https://github.com/prettier/vim-prettier', { 'do': 'rm -rf node_modules && npx --yes yarn install --frozen-lockfile --production' }
-" Plug 'https://github.com/ericbn/vim-relativize'
 " Plug 'https://github.com/tpope/vim-repeat'
 Plug 'https://github.com/tpope/vim-sensible'
 Plug 'https://github.com/vitalk/vim-shebang'
 " Plug 'https://github.com/tpope/vim-sleuth'
-" Plug 'https://github.com/honza/vim-snippets'
 " Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/puremourning/vimspector'
 
@@ -57,7 +54,6 @@ Plug 'https://github.com/alunny/pegjs-vim', { 'for': 'pegjs' }
 Plug 'https://github.com/alvan/vim-closetag', { 'for': ['html', 'javascriptreact', 'mediawiki', 'typescriptreact', 'xhtml'] }
 Plug 'https://github.com/hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'https://github.com/elixir-editors/vim-elixir', { 'for': ['elixir', 'eelixir'] }
-" Plug 'https://github.com/yardnsm/vim-import-cost', { 'for': ['javascript', 'javascriptreact', 'typescript', 'typescriptreact'], 'do': 'npm install --production' }
 Plug 'https://github.com/moll/vim-node'
 Plug 'https://github.com/acarapetis/vim-sh-heredoc-highlighting', { 'for': ['sh', 'bash'] }
 " Plug 'https://github.com/dhruvasagar/vim-table-mode', { 'for': 'markdown' }
