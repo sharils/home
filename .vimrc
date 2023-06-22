@@ -27,7 +27,7 @@ Plug 'https://github.com/prettier/vim-prettier', { 'do': 'rm -rf node_modules &&
 Plug 'https://github.com/tpope/vim-sensible'
 Plug 'https://github.com/vitalk/vim-shebang'
 " Plug 'https://github.com/tpope/vim-sleuth'
-" Plug 'https://github.com/tpope/vim-surround'
+Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/puremourning/vimspector'
 
 Plug 'https://github.com/slashmili/alchemist.vim', { 'for': 'elixir', 'branch': 'main' }
