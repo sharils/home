@@ -7,6 +7,9 @@ matches:
   - trigger: eo,.
     replace: Esperanto
 
+  - trigger: erl,.
+    replace: erlang
+
   - trigger: ex,.
     replace: elixir
 
