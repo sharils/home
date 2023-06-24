@@ -28,5 +28,8 @@ matches:
   - trigger: ts,.
     replace: TypeScript
 
+  - trigger: tss,.
+    replace: Taiwan Sign Language
+
   - trigger: zh,.
     replace: 中文
