@@ -28,6 +28,9 @@ matches:
   - trigger: lang,.
     replace: language
 
+  - trigger: ling,.
+    replace: linguistics
+
   - trigger: py,.
     replace: python
 
