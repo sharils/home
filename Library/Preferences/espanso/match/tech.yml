@@ -51,6 +51,9 @@ matches:
   - trigger: phx,.
     replace: Phoenix
 
+  - trigger: pl,.
+    replace: programming language
+
   - trigger: psql,.
     replace: PostgreSQL
 
