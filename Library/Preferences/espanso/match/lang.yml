@@ -25,6 +25,9 @@ matches:
   - trigger: isl,.
     replace: International Sign Language
 
+  - trigger: lang,.
+    replace: language
+
   - trigger: py,.
     replace: python
 
