@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: asl,.
+    replace: American Sign Language
+
   - trigger: en,.
     replace: English
 
