@@ -22,6 +22,9 @@ matches:
   - trigger: gql,.
     replace: GraphQL
 
+  - trigger: isl,.
+    replace: International Sign Language
+
   - trigger: py,.
     replace: python
 
