@@ -50,14 +50,6 @@ matches:
         params:
           cmd: "pbpaste | tr -cd '[:digit:]'"
 
-  - trigger: pl,.
-    replace: "{{d}}"
-    vars:
-      - name: d
-        type: shell
-        params:
-          cmd: "pbpaste | tr '\n' ' '"
-
   - trigger: pu,.
     replace: "{{d}}"
     vars:
