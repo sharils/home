@@ -11,6 +11,8 @@ m() {
 
   erl) erl -man erl | l ;;
 
+  f) shift && m format "$@" ;;
+
   h) shift && m help "$@" | l md ;;
 
   i)
