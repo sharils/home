@@ -5,6 +5,8 @@ m() {
 
   aws) shift && aws "$@" help | l ;;
 
+  c) shift && m compile "$@" ;;
+
   e) $EDITOR mix.exs ;;
 
   erl) erl -man erl | l ;;
