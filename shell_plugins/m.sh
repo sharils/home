@@ -7,6 +7,8 @@ m() {
 
   erl) erl -man erl | l ;;
 
+  h) shift && m help "$@" | l md ;;
+
   i)
     if [ $# -eq 0 ]; then
       iex -S mix "$@"
