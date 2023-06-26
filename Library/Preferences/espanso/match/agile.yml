@@ -18,6 +18,9 @@ matches:
   - trigger: lehv,.
     replace: low effort and high value
 
+  - trigger: rs,.
+    replace: Retrospective
+
   - trigger: rsp,.
     replace: Retrospective and Spring Planning
 
