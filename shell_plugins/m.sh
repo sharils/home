@@ -15,6 +15,8 @@ m() {
     shift && m install "$@"
     ;;
 
+  n) shift && m new "$@" ;;
+
   npm) shift && npm help "$@" | l ;;
 
   p)
