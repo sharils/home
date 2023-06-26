@@ -5,7 +5,13 @@ m() {
 
   aws) shift && aws "$@" help | l ;;
 
-  c) shift && m compile "$@" ;;
+  c)
+    shift
+    case "$1" in
+    p) MIX_ENV=prod m compile "$@" ;;
+    *) m compile "$@" ;;
+    esac
+    ;;
 
   e) $EDITOR mix.exs ;;
 
