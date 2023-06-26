@@ -18,6 +18,9 @@ matches:
   - trigger: as,.
     replace: applescript
 
+  - trigger: cert,.
+    replace: certificate
+
   - trigger: chat,.
     replace: ChatGPT
 
