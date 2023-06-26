@@ -27,5 +27,8 @@ matches:
   - trigger: sp,.
     replace: Spring Planning
 
+  - trigger: su,.
+    replace: Stand-Up
+
   - trigger: us,.
     replace: user story
