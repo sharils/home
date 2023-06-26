@@ -14,11 +14,12 @@ m() {
   h) shift && m help "$@" | l md ;;
 
   i)
+    shift
     if [ $# -eq 0 ]; then
       iex -S mix "$@"
       return
     fi
-    shift && m install "$@"
+    m install "$@"
     ;;
 
   n)
