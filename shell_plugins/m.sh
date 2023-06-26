@@ -15,7 +15,13 @@ m() {
     shift && m install "$@"
     ;;
 
-  n) shift && m new "$@" ;;
+  n)
+    shift
+    case "$1" in
+    m) cmd="$2" && shift 2 && set -- "$cmd" --module "$@" ;;
+    esac
+    m new "$@"
+    ;;
 
   npm) shift && npm help "$@" | l ;;
 
