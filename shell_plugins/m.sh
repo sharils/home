@@ -5,6 +5,8 @@ m() {
 
   aws) shift && aws "$@" help | l ;;
 
+  e) $EDITOR mix.exs ;;
+
   erl) erl -man erl | l ;;
 
   h) shift && m help "$@" | l md ;;
