@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: avg,.
+    replace: average
+
   - trigger: eq,.
     replace: equal to
 
