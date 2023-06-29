@@ -107,10 +107,10 @@ inoremap <C-B> <ESC>i
 inoremap <C-E> <C-O>A
 inoremap <C-F> <C-O>l
 inoremap <C-[>O <ESC>O
-inoremap <C-[>} ’
-cnoremap <C-[>} ’
 inoremap <C-[>- –
 cnoremap <C-[>- –
+inoremap <C-[>} ’
+cnoremap <C-[>} ’
 nmap <LEADER>0 :vertical resize 100<CR>
 nmap <LEADER>E :edit!<CR>
 nmap <LEADER>S :source ~/.vimrc<CR>
