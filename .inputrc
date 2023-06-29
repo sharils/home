@@ -1,4 +1,5 @@
 "\e-": "–"
+"\e_": "—"
 "\e}": "’"
 # TAB: menu-complete
 set completion-ignore-case on
