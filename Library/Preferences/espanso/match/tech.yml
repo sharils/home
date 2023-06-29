@@ -57,6 +57,9 @@ matches:
   - trigger: pl,.
     replace: programming language
 
+  - trigger: psi,.
+    replace: PageSpeed Insights
+
   - trigger: psql,.
     replace: PostgreSQL
 
