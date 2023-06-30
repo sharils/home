@@ -17,7 +17,7 @@ x() {
   gpg) echo | gpg --clearsign >/dev/null ;;
   hostnameise) tr '[:upper:]' '[:lower:]' | sed -E 's/[^[:alnum:]]+/-/g' ;;
   ip) shift && ipconfig getifaddr "${@:-en0}" ;;
-  js) node --print "$*" ;;
+  js) shift && node --print "$*" ;;
   log) shift && log show --predicate 'eventMessage CONTAINS "unlockUIBecomesActive"' --last "${@:-1h}" ;;
   mp) shift && mkdir -pv "$@" && cd "$@" || return ;;
   ncal) shift && ncal -wB4 -A7 ;;

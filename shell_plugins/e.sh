@@ -27,6 +27,8 @@ e() {
 
   case "${1:-edit}" in
 
+  a) touch "$1" ;;
+
   e)
     shift
     [ "$1" = e ] && shift && set -- emoji "$@"
