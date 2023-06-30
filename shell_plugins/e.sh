@@ -27,13 +27,13 @@ e() {
 
   case "${1:-edit}" in
 
-  a) touch "$1" ;;
-
   e)
     shift
     [ "$1" = e ] && shift && set -- emoji "$@"
     e edit "${@:-base}"
     ;;
+
+  g) shift && "$SHARILS_HOME/shell_plugins/e/g.sh" "$@" ;;
 
   h) shift && e --eval "require IEx.Helpers; IEx.Helpers.h($*)" | l md ;;
 
