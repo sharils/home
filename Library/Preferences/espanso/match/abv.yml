@@ -54,6 +54,9 @@ matches:
   - trigger: fix,.
     replace: fixture
 
+  - trigger: hsp,.
+    replace: highly sensitive person
+
   - trigger: gbf,.
     replace: Dragon Boat Festival
 
