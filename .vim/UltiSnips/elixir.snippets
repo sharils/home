@@ -54,7 +54,10 @@ endsnippet
 
 snippet hi "handle_info" b
 @impl GenServer
-def handle_${1:info}(${2:message}, ${3:state}) do
+def handle_${1:info}(${2:{:DOWN, ref, :process, _pid, _reason}}, ${3:state}) do
+	${4:require Logger
+	Logger.debug("Unexpected message in KV.Registry: #{inspect(msg)}")
+	{:noreply, state}}
 end
 endsnippet
 
