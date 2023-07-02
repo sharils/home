@@ -1,8 +1,5 @@
 ---
 matches:
-  - trigger: CS,.
-    replace: computer science
-
   - trigger: SE,.
     replace: software engineering
 
@@ -23,6 +20,9 @@ matches:
 
   - trigger: chat,.
     replace: ChatGPT
+
+  - trigger: cs,.
+    replace: computer science
 
   - trigger: db,.
     replace: database
