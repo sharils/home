@@ -113,6 +113,9 @@ matches:
   - trigger: sb,.
     replace: somebody
 
+  - trigger: sci,.
+    replace: science
+
   - trigger: ssot,.
     replace: single source of truth
 
