@@ -1,8 +1,5 @@
 ---
 matches:
-  - trigger: SE,.
-    replace: software engineering
-
   - trigger: api,.
     replace: API
 
@@ -74,6 +71,9 @@ matches:
 
   - trigger: rest,.
     replace: RESTful
+
+  - trigger: se,.
+    replace: software engineering
 
   - trigger: sla,.
     replace: service-level agreement
