@@ -58,6 +58,13 @@ def handle_${1:info}(${2:message}, ${3:state}) do
 end
 endsnippet
 
+snippet init "init" b
+@impl GenServer
+def init(${1:_opts}) do
+	{:ok, ${2:%{}}}
+end
+endsnippet
+
 snippet md "@moduledoc" b
 @moduledoc """$1
 """
