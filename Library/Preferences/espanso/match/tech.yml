@@ -72,6 +72,9 @@ matches:
   - trigger: rest,.
     replace: RESTful
 
+  - trigger: sc,.
+    replace: statechart
+
   - trigger: se,.
     replace: software engineering
 
