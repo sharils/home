@@ -39,6 +39,9 @@ matches:
   - trigger: maria,.
     replace: MariaDB
 
+  - trigger: mmd,.
+    replace: mermaid
+
   - trigger: mongo,.
     replace: MongoDB
 
