@@ -24,7 +24,7 @@ end
 EXS
   fi
 
-  echo "$lib_path" "$test_path"
+  echo "vim -O $test_path $lib_path"
 }
 
 a "$@"
