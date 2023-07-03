@@ -62,9 +62,9 @@ end
 endsnippet
 
 snippet init "init" b
-@impl GenServer
-def init(${1:_opts}) do
-	{:ok, ${2:%{}}}
+@impl ${1:GenServer}
+def init(${2:_opts}) do
+	{:ok, ${3:%{}}}
 end
 endsnippet
 
