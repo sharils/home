@@ -32,3 +32,6 @@ matches:
 
   - trigger: us,.
     replace: user story
+
+  - trigger: wip,.
+    replace: work in progress
