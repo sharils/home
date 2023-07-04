@@ -69,6 +69,9 @@ matches:
   - trigger: lh,.
     replace: localhost
 
+  - trigger: moz,.
+    replace: mozilla
+
   - trigger: ns3.sg,.
     replace: 172.104.162.222
 
