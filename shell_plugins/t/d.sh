@@ -2,7 +2,7 @@
 
 d() {
   case "$1" in
-  d) shift && v -d "$TODO_FILE" "$TODO_DIR/$DONE_FILE" ;;
+  d) shift && vim -d "$TODO_FILE" "$TODO_DIR/$DONE_FILE" ;;
 
   q) shift && vim -d "$TODO_FILE" "$TODO_DIR/QuickNote.md" ;;
 
