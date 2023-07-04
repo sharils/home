@@ -30,6 +30,9 @@ matches:
   - trigger: fw,.
     replace: framework
 
+  - trigger: ga,.
+    replace: google analytics
+
   - trigger: gm,.
     replace: greasemonkey
 
