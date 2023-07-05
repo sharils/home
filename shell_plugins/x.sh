@@ -22,7 +22,7 @@ x() {
   mp) shift && mkdir -pv "$@" && cd "$@" || return ;;
   ncal) shift && ncal -wB4 -A7 ;;
   o) shift && open "${@:-.}" ;;
-  perm) shift && python -c 'import itertools,sys;[print(" ".join(p)) for p in itertools.permutations(sys.argv[1:])]' "$@" ;;
+  perm) shift && python -c 'import itertools,sys;[print(" ".join(p)) for p in itertools.permutations(sys.argv[1:])]' "$@" | sort | uniq ;;
   php) shift && php -r "$*" ;;
   screen) shift && screen -xRRe^Gg "$@" ;;
   shuf) tr ' ' '\n' | sort --random-sort | tr '\n' ' ' ;;
