@@ -9,6 +9,7 @@ settings:
   auto_save.session:
     global: true
   content.cookies.accept:
+    'file://*': all
     '*.wikidata.org': no-unknown-3rdparty
     127.0.0.1: no-unknown-3rdparty
     astexplorer.net: no-unknown-3rdparty
@@ -116,6 +117,7 @@ settings:
     www.typescriptlang.org: true
   content.local_storage:
     '*.wikidata.org': true
+    'file://*': true
     astexplorer.net: true
     developer.mozilla.org: true
     global: true
