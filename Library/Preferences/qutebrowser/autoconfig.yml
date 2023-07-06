@@ -72,57 +72,57 @@ settings:
     www.youtube.com: true
   content.headers.user_agent:
     global: Mozilla/5.0 (Windows NT 10.0; rv:102.0) Gecko/20100101 Firefox/102.0
-  # content.javascript.enabled:
-  #   '*.stackexchange.com': true
-  #   '*.wikidata.org': true
-  #   'file://*': true
-  #   127.0.0.1: true
-  #   astexplorer.net: true
-  #   c.im: true
-  #   devdocs.io: true
-  #   developer.mozilla.org: true
-  #   docs.expo.dev: true
-  #   docs.python.org: true
-  #   docs.rs: true
-  #   github.com: true
-  #   global: false
-  #   hexdocs.pm: true
-  #   hn.algolia.com: true
-  #   https://www.google.com.tw/maps?*: true
-  #   hub.docker.com: true
-  #   jqplay.org: true
-  #   lernu.net: true
-  #   lite.duckduckgo.com: true
-  #   localhost: true
-  #   nx.dev: true
-  #   play.rust-lang.org: true
-  #   qute://*: true
-  #   randomuser.me: true
-  #   randomwordgenerator.com: true
-  #   reactnative.dev: true
-  #   schema.org: true
-  #   search.brave.com: true
-  #   stackoverflow.com: true
-  #   stedolan.github.io: true
-  #   superuser.com: true
-  #   temp-mail.org: true
-  #   translate.google.com: true
-  #   vimeo.com: true
-  #   wormhole.app: true
-  #   www.ecosia.org: true
-  #   www.phind.com: true
-  #   www.railway.gov.tw: true
-  #   www.sharedrop.io: true
-  #   www.typescriptlang.org: true
-  # content.local_storage:
-  #   '*.wikidata.org': true
-  #   astexplorer.net: true
-  #   developer.mozilla.org: true
-  #   global: true
-  #   hn.algolia.com: true
-  #   nx.dev: true
-  #   vimeo.com: true
-  #   www.sharedrop.io: true
+  content.javascript.enabled:
+    '*.stackexchange.com': true
+    '*.wikidata.org': true
+    'file://*': true
+    127.0.0.1: true
+    astexplorer.net: true
+    c.im: true
+    devdocs.io: true
+    developer.mozilla.org: true
+    docs.expo.dev: true
+    docs.python.org: true
+    docs.rs: true
+    github.com: true
+    global: false
+    hexdocs.pm: true
+    hn.algolia.com: true
+    https://www.google.com.tw/maps?*: true
+    hub.docker.com: true
+    jqplay.org: true
+    lernu.net: true
+    lite.duckduckgo.com: true
+    localhost: true
+    nx.dev: true
+    play.rust-lang.org: true
+    qute://*: true
+    randomuser.me: true
+    randomwordgenerator.com: true
+    reactnative.dev: true
+    schema.org: true
+    search.brave.com: true
+    stackoverflow.com: true
+    stedolan.github.io: true
+    superuser.com: true
+    temp-mail.org: true
+    translate.google.com: true
+    vimeo.com: true
+    wormhole.app: true
+    www.ecosia.org: true
+    www.phind.com: true
+    www.railway.gov.tw: true
+    www.sharedrop.io: true
+    www.typescriptlang.org: true
+  content.local_storage:
+    '*.wikidata.org': true
+    astexplorer.net: true
+    developer.mozilla.org: true
+    global: true
+    hn.algolia.com: true
+    nx.dev: true
+    vimeo.com: true
+    www.sharedrop.io: true
   content.notifications.enabled:
     global: false
   url.default_page:
