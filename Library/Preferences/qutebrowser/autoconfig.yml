@@ -11,6 +11,7 @@ settings:
   content.cookies.accept:
     'file://*': all
     '*.wikidata.org': no-unknown-3rdparty
+    '*.wikipedia.org': no-unknown-3rdparty
     127.0.0.1: no-unknown-3rdparty
     astexplorer.net: no-unknown-3rdparty
     developer.mozilla.org: no-unknown-3rdparty
@@ -76,6 +77,7 @@ settings:
   content.javascript.enabled:
     '*.stackexchange.com': true
     '*.wikidata.org': true
+    '*.wikipedia.org': true
     'file://*': true
     127.0.0.1: true
     astexplorer.net: true
