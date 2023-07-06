@@ -9,19 +9,19 @@ settings:
   auto_save.session:
     global: true
   content.cookies.accept:
-    # '*.wikidata.org': no-unknown-3rdparty
-    # 127.0.0.1: no-unknown-3rdparty
-    # astexplorer.net: no-unknown-3rdparty
-    # developer.mozilla.org: no-unknown-3rdparty
-    global: no-unknown-3rdparty
-    # hexdocs.pm: no-unknown-3rdparty
-    # hn.algolia.com: no-unknown-3rdparty
-    # lernu.net: no-unknown-3rdparty
-    # nx.dev: no-unknown-3rdparty
-    # vimeo.com: no-unknown-3rdparty
-    # www.phind.com: no-unknown-3rdparty
-    # www.sharedrop.io: no-unknown-3rdparty
-    # www.typescriptlang.org: no-unknown-3rdparty
+    '*.wikidata.org': no-unknown-3rdparty
+    127.0.0.1: no-unknown-3rdparty
+    astexplorer.net: no-unknown-3rdparty
+    developer.mozilla.org: no-unknown-3rdparty
+    global: never
+    hexdocs.pm: no-unknown-3rdparty
+    hn.algolia.com: no-unknown-3rdparty
+    lernu.net: no-unknown-3rdparty
+    nx.dev: no-unknown-3rdparty
+    vimeo.com: no-unknown-3rdparty
+    www.phind.com: no-unknown-3rdparty
+    www.sharedrop.io: no-unknown-3rdparty
+    www.typescriptlang.org: no-unknown-3rdparty
   content.cookies.store:
     global: false
   content.headers.accept_language:
