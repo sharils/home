@@ -107,6 +107,9 @@ matches:
   - trigger: ref,.
     replace: reference
 
+  - trigger: req,.
+    replace: request
+
   - trigger: resp,.
     replace: response
 
