@@ -36,6 +36,9 @@ matches:
   - trigger: diff,.
     replace: different
 
+  - trigger: dyn,.
+    replace: dynamic
+
   - trigger: eng,.
     replace: engineering
 
