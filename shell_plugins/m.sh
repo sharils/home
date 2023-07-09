@@ -64,6 +64,7 @@ m() {
     f) shift && set -- --failed "$@";;
     mf) shift && set -- --max-failures "${@:-1}";;
     s) shift && set -- --seed 0 "$@";;
+    t) shift && set -- --trace "$@";;
     esac
     m test "$@"
     ;;
