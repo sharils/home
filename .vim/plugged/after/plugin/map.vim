@@ -107,6 +107,8 @@ inoremap <C-B> <ESC>i
 inoremap <C-E> <C-O>A
 inoremap <C-F> <C-O>l
 inoremap <C-[>O <ESC>O
+inoremap <C-[>* °
+cnoremap <C-[>* °
 inoremap <C-[>- –
 cnoremap <C-[>- –
 inoremap <C-_>- —
