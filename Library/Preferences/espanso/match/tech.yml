@@ -1,5 +1,8 @@
 ---
 matches:
+  - trigger: CV,.
+    replace: Common Voice
+
   - trigger: api,.
     replace: API
 
