@@ -13,6 +13,19 @@ m() {
     esac
     ;;
 
+  d)
+    shift
+    if [ $# -eq 0 ]; then
+      m deps
+      return
+    fi
+    case "$1" in
+    g) shift && m deps.get "$@" ;;
+    u) shift && m deps.update "$@" ;;
+    *) cmd="$1" && shift && m deps."$cmd" "$@" ;;
+    esac
+    ;;
+
   e) $EDITOR mix.exs ;;
 
   erl) erl -man erl | l ;;
@@ -61,10 +74,10 @@ m() {
   t)
     shift
     case "$1" in
-    f) shift && set -- --failed "$@";;
-    mf) shift && set -- --max-failures "${@:-1}";;
-    s) shift && set -- --seed 0 "$@";;
-    t) shift && set -- --trace "$@";;
+    f) shift && set -- --failed "$@" ;;
+    mf) shift && set -- --max-failures "${@:-1}" ;;
+    s) shift && set -- --seed 0 "$@" ;;
+    t) shift && set -- --trace "$@" ;;
     esac
     m test "$@"
     ;;
