@@ -60,6 +60,7 @@ m() {
     i) shift && iex -S mix phx.server "$@" && return ;;
     n) shift && cmd="$cmd.new" ;;
     s) shift && cmd="$cmd.server" ;;
+    v) shift && cmd="$cmd.new" && set -- --version "$@" ;;
     esac
     mix "$cmd" "$@"
     ;;
