@@ -55,14 +55,13 @@ m() {
   npm) shift && npm help "$@" | l ;;
 
   p)
-    cmd="phx" && shift
+    shift
     case "$1" in
-    i) shift && iex -S mix phx.server "$@" && return ;;
-    n) shift && cmd="$cmd.new" ;;
-    s) shift && cmd="$cmd.server" ;;
-    v) shift && cmd="$cmd.new" && set -- --version "$@" ;;
+    i) shift && iex -S mix phx.server "$@" ;;
+    n) shift && mix phx.new "$@" ;;
+    s) shift && mix phx.server "$@" ;;
+    v) shift && mix phx.new --version "$@" ;;
     esac
-    mix "$cmd" "$@"
     ;;
 
   pj) m package-json ;;
