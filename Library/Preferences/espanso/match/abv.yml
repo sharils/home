@@ -128,6 +128,9 @@ matches:
   - trigger: ssot,.
     replace: single source of truth
 
+  - trigger: so,.
+    replace: significant other
+
   - trigger: sth,.
     replace: something
 
