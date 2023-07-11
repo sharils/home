@@ -48,7 +48,7 @@ m() {
     case "$1" in
     m) cmd="$2" && shift 2 && set -- "$cmd" --module "$@" ;;
     esac
-    m new "$@"
+    m new "$@" && cd "$cmd" && return $?
     ;;
 
   npm) shift && npm help "$@" | l ;;
