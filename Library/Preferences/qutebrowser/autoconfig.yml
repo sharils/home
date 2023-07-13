@@ -97,6 +97,7 @@ settings:
     lernu.net: true
     lite.duckduckgo.com: true
     localhost: true
+    nextjs.org: true
     nx.dev: true
     play.rust-lang.org: true
     qute://*: true
