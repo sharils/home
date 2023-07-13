@@ -42,6 +42,9 @@ matches:
   - trigger: gm,.
     replace: greasemonkey
 
+  - trigger: ks,.
+    replace: keyboard shortcuts
+
   - trigger: lv,.
     replace: LiveView
 
