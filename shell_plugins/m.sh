@@ -43,6 +43,8 @@ m() {
     m install "$@"
     ;;
 
+  kids) open -b com.apple.Music 'https://classicalkids.stream.publicradio.org/classicalkids.aac' ;;
+
   n)
     shift
     case "$1" in
