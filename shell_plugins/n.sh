@@ -26,7 +26,16 @@ n() {
     n degit "$@"
     ;;
 
-  e) shift && $EDITOR ./package.json ;;
+  e)
+    shift
+    if [ $# -eq 0 ]; then
+      $EDITOR ./package.json
+      return $?
+    fi
+    tmp="$(mktemp)"
+    grep --line-number --with-filename main package.json >"$tmp"
+    vim -q "$tmp"
+    ;;
 
   eas) shift && n eas-cli "$@" ;;
 
@@ -78,7 +87,7 @@ n() {
 
   *)
     tmp="$(npm pkg get "scripts.$1" 2>/dev/null)"
-    if [ -n "$tmp" ] && [ "$tmp" != '{}' ] ; then
+    if [ -n "$tmp" ] && [ "$tmp" != '{}' ]; then
       tmp="$1" && shift && set -- run "$tmp" -- "$@"
     fi
     npm "$@"
