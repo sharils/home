@@ -71,6 +71,8 @@ n() {
 
   r) shift && n run "$@" ;;
 
+  rg) shift && rg "$@" package.json ;;
+
   serve) shift && "$SHARILS_HOME/shell_plugins/n/serve.sh" "$@" ;;
 
   tsc) shift && n y tsc --noEmit "$@" ;;
