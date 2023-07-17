@@ -33,7 +33,7 @@ n() {
       return $?
     fi
     tmp="$(mktemp)"
-    grep --line-number --with-filename main package.json >"$tmp"
+    grep --line-number --with-filename "$1" package.json >"$tmp"
     vim -q "$tmp"
     ;;
 
@@ -46,6 +46,8 @@ n() {
   graphql-codegen) shift && n y --package graphql --package @graphql-codegen/cli -- graphql-codegen "$@" ;;
 
   i) shift && "$SHARILS_HOME/shell_plugins/n/i.sh" "$@" ;;
+
+  jq) shift && jq < package.json "$@" ;;
 
   krampus) shift && "$SHARILS_HOME/shell_plugins/n/krampus.sh" "$@" ;;
 
