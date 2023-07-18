@@ -18,6 +18,7 @@ settings:
     global: never
     hexdocs.pm: no-unknown-3rdparty
     hn.algolia.com: no-unknown-3rdparty
+    ipac.nlpi.edu.tw: no-unknown-3rdparty
     lernu.net: no-unknown-3rdparty
     nx.dev: no-unknown-3rdparty
     vimeo.com: no-unknown-3rdparty
@@ -93,6 +94,7 @@ settings:
     hn.algolia.com: true
     https://www.google.com.tw/maps?*: true
     hub.docker.com: true
+    ipac.nlpi.edu.tw: true
     jqplay.org: true
     lernu.net: true
     lite.duckduckgo.com: true
