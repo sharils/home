@@ -66,6 +66,9 @@ matches:
   - trigger: oo,.
     replace: object-oriented
 
+  - trigger: oop,.
+    replace: object-oriented programming
+
   - trigger: phx,.
     replace: Phoenix
 
