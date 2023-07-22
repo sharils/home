@@ -205,6 +205,7 @@ main() {
 .inputrc,\
 .qutebrowser,\
 .surfraw.conf,\
+.todo.cfg,\
 .tigrc,\
 .vim,\
 .vimrc,\
