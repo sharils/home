@@ -63,6 +63,9 @@ matches:
   - trigger: mysql,.
     replace: MySQL
 
+  - trigger: oo,.
+    replace: object-oriented
+
   - trigger: phx,.
     replace: Phoenix
 
