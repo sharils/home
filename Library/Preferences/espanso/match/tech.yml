@@ -3,6 +3,9 @@ matches:
   - trigger: CV,.
     replace: Common Voice
 
+  - trigger: alg,.
+    replace: algorithm
+
   - trigger: api,.
     replace: API
 
