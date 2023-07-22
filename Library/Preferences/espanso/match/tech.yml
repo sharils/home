@@ -30,6 +30,9 @@ matches:
   - trigger: db,.
     replace: database
 
+  - trigger: ddd,.
+    replace: domain-driven design
+
   - trigger: dj,.
     replace: django
 
