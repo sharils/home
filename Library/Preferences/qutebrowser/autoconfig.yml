@@ -142,6 +142,7 @@ settings:
       b: https://search.brave.com/search?q={}
       bg: https://biggo.com.tw/s/?q={}&view=l&sort=lp
       bs: https://blogsurf.io/?query={}
+      co: https://www.careonline.com.tw/search?q={}
       conchita: http://ipa-reader.xyz/?voice=Conchita&text={}
       d: https://lite.duckduckgo.com/lite/?q={}
       dc: https://docs.docker.com/compose/compose-file/#{}
