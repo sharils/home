@@ -1,10 +1,16 @@
 #!/usr/bin/env sh
 
 e() {
-  if [ $# -le 1 ]; then
+  case "$#" in
+  0)
+    vim "$SHARILS_HOME/install"
+    return $?
+    ;;
+  1)
     vim "$SHARILS_HOME/shell_plugins/$*.sh"
     return $?
-  fi
+    ;;
+  esac
 
   tmp="$SHARILS_HOME/shell_plugins/$(echo "$*" | tr ' ' '/').sh"
   if [ -f "$tmp" ]; then
