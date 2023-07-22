@@ -185,7 +185,7 @@ settings:
       od:
         https://www.oxfordlearnersdictionaries.com/search/english/?=english&q={}
       ol: https://openlibrary.org/search?mode=everything&q={}
-      pl: https://lite.duckduckgo.com/lite/?q=site%3Avald-phoenix.github.io%20{}
+      pl: https://professorlin.com//?s={}&search=%E5%8E%BB
       ph: https://www.phind.com/search?q={}
       ptt: https://www.ptt.cc/bbs/{}/index.html
       py:
