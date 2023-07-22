@@ -66,6 +66,9 @@ matches:
   - trigger: mysql,.
     replace: MySQL
 
+  - trigger: nlp,.
+    replace: natural language processing
+
   - trigger: oo,.
     replace: object-oriented
 
