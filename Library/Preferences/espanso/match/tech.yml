@@ -123,6 +123,9 @@ matches:
   - trigger: spa,.
     replace: single page application
 
+  - trigger: spec,.
+    replace: specification
+
   - trigger: ssr,.
     replace: server side rendering
 
