@@ -31,6 +31,9 @@ matches:
   - trigger: ling,.
     replace: linguistics
 
+  - trigger: ncc,.
+    replace: "@needs native check"
+
   - trigger: py,.
     replace: python
 
