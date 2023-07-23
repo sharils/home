@@ -20,6 +20,7 @@ r() {
       return
     fi
     case "$1" in
+    l) $EDITOR src/lib.rs ;;
     m) $EDITOR src/main.rs ;;
     *) rustc --explain "$@" | l md ;;
     esac
