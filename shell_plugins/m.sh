@@ -49,7 +49,7 @@ m() {
 
   kids) open -b com.apple.Music 'https://classicalkids.stream.publicradio.org/classicalkids.aac' ;;
 
-  muzaiko) open -b com.apple.Music 'https://fluo.muzaiko.saluton.dk:8000/radio.mp3' ;;
+  muzaiko) open -b com.apple.Music 'http://fluo.muzaiko.saluton.dk:8000/radio.mp3' ;;
 
   n)
     shift
