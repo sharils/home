@@ -48,6 +48,9 @@ matches:
   - trigger: gm,.
     replace: greasemonkey
 
+  - trigger: hb,.
+    replace: homebrew
+
   - trigger: ks,.
     replace: keyboard shortcuts
 
