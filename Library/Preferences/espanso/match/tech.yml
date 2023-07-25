@@ -134,3 +134,6 @@ matches:
 
   - trigger: wb,.
     replace: Wikibase
+
+  - trigger: wv,.
+    replace: webview

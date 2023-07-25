@@ -4,6 +4,9 @@ matches:
   - trigger: asl,.
     replace: American Sign Language
 
+  - trigger: bre,.
+    replace: British English
+
   - trigger: en,.
     replace: English
 

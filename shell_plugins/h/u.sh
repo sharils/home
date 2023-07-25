@@ -16,6 +16,7 @@ u() {
   npm --global update
   python3 -m pip install --upgrade pip
   pip3 list --outdated
+  mix local.hex
 }
 
 u "$@"
