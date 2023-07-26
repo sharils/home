@@ -20,6 +20,7 @@ settings:
     hn.algolia.com: no-unknown-3rdparty
     ipac.nlpi.edu.tw: no-unknown-3rdparty
     lernu.net: no-unknown-3rdparty
+    mermaid.live: no-unknown-3rdparty
     nx.dev: no-unknown-3rdparty
     vimeo.com: no-unknown-3rdparty
     www.phind.com: no-unknown-3rdparty
@@ -100,6 +101,7 @@ settings:
     lernu.net: true
     lite.duckduckgo.com: true
     localhost: true
+    mermaid.live: true
     nextjs.org: true
     nx.dev: true
     play.rust-lang.org: true
