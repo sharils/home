@@ -49,6 +49,8 @@ e() {
     e service "${@:-status}"
     ;;
 
+  wc) (cd "$SHARILS_HOME/Library/Preferences/espanso/match" && find -- * -type f ! -name emoji.yml ! -name colour.yml -exec wc -l {} \;) | sort -rk 1 | column ;;
+
   edit | log | service) espanso "$@" ;;
 
   *) elixir "$@" ;;
