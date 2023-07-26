@@ -185,6 +185,7 @@ settings:
         https://ipac.nlpi.edu.tw/search?searchField=FullText&searchInput={}
       od:
         https://www.oxfordlearnersdictionaries.com/search/english/?=english&q={}
+      og: https://iq.opengenus.org/tag/{}/
       ol: https://openlibrary.org/search?mode=everything&q={}
       pl: https://professorlin.com//?s={}&search=%E5%8E%BB
       ph: https://www.phind.com/search?q={}
