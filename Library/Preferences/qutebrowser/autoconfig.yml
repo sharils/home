@@ -95,6 +95,7 @@ settings:
     https://www.google.com.tw/maps?*: true
     hub.docker.com: true
     ipac.nlpi.edu.tw: true
+    iq.opengenus.org: true
     jqplay.org: true
     lernu.net: true
     lite.duckduckgo.com: true
