@@ -28,7 +28,7 @@ x() {
   shuf) tr ' ' '\n' | sort --random-sort | tr '\n' ' ' ;;
   ssh) shift && ssh -t "$@" screen -xRRe^Gg ;;
   ssh-copy-id) shift && ssh-copy-id -o PreferredAuthentications=password -i "$HOME/.ssh/id_ed25519.pub" "$@" ;;
-  su) shift && sudo su -l "${X_SU:?}" -c "${*:-bash}" ;;
+  su) shift && sudo su "${X_SU:?}" ;;
   tb) shift && /Applications/Tor\ Browser.app/Contents/MacOS/firefox "$@" ;;
   tel) shift && open "tel:$*" ;;
   ts) shift && n y ts-node "$@" ;;
