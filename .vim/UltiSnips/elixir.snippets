@@ -62,6 +62,10 @@ def handle_${1:info}(${2:{:DOWN, ref, :process, _pid, _reason}}, ${3:state}) do
 end
 endsnippet
 
+snippet ie "iex> " b
+iex> $0
+endsnippet
+
 snippet init "init" b
 @impl ${1:GenServer}
 def init(${2:_opts}) do
