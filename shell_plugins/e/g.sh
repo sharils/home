@@ -16,7 +16,7 @@ EX
   if [ ! -f "$test_path" ]; then
     cat <<EXS > "$test_path"
 defmodule $1Test do
-use ExUnit.Case, async: true
+  use ExUnit.Case, async: true
 
   test "$1" do
   end
