@@ -132,6 +132,9 @@ matches:
   - trigger: ssr,.
     replace: server side rendering
 
+  - trigger: sw,.
+    replace: service worker
+
   - trigger: u,.
     replace: qutebrowser
 
