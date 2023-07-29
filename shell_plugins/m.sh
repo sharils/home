@@ -68,6 +68,8 @@ m() {
 
   bbc) open -b com.apple.Music 'https://music.apple.com/tw/station/bbc-radio-3/ra.1461288674?l=en' ;;
 
+  r) shift && m run "$@" ;;
+
   re) m re_format ;;
 
   s) shift && m search "$@" ;;
