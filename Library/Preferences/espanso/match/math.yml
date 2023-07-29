@@ -7,6 +7,9 @@ matches:
   - trigger: eq,.
     replace: equal to
 
+  - trigger: fn,.
+    replace: function
+
   - trigger: gt,.
     replace: greater than
 
