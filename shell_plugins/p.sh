@@ -5,6 +5,8 @@ p() {
 
   '') p r p ;;
 
+  1) shift && ssh bbsu@ptt.cc ;;
+
   I) shift && poetry init "$@" ;;
 
   a)
