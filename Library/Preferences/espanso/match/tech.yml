@@ -87,6 +87,9 @@ matches:
   - trigger: phx,.
     replace: Phoenix
 
+  - trigger: pkg,.
+    replace: package
+
   - trigger: pl,.
     replace: programming language
 
