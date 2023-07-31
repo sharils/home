@@ -9,6 +9,8 @@ m() {
 
   aws) shift && aws "$@" help | l ;;
 
+  bbc) open -b com.apple.Music 'https://music.apple.com/tw/station/bbc-radio-3/ra.1461288674?l=en' ;;
+
   c)
     shift
     case "$1" in
@@ -65,8 +67,6 @@ m() {
   p) shift && "$SHARILS_HOME/shell_plugins/m/p.sh" "$@" ;;
 
   pj) m package-json ;;
-
-  bbc) open -b com.apple.Music 'https://music.apple.com/tw/station/bbc-radio-3/ra.1461288674?l=en' ;;
 
   r)
     shift
