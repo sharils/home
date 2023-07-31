@@ -78,7 +78,7 @@ matches:
   - trigger: r:,.
     replace: rsync://
 
-  - trigger: rb,.
+  - trigger: rt,.
     replace: robots.txt
 
   - trigger: rm,.
