@@ -70,6 +70,10 @@ m() {
 
   r)
     shift
+    if [ $# -eq 0 ]; then
+      MIX_ENV=prod mix release
+      return
+    fi
     case "$1" in
     nh) shift && set -- --no-halt "$@" ;;
     esac
