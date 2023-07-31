@@ -39,6 +39,9 @@ matches:
   - trigger: dj,.
     replace: django
 
+  - trigger: fire,.
+    replace: firebase
+
   - trigger: fw,.
     replace: framework
 
