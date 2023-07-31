@@ -98,6 +98,13 @@ snippet s "@spec longer_than?(String.t(), non_neg_integer()) :: boolean()" b
 @spec ${1:fn}($2) :: $3
 endsnippet
 
+snippet sa "setup_all" b
+setup_all do
+	${2:bucket} = start_supervised!(${1:KV.Bucket})
+	%{$2: $2}
+end
+endsnippet
+
 snippet su "setup" b
 setup do
 	${2:bucket} = start_supervised!(${1:KV.Bucket})
