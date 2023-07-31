@@ -42,6 +42,9 @@ matches:
   - trigger: fire,.
     replace: firebase
 
+  - trigger: fs,.
+    replace: firestore
+
   - trigger: fw,.
     replace: framework
 
