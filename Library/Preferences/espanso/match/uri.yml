@@ -21,6 +21,9 @@ matches:
   - trigger: H:,.
     replace: http://
 
+  - trigger: d:,.
+    replace: "due:"
+
   - trigger: dc,.
     replace: docker-compose.yml
 
