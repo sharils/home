@@ -72,6 +72,7 @@ m() {
     shift
     case "$1" in
     '') shift && MIX_ENV=prod mix release ;;
+    i) shift && MIX_ENV=prod mix release.init "$@" ;;
     nh) shift && m run --no-halt "$@" ;;
     *) m run "$@" ;;
     esac
