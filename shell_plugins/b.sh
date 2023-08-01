@@ -20,7 +20,13 @@ b() {
 
   case "$1" in
   cr) shift && BROWSER=/Applications/Chromium.app/Contents/MacOS/Chromium "$@" ;;
-  e) shift && $EDITOR "$@" ~/.bash_profile ;;
+  e)
+    shift
+    case "$1" in
+    '') $EDITOR "$@" ~/.bash_profile ;;
+    *) brew edit "$@" ;;
+    esac
+    ;;
   f) shift && BROWSER=/Applications/Firefox.app/Contents/MacOS/firefox "$@" ;;
   i) shift && brew install "$@" ;;
   l) shift && BROWSER=lynx "$@" ;;
