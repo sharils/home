@@ -4,6 +4,9 @@ matches:
   - trigger: avg,.
     replace: average
 
+  - trigger: empty,.
+    replace: ∅
+
   - trigger: eq,.
     replace: equal to
 
