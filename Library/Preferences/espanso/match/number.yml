@@ -15,5 +15,65 @@ matches:
   - trigger: m,.
     replace: 000000
 
+  - trigger: r1,.
+    replace: Ⅰ
+
+  - trigger: r2,.
+    replace: Ⅱ
+
+  - trigger: r3,.
+    replace: Ⅲ
+
+  - trigger: r4,.
+    replace: Ⅳ
+
+  - trigger: r5,.
+    replace: Ⅴ
+
+  - trigger: r6,.
+    replace: Ⅵ
+
+  - trigger: r7,.
+    replace: Ⅶ
+
+  - trigger: r8,.
+    replace: Ⅷ
+
+  - trigger: r9,.
+    replace: Ⅸ
+
+  - trigger: r10,.
+    replace: Ⅹ
+
+  - trigger: r11,.
+    replace: Ⅺ
+
+  - trigger: r12,.
+    replace: Ⅻ
+
+  - trigger: r50,.
+    replace: Ⅼ
+
+  - trigger: r1h,.
+    replace: Ⅽ
+
+  - trigger: r5h,.
+    replace: Ⅾ
+
+  - trigger: r1k,.
+    replace: Ⅿ
+
+  - trigger: r5k,.
+    replace: ↁ
+
+  - trigger: r1w,.
+    replace: ↂ
+
+  - trigger: r5w,.
+    replace: ↇ
+
+  - trigger: r10w,.
+    replace: ↈ
+
   - trigger: w,.
     replace: 0000
