@@ -12,6 +12,9 @@ matches:
   - trigger: bm,.
     replace: bookmark
 
+  - trigger: cal,.
+    replace: calendar
+
   - trigger: char,.
     replace: character
 
