@@ -1,6 +1,10 @@
 #!/usr/bin/env sh
 
 i() {
+  if [ -d .git ]; then
+    echo '.git exists' >&2
+    return 1
+  fi
   git init "$@"
   [ -n "$G_I" ] && "$G_I"
   git commit --allow-empty --message "Initialize empty Git repository"
