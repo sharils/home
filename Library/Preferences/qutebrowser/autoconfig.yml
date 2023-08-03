@@ -26,6 +26,7 @@ settings:
     www.phind.com: no-unknown-3rdparty
     www.sharedrop.io: no-unknown-3rdparty
     www.typescriptlang.org: no-unknown-3rdparty
+    www.wolframalpha.com: no-unknown-3rdparty
   content.cookies.store:
     global: false
   content.headers.accept_language:
@@ -125,6 +126,7 @@ settings:
     www.railway.gov.tw: true
     www.sharedrop.io: true
     www.typescriptlang.org: true
+    www.wolframalpha.com: true
   content.local_storage:
     '*.wikidata.org': true
     'file://*': true
