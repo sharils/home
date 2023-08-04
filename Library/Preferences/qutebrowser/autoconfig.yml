@@ -209,7 +209,7 @@ settings:
       sp: https://www.skypack.dev/search?q={}
       su: https://swurl.com/?q={}
       tldr: https://tldr.ostera.io/{}
-      tpl:
+      tcl:
         https://ipac.library.taichung.gov.tw/webpac/search.cfm?m=ss&k0={}&t0=k&c0=and
       u: https://search.brave.com/search?q=qutebrowser+{}
       vm: https://vimeo.com/search?q={}
