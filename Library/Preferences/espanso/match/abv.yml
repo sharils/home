@@ -83,6 +83,9 @@ matches:
   - trigger: lat,.
     replace: latitude
 
+  - trigger: lf,.
+    replace: loyalty free
+
   - trigger: lib,.
     replace: library
 
