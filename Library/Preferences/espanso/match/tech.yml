@@ -108,6 +108,9 @@ matches:
   - trigger: pwa,.
     replace: progressive web app
 
+  - trigger: qtp,.
+    replace: QuickTime Player
+
   - trigger: rdbms,.
     replace: relational database management system
 
