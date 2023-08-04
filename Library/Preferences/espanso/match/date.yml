@@ -18,3 +18,24 @@ matches:
 
   - trigger: 0:,.
     replace: 23:59
+
+  - trigger: sun,.
+    replace: Sunday
+
+  - trigger: mon,.
+    replace: Monday
+
+  - trigger: tue,.
+    replace: Tuesday
+
+  - trigger: wed,.
+    replace: Wednesday
+
+  - trigger: thu,.
+    replace: Thursday
+
+  - trigger: fri,.
+    replace: Fridayday
+
+  - trigger: sat,.
+    replace: Saturday
