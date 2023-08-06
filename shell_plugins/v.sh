@@ -34,6 +34,7 @@ v() {
     esac
     vim "index.$1"
     ;;
+  mj) vim manifest.json ;;
   mk) vim Makefile ;;
   rm) vim README.md ;;
   s) vim server.js ;;
