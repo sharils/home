@@ -143,7 +143,7 @@ settings:
     global: qute://bookmarks/#bookmarks
   url.searchengines:
     global:
-      DEFAULT: https://www.ecosia.org/search?q={}
+      DEFAULT: https://lite.duckduckgo.com/lite/?q={}
       ab: https://archive.org/details/inlibrary?sin=&and%5B%5D={}
       b: https://search.brave.com/search?q={}
       bg: https://biggo.com.tw/s/?q={}&view=l&sort=lp
