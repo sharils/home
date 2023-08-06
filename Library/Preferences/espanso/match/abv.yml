@@ -9,6 +9,9 @@ matches:
   - trigger: authen,.
     replace: authentication
 
+  - trigger: bg,.
+    replace: background
+
   - trigger: bm,.
     replace: bookmark
 
