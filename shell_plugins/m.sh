@@ -19,6 +19,8 @@ m() {
     esac
     ;;
 
+  cap) open -b com.apple.Music 'https://playerservices.streamtheworld.com/pls/ClassicalStreamAAC.pls' ;;
+
   d)
     shift
     if [ $# -eq 0 ]; then
