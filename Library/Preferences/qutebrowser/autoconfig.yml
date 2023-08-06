@@ -16,6 +16,7 @@ settings:
     astexplorer.net: no-unknown-3rdparty
     developer.mozilla.org: no-unknown-3rdparty
     global: never
+    github.com: no-unknown-3rdparty
     hexdocs.pm: no-unknown-3rdparty
     hn.algolia.com: no-unknown-3rdparty
     ipac.nlpi.edu.tw: no-unknown-3rdparty
