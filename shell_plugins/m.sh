@@ -66,6 +66,8 @@ m() {
 
   p) shift && "$SHARILS_HOME/shell_plugins/m/p.sh" "$@" ;;
 
+  peaceful) open -b com.apple.Music 'https://peacefulpiano.stream.publicradio.org/peacefulpiano.aac' ;;
+
   pj) m package-json ;;
 
   r)
