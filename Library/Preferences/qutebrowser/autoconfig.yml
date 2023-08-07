@@ -8,6 +8,8 @@ config_version: 2
 settings:
   auto_save.session:
     global: true
+  colors.webpage.darkmode.enabled:
+    global: true
   content.cookies.accept:
     'file://*': all
     '*.wikidata.org': no-unknown-3rdparty
