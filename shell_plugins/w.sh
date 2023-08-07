@@ -11,7 +11,11 @@ w() {
 
   ex) shift && w m --pattern '**/*.ex' '**/*.exs' --run "${*:-mix test && mix format}" ;;
 
-  js) shift && w m --pattern '**/*.js' '**/*.jsx' '**/*.ts' '**/*.tsx' --run "${*:-npm test}" ;;
+  js) shift && w m --pattern \
+    '**/*.js' '**/*.jsx' '**/*.ts' '**/*.tsx' \
+    '**/*.cjs' '**/*.cjsx' '**/*.cts' '**/*.ctsx' \
+    '**/*.mjs' '**/*.mjsx' '**/*.mts' '**/*.mtsx' \
+    --run "${*:-npm test}" ;;
 
   m)
     shift
@@ -19,8 +23,8 @@ w() {
     t)
       shift
       case "$1" in
-      f) shift && set -- --failed "$@";;
-      mf) shift && set -- --max-failures "${@:-1}";;
+      f) shift && set -- --failed "$@" ;;
+      mf) shift && set -- --max-failures "${@:-1}" ;;
       esac
       w ex mix test "$@"
       ;;
