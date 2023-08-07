@@ -28,9 +28,12 @@ p() {
     s)
       shift
       cmd="$1" && shift
-      p s scripts."$cmd"="$*"
+      p s "scripts.$cmd" "$@"
       ;;
-    *) npm pkg set "$@" ;;
+    *)
+      cmd="$1" && shift
+      npm pkg set "$cmd"="$*"
+      ;;
     esac
     ;;
   init) echo {} >.prettierrc.json ;;
