@@ -59,5 +59,18 @@ TEXT
 
   uri) echo "!'()*-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~" ;;
 
+  zip)
+    shift
+    z t_init
+    dir="$(z t && echo "$PWD")"
+    cd "$dir" || return $?
+    path="$(k b)"
+    printf %s "$*" > "$path"
+    zip -er "$path.zip" "$path"
+    rm "$path"
+    cd - || return $?
+    printf %s "$dir/$path.zip" | pbcopy
+    ;;
+
   esac
 }
