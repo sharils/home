@@ -33,6 +33,7 @@ n() {
       return $?
     fi
     case "$1" in
+    m) vim "$(npm pkg get main | jq -r)" ;;
     s) vim server.js ;;
     *)
       tmp="$(mktemp)"
