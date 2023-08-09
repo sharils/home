@@ -33,6 +33,7 @@ n() {
       return $?
     fi
     case "$1" in
+    s) vim server.js ;;
     *)
       tmp="$(mktemp)"
       grep --line-number --with-filename "$1" package.json >"$tmp"
