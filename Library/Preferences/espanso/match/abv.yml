@@ -134,11 +134,11 @@ matches:
   - trigger: sci,.
     replace: science
 
-  - trigger: ssot,.
-    replace: single source of truth
-
   - trigger: so,.
     replace: significant other
+
+  - trigger: ssot,.
+    replace: single source of truth
 
   - trigger: sth,.
     replace: something
