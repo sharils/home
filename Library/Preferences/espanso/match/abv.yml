@@ -134,6 +134,9 @@ matches:
   - trigger: sci,.
     replace: science
 
+  - trigger: smart,.
+    replace: Specific, Measurable, Achievable, Relevant, and Time-bound
+
   - trigger: so,.
     replace: significant other
 
