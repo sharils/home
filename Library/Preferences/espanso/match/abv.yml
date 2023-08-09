@@ -1,5 +1,8 @@
 ---
 matches:
+  - trigger: alt,.
+    replace: alternative
+
   - trigger: arch,.
     replace: architecture
 
