@@ -32,9 +32,13 @@ n() {
       $EDITOR ./package.json
       return $?
     fi
-    tmp="$(mktemp)"
-    grep --line-number --with-filename "$1" package.json >"$tmp"
-    vim -q "$tmp"
+    case "$1" in
+    *)
+      tmp="$(mktemp)"
+      grep --line-number --with-filename "$1" package.json >"$tmp"
+      vim -q "$tmp"
+      ;;
+    esac
     ;;
 
   eas) shift && n eas-cli "$@" ;;
@@ -47,7 +51,7 @@ n() {
 
   i) shift && "$SHARILS_HOME/shell_plugins/n/i.sh" "$@" ;;
 
-  jq) shift && jq < package.json "$@" ;;
+  jq) shift && jq <package.json "$@" ;;
 
   krampus) shift && "$SHARILS_HOME/shell_plugins/n/krampus.sh" "$@" ;;
 
