@@ -143,6 +143,9 @@ matches:
   - trigger: so,.
     replace: significant other
 
+  - trigger: ss,.
+    replace: spreadsheet
+
   - trigger: ssot,.
     replace: single source of truth
 
