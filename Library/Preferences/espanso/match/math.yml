@@ -7,6 +7,9 @@ matches:
   - trigger: empty,.
     replace: ∅
 
+  - trigger: epsi,.
+    replace: ε
+
   - trigger: eq,.
     replace: equal to
 
