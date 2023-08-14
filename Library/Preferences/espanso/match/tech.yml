@@ -144,6 +144,9 @@ matches:
   - trigger: ssr,.
     replace: server side rendering
 
+  - trigger: sys,.
+    replace: system
+
   - trigger: sw,.
     replace: service worker
 
