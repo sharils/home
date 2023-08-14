@@ -88,6 +88,7 @@ m() {
     '') shift && MIX_ENV=prod mix release ;;
     i) shift && MIX_ENV=prod mix release.init "$@" ;;
     nh) shift && m run --no-halt "$@" ;;
+    ns) shift && iex -S mix run --no-start "$@" ;;
     *) m run "$@" ;;
     esac
     ;;
