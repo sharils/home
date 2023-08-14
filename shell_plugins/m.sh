@@ -34,7 +34,15 @@ m() {
     esac
     ;;
 
-  e) $EDITOR mix.exs ;;
+  e)
+    if [ $# -eq 0 ]; then
+      $EDITOR mix.exs
+      return
+    fi
+    case "$1" in
+    c) shift && m ecto.create "$@" ;;
+    esac
+    ;;
 
   erl) erl -man erl | l ;;
 
