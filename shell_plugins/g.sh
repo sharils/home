@@ -35,6 +35,10 @@ g() {
     case "$1" in
     e) git config --local "${@:---edit}" ;;
     t | *)
+      if [ -f "$1" ]; then
+        git cl "$@"
+        return $?
+      fi
       case "$1" in
       ~) shift && x mp "$HOME$(dirname "$(echo "$*" | sed 's#https:/#git#;s#[@:]#/#g;s#^#/#')")" ;;
       t) shift && z t ;;
