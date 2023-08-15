@@ -3,7 +3,7 @@
 f() {
   cmd="$1"
   case "$cmd" in
-  i) cmd='init' ;;
+  i) shift && git flow init "${@:---force}" ;;
   f) cmd='feature' ;;
   b) cmd='bugfix' ;;
   r) cmd='release' ;;
