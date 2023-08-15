@@ -18,7 +18,12 @@ p() {
     esac
     ;;
   i) shift && iex -S mix phx.server "$@" ;;
-  n) shift && mix phx.new "$@" ;;
+  n)
+    shift
+    path="${1:-hello_world}" && shift
+    mix phx.new "$path" "$@" --install
+    cd "$path" || return $?
+    ;;
   s) shift && mix phx.server "$@" ;;
   v) shift && mix phx.new --version "$@" ;;
   esac
