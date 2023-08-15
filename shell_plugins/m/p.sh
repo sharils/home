@@ -13,6 +13,7 @@ p() {
     n) shift && mix phx.gen.notifier "$@" ;;
     p) shift && mix phx.gen.presence "$@" ;;
     r) shift && mix phx.gen.release "$@" ;;
+    schema) shift && mix phx.gen.schema "$@" ;;
     *) mix phx.gen "$@" ;;
     esac
     ;;
