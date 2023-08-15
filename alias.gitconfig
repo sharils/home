@@ -15,6 +15,7 @@
 	ceF = commit --edit --file=.git/COMMIT_EDITMSG
 	cg = config --global
 	cl = clean --force
+	cld = clean --force -d
 	cu = config --get remote.origin.url
 	cm = commit --message
 	cma = !sh -c 'git commit --message \"Add $0 $*\"'
