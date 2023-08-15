@@ -3,6 +3,7 @@ bind generic g<SPACE>       view-grep
 bind generic gau            @git au
 bind generic gcC            @git c --reuse-message %(commit)
 bind status  gcl<ENTER>     @git cl %(file)
+bind status  gcld<ENTER>    @git cld %(file)
 bind generic gcm<SPACE>     !git cm '%(prompt)'
 bind generic gcma           !git cma '%(prompt Add )'
 bind generic gcmc           !git cmc '%(prompt Change )'
