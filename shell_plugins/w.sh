@@ -5,7 +5,7 @@ w() {
 
   c) shift && w rs cargo "$@" ;;
 
-  dk) w m --pattern 'Dockerfile' --run 'docker build .' ;;
+  d) w m --pattern 'Dockerfile' --run 'docker build .' ;;
 
   eslint) shift && w js "npx eslint $*" ;;
 
