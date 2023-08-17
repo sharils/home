@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 b() {
-  base="$(basename "$PWD" | x hostnameise)"
+  base="$(basename "$PWD" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^[:alnum:]]+/-/g')"
   name="${base}_$USER"
   tag="$base/$USER"
   case "$1" in
