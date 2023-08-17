@@ -18,6 +18,9 @@ matches:
   - trigger: as,.
     replace: applescript
 
+  - trigger: asm,.
+    replace: assembly
+
   - trigger: cert,.
     replace: certificate
 
