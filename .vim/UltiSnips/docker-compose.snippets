@@ -171,7 +171,7 @@ snippet psql "psql" b
 psql:
 	image: postgres:${1:15.2}-alpine${2:3.17}
 	environment:
-		PGHOST: db
+		PGHOST: ${POSTGRES_HOST}
 		PGUSER: ${POSTGRES_USER}
 		PGPASSWORD: ${POSTGRES_PASSWORD}
 		PGDATABASE: ${POSTGRES_DB}
