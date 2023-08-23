@@ -10,5 +10,8 @@ matches:
   - trigger: posa,.
     replace: Pattern-Oriented Software Architecture
 
+  - trigger: sn,.
+    replace: Security Now!
+
   - trigger: trpl,.
     replace: The Rust Programming Language
