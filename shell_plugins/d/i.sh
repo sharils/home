@@ -10,7 +10,7 @@ i() {
     i save "$@" | gzip >"$image"
     echo "docker load < $image # to load image" >&2
     ;;
-  *) docker image "$@" ;;
+  *) docker image "${@:-ls}" ;;
   esac
 }
 
