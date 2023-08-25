@@ -49,8 +49,9 @@
 	ra = rebase --abort
 	rc = rebase --continue
 	ro = rebase --onto
-	rs = reset --skip
+	rs = reset
 	rsH = reset --hard
+	rsm = reset --merge
 	u = reset
 	uh = reset --hard
 	um = reset --merge
