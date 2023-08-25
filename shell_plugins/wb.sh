@@ -2,9 +2,9 @@
 
 wb() {
   case "$1" in
-    -S) shift && wb search "$@" ;;
     i) shift && wb install "$@" ;;
     ls) shift && wb list "$@" ;;
+    s) shift && wb search "$@" ;;
     *) whalebrew "$@" ;;
   esac
 }
