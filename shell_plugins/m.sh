@@ -42,6 +42,11 @@ m() {
     fi
     case "$1" in
     c) shift && m ecto.create "$@" ;;
+    *)
+      tmp="$(mktemp)"
+      grep --line-number --with-filename "$1" mix.exs >"$tmp"
+      vim -q "$tmp"
+      ;;
     esac
     ;;
 
