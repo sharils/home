@@ -25,6 +25,7 @@ settings:
     lernu.net: no-unknown-3rdparty
     mermaid.live: no-unknown-3rdparty
     nx.dev: no-unknown-3rdparty
+    shyyp.net: no-unknown-3rdparty
     vimeo.com: no-unknown-3rdparty
     www.phind.com: no-unknown-3rdparty
     www.sharedrop.io: no-unknown-3rdparty
@@ -116,6 +117,7 @@ settings:
     reactnative.dev: true
     schema.org: true
     search.brave.com: true
+    shyyp.net: true
     stackoverflow.com: true
     stedolan.github.io: true
     superuser.com: true
@@ -209,10 +211,12 @@ settings:
       s: https://serĉu.com/search?q={}
       sc: https://github.com/koalaman/shellcheck/wiki/{}
       se: https://www.se-radio.net/?s=%22se+radio+{}%22
+      shyyp: https://shyyp.net/hant/searoh?q={}
       sn: https://www.grc.com/sn/sn-{}.htm
       so:
         https://stackoverflow.com/search?q={}&s=fc2bd8dc-a211-4fce-9651-d6d1657d10a2
       sp: https://www.skypack.dev/search?q={}
+      su: https://swurl.com/?q={}
       su: https://swurl.com/?q={}
       tldr: https://tldr.ostera.io/{}
       tcl:
