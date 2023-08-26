@@ -17,6 +17,7 @@ settings:
     127.0.0.1: no-unknown-3rdparty
     astexplorer.net: no-unknown-3rdparty
     developer.mozilla.org: no-unknown-3rdparty
+    black.vercel.app: no-unknown-3rdparty
     global: never
     github.com: no-unknown-3rdparty
     hexdocs.pm: no-unknown-3rdparty
@@ -88,6 +89,7 @@ settings:
     'file://*': true
     127.0.0.1: true
     astexplorer.net: true
+    black.vercel.app: true
     c.im: true
     devdocs.io: true
     developer.mozilla.org: true
