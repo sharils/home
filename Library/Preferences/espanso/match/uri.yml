@@ -30,6 +30,9 @@ matches:
   - trigger: ddg,.
     replace: duckduckgo
 
+  - trigger: df,.
+    replace: Dockerfile
+
   - trigger: eg,.
     replace: example.com
 
