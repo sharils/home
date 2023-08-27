@@ -43,6 +43,9 @@ yarn.lock
 acme-staging{,-v02}.api.letsencrypt.org
 acme-v0{1,2}.api.letsencrypt.org
 
+# phoenix
+**/assets/vendor
+
 # python
 *.pyc
 .pytest_cache
