@@ -30,7 +30,6 @@ bind status  Gcfh<ENTER>   +git commit --fixup %(head)
 bind generic Gcm<ENTER>    !git commit --message %(prompt)
 bind main    Gcrm<ENTER>   +git commit --reuse-message %(commit)
 
-bind main    Gco<ENTER>    @git checkout %(commit)
 bind main    Gco-<ENTER>   @git checkout -
 bind refs    Gco-<ENTER>   @git checkout -
 bind main    Gcob<ENTER>   @git checkout -b %(prompt) %(commit)
