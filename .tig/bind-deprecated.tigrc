@@ -81,9 +81,6 @@ bind diff    Grm<ENTER>    +git rm %(file)
 bind main    Gsht<ENTER>   !git show %(tag)
 bind refs    Gsht<ENTER>   !git show %(tag)
 
-bind main    Gstp<ENTER>   +git stash pop
-bind stash   Gstp<ENTER>   +git stash pop
-bind status  Gstp<ENTER>   +git stash pop
 bind main    Gst<ENTER>    +git stash
 bind stash   Gst<ENTER>    +git stash
 bind status  Gst<ENTER>    +git stash
