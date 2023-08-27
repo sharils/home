@@ -64,7 +64,8 @@ g() {
     "$SHARILS_HOME/.tig/bind-gitconfig.tigrc" \
     "$SHARILS_HOME/.tig/bind-fugitive.tigrc" \
     "$SHARILS_HOME/.tig/bind-deprecated.tigrc" \
-    "$SHARILS_HOME/.gitignore" ;;
+    "$SHARILS_HOME/.gitignore" \
+    "$SHARILS_HOME/.gitconfig" ;;
 
   i) shift && "$SHARILS_HOME/shell_plugins/g/i.sh" "$@" ;;
 
