@@ -81,9 +81,6 @@ bind diff    Grm<ENTER>    +git rm %(file)
 bind main    Gsht<ENTER>   !git show %(tag)
 bind refs    Gsht<ENTER>   !git show %(tag)
 
-bind main    Gst<ENTER>    +git stash
-bind stash   Gst<ENTER>    +git stash
-bind status  Gst<ENTER>    +git stash
 
 bind main    Gt<ENTER>     !git tag --annotate --sign %(prompt) %(commit)
 bind main    Gtmp<ENTER>   @sh -c 'git tag "$(date +%Y%m%dT%H%M%S%z | sed "s/00$//")" %(commit)'
