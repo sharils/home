@@ -77,7 +77,6 @@ bind main    Gtmp<ENTER>   @sh -c 'git tag "$(date +%Y%m%dT%H%M%S%z | sed "s/00$
 bind main    Gtd<ENTER>    ?git tag --delete %(tag)
 bind refs    Gtd<ENTER>    ?git tag --delete %(tag)
 
-bind generic Gffs<ENTER>   !sh -c 'git flow feature start "$(echo %(prompt) | sed -E "s/[^[:alnum:]]+/-/g")"'
 bind generic Gfff<ENTER>   !sh -c 'git flow feature finish "$(echo %(branch) | cut -f2- -d/)"'
 bind generic Gffr<ENTER>   !sh -c 'git flow feature rebase'
 bind generic Gfbs<ENTER>   !sh -c 'git flow bugfix start "$(echo %(prompt) | sed -E "s/[^[:alnum:]]+/-/g")"'
