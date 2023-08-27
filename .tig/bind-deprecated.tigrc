@@ -29,9 +29,6 @@ bind main    Gco-<ENTER>   @git checkout -
 bind refs    Gco-<ENTER>   @git checkout -
 bind refs    Gcoo<ENTER>   @git checkout --ours %(file)
 
-bind main    Gclean<ENTER> ?git clean --force -d
-bind status  Gclean<ENTER> ?git clean --force -d
-
 bind main    Gch<ENTER>    !git cherry -v %(commit)
 
 bind main    Gd<ENTER>     !git diff %(commit) @
