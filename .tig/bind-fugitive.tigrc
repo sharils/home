@@ -32,13 +32,13 @@ bind generic ;cza           @git cza
 bind generic ;czp           @git czp
 
 ## Rebase maps
-bind generic ;ri            !git rebase --interactive %(commit)~
-bind refs    ;ri            !git rebase --interactive %(ref)
-bind generic ;rf            !git -c sequence.editor=true rebase --autosquash --interactive %(commit)~
-bind generic ;rr            !git rebase --continue
-bind generic ;rs            !git rebase --skip
-bind generic ;ra            @git rebase --abort
-bind generic ;re            !git rebase --edit-todo
+bind generic ;ri            !git r --interactive %(commit)~
+bind refs    ;ri            !git r --interactive %(ref)
+bind generic ;rf            !git -c sequence.editor=true r --autosquash --interactive %(commit)~
+bind generic ;rr            !git r --continue
+bind generic ;rs            !git r --skip
+bind generic ;ra            @git r --abort
+bind generic ;re            !git r --edit-todo
 
 ## Miscellaneous maps
 
