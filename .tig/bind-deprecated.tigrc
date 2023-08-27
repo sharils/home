@@ -21,8 +21,6 @@ bind main    Gcal<ENTER>   !git commit -vv --all
 bind status  Gcal<ENTER>   !git commit -vv --all
 bind main    GcF<ENTER>    !git commit --edit --file=.git/COMMIT_EDITMSG
 bind status  GcF<ENTER>    !git commit --edit --file=.git/COMMIT_EDITMSG
-bind main    Gcf<ENTER>    +git commit --fixup %(commit)
-bind status  Gcf<ENTER>    +git commit --fixup %(commit)
 bind main    Gcfh<ENTER>   +git commit --fixup %(head)
 bind status  Gcfh<ENTER>   +git commit --fixup %(head)
 bind generic Gcm<ENTER>    !git commit --message %(prompt)
