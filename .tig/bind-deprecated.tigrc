@@ -19,8 +19,6 @@ bind main    Gc<ENTER>     !git commit -vv
 bind status  Gc<ENTER>     !git commit -vv
 bind main    Gcal<ENTER>   !git commit -vv --all
 bind status  Gcal<ENTER>   !git commit -vv --all
-bind main    Gca<ENTER>    !git commit --amend
-bind status  Gca<ENTER>    !git commit --amend
 bind main    GcF<ENTER>    !git commit --edit --file=.git/COMMIT_EDITMSG
 bind status  GcF<ENTER>    !git commit --edit --file=.git/COMMIT_EDITMSG
 bind main    Gcf<ENTER>    +git commit --fixup %(commit)
