@@ -64,7 +64,6 @@ bind refs    Gpt<ENTER>    !git push %(remote) %(tag)
 bind main    Gpt:<ENTER>   ?git push %(remote) :%(tag)
 bind refs    Gpt:<ENTER>   ?git push %(remote) :%(tag)
 
-bind main    Grbo<ENTER>   !git rebase --interactive --onto %(prompt) %(commit)
 bind main    Grboh<ENTER>  !sh -c 'git rebase `git symbolic-ref refs/remotes/origin/HEAD`'
 bind main    Grbs<ENTER>   !git rebase --autosquash --interactive %(commit)
 
