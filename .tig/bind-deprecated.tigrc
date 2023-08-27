@@ -12,8 +12,6 @@ bind main    Gbg<ENTER>    +git bisect good
 bind main    Gbrs<ENTER>   +git bisect reset
 bind main    Gbs<ENTER>    !git bisect start %(head) %(commit)
 
-bind main    Gc<ENTER>     !git commit -vv
-bind status  Gc<ENTER>     !git commit -vv
 bind main    Gcal<ENTER>   !git commit -vv --all
 bind status  Gcal<ENTER>   !git commit -vv --all
 bind main    GcF<ENTER>    !git commit --edit --file=.git/COMMIT_EDITMSG
