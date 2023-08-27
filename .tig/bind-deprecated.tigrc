@@ -27,7 +27,6 @@ bind main    Gcrm<ENTER>   +git commit --reuse-message %(commit)
 
 bind main    Gco-<ENTER>   @git checkout -
 bind refs    Gco-<ENTER>   @git checkout -
-bind main    Gcob<ENTER>   @git checkout -b %(prompt) %(commit)
 bind refs    Gcoo<ENTER>   @git checkout --ours %(file)
 
 bind main    Gclean<ENTER> ?git clean --force -d
