@@ -5,7 +5,7 @@
 ## Diff maps
 
 ## Navigation maps
-bind status  (              :?^[?AMU]
+bind status  (              :?^[?ADMU]
 bind status  )              :/^[?AMU]
 bind stage   (              :?^@@
 bind stage   )              :/^@@
