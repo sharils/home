@@ -1,13 +1,34 @@
-.DS_Store
-.envrc
-Session.vim
-__pycache__
+# ctags
 tags
-gitignore.*
+
+# direnv
+.envrc
+
+# django
 /.dbshell
+
+# macos
+.DS_Store
+
+# mongodb
 /.mongorc.js
+
+# python
+__pycache__
+
+# vim
 /.vim/.netrwhist
+
+# vim-obsession
+Session.vim
+
+# vim-plug
 /.vim/plugged/*
 !.vim/plugged/after
 !.vim/plugged/before
+
+# custom
+gitignore.*
+
+# unknown
 /doc/tags
