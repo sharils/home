@@ -17,8 +17,8 @@ bind generic ;cc            !git c
 bind generic ;ca            !git c --amend
 bind generic ;ce            @git c --amend --no-edit
 bind generic ;cw            !git cw
-bind generic ;crc           @git revert %(commit)
-bind generic ;crn           @git revert --no-commit %(commit)
+bind generic ;crc           @git cr %(commit)
+bind generic ;crn           @git cr --no-commit %(commit)
 
 ## Checkout/branch maps
 bind generic ;cf            @git c --fixup %(commit)
