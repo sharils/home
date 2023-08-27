@@ -21,7 +21,7 @@ Plug 'https://github.com/inkarkat/vim-ingo-library' | Plug 'inkarkat/vim-mark'
 Plug 'https://github.com/tpope/vim-obsession'
 Plug 'https://github.com/sheerun/vim-polyglot'
 Plug 'https://github.com/prettier/vim-prettier', { 'do': 'rm -rf node_modules && npx --yes yarn install --frozen-lockfile --production' }
-" Plug 'https://github.com/tpope/vim-repeat'
+Plug 'https://github.com/tpope/vim-repeat'
 Plug 'https://github.com/tpope/vim-sensible'
 Plug 'https://github.com/vitalk/vim-shebang'
 " Plug 'https://github.com/tpope/vim-sleuth'
