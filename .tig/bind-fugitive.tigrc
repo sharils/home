@@ -5,6 +5,7 @@
 ## Diff maps
 
 ## Navigation maps
+bind status  (              :?^[?AMU]
 
 ## Commit maps
 bind generic ;cc            !git commit
