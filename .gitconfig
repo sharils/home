@@ -1,6 +1,6 @@
 [commit]
 	gpgsign = true
-	verbose = true
+	verbose = 2
 [core]
 	autocrlf = input
 	excludesfile = ~/.gitignore
