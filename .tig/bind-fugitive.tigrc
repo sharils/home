@@ -6,7 +6,7 @@
 
 ## Navigation maps
 bind status  (              :?^[?ADMU]
-bind status  )              :/^[?AMU]
+bind status  )              :/^[?ADMU]
 bind stage   (              :?^@@
 bind stage   )              :/^@@
 bind stage   +              :?^[+-](?![+-]{2})
