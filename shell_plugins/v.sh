@@ -22,7 +22,7 @@ v() {
 
   case "$1" in
 
-  e) vim ~/.vimrc ;;
+  e) vim -p "$SHARILS_HOME/.vimrc" "$SHARILS_HOME/.vim/plugged/after/plugin/set.vim" "$SHARILS_HOME/.vim/plugged/after/plugin/map.vim" "$SHARILS_HOME/.vim/plugged/after/plugin" "$SHARILS_HOME/.vim/plugged/before/plugin" ;;
   hosts) EDITOR=vim sudo --edit /etc/hosts "$@" ;;
   i)
     shift
