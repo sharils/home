@@ -10,6 +10,7 @@ bind status  )              :/^[?AMU]
 bind stage   (              :?^@@
 bind stage   )              :/^@@
 bind stage   +              :?^[+-](?![+-]{2})
+bind stage   =              :/^[+-](?![+-]{2})
 
 ## Commit maps
 bind generic ;cc            !git commit
