@@ -7,6 +7,7 @@
 ## Navigation maps
 bind status  (              :?^[?AMU]
 bind status  )              :/^[?AMU]
+bind stage   (              :?^@@
 
 ## Commit maps
 bind generic ;cc            !git commit
