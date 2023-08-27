@@ -18,8 +18,8 @@ bind main    Gcal<ENTER>   !git commit -vv --all
 bind status  Gcal<ENTER>   !git commit -vv --all
 bind main    GcF<ENTER>    !git commit --edit --file=.git/COMMIT_EDITMSG
 bind status  GcF<ENTER>    !git commit --edit --file=.git/COMMIT_EDITMSG
-bind main    Gcfh<ENTER>   +git commit --fixup %(head)
-bind status  Gcfh<ENTER>   +git commit --fixup %(head)
+# bind main    Gcfh<ENTER>   +git commit --fixup %(head)
+# bind status  Gcfh<ENTER>   +git commit --fixup %(head)
 bind main    Gcrm<ENTER>   +git commit --reuse-message %(commit)
 
 bind main    Gco-<ENTER>   @git checkout -
