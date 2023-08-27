@@ -5,9 +5,6 @@ bind main    <C-G>         +sh -c 'pbcopy <<< %(commit); pbpaste'
 bind main    Ga<ENTER>     @git add %(prompt)
 bind status  Ga<ENTER>     @git add %(prompt)
 
-bind main    Gau<ENTER>    @git add --update
-bind status  Gau<ENTER>    @git add --update
-
 bind refs    Gbmf<ENTER>    @sh -c 'git branch -m "$(echo feature/%(prompt) | tr " " "-")"'
 
 bind main    Gbb<ENTER>    +git bisect bad
