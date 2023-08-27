@@ -34,8 +34,6 @@ bind main    Gco-<ENTER>   @git checkout -
 bind refs    Gco-<ENTER>   @git checkout -
 bind main    Gcob<ENTER>   @git checkout -b %(prompt) %(commit)
 bind refs    Gcoo<ENTER>   @git checkout --ours %(file)
-bind main    Gco/<ENTER>   ?git checkout :/
-bind status  Gco/<ENTER>   ?git checkout :/
 
 bind main    Gclean<ENTER> ?git clean --force -d
 bind status  Gcl<ENTER>    ?git clean --force %(file)
