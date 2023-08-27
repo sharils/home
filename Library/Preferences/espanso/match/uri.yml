@@ -90,6 +90,9 @@ matches:
   - trigger: rm,.
     replace: README.md
 
+  - trigger: seradio,.
+    replace: se-radio.net
+
   - trigger: sm,.
     replace: sitemap.xml
 
