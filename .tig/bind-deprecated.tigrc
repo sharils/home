@@ -75,7 +75,6 @@ bind main    Grsm<ENTER>   ?git reset --merge
 bind status  Grsm<ENTER>   ?git reset --merge
 bind status  Gus<ENTER>    @git reset %(head)
 
-bind main    Grvt<ENTER>   +git revert --mainline 1 %(commit)
 bind main    Grvtnc<ENTER> +git revert --no-commit %(commit)
 
 bind diff    Grm<ENTER>    +git rm %(file)
