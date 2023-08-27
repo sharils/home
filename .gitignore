@@ -29,6 +29,3 @@ Session.vim
 
 # custom
 gitignore.*
-
-# unknown
-/doc/tags
