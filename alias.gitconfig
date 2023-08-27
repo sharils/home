@@ -34,6 +34,7 @@
 	cr = revert
 	cw = commit --amend --only
 	czp = stash pop --index
+	czw = stash push --keep-index
 	czz = stash push
 	d = diff
 	ds = diff --staged
