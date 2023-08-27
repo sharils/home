@@ -25,11 +25,11 @@ bind generic ;cf            @git c --fixup %(commit)
 bind generic ;cF            @sh -c 'git commit --fixup %(commit) && git -c sequence.editor=true rebase --autosquash --interactive %(commit)~'
 
 ## Stash maps
-bind generic ;czz           @git stash push
-bind generic ;czw           @git stash push --keep-index
+bind generic ;czz           @git cz
+bind generic ;czw           @git czw
 bind generic ;czA           @git stash apply
-bind generic ;cza           @git stash apply --index
-bind generic ;czp           @git stash pop --index
+bind generic ;cza           @git cza
+bind generic ;czp           @git czp
 
 ## Rebase maps
 bind generic ;ri            !git rebase --interactive %(commit)~
