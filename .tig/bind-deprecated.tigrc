@@ -2,8 +2,8 @@ bind main    G             none
 
 bind main    <C-G>         +sh -c 'pbcopy <<< %(commit); pbpaste'
 
-bind main    Ga<ENTER>     @git add %(prompt)
-bind status  Ga<ENTER>     @git add %(prompt)
+# bind main    Ga<ENTER>     @git add %(prompt)
+# bind status  Ga<ENTER>     @git add %(prompt)
 
 # bind refs    Gbmf<ENTER>    @sh -c 'git branch -m "$(echo feature/%(prompt) | tr " " "-")"'
 
