@@ -5,12 +5,12 @@
 ## Diff maps
 
 ## Navigation maps
+bind generic (              :?^@@
+bind generic )              :/^@@
+bind generic +              :?^[+-](?![+-]{2})
+bind generic =              :/^[+-](?![+-]{2})
 bind status  (              :?^[?ADMU]
 bind status  )              :/^[?ADMU]
-bind stage   (              :?^@@
-bind stage   )              :/^@@
-bind stage   +              :?^[+-](?![+-]{2})
-bind stage   =              :/^[+-](?![+-]{2})
 
 ## Commit maps
 bind generic ;cc            !git c
