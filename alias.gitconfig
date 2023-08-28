@@ -28,7 +28,7 @@
 	co = checkout
 	co- = checkout -
 	cod = checkout develop
-	com = rebase origin/main main
+	com = checkout main
 	coo = checkout --ours
 	cot = checkout --theirs
 	cr = revert
