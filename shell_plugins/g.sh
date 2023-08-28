@@ -71,6 +71,8 @@ g() {
 
   mr) shift && "$SHARILS_HOME/shell_plugins/g/mr.sh" "$@" ;;
 
+  pr) shift && "$SHARILS_HOME/shell_plugins/g/pr.sh" "$@" ;;
+
   r) shift && "$SHARILS_HOME/shell_plugins/g/r.sh" "$@" ;;
 
   s) shift && tig status "$@" ;;
