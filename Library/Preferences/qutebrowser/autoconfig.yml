@@ -110,7 +110,6 @@ settings:
     lite.duckduckgo.com: true
     localhost: true
     mermaid.live: true
-    nextjs.org: true
     nx.dev: true
     play.rust-lang.org: true
     qute://*: true
