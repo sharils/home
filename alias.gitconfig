@@ -27,7 +27,7 @@
 	cmx = !sh -c 'git commit --message \"Execute $0 $*\"'
 	co = checkout
 	co- = checkout -
-	cod = rebase origin/develop develop
+	cod = checkout develop
 	com = rebase origin/main main
 	coo = checkout --ours
 	cot = checkout --theirs
