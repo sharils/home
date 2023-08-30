@@ -5,8 +5,6 @@
 ## Diff maps
 
 ## Navigation maps
-bind generic (              :?^@@
-bind generic )              :/^@@
 bind generic +              :?^[+-](?![+-]{2})
 bind generic =              :/^[+-](?![+-]{2})
 bind status  (              :?^[?ADMU]
