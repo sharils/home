@@ -23,7 +23,7 @@ bind generic gds            :!git ds
 bind generic gf             @git f
 bind generic gp<ENTER>      @git p
 bind generic gpb:           @git p %(remote) :%(branch)
-bind generic gpc            @git p %(remote) %(commit):refs/heads/%(prompt)
+bind generic gpc<SPACE>     @git p %(remote) %(commit):refs/heads/%(prompt)
 bind generic gpf            @git pf
 bind generic gro            @git ro %(prompt) %(commit)
 bind generic grs<ENTER>     @git rs
