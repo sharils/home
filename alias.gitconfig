@@ -48,6 +48,7 @@
 	p = push
 	pf = push --force
 	po = push origin
+	pof = push --force origin
 	r = rebase
 	ra = rebase --abort
 	rc = rebase --continue
