@@ -47,6 +47,7 @@
 	mt = mergetool
 	p = push
 	pf = push --force
+	po = push origin
 	r = rebase
 	ra = rebase --abort
 	rc = rebase --continue
