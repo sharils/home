@@ -6,8 +6,9 @@ w() {
   c) shift && w rs cargo "$@" ;;
 
   d)
+    shift
     case "$1" in
-    c) w m --pattern 'Dockerfile' 'docker-compose.yml' --run 'docker compose build' ;;
+    c) shift && w m --pattern 'Dockerfile' 'docker-compose.yml' --run 'docker compose build' ;;
     *) w m --pattern 'Dockerfile' --run 'docker build .' ;;
     esac
     ;;
