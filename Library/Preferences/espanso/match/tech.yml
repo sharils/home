@@ -27,6 +27,9 @@ matches:
   - trigger: chat,.
     replace: ChatGPT
 
+  - trigger: cr,.
+    replace: chromium
+
   - trigger: crypto,.
     replace: cryptocurrency
 
