@@ -51,6 +51,9 @@ matches:
   - trigger: fw,.
     replace: framework
 
+  - trigger: fx,.
+    replace: firefox
+
   - trigger: ga,.
     replace: google analytics
 
