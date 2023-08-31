@@ -11,15 +11,15 @@ settings:
   colors.webpage.darkmode.enabled:
     global: true
   content.cookies.accept:
-    'file://*': all
     '*.wikidata.org': no-unknown-3rdparty
     '*.wikipedia.org': no-unknown-3rdparty
     127.0.0.1: no-unknown-3rdparty
     astexplorer.net: no-unknown-3rdparty
-    developer.mozilla.org: no-unknown-3rdparty
     black.vercel.app: no-unknown-3rdparty
-    global: no-unknown-3rdparty
+    developer.mozilla.org: no-unknown-3rdparty
+    file://*: all
     github.com: no-unknown-3rdparty
+    global: no-unknown-3rdparty
     hexdocs.pm: no-unknown-3rdparty
     hn.algolia.com: no-unknown-3rdparty
     ipac.nlpi.edu.tw: no-unknown-3rdparty
@@ -39,12 +39,10 @@ settings:
     zh.wikipedia.org: zh-TW
   content.headers.custom:
     global:
-      accept:
-        text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+      accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
   content.headers.do_not_track:
     '*.stackexchange.com': true
     '*.wikidata.org': true
-    'file://*': true
     127.0.0.1: true
     astexplorer.net: true
     c.im: true
@@ -52,6 +50,7 @@ settings:
     developer.mozilla.org: true
     docs.expo.dev: true
     docs.rs: true
+    file://*: true
     github.com: true
     hexdocs.pm: true
     hn.algolia.com: true
@@ -86,7 +85,6 @@ settings:
     '*.stackexchange.com': true
     '*.wikidata.org': true
     '*.wikipedia.org': true
-    'file://*': true
     127.0.0.1: true
     astexplorer.net: true
     black.vercel.app: true
@@ -96,6 +94,7 @@ settings:
     docs.expo.dev: true
     docs.python.org: true
     docs.rs: true
+    file://*: true
     firebase.google.com: true
     github.com: true
     global: false
@@ -137,9 +136,9 @@ settings:
     www.wolframalpha.com: true
   content.local_storage:
     '*.wikidata.org': true
-    'file://*': true
     astexplorer.net: true
     developer.mozilla.org: true
+    file://*: true
     global: true
     hn.algolia.com: true
     nx.dev: true
@@ -161,8 +160,7 @@ settings:
       d: https://lite.duckduckgo.com/lite/?q={}
       dc: https://docs.docker.com/compose/compose-file/#{}
       dd: https://devdocs.io/#q={}
-      dh:
-        https://hub.docker.com/search?type=image&image_filter=store%2Cofficial&q={}
+      dh: https://hub.docker.com/search?type=image&image_filter=store%2Cofficial&q={}
       dj: https://devdocs.io/#q=js%20{}
       dk: https://docs.docker.com/engine/reference/builder/#{}
       dl: https://github.com/hadolint/hadolint/wiki/{}
@@ -174,70 +172,53 @@ settings:
       fda: https://consumer.fda.gov.tw/food/tfnd.aspx?nodeID=178&k={}
       fx: https://addons.mozilla.org/en-GB/firefox/search/?q={}&type=extension
       g: https://www.google.com/search?client=firefox-b-d&gbv=1&q={}
-      ga:
-        https://www.google.com/search?client=firefox-b-d&gbv=1&q=site%3Aarchive.org+{}
+      ga: https://www.google.com/search?client=firefox-b-d&gbv=1&q=site%3Aarchive.org+{}
       gg: http://grep.geek/?q={}
       gh: https://github.com/search?q={}&ref=opensearch
-      gi:
-        https://www.google.com/search?client=firefox-b-d&gbv=1&as_rights=(cc_publicdomain|cc_attribute|cc_sharealike).-(cc_noncommercial|cc_nonderived)&tbm=isch&as_q=site%3Awikimedia.org+{}
+      gi: https://www.google.com/search?client=firefox-b-d&gbv=1&as_rights=(cc_publicdomain|cc_attribute|cc_sharealike).-(cc_noncommercial|cc_nonderived)&tbm=isch&as_q=site%3Awikimedia.org+{}
       gm: https://www.google.com.tw/maps?q={}&hl=zh-TW
-      gt:
-        https://www.google.com.tw/search?client=firefox-b-d&gbv=1&q={}&lr=lang_zh-TW&sa=X&hl=zh-tw
+      gt: https://www.google.com.tw/search?client=firefox-b-d&gbv=1&q={}&lr=lang_zh-TW&sa=X&hl=zh-tw
       hex: https://hex.pm/packages?search={}&sort=recent_downloads
       hn: https://hn.algolia.com/?q={}
       jc: https://www.junk-call.com/tw/{}
       jq: https://stedolan.github.io/jq/manual/#{}
       ma: https://search.marginalia.nu/search?query={}+&ref=opensearch
       mdn: https://developer.mozilla.org/en-US/search?q={}
-      mh:
-        https://smilingpuffin.miraheze.org/w/index.php?title=Special:Search&search={}
-      mhr:
-        https://www.google.com.tw/search?client=firefox-b-d&gbv=1&q=site:www.manhuaren.com/manhua-*%20{}
+      mh: https://smilingpuffin.miraheze.org/w/index.php?title=Special:Search&search={}
+      mhr: https://www.google.com.tw/search?client=firefox-b-d&gbv=1&q=site:www.manhuaren.com/manhua-*%20{}
       moe: https://www.moedict.tw/{}
-      nlpi:
-        https://ipac.nlpi.edu.tw/search?searchField=FullText&searchInput={}
-      od:
-        https://www.oxfordlearnersdictionaries.com/search/english/?=english&q={}
+      nlpi: https://ipac.nlpi.edu.tw/search?searchField=FullText&searchInput={}
+      od: https://www.oxfordlearnersdictionaries.com/search/english/?=english&q={}
       og: https://iq.opengenus.org/tag/{}/
       ol: https://openlibrary.org/search?mode=everything&q={}
+      ph: https://www.phind.com/search?q={}
       piv: https://vortaro.net/#{}_kd
       pl: https://professorlin.com//?s={}&search=%E5%8E%BB
-      ph: https://www.phind.com/search?q={}
       ptt: https://www.ptt.cc/bbs/{}/index.html
-      py:
-        https://docs.python.org/3/search.html?q={}&check_keywords=yes&area=default
+      py: https://docs.python.org/3/search.html?q={}&check_keywords=yes&area=default
       rd: https://www.reddit.com/search/?q={}
-      rs:
-        file:///Users/minniebavaro/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/std/index.html?search={}
+      rs: file:///Users/minniebavaro/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/std/index.html?search={}
       s: https://serĉu.com/search?q={}
       sc: https://github.com/koalaman/shellcheck/wiki/{}
       se: https://www.se-radio.net/?s=%22se+radio+{}%22
       shyyp: https://shyyp.net/hant/searoh?q={}
       sn: https://www.grc.com/sn/sn-{}.htm
-      so:
-        https://stackoverflow.com/search?q={}&s=fc2bd8dc-a211-4fce-9651-d6d1657d10a2
+      so: https://stackoverflow.com/search?q={}&s=fc2bd8dc-a211-4fce-9651-d6d1657d10a2
       sp: https://www.skypack.dev/search?q={}
       su: https://swurl.com/?q={}
-      su: https://swurl.com/?q={}
+      tcl: https://ipac.library.taichung.gov.tw/webpac/search.cfm?m=ss&k0={}&t0=k&c0=and
       tldr: https://tldr.ostera.io/{}
-      tcl:
-        https://ipac.library.taichung.gov.tw/webpac/search.cfm?m=ss&k0={}&t0=k&c0=and
       u: https://search.brave.com/search?q=qutebrowser+{}
       vm: https://vimeo.com/search?q={}
-      w8:
-        https://www.google.com/search?client=firefox-b-d&gbv=1&q=site%3Awenku8.net+{}
+      w8: https://www.google.com/search?client=firefox-b-d&gbv=1&q=site%3Awenku8.net+{}
       wa: https://www.wolframalpha.com/input?i={}
       wb: https://search.brave.com/search?q=whalebrew+{}
-      wd:
-        https://www.wikidata.org/w/index.php?search=taiwan&search={}&title=Special%3ASearch&go=Go&wprov=acrw1_-1
+      wd: https://www.wikidata.org/w/index.php?search=taiwan&search={}&title=Special%3ASearch&go=Go&wprov=acrw1_-1
       wk: https://en.wiktionary.org/wiki/{}#Esperanto
       wn: http://whosnumber.com/tw/{}
-      wo:
-        https://eo.wikipedia.org/w/index.php?go=Ek&search={}&title=Speciala%C4%B5o%3ASer%C4%89i&ns0=1
-      wp:
-        https://www.wikipedia.org/search-redirect.php?family=wikipedia&language=en&search={}&language=en&go=Go
-      wz:
-        https://zh.wikipedia.org/w/index.php?search={}&title=Special%3A%E6%90%9C%E7%B4%A2&go=%E5%9F%B7%E8%A1%8C&wprov=acrw1_-1
+      wo: https://eo.wikipedia.org/w/index.php?go=Ek&search={}&title=Speciala%C4%B5o%3ASer%C4%89i&ns0=1
+      wp: https://www.wikipedia.org/search-redirect.php?family=wikipedia&language=en&search={}&language=en&go=Go
+      wz: https://zh.wikipedia.org/w/index.php?search={}&title=Special%3A%E6%90%9C%E7%B4%A2&go=%E5%9F%B7%E8%A1%8C&wprov=acrw1_-1
       yt: https://www.youtube.com/results?search_query={}
   url.start_pages:
     global: qute://bookmarks/#bookmarks
