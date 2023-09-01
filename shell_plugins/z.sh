@@ -39,6 +39,8 @@ z() {
 
   h) cd "$SHARILS_HOME" || return ;;
 
+  p) cd "$(pbpaste)" || return $? ;;
+
   s)
     case "$1" in
     c) set -- /Camera ;;
