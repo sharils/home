@@ -35,7 +35,7 @@ bind refs    ;ri            !git r --interactive %(ref)
 bind generic ;rf            !git -c sequence.editor=true r --autosquash --interactive %(commit)~
 bind generic ;rr            !git r --continue
 bind generic ;rs            !git r --skip
-bind generic ;ra            @git r --abort
+bind generic ;ra            @git ra
 bind generic ;re            !git r --edit-todo
 
 ## Miscellaneous maps
