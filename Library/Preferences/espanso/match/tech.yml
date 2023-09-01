@@ -135,6 +135,9 @@ matches:
   - trigger: rest,.
     replace: RESTful
 
+  - trigger: rpc,.
+    replace: RPC
+
   - trigger: sc,.
     replace: statechart
 
