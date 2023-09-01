@@ -51,8 +51,8 @@
 	pof = push --force origin
 	r = rebase
 	ra = rebase --abort
-	rc = rebase --continue
 	ro = rebase --onto
+	rr = rebase --continue
 	rs = reset
 	rsH = reset --hard
 	rsm = reset --merge

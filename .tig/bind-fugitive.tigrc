@@ -33,7 +33,7 @@ bind generic ;czp           @git czp
 bind generic ;ri            !git r --interactive %(commit)~
 bind refs    ;ri            !git r --interactive %(ref)
 bind generic ;rf            !git -c sequence.editor=true r --autosquash --interactive %(commit)~
-bind generic ;rr            !git r --continue
+bind generic ;rr            !git rc
 bind generic ;rs            !git rs
 bind generic ;ra            @git ra
 bind generic ;re            !git r --edit-todo
