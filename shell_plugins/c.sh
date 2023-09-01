@@ -21,6 +21,7 @@ c() {
     esac
     ;;
   e) shift && $EDITOR Cargo.toml && true && return $? ;;
+  p) pwd | pbcopy && return $? ;;
   n)
     shift
     case "$1" in
