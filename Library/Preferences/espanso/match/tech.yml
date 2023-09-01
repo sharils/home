@@ -111,6 +111,9 @@ matches:
   - trigger: pl,.
     replace: programming language
 
+  - trigger: prop,.
+    replace: property
+
   - trigger: psi,.
     replace: PageSpeed Insights
 
