@@ -49,6 +49,7 @@
 	pf = push --force
 	po = push origin
 	pof = push --force origin
+	pom = push origin main
 	r = rebase
 	ra = rebase --abort
 	ro = rebase --onto
