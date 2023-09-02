@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-alias ..='z ..'
+alias ..='z .'
 
 __z_t_tmp=''
 z() {
