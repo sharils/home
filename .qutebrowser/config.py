@@ -1,3 +1,4 @@
+import os
 import subprocess
 
 config.load_autoconfig()
@@ -8,3 +9,7 @@ c.colors.webpage.darkmode.enabled = (
     ).stdout
     == b"Dark\n"
 )
+
+c.url.searchengines[
+    "rs"
+] = f"file://{os.path.expanduser('~')}/.rustup/toolchains/stable-aarch64-apple-darwin/share/doc/rust/html/std/index.html?search={{}}"
