@@ -71,6 +71,8 @@ SH
 
   push) h g p ;;
 
+  py) shift && x py "help($*)" ;;
+
   t) todo.sh -vv help | l ;;
 
   u) shift && "$SHARILS_HOME/shell_plugins/h/u.sh" "$@" ;;
