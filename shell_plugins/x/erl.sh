@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-erl() {
+x_erl() {
   if [ $# -eq 0 ]; then
     erl
   else
@@ -8,4 +8,4 @@ erl() {
   fi
 }
 
-erl "$@"
+x_erl "$@"
