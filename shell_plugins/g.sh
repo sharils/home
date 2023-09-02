@@ -64,6 +64,7 @@ g() {
     "$SHARILS_HOME/.tig/bind-gitconfig.tigrc" \
     "$SHARILS_HOME/.tig/bind-fugitive.tigrc" \
     "$SHARILS_HOME/.tig/bind-deprecated.tigrc" \
+    "$SHARILS_HOME/.vim/plugged/vim-fugitive/autoload/fugitive.vim" \
     "$SHARILS_HOME/.gitignore" \
     "$SHARILS_HOME/.gitconfig" ;;
 
@@ -78,8 +79,6 @@ g() {
   s) shift && tig status "$@" ;;
 
   stripspace) shift && git grep -I --files-with-matches ' \{1,\}$' | xargs sed -i '' 's/ \{1,\}$//' ;;
-
-  v) shift && grep "$@" /Users/minniebavaro/git/github.com/sharils/home/.vim/plugged/vim-fugitive/autoload/fugitive.vim ;;
 
   y) shift && tig stash "$@" ;;
 
