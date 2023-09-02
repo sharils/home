@@ -9,6 +9,9 @@ matches:
   - trigger: app,.
     replace: application
 
+  - trigger: arch,.
+    replace: architecture
+
   - trigger: as,.
     replace: applescript
 
@@ -18,8 +21,20 @@ matches:
   - trigger: attr,.
     replace: attribute
 
+  - trigger: auth,.
+    replace: authorization
+
+  - trigger: authen,.
+    replace: authentication
+
+  - trigger: bm,.
+    replace: bookmark
+
   - trigger: cert,.
     replace: certificate
+
+  - trigger: char,.
+    replace: character
 
   - trigger: crypto,.
     replace: cryptocurrency
@@ -27,11 +42,29 @@ matches:
   - trigger: cs,.
     replace: computer science
 
+  - trigger: ct,.
+    replace: ciphertext
+
+  - trigger: dep,.
+    replace: dependency
+
+  - trigger: depr,.
+    replace: deprecated
+
+  - trigger: dev,.
+    replace: development
+
   - trigger: db,.
     replace: database
 
   - trigger: ddd,.
     replace: domain-driven design
+
+  - trigger: eng,.
+    replace: engineering
+
+  - trigger: env,.
+    replace: environment
 
   - trigger: fw,.
     replace: framework
@@ -42,11 +75,20 @@ matches:
   - trigger: ks,.
     replace: keyboard shortcuts
 
+  - trigger: lib,.
+    replace: library
+
   - trigger: nlp,.
     replace: natural language processing
 
+  - trigger: noti,.
+    replace: notification
+
   - trigger: oo,.
     replace: object-oriented
+
+  - trigger: os,.
+    replace: open source
 
   - trigger: ooad,.
     replace: object-oriented analysis and design
@@ -63,6 +105,9 @@ matches:
   - trigger: prop,.
     replace: property
 
+  - trigger: pt,.
+    replace: plaintext
+
   - trigger: pwa,.
     replace: progressive web app
 
@@ -72,11 +117,23 @@ matches:
   - trigger: re,.
     replace: regular expression
 
+  - trigger: ref,.
+    replace: reference
+
+  - trigger: req,.
+    replace: request
+
+  - trigger: resp,.
+    replace: response
+
   - trigger: rest,.
     replace: RESTful
 
   - trigger: rpc,.
     replace: RPC
+
+  - trigger: s:,.
+    replace: "site:"
 
   - trigger: sc,.
     replace: statechart
@@ -92,6 +149,9 @@ matches:
 
   - trigger: spec,.
     replace: specification
+
+  - trigger: ss,.
+    replace: spreadsheet
 
   - trigger: ssr,.
     replace: server side rendering
