@@ -1,0 +1,89 @@
+---
+matches:
+
+  - trigger: api,.
+    replace: API
+
+  - trigger: app,.
+    replace: application
+
+  - trigger: as,.
+    replace: applescript
+
+  - trigger: asm,.
+    replace: assembly
+
+  - trigger: crypto,.
+    replace: cryptocurrency
+
+  - trigger: dep,.
+    replace: dependency
+
+  - trigger: depr,.
+    replace: deprecated
+
+  - trigger: dev,.
+    replace: development
+
+  - trigger: eng,.
+    replace: engineering
+
+  - trigger: env,.
+    replace: environment
+
+  - trigger: fw,.
+    replace: framework
+
+  - trigger: json,.
+    replace: JSON
+
+  - trigger: lib,.
+    replace: library
+
+  - trigger: pkg,.
+    replace: package
+
+  - trigger: prop,.
+    replace: property
+
+  - trigger: pwa,.
+    replace: progressive web app
+
+  - trigger: ref,.
+    replace: reference
+
+  - trigger: req,.
+    replace: request
+
+  - trigger: resp,.
+    replace: response
+
+  - trigger: rest,.
+    replace: RESTful
+
+  - trigger: rpc,.
+    replace: RPC
+
+  - trigger: sc,.
+    replace: statechart
+
+  - trigger: se,.
+    replace: software engineering
+
+  - trigger: spa,.
+    replace: single page application
+
+  - trigger: spec,.
+    replace: specification
+
+  - trigger: ssr,.
+    replace: server side rendering
+
+  - trigger: sw,.
+    replace: service worker
+
+  - trigger: ws,.
+    replace: websocket
+
+  - trigger: wv,.
+    replace: webview
