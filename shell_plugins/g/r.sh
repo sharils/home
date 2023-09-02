@@ -3,9 +3,11 @@
 r() {
   if [ $# -eq 0 ]; then
     tig refs
-  else
-    git r "$@"
+    return $?
   fi
+  case "$1" in
+  *) git r "$@" ;;
+  esac
 }
 
 r "$@"
