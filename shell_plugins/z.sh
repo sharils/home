@@ -18,8 +18,6 @@ z() {
     [ -n "$path" ] && z "$path"
     ;;
 
-  ....) cd ../../.. ;;
-
   d) cd ~/Downloads || return ;;
 
   e)
