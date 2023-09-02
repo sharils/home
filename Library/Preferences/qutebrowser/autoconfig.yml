@@ -11,7 +11,7 @@ settings:
   bindings.commands:
     global:
       normal:
-        ',r': :restart
+        ;r: :restart
   colors.webpage.darkmode.enabled:
     global: true
   content.cookies.accept:
