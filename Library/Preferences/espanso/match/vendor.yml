@@ -40,4 +40,4 @@ matches:
     replace: stackoverflow
 
   - trigger: soi,.
-    replace: stack overflow insight
+    replace: insights.stackoverflow
