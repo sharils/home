@@ -40,7 +40,7 @@ settings:
     global: false
   content.headers.accept_language:
     global: en-US,en;q=0.5
-    zh.wikipedia.org: zh-TW
+    zh.wikipedia.org: zh-TW,zh-HK
   content.headers.custom:
     global:
       accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
