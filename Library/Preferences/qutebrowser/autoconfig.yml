@@ -220,7 +220,7 @@ settings:
       wk: https://en.wiktionary.org/wiki/{}#Esperanto
       wn: http://whosnumber.com/tw/{}
       wo: https://eo.wikipedia.org/w/index.php?go=Ek&search={}&title=Speciala%C4%B5o%3ASer%C4%89i&ns0=1
-      wp: https://www.wikipedia.org/search-redirect.php?family=wikipedia&language=en&search={}&language=en&go=Go
+      wp: https://en.wikipedia.org/w/index.php?search={}&title=Special%3ASearch&wprov=acrw1_-1
       wz: https://zh.wikipedia.org/w/index.php?search={}&title=Special%3A%E6%90%9C%E7%B4%A2&go=%E5%9F%B7%E8%A1%8C&wprov=acrw1_-1
       yt: https://www.youtube.com/results?search_query={}
   url.start_pages:
