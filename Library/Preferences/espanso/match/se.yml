@@ -43,9 +43,6 @@ matches:
   - trigger: ref,.
     replace: reference
 
-  - trigger: sc,.
-    replace: statechart
-
   - trigger: se,.
     replace: software engineering
 

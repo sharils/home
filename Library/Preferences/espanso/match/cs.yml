@@ -58,5 +58,8 @@ matches:
   - trigger: re,.
     replace: regular expression
 
+  - trigger: sc,.
+    replace: statechart
+
   - trigger: sys,.
     replace: system
