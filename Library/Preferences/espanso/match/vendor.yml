@@ -37,7 +37,7 @@ matches:
     replace: QuickTime Player
 
   - trigger: so,.
-    replace: stack overflow
+    replace: stackoverflow
 
   - trigger: soi,.
     replace: stack overflow insight
