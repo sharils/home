@@ -1,16 +1,10 @@
 ---
 matches:
-  - trigger: CV,.
-    replace: Common Voice
-
   - trigger: alg,.
     replace: algorithm
 
   - trigger: api,.
     replace: API
-
-  - trigger: apollo,.
-    replace: Apollo GraphQL
 
   - trigger: app,.
     replace: application
@@ -27,12 +21,6 @@ matches:
   - trigger: cert,.
     replace: certificate
 
-  - trigger: chat,.
-    replace: ChatGPT
-
-  - trigger: cr,.
-    replace: chromium
-
   - trigger: crypto,.
     replace: cryptocurrency
 
@@ -45,53 +33,14 @@ matches:
   - trigger: ddd,.
     replace: domain-driven design
 
-  - trigger: dj,.
-    replace: django
-
-  - trigger: fire,.
-    replace: firebase
-
-  - trigger: fs,.
-    replace: firestore
-
   - trigger: fw,.
     replace: framework
-
-  - trigger: fx,.
-    replace: firefox
-
-  - trigger: ga,.
-    replace: google analytics
-
-  - trigger: gm,.
-    replace: greasemonkey
-
-  - trigger: hb,.
-    replace: homebrew
 
   - trigger: json,.
     replace: JSON
 
   - trigger: ks,.
     replace: keyboard shortcuts
-
-  - trigger: lv,.
-    replace: LiveView
-
-  - trigger: maria,.
-    replace: MariaDB
-
-  - trigger: mmd,.
-    replace: mermaid
-
-  - trigger: mongo,.
-    replace: MongoDB
-
-  - trigger: mw,.
-    replace: MediaWiki
-
-  - trigger: mysql,.
-    replace: MySQL
 
   - trigger: nlp,.
     replace: natural language processing
@@ -105,9 +54,6 @@ matches:
   - trigger: oop,.
     replace: object-oriented programming
 
-  - trigger: phx,.
-    replace: Phoenix
-
   - trigger: pkg,.
     replace: package
 
@@ -117,17 +63,8 @@ matches:
   - trigger: prop,.
     replace: property
 
-  - trigger: psi,.
-    replace: PageSpeed Insights
-
-  - trigger: psql,.
-    replace: PostgreSQL
-
   - trigger: pwa,.
     replace: progressive web app
-
-  - trigger: qtp,.
-    replace: QuickTime Player
 
   - trigger: rdbms,.
     replace: relational database management system
@@ -150,12 +87,6 @@ matches:
   - trigger: sla,.
     replace: service-level agreement
 
-  - trigger: so,.
-    replace: stack overflow
-
-  - trigger: soi,.
-    replace: stack overflow insight
-
   - trigger: spa,.
     replace: single page application
 
@@ -170,12 +101,6 @@ matches:
 
   - trigger: sw,.
     replace: service worker
-
-  - trigger: u,.
-    replace: qutebrowser
-
-  - trigger: wb,.
-    replace: Wikibase
 
   - trigger: ws,.
     replace: websocket
