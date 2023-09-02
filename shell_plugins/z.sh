@@ -47,7 +47,7 @@ z() {
     k) set -- /KeePass ;;
     l) set -- /Libera\ PRO ;;
     o) set -- /Obsidian ;;
-    t) cd "$TODO_DIR" && true && return $?  ;;
+    t) cd "$TODO_DIR" && true && return $? ;;
     esac
     cd "$HOME/Sync$*" || return
     ;;
