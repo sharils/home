@@ -4,7 +4,7 @@ x_erl() {
   if [ $# -eq 0 ]; then
     erl
   else
-    erl -noshell -eval "$*,init:stop()."
+    erl -noshell -eval "$*" -eval "init:stop()"
   fi
 }
 
