@@ -30,6 +30,8 @@ h() {
 
   erl) shift && x erl "c:h($*)" ;;
 
+  ex) shift && e --eval "require IEx.Helpers; IEx.Helpers.h($*)" | l md ;;
+
   g)
     shift
     base="$SHARILS_HOME/shell_plugins"

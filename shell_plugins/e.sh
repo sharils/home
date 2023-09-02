@@ -35,8 +35,6 @@ e() {
 
   g) shift && "$SHARILS_HOME/shell_plugins/e/g.sh" "$@" ;;
 
-  h) shift && e --eval "require IEx.Helpers; IEx.Helpers.h($*)" | l md ;;
-
   l) shift && e log "$@" ;;
 
   s)
