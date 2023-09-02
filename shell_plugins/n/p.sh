@@ -30,6 +30,7 @@ p() {
       cmd="$1" && shift
       p s "scripts.$cmd" "$@"
       ;;
+    t) p s type module ;;
     *)
       cmd="$1" && shift
       npm pkg set "$cmd"="$*"
