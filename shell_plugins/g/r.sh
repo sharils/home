@@ -6,6 +6,7 @@ r() {
     return $?
   fi
   case "$1" in
+  c) shift && glab repo create "$@" ;;
   *) git r "$@" ;;
   esac
 }
