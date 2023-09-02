@@ -1,12 +1,6 @@
 ---
 matches:
 
-  - trigger: api,.
-    replace: API
-
-  - trigger: app,.
-    replace: application
-
   - trigger: as,.
     replace: applescript
 
@@ -46,23 +40,8 @@ matches:
   - trigger: prop,.
     replace: property
 
-  - trigger: pwa,.
-    replace: progressive web app
-
   - trigger: ref,.
     replace: reference
-
-  - trigger: req,.
-    replace: request
-
-  - trigger: resp,.
-    replace: response
-
-  - trigger: rest,.
-    replace: RESTful
-
-  - trigger: rpc,.
-    replace: RPC
 
   - trigger: sc,.
     replace: statechart
@@ -70,20 +49,5 @@ matches:
   - trigger: se,.
     replace: software engineering
 
-  - trigger: spa,.
-    replace: single page application
-
   - trigger: spec,.
     replace: specification
-
-  - trigger: ssr,.
-    replace: server side rendering
-
-  - trigger: sw,.
-    replace: service worker
-
-  - trigger: ws,.
-    replace: websocket
-
-  - trigger: wv,.
-    replace: webview

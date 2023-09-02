@@ -1,0 +1,38 @@
+---
+matches:
+
+  - trigger: api,.
+    replace: API
+
+  - trigger: app,.
+    replace: application
+
+  - trigger: pwa,.
+    replace: progressive web app
+
+  - trigger: req,.
+    replace: request
+
+  - trigger: resp,.
+    replace: response
+
+  - trigger: rest,.
+    replace: RESTful
+
+  - trigger: rpc,.
+    replace: RPC
+
+  - trigger: spa,.
+    replace: single page application
+
+  - trigger: ssr,.
+    replace: server side rendering
+
+  - trigger: sw,.
+    replace: service worker
+
+  - trigger: ws,.
+    replace: websocket
+
+  - trigger: wv,.
+    replace: webview
