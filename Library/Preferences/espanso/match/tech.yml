@@ -1,7 +1,5 @@
 ---
 matches:
-  - trigger: alg,.
-    replace: algorithm
 
   - trigger: api,.
     replace: API
@@ -9,41 +7,17 @@ matches:
   - trigger: app,.
     replace: application
 
-  - trigger: arch,.
-    replace: architecture
-
   - trigger: as,.
     replace: applescript
 
   - trigger: asm,.
     replace: assembly
 
-  - trigger: attr,.
-    replace: attribute
-
-  - trigger: auth,.
-    replace: authorization
-
-  - trigger: authen,.
-    replace: authentication
-
   - trigger: bm,.
     replace: bookmark
 
-  - trigger: cert,.
-    replace: certificate
-
-  - trigger: char,.
-    replace: character
-
   - trigger: crypto,.
     replace: cryptocurrency
-
-  - trigger: cs,.
-    replace: computer science
-
-  - trigger: ct,.
-    replace: ciphertext
 
   - trigger: dep,.
     replace: dependency
@@ -53,12 +27,6 @@ matches:
 
   - trigger: dev,.
     replace: development
-
-  - trigger: db,.
-    replace: database
-
-  - trigger: ddd,.
-    replace: domain-driven design
 
   - trigger: eng,.
     replace: engineering
@@ -78,44 +46,20 @@ matches:
   - trigger: lib,.
     replace: library
 
-  - trigger: nlp,.
-    replace: natural language processing
-
   - trigger: noti,.
     replace: notification
-
-  - trigger: oo,.
-    replace: object-oriented
 
   - trigger: os,.
     replace: open source
 
-  - trigger: ooad,.
-    replace: object-oriented analysis and design
-
-  - trigger: oop,.
-    replace: object-oriented programming
-
   - trigger: pkg,.
     replace: package
-
-  - trigger: pl,.
-    replace: programming language
 
   - trigger: prop,.
     replace: property
 
-  - trigger: pt,.
-    replace: plaintext
-
   - trigger: pwa,.
     replace: progressive web app
-
-  - trigger: rdbms,.
-    replace: relational database management system
-
-  - trigger: re,.
-    replace: regular expression
 
   - trigger: ref,.
     replace: reference
@@ -155,9 +99,6 @@ matches:
 
   - trigger: ssr,.
     replace: server side rendering
-
-  - trigger: sys,.
-    replace: system
 
   - trigger: sw,.
     replace: service worker

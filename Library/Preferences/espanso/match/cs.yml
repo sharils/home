@@ -1,0 +1,62 @@
+---
+matches:
+
+  - trigger: alg,.
+    replace: algorithm
+
+  - trigger: arch,.
+    replace: architecture
+
+  - trigger: attr,.
+    replace: attribute
+
+  - trigger: auth,.
+    replace: authorization
+
+  - trigger: authen,.
+    replace: authentication
+
+  - trigger: cert,.
+    replace: certificate
+
+  - trigger: char,.
+    replace: character
+
+  - trigger: cs,.
+    replace: computer science
+
+  - trigger: ct,.
+    replace: ciphertext
+
+  - trigger: db,.
+    replace: database
+
+  - trigger: ddd,.
+    replace: domain-driven design
+
+  - trigger: nlp,.
+    replace: natural language processing
+
+  - trigger: oo,.
+    replace: object-oriented
+
+  - trigger: ooad,.
+    replace: object-oriented analysis and design
+
+  - trigger: oop,.
+    replace: object-oriented programming
+
+  - trigger: pl,.
+    replace: programming language
+
+  - trigger: pt,.
+    replace: plaintext
+
+  - trigger: rdbms,.
+    replace: relational database management system
+
+  - trigger: re,.
+    replace: regular expression
+
+  - trigger: sys,.
+    replace: system
