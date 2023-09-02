@@ -8,6 +8,16 @@ z() {
   shift
   case "$_z_cmd" in
 
+  .)
+    shift
+    set -- "$(dirname "$PWD")"
+    while [ "$1" != '/' ]; do
+      set -- "$(dirname "$1")" "$@"
+    done
+    path="$(echo "$PWD" "$@" | tr ' ' \\n | fzf --tac)"
+    [ -n "$path" ] && z "$path"
+    ;;
+
   ...) cd ../.. ;;
 
   ....) cd ../../.. ;;
