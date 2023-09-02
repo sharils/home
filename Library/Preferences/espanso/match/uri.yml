@@ -96,6 +96,12 @@ matches:
   - trigger: sm,.
     replace: sitemap.xml
 
+  - trigger: so,.
+    replace: stackoverflow
+
+  - trigger: soi,.
+    replace: insights.stackoverflow
+
   - trigger: tg,.
     replace: Telegram
 
