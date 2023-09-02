@@ -1,0 +1,14 @@
+---
+matches:
+
+  - trigger: cr,.
+    replace: chromium
+
+  - trigger: fx,.
+    replace: firefox
+
+  - trigger: gm,.
+    replace: greasemonkey
+
+  - trigger: u,.
+    replace: qutebrowser

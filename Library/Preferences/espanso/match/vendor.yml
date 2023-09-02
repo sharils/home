@@ -9,9 +9,6 @@ matches:
   - trigger: chat,.
     replace: ChatGPT
 
-  - trigger: cr,.
-    replace: chromium
-
   - trigger: dj,.
     replace: django
 
@@ -21,14 +18,8 @@ matches:
   - trigger: fs,.
     replace: firestore
 
-  - trigger: fx,.
-    replace: firefox
-
   - trigger: ga,.
     replace: google analytics
-
-  - trigger: gm,.
-    replace: greasemonkey
 
   - trigger: hb,.
     replace: homebrew
@@ -68,9 +59,6 @@ matches:
 
   - trigger: soi,.
     replace: stack overflow insight
-
-  - trigger: u,.
-    replace: qutebrowser
 
   - trigger: wb,.
     replace: Wikibase
