@@ -1,0 +1,23 @@
+---
+matches:
+
+  - trigger: fire,.
+    replace: firebase
+
+  - trigger: fs,.
+    replace: firestore
+
+  - trigger: maria,.
+    replace: MariaDB
+
+  - trigger: mongo,.
+    replace: MongoDB
+
+  - trigger: mysql,.
+    replace: MySQL
+
+  - trigger: psql,.
+    replace: PostgreSQL
+
+  - trigger: wb,.
+    replace: Wikibase

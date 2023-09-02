@@ -12,12 +12,6 @@ matches:
   - trigger: dj,.
     replace: django
 
-  - trigger: fire,.
-    replace: firebase
-
-  - trigger: fs,.
-    replace: firestore
-
   - trigger: ga,.
     replace: google analytics
 
@@ -27,29 +21,17 @@ matches:
   - trigger: lv,.
     replace: LiveView
 
-  - trigger: maria,.
-    replace: MariaDB
-
   - trigger: mmd,.
     replace: mermaid
 
-  - trigger: mongo,.
-    replace: MongoDB
-
   - trigger: mw,.
     replace: MediaWiki
-
-  - trigger: mysql,.
-    replace: MySQL
 
   - trigger: phx,.
     replace: Phoenix
 
   - trigger: psi,.
     replace: PageSpeed Insights
-
-  - trigger: psql,.
-    replace: PostgreSQL
 
   - trigger: qtp,.
     replace: QuickTime Player
@@ -59,6 +41,3 @@ matches:
 
   - trigger: soi,.
     replace: stack overflow insight
-
-  - trigger: wb,.
-    replace: Wikibase
