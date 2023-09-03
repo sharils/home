@@ -15,3 +15,6 @@ matches:
 
   - trigger: prop,.
     replace: property
+
+  - trigger: srp,.
+    replace: single responsibility principle
