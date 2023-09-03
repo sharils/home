@@ -1,0 +1,8 @@
+---
+matches:
+
+  - trigger: so,.
+    replace: stackoverflow
+
+  - trigger: soi,.
+    replace: insights.stackoverflow

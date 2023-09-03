@@ -33,12 +33,6 @@ matches:
   - trigger: seradio,.
     replace: se-radio.net
 
-  - trigger: so,.
-    replace: stackoverflow
-
-  - trigger: soi,.
-    replace: insights.stackoverflow
-
   - trigger: tg,.
     replace: telegram
 
