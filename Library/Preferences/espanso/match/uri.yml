@@ -24,9 +24,6 @@ matches:
   - trigger: ig,.
     replace: instagram
 
-  - trigger: js,.
-    replace: javascript
-
   - trigger: lh,.
     replace: localhost
 
