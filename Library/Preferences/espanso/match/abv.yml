@@ -27,9 +27,6 @@ matches:
   - trigger: msg,.
     replace: message
 
-  - trigger: sci,.
-    replace: science
-
   - trigger: so,.
     replace: significant other
 
