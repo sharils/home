@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: asm,.
+    replace: assembly
+
   - trigger: erl,.
     replace: erlang
 
