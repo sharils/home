@@ -40,7 +40,7 @@ matches:
     replace: insights.stackoverflow
 
   - trigger: tg,.
-    replace: Telegram
+    replace: telegram
 
   - trigger: wd,.
     replace: Wikidata
