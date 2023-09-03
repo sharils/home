@@ -33,14 +33,6 @@ matches:
   - trigger: gen,.
     replace: generate
 
-  - trigger: kano,.
-    replace: >
-      1️⃣ like it.
-      2️⃣ expect it.
-      3️⃣ neutral.s
-      4️⃣ can tolerate it.
-      5️⃣ dislike it.
-
   - trigger: lat,.
     replace: latitude
 
@@ -56,23 +48,14 @@ matches:
   - trigger: nav,.
     replace: navigation
 
-  - trigger: pd,.
-    replace: per discussion
-
   - trigger: sb,.
     replace: somebody
 
   - trigger: sci,.
     replace: science
 
-  - trigger: smart,.
-    replace: Specific, Measurable, Achievable, Relevant, and Time-bound
-
   - trigger: so,.
     replace: significant other
-
-  - trigger: ssot,.
-    replace: single source of truth
 
   - trigger: sth,.
     replace: something

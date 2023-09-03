@@ -1,0 +1,16 @@
+---
+matches:
+
+  - trigger: kano,.
+    replace: >
+      1️⃣ like it.
+      2️⃣ expect it.
+      3️⃣ neutral.s
+      4️⃣ can tolerate it.
+      5️⃣ dislike it.
+
+  - trigger: pd,.
+    replace: per discussion
+
+  - trigger: smart,.
+    replace: Specific, Measurable, Achievable, Relevant, and Time-bound
