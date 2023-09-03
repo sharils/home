@@ -7,6 +7,9 @@ matches:
   - trigger: ling,.
     replace: linguistics
 
+  - trigger: nlp,.
+    replace: natural language processing
+
   - trigger: sb,.
     replace: somebody
 

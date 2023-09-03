@@ -16,9 +16,6 @@ matches:
   - trigger: ddd,.
     replace: domain-driven design
 
-  - trigger: nlp,.
-    replace: natural language processing
-
   - trigger: re,.
     replace: regular expression
 
