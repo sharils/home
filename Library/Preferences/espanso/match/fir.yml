@@ -1,7 +1,7 @@
 ---
 matches:
 
-  - trigger: fire,.
+  - trigger: fir,.
     replace: firebase
 
   - trigger: fs,.
