@@ -27,9 +27,6 @@ matches:
   - trigger: et,.
     replace: etymology
 
-  - trigger: eula,.
-    replace: end-user license agreement
-
   - trigger: fix,.
     replace: fixture
 
@@ -97,6 +94,3 @@ matches:
 
   - trigger: tldr,.
     replace: Thereby hangs a tail.
-
-  - trigger: tos,.
-    replace: terms of service
