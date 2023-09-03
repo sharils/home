@@ -1,0 +1,32 @@
+---
+matches:
+
+  - trigger: /dn,.
+    replace: /dev/null
+
+  - trigger: dc,.
+    replace: docker-compose.yml
+
+  - trigger: df,.
+    replace: Dockerfile
+
+  - trigger: fi,.
+    replace: favicon.ico
+
+  - trigger: gi,.
+    replace: gitignore
+
+  - trigger: idx,.
+    replace: index.html
+
+  - trigger: ipy,.
+    replace: __init__.py
+
+  - trigger: rt,.
+    replace: robots.txt
+
+  - trigger: rm,.
+    replace: README.md
+
+  - trigger: sm,.
+    replace: sitemap.xml

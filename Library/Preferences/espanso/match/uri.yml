@@ -3,17 +3,8 @@ matches:
   - trigger: .s,.
     replace: .social
 
-  - trigger: /dn,.
-    replace: /dev/null
-
-  - trigger: dc,.
-    replace: docker-compose.yml
-
   - trigger: ddg,.
     replace: duckduckgo
-
-  - trigger: df,.
-    replace: Dockerfile
 
   - trigger: eg,.
     replace: example.com
@@ -21,14 +12,8 @@ matches:
   - trigger: fb,.
     replace: facebook
 
-  - trigger: fi,.
-    replace: favicon.ico
-
   - trigger: gh,.
     replace: github
-
-  - trigger: gi,.
-    replace: gitignore
 
   - trigger: gl,.
     replace: gitlab
@@ -36,14 +21,8 @@ matches:
   - trigger: go,.
     replace: g0v
 
-  - trigger: idx,.
-    replace: index.html
-
   - trigger: ig,.
     replace: instagram
-
-  - trigger: ipy,.
-    replace: __init__.py
 
   - trigger: js,.
     replace: javascript
@@ -54,17 +33,8 @@ matches:
   - trigger: moz,.
     replace: mozilla
 
-  - trigger: rt,.
-    replace: robots.txt
-
-  - trigger: rm,.
-    replace: README.md
-
   - trigger: seradio,.
     replace: se-radio.net
-
-  - trigger: sm,.
-    replace: sitemap.xml
 
   - trigger: so,.
     replace: stackoverflow
