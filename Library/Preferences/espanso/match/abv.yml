@@ -27,9 +27,6 @@ matches:
   - trigger: et,.
     replace: etymology
 
-  - trigger: fix,.
-    replace: fixture
-
   - trigger: hsp,.
     replace: highly sensitive person
 
@@ -67,9 +64,6 @@ matches:
 
   - trigger: pd,.
     replace: per discussion
-
-  - trigger: prod,.
-    replace: production
 
   - trigger: sb,.
     replace: somebody

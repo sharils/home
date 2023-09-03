@@ -25,6 +25,9 @@ matches:
   - trigger: env,.
     replace: environment
 
+  - trigger: fix,.
+    replace: fixture
+
   - trigger: fw,.
     replace: framework
 
@@ -37,6 +40,9 @@ matches:
   - trigger: pkg,.
     replace: package
 
+  - trigger: prod,.
+    replace: production
+
   - trigger: prop,.
     replace: property
 
@@ -48,3 +54,6 @@ matches:
 
   - trigger: spec,.
     replace: specification
+
+  - trigger: ssot,.
+    replace: single source of truth
