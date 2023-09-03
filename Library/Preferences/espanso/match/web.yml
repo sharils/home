@@ -22,6 +22,14 @@ matches:
   - trigger: rpc,.
     replace: RPC
 
+  - trigger: ruby,.
+    form: <ruby>[[ruby]]<rp>(</rp><rt>[[rt]]</rt><rp>)</rp></ruby>
+    form_fields:
+      ruby:
+        multiline: true
+      rt:
+        multiline: true
+
   - trigger: spa,.
     replace: single page application
 

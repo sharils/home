@@ -25,14 +25,6 @@ matches:
   - trigger: ncc,.
     replace: "@needs native check"
 
-  - trigger: ruby,.
-    form: <ruby>[[ruby]]<rp>(</rp><rt>[[rt]]</rt><rp>)</rp></ruby>
-    form_fields:
-      ruby:
-        multiline: true
-      rt:
-        multiline: true
-
   - trigger: tss,.
     replace: Taiwan Sign Language
 
