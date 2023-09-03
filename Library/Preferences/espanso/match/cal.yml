@@ -1,0 +1,8 @@
+---
+matches:
+
+  - trigger: cal,.
+    replace: calendar
+
+  - trigger: gbf,.
+    replace: Dragon Boat Festival

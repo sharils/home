@@ -6,9 +6,6 @@ matches:
   - trigger: bg,.
     replace: background
 
-  - trigger: cal,.
-    replace: calendar
-
   - trigger: ddx,.
     replace: differential diagnosis
 
@@ -29,9 +26,6 @@ matches:
 
   - trigger: hsp,.
     replace: highly sensitive person
-
-  - trigger: gbf,.
-    replace: Dragon Boat Festival
 
   - trigger: gbv,.
     replace: gross booking value
