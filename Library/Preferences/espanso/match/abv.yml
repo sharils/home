@@ -3,9 +3,6 @@ matches:
   - trigger: alt,.
     replace: alternative
 
-  - trigger: bg,.
-    replace: background
-
   - trigger: ddx,.
     replace: differential diagnosis
 
@@ -27,23 +24,11 @@ matches:
   - trigger: gbv,.
     replace: gross booking value
 
-  - trigger: gen,.
-    replace: generate
-
-  - trigger: lat,.
-    replace: latitude
-
   - trigger: lf,.
     replace: loyalty free
 
-  - trigger: lng,.
-    replace: longitude
-
   - trigger: msg,.
     replace: message
-
-  - trigger: nav,.
-    replace: navigation
 
   - trigger: sci,.
     replace: science
