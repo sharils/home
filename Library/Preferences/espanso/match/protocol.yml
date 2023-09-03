@@ -1,0 +1,17 @@
+---
+matches:
+
+  - trigger: H:,.
+    replace: http://
+
+  - trigger: d:,.
+    replace: "due:"
+
+  - trigger: f:,.
+    replace: file:///
+
+  - trigger: h:,.
+    replace: https://
+
+  - trigger: r:,.
+    replace: rsync://
