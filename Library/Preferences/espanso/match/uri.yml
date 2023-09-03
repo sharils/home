@@ -49,4 +49,4 @@ matches:
     replace: wikipedia
 
   - trigger: yt,.
-    replace: YouTube
+    replace: youtube
