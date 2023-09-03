@@ -16,8 +16,5 @@ matches:
   - trigger: s:,.
     replace: "site:"
 
-  - trigger: sla,.
-    replace: service-level agreement
-
   - trigger: ss,.
     replace: spreadsheet
