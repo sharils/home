@@ -28,6 +28,9 @@ matches:
   - trigger: admin,.
     replace: admin@example.com
 
+  - trigger: fix,.
+    replace: fixture
+
   - trigger: poem,.
     replace: |
       I'm nobody! Who are you?

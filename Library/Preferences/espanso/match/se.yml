@@ -4,9 +4,6 @@ matches:
   - trigger: as,.
     replace: applescript
 
-  - trigger: attr,.
-    replace: attribute
-
   - trigger: dep,.
     replace: dependency
 
@@ -15,9 +12,6 @@ matches:
 
   - trigger: eng,.
     replace: engineering
-
-  - trigger: fix,.
-    replace: fixture
 
   - trigger: fw,.
     replace: framework
