@@ -48,15 +48,3 @@ matches:
 
   - trigger: r1k,.
     replace: Ⅿ
-
-  - trigger: r5k,.
-    replace: ↁ
-
-  - trigger: r1w,.
-    replace: ↂ
-
-  - trigger: r5w,.
-    replace: ↇ
-
-  - trigger: r10w,.
-    replace: ↈ
