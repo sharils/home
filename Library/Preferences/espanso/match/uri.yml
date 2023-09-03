@@ -43,7 +43,7 @@ matches:
     replace: telegram
 
   - trigger: wd,.
-    replace: Wikidata
+    replace: wikidata
 
   - trigger: wp,.
     replace: Wikipedia
