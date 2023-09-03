@@ -4,6 +4,9 @@ matches:
   - trigger: et,.
     replace: etymology
 
+  - trigger: ling,.
+    replace: linguistics
+
   - trigger: sb,.
     replace: somebody
 
