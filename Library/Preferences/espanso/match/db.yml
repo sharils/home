@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: db,.
+    replace: database
+
   - trigger: maria,.
     replace: MariaDB
 
@@ -12,6 +15,9 @@ matches:
 
   - trigger: psql,.
     replace: PostgreSQL
+
+  - trigger: rdbms,.
+    replace: relational database management system
 
   - trigger: wb,.
     replace: Wikibase

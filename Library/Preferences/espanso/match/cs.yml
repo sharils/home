@@ -13,9 +13,6 @@ matches:
   - trigger: cs,.
     replace: computer science
 
-  - trigger: db,.
-    replace: database
-
   - trigger: ddd,.
     replace: domain-driven design
 
@@ -30,9 +27,6 @@ matches:
 
   - trigger: oop,.
     replace: object-oriented programming
-
-  - trigger: rdbms,.
-    replace: relational database management system
 
   - trigger: re,.
     replace: regular expression
