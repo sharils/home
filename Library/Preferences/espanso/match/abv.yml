@@ -21,9 +21,6 @@ matches:
   - trigger: hsp,.
     replace: highly sensitive person
 
-  - trigger: gbv,.
-    replace: gross booking value
-
   - trigger: lf,.
     replace: loyalty free
 

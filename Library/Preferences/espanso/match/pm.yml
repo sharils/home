@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: gbv,.
+    replace: gross booking value
+
   - trigger: kano,.
     replace: >
       1️⃣ like it.
