@@ -1,0 +1,23 @@
+---
+matches:
+
+  - trigger: erl,.
+    replace: erlang
+
+  - trigger: ex,.
+    replace: elixir
+
+  - trigger: gfm,.
+    replace: github flavoured markdown
+
+  - trigger: gql,.
+    replace: GraphQL
+
+  - trigger: py,.
+    replace: python
+
+  - trigger: sh,.
+    replace: shell
+
+  - trigger: ts,.
+    replace: TypeScript
