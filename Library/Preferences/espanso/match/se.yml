@@ -1,9 +1,6 @@
 ---
 matches:
 
-  - trigger: as,.
-    replace: applescript
-
   - trigger: dep,.
     replace: dependency
 
@@ -15,9 +12,6 @@ matches:
 
   - trigger: fw,.
     replace: framework
-
-  - trigger: json,.
-    replace: JSON
 
   - trigger: lib,.
     replace: library

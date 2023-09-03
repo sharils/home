@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: as,.
+    replace: applescript
+
   - trigger: asm,.
     replace: assembly
 
@@ -15,6 +18,9 @@ matches:
 
   - trigger: js,.
     replace: javascript
+
+  - trigger: json,.
+    replace: JSON
 
   - trigger: gql,.
     replace: GraphQL
