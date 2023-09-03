@@ -7,6 +7,9 @@ matches:
   - trigger: bm,.
     replace: bookmark
 
+  - trigger: crypto,.
+    replace: cryptocurrency
+
   - trigger: gen,.
     replace: generate
 

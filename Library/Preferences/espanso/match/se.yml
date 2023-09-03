@@ -7,9 +7,6 @@ matches:
   - trigger: attr,.
     replace: attribute
 
-  - trigger: crypto,.
-    replace: cryptocurrency
-
   - trigger: dep,.
     replace: dependency
 
