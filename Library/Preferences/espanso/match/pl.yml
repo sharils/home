@@ -25,6 +25,9 @@ matches:
   - trigger: gql,.
     replace: GraphQL
 
+  - trigger: pl,.
+    replace: programming language
+
   - trigger: py,.
     replace: python
 

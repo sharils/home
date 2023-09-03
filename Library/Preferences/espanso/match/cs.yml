@@ -31,9 +31,6 @@ matches:
   - trigger: oop,.
     replace: object-oriented programming
 
-  - trigger: pl,.
-    replace: programming language
-
   - trigger: rdbms,.
     replace: relational database management system
 
