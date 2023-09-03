@@ -7,23 +7,11 @@ matches:
   - trigger: arch,.
     replace: architecture
 
-  - trigger: auth,.
-    replace: authorization
-
-  - trigger: authen,.
-    replace: authentication
-
-  - trigger: cert,.
-    replace: certificate
-
   - trigger: char,.
     replace: character
 
   - trigger: cs,.
     replace: computer science
-
-  - trigger: ct,.
-    replace: ciphertext
 
   - trigger: db,.
     replace: database
@@ -45,9 +33,6 @@ matches:
 
   - trigger: pl,.
     replace: programming language
-
-  - trigger: pt,.
-    replace: plaintext
 
   - trigger: rdbms,.
     replace: relational database management system

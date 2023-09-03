@@ -1,0 +1,17 @@
+---
+matches:
+
+  - trigger: auth,.
+    replace: authorization
+
+  - trigger: authen,.
+    replace: authentication
+
+  - trigger: cert,.
+    replace: certificate
+
+  - trigger: ct,.
+    replace: ciphertext
+
+  - trigger: pt,.
+    replace: plaintext
