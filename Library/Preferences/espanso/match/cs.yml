@@ -19,15 +19,6 @@ matches:
   - trigger: nlp,.
     replace: natural language processing
 
-  - trigger: oo,.
-    replace: object-oriented
-
-  - trigger: ooad,.
-    replace: object-oriented analysis and design
-
-  - trigger: oop,.
-    replace: object-oriented programming
-
   - trigger: re,.
     replace: regular expression
 
