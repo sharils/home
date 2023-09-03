@@ -7,6 +7,9 @@ matches:
   - trigger: asm,.
     replace: assembly
 
+  - trigger: attr,.
+    replace: attribute
+
   - trigger: crypto,.
     replace: cryptocurrency
 

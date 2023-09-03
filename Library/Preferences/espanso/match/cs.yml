@@ -7,9 +7,6 @@ matches:
   - trigger: arch,.
     replace: architecture
 
-  - trigger: attr,.
-    replace: attribute
-
   - trigger: auth,.
     replace: authorization
 
