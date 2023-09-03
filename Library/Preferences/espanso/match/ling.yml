@@ -1,0 +1,11 @@
+---
+matches:
+
+  - trigger: et,.
+    replace: etymology
+
+  - trigger: sb,.
+    replace: somebody
+
+  - trigger: sth,.
+    replace: something

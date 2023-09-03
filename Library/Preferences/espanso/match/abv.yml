@@ -21,9 +21,6 @@ matches:
   - trigger: ep,.
     replace: episode
 
-  - trigger: et,.
-    replace: etymology
-
   - trigger: hsp,.
     replace: highly sensitive person
 
@@ -48,17 +45,11 @@ matches:
   - trigger: nav,.
     replace: navigation
 
-  - trigger: sb,.
-    replace: somebody
-
   - trigger: sci,.
     replace: science
 
   - trigger: so,.
     replace: significant other
-
-  - trigger: sth,.
-    replace: something
 
   - trigger: t,.
     replace: A penny for your thoughts.
