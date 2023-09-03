@@ -46,7 +46,7 @@ matches:
     replace: wikidata
 
   - trigger: wp,.
-    replace: Wikipedia
+    replace: wikipedia
 
   - trigger: yt,.
     replace: YouTube
