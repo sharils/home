@@ -2,37 +2,6 @@
 # Original file: default.yml
 ---
 matches:
-  - trigger: p2,.
-    replace: "{{d}}"
-    vars:
-      - name: d
-        type: shell
-        params:
-          cmd: "pbpaste | fold -w2 | tr '\n' ' '"
-
-  - trigger: p3,.
-    replace: "{{d}}"
-    vars:
-      - name: d
-        type: shell
-        params:
-          cmd: "pbpaste | fold -w3 | tr '\n' ' '"
-
-  - trigger: p4,.
-    replace: "{{d}}"
-    vars:
-      - name: d
-        type: shell
-        params:
-          cmd: "pbpaste | fold -w4 | tr '\n' ' '"
-
-  - trigger: p5,.
-    replace: "{{d}}"
-    vars:
-      - name: d
-        type: shell
-        params:
-          cmd: "pbpaste | fold -w5 | tr '\n' ' '"
 
   - trigger: pc,.
     replace: "{{d}}"
