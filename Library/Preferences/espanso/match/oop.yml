@@ -1,0 +1,8 @@
+---
+matches:
+
+  - trigger: attr,.
+    replace: attribute
+
+  - trigger: prop,.
+    replace: property
