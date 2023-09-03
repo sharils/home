@@ -1,0 +1,17 @@
+---
+matches:
+
+  - trigger: 0.,.
+    replace: 0.0.0.0
+
+  - trigger: 1.,.
+    replace: 1.1.1.1
+
+  - trigger: 127.,.
+    replace: 127.0.0.1
+
+  - trigger: 192.,.
+    replace: 192.168.0.1
+
+  - trigger: ns3.sg,.
+    replace: 172.104.162.222
