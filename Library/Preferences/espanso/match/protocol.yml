@@ -13,8 +13,5 @@ matches:
   - trigger: h:,.
     replace: https://
 
-  - trigger: js,.
-    replace: javascript
-
   - trigger: r:,.
     replace: rsync://

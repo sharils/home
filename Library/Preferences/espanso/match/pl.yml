@@ -10,6 +10,9 @@ matches:
   - trigger: gfm,.
     replace: github flavoured markdown
 
+  - trigger: js,.
+    replace: javascript
+
   - trigger: gql,.
     replace: GraphQL
 
