@@ -28,6 +28,9 @@ matches:
   - trigger: pl,.
     replace: programming language
 
+  - trigger: proto,.
+    replace: Protocol Buffer
+
   - trigger: py,.
     replace: python
 
