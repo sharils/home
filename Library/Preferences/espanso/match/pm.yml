@@ -12,6 +12,9 @@ matches:
       4️⃣ can tolerate it.
       5️⃣ dislike it.
 
+  - trigger: lgtm,.
+    replace: Looks good to me.
+
   - trigger: pd,.
     replace: per discussion
 
