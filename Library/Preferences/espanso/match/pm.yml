@@ -18,5 +18,8 @@ matches:
   - trigger: pd,.
     replace: Per discussion
 
+  - trigger: pr,.
+    replace: Please help review! Thanks!
+
   - trigger: smart,.
     replace: Specific, Measurable, Achievable, Relevant, and Time-bound
