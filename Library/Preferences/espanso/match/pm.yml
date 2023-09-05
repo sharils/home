@@ -16,7 +16,7 @@ matches:
     replace: Looks good to me.
 
   - trigger: pd,.
-    replace: per discussion
+    replace: Per discussion
 
   - trigger: smart,.
     replace: Specific, Measurable, Achievable, Relevant, and Time-bound
