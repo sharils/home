@@ -1,0 +1,25 @@
+snippet b "bool" b
+bool ${1:has_ponycopter} = ${2:3};
+endsnippet
+
+snippet i "int32" b
+int32 ${1:id} = ${2:2};
+endsnippet
+
+snippet m "message" b
+message ${1:Person} {
+}
+endsnippet
+
+snippet rpc "rpc" b
+rpc ${1:SayHello} (${2:HelloRequest}) returns (${3:HelloReply}) {}
+endsnippet
+
+snippet s "string" b
+string ${1:name} = ${2:1};
+endsnippet
+
+snippet srv "service" b
+service ${1:Greeter} {
+}
+endsnippet
