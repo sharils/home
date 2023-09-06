@@ -1,8 +1,7 @@
 #!/usr/bin/env sh
 
 d() {
-  cmd="${1:-i}" && shift
-  case $cmd in
+  case "$1" in
 
   -1) (set -x && date -ujf%s -v-1S 0 "${@:-+%+%t%G-W%V}") ;;
 
@@ -85,7 +84,13 @@ d() {
     d run --rm --volume "${PWD}:/local" parsertongue/swagger-codegen-cli "${@:-langs}"
     ;;
 
-  *) docker "$cmd" "$@" ;;
+  *)
+    if [ -f "$1" ] && [ -f "$2" ]; then
+      delta "$@"
+    else
+      docker "$@"
+    fi
+    ;;
 
   esac
 }
