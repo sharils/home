@@ -37,6 +37,10 @@ snippet cl "@tag :capture_log" b
 @${1:module}tag :capture_log
 endsnippet
 
+snippet credo "credo" b
+{:credo, "~> 1.7", only: [:dev, :test], runtime: false}
+endsnippet
+
 snippet doc "@doc" b
 @doc ${1:~S}"""
 $2
