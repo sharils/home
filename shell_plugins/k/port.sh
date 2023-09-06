@@ -36,6 +36,8 @@ hours:
   8760
 cpu:
   8086
+yard:
+  9144
 EOF
 }
 
