@@ -17,6 +17,7 @@ set colorcolumn=80
 set expandtab
 set foldcolumn=1
 set hidden
+set history=10000
 set hlsearch
 set ignorecase
 set linebreak
