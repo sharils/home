@@ -39,6 +39,8 @@ v() {
   rm) vim README.md ;;
   tor) vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc ;;
 
+  v) shift && "$SHARILS_HOME/shell_plugins/v/v.sh" "$@" ;;
+
   applescript | c | css | csv | eex | erl | ex | exs | feature | gql | html | java | jq | js | json | jsx | lua | md | mdx | mmd | mw | nginx | pegjs | php | proto | py | rs | scss | sh | sql | story | t | ts | tsx | txt | wat | xhtml | yaml | yml | zep)
     if [ -f "$1" ]; then
       vim "$1"
