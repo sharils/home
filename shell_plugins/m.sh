@@ -57,6 +57,7 @@ m() {
   h)
     shift
     case "$1" in
+    s) shift && m hex.search "$@" ;;
     *) m help "$@" | l md ;;
     esac
     ;;
