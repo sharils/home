@@ -55,7 +55,7 @@ SH
     x + "$base/$path.sh"
     [ -n "$EDITOR" ] && $EDITOR "$base/$path.sh"
     h g a "$base/$path.sh"
-    echo "  $last) \"\$SHARILS_HOME/shell_plugins/$path.sh\" \"\$@\" ;;" | pbcopy
+    echo "  $last) shift && \"\$SHARILS_HOME/shell_plugins/$path.sh\" \"\$@\" ;;" | pbcopy
     ;;
 
   m) echo 'h mix <command> instead' >&2 ;;
