@@ -100,6 +100,10 @@ snippet oe "on_exit" b
 on_exit(fn -> $1 end)
 endsnippet
 
+snippet pld "phoenix_live_dashboard" b
+{:phoenix_live_dashboard, "~> 0.8"}
+endsnippet
+
 snippet s "@spec longer_than?(String.t(), non_neg_integer()) :: boolean()" b
 @spec ${1:fn}($2) :: $3
 endsnippet
