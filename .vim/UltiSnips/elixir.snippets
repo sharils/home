@@ -1,5 +1,11 @@
 extends common, strictequal, boolean
 
+priority 4
+
+snippet /^i/ "import" r
+import $0
+endsnippet
+
 
 priority 3
 
@@ -92,10 +98,6 @@ endsnippet
 
 snippet oe "on_exit" b
 on_exit(fn -> $1 end)
-endsnippet
-
-snippet /^i/ "import" r
-import $0
 endsnippet
 
 snippet s "@spec longer_than?(String.t(), non_neg_integer()) :: boolean()" b
