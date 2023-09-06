@@ -54,7 +54,12 @@ m() {
 
   f) shift && m format "$@" ;;
 
-  h) shift && m help "$@" | l md ;;
+  h)
+    shift
+    case "$1" in
+    *) m help "$@" | l md ;;
+    esac
+    ;;
 
   i)
     shift
