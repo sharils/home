@@ -58,6 +58,7 @@
 	rs = reset
 	rsH = reset --hard
 	rsm = reset --merge
+	t = tag
 	u = reset
 	uh = reset --hard
 	um = reset --merge
