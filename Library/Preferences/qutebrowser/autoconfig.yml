@@ -98,6 +98,7 @@ settings:
     docs.expo.dev: true
     docs.python.org: true
     docs.rs: true
+    editor.swagger.io: true
     file://*: true
     firebase.google.com: true
     github.com: true
