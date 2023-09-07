@@ -57,6 +57,8 @@ g() {
 
   cs) shift && git-crypt status "$@" ;;
 
+  czP) shift && g cz pop "$@" ;;
+
   f) shift && "$SHARILS_HOME/shell_plugins/g/f.sh" "$@" ;;
 
   e) shift && "$SHARILS_HOME/shell_plugins/g/e.sh" "$@" ;;
