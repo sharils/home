@@ -34,6 +34,7 @@
 	cot = checkout --theirs
 	cr = revert
 	cw = commit --amend --only
+	cz = stash
 	cza = stash apply --index
 	czp = stash pop --index
 	czw = stash push --keep-index
