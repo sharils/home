@@ -27,6 +27,7 @@ bind generic ;czz           @git czz
 bind generic ;czw           @git czw
 bind generic ;czA           @git stash apply
 bind generic ;cza           @git cza
+bind generic ;czP           @git cz pop
 bind generic ;czp           @git czp
 
 ## Rebase maps
