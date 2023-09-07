@@ -1,5 +1,6 @@
 nmap <LEADER>g :G<SPACE>
 nmap <LEADER>g! :G!<SPACE>
+nmap <LEADER>ga. :G a .<CR>
 nmap <LEADER>gau :G au<CR>
 nmap <LEADER>gbl :G bl<CR>
 nmap <LEADER>gc :G c<LEFT>
