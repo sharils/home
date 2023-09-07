@@ -49,6 +49,7 @@
 	p = push
 	pf = push --force
 	po = push origin
+	pod = push origin develop
 	pof = push --force origin
 	pom = push origin main
 	r = rebase
