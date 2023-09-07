@@ -19,6 +19,8 @@ g() {
 
   L) shift && tig reflog "$@" ;;
 
+  a.) shift && g a . "$@" ;;
+
   cbc)
     g cbr || return $?
     g cb --merged |
