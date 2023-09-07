@@ -20,7 +20,7 @@ p() {
   i) shift && iex -S mix phx.server "$@" ;;
   n)
     shift
-    path="${1:-hello_world}" && shift
+    path="${1:-hello_elixir}" && shift
     mix phx.new "$path" "$@" --install
     cd "$path" || return $?
 

@@ -16,7 +16,7 @@ matches:
     replace: "Refactor "
 
   - trigger: X,.
-    replace: "Execute "
+    replace: "Exec "
 
   - trigger: d,.
     replace: develop
