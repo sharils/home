@@ -32,5 +32,6 @@ bind generic gu<SPACE>      @git u %(prompt)
 bind generic guh            @git uh %(commit)
 bind generic gum            @git um
 bind generic gup            !git up %(commit)~
+bind generic gu~            @git u @~
 
 # vim:filetype=conf
