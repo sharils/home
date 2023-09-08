@@ -115,6 +115,7 @@ settings:
     localhost: true
     mermaid.live: true
     nx.dev: true
+    openlibrary.org: true
     play.rust-lang.org: true
     qute://*: true
     randomuser.me: true
