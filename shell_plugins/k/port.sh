@@ -22,6 +22,7 @@ cpu 8086
 hours 8760
 yard 9144
 film 9527
+salary 27470
 salt 38754
 EOF
 }
