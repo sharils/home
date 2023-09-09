@@ -34,7 +34,7 @@ d() {
     )
     ;;
 
-  default.conf.template) "$SHARILS_HOME/shell_plugins/d/default.conf.template.sh" "$@" ;;
+  default.conf.template) shift && "$SHARILS_HOME/shell_plugins/d/default.conf.template.sh" "$@" ;;
 
   e)
     case "${1:-e}" in
