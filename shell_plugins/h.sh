@@ -53,7 +53,7 @@ h() {
 
   u) shift && "$SHARILS_HOME/shell_plugins/h/u.sh" "$@" ;;
 
-  wc) find "$SHARILS_HOME/shell_plugins" -type f -exec wc -l {} ';' | sed "s#$SHARILS_HOME/shell_plugins/##" | sort ;;
+  wc) shift && "$SHARILS_HOME/shell_plugins/h/wc.sh" "$@" ;;
 
   builtin | % | . | : | \[ | { | alias | bg | bind | break | case | cd | command | complete | continue | dirs | echo | eval | exec | exit | export | false | fc | fg | for | getopts | hash | history | if | jobs | kill | local | log | logout | popd | printf | pushd | pwd | read | readonly | return | set | shift | source | suspend | test | time | times | trap | true | type | ulimit | umask | unalias | unset | until | wait | while) help "$@" | l ;;
 
