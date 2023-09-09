@@ -24,7 +24,7 @@ z() {
 
   e2) z e e ;;
 
-  g) cd ~/git || return ;;
+  g) cd "$HOME/git" || return ;;
 
   gh) shift && "$SHARILS_HOME/shell_plugins/z/gh.sh" "$@" ;;
 
