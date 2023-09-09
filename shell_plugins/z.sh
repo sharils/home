@@ -36,7 +36,7 @@ z() {
 
   s) shift && "$SHARILS_HOME/shell_plugins/z/s.sh" "$@" ;;
 
-  ssh) cd ~/.ssh || return ;;
+  ssh) cd "$HOME/.ssh" || return ;;
 
   t)
     z t_init
