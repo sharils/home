@@ -6,7 +6,7 @@ v() {
     cat >"$tmp"
     if grep --extended-regexp ':\d+:' "$tmp" >/dev/null; then
       set -- -q
-      [ "$(wc -l < "$tmp")" -ge 2 ] && set -- +copen "$@"
+      [ "$(wc -l <"$tmp")" -ge 2 ] && set -- +copen "$@"
       echo "$tmp" | xargs -o vim "$@"
     else
       xargs -o vim "$@" <"$tmp"
@@ -22,7 +22,13 @@ v() {
 
   case "$1" in
 
-  e) vim -p "$SHARILS_HOME/.vimrc" "$SHARILS_HOME/.vim/plugged/after/plugin/set.vim" "$SHARILS_HOME/.vim/plugged/after/plugin/map.vim" "$SHARILS_HOME/.vim/plugged/after/plugin" "$SHARILS_HOME/.vim/plugged/before/plugin" ;;
+  e) vim -p \
+    "$SHARILS_HOME/.vimrc" \
+    "$SHARILS_HOME/.vim/plugged/after/plugin/set.vim" \
+    "$SHARILS_HOME/.vim/plugged/after/plugin/map.vim" \
+    "$SHARILS_HOME/.vim/plugged/after/plugin" \
+    "$SHARILS_HOME/.vim/plugged/before/plugin" ;;
+
   hosts) EDITOR=vim sudo --edit /etc/hosts "$@" ;;
   i)
     shift
