@@ -60,7 +60,7 @@ d() {
 
   o) open -b com.docker.docker ;;
 
-  r) "$SHARILS_HOME/shell_plugins/d/r.sh" "$@" ;;
+  r) shift && "$SHARILS_HOME/shell_plugins/d/r.sh" "$@" ;;
 
   q) osascript -e 'quit app "Docker"' ;;
 
