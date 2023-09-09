@@ -73,6 +73,8 @@ z() {
 
   t_init) [ ! -d "$__z_t_tmp" ] && __z_t_tmp="$(mktemp -d "/tmp/$USER-$(date +%m%d)-XXXXXX")" ;;
 
+  v) shift && "$SHARILS_HOME/shell_plugins/z/v.sh" "$@" ;;
+
   ~t) cd ~/tmp || return ;;
 
   *) __zoxide_z "$_z_cmd" "$@" ;;
