@@ -10,7 +10,6 @@ x() {
   chunk) shift && fold -w "${@:-3}" | tr '\n' ' ' ;;
   diff) shift && diff --color --unified "$@" ;;
   dig) shift && dig "@$(dig +nssearch "$@")" "$@" ;;
-  fde) shift && /Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox "$@" ;;
   fzf) shift && fzf --select-1 --height=~14 --layout=reverse "$@" ;;
   gpg) echo | gpg --clearsign >/dev/null ;;
   hostnameise) tr '[:upper:]' '[:lower:]' | sed -E 's/[^[:alnum:]]+/-/g' ;;
