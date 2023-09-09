@@ -42,11 +42,7 @@ n() {
 
   krampus) shift && "$SHARILS_HOME/shell_plugins/n/krampus.sh" "$@" ;;
 
-  l)
-    shift
-    [ $# -eq 0 ] && set -- --fix . "$@"
-    n eslint "$@"
-    ;;
+  l) shift && "$SHARILS_HOME/shell_plugins/n/l.sh" "$@" ;;
 
   lpd) shift && NPM_CONFIG_LEGACY_PEER_DEPS='1' "$@" ;;
 
