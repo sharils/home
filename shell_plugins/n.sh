@@ -17,16 +17,12 @@ n() {
 
   cu) shift && n npm-check-updates "$@" ;;
 
-  d) shift && "$SHARILS_HOME/shell_plugins/n/d.sh" "$@" ;;
-
   dg)
     shift
     for last in "$@"; do :; done
     z t "$(basename "${last%#*}")"
     n degit "$@"
     ;;
-
-  e) shift && "$SHARILS_HOME/shell_plugins/n/e.sh" "$@" ;;
 
   eas) shift && n eas-cli "$@" ;;
 
@@ -36,31 +32,17 @@ n() {
 
   graphql-codegen) shift && n y --package graphql --package @graphql-codegen/cli -- graphql-codegen "$@" ;;
 
-  i) shift && "$SHARILS_HOME/shell_plugins/n/i.sh" "$@" ;;
-
   jq) shift && jq <package.json "$@" ;;
-
-  krampus) shift && "$SHARILS_HOME/shell_plugins/n/krampus.sh" "$@" ;;
-
-  l) shift && "$SHARILS_HOME/shell_plugins/n/l.sh" "$@" ;;
 
   lpd) shift && NPM_CONFIG_LEGACY_PEER_DEPS='1' "$@" ;;
 
   lv) shift && NPM_CONFIG_LOGLEVEL='verbose' "$@" ;;
-
-  mkcert) shift && "$SHARILS_HOME/shell_plugins/n/mkcert.sh" "$@" ;;
-
-  p) shift && "$SHARILS_HOME/shell_plugins/n/p.sh" "$@" ;;
-
-  pkill) shift && "$SHARILS_HOME/shell_plugins/n/pkill.sh" "$@" ;;
 
   qt) shift && n qrcode-terminal "$@" ;;
 
   r) shift && n run "$@" ;;
 
   rg) shift && rg "$@" package.json ;;
-
-  serve) shift && "$SHARILS_HOME/shell_plugins/n/serve.sh" "$@" ;;
 
   tsc) shift && n y tsc --noEmit "$@" ;;
 
@@ -73,6 +55,8 @@ n() {
   yo) shift && n y --package yo --package "generator-$1" -- yo "$@" ;;
 
   cnc | clear-npx-cache) shift && "$SHARILS_HOME/shell_plugins/n/clear-npx-cache.sh" "$@" ;;
+
+  d | e | i | krampus | l | mkcert | p | pkill | serve) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/n/$cmd.sh" "$@" ;;
 
   @ionic/cli | @mermaid-js/mermaid-cli | @neutralinojs/neu | @sandworm/audit | baapan | backstopjs | browser-sync | bundle-phobia | chance-cli | codesandbox | composerize | cost-of-modules | covgen | csv2json | cypress | degit | depcruise | eas-cli | eslint | expo | gitignore | jscodeshift | jscpd | knip | license | license-checker | lighthouse | nanoid | newman | nginx-linter | npm-check | npm-check-updates | npm-merge-driver | nve | nx | packagephobia-cli | pegjs | prettier | prettier-package-json | pwned | pythagora | qnm | qrcode-terminal | react-devtools | react-native | readme-md-generator | resume-cli | selenium-side-runner | trello-cli | trucker | ts-node | twify | unimported | verdaccio | web-ext | why-is-node-running | wait-on) n y "$@" ;;
 
