@@ -46,7 +46,7 @@ d() {
       cmd="${2:-"$(basename "$PWD" | sed 's/[^[:alnum:]]\{1,\}/_/g')"}" && shift 2
       d j startproject --verbosity 2 "$cmd" "${@:-.}"
       ;;
-    *) p r p -mdjango "$@" ;;
+    *) "$SHARILS_HOME/shell_plugins/p/r.sh" p -mdjango "$@" ;;
     esac
     ;;
 
