@@ -8,7 +8,6 @@ x() {
   b) shift && "$BROWSER" "$@" ;;
   cal) cal -A4 -B4 ;;
   chunk) shift && fold -w "${@:-3}" | tr '\n' ' ' ;;
-  cr) shift && /Applications/Chromium.app/Contents/MacOS/Chromium "$@" ;;
   diff) shift && diff --color --unified "$@" ;;
   dig) shift && dig "@$(dig +nssearch "$@")" "$@" ;;
   f) shift && /Applications/Firefox.app/Contents/MacOS/firefox "$@" ;;
