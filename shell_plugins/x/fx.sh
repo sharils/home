@@ -2,7 +2,7 @@
 
 fx() {
   if [ $# -ne 0 ]; then
-    x fx | grep --ignore-case --color=never "$1"
+    fx | grep --ignore-case --color=never "$1"
     return
   fi
   cmd="$HOME/git/github.com/sharils/~sinopac/$(d F).json"
