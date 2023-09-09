@@ -39,10 +39,7 @@ k() {
 
   posix) echo '#%+-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~' ;;
 
-  printable) cat <<'TEXT'
- !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
-TEXT
-    ;;
+  printable) shift && "$SHARILS_HOME/shell_plugins/k/printable.sh" "$@" ;;
 
   # safe = posix & uri
   safe) echo '-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~' ;;
