@@ -66,7 +66,7 @@ p() {
       set -- test "$@"
       ;;
     esac
-    p r p manage.py "$@"
+    "$SHARILS_HOME/shell_plugins/p/r.sh" p manage.py "$@"
     ;;
 
   r) shift && "$SHARILS_HOME/shell_plugins/p/r.sh" "$@" ;;
