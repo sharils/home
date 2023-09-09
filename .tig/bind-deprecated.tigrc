@@ -20,10 +20,6 @@ bind status  GcF<ENTER>    !git commit --edit --file=.git/COMMIT_EDITMSG
 # bind status  Gcfh<ENTER>   +git commit --fixup %(head)
 bind main    Gcrm<ENTER>   +git commit --reuse-message %(commit)
 
-bind main    Gco-<ENTER>   @git checkout -
-bind refs    Gco-<ENTER>   @git checkout -
-bind refs    Gcoo<ENTER>   @git checkout --ours %(file)
-
 bind main    Gch<ENTER>    !git cherry -v %(commit)
 
 bind main    Gd<ENTER>     !git diff %(commit) @
