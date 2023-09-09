@@ -11,13 +11,7 @@ p() {
 
   I) shift && poetry init "$@" ;;
 
-  a)
-    shift
-    case "$1" in
-    D) shift && set -- --group dev "$@" ;;
-    esac
-    poetry add "$@"
-    ;;
+  a) shift && "$SHARILS_HOME/shell_plugins/p/a.sh" "$@" ;;
 
   c) shift && "$SHARILS_HOME/shell_plugins/p/c.sh" "$@" ;;
 
