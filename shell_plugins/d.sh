@@ -44,7 +44,7 @@ d() {
     esac
     ;;
 
-  i) "$SHARILS_HOME/shell_plugins/d/i.sh" "$@" ;;
+  i) shift && "$SHARILS_HOME/shell_plugins/d/i.sh" "$@" ;;
 
   j)
     case "$1" in
