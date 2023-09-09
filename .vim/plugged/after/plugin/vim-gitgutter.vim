@@ -5,3 +5,4 @@ endfunction
 set statusline+=%{GitStatus()}
 
 nmap <LEADER>ha :GitGutterAll<CR>
+nmap <LEADER>hq :GitGutterQuickFix<BAR>copen<CR>
