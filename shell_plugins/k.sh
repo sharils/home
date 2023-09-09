@@ -57,6 +57,8 @@ TEXT
   # safe = posix & uri
   safe) echo '-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~' ;;
 
+  stat) shift && stat -x ~/Sync/KeePass/keepass.kdbx ;;
+
   u) shift && sed -n '3527,3842p' /Applications/qutebrowser.app/Contents/Resources/config/configdata.yml | grep "$*" ;;
 
   uri) echo "!'()*-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~" ;;
