@@ -1,14 +1,14 @@
 #!/usr/bin/env sh
 
-sh() {
+x_sh() {
   cmd="$1"
   shift
   case "$cmd" in
   t)
     cmd="${*:-sh}"
     echo "==> $cmd <==" >&2
-    x sh | tee "$cmd"
-    x + "$cmd"
+    x_sh | tee "$cmd"
+    chmod -vv +x "$cmd"
     ;;
   *)
     cat <<'EOF'
@@ -21,4 +21,4 @@ EOF
   esac
 }
 
-sh "$@"
+x_sh "$@"
