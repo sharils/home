@@ -31,12 +31,7 @@ k() {
 
   e) $EDITOR "$@" ~/.config/karabiner/karabiner.json ;;
 
-  g)
-    shift
-    no_url_encode="!'()*-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~"
-    keepassxc-cli generate --custom "$no_url_encode" --length "${@:-40}" | tr -d \\n | pbcopy
-    pbpaste | wc
-    ;;
+  g) shift && "$SHARILS_HOME/shell_plugins/k/g.sh" "$@" ;;
 
   n) shift && "$SHARILS_HOME/shell_plugins/k/n.sh" "$@" ;;
 
