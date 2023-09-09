@@ -21,11 +21,7 @@ k() {
 
   b) shift && "$SHARILS_HOME/shell_plugins/k/b.sh" "$@" ;;
 
-  bind)
-    shift
-    bind -p | grep --color=never ^#
-    bind -p | grep '"[^"]\+"' | grep -v 'self-insert\|do-lowercase-version\|digit-argument' | grep "$*"
-    ;;
+  bind) shift && "$SHARILS_HOME/shell_plugins/k/bind.sh" "$@" ;;
 
   d) shift && "$SHARILS_HOME/shell_plugins/k/d.sh" "$@" ;;
 
