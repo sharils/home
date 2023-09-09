@@ -54,7 +54,7 @@ n() {
 
   y) shift && npx --yes "$@" ;;
 
-  yo) shift && n y --package yo --package "generator-$1" -- yo "$@" ;;
+  yo) shift && "$SHARILS_HOME/shell_plugins/n/yo.sh" "$@" ;;
 
   cnc | clear-npx-cache) shift && "$SHARILS_HOME/shell_plugins/n/clear-npx-cache.sh" "$@" ;;
 
