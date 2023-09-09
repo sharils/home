@@ -17,6 +17,7 @@ sqrt 14142 17320
 e 27182 36787
 iron 1538
 roc 1911
+working 1912 19128 2007 20076 https://statfy.mol.gov.tw/index17.aspx
 tel 1999
 cpu 8086
 hours 8760
