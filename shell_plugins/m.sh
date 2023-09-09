@@ -35,14 +35,7 @@ m() {
 
   muzaiko) open -b com.apple.Music 'http://fluo.muzaiko.saluton.dk:8000/radio.mp3' ;;
 
-  n)
-    shift
-    case "$1" in
-    m) cmd="$2" && shift 2 && set -- "$cmd" --module "$@" ;;
-    u) cmd="$2_umbrella" && shift 2 && set -- "$cmd" --umbrella "$@" ;;
-    esac
-    m new "$@" && cd "$cmd" && return $?
-    ;;
+  n) shift && "$SHARILS_HOME/shell_plugins/m/n.sh" "$@" ;;
 
   npm) shift && npm help "$@" | l ;;
 
