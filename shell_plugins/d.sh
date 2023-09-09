@@ -21,7 +21,7 @@ d() {
 
   b) "$SHARILS_HOME/shell_plugins/d/b.sh" "$@" ;;
 
-  c) "$SHARILS_HOME/shell_plugins/d/c.sh" "$@" ;;
+  c) shift && "$SHARILS_HOME/shell_plugins/d/c.sh" "$@" ;;
 
   cmd) "$SHARILS_HOME/shell_plugins/d/cmd.sh" "$@" ;;
 
