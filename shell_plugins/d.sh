@@ -65,15 +65,7 @@ d() {
     d system "$@"
     ;;
 
-  v)
-    shift
-    case "$1" in
-    c) shift && d volume create "$@" ;;
-    i) shift && d volume inspect "$@" ;;
-    p) shift && d volume prune "$@" ;;
-    ls | rm) d volume "$@" ;;
-    esac
-    ;;
+  v) shift && "$SHARILS_HOME/shell_plugins/d/v.sh" "$@" ;;
 
   x) d exec "$@" ;;
 
