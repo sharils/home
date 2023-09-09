@@ -19,20 +19,7 @@ p() {
     poetry add "$@"
     ;;
 
-  c)
-    shift
-    case "$1" in
-    m)
-      shift
-      case "$1" in
-      t) shift && set -- test "$@" ;;
-      esac
-      set -- run manage.py "$@"
-      ;;
-    r) shift && set -- report "$@" ;;
-    esac
-    "$SHARILS_HOME/shell_plugins/p/r.sh" c "$@"
-    ;;
+  c) shift && "$SHARILS_HOME/shell_plugins/p/c.sh" "$@" ;;
 
   e) shift && $EDITOR "$@" pyproject.toml ;;
 
