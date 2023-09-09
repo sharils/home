@@ -21,18 +21,7 @@ m() {
 
   cap) open -b com.apple.Music 'https://playerservices.streamtheworld.com/pls/ClassicalStreamAAC.pls' ;;
 
-  d)
-    shift
-    if [ $# -eq 0 ]; then
-      m deps
-      return
-    fi
-    case "$1" in
-    g) shift && m deps.get "$@" ;;
-    u) shift && m deps.update "$@" ;;
-    *) cmd="$1" && shift && m deps."$cmd" "$@" ;;
-    esac
-    ;;
+  d) shift && "$SHARILS_HOME/shell_plugins/m/d.sh" "$@" ;;
 
   e)
     shift
