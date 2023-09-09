@@ -34,16 +34,7 @@ z() {
 
   p) cd "$(pbpaste)" || return $? ;;
 
-  s)
-    case "$1" in
-    c) set -- /Camera ;;
-    k) set -- /KeePass ;;
-    l) set -- /Libera\ PRO ;;
-    o) set -- /Obsidian ;;
-    t) cd "$TODO_DIR" && true && return $? ;;
-    esac
-    cd "$HOME/Sync$*" || return
-    ;;
+  s) shift && "$SHARILS_HOME/shell_plugins/z/s.sh" "$@" ;;
 
   ssh) cd ~/.ssh || return ;;
 
