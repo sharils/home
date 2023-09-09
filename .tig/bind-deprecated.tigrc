@@ -48,12 +48,6 @@ bind refs    Gpt:<ENTER>   ?git push %(remote) :%(tag)
 
 bind main    Grboh<ENTER>  !sh -c 'git rebase `git symbolic-ref refs/remotes/origin/HEAD`'
 
-bind main    Grs~<ENTER>   ?git reset HEAD~
-bind status  Grs~<ENTER>   ?git reset HEAD~
-bind main    Grsh<ENTER>   ?git reset --hard %(commit)
-bind refs    Grsh<ENTER>   ?git reset --hard %(commit)
-bind main    Grsm<ENTER>   ?git reset --merge
-bind status  Grsm<ENTER>   ?git reset --merge
 bind status  Gus<ENTER>    @git reset %(head)
 
 
