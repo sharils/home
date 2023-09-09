@@ -1,4 +1,5 @@
 [alias]
+	alias = !sh -c 'cat ~/git/github.com/sharils/home/alias.gitconfig'
 	a = add
 	au = add --update
 	b = !sh -c 'git config --get remote.origin.url | grep '^git@github.com' >/dev/null && gh repo view --web'
