@@ -75,6 +75,8 @@ g() {
 
   stripspace) shift && git grep -I --files-with-matches ' \{1,\}$' | xargs sed -i '' 's/ \{1,\}$//' ;;
 
+  u~) shift && g u @~ ;;
+
   y) shift && tig stash "$@" ;;
 
   w)
