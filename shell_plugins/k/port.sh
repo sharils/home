@@ -19,6 +19,7 @@ iron 1538
 roc 1911
 working 1912 19128 2007 20076 https://statfy.mol.gov.tw/index17.aspx
 tel 1999
+teeth 8020
 cpu 8086
 hours 8760
 yard 9144
