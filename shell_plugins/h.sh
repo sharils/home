@@ -32,31 +32,7 @@ h() {
 
   ex) shift && e --eval "require IEx.Helpers; IEx.Helpers.h($*)" | l md ;;
 
-  g)
-    shift
-    base="$SHARILS_HOME/shell_plugins"
-    if [ ! -f "$base/$1.sh" ]; then
-      git -C "$SHARILS_HOME" "$@"
-      return $?
-    fi
-
-    path="$(echo "$*" | tr ' ' '/')"
-    for last in "$@"; do :; done
-    cat <<SH | x touch "$base/$path.sh"
-#!/usr/bin/env sh
-
-$last() {
-  :
-}
-
-$last "\$@"
-SH
-
-    x + "$base/$path.sh"
-    echo "  $last) shift && \"\$SHARILS_HOME/shell_plugins/$path.sh\" \"\$@\" ;;" | pbcopy
-    [ -n "$EDITOR" ] && $EDITOR -O "$base/$1.sh" "$base/$path.sh"
-    h g a "$base/$1.sh" "$base/$path.sh"
-    ;;
+  g) shift && "$SHARILS_HOME/shell_plugins/h/g.sh" "$@" ;;
 
   m) echo 'h mix <command> instead' >&2 ;;
 
