@@ -58,12 +58,7 @@ d() {
 
   q) osascript -e 'quit app "Docker"' ;;
 
-  s)
-    case "$1" in
-    p) shift && set -- prune "$@" ;;
-    esac
-    d system "$@"
-    ;;
+  s) shift && "$SHARILS_HOME/shell_plugins/d/s.sh" "$@" ;;
 
   v) shift && "$SHARILS_HOME/shell_plugins/d/v.sh" "$@" ;;
 
