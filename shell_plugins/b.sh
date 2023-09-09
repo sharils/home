@@ -28,6 +28,7 @@ b() {
     esac
     ;;
   f) shift && BROWSER=/Applications/Firefox.app/Contents/MacOS/firefox "$@" ;;
+  fde) shift && BROWSER=/Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox "$@" ;;
   i) shift && brew install "$@" ;;
   l)
     shift
