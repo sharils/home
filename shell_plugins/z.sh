@@ -34,7 +34,7 @@ z() {
     cd "$HOME/git/github.com$*" || return
     ;;
 
-  gl) cd ~/git/gitlab.com || return ;;
+  gl) cd "$HOM#/git/gitlab.com" || return ;;
 
   h) cd "$SHARILS_HOME" || return ;;
 
