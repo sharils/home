@@ -3,7 +3,7 @@ nmap <LEADER>g! :G!<SPACE>
 nmap <LEADER>ga. :G a .<CR>
 nmap <LEADER>gau :G au<CR>
 nmap <LEADER>gbl :G bl<CR>
-nmap <LEADER>gc :G c<LEFT>
+nmap <LEADER>gc<SPACE> :G c<SPACE>
 nmap <LEADER>gcm :G cm ''<LEFT>
 nmap <LEADER>gcma :G cm 'Add '<LEFT>
 nmap <LEADER>gcmc :G cm 'Change '<LEFT>
