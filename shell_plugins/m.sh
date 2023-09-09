@@ -5,8 +5,6 @@ m() {
 
   c) shift && "$SHARILS_HOME/shell_plugins/m/c.sh" "$@" ;;
 
-  cap) open -b com.apple.Music 'https://playerservices.streamtheworld.com/pls/ClassicalStreamAAC.pls' ;;
-
   d) shift && "$SHARILS_HOME/shell_plugins/m/d.sh" "$@" ;;
 
   e) shift && "$SHARILS_HOME/shell_plugins/m/e.sh" "$@" ;;
