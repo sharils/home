@@ -16,6 +16,7 @@ Plug 'https://github.com/tomtom/tcomment_vim'
 Plug 'https://github.com/SirVer/ultisnips'
 Plug 'https://github.com/tpope/vim-abolish'
 Plug 'https://github.com/christoomey/vim-conflicted' | Plug 'https://github.com/tpope/vim-fugitive'
+Plug 'https://github.com/airblade/vim-gitgutter', { 'branch': 'main' }
 Plug 'https://github.com/ludovicchabant/vim-gutentags'
 Plug 'https://github.com/preservim/vim-indent-guides'
 Plug 'https://github.com/inkarkat/vim-ingo-library' | Plug 'inkarkat/vim-mark'
