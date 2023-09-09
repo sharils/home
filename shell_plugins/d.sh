@@ -36,13 +36,12 @@ d() {
 
   default.conf.template) shift && "$SHARILS_HOME/shell_plugins/d/default.conf.template.sh" "$@" ;;
 
-  e)
-    case "${1:-e}" in
-    f) $EDITOR Dockerfile ;;
-    i) $EDITOR .dockerignore ;;
-    e) direnv edit . && chmod 600 .envrc ;;
-    esac
-    ;;
+  e) eval "$(
+    cat <<EOF | fzf --tac
+$EDITOR -O Dockerfile .dockerignore
+direnv edit . && chmod 600 .envrc
+EOF
+  )" ;;
 
   i) shift && "$SHARILS_HOME/shell_plugins/d/i.sh" "$@" ;;
 
