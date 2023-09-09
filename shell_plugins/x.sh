@@ -26,7 +26,6 @@ x() {
   ssh) shift && ssh -t "$@" screen -xRRe^Gg ;;
   ssh-copy-id) shift && ssh-copy-id -o PreferredAuthentications=password -i "$HOME/.ssh/id_ed25519.pub" "$@" ;;
   su) shift && sudo su "${X_SU:?}" ;;
-  tb) shift && /Applications/Tor\ Browser.app/Contents/MacOS/firefox "$@" ;;
   tel) shift && open "tel:$*" ;;
   ts) shift && n y ts-node "$@" ;;
   unzip) shift && unzip "$1" -d "${1%%.*}" && cd "${1%%.*}" && ls ;;
