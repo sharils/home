@@ -15,6 +15,7 @@ bind generic gcmr           !git cmr '%(prompt Refactor )'
 bind generic gcmw           !git cmw '%(prompt wip! )'
 bind generic gcmx           !git cmx '%(prompt Execute )'
 bind generic gco<ENTER>     @git co %(commit)
+bind generic gco-           @git co-
 bind generic gco/           @git co :/
 bind generic gcob           @git co -b %(prompt) %(commit)
 bind generic gcod           @git cod
