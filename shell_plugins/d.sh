@@ -65,7 +65,15 @@ d() {
     d system "$@"
     ;;
 
-  v) d volume "$@" ;;
+  v)
+    shift
+    case "$1" in
+    c) shift && d volume create "$@" ;;
+    i) shift && d volume inspect "$@" ;;
+    p) shift && d volume prune "$@" ;;
+    ls | rm) d volume "$@" ;;
+    esac
+    ;;
 
   x) d exec "$@" ;;
 
