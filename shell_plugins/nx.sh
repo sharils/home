@@ -31,7 +31,7 @@ nx() {
   ls)
     shift
     case "$*" in
-    jest | js | linter | workspace | angular | cypress | detox | esbuild | expo | express | nest | next | node | nx-plugin | react | react-native | rollup | storybook | web | webpack) nx ls "@nrwl/$*" "$@" ;;
+    angular | cypress | detox | esbuild | expo | express | jest | js | linter | nest | next | node | plugin | react | react-native | rollup | storybook | vite | web | webpack | workspace) nx ls "@nx/$*" "$@" ;;
     *) nx list "$@" ;;
     esac
     ;;
