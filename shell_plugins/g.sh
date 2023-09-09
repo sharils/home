@@ -28,7 +28,7 @@ g() {
       xargs git cb --delete
     ;;
 
-  cbr) shift && "$SHARILS_HOME/shell_plugins/g/cbr.sh" "$@" ;;
+  cb) shift && "$SHARILS_HOME/shell_plugins/g/cb.sh" "$@" ;;
 
   cgi) shift && git config --file ~/git/github.com/sharils/home/gitignore.gitconfig "$@" ;;
 
