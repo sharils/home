@@ -1,0 +1,76 @@
+# https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html
+# https://jsdoc.app/
+global !p
+from my_snippet_helpers import *
+endglobal
+
+
+priority 4
+
+snippet @p "@prop" "around_typedef(snip)" ie
+@prop {${1:string}} ${2:prop4}
+endsnippet
+
+
+priority 3
+
+snippet @a "@author" w
+@author ${1:Ian Awesome} ${2:<i.am.awesome@example.com>}
+endsnippet
+
+snippet @c "@callback" w
+@callback ${1:Predicate}
+endsnippet
+
+snippet @cl "cl" w
+@class
+endsnippet
+
+snippet @d "@typedef" w
+@typedef {object} ${1:SpecialType}
+endsnippet
+
+snippet @depr "@deprecated" w
+@deprecated $0
+endsnippet
+
+snippet @e "@enum" w
+@enum {${1:number}}
+endsnippet
+
+snippet @g "@template" w
+@template $2${1:T}
+endsnippet
+
+snippet @l "@link" w
+@link {${1:string}} ${2:p1}
+endsnippet
+
+snippet @p "@param" w
+@param {${1:string}} ${2:p1}
+endsnippet
+
+snippet @r "@return" w
+@return {${1:string}}
+endsnippet
+
+snippet @s "@see" w
+@see $0
+endsnippet
+
+snippet @sa "@satisfies" w
+@satisfies
+endsnippet
+
+snippet @t "@type" w
+@type {${1:string}}
+endsnippet
+
+snippet @th "@this" w
+@this {${1:HTMLElement}}
+endsnippet
+
+
+snippet @i "@import" i
+import("${1:./types}")
+endsnippet
