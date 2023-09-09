@@ -23,7 +23,7 @@ d() {
 
   c) shift && "$SHARILS_HOME/shell_plugins/d/c.sh" "$@" ;;
 
-  cmd) "$SHARILS_HOME/shell_plugins/d/cmd.sh" "$@" ;;
+  cmd) shift && "$SHARILS_HOME/shell_plugins/d/cmd.sh" "$@" ;;
 
   copy)
     z t_init
