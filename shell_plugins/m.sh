@@ -25,14 +25,7 @@ m() {
 
   h) shift && "$SHARILS_HOME/shell_plugins/m/h.sh" "$@" ;;
 
-  i)
-    shift
-    if [ $# -eq 0 ]; then
-      iex -S mix "$@"
-      return
-    fi
-    m install "$@"
-    ;;
+  i) shift && "$SHARILS_HOME/shell_plugins/m/i.sh" "$@" ;;
 
   jason) m r --eval 'IO.read(:all) |> Jason.decode!() |> IO.inspect()' ;;
 
