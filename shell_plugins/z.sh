@@ -18,7 +18,7 @@ z() {
     [ -n "$path" ] && z "$path"
     ;;
 
-  d) cd ~/Downloads || return ;;
+  d) cd "$HOME/Downloads" || return ;;
 
   e) shift && "$SHARILS_HOME/shell_plugins/z/e.sh" "$@" ;;
 
