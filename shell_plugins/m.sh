@@ -11,13 +11,7 @@ m() {
 
   bbc) open -b com.apple.Music 'https://music.apple.com/tw/station/bbc-radio-3/ra.1461288674?l=en' ;;
 
-  c)
-    shift
-    case "$1" in
-    p) MIX_ENV=prod m compile "$@" ;;
-    *) m compile "$@" ;;
-    esac
-    ;;
+  c) shift && "$SHARILS_HOME/shell_plugins/m/c.sh" "$@" ;;
 
   cap) open -b com.apple.Music 'https://playerservices.streamtheworld.com/pls/ClassicalStreamAAC.pls' ;;
 
