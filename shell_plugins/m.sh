@@ -17,21 +17,7 @@ m() {
 
   d) shift && "$SHARILS_HOME/shell_plugins/m/d.sh" "$@" ;;
 
-  e)
-    shift
-    if [ $# -eq 0 ]; then
-      $EDITOR mix.exs
-      return
-    fi
-    case "$1" in
-    c) shift && m ecto.create "$@" ;;
-    *)
-      tmp="$(mktemp)"
-      grep --line-number --with-filename "$1" mix.exs >"$tmp"
-      vim -q "$tmp"
-      ;;
-    esac
-    ;;
+  e) shift && "$SHARILS_HOME/shell_plugins/m/e.sh" "$@" ;;
 
   erl) erl -man erl | l ;;
 
