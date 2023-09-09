@@ -76,6 +76,10 @@ def around_throw(snip):
     return "throw" in snip.buffer[snip.line]
 
 
+def around_typedef(snip):
+    return "@typedef" in snip.buffer[snip.line - 1] or "@prop" in snip.buffer[snip.line - 1]
+
+
 def importname(path):
     return to_camel(re.sub("\..*", "", os.path.basename(path)))
 
