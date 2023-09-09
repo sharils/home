@@ -8,6 +8,7 @@ o() {
   bbc) open -b com.apple.Music 'https://music.apple.com/tw/station/bbc-radio-3/ra.1461288674?l=en' ;;
   cap) open -b com.apple.Music 'https://playerservices.streamtheworld.com/pls/ClassicalStreamAAC.pls' ;;
   kamu) open -b com.apple.Music 'https://kamu.streamguys1.com/hd2-64' ;;
+  kids) open -b com.apple.Music 'https://classicalkids.stream.publicradio.org/classicalkids.aac' ;;
   esac
 }
 
