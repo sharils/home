@@ -3,3 +3,5 @@ function! GitStatus()
   return printf('+%d ~%d -%d', a, m, r)
 endfunction
 set statusline+=%{GitStatus()}
+
+nmap <LEADER>ha :GitGutterAll<CR>
