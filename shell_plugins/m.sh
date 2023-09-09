@@ -51,16 +51,7 @@ m() {
 
   s) shift && m search "$@" ;;
 
-  t)
-    shift
-    case "$1" in
-    f) shift && set -- --failed "$@" ;;
-    mf) shift && set -- --max-failures "${@:-1}" ;;
-    s) shift && set -- --seed 0 "$@" ;;
-    t) shift && set -- --trace "$@" ;;
-    esac
-    m test "$@"
-    ;;
+  t) shift && "$SHARILS_HOME/shell_plugins/m/t.sh" "$@" ;;
 
   sft) m strftime ;;
 
