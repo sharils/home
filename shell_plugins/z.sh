@@ -53,7 +53,7 @@ z() {
 
   v) shift && "$SHARILS_HOME/shell_plugins/z/v.sh" "$@" ;;
 
-  ~t) cd ~/tmp || return ;;
+  ~t) cd "$HOME/tmp" || return ;;
 
   *) __zoxide_z "$_z_cmd" "$@" ;;
 
