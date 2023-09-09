@@ -31,6 +31,7 @@ nx() {
   ls)
     shift
     case "$*" in
+    r) open 'https://nx.dev/extending-nx/registry' ;;
     angular | cypress | detox | esbuild | expo | express | jest | js | linter | nest | next | node | plugin | react | react-native | rollup | storybook | vite | web | webpack | workspace) nx ls "@nx/$*" "$@" ;;
     *) nx list "$@" ;;
     esac
