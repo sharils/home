@@ -31,7 +31,7 @@ p() {
       ;;
     r) shift && set -- report "$@" ;;
     esac
-    p r c "$@"
+    "$SHARILS_HOME/shell_plugins/p/r.sh" c "$@"
     ;;
 
   e) shift && $EDITOR "$@" pyproject.toml ;;
