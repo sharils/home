@@ -29,7 +29,14 @@ b() {
     ;;
   f) shift && BROWSER=/Applications/Firefox.app/Contents/MacOS/firefox "$@" ;;
   i) shift && brew install "$@" ;;
-  l) shift && BROWSER=lynx "$@" ;;
+  l)
+    shift
+    if [ $# -eq 0 ]; then
+      bat --list-languages
+    else
+      BROWSER=lynx "$@"
+    fi
+    ;;
   n) shift && BROWSER=none "$@" ;;
   o) shift && BROWSER=open "$@" ;;
   out) shift && brew outdated "$@" ;;
