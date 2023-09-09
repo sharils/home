@@ -2,6 +2,13 @@
 
 cb() {
   case "$1" in
+  c)
+    cb r || return $?
+    git cb --merged |
+      sed 's/^.* //' | grep -Ev '^(?:main|master|develop)$' |
+      xargs git cb --delete
+    ;;
+
   r)
     upstream="${1:-origin/develop}"
     current_branch="$(git rev-parse --abbrev-ref HEAD)"

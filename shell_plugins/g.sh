@@ -21,13 +21,6 @@ g() {
 
   a.) shift && g a . "$@" ;;
 
-  cbc)
-    g cbr || return $?
-    g cb --merged |
-      sed 's/^.* //' | grep -Ev '^(?:main|master|develop)$' |
-      xargs git cb --delete
-    ;;
-
   cb) shift && "$SHARILS_HOME/shell_plugins/g/cb.sh" "$@" ;;
 
   cgi) shift && git config --file ~/git/github.com/sharils/home/gitignore.gitconfig "$@" ;;
