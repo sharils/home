@@ -26,13 +26,7 @@ z() {
 
   g) cd ~/git || return ;;
 
-  gh)
-    case "$1" in
-    r) set -- /remotelytw ;;
-    s) set -- /sharils ;;
-    esac
-    cd "$HOME/git/github.com$*" || return
-    ;;
+  gh) shift && "$SHARILS_HOME/shell_plugins/z/gh.sh" "$@" ;;
 
   gl) cd "$HOM#/git/gitlab.com" || return ;;
 
