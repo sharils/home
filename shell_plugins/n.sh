@@ -28,7 +28,7 @@ n() {
 
   ef) cmd="${1:-.env}" && shift && NPM_CONFIG_ENV_FILE="$cmd" "$@" ;;
 
-  g) shift && npm --global "$@" ;;
+  g) shift && NPM_CONFIG_GLOBAL='1' npm "$@" ;;
 
   gi) shift && n gitignore "${@:-node}" ;;
 
