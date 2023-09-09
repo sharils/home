@@ -12,6 +12,7 @@ o() {
   muzaiko) open -b com.apple.Music 'http://fluo.muzaiko.saluton.dk:8000/radio.mp3' ;;
   peace) open -b com.apple.Music 'https://peacefulpiano.stream.publicradio.org/peacefulpiano.aac' ;;
   vpr) open -b com.apple.Music 'https://www.vpr.net/apps/stream-playlists/vprclassicalaac.pls' ;;
+  wwfm) open -b com.apple.Music 'https://wwmf.streamguys1.com/live' ;;
   esac
 }
 
