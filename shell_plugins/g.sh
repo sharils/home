@@ -21,8 +21,6 @@ g() {
 
   a.) shift && g a . "$@" ;;
 
-  cb) shift && "$SHARILS_HOME/shell_plugins/g/cb.sh" "$@" ;;
-
   cgi) shift && git config --file ~/git/github.com/sharils/home/gitignore.gitconfig "$@" ;;
 
   cl)
@@ -52,18 +50,6 @@ g() {
 
   czP) shift && g cz pop "$@" ;;
 
-  f) shift && "$SHARILS_HOME/shell_plugins/g/f.sh" "$@" ;;
-
-  e) shift && "$SHARILS_HOME/shell_plugins/g/e.sh" "$@" ;;
-
-  i) shift && "$SHARILS_HOME/shell_plugins/g/i.sh" "$@" ;;
-
-  mr) shift && "$SHARILS_HOME/shell_plugins/g/mr.sh" "$@" ;;
-
-  pr) shift && "$SHARILS_HOME/shell_plugins/g/pr.sh" "$@" ;;
-
-  r) shift && "$SHARILS_HOME/shell_plugins/g/r.sh" "$@" ;;
-
   s) shift && tig status "$@" ;;
 
   stripspace) shift && git grep -I --files-with-matches ' \{1,\}$' | xargs sed -i '' 's/ \{1,\}$//' ;;
@@ -79,6 +65,8 @@ g() {
     ;;
 
   -*) shift && grep "$@" ;;
+
+  cb | f | e | i | mr | pr | r) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/g/$cmd.sh" "$@" ;;
 
   *)
     if [ $# -eq 1 ] && [ -f "$1" ] && [ "$1" != a ] && [ "$1" != add ] &&
