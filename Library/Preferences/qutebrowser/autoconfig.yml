@@ -140,6 +140,7 @@ settings:
     www.sharedrop.io: true
     www.typescriptlang.org: true
     www.wolframalpha.com: true
+    yeoman.io: true
   content.local_storage:
     '*.wikidata.org': true
     astexplorer.net: true
