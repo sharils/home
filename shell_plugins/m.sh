@@ -19,8 +19,6 @@ m() {
 
   jason) m r --eval 'IO.read(:all) |> Jason.decode!() |> IO.inspect()' ;;
 
-  muzaiko) open -b com.apple.Music 'http://fluo.muzaiko.saluton.dk:8000/radio.mp3' ;;
-
   n) shift && "$SHARILS_HOME/shell_plugins/m/n.sh" "$@" ;;
 
   o) shift && "$SHARILS_HOME/shell_plugins/m/o.sh" "$@" ;;
