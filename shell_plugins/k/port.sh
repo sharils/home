@@ -29,6 +29,7 @@ cpu 8086
 hours 8760
 yard 9144
 film 9527
+a4 21297 https://en.wikipedia.org/wiki/A4
 salary 27470
 salt 38754
 EOF
