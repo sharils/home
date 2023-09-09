@@ -19,7 +19,7 @@ d() {
 
   a) direnv allow ;;
 
-  b) "$SHARILS_HOME/shell_plugins/d/b.sh" "$@" ;;
+  b) shift && "$SHARILS_HOME/shell_plugins/d/b.sh" "$@" ;;
 
   c) shift && "$SHARILS_HOME/shell_plugins/d/c.sh" "$@" ;;
 
