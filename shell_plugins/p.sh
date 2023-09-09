@@ -59,7 +59,7 @@ p() {
       shift
       case "$1" in
       w)
-        w py 'poetry run python manage.py test'
+        watchman-make --pattern '**/*.py' --run 'poetry run python manage.py test'
         return
         ;;
       esac
