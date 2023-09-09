@@ -26,6 +26,8 @@ n() {
 
   eas) shift && n eas-cli "$@" ;;
 
+  ef) cmd="${1:-.env}" && shift && NPM_CONFIG_ENV_FILE="$cmd" "$@" ;;
+
   g) shift && npm --global "$@" ;;
 
   gi) shift && n gitignore "${@:-node}" ;;
