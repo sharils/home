@@ -44,15 +44,13 @@ n() {
 
   rg) shift && rg "$@" package.json ;;
 
-  vercel) shift && n y vercel --token="${VERCEL_TOKEN:?}" "$@" ;;
-
   w) shift && n web "$@" ;;
 
   y) shift && npx --yes "$@" ;;
 
   cnc) shift && n clear-npx-cache "$@" ;;
 
-  clear-npx-cache | d | e | i | graphql-codegen | krampus | l | mkcert | p | pkill | serve | tsc | yo) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/n/$cmd.sh" "$@" ;;
+  clear-npx-cache | d | e | i | graphql-codegen | krampus | l | mkcert | p | pkill | serve | tsc | vercel | yo) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/n/$cmd.sh" "$@" ;;
 
   @ionic/cli | @mermaid-js/mermaid-cli | @neutralinojs/neu | @sandworm/audit | baapan | backstopjs | browser-sync | bundle-phobia | chance-cli | codesandbox | composerize | cost-of-modules | covgen | csv2json | cypress | degit | depcruise | eas-cli | eslint | expo | gitignore | jscodeshift | jscpd | knip | license | license-checker | lighthouse | nanoid | newman | nginx-linter | npm-check | npm-check-updates | npm-merge-driver | nve | nx | packagephobia-cli | pegjs | prettier | prettier-package-json | pwned | pythagora | qnm | qrcode-terminal | react-devtools | react-native | readme-md-generator | resume-cli | selenium-side-runner | trello-cli | trucker | ts-node | ts-to-jsdoc | twify | unimported | verdaccio | web-ext | why-is-node-running | wait-on) n y "$@" ;;
 
