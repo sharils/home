@@ -23,8 +23,6 @@ g() {
 
   c) shift && "$SHARILS_HOME/shell_plugins/g/c.sh" "$@" ;;
 
-  cgi) shift && git config --file ~/git/github.com/sharils/home/gitignore.gitconfig "$@" ;;
-
   cl)
     shift
     case "$1" in
