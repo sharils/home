@@ -38,7 +38,7 @@ matches:
     replace: mermaid
 
   - trigger: phx,.
-    replace: Phoenix
+    replace: phoenix
 
   - trigger: psi,.
     replace: PageSpeed Insights
