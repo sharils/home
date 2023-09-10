@@ -37,5 +37,5 @@ matches:
   - trigger: Fr,.
     replace: Friday
 
-  - trigger: sat,.
+  - trigger: Sa,.
     replace: Saturday
