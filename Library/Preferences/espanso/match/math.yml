@@ -10,20 +10,5 @@ matches:
   - trigger: epsi,.
     replace: ε
 
-  - trigger: eq,.
-    replace: equal to
-
   - trigger: fn,.
     replace: function
-
-  - trigger: gt,.
-    replace: greater than
-
-  - trigger: gte,.
-    replace: greater than or equal to
-
-  - trigger: lt,.
-    replace: less than
-
-  - trigger: lte,.
-    replace: less than or equal to
