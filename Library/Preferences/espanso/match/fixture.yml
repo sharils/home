@@ -1,15 +1,5 @@
 ---
 matches:
-  - trigger: +1,.
-    replace: +120655501{{RANDOM}}
-    vars:
-      - name: RANDOM
-        type: shell
-        params:
-          cmd: "jot -rw%02d 1 0 99"
-
-  - trigger: +44,.
-    replace: +441134960999
 
   - trigger: 109,.
     replace: |
