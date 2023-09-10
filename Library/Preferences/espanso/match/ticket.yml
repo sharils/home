@@ -10,6 +10,9 @@ matches:
   - trigger: Bt,.
     replace: Backlog Triage
 
+  - trigger: Dod,.
+    replace: Definition of Done
+
   - trigger: Sp,.
     replace: Story Point
 
