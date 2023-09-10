@@ -16,9 +16,6 @@ matches:
   - trigger: Ga,.
     replace: Google Analytics
 
-  - trigger: dj,.
-    replace: django
-
   - trigger: Lv,.
     replace: LiveView
 
@@ -27,6 +24,9 @@ matches:
 
   - trigger: Phx,.
     replace: Phoenix Framework
+
+  - trigger: dj,.
+    replace: django
 
   - trigger: ga,.
     replace: google analytics
@@ -42,9 +42,6 @@ matches:
 
   - trigger: phx,.
     replace: phoenix
-
-  - trigger: psi,.
-    replace: PageSpeed Insights
 
   - trigger: qtp,.
     replace: QuickTime Player
