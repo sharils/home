@@ -19,6 +19,9 @@ matches:
   - trigger: Spa,.
     replace: Single Page Application
 
+  - trigger: Ssr,.
+    replace: Server Side Rendering
+
   - trigger: app,.
     replace: application
 
@@ -35,9 +38,6 @@ matches:
         multiline: true
       rt:
         multiline: true
-
-  - trigger: ssr,.
-    replace: server side rendering
 
   - trigger: sw,.
     replace: service worker
