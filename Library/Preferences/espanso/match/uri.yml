@@ -28,9 +28,6 @@ matches:
   - trigger: Tg,.
     replace: Telegram
 
-  - trigger: Yt,.
-    replace: YouTube
-
   - trigger: .s,.
     replace: .social
 
@@ -69,6 +66,3 @@ matches:
 
   - trigger: tg,.
     replace: telegram
-
-  - trigger: yt,.
-    replace: youtube

@@ -1,0 +1,11 @@
+---
+matches:
+
+  - trigger: Ga,.
+    replace: Google Analytics
+
+  - trigger: Yt,.
+    replace: YouTube
+
+  - trigger: yt,.
+    replace: youtube

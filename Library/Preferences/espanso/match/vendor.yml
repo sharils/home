@@ -13,9 +13,6 @@ matches:
   - trigger: Dj,.
     replace: Django
 
-  - trigger: Ga,.
-    replace: Google Analytics
-
   - trigger: Lv,.
     replace: LiveView
 
