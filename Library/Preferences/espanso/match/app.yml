@@ -4,6 +4,9 @@ matches:
   - trigger: As,.
     replace: App Store
 
+  - trigger: Fd,.
+    replace: F-Droid
+
   - trigger: Ps,.
     replace: Play Store
 
