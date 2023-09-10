@@ -24,6 +24,3 @@ matches:
 
   - trigger: Su,.
     replace: Stand-Up
-
-  - trigger: Wip,.
-    replace: Work In Progress
