@@ -1,17 +1,11 @@
 ---
 matches:
 
-  - trigger: Agql,.
-    replace: Apollo GraphQL
-
   - trigger: Api,.
     replace: API
 
   - trigger: Grpc,.
     replace: gRPC
-
-  - trigger: Gql,.
-    replace: GraphQL
 
   - trigger: Proto,.
     replace: Protocol Buffer
