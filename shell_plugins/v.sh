@@ -29,8 +29,11 @@ v() {
   i) shift && "$SHARILS_HOME/shell_plugins/v/i.sh" "$@" ;;
 
   mj) vim manifest.json ;;
+
   mk) vim Makefile ;;
+
   rm) shift && "$SHARILS_HOME/shell_plugins/v/rm.sh" "$@" ;;
+
   tor) vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc ;;
 
   v) shift && "$SHARILS_HOME/shell_plugins/v/v.sh" "$@" ;;
