@@ -1,9 +1,6 @@
 ---
 matches:
 
-  - trigger: Np,.
-    replace: NewebPay
-
   - trigger: eg,.
     replace: example.com
 
@@ -12,6 +9,3 @@ matches:
 
   - trigger: lh,.
     replace: localhost
-
-  - trigger: np,.
-    replace: newebpay

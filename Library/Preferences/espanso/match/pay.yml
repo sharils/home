@@ -1,0 +1,8 @@
+---
+matches:
+
+  - trigger: Np,.
+    replace: NewebPay
+
+  - trigger: np,.
+    replace: newebpay
