@@ -12,6 +12,12 @@ matches:
   - trigger: F,.
     replace: "Fix "
 
+  - trigger: Gh,.
+    replace: GitHub
+
+  - trigger: Gl,.
+    replace: GitLab
+
   - trigger: R,.
     replace: "Refactor "
 
@@ -21,5 +27,12 @@ matches:
   - trigger: d,.
     replace: develop
 
+  - trigger: gh,.
+    replace: github
+
+  - trigger: gl,.
+    replace: gitlab
+
   - trigger: o,.
     replace: origin
+
