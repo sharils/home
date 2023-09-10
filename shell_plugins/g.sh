@@ -25,22 +25,18 @@ g() {
 
   cl)
     shift
+    if [ -f "$1" ]; then
+      git cl "$@"
+      return $?
+    fi
     case "$1" in
-    t | *)
-      if [ -f "$1" ]; then
-        git cl "$@"
-        return $?
-      fi
-      case "$1" in
-      ~) shift && x mp "$HOME$(dirname "$(echo "$*" | sed 's#https:/#git#;s#[@:]#/#g;s#^#/#')")" ;;
-      t) shift && z t ;;
-      esac
-      git clone "$@"
-      for last in "$@"; do :; done
-      last="$(basename "$last")"
-      cd "${last%.*}" || return
-      ;;
+    ~) shift && x mp "$HOME$(dirname "$(echo "$*" | sed 's#https:/#git#;s#[@:]#/#g;s#^#/#')")" ;;
+    t) shift && z t ;;
     esac
+    git clone "$@"
+    for last in "$@"; do :; done
+    last="$(basename "$last")"
+    cd "${last%.*}" || return
     ;;
 
   cs) shift && git-crypt status "$@" ;;
