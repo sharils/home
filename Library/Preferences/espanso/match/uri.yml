@@ -4,9 +4,6 @@ matches:
   - trigger: Ddg,.
     replace: DuckDuckGo
 
-  - trigger: Fb,.
-    replace: Facebook
-
   - trigger: Gh,.
     replace: GitHub
 
@@ -37,9 +34,6 @@ matches:
   - trigger: eg,.
     replace: example.com
 
-  - trigger: fb,.
-    replace: facebook
-
   - trigger: gh,.
     replace: github
 
@@ -48,9 +42,6 @@ matches:
 
   - trigger: go,.
     replace: g0v
-
-  - trigger: ig,.
-    replace: instagram
 
   - trigger: lh,.
     replace: localhost
