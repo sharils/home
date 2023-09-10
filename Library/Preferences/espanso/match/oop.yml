@@ -4,14 +4,14 @@ matches:
   - trigger: Ooad,.
     replace: Object-Oriented Analysis and Design
 
+  - trigger: Oop,.
+    replace: Object-Oriented Programming
+
   - trigger: attr,.
     replace: attribute
 
   - trigger: oo,.
     replace: object-oriented
-
-  - trigger: oop,.
-    replace: object-oriented programming
 
   - trigger: prop,.
     replace: property
