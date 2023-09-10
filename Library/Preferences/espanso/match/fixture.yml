@@ -1,28 +1,8 @@
 ---
 matches:
 
-  - trigger: 109,.
-    replace: |
-      一二三四五六七八九十一二三四五六七八九廿一二三四五六七八九卅一二三四五六七八九卌一二三四五六七八九圩一二三四五六七八九圓一二三四五六七八九進一二三四五六七八九枯一二三四五六七八九枠一二三四五六七八九百一二三四五六七八九
-
-  - trigger: 261,.
-    replace: |
-      123456789A123456789B123456789C123456789D123456789E123456789F123456789G123456789H123456789I123456789J123456789K123456789L123456789M123456789N123456789O123456789P123456789Q123456789R123456789S123456789T123456789U123456789V123456789W123456789X123456789Y123456789Z
-
   - trigger: admin,.
     replace: admin@example.com
 
   - trigger: fix,.
     replace: fixture
-
-  - trigger: poem,.
-    replace: |
-      I'm nobody! Who are you?
-      Are you nobody, too?
-      Then there's a pair of us - don't tell!
-      They'd banish us, you know.
-
-      How dreary to be somebody!
-      How public, like a frog
-      To tell your name the livelong day
-      To an admiring bog!
