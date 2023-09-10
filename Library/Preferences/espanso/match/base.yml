@@ -2,6 +2,8 @@
 # Original file: default.yml
 ---
 matches:
+  - trigger: e,.
+    replace: espanso
 
   - trigger: pc,.
     replace: "{{d}}"
