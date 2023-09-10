@@ -10,7 +10,7 @@ matches:
   - trigger: Posa,.
     replace: Pattern-Oriented Software Architecture
 
-  - trigger: sn,.
+  - trigger: Sn,.
     replace: Security Now!
 
   - trigger: trpl,.
