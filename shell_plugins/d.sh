@@ -5,8 +5,6 @@ d() {
 
   -1) (set -x && date -ujf%s -v-1S 0 "${@:-+%+%t%G-W%V}") ;;
 
-  -v) shift && "$SHARILS_HOME/shell_plugins/d/-v.sh" "$@" ;;
-
   0) date -ujf%s 0 "${@:-+%FT%T}" ;;
 
   F) date +%F ;;
@@ -14,12 +12,6 @@ d() {
   I) date -Iseconds "$@" | sed 's/:00$//;s/+00$/Z/' | tr -d '[:space:]' ;;
 
   a) direnv allow ;;
-
-  b) shift && "$SHARILS_HOME/shell_plugins/d/b.sh" "$@" ;;
-
-  c) shift && "$SHARILS_HOME/shell_plugins/d/c.sh" "$@" ;;
-
-  cmd) shift && "$SHARILS_HOME/shell_plugins/d/cmd.sh" "$@" ;;
 
   copy)
     z t_init
@@ -30,29 +22,15 @@ d() {
     )
     ;;
 
-  default.conf) shift && "$SHARILS_HOME/shell_plugins/d/default.conf.sh" "$@" ;;
-
-  e) shift && "$SHARILS_HOME/shell_plugins/d/e.sh" "$@" ;;
-
-  i) shift && "$SHARILS_HOME/shell_plugins/d/i.sh" "$@" ;;
-
-  j) shift && "$SHARILS_HOME/shell_plugins/d/j.sh" "$@" ;;
-
   l) d logs "$@" ;;
 
   o) open -b com.docker.docker ;;
 
-  r) shift && "$SHARILS_HOME/shell_plugins/d/r.sh" "$@" ;;
-
   q) osascript -e 'quit app "Docker"' ;;
-
-  s) shift && "$SHARILS_HOME/shell_plugins/d/s.sh" "$@" ;;
-
-  v) shift && "$SHARILS_HOME/shell_plugins/d/v.sh" "$@" ;;
 
   x) d exec "$@" ;;
 
-  swagger-codegen) shift && "$SHARILS_HOME/shell_plugins/d/swagger-codegen.sh" "$@" ;;
+  -v | b | c | cmd | default.conf | e | i | j | r | s | v | swagger-codegen) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/d/$cmd.sh" "$@" ;;
 
   *)
     if [ -f "$1" ] && [ -f "$2" ]; then
