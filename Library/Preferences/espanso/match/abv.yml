@@ -1,12 +1,6 @@
 ---
 matches:
 
-  - trigger: Ddx,.
-    replace: Differential Diagnosis (DDx)
-
-  - trigger: Hsp,.
-    replace: Highly Sensitive Person (HSP)
-
   - trigger: alt,.
     replace: alternative
 
