@@ -14,7 +14,7 @@ matches:
     replace: MySQL
 
   - trigger: psql,.
-    replace: PostgreSQL
+    replace: postgresql
 
   - trigger: rdbms,.
     replace: relational database management system
