@@ -9,6 +9,9 @@ matches:
   - trigger: Bt,.
     replace: Backlog Triage
 
+  - trigger: Rs,.
+    replace: Retrospective
+
   - trigger: ds,.
     form: |
       Yesterday/Last Friday, I:
@@ -20,9 +23,6 @@ matches:
 
   - trigger: lehv,.
     replace: low effort and high value
-
-  - trigger: rs,.
-    replace: Retrospective
 
   - trigger: rsp,.
     replace: Retrospective and Spring Planning
