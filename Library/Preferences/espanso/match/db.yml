@@ -5,7 +5,7 @@ matches:
     replace: database
 
   - trigger: maria,.
-    replace: MariaDB
+    replace: mariadb
 
   - trigger: mongo,.
     replace: MongoDB
