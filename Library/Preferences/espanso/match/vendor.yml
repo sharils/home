@@ -10,6 +10,9 @@ matches:
   - trigger: Cv,.
     replace: Common Voice
 
+  - trigger: Dj,.
+    replace: Django
+
   - trigger: dj,.
     replace: django
 
