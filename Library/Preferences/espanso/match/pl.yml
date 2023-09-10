@@ -27,6 +27,9 @@ matches:
   - trigger: Proto,.
     replace: Protocol Buffer
 
+  - trigger: Py,.
+    replace: Python
+
   - trigger: Ts,.
     replace: TypeScript
 
