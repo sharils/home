@@ -1,10 +1,10 @@
 ---
 matches:
+  - trigger: Next,.
+    replace: Next.js
+
   - trigger: doc,.
     replace: document
-
-  - trigger: next,.
-    replace: Next.js
 
   - trigger: node,.
     replace: nodejs
