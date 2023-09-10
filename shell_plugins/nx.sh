@@ -22,11 +22,7 @@ nx() {
 
   ls) shift && "$SHARILS_HOME/shell_plugins/nx/ls.sh" "$@" ;;
 
-  r)
-    shift
-    target="$1" && shift
-    nx run-many --target "$target" --projects "$@"
-    ;;
+  r) shift && "$SHARILS_HOME/shell_plugins/nx/r.sh" "$@" ;;
 
   s) shift && nx r serve "$@" ;;
 
