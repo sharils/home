@@ -23,7 +23,7 @@ t() {
 
   m) shift && t addm "$@" ;;
 
-  n) shift && t oot notifications "${@:---reverse}" ;;
+  n) shift && "$SHARILS_HOME/shell_plugins/t/oot.sh" notifications "${@:---reverse}" ;;
 
   oot) shift && "$SHARILS_HOME/shell_plugins/t/oot.sh" "$@" ;;
 
@@ -31,7 +31,7 @@ t() {
     shift
     case "$1" in
     e) shift && t p --editor "$EDITOR" "$@" ;;
-    '' | *[!0-9]*) t oot post "$@" ;;
+    '' | *[!0-9]*) "$SHARILS_HOME/shell_plugins/t/oot.sh" post "$@" ;;
     *) todo.sh pri "$@" ;;
     esac
     ;;
@@ -43,7 +43,7 @@ t() {
     p) shift && set -- --public --reverse --count 1 "$@" ;;
     t) shift && set -- --reverse --count 1 --tag "$@" ;;
     esac
-    t oot timeline "$@"
+    "$SHARILS_HOME/shell_plugins/t/oot.sh" timeline "$@"
     ;;
 
   r) shift && t replace "$@" ;;
@@ -66,14 +66,14 @@ t() {
     TOOT_USING="${auth:?}" t "$@"
     ;;
 
-  t) t oot thread "$@" ;;
+  t) "$SHARILS_HOME/shell_plugins/t/oot.sh" thread "$@" ;;
 
-  ui) shift && t oot tui "$@" ;;
+  ui) shift && "$SHARILS_HOME/shell_plugins/t/oot.sh" tui "$@" ;;
 
   w)
     shift
     [ $# -eq 0 ] && cmd=whoami || cmd=whois
-    t oot "$cmd"
+    "$SHARILS_HOME/shell_plugins/t/oot.sh" "$cmd"
     ;;
 
   z) shift && t archive "$@" ;;
