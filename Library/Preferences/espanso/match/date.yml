@@ -34,8 +34,8 @@ matches:
   - trigger: Th,.
     replace: Thursday
 
-  - trigger: fri,.
-    replace: Fridayday
+  - trigger: Fr,.
+    replace: Friday
 
   - trigger: sat,.
     replace: Saturday
