@@ -1,9 +1,6 @@
 ---
 matches:
 
-  - trigger: H:,.
-    replace: http://
-
   - trigger: d:,.
     replace: "due:"
 
@@ -12,6 +9,9 @@ matches:
 
   - trigger: h:,.
     replace: https://
+
+  - trigger: ht:,.
+    replace: http://
 
   - trigger: r:,.
     replace: rsync://
