@@ -10,9 +10,6 @@ matches:
   - trigger: mongo,.
     replace: MongoDB
 
-  - trigger: mysql,.
-    replace: MySQL
-
   - trigger: psql,.
     replace: postgresql
 
