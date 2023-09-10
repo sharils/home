@@ -15,6 +15,3 @@ matches:
 
   - trigger: msg,.
     replace: message
-
-  - trigger: so,.
-    replace: significant other

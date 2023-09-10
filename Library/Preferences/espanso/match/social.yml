@@ -7,5 +7,8 @@ matches:
   - trigger: Tg,.
     replace: Telegram
 
+  - trigger: so,.
+    replace: significant other
+
   - trigger: tg,.
     replace: telegram
