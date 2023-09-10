@@ -13,7 +13,7 @@ matches:
   - trigger: Eo,.
     replace: Esperanto
 
-  - trigger: isl,.
+  - trigger: Isl,.
     replace: International Sign Language
 
   - trigger: lang,.
