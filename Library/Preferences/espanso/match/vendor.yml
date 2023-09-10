@@ -31,9 +31,6 @@ matches:
   - trigger: dj,.
     replace: django
 
-  - trigger: ga,.
-    replace: google analytics
-
   - trigger: hb,.
     replace: homebrew
 
