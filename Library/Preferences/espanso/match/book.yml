@@ -7,7 +7,7 @@ matches:
   - trigger: Lyse,.
     replace: Learn You Some Erlang for great good
 
-  - trigger: posa,.
+  - trigger: Posa,.
     replace: Pattern-Oriented Software Architecture
 
   - trigger: sn,.
