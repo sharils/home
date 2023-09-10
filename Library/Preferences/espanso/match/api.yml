@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Agql,.
+    replace: Apollo GraphQL
+
   - trigger: Api,.
     replace: API
 

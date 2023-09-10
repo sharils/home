@@ -1,9 +1,6 @@
 ---
 matches:
 
-  - trigger: Agql,.
-    replace: Apollo GraphQL
-
   - trigger: Chat,.
     replace: ChatGPT
 
