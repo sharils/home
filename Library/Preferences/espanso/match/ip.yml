@@ -13,5 +13,13 @@ matches:
   - trigger: 192.,.
     replace: 192.168.0.1
 
+  - trigger: ip,.
+    replace: "{{ip}}"
+    vars:
+      - name: ip
+        type: shell
+        params:
+          cmd: "ipconfig getifaddr en0 | pbcopy && pbpaste"
+
   - trigger: ns3.sg,.
     replace: 172.104.162.222
