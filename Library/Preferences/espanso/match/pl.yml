@@ -3,6 +3,9 @@ matches:
   - trigger: Erl,.
     replace: Erlang/OTP
 
+  - trigger: Ex,.
+    replace: Elixir
+
   - trigger: as,.
     replace: applescript
 
