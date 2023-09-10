@@ -1,9 +1,6 @@
 ---
 matches:
 
-  - trigger: Ddg,.
-    replace: DuckDuckGo
-
   - trigger: Np,.
     replace: NewebPay
 
@@ -12,9 +9,6 @@ matches:
 
   - trigger: .s,.
     replace: .social
-
-  - trigger: ddg,.
-    replace: duckduckgo
 
   - trigger: eg,.
     replace: example.com

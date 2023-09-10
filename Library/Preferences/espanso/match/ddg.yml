@@ -1,0 +1,11 @@
+---
+matches:
+
+  - trigger: Ddg,.
+    replace: DuckDuckGo
+
+  - trigger: Ddgl,.
+    replace: DuckDuckGo Lite
+
+  - trigger: ddg,.
+    replace: duckduckgo.com
