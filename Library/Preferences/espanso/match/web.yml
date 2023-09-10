@@ -25,6 +25,9 @@ matches:
   - trigger: Sw,.
     replace: Service Worker
 
+  - trigger: Ws,.
+    replace: WebSocket
+
   - trigger: app,.
     replace: application
 
@@ -41,9 +44,6 @@ matches:
         multiline: true
       rt:
         multiline: true
-
-  - trigger: ws,.
-    replace: websocket
 
   - trigger: wv,.
     replace: webview
