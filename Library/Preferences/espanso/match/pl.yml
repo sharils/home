@@ -1,7 +1,5 @@
 ---
 matches:
-  - trigger: As,.
-    replace: AppleScript
 
   - trigger: Gfm,.
     replace: GitHub Flavoured Markdown
@@ -20,9 +18,6 @@ matches:
 
   - trigger: Py,.
     replace: Python
-
-  - trigger: as,.
-    replace: applescript
 
   - trigger: asm,.
     replace: assembly

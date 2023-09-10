@@ -1,0 +1,14 @@
+---
+matches:
+
+  - trigger: As,.
+    replace: AppleScript
+
+  - trigger: Ios,.
+    replace: iOS
+
+  - trigger: Mac,.
+    replace: macOS
+
+  - trigger: as,.
+    replace: applescript
