@@ -2,7 +2,7 @@
 matches:
 
   - trigger: Serp,.
-    replace: SERP
+    replace: Search Engine Results Pages (SERP)
 
   - trigger: Ssr,.
     replace: Server Side Rendering
