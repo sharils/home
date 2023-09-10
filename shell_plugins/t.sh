@@ -27,14 +27,7 @@ t() {
 
   oot) shift && "$SHARILS_HOME/shell_plugins/t/oot.sh" "$@" ;;
 
-  p)
-    shift
-    case "$1" in
-    e) shift && t p --editor "$EDITOR" "$@" ;;
-    '' | *[!0-9]*) "$SHARILS_HOME/shell_plugins/t/oot.sh" post "$@" ;;
-    *) todo.sh pri "$@" ;;
-    esac
-    ;;
+  p) shift && "$SHARILS_HOME/shell_plugins/t/p.sh" "$@" ;;
 
   l)
     shift
