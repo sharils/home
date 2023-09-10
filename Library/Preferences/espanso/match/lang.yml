@@ -16,14 +16,14 @@ matches:
   - trigger: Isl,.
     replace: International Sign Language
 
+  - trigger: Tss,.
+    replace: Taiwan Sign Language
+
   - trigger: lang,.
     replace: language
 
   - trigger: ncc,.
     replace: "@needs native check"
-
-  - trigger: tss,.
-    replace: Taiwan Sign Language
 
   - trigger: zh,.
     replace: 中文
