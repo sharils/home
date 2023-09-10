@@ -55,11 +55,7 @@ t() {
 
   ui) shift && "$SHARILS_HOME/shell_plugins/t/oot.sh" tui "$@" ;;
 
-  w)
-    shift
-    [ $# -eq 0 ] && cmd=whoami || cmd=whois
-    "$SHARILS_HOME/shell_plugins/t/oot.sh" "$cmd"
-    ;;
+  w) shift && "$SHARILS_HOME/shell_plugins/t/w.sh" "$@" ;;
 
   z) shift && t archive "$@" ;;
 
