@@ -1,17 +1,8 @@
 ---
 matches:
 
-  - trigger: Api,.
-    replace: API
-
   - trigger: Pwa,.
     replace: Progressive Web App
-
-  - trigger: Rest,.
-    replace: RESTful
-
-  - trigger: Rpc,.
-    replace: RPC
 
   - trigger: Serp,.
     replace: SERP

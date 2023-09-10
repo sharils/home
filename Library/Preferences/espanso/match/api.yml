@@ -1,0 +1,11 @@
+---
+matches:
+
+  - trigger: Api,.
+    replace: API
+
+  - trigger: Rest,.
+    replace: RESTful
+
+  - trigger: Rpc,.
+    replace: RPC
