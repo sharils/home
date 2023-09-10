@@ -4,6 +4,9 @@ matches:
   - trigger: Next,.
     replace: Next.js
 
+  - trigger: Phx,.
+    replace: Phoenix Framework
+
   - trigger: Rn,.
     replace: React Native
 

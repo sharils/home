@@ -10,9 +10,6 @@ matches:
   - trigger: Lv,.
     replace: LiveView
 
-  - trigger: Phx,.
-    replace: Phoenix Framework
-
   - trigger: erl,.
     replace: erlang
 
