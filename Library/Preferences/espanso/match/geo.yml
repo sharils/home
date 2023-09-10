@@ -1,9 +1,11 @@
 ---
 matches:
 
+  - trigger: 122,.
+    replace: 100006臺北市中正區重慶南路1段122號
+
   - trigger: lat,.
     replace: latitude
 
   - trigger: lng,.
     replace: longitude
-
