@@ -22,6 +22,9 @@ matches:
   - trigger: Ssr,.
     replace: Server Side Rendering
 
+  - trigger: Sw,.
+    replace: Service Worker
+
   - trigger: app,.
     replace: application
 
@@ -38,9 +41,6 @@ matches:
         multiline: true
       rt:
         multiline: true
-
-  - trigger: sw,.
-    replace: service worker
 
   - trigger: ws,.
     replace: websocket
