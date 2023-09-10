@@ -4,6 +4,9 @@ matches:
   - trigger: As,.
     replace: App Store
 
+  - trigger: Ps,.
+    replace: Play Store
+
   - trigger: Pwa,.
     replace: Progressive Web Application
 
