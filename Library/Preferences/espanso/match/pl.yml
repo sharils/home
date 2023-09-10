@@ -22,9 +22,6 @@ matches:
   - trigger: asm,.
     replace: assembly
 
-  - trigger: gfm,.
-    replace: github flavoured markdown
-
   - trigger: pl,.
     replace: programming language
 
