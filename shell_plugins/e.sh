@@ -37,7 +37,7 @@ e() {
 
   l) shift && e log "$@" ;;
 
-  wc) (cd "$SHARILS_HOME/Library/Preferences/espanso/match" && find -- * -type f ! -name emoji.yml ! -name colour.yml -exec wc -l {} \;) | sed 's/\.yml//' | sort -rk 1 | column ;;
+  wc) shift && "$SHARILS_HOME/shell_plugins/e/wc.sh" "$@" ;;
 
   edit | log | service) espanso "$@" ;;
 
