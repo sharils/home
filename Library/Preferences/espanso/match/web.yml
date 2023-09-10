@@ -4,11 +4,11 @@ matches:
   - trigger: Api,.
     replace: API
 
+  - trigger: Pwa,.
+    replace: Progressive Web App
+
   - trigger: app,.
     replace: application
-
-  - trigger: pwa,.
-    replace: progressive web app
 
   - trigger: req,.
     replace: request
