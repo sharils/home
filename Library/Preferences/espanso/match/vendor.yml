@@ -13,12 +13,6 @@ matches:
   - trigger: Dj,.
     replace: Django
 
-  - trigger: Lv,.
-    replace: LiveView
-
-  - trigger: Phx,.
-    replace: Phoenix Framework
-
   - trigger: Qtp,.
     replace: QuickTime Player
 
@@ -28,11 +22,5 @@ matches:
   - trigger: hb,.
     replace: homebrew
 
-  - trigger: lv,.
-    replace: liveview
-
   - trigger: mmd,.
     replace: mermaid
-
-  - trigger: phx,.
-    replace: phoenix
