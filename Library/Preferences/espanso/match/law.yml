@@ -4,8 +4,8 @@ matches:
   - trigger: Eula,.
     replace: End-User License Agreement
 
-  - trigger: sla,.
-    replace: service-level agreement
+  - trigger: Sla,.
+    replace: Service-Level Agreement
 
   - trigger: tos,.
     replace: terms of service
