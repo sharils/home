@@ -22,6 +22,9 @@ matches:
   - trigger: Lv,.
     replace: LiveView
 
+  - trigger: Mw,.
+    replace: MediaWiki
+
   - trigger: ga,.
     replace: google analytics
 
@@ -33,9 +36,6 @@ matches:
 
   - trigger: mmd,.
     replace: mermaid
-
-  - trigger: mw,.
-    replace: MediaWiki
 
   - trigger: phx,.
     replace: Phoenix
