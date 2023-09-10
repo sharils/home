@@ -7,14 +7,8 @@ matches:
   - trigger: Chat,.
     replace: ChatGPT
 
-  - trigger: Dj,.
-    replace: Django
-
   - trigger: Qtp,.
     replace: QuickTime Player
-
-  - trigger: dj,.
-    replace: django
 
   - trigger: hb,.
     replace: homebrew

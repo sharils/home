@@ -1,0 +1,11 @@
+---
+matches:
+
+  - trigger: Dj,.
+    replace: Django
+
+  - trigger: dj,.
+    replace: django
+
+  - trigger: ipy,.
+    replace: __init__.py

@@ -22,9 +22,6 @@ matches:
   - trigger: idx,.
     replace: index.html
 
-  - trigger: ipy,.
-    replace: __init__.py
-
   - trigger: rt,.
     replace: robots.txt
 
