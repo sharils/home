@@ -34,6 +34,9 @@ matches:
   - trigger: Wp,.
     replace: Wikipedia
 
+  - trigger: Yt,.
+    replace: YouTube
+
   - trigger: .s,.
     replace: .social
 
