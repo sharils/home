@@ -24,15 +24,13 @@ n() {
 
   ef) cmd="${1:-.env}" && shift && NPM_CONFIG_ENV_FILE="$cmd" "$@" ;;
 
-  jq) shift && jq <package.json "$@" ;;
-
   lpd) shift && NPM_CONFIG_LEGACY_PEER_DEPS='1' "$@" ;;
 
   lv) shift && NPM_CONFIG_LOGLEVEL='verbose' "$@" ;;
 
   cnc) shift && n clear-npx-cache "$@" ;;
 
-  agpl | clear-npx-cache | bs | bsd | d | e | g | i | gi | graphql-codegen | krampus | l | mkcert | p | pkill | r | rg | serve | tsc | vercel | w | y | yo) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/n/$cmd.sh" "$@" ;;
+  agpl | clear-npx-cache | bs | bsd | d | e | g | i | gi | graphql-codegen | jq | krampus | l | mkcert | p | pkill | r | rg | serve | tsc | vercel | w | y | yo) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/n/$cmd.sh" "$@" ;;
 
   *)
     tmp="$(npm pkg get "scripts.$1" 2>/dev/null)"
