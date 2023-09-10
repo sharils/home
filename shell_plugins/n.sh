@@ -1,6 +1,12 @@
 #!/usr/bin/env sh
 
 n() {
+  cmd="$("$SHARILS_HOME/shell_plugins/n/alias.sh" "$@")"
+  if [ -n "$cmd" ]; then
+    n y "$cmd"
+    return
+  fi
+
   case $1 in
 
   S) shift && n start "$@" ;;
@@ -15,16 +21,12 @@ n() {
 
   bsd) shift && n license BSD-3-Clause "$@" ;;
 
-  cu) shift && n npm-check-updates "$@" ;;
-
   dg)
     shift
     for last in "$@"; do :; done
     z t "$(basename "${last%#*}")"
     n degit "$@"
     ;;
-
-  eas) shift && n eas-cli "$@" ;;
 
   ef) cmd="${1:-.env}" && shift && NPM_CONFIG_ENV_FILE="$cmd" "$@" ;;
 
@@ -38,8 +40,6 @@ n() {
 
   lv) shift && NPM_CONFIG_LOGLEVEL='verbose' "$@" ;;
 
-  qt) shift && n qrcode-terminal "$@" ;;
-
   r) shift && n run "$@" ;;
 
   rg) shift && rg "$@" package.json ;;
@@ -51,8 +51,6 @@ n() {
   cnc) shift && n clear-npx-cache "$@" ;;
 
   clear-npx-cache | d | e | i | graphql-codegen | krampus | l | mkcert | p | pkill | serve | tsc | vercel | yo) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/n/$cmd.sh" "$@" ;;
-
-  @ionic/cli | @mermaid-js/mermaid-cli | @neutralinojs/neu | @sandworm/audit | baapan | backstopjs | browser-sync | bundle-phobia | chance-cli | codesandbox | composerize | cost-of-modules | covgen | csv2json | cypress | degit | depcruise | eas-cli | eslint | expo | gitignore | jscodeshift | jscpd | knip | license | license-checker | lighthouse | nanoid | newman | nginx-linter | npm-check | npm-check-updates | npm-merge-driver | nve | nx | packagephobia-cli | pegjs | prettier | prettier-package-json | pwned | pythagora | qnm | qrcode-terminal | react-devtools | react-native | readme-md-generator | resume-cli | selenium-side-runner | trello-cli | trucker | ts-node | ts-to-jsdoc | twify | unimported | verdaccio | web-ext | why-is-node-running | wait-on) n y "$@" ;;
 
   *)
     tmp="$(npm pkg get "scripts.$1" 2>/dev/null)"
