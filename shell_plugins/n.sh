@@ -9,8 +9,6 @@ n() {
 
   case $1 in
 
-  S) shift && n start "$@" ;;
-
   dg)
     shift
     for last in "$@"; do :; done
