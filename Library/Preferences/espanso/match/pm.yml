@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Pd,.
+    replace: Per discussion
+
   - trigger: gbv,.
     replace: gross booking value
 
@@ -14,9 +17,6 @@ matches:
 
   - trigger: lgtm,.
     replace: Looks good to me.
-
-  - trigger: pd,.
-    replace: Per discussion
 
   - trigger: pr,.
     replace: Please help review! Thanks!
