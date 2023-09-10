@@ -13,6 +13,9 @@ matches:
   - trigger: Gl,.
     replace: GitLab
 
+  - trigger: Ig,.
+    replace: Instagram
+
   - trigger: .s,.
     replace: .social
 
