@@ -16,9 +16,6 @@ matches:
   - trigger: fi,.
     replace: favicon.ico
 
-  - trigger: gi,.
-    replace: gitignore
-
   - trigger: idx,.
     replace: index.html
 

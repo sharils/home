@@ -30,6 +30,9 @@ matches:
   - trigger: gh,.
     replace: github
 
+  - trigger: gi,.
+    replace: gitignore
+
   - trigger: gl,.
     replace: gitlab
 
