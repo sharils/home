@@ -4,12 +4,6 @@ matches:
   - trigger: Np,.
     replace: NewebPay
 
-  - trigger: Tg,.
-    replace: Telegram
-
-  - trigger: .s,.
-    replace: .social
-
   - trigger: eg,.
     replace: example.com
 
@@ -21,6 +15,3 @@ matches:
 
   - trigger: np,.
     replace: newebpay
-
-  - trigger: tg,.
-    replace: telegram
