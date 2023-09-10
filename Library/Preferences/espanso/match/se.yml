@@ -4,6 +4,9 @@ matches:
   - trigger: Se,.
     replace: Software Engineering
 
+  - trigger: Ser,.
+    replace: SE Radio
+
   - trigger: Ssot,.
     replace: Single Source of Truth
 
@@ -27,6 +30,9 @@ matches:
 
   - trigger: ref,.
     replace: reference
+
+  - trigger: ser,.
+    replace: se-radio.net
 
   - trigger: spec,.
     replace: specification

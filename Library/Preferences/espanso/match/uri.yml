@@ -7,9 +7,6 @@ matches:
   - trigger: Np,.
     replace: NewebPay
 
-  - trigger: Ser,.
-    replace: SE Radio
-
   - trigger: Tg,.
     replace: Telegram
 
@@ -30,9 +27,6 @@ matches:
 
   - trigger: np,.
     replace: newebpay
-
-  - trigger: ser,.
-    replace: se-radio.net
 
   - trigger: tg,.
     replace: telegram
