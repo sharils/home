@@ -19,7 +19,7 @@ matches:
   - trigger: 0:,.
     replace: 23:59
 
-  - trigger: sun,.
+  - trigger: Su,.
     replace: Sunday
 
   - trigger: mon,.
