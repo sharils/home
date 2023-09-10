@@ -1,5 +1,7 @@
 ---
 matches:
+  - trigger: br,.
+    replace: browser
 
   - trigger: cr,.
     replace: chromium
