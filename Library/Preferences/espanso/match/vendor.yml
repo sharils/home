@@ -26,7 +26,7 @@ matches:
     replace: homebrew
 
   - trigger: lv,.
-    replace: LiveView
+    replace: liveview
 
   - trigger: mmd,.
     replace: mermaid
