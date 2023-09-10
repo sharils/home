@@ -1,0 +1,20 @@
+---
+matches:
+
+  - trigger: Api,.
+    replace: API
+
+  - trigger: dep,.
+    replace: dependency
+
+  - trigger: depr,.
+    replace: deprecated
+
+  - trigger: lib,.
+    replace: library
+
+  - trigger: pkg,.
+    replace: package
+
+  - trigger: spec,.
+    replace: specification

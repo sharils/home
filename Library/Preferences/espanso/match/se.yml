@@ -1,9 +1,6 @@
 ---
 matches:
 
-  - trigger: Api,.
-    replace: API
-
   - trigger: Se,.
     replace: Software Engineering
 
@@ -13,26 +10,11 @@ matches:
   - trigger: Ssot,.
     replace: Single Source of Truth
 
-  - trigger: dep,.
-    replace: dependency
-
-  - trigger: depr,.
-    replace: deprecated
-
   - trigger: eng,.
     replace: engineering
-
-  - trigger: lib,.
-    replace: library
-
-  - trigger: pkg,.
-    replace: package
 
   - trigger: ref,.
     replace: reference
 
   - trigger: ser,.
     replace: se-radio.net
-
-  - trigger: spec,.
-    replace: specification
