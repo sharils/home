@@ -13,6 +13,9 @@ matches:
   - trigger: 192.,.
     replace: 192.168.0.1
 
+  - trigger: 198.,.
+    replace: 198.51.100.0
+
   - trigger: ip,.
     replace: "{{ip}}"
     vars:
