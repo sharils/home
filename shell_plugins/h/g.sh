@@ -11,7 +11,7 @@ g() {
   for last in "$@"; do :; done
 
   mkdir -pv "$(dirname "$base/$path.sh")"
-  cat <<SH >"$base/$path.sh"
+  [ ! -f "$base/$path.sh" ] && cat <<SH >"$base/$path.sh"
 #!/usr/bin/env sh
 
 $last() {
