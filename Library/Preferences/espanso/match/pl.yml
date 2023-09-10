@@ -6,9 +6,6 @@ matches:
   - trigger: Erl,.
     replace: Erlang/OTP
 
-  - trigger: Ex,.
-    replace: Elixir
-
   - trigger: Gfm,.
     replace: GitHub Flavoured Markdown
 
@@ -41,9 +38,6 @@ matches:
 
   - trigger: erl,.
     replace: erlang
-
-  - trigger: ex,.
-    replace: elixir
 
   - trigger: gfm,.
     replace: github flavoured markdown
