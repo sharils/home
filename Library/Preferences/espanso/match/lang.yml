@@ -1,9 +1,6 @@
 ---
 matches:
 
-  - trigger: Asl,.
-    replace: American Sign Language
-
   - trigger: Bre,.
     replace: British English
 
@@ -12,12 +9,6 @@ matches:
 
   - trigger: Eo,.
     replace: Esperanto
-
-  - trigger: Isl,.
-    replace: International Sign Language
-
-  - trigger: Tss,.
-    replace: Taiwan Sign Language
 
   - trigger: lang,.
     replace: language
