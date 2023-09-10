@@ -4,6 +4,9 @@ matches:
   - trigger: Cs,.
     replace: Computer Science
 
+  - trigger: Ddd,.
+    replace: Domain-Driven Design
+
   - trigger: alg,.
     replace: algorithm
 
@@ -12,9 +15,6 @@ matches:
 
   - trigger: char,.
     replace: character
-
-  - trigger: ddd,.
-    replace: domain-driven design
 
   - trigger: re,.
     replace: regular expression
