@@ -1,8 +1,8 @@
 ---
 matches:
 
-  - trigger: eula,.
-    replace: end-user license agreement
+  - trigger: Eula,.
+    replace: End-User License Agreement
 
   - trigger: sla,.
     replace: service-level agreement
