@@ -41,14 +41,14 @@ t() {
     '') toot auth --no-color | grep @ | cut -d' ' -f2 && return ;;
 
     add | a | addm | addto | append | app | archive | b | command | d | deduplicate | del | e | m | r | rm | depri | dp | done | do | help | list | ls | listall | lsa | listaddons | listcon | lsc | listfile | lf | listpri | lsp | listproj | lsprj | move | mv | prepend | prep | pri | replace | report | shorthelp | z)
-      TODO_FILE="$TODO_SU" t "$@"
+      TODO_FILE="$TODO_SU" todo.sh "$@"
       return
       ;;
     esac
 
-    auth="$(t su | grep "$1" | x fzf)" && shift
+    auth="$(t su | grep "$1" | fzf --select-1 --height=~14 --layout=reverse "$@")" && shift
     echo "TOOT_USING=$auth" >&2
-    TOOT_USING="${auth:?}" t "$@"
+    TOOT_USING="${auth:?}" "$SHARILS_HOME/shell_plugins/t/oot.sh" "$@"
     ;;
 
   t) "$SHARILS_HOME/shell_plugins/t/oot.sh" thread "$@" ;;
