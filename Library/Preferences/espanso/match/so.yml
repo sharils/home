@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: So,.
+    replace: Stack Overflow
+
   - trigger: so,.
     replace: stackoverflow
 
