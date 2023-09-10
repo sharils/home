@@ -16,6 +16,9 @@ matches:
   - trigger: Oapi,.
     replace: OpenAPI
 
+  - trigger: Proto,.
+    replace: Protocol Buffer
+
   - trigger: Rest,.
     replace: RESTful
 

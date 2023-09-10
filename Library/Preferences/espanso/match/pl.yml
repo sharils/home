@@ -10,9 +10,6 @@ matches:
   - trigger: Md,.
     replace: Markdown
 
-  - trigger: Proto,.
-    replace: Protocol Buffer
-
   - trigger: asm,.
     replace: assembly
 
