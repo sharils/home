@@ -27,8 +27,7 @@ n() {
   a | agpl | clear-npx-cache | b | bs | bsd | d | e | g | i | gi | graphql-codegen | jq | krampus | l | mkcert | p | pkill | r | rg | serve | tsc | vercel | w | y | yo) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/n/$cmd.sh" "$@" ;;
 
   *)
-    tmp="$(npm pkg get "scripts.$1" 2>/dev/null)"
-    if [ -n "$tmp" ] && [ "$tmp" != '{}' ]; then
+    if "$SHARILS_HOME/shell_plugins/n/is_npm_run.sh" "$@"; then
       tmp="$1" && shift && set -- run "$tmp" -- "$@"
     fi
     npm "$@"
