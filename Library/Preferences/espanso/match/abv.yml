@@ -1,5 +1,8 @@
 ---
 matches:
+  - trigger: Hsp,.
+    replace: Highly Sensitive Person
+
   - trigger: Thowt,.
     replace: A penny for your thoughts.
 
@@ -20,9 +23,6 @@ matches:
 
   - trigger: ep,.
     replace: episode
-
-  - trigger: hsp,.
-    replace: highly sensitive person
 
   - trigger: lf,.
     replace: loyalty free
