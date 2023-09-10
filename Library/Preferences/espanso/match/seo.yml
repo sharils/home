@@ -1,0 +1,8 @@
+---
+matches:
+
+  - trigger: Serp,.
+    replace: Search Engine Results Pages (SERP)
+
+  - trigger: s:,.
+    replace: "site:"

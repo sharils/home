@@ -4,9 +4,6 @@ matches:
   - trigger: Pwa,.
     replace: Progressive Web Application (PWA)
 
-  - trigger: Serp,.
-    replace: Search Engine Results Pages (SERP)
-
   - trigger: Spa,.
     replace: Single Page Application (SPA)
 

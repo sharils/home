@@ -25,8 +25,5 @@ matches:
   - trigger: os,.
     replace: open source
 
-  - trigger: s:,.
-    replace: "site:"
-
   - trigger: ss,.
     replace: spreadsheet
