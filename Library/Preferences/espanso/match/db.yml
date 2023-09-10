@@ -13,6 +13,9 @@ matches:
   - trigger: Psql,.
     replace: PostgreSQL
 
+  - trigger: Wb,.
+    replace: Wikibase
+
   - trigger: db,.
     replace: database
 
