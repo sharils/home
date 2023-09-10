@@ -8,7 +8,7 @@ matches:
     replace: mariadb
 
   - trigger: mongo,.
-    replace: MongoDB
+    replace: mongodb
 
   - trigger: psql,.
     replace: postgresql
