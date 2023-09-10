@@ -1,14 +1,14 @@
 ---
 matches:
 
+  - trigger: Nlp,.
+    replace: Natural Language Processing
+
   - trigger: et,.
     replace: etymology
 
   - trigger: ling,.
     replace: linguistics
-
-  - trigger: nlp,.
-    replace: natural language processing
 
   - trigger: sb,.
     replace: somebody
