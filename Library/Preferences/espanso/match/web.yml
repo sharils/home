@@ -10,9 +10,6 @@ matches:
   - trigger: Sw,.
     replace: Service Worker
 
-  - trigger: Wv,.
-    replace: WebView
-
   - trigger: req,.
     replace: request
 

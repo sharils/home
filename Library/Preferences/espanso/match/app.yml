@@ -16,5 +16,8 @@ matches:
   - trigger: Spa,.
     replace: Single Page Application
 
+  - trigger: Wv,.
+    replace: WebView
+
   - trigger: app,.
     replace: application
