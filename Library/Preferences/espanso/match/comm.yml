@@ -1,0 +1,17 @@
+---
+matches:
+
+  - trigger: Lgtm,.
+    replace: Looks good to me.
+
+  - trigger: Pd,.
+    replace: Per discussion
+
+  - trigger: Pr,.
+    replace: Please help review! Thanks!
+
+  - trigger: Thowt,.
+    replace: A penny for your thoughts.
+
+  - trigger: Tldr,.
+    replace: Thereby hangs a tail.
