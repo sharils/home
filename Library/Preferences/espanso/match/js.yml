@@ -6,6 +6,9 @@ matches:
   - trigger: Node,.
     replace: NodeJS
 
+  - trigger: Rn,.
+    replace: React Native
+
   - trigger: doc,.
     replace: document
 
