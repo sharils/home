@@ -30,11 +30,11 @@ matches:
   - trigger: Sp,.
     replace: Story Point
 
+  - trigger: Su,.
+    replace: Stand-Up
+
   - trigger: lehv,.
     replace: low effort and high value
-
-  - trigger: su,.
-    replace: Stand-Up
 
   - trigger: us,.
     replace: user story
