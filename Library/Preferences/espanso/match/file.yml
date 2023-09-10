@@ -4,6 +4,9 @@ matches:
   - trigger: Df,.
     replace: Dockerfile
 
+  - trigger: Rm,.
+    replace: README.md
+
   - trigger: /dn,.
     replace: /dev/null
 
@@ -24,9 +27,6 @@ matches:
 
   - trigger: rt,.
     replace: robots.txt
-
-  - trigger: rm,.
-    replace: README.md
 
   - trigger: sm,.
     replace: sitemap.xml
