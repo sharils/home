@@ -21,5 +21,8 @@ matches:
   - trigger: gm,.
     replace: greasemonkey
 
+  - trigger: nav,.
+    replace: navigation
+
   - trigger: u,.
     replace: qutebrowser

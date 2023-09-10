@@ -19,9 +19,6 @@ matches:
   - trigger: lng,.
     replace: longitude
 
-  - trigger: nav,.
-    replace: navigation
-
   - trigger: noti,.
     replace: notification
 
