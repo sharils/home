@@ -37,16 +37,6 @@ e() {
 
   l) shift && e log "$@" ;;
 
-  s)
-    shift
-    case "$1" in
-    R) shift && set -- register "$@" ;;
-    r) shift && set -- restart "$@" ;;
-    s) shift && set -- start "$@" ;;
-    esac
-    e service "${@:-status}"
-    ;;
-
   wc) (cd "$SHARILS_HOME/Library/Preferences/espanso/match" && find -- * -type f ! -name emoji.yml ! -name colour.yml -exec wc -l {} \;) | sed 's/\.yml//' | sort -rk 1 | column ;;
 
   edit | log | service) espanso "$@" ;;
