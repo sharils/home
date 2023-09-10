@@ -28,7 +28,7 @@ w() {
     esac
     ;;
 
-  py) shift && w m --pattern '**/*.py' --run "${*:-pytest}" ;;
+  py) shift && "$SHARILS_HOME/shell_plugins/w/py.sh" "$@" ;;
 
   # -o OVERRIDE_INI, --override-ini=OVERRIDE_INI
   # -v, --verbose         Increase verbosity
