@@ -1,6 +1,6 @@
 ---
 matches:
-  - trigger: CV,.
+  - trigger: Cv,.
     replace: Common Voice
 
   - trigger: apollo,.
