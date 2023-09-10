@@ -44,12 +44,7 @@ v() {
     ;;
   mj) vim manifest.json ;;
   mk) vim Makefile ;;
-  rm)
-    case "$1" in
-    s) rm Session.vim ;;
-    *) vim README.md ;;
-    esac
-    ;;
+  rm) shift && "$SHARILS_HOME/shell_plugins/v/rm.sh" "$@" ;;
   tor) vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc ;;
 
   v) shift && "$SHARILS_HOME/shell_plugins/v/v.sh" "$@" ;;
