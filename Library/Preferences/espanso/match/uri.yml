@@ -10,6 +10,9 @@ matches:
   - trigger: Gh,.
     replace: GitHub
 
+  - trigger: Gl,.
+    replace: GitLab
+
   - trigger: .s,.
     replace: .social
 
