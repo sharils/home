@@ -55,7 +55,7 @@ matches:
   - trigger: np,.
     replace: newebpay
 
-  - trigger: seradio,.
+  - trigger: ser,.
     replace: se-radio.net
 
   - trigger: tg,.
