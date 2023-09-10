@@ -21,8 +21,6 @@ g() {
 
   a.) shift && g a . "$@" ;;
 
-  c) shift && "$SHARILS_HOME/shell_plugins/g/c.sh" "$@" ;;
-
   cl)
     shift
     if [ -f "$1" ]; then
@@ -55,7 +53,7 @@ g() {
 
   -*) shift && grep "$@" ;;
 
-  cb | f | e | i | mr | pr | r) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/g/$cmd.sh" "$@" ;;
+  c | cb | f | e | i | mr | pr | r) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/g/$cmd.sh" "$@" ;;
 
   *)
     if [ $# -eq 1 ] && [ -f "$1" ] && [ "$1" != a ] && [ "$1" != add ] &&
