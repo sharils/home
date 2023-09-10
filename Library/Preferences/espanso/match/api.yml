@@ -13,17 +13,8 @@ matches:
   - trigger: Gql,.
     replace: GraphQL
 
-  - trigger: Oapi,.
-    replace: OpenAPI
-
   - trigger: Proto,.
     replace: Protocol Buffer
 
-  - trigger: Rest,.
-    replace: RESTful
-
   - trigger: Rpc,.
     replace: RPC
-
-  - trigger: swag,.
-    replace: swagger.yml

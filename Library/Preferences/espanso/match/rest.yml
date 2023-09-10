@@ -1,0 +1,11 @@
+---
+matches:
+
+  - trigger: Oapi,.
+    replace: OpenAPI
+
+  - trigger: Rest,.
+    replace: RESTful
+
+  - trigger: swag,.
+    replace: swagger.yml
