@@ -10,6 +10,9 @@ matches:
   - trigger: cert,.
     replace: certificate
 
+  - trigger: crypto,.
+    replace: cryptocurrency
+
   - trigger: ct,.
     replace: ciphertext
 

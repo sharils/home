@@ -4,9 +4,6 @@ matches:
   - trigger: bg,.
     replace: background
 
-  - trigger: crypto,.
-    replace: cryptocurrency
-
   - trigger: gen,.
     replace: generate
 
