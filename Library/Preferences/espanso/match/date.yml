@@ -22,7 +22,7 @@ matches:
   - trigger: Su,.
     replace: Sunday
 
-  - trigger: mon,.
+  - trigger: Mo,.
     replace: Monday
 
   - trigger: tue,.
