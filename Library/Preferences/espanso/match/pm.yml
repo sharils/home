@@ -15,5 +15,12 @@ matches:
   - trigger: Smart,.
     replace: Specific, Measurable, Achievable, Relevant, and Time-bound
 
+  - trigger: ep,.
+    replace: episode
+
+  - trigger: free,.
+    replace: loyalty free
+
   - trigger: ft,.
     replace: feature
+
