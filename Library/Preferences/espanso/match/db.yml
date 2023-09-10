@@ -10,6 +10,9 @@ matches:
   - trigger: Mysql,.
     replace: MySQL
 
+  - trigger: Psql,.
+    replace: PostgreSQL
+
   - trigger: db,.
     replace: database
 
