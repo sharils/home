@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Se,.
+    replace: Software Engineering
+
   - trigger: dep,.
     replace: dependency
 
@@ -21,9 +24,6 @@ matches:
 
   - trigger: ref,.
     replace: reference
-
-  - trigger: se,.
-    replace: software engineering
 
   - trigger: spec,.
     replace: specification
