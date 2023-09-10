@@ -52,7 +52,7 @@ matches:
   - trigger: moz,.
     replace: mozilla
 
-  - trigger: nw,.
+  - trigger: np,.
     replace: newebpay
 
   - trigger: seradio,.
