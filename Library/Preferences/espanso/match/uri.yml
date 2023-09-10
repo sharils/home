@@ -19,6 +19,9 @@ matches:
   - trigger: Moz,.
     replace: Mozilla
 
+  - trigger: Np,.
+    replace: NewebPay
+
   - trigger: .s,.
     replace: .social
 
