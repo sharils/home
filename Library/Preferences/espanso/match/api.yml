@@ -4,6 +4,9 @@ matches:
   - trigger: Api,.
     replace: API
 
+  - trigger: Grpc,.
+    replace: gRPC
+
   - trigger: Rest,.
     replace: RESTful
 
