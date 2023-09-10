@@ -1,6 +1,6 @@
 ---
 matches:
-  - trigger: AC,.
+  - trigger: Ac,.
     replace: Acceptance Criteria
 
   - trigger: bt,.
