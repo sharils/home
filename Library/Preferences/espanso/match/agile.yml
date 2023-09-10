@@ -3,7 +3,7 @@ matches:
   - trigger: Ac,.
     replace: Acceptance Criteria
 
-  - trigger: bt,.
+  - trigger: Bt,.
     replace: Backlog Triage
 
   - trigger: ds,.
