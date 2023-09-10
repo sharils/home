@@ -13,5 +13,5 @@ matches:
   - trigger: Sn,.
     replace: Security Now!
 
-  - trigger: trpl,.
+  - trigger: Trpl,.
     replace: The Rust Programming Language
