@@ -11,8 +11,6 @@ n() {
 
   S) shift && n start "$@" ;;
 
-  a) shift && n android "$@" ;;
-
   dg)
     shift
     for last in "$@"; do :; done
@@ -28,7 +26,7 @@ n() {
 
   cnc) shift && n clear-npx-cache "$@" ;;
 
-  agpl | clear-npx-cache | b | bs | bsd | d | e | g | i | gi | graphql-codegen | jq | krampus | l | mkcert | p | pkill | r | rg | serve | tsc | vercel | w | y | yo) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/n/$cmd.sh" "$@" ;;
+  a | agpl | clear-npx-cache | b | bs | bsd | d | e | g | i | gi | graphql-codegen | jq | krampus | l | mkcert | p | pkill | r | rg | serve | tsc | vercel | w | y | yo) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/n/$cmd.sh" "$@" ;;
 
   *)
     tmp="$(npm pkg get "scripts.$1" 2>/dev/null)"
