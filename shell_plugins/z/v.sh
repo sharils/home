@@ -24,7 +24,7 @@ v() {
     esac
     ;;
   esac
-  cd "$SHARILS_HOME/.vim$*" || return
+  echo "$SHARILS_HOME/.vim$*"
 }
 
 v "$@"

@@ -50,7 +50,7 @@ z() {
 
   t_init) shift && [ ! -d "$__z_t_tmp" ] && __z_t_tmp="$(mktemp -d "/tmp/$USER-$(date +%m%d)-XXXXXX")" ;;
 
-  v) shift && "$SHARILS_HOME/shell_plugins/z/v.sh" "$@" ;;
+  v) shift && cd "$("$SHARILS_HOME/shell_plugins/z/v.sh" "$@")" || return $? ;;
 
   ~t) shift && cd "$HOME/tmp" || return ;;
 
