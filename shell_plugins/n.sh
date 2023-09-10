@@ -17,8 +17,6 @@ n() {
 
   b) shift && n build "$@" ;;
 
-  bs) shift && n browser-sync "${@:-.}" --no-open ;;
-
   dg)
     shift
     for last in "$@"; do :; done
@@ -46,7 +44,7 @@ n() {
 
   cnc) shift && n clear-npx-cache "$@" ;;
 
-  clear-npx-cache | bsd | d | e | i | gi | graphql-codegen | krampus | l | mkcert | p | pkill | serve | tsc | vercel | yo) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/n/$cmd.sh" "$@" ;;
+  clear-npx-cache | bs | bsd | d | e | i | gi | graphql-codegen | krampus | l | mkcert | p | pkill | serve | tsc | vercel | yo) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/n/$cmd.sh" "$@" ;;
 
   *)
     tmp="$(npm pkg get "scripts.$1" 2>/dev/null)"
