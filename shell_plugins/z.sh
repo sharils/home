@@ -18,7 +18,7 @@ z() {
 
   d) shift && cd "$HOME/Downloads" || return ;;
 
-  e) shift && "$SHARILS_HOME/shell_plugins/z/e.sh" "$@" ;;
+  e) shift && cd "$("$SHARILS_HOME/shell_plugins/z/e.sh" "$@")" || return $? ;;
 
   e2) shift && z e e ;;
 
@@ -32,7 +32,7 @@ z() {
 
   p) shift && cd "$(pbpaste)" || return $? ;;
 
-  s) shift && cd "$("$SHARILS_HOME/shell_plugins/z/s.sh" "$@")" || return $?  ;;
+  s) shift && cd "$("$SHARILS_HOME/shell_plugins/z/s.sh" "$@")" || return $? ;;
 
   ssh) shift && cd "$HOME/.ssh" || return ;;
 

@@ -6,7 +6,7 @@ e() {
   p) set -- /python ;;
   r) set -- /rust ;;
   esac
-  cd "$HOME/Exercism$*" || return
+  echo "$HOME/Exercism$*"
 }
 
 e "$@"
