@@ -15,6 +15,9 @@ matches:
   - trigger: Json,.
     replace: JSON
 
+  - trigger: Md,.
+    replace: Markdown
+
   - trigger: Gql,.
     replace: GraphQL
 
