@@ -7,7 +7,7 @@ matches:
   - trigger: Bre,.
     replace: British English
 
-  - trigger: en,.
+  - trigger: En,.
     replace: English
 
   - trigger: eo,.
