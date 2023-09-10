@@ -29,15 +29,7 @@ t() {
 
   p) shift && "$SHARILS_HOME/shell_plugins/t/p.sh" "$@" ;;
 
-  l)
-    shift
-    case "$1" in
-    l) shift && set -- --local --reverse --count 1 "${@:---public}" ;;
-    p) shift && set -- --public --reverse --count 1 "$@" ;;
-    t) shift && set -- --reverse --count 1 --tag "$@" ;;
-    esac
-    "$SHARILS_HOME/shell_plugins/t/oot.sh" timeline "$@"
-    ;;
+  l) shift && "$SHARILS_HOME/shell_plugins/t/l.sh" "$@" ;;
 
   r) shift && t replace "$@" ;;
 
