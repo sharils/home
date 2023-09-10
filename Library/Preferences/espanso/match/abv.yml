@@ -6,6 +6,9 @@ matches:
   - trigger: Thowt,.
     replace: A penny for your thoughts.
 
+  - trigger: Tldr,.
+    replace: Thereby hangs a tail.
+
   - trigger: alt,.
     replace: alternative
 
@@ -32,6 +35,3 @@ matches:
 
   - trigger: so,.
     replace: significant other
-
-  - trigger: tldr,.
-    replace: Thereby hangs a tail.
