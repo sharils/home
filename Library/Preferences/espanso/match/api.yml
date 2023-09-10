@@ -7,6 +7,9 @@ matches:
   - trigger: Grpc,.
     replace: gRPC
 
+  - trigger: Oapi,.
+    replace: OpenAPI
+
   - trigger: Rest,.
     replace: RESTful
 
