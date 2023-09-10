@@ -32,7 +32,7 @@ z() {
 
   p) shift && cd "$(pbpaste)" || return $? ;;
 
-  s) shift && "$SHARILS_HOME/shell_plugins/z/s.sh" "$@" ;;
+  s) shift && cd "$("$SHARILS_HOME/shell_plugins/z/s.sh" "$@")" || return $?  ;;
 
   ssh) shift && cd "$HOME/.ssh" || return ;;
 

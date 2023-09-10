@@ -6,9 +6,9 @@ s() {
   k) set -- /KeePass ;;
   l) set -- /Libera\ PRO ;;
   o) set -- /Obsidian ;;
-  t) cd "$TODO_DIR" && true && return $? ;;
+  t) echo "$TODO_DIR" && return ;;
   esac
-  cd "$HOME/Sync$*" || return
+  echo "$HOME/Sync$*"
 }
 
 s "$@"
