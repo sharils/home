@@ -7,6 +7,9 @@ matches:
   - trigger: Ddd,.
     replace: Domain-Driven Design
 
+  - trigger: Re,.
+    replace: Regular Expression
+
   - trigger: alg,.
     replace: algorithm
 
@@ -15,9 +18,6 @@ matches:
 
   - trigger: char,.
     replace: character
-
-  - trigger: re,.
-    replace: regular expression
 
   - trigger: sc,.
     replace: statechart
