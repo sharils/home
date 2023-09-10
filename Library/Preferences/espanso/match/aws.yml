@@ -1,5 +1,14 @@
 ---
 matches:
+  - trigger: Cf,.
+    replace: CloudFront
+
+  - trigger: ls,.
+    replace: lightsail
+
+  - trigger: lsc,.
+    replace: lightsail container
+
   - trigger: cf,.
     replace: cloudfront
 
