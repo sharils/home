@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Lh,.
+    replace: Lighthouse
+
   - trigger: Psi,.
     replace: PageSpeed Insights
 
