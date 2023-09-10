@@ -1,7 +1,7 @@
 ---
 matches:
 
-  - trigger: jsdg,.
+  - trigger: Jsdg,.
     replace: "JavaScript: The Definitive Guide"
 
   - trigger: lyse,.
