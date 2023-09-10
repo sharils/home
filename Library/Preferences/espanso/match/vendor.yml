@@ -19,6 +19,9 @@ matches:
   - trigger: dj,.
     replace: django
 
+  - trigger: Lv,.
+    replace: LiveView
+
   - trigger: ga,.
     replace: google analytics
 
