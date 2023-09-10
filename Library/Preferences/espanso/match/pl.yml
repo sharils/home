@@ -1,5 +1,7 @@
 ---
 matches:
+  - trigger: Erl,.
+    replace: Erlang/OTP
 
   - trigger: as,.
     replace: applescript
