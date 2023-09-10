@@ -10,12 +10,6 @@ matches:
   - trigger: Ps,.
     replace: Play Store
 
-  - trigger: Pwa,.
-    replace: Progressive Web Application
-
-  - trigger: Spa,.
-    replace: Single Page Application
-
   - trigger: Wv,.
     replace: WebView
 
