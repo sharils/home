@@ -90,6 +90,7 @@ settings:
     '*.wikidata.org': true
     '*.wikipedia.org': true
     127.0.0.1: true
+    archive.org: true
     astexplorer.net: true
     black.vercel.app: true
     c.im: true
