@@ -4,7 +4,7 @@ matches:
   - trigger: Jsdg,.
     replace: "JavaScript: The Definitive Guide"
 
-  - trigger: lyse,.
+  - trigger: Lyse,.
     replace: Learn You Some Erlang for great good
 
   - trigger: posa,.
