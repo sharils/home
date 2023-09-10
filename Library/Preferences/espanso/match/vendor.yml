@@ -4,11 +4,11 @@ matches:
   - trigger: Agql,.
     replace: Apollo GraphQL
 
+  - trigger: Chat,.
+    replace: ChatGPT
+
   - trigger: Cv,.
     replace: Common Voice
-
-  - trigger: chat,.
-    replace: ChatGPT
 
   - trigger: dj,.
     replace: django
