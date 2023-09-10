@@ -10,7 +10,7 @@ matches:
   - trigger: En,.
     replace: English
 
-  - trigger: eo,.
+  - trigger: Eo,.
     replace: Esperanto
 
   - trigger: isl,.
