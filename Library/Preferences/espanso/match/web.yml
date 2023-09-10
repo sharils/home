@@ -5,7 +5,7 @@ matches:
     replace: Search Engine Results Pages (SERP)
 
   - trigger: Ssr,.
-    replace: Server Side Rendering
+    replace: Server Side Rendering (SSR)
 
   - trigger: Sw,.
     replace: Service Worker
