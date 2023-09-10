@@ -4,6 +4,9 @@ matches:
   - trigger: Fir,.
     replace: Firebase
 
+  - trigger: Fs,.
+    replace: Firestore
+
   - trigger: fir,.
     replace: firebase
 
