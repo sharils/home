@@ -6,8 +6,8 @@ matches:
   - trigger: Ls,.
     replace: Lightsail
 
-  - trigger: lsc,.
-    replace: lightsail container
+  - trigger: Lsc,.
+    replace: Lightsail Container
 
   - trigger: cf,.
     replace: cloudfront
