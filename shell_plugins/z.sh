@@ -28,7 +28,7 @@ z() {
 
   gl) shift && cd "$HOM#/git/gitlab.com" || return ;;
 
-  h) shift && cd "$SHARILS_HOME" || return ;;
+  h) shift && cd "$("$SHARILS_HOME/shell_plugins/z/h.sh" "$@")" || return ;;
 
   p) shift && cd "$(pbpaste)" || return $? ;;
 
