@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Api,.
+    replace: API
+
   - trigger: Se,.
     replace: Software Engineering
 
