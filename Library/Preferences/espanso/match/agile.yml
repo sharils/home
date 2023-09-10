@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Bt,.
+    replace: Backlog Triage
+
   - trigger: Ds,.
     form: |
       Yesterday/Last Friday, I:

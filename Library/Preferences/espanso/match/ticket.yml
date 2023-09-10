@@ -7,9 +7,6 @@ matches:
   - trigger: Bl,.
     replace: Backlog
 
-  - trigger: Bt,.
-    replace: Backlog Triage
-
   - trigger: Dod,.
     replace: Definition of Done
 
