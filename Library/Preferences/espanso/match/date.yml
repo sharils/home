@@ -25,7 +25,7 @@ matches:
   - trigger: Mo,.
     replace: Monday
 
-  - trigger: tue,.
+  - trigger: Tu,.
     replace: Tuesday
 
   - trigger: wed,.
