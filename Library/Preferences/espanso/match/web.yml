@@ -10,6 +10,9 @@ matches:
   - trigger: Rest,.
     replace: RESTful
 
+  - trigger: Rpc,.
+    replace: RPC
+
   - trigger: app,.
     replace: application
 
@@ -18,9 +21,6 @@ matches:
 
   - trigger: resp,.
     replace: response
-
-  - trigger: rpc,.
-    replace: RPC
 
   - trigger: ruby,.
     form: <ruby>[[ruby]]<rp>(</rp><rt>[[rt]]</rt><rp>)</rp></ruby>
