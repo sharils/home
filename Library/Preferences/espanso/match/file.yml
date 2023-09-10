@@ -1,14 +1,14 @@
 ---
 matches:
 
+  - trigger: Df,.
+    replace: Dockerfile
+
   - trigger: /dn,.
     replace: /dev/null
 
   - trigger: dc,.
     replace: docker-compose.yml
-
-  - trigger: df,.
-    replace: Dockerfile
 
   - trigger: fi,.
     replace: favicon.ico
