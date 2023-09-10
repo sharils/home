@@ -12,3 +12,6 @@ matches:
 
   - trigger: Rpc,.
     replace: RPC
+
+  - trigger: swag,.
+    replace: swagger.yml
