@@ -30,7 +30,7 @@ d() {
     )
     ;;
 
-  default.conf.template) shift && "$SHARILS_HOME/shell_plugins/d/default.conf.template.sh" "$@" ;;
+  default.conf) shift && "$SHARILS_HOME/shell_plugins/d/default.conf.sh" "$@" ;;
 
   e) shift && "$SHARILS_HOME/shell_plugins/d/e.sh" "$@" ;;
 
