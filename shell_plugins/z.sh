@@ -24,7 +24,7 @@ z() {
 
   g) shift && cd "$HOME/git" || return ;;
 
-  gh) shift && "$SHARILS_HOME/shell_plugins/z/gh.sh" "$@" ;;
+  gh) shift && cd "$("$SHARILS_HOME/shell_plugins/z/gh.sh" "$@")" || return $? ;;
 
   gl) shift && cd "$HOM#/git/gitlab.com" || return ;;
 

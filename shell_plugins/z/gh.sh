@@ -5,7 +5,7 @@ gh() {
   r) set -- /remotelytw ;;
   s) set -- /sharils ;;
   esac
-  cd "$HOME/git/github.com$*" || return
+  echo "$HOME/git/github.com$*"
 }
 
 gh "$@"
