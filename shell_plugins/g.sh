@@ -26,7 +26,6 @@ g() {
   cl)
     shift
     case "$1" in
-    e) git config --local "${@:---edit}" ;;
     t | *)
       if [ -f "$1" ]; then
         git cl "$@"
