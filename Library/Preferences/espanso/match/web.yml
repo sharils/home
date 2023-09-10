@@ -1,7 +1,7 @@
 ---
 matches:
 
-  - trigger: api,.
+  - trigger: Api,.
     replace: API
 
   - trigger: app,.
