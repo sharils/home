@@ -25,6 +25,9 @@ matches:
   - trigger: Mw,.
     replace: MediaWiki
 
+  - trigger: Phx,.
+    replace: Phoenix Framework
+
   - trigger: ga,.
     replace: google analytics
 
