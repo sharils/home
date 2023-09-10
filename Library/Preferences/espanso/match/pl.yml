@@ -9,6 +9,9 @@ matches:
   - trigger: Gfm,.
     replace: GitHub Flavoured Markdown
 
+  - trigger: Js,.
+    replace: JavaScript
+
   - trigger: as,.
     replace: applescript
 
