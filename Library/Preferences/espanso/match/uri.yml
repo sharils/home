@@ -16,6 +16,9 @@ matches:
   - trigger: Ig,.
     replace: Instagram
 
+  - trigger: Moz,.
+    replace: Mozilla
+
   - trigger: .s,.
     replace: .social
 
