@@ -7,6 +7,9 @@ matches:
   - trigger: Mongo,.
     replace: MongoDB
 
+  - trigger: Mysql,.
+    replace: MySQL
+
   - trigger: db,.
     replace: database
 
