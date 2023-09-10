@@ -13,6 +13,9 @@ matches:
   - trigger: Dj,.
     replace: Django
 
+  - trigger: Ga,.
+    replace: Google Analytics
+
   - trigger: dj,.
     replace: django
 
