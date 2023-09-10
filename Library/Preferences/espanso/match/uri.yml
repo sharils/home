@@ -4,9 +4,6 @@ matches:
   - trigger: Ddg,.
     replace: DuckDuckGo
 
-  - trigger: Moz,.
-    replace: Mozilla
-
   - trigger: Np,.
     replace: NewebPay
 
@@ -30,9 +27,6 @@ matches:
 
   - trigger: lh,.
     replace: localhost
-
-  - trigger: moz,.
-    replace: mozilla
 
   - trigger: np,.
     replace: newebpay
