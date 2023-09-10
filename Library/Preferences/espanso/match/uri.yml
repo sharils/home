@@ -25,6 +25,9 @@ matches:
   - trigger: Ser,.
     replace: SE Radio
 
+  - trigger: Tg,.
+    replace: Telegram
+
   - trigger: .s,.
     replace: .social
 
