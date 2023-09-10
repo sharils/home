@@ -1,18 +1,26 @@
 ---
 matches:
+
   - trigger: emergency,.
     replace: "💥 "
+
   - trigger: alert,.
     replace: "🚨 "
+
   - trigger: critical,.
     replace: "🔥 "
+
   - trigger: error,.
     replace: "❌ "
+
   - trigger: warning,.
     replace: "⚠️ "
+
   - trigger: notice,.
     replace: "👀 "
+
   - trigger: info,.
     replace: "ℹ️ "
+
   - trigger: debug,.
     replace: "🐛 "
