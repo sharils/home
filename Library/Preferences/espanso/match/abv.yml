@@ -1,7 +1,7 @@
 ---
 matches:
   - trigger: Hsp,.
-    replace: Highly Sensitive Person
+    replace: Highly Sensitive Person (HSP)
 
   - trigger: alt,.
     replace: alternative
