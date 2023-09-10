@@ -1,0 +1,14 @@
+# https://starship.rs/config/#git-metrics
+# [git_metrics]
+# [kubernetes]
+# [localip]
+# [memory_usage]
+# [hg_branch]
+# [os]
+# [pijul_channel]
+# [shell]
+# [shlvl]
+# [status]
+# [sudo]
+# [time]
+# disabled = false

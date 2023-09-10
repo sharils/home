@@ -18,7 +18,6 @@ main() {
     else
       /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     fi
-    return
 
     brew install \
         .lynx \
@@ -179,6 +178,7 @@ tsconfig.json} ~
 
     ln -fs "$PWD/.config/karabiner/karabiner.json" ~/.config/karabiner/karabiner.json
 
+    ln -fs "$PWD/.config/starship.toml" ~/.config/starship.toml
     ln -fs "$PWD/.config/lsd" ~/.config/lsd
     ln -fs "$PWD/.config/thefuck/rules" ~/.config/thefuck/rules
 
