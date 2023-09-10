@@ -4,9 +4,6 @@ matches:
   - trigger: Ddg,.
     replace: DuckDuckGo
 
-  - trigger: Ig,.
-    replace: Instagram
-
   - trigger: Moz,.
     replace: Mozilla
 
