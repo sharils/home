@@ -16,17 +16,11 @@ matches:
   - trigger: Proto,.
     replace: Protocol Buffer
 
-  - trigger: Py,.
-    replace: Python
-
   - trigger: asm,.
     replace: assembly
 
   - trigger: pl,.
     replace: programming language
-
-  - trigger: py,.
-    replace: python
 
   - trigger: sh,.
     replace: shell

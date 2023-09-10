@@ -4,8 +4,14 @@ matches:
   - trigger: Dj,.
     replace: Django
 
+  - trigger: Py,.
+    replace: Python
+
   - trigger: dj,.
     replace: django
 
   - trigger: ipy,.
     replace: __init__.py
+
+  - trigger: py,.
+    replace: python
