@@ -28,6 +28,9 @@ matches:
   - trigger: Ws,.
     replace: WebSocket
 
+  - trigger: Wv,.
+    replace: WebView
+
   - trigger: app,.
     replace: application
 
@@ -44,6 +47,3 @@ matches:
         multiline: true
       rt:
         multiline: true
-
-  - trigger: wv,.
-    replace: webview
