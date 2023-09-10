@@ -7,5 +7,5 @@ matches:
   - trigger: Sla,.
     replace: Service-Level Agreement
 
-  - trigger: tos,.
-    replace: terms of service
+  - trigger: Tos,.
+    replace: Terms of Service
