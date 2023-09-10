@@ -1,0 +1,20 @@
+---
+matches:
+
+  - trigger: A,.
+    replace: "Add "
+
+  - trigger: C,.
+    replace: "Change "
+
+  - trigger: D,.
+    replace: "Remove "
+
+  - trigger: F,.
+    replace: "Fix "
+
+  - trigger: R,.
+    replace: "Refactor "
+
+  - trigger: X,.
+    replace: "Exec "
