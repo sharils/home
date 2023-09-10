@@ -25,16 +25,9 @@ v() {
   e) shift && "$SHARILS_HOME/shell_plugins/v/e.sh" "$@" ;;
 
   hosts) EDITOR=vim sudo --edit /etc/hosts "$@" ;;
-  i)
-    shift
-    case "${1:-html}" in
-    c) shift && set -- css ;;
-    h) shift && set -- html ;;
-    j) shift && set -- jsx ;;
-    t) shift && set -- tsx ;;
-    esac
-    vim "index.$1"
-    ;;
+
+  i) shift && "$SHARILS_HOME/shell_plugins/v/i.sh" "$@" ;;
+
   mj) vim manifest.json ;;
   mk) vim Makefile ;;
   rm) shift && "$SHARILS_HOME/shell_plugins/v/rm.sh" "$@" ;;
