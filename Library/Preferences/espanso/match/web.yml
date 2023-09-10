@@ -16,6 +16,9 @@ matches:
   - trigger: Serp,.
     replace: SERP
 
+  - trigger: Spa,.
+    replace: Single Page Application
+
   - trigger: app,.
     replace: application
 
@@ -32,9 +35,6 @@ matches:
         multiline: true
       rt:
         multiline: true
-
-  - trigger: spa,.
-    replace: single page application
 
   - trigger: ssr,.
     replace: server side rendering
