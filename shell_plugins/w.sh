@@ -5,13 +5,7 @@ w() {
 
   c) shift && w rs cargo "$@" ;;
 
-  d)
-    shift
-    case "$1" in
-    c) shift && w m --pattern 'Dockerfile' 'docker-compose.yml' --run 'docker compose build' ;;
-    *) w m --pattern 'Dockerfile' --run 'docker build .' ;;
-    esac
-    ;;
+  d) shift && "$SHARILS_HOME/shell_plugins/w/d.sh" "$@" ;;
 
   eslint) shift && w js "npx eslint $*" ;;
 
