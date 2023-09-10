@@ -28,6 +28,12 @@ matches:
   - trigger: Tg,.
     replace: Telegram
 
+  - trigger: Wd,.
+    replace: Wikidata
+
+  - trigger: Wp,.
+    replace: Wikipedia
+
   - trigger: .s,.
     replace: .social
 
