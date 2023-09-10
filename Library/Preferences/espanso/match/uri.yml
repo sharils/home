@@ -22,6 +22,9 @@ matches:
   - trigger: Np,.
     replace: NewebPay
 
+  - trigger: Ser,.
+    replace: SE Radio
+
   - trigger: .s,.
     replace: .social
 
