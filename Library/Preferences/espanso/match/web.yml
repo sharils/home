@@ -16,9 +16,6 @@ matches:
   - trigger: Sw,.
     replace: Service Worker
 
-  - trigger: Ws,.
-    replace: WebSocket
-
   - trigger: Wv,.
     replace: WebView
 

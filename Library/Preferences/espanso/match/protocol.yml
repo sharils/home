@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Ws,.
+    replace: WebSocket
+
   - trigger: d:,.
     replace: "due:"
 
