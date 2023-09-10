@@ -18,6 +18,9 @@ matches:
   - trigger: N,.
     replace: "And "
 
+  - trigger: O:,.
+    replace: "Outline"
+
   - trigger: S:,.
     replace: "Scenario: "
 
