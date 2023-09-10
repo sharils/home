@@ -1,29 +1,11 @@
 ---
 matches:
 
-  - trigger: Maria,.
-    replace: MariaDB
-
   - trigger: Mongo,.
     replace: MongoDB
-
-  - trigger: Mysql,.
-    replace: MySQL
-
-  - trigger: Psql,.
-    replace: PostgreSQL
 
   - trigger: db,.
     replace: database
 
-  - trigger: maria,.
-    replace: mariadb
-
   - trigger: mongo,.
     replace: mongodb
-
-  - trigger: psql,.
-    replace: postgresql
-
-  - trigger: rdbms,.
-    replace: relational database management system
