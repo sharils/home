@@ -4,6 +4,9 @@ matches:
   - trigger: Maria,.
     replace: MariaDB
 
+  - trigger: Mongo,.
+    replace: MongoDB
+
   - trigger: db,.
     replace: database
 
