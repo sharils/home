@@ -4,7 +4,7 @@ matches:
   - trigger: Asl,.
     replace: American Sign Language
 
-  - trigger: bre,.
+  - trigger: Bre,.
     replace: British English
 
   - trigger: en,.
