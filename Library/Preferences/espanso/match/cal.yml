@@ -1,8 +1,8 @@
 ---
 matches:
 
+  - trigger: Gbf,.
+    replace: Dragon Boat Festival
+
   - trigger: cal,.
     replace: calendar
-
-  - trigger: gbf,.
-    replace: Dragon Boat Festival
