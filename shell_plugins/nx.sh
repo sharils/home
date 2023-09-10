@@ -14,15 +14,7 @@ nx() {
 
   f) shift && nx format "$@" ;;
 
-  g)
-    shift
-    if [ $# -eq 0 ]; then
-      set -- graph "$@"
-    else
-      set -- generate "$@"
-    fi
-    nx "$@"
-    ;;
+  g) shift && "$SHARILS_HOME/shell_plugins/nx/g.sh" "$@" ;;
 
   ios) shift && nx r run-ios "$@" ;;
 
