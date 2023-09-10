@@ -5,8 +5,8 @@ export TODO_DIR="$HOME/Sync/todo"
 
 # Your todo/done/report.txt locations
 export TODO_FILE="$TODO_DIR/todo.txt"
-export DONE_FILE="$TODO_DIR/.data/done.txt"
-export REPORT_FILE="$TODO_DIR/.data/report.txt"
+export DONE_FILE="$TODO_DIR/.done.txt"
+export REPORT_FILE="$TODO_DIR/.report.txt"
 
 export TODO_SU="$TODO_DIR/su.txt"
 
