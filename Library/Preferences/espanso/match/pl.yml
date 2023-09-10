@@ -21,6 +21,9 @@ matches:
   - trigger: Proto,.
     replace: Protocol Buffer
 
+  - trigger: Ts,.
+    replace: TypeScript
+
   - trigger: as,.
     replace: applescript
 
@@ -47,6 +50,3 @@ matches:
 
   - trigger: sh,.
     replace: shell
-
-  - trigger: ts,.
-    replace: TypeScript
