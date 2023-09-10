@@ -13,5 +13,8 @@ matches:
   - trigger: Mac,.
     replace: macOS
 
+  - trigger: Qtp,.
+    replace: QuickTime Player
+
   - trigger: as,.
     replace: applescript

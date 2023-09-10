@@ -7,9 +7,6 @@ matches:
   - trigger: Chat,.
     replace: ChatGPT
 
-  - trigger: Qtp,.
-    replace: QuickTime Player
-
   - trigger: hb,.
     replace: homebrew
 
