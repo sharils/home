@@ -18,6 +18,9 @@ matches:
   - trigger: Sp,.
     replace: Spring Planning
 
+  - trigger: Sp,.
+    replace: Story Point
+
   - trigger: ds,.
     form: |
       Yesterday/Last Friday, I:
