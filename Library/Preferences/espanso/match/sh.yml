@@ -1,4 +1,11 @@
 ---
 matches:
+
+  - trigger: \',.
+    replace: "'\\''$|$'\\''"
+
   - trigger: xsis,.
     replace: xargs sed -i '' 's/$|$//'
+
+  - trigger: "`,."
+    replace: "`$|$`"
