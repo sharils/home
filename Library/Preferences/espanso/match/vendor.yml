@@ -19,9 +19,6 @@ matches:
   - trigger: Lv,.
     replace: LiveView
 
-  - trigger: Mw,.
-    replace: MediaWiki
-
   - trigger: Phx,.
     replace: Phoenix Framework
 

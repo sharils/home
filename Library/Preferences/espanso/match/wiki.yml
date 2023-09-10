@@ -1,0 +1,17 @@
+---
+matches:
+
+  - trigger: Mw,.
+    replace: MediaWiki
+
+  - trigger: Wd,.
+    replace: Wikidata
+
+  - trigger: Wp,.
+    replace: Wikipedia
+
+  - trigger: wd,.
+    replace: wikidata
+
+  - trigger: wp,.
+    replace: wikipedia

@@ -28,12 +28,6 @@ matches:
   - trigger: Tg,.
     replace: Telegram
 
-  - trigger: Wd,.
-    replace: Wikidata
-
-  - trigger: Wp,.
-    replace: Wikipedia
-
   - trigger: Yt,.
     replace: YouTube
 
@@ -75,12 +69,6 @@ matches:
 
   - trigger: tg,.
     replace: telegram
-
-  - trigger: wd,.
-    replace: wikidata
-
-  - trigger: wp,.
-    replace: wikipedia
 
   - trigger: yt,.
     replace: youtube
