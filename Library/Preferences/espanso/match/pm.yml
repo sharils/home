@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Gbv,.
+    replace: Gross Booking Value
+
   - trigger: Kano,.
     replace: >
       1️⃣ like it.
@@ -20,6 +23,3 @@ matches:
 
   - trigger: Smart,.
     replace: Specific, Measurable, Achievable, Relevant, and Time-bound
-
-  - trigger: gbv,.
-    replace: gross booking value
