@@ -11,8 +11,6 @@ n() {
 
   S) shift && n start "$@" ;;
 
-  agpl) shift && n license AGPL-3.0 "$@" ;;
-
   a) shift && n android "$@" ;;
 
   b) shift && n build "$@" ;;
@@ -44,7 +42,7 @@ n() {
 
   cnc) shift && n clear-npx-cache "$@" ;;
 
-  clear-npx-cache | bs | bsd | d | e | i | gi | graphql-codegen | krampus | l | mkcert | p | pkill | serve | tsc | vercel | yo) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/n/$cmd.sh" "$@" ;;
+  agpl | clear-npx-cache | bs | bsd | d | e | i | gi | graphql-codegen | krampus | l | mkcert | p | pkill | serve | tsc | vercel | yo) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/n/$cmd.sh" "$@" ;;
 
   *)
     tmp="$(npm pkg get "scripts.$1" 2>/dev/null)"
