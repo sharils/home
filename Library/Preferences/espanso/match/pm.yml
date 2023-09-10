@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Lgtm,.
+    replace: Looks good to me.
+
   - trigger: Pd,.
     replace: Per discussion
 
@@ -17,9 +20,6 @@ matches:
       3️⃣ neutral.s
       4️⃣ can tolerate it.
       5️⃣ dislike it.
-
-  - trigger: lgtm,.
-    replace: Looks good to me.
 
   - trigger: smart,.
     replace: Specific, Measurable, Achievable, Relevant, and Time-bound
