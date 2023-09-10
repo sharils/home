@@ -3,8 +3,8 @@ matches:
   - trigger: Cf,.
     replace: CloudFront
 
-  - trigger: ls,.
-    replace: lightsail
+  - trigger: Ls,.
+    replace: Lightsail
 
   - trigger: lsc,.
     replace: lightsail container
