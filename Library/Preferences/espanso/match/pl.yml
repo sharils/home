@@ -9,9 +9,6 @@ matches:
   - trigger: Gfm,.
     replace: GitHub Flavoured Markdown
 
-  - trigger: Js,.
-    replace: JavaScript
-
   - trigger: Json,.
     replace: JSON
 
@@ -27,9 +24,6 @@ matches:
   - trigger: Py,.
     replace: Python
 
-  - trigger: Ts,.
-    replace: TypeScript
-
   - trigger: as,.
     replace: applescript
 
@@ -41,9 +35,6 @@ matches:
 
   - trigger: gfm,.
     replace: github flavoured markdown
-
-  - trigger: js,.
-    replace: javascript
 
   - trigger: pl,.
     replace: programming language

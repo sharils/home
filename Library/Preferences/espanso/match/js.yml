@@ -1,5 +1,9 @@
 ---
 matches:
+
+  - trigger: Js,.
+    replace: JavaScript
+
   - trigger: Next,.
     replace: Next.js
 
@@ -9,8 +13,14 @@ matches:
   - trigger: Rn,.
     replace: React Native
 
+  - trigger: Ts,.
+    replace: TypeScript
+
   - trigger: doc,.
     replace: document
+
+  - trigger: js,.
+    replace: javascript
 
   - trigger: node,.
     replace: nodejs
