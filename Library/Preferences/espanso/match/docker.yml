@@ -1,0 +1,8 @@
+---
+matches:
+
+  - trigger: Df,.
+    replace: Dockerfile
+
+  - trigger: dc,.
+    replace: docker-compose.yml
