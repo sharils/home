@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Psi,.
+    replace: PageSpeed Insights
+
   - trigger: Serp,.
     replace: Search Engine Results Pages (SERP)
 
