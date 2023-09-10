@@ -4,6 +4,9 @@ matches:
   - trigger: Ddg,.
     replace: DuckDuckGo
 
+  - trigger: Fb,.
+    replace: Facebook
+
   - trigger: .s,.
     replace: .social
 
