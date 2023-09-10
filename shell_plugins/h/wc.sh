@@ -22,7 +22,7 @@ h_wc() {
         -exec wc -l {} \;
   ) |
     sed 's/\.sh$//;s#/# #g' |
-    sort -rk 1 |
+    sort -k 1 |
     column
 }
 
