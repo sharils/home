@@ -10,6 +10,9 @@ matches:
   - trigger: Pr,.
     replace: Please help review! Thanks!
 
+  - trigger: Smart,.
+    replace: Specific, Measurable, Achievable, Relevant, and Time-bound
+
   - trigger: gbv,.
     replace: gross booking value
 
@@ -20,6 +23,3 @@ matches:
       3️⃣ neutral.s
       4️⃣ can tolerate it.
       5️⃣ dislike it.
-
-  - trigger: smart,.
-    replace: Specific, Measurable, Achievable, Relevant, and Time-bound
