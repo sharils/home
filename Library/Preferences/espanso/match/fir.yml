@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Fir,.
+    replace: Firebase
+
   - trigger: fir,.
     replace: firebase
 
