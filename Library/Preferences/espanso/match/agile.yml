@@ -33,11 +33,11 @@ matches:
   - trigger: Su,.
     replace: Stand-Up
 
+  - trigger: Us,.
+    replace: User Story
+
   - trigger: lehv,.
     replace: low effort and high value
-
-  - trigger: us,.
-    replace: user story
 
   - trigger: wip,.
     replace: work in progress
