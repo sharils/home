@@ -3,9 +3,6 @@ matches:
   - trigger: As,.
     replace: AppleScript
 
-  - trigger: Erl,.
-    replace: Erlang/OTP
-
   - trigger: Gfm,.
     replace: GitHub Flavoured Markdown
 
@@ -29,9 +26,6 @@ matches:
 
   - trigger: asm,.
     replace: assembly
-
-  - trigger: erl,.
-    replace: erlang
 
   - trigger: gfm,.
     replace: github flavoured markdown

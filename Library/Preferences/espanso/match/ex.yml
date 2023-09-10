@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Erl,.
+    replace: Erlang/OTP
+
   - trigger: Ex,.
     replace: Elixir
 
@@ -9,6 +12,9 @@ matches:
 
   - trigger: Phx,.
     replace: Phoenix Framework
+
+  - trigger: erl,.
+    replace: erlang
 
   - trigger: ex,.
     replace: elixir
