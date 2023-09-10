@@ -3,6 +3,9 @@ matches:
   - trigger: Next,.
     replace: Next.js
 
+  - trigger: Node,.
+    replace: NodeJS
+
   - trigger: doc,.
     replace: document
 
