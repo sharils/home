@@ -4,6 +4,9 @@ matches:
   - trigger: Pd,.
     replace: Per discussion
 
+  - trigger: Pr,.
+    replace: Please help review! Thanks!
+
   - trigger: gbv,.
     replace: gross booking value
 
@@ -17,9 +20,6 @@ matches:
 
   - trigger: lgtm,.
     replace: Looks good to me.
-
-  - trigger: pr,.
-    replace: Please help review! Thanks!
 
   - trigger: smart,.
     replace: Specific, Measurable, Achievable, Relevant, and Time-bound
