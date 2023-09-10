@@ -7,6 +7,9 @@ matches:
   - trigger: Fb,.
     replace: Facebook
 
+  - trigger: Gh,.
+    replace: GitHub
+
   - trigger: .s,.
     replace: .social
 
