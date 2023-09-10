@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: As,.
+    replace: App Store
+
   - trigger: Pwa,.
     replace: Progressive Web Application
 
