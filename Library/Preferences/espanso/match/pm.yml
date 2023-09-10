@@ -23,3 +23,9 @@ matches:
 
   - trigger: Smart,.
     replace: Specific, Measurable, Achievable, Relevant, and Time-bound
+
+  - trigger: Thowt,.
+    replace: A penny for your thoughts.
+
+  - trigger: Tldr,.
+    replace: Thereby hangs a tail.

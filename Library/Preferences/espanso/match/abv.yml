@@ -3,12 +3,6 @@ matches:
   - trigger: Hsp,.
     replace: Highly Sensitive Person
 
-  - trigger: Thowt,.
-    replace: A penny for your thoughts.
-
-  - trigger: Tldr,.
-    replace: Thereby hangs a tail.
-
   - trigger: alt,.
     replace: alternative
 
