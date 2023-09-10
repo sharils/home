@@ -24,8 +24,6 @@ n() {
 
   lv) shift && NPM_CONFIG_LOGLEVEL='verbose' "$@" ;;
 
-  cnc) shift && n clear-npx-cache "$@" ;;
-
   a | agpl | clear-npx-cache | b | bs | bsd | d | e | g | i | gi | graphql-codegen | jq | krampus | l | mkcert | p | pkill | r | rg | serve | tsc | vercel | w | y | yo) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/n/$cmd.sh" "$@" ;;
 
   *)
