@@ -1,7 +1,7 @@
 ---
 matches:
 
-  - trigger: asl,.
+  - trigger: Asl,.
     replace: American Sign Language
 
   - trigger: bre,.
