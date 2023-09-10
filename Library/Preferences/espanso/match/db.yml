@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Maria,.
+    replace: MariaDB
+
   - trigger: db,.
     replace: database
 
