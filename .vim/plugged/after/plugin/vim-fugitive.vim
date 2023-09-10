@@ -16,6 +16,7 @@ nmap <LEADER>gcw :G cw<CR>
 nmap <LEADER>ggu :silent Ggrep '^[<\|\=>]\{7\}'<CR>
 nmap <LEADER>gp :G! p<CR>
 nmap <LEADER>gpf :G! pf<CR>
+nmap <LEADER>gup :G up<CR>
 nmap <LEADER>gus :G us<CR>
 nmap <LEADER>gw :Gwrite<CR>
 nmap <LEADER>gy :Gllog --walk-reflogs stash<CR>
