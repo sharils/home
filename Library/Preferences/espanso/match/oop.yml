@@ -7,6 +7,9 @@ matches:
   - trigger: Oop,.
     replace: Object-Oriented Programming
 
+  - trigger: Srp,.
+    replace: Single Responsibility Principle
+
   - trigger: attr,.
     replace: attribute
 
@@ -15,6 +18,3 @@ matches:
 
   - trigger: prop,.
     replace: property
-
-  - trigger: srp,.
-    replace: single responsibility principle
