@@ -1,6 +1,14 @@
 ---
 matches:
 
+  - trigger: Kano,.
+    replace: >
+      1️⃣ like it.
+      2️⃣ expect it.
+      3️⃣ neutral.s
+      4️⃣ can tolerate it.
+      5️⃣ dislike it.
+
   - trigger: Lgtm,.
     replace: Looks good to me.
 
@@ -15,11 +23,3 @@ matches:
 
   - trigger: gbv,.
     replace: gross booking value
-
-  - trigger: kano,.
-    replace: >
-      1️⃣ like it.
-      2️⃣ expect it.
-      3️⃣ neutral.s
-      4️⃣ can tolerate it.
-      5️⃣ dislike it.
