@@ -21,3 +21,6 @@ matches:
 
   - trigger: phx,.
     replace: phoenix
+
+  - trigger: :os,.
+    replace: :observer.start()
