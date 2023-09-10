@@ -37,9 +37,12 @@ t() {
 
   su)
     shift
-    case "$1" in
-    '') toot auth --no-color | grep @ | cut -d' ' -f2 && return ;;
+    if [ $# -eq 0 ]; then
+      toot auth --no-color | grep @ | cut -d' ' -f2
+      return
+    fi
 
+    case "$1" in
     add | a | addm | addto | append | app | archive | b | command | d | deduplicate | del | e | m | r | rm | depri | dp | done | do | help | list | ls | listall | lsa | listaddons | listcon | lsc | listfile | lf | listpri | lsp | listproj | lsprj | move | mv | prepend | prep | pri | replace | report | shorthelp | z)
       TODO_FILE="$TODO_SU" todo.sh "$@"
       return
