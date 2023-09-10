@@ -6,6 +6,9 @@ matches:
   - trigger: Ex,.
     replace: Elixir
 
+  - trigger: Gfm,.
+    replace: GitHub Flavoured Markdown
+
   - trigger: as,.
     replace: applescript
 
