@@ -36,8 +36,8 @@ matches:
   - trigger: Us,.
     replace: User Story
 
+  - trigger: Wip,.
+    replace: Work In Progress
+
   - trigger: lehv,.
     replace: low effort and high value
-
-  - trigger: wip,.
-    replace: work in progress
