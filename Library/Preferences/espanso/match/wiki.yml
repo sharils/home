@@ -4,11 +4,17 @@ matches:
   - trigger: Mw,.
     replace: MediaWiki
 
+  - trigger: Wb,.
+    replace: Wikibase
+
   - trigger: Wd,.
     replace: Wikidata
 
   - trigger: Wp,.
     replace: Wikipedia
+
+  - trigger: wb,.
+    replace: Wikibase
 
   - trigger: wd,.
     replace: wikidata

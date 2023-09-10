@@ -13,9 +13,6 @@ matches:
   - trigger: Psql,.
     replace: PostgreSQL
 
-  - trigger: Wb,.
-    replace: Wikibase
-
   - trigger: db,.
     replace: database
 
@@ -30,6 +27,3 @@ matches:
 
   - trigger: rdbms,.
     replace: relational database management system
-
-  - trigger: wb,.
-    replace: Wikibase
