@@ -5,6 +5,11 @@ t() {
   n | t | ui) x focus && echo focus! >&2 && return ;;
   esac
 
+  if "$SHARILS_HOME/shell_plugins/t/is_todo.sh" "$@"; then
+    todo.sh "$@"
+    return
+  fi
+
   case $1 in
 
   b)
@@ -42,12 +47,10 @@ t() {
       return
     fi
 
-    case "$1" in
-    add | a | addm | addto | append | app | archive | b | command | d | deduplicate | del | e | m | r | rm | depri | dp | done | do | help | list | ls | listall | lsa | listaddons | listcon | lsc | listfile | lf | listpri | lsp | listproj | lsprj | move | mv | prepend | prep | pri | replace | report | shorthelp | z)
+    if "$SHARILS_HOME/shell_plugins/t/is_todo.sh" "$@"; then
       TODO_FILE="$TODO_SU" todo.sh "$@"
       return
-      ;;
-    esac
+    fi
 
     auth="$(t su | grep "$1" | fzf --select-1 --height=~14 --layout=reverse "$@")" && shift
     echo "TOOT_USING=$auth" >&2
@@ -61,8 +64,6 @@ t() {
   w) shift && "$SHARILS_HOME/shell_plugins/t/w.sh" "$@" ;;
 
   z) shift && t archive "$@" ;;
-
-  add | a | addm | addto | append | app | archive | command | deduplicate | del | rm | depri | dp | done | do | help | list | ls | listall | lsa | listaddons | listcon | lsc | listfile | lf | listpri | lsp | listproj | lsprj | move | mv | prepend | prep | pri | replace | report | shorthelp) todo.sh "$@" ;;
 
   *) tldr "$@" ;;
 
