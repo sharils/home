@@ -18,6 +18,9 @@ matches:
   - trigger: Gql,.
     replace: GraphQL
 
+  - trigger: Proto,.
+    replace: Protocol Buffer
+
   - trigger: as,.
     replace: applescript
 
@@ -38,9 +41,6 @@ matches:
 
   - trigger: pl,.
     replace: programming language
-
-  - trigger: proto,.
-    replace: Protocol Buffer
 
   - trigger: py,.
     replace: python
