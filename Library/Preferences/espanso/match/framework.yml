@@ -1,0 +1,14 @@
+---
+matches:
+
+  - trigger: Next,.
+    replace: Next.js
+
+  - trigger: Rn,.
+    replace: React Native
+
+  - trigger: fw,.
+    replace: framework
+
+  - trigger: rn,.
+    replace: react-native

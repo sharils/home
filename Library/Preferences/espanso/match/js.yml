@@ -4,14 +4,8 @@ matches:
   - trigger: Js,.
     replace: JavaScript
 
-  - trigger: Next,.
-    replace: Next.js
-
   - trigger: Node,.
     replace: NodeJS
-
-  - trigger: Rn,.
-    replace: React Native
 
   - trigger: Ts,.
     replace: TypeScript
@@ -24,6 +18,3 @@ matches:
 
   - trigger: node,.
     replace: nodejs
-
-  - trigger: rn,.
-    replace: react-native

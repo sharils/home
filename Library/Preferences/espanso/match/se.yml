@@ -19,9 +19,6 @@ matches:
   - trigger: eng,.
     replace: engineering
 
-  - trigger: fw,.
-    replace: framework
-
   - trigger: lib,.
     replace: library
 
