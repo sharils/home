@@ -15,6 +15,9 @@ matches:
   - trigger: Json,.
     replace: JSON
 
+  - trigger: Gql,.
+    replace: GraphQL
+
   - trigger: as,.
     replace: applescript
 
@@ -32,9 +35,6 @@ matches:
 
   - trigger: js,.
     replace: javascript
-
-  - trigger: gql,.
-    replace: GraphQL
 
   - trigger: pl,.
     replace: programming language
