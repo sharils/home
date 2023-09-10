@@ -14,3 +14,6 @@ matches:
 
   - trigger: Smart,.
     replace: Specific, Measurable, Achievable, Relevant, and Time-bound
+
+  - trigger: ft,.
+    replace: feature
