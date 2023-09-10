@@ -32,8 +32,6 @@ n() {
 
   g) shift && NPM_CONFIG_GLOBAL='1' npm "$@" ;;
 
-  gi) shift && n gitignore "${@:-node}" ;;
-
   jq) shift && jq <package.json "$@" ;;
 
   lpd) shift && NPM_CONFIG_LEGACY_PEER_DEPS='1' "$@" ;;
@@ -50,7 +48,7 @@ n() {
 
   cnc) shift && n clear-npx-cache "$@" ;;
 
-  clear-npx-cache | d | e | i | graphql-codegen | krampus | l | mkcert | p | pkill | serve | tsc | vercel | yo) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/n/$cmd.sh" "$@" ;;
+  clear-npx-cache | d | e | i | gi | graphql-codegen | krampus | l | mkcert | p | pkill | serve | tsc | vercel | yo) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/n/$cmd.sh" "$@" ;;
 
   *)
     tmp="$(npm pkg get "scripts.$1" 2>/dev/null)"
