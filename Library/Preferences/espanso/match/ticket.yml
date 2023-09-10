@@ -1,0 +1,20 @@
+---
+matches:
+
+  - trigger: Ac,.
+    replace: Acceptance Criteria
+
+  - trigger: Bl,.
+    replace: Backlog
+
+  - trigger: Bt,.
+    replace: Backlog Triage
+
+  - trigger: Sp,.
+    replace: Story Point
+
+  - trigger: Us,.
+    replace: User Story
+
+  - trigger: lehv,.
+    replace: low effort and high value
