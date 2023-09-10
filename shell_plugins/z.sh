@@ -4,12 +4,10 @@ alias ..='z .'
 
 __z_t_tmp=''
 z() {
-  _z_cmd="${1:--}"
-  shift
-  case "$_z_cmd" in
+  case "${1:--}" in
 
   .)
-    shift
+    shift 2
     set -- "$(dirname "$PWD")"
     while [ "$1" != '/' ]; do
       set -- "$(dirname "$1")" "$@"
@@ -18,27 +16,28 @@ z() {
     [ -n "$path" ] && z "$path"
     ;;
 
-  d) cd "$HOME/Downloads" || return ;;
+  d) shift && cd "$HOME/Downloads" || return ;;
 
   e) shift && "$SHARILS_HOME/shell_plugins/z/e.sh" "$@" ;;
 
-  e2) z e e ;;
+  e2) shift && z e e ;;
 
-  g) cd "$HOME/git" || return ;;
+  g) shift && cd "$HOME/git" || return ;;
 
   gh) shift && "$SHARILS_HOME/shell_plugins/z/gh.sh" "$@" ;;
 
-  gl) cd "$HOM#/git/gitlab.com" || return ;;
+  gl) shift && cd "$HOM#/git/gitlab.com" || return ;;
 
-  h) cd "$SHARILS_HOME" || return ;;
+  h) shift && cd "$SHARILS_HOME" || return ;;
 
-  p) cd "$(pbpaste)" || return $? ;;
+  p) shift && cd "$(pbpaste)" || return $? ;;
 
   s) shift && "$SHARILS_HOME/shell_plugins/z/s.sh" "$@" ;;
 
-  ssh) cd "$HOME/.ssh" || return ;;
+  ssh) shift && cd "$HOME/.ssh" || return ;;
 
   t)
+    shift
     z t_init
     if [ $# -eq 0 ]; then
       dir="$__z_t_tmp"
@@ -49,14 +48,13 @@ z() {
     cd "$dir" || return
     ;;
 
-  t_init) [ ! -d "$__z_t_tmp" ] && __z_t_tmp="$(mktemp -d "/tmp/$USER-$(date +%m%d)-XXXXXX")" ;;
+  t_init) shift && [ ! -d "$__z_t_tmp" ] && __z_t_tmp="$(mktemp -d "/tmp/$USER-$(date +%m%d)-XXXXXX")" ;;
 
   v) shift && "$SHARILS_HOME/shell_plugins/z/v.sh" "$@" ;;
 
-  ~t) cd "$HOME/tmp" || return ;;
+  ~t) shift && cd "$HOME/tmp" || return ;;
 
-  *) __zoxide_z "$_z_cmd" "$@" ;;
+  *) __zoxide_z "$@" ;;
 
   esac
-  unset -v _z_cmd
 }
