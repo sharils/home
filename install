@@ -159,40 +159,6 @@ main() {
     git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it &&
         ~/.bash_it/install.sh
 
-    bash-it enable alias \
-        docker \
-        docker-compose \
-        general \
-        git \
-        homebrew \
-        homebrew-cask \
-        npm \
-        osx \
-        todo.txt-cli \
-        vagrant \
-        yarn
-
-    bash-it enable completion \
-        brew \
-        docker \
-        docker-compose \
-        docker-machine \
-        git \
-        makefile \
-        npm \
-        ssh \
-        system \
-        todo \
-        vagrant
-
-    bash-it enable plugin \
-        autojump \
-        direnv \
-        extract \
-        fzf \
-        git \
-        todo
-
     ln -fs "$PWD/"{.bash_it_custom,\
 .bash_profile,\
 .bashrc,\
