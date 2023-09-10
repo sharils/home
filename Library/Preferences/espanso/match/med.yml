@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Cbt,.
+    replace: Cognitive behavioral therapy (CBT)
+
   - trigger: Ddx,.
     replace: Differential Diagnosis (DDx)
 
