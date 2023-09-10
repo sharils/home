@@ -51,11 +51,7 @@ g() {
 
   y) shift && tig stash "$@" ;;
 
-  w)
-    cmd="$(git config remote.origin.url | tr ':' /)"
-    cmd="${cmd%%.git}"
-    w echo "https://${cmd##git@}"
-    ;;
+  w) git config remote.origin.url | sed 's#:#/#;s#^git@#https://#;s#.git$##' | xargs -o "$BROWSER" ;;
 
   -*) shift && grep "$@" ;;
 
