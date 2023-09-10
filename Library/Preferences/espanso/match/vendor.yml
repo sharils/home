@@ -25,6 +25,9 @@ matches:
   - trigger: Phx,.
     replace: Phoenix Framework
 
+  - trigger: Qtp,.
+    replace: QuickTime Player
+
   - trigger: dj,.
     replace: django
 
@@ -42,6 +45,3 @@ matches:
 
   - trigger: phx,.
     replace: phoenix
-
-  - trigger: qtp,.
-    replace: QuickTime Player
