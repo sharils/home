@@ -9,6 +9,15 @@ matches:
   - trigger: Bt,.
     replace: Backlog Triage
 
+  - trigger: Ds,.
+    form: |
+      Yesterday/Last Friday, I:
+        -
+      Today, I’m going to:
+        -
+      Blocker:
+        -
+
   - trigger: Rs,.
     replace: Retrospective
 
@@ -20,15 +29,6 @@ matches:
 
   - trigger: Sp,.
     replace: Story Point
-
-  - trigger: ds,.
-    form: |
-      Yesterday/Last Friday, I:
-        -
-      Today, I’m going to:
-        -
-      Blocker:
-        -
 
   - trigger: lehv,.
     replace: low effort and high value
