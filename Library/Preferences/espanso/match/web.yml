@@ -13,6 +13,9 @@ matches:
   - trigger: Rpc,.
     replace: RPC
 
+  - trigger: Serp,.
+    replace: SERP
+
   - trigger: app,.
     replace: application
 
@@ -29,9 +32,6 @@ matches:
         multiline: true
       rt:
         multiline: true
-
-  - trigger: serp,.
-    replace: SERP
 
   - trigger: spa,.
     replace: single page application
