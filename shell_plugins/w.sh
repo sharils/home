@@ -11,11 +11,7 @@ w() {
 
   ex) shift && w m --pattern '**/*.ex' '**/*.exs' --run "${*:-mix test && mix format}" ;;
 
-  js) shift && w m --pattern \
-    '**/*.js' '**/*.jsx' '**/*.ts' '**/*.tsx' \
-    '**/*.cjs' '**/*.cjsx' '**/*.cts' '**/*.ctsx' \
-    '**/*.mjs' '**/*.mjsx' '**/*.mts' '**/*.mtsx' \
-    --run "${*:-npm test}" ;;
+  js) shift && "$SHARILS_HOME/shell_plugins/w/js.sh" "$@" ;;
 
   m)
     shift
