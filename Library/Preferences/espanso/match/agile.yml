@@ -12,6 +12,9 @@ matches:
   - trigger: Rs,.
     replace: Retrospective
 
+  - trigger: Rsp,.
+    replace: Retrospective and Spring Planning
+
   - trigger: ds,.
     form: |
       Yesterday/Last Friday, I:
@@ -23,9 +26,6 @@ matches:
 
   - trigger: lehv,.
     replace: low effort and high value
-
-  - trigger: rsp,.
-    replace: Retrospective and Spring Planning
 
   - trigger: sp,.
     replace: Spring Planning
