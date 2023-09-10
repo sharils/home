@@ -2,7 +2,7 @@
 
 l() {
   [ $# -eq 0 ] && set -- --fix . "$@"
-  n eslint "$@"
+  npx --yes eslint "$@"
 }
 
 l "$@"
