@@ -24,14 +24,7 @@ b() {
   f) shift && BROWSER=/Applications/Firefox.app/Contents/MacOS/firefox "$@" ;;
   fde) shift && BROWSER=/Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox "$@" ;;
   i) shift && brew install "$@" ;;
-  l)
-    shift
-    if [ $# -eq 0 ]; then
-      bat --list-languages
-    else
-      BROWSER=lynx "$@"
-    fi
-    ;;
+  l) shift && "$SHARILS_HOME/shell_plugins/b/l.sh" "$@" ;;
   n) shift && BROWSER=none "$@" ;;
   o) shift && BROWSER=open "$@" ;;
   out) shift && brew outdated "$@" ;;
