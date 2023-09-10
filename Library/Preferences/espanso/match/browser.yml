@@ -6,6 +6,9 @@ matches:
   - trigger: Fx,.
     replace: Firefox
 
+  - trigger: bm,.
+    replace: bookmark
+
   - trigger: br,.
     replace: browser
 

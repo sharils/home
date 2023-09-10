@@ -4,9 +4,6 @@ matches:
   - trigger: bg,.
     replace: background
 
-  - trigger: bm,.
-    replace: bookmark
-
   - trigger: crypto,.
     replace: cryptocurrency
 
