@@ -4,6 +4,9 @@ matches:
   - trigger: Se,.
     replace: Software Engineering
 
+  - trigger: Ssot,.
+    replace: Single Source of Truth
+
   - trigger: dep,.
     replace: dependency
 
@@ -27,6 +30,3 @@ matches:
 
   - trigger: spec,.
     replace: specification
-
-  - trigger: ssot,.
-    replace: single source of truth
