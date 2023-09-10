@@ -1,0 +1,9 @@
+---
+matches:
+
+  - trigger: lat,.
+    replace: latitude
+
+  - trigger: lng,.
+    replace: longitude
+

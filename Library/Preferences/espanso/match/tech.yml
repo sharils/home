@@ -10,12 +10,6 @@ matches:
   - trigger: ks,.
     replace: keyboard shortcuts
 
-  - trigger: lat,.
-    replace: latitude
-
-  - trigger: lng,.
-    replace: longitude
-
   - trigger: noti,.
     replace: notification
 
