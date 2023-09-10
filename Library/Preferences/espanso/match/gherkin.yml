@@ -21,9 +21,6 @@ matches:
   - trigger: S:,.
     replace: "Scenario: "
 
-  - trigger: SO:,.
-    replace: "Scenario Outline: "
-
   - trigger: T,.
     replace: "Then "
 
