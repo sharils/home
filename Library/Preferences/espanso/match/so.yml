@@ -4,8 +4,8 @@ matches:
   - trigger: So,.
     replace: Stack Overflow
 
+  - trigger: Soi,.
+    replace: Stack Overflow Insights
+
   - trigger: so,.
     replace: stackoverflow
-
-  - trigger: soi,.
-    replace: insights.stackoverflow
