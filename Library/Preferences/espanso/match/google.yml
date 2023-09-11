@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: G,.
+    replace: Google
+
   - trigger: Ga,.
     replace: Google Analytics
 
