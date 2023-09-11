@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Cu,.
+    replace: ClickUp
+
   - trigger: Gbv,.
     replace: Gross Booking Value
 
