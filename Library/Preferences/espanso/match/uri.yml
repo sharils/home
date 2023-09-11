@@ -21,3 +21,6 @@ matches:
 
   - trigger: so,.
     replace: signout
+
+  - trigger: su,.
+    replace: signup
