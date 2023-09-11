@@ -4,6 +4,9 @@ matches:
   - trigger: Oss,.
     replace: Open Source
 
+  - trigger: Pos,.
+    replace: POSIX
+
   - trigger: bg,.
     replace: background
 
