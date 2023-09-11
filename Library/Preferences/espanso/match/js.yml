@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Es,.
+    replace: ECMAScript
+
   - trigger: Js,.
     replace: JavaScript
 
