@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Atv,.
+    replace: Apple TV
+
   - trigger: Ios,.
     replace: iOS
 
