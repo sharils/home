@@ -13,6 +13,9 @@ matches:
   - trigger: Jsd,.
     replace: JSDoc
 
+  - trigger: Jsw,.
+    replace: JavaScript Weekly
+
   - trigger: Node,.
     replace: NodeJS
 
