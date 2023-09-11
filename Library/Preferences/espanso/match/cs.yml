@@ -10,6 +10,9 @@ matches:
   - trigger: Re,.
     replace: Regular Expression
 
+  - trigger: Sm,.
+    replace: State Machine
+
   - trigger: alg,.
     replace: algorithm
 
