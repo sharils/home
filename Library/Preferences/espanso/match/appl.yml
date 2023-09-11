@@ -22,5 +22,8 @@ matches:
   - trigger: Qtp,.
     replace: QuickTime Player
 
+  - trigger: appl,.
+    replace: apple.com
+
   - trigger: as,.
     replace: applescript
