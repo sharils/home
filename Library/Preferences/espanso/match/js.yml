@@ -10,6 +10,9 @@ matches:
   - trigger: Js,.
     replace: JavaScript
 
+  - trigger: Jsd,.
+    replace: JSDoc
+
   - trigger: Node,.
     replace: NodeJS
 
