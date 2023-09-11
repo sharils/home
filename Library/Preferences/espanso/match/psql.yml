@@ -4,5 +4,8 @@ matches:
   - trigger: Psql,.
     replace: PostgreSQL
 
+  - trigger: \c,.
+    replace: \connect
+
   - trigger: psql,.
     replace: postgresql
