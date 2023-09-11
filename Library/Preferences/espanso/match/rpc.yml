@@ -4,7 +4,7 @@ matches:
   - trigger: Grpc,.
     replace: gRPC
 
-  - trigger: Proto,.
+  - trigger: Pb,.
     replace: Protocol Buffer
 
   - trigger: Rpc,.
