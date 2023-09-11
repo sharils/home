@@ -10,6 +10,9 @@ matches:
   - trigger: Ga,.
     replace: Google Analytics
 
+  - trigger: Gtl,.
+    replace: Google Translate
+
   - trigger: Yt,.
     replace: YouTube
 
