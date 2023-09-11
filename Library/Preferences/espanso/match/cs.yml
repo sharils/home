@@ -7,8 +7,14 @@ matches:
   - trigger: Ddd,.
     replace: Domain-Driven Design
 
+  - trigger: Fsm,.
+    replace: Finite State Machine
+
   - trigger: Re,.
     replace: Regular Expression
+
+  - trigger: Sm,.
+    replace: State Machine
 
   - trigger: Sm,.
     replace: State Machine
