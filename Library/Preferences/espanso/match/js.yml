@@ -19,6 +19,9 @@ matches:
   - trigger: Jsw,.
     replace: JavaScript Weekly
 
+  - trigger: Nc,.
+    replace: NPM_CONFIG_
+
   - trigger: Node,.
     replace: NodeJS
 
