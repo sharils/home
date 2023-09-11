@@ -25,6 +25,9 @@ matches:
   - trigger: doc,.
     replace: document
 
+  - trigger: esl,.
+    replace: eslint
+
   - trigger: js,.
     replace: javascript
 
