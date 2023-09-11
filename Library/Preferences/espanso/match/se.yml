@@ -10,6 +10,9 @@ matches:
   - trigger: Ssot,.
     replace: Single Source of Truth
 
+  - trigger: Tdd,.
+    replace: Test-Driven Development
+
   - trigger: eng,.
     replace: engineering
 
