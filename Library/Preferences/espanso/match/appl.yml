@@ -16,6 +16,9 @@ matches:
   - trigger: Mac,.
     replace: macOS
 
+  - trigger: Mba,.
+    replace: MacBook Air
+
   - trigger: Qtp,.
     replace: QuickTime Player
 
