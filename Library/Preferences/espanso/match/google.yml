@@ -10,5 +10,8 @@ matches:
   - trigger: Yt,.
     replace: YouTube
 
+  - trigger: g,.
+    replace: google
+
   - trigger: yt,.
     replace: youtube
