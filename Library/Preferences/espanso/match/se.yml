@@ -7,6 +7,9 @@ matches:
   - trigger: Dbc,.
     replace: Design by Contract
 
+  - trigger: Sbe,.
+    replace: Specification by Example
+
   - trigger: Se,.
     replace: Software Engineering
 
