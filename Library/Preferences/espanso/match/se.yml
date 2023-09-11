@@ -1,6 +1,12 @@
 ---
 matches:
 
+  - trigger: Bdd,.
+    replace: Behaviour-Driven Development
+
+  - trigger: Dbc,.
+    replace: Design by Contract
+
   - trigger: Se,.
     replace: Software Engineering
 
