@@ -7,6 +7,9 @@ matches:
   - trigger: Nd,.
     replace: NodeJS
 
+  - trigger: Ned,.
+    replace: NODE_ENV='development'
+
   - trigger: Nep,.
     replace: NODE_ENV='production'
 
