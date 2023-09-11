@@ -10,6 +10,9 @@ matches:
   - trigger: Rn,.
     replace: React Native
 
+  - trigger: Sk,.
+    replace: SvelteKit
+
   - trigger: Sv,.
     replace: Svelte
 
