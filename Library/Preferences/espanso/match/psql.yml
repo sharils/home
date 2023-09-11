@@ -1,0 +1,8 @@
+---
+matches:
+
+  - trigger: Psql,.
+    replace: PostgreSQL
+
+  - trigger: psql,.
+    replace: postgresql

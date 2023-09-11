@@ -7,14 +7,8 @@ matches:
   - trigger: Mysql,.
     replace: MySQL
 
-  - trigger: Psql,.
-    replace: PostgreSQL
-
   - trigger: maria,.
     replace: mariadb
-
-  - trigger: psql,.
-    replace: postgresql
 
   - trigger: rdbms,.
     replace: relational database management system
