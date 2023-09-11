@@ -10,6 +10,9 @@ matches:
   - trigger: Me,.
     replace: MIX_ENV=
 
+  - trigger: Mep,.
+    replace: MIX_ENV=prod
+
   - trigger: ex,.
     replace: elixir
 
