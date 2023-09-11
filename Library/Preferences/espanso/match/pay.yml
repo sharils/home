@@ -1,7 +1,7 @@
 ---
 matches:
 
-  - trigger: Np,.
+  - trigger: Nwp,.
     replace: NewebPay
 
   - trigger: np,.
