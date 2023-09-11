@@ -9,3 +9,7 @@ matches:
 
   - trigger: Rpc,.
     replace: RPC
+
+  - trigger: pb,.
+    replace: protobuf
+
