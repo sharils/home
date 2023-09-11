@@ -1,9 +1,6 @@
 ---
 matches:
 
-  - trigger: As,.
-    replace: AppleScript
-
   - trigger: Ios,.
     replace: iOS
 
