@@ -191,6 +191,7 @@ settings:
       gt: https://www.google.com.tw/search?client=firefox-b-d&gbv=1&q={}&lr=lang_zh-TW&sa=X&hl=zh-tw
       gte: https://translate.google.com/?sl=auto&tl=en&text={}
       gto: https://translate.google.com/?sl=auto&tl=eo&text={}
+      gtz: https://translate.google.com/?sl=auto&tl=zh-TW&text={}
       hex: https://hex.pm/packages?search={}&sort=recent_downloads
       hn: https://hn.algolia.com/?q={}
       jc: https://www.junk-call.com/tw/{}
