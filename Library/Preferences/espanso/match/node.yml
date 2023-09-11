@@ -7,7 +7,7 @@ matches:
   - trigger: Nc,.
     replace: NPM_CONFIG_
 
-  - trigger: Node,.
+  - trigger: Nd,.
     replace: NodeJS
 
   - trigger: dn,.
