@@ -10,6 +10,9 @@ matches:
   - trigger: Wdt,.
     replace: Web Developer Tools
 
+  - trigger: Wdtc,.
+    replace: Web Developer Tools Console
+
   - trigger: bm,.
     replace: bookmark
 
