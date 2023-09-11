@@ -7,6 +7,9 @@ matches:
   - trigger: Esl,.
     replace: ESLint
 
+  - trigger: Np,.
+    replace: NEXT_PUBLIC_
+
   - trigger: Js,.
     replace: JavaScript
 
