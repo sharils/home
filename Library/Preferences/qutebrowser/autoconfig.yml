@@ -189,6 +189,7 @@ settings:
       gi: https://www.google.com/search?client=firefox-b-d&gbv=1&as_rights=(cc_publicdomain|cc_attribute|cc_sharealike).-(cc_noncommercial|cc_nonderived)&tbm=isch&as_q=site%3Awikimedia.org+{}
       gm: https://www.google.com.tw/maps?q={}&hl=zh-TW
       gt: https://www.google.com.tw/search?client=firefox-b-d&gbv=1&q={}&lr=lang_zh-TW&sa=X&hl=zh-tw
+      gte: https://translate.google.com/?sl=auto&tl=en&text={}
       gto: https://translate.google.com/?sl=auto&tl=eo&text={}
       hex: https://hex.pm/packages?search={}&sort=recent_downloads
       hn: https://hn.algolia.com/?q={}
