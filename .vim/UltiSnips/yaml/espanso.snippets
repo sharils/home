@@ -1,5 +1,15 @@
 priority 5
 
+snippet form "form" b
+- trigger: ${1:<rb},.
+	form: ${2:<ruby>[[ruby]]<rp>(</rp><rt>[[rt]]</rt><rp>)</rp></ruby>}
+	form_fields:
+		${3:ruby}:
+			multiline: true
+		${4:rt}:
+			multiline: true
+endsnippet
+
 snippet m "matches" b
 matches:
 endsnippet
