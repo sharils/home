@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Oss,.
+    replace: Open Source
+
   - trigger: bg,.
     replace: background
 
@@ -12,9 +15,6 @@ matches:
 
   - trigger: noti,.
     replace: notification
-
-  - trigger: os,.
-    replace: open source
 
   - trigger: ss,.
     replace: spreadsheet
