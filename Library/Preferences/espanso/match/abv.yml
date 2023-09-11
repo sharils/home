@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Thx,.
+    replace: Thanks!
+
   - trigger: alt,.
     replace: alternative
 
