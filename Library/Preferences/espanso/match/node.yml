@@ -4,9 +4,6 @@ matches:
   - trigger: Dn,.
     replace: Deno
 
-  - trigger: Nc,.
-    replace: NPM_CONFIG_
-
   - trigger: Nd,.
     replace: NodeJS
 
