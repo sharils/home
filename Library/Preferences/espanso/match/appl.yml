@@ -7,6 +7,9 @@ matches:
   - trigger: Ip,.
     replace: iPad
 
+  - trigger: Ipp,.
+    replace: iPad Pro
+
   - trigger: Iph,.
     replace: iPhone
 
