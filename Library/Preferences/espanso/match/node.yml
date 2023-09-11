@@ -13,6 +13,9 @@ matches:
   - trigger: Nep,.
     replace: NODE_ENV='production'
 
+  - trigger: Net,.
+    replace: NODE_ENV='test'
+
   - trigger: dn,.
     replace: deno
 
