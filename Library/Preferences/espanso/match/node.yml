@@ -1,0 +1,20 @@
+---
+matches:
+
+  - trigger: Dn,.
+    replace: Deno
+
+  - trigger: Nc,.
+    replace: NPM_CONFIG_
+
+  - trigger: Node,.
+    replace: NodeJS
+
+  - trigger: dn,.
+    replace: deno
+
+  - trigger: nc,.
+    replace: npm_config_
+
+  - trigger: node,.
+    replace: nodejs

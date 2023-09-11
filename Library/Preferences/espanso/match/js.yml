@@ -1,9 +1,6 @@
 ---
 matches:
 
-  - trigger: Dn,.
-    replace: Deno
-
   - trigger: Es,.
     replace: ECMAScript
 
@@ -19,17 +16,8 @@ matches:
   - trigger: Jsw,.
     replace: JavaScript Weekly
 
-  - trigger: Nc,.
-    replace: NPM_CONFIG_
-
-  - trigger: Node,.
-    replace: NodeJS
-
   - trigger: Ts,.
     replace: TypeScript
-
-  - trigger: dn,.
-    replace: deno
 
   - trigger: doc,.
     replace: document
@@ -39,9 +27,3 @@ matches:
 
   - trigger: js,.
     replace: javascript
-
-  - trigger: nc,.
-    replace: npm_config_
-
-  - trigger: node,.
-    replace: nodejs
