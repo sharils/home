@@ -4,6 +4,9 @@ matches:
   - trigger: Es,.
     replace: ECMAScript
 
+  - trigger: Esl,.
+    replace: ESLint
+
   - trigger: Js,.
     replace: JavaScript
 
