@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: And,.
+    replace: Android
+
   - trigger: G,.
     replace: Google
 
