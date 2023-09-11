@@ -2,19 +2,19 @@
 matches:
 
   - trigger: A,.
-    replace: "Add "
+    replace: "Add"
 
   - trigger: C,.
-    replace: "Change "
+    replace: "Change"
 
   - trigger: D,.
-    replace: "Remove "
+    replace: "Remove"
 
   - trigger: F,.
-    replace: "Fix "
+    replace: "Fix"
 
   - trigger: R,.
-    replace: "Refactor "
+    replace: "Refactor"
 
   - trigger: X,.
-    replace: "Exec "
+    replace: "Exec"
