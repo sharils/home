@@ -22,6 +22,9 @@ matches:
   - trigger: Ts,.
     replace: TypeScript
 
+  - trigger: dn,.
+    replace: deno
+
   - trigger: doc,.
     replace: document
 
