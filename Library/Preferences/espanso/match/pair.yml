@@ -4,11 +4,11 @@ matches:
   - trigger: "',."
     replace: "'$|$'"
 
-  - trigger: (,.
-    replace: ($|$)
+  - trigger: "(,."
+    replace: "($|$)"
 
-  - trigger: __,.
-    replace: __$|$__
+  - trigger: "__,."
+    replace: "__$|$__"
 
   - trigger: "[,."
     replace: "[$|$]"
