@@ -14,7 +14,7 @@ matches:
     replace: Test-Driven Development
 
   - trigger: eng,.
-    replace: engineering
+    replace: engineer
 
   - trigger: ref,.
     replace: reference
