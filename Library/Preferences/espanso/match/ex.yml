@@ -7,6 +7,9 @@ matches:
   - trigger: Lv,.
     replace: LiveView
 
+  - trigger: Me,.
+    replace: MIX_ENV=
+
   - trigger: ex,.
     replace: elixir
 
