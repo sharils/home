@@ -9,3 +9,6 @@ matches:
 
   - trigger: lh,.
     replace: localhost
+
+  - trigger: li,.
+    replace: login
