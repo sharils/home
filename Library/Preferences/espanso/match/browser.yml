@@ -1,10 +1,14 @@
 ---
 matches:
+
   - trigger: Cr,.
     replace: Chromium
 
   - trigger: Fx,.
     replace: Firefox
+
+  - trigger: Wdt,.
+    replace: Web Developer Tools
 
   - trigger: bm,.
     replace: bookmark
