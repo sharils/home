@@ -1,0 +1,17 @@
+---
+matches:
+
+  - trigger: Dbc,.
+    replace: Design by Contract
+
+  - trigger: Ddd,.
+    replace: Domain-Driven Design
+
+  - trigger: Sbe,.
+    replace: Specification by Example
+
+  - trigger: Ssot,.
+    replace: Single Source of Truth
+
+  - trigger: sc,.
+    replace: statechart

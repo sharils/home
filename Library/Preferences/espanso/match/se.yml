@@ -4,20 +4,11 @@ matches:
   - trigger: Bdd,.
     replace: Behaviour-Driven Development
 
-  - trigger: Dbc,.
-    replace: Design by Contract
-
-  - trigger: Sbe,.
-    replace: Specification by Example
-
   - trigger: Se,.
     replace: Software Engineering
 
   - trigger: Ser,.
     replace: SE Radio
-
-  - trigger: Ssot,.
-    replace: Single Source of Truth
 
   - trigger: Tdd,.
     replace: Test-Driven Development

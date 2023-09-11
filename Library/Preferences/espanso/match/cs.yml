@@ -31,8 +31,5 @@ matches:
   - trigger: char,.
     replace: character
 
-  - trigger: sc,.
-    replace: statechart
-
   - trigger: sys,.
     replace: system
