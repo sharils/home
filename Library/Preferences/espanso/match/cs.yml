@@ -10,6 +10,9 @@ matches:
   - trigger: Fsm,.
     replace: Finite State Machine
 
+  - trigger: Os,.
+    replace: Operating System
+
   - trigger: Re,.
     replace: Regular Expression
 
