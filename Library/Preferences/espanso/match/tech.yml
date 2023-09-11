@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Ei,.
+    replace: E Ink
+
   - trigger: Oss,.
     replace: Open Source
 
