@@ -4,5 +4,5 @@ matches:
   - trigger: Nwp,.
     replace: NewebPay
 
-  - trigger: np,.
+  - trigger: nwp,.
     replace: newebpay
