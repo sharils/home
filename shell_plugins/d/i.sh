@@ -8,7 +8,7 @@ i() {
     for image in "$@"; do :; done
     image="$(echo "$image" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^[:alnum:]]+/-/g').tar.gz"
     i save "$@" | gzip >"$image"
-    echo "docker load < $image # to load image" >&2
+    echo "docker load <$image # to load image" >&2
     ;;
   v) shift && open "https://hub.docker.com/r/$1" ;;
   *) docker image "${@:-ls}" ;;
