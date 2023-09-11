@@ -12,3 +12,6 @@ matches:
 
   - trigger: li,.
     replace: login
+
+  - trigger: lo,.
+    replace: logout
