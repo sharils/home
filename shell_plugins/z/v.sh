@@ -2,6 +2,7 @@
 
 v() {
   case "$1" in
+
   a)
     shift
     case "$1" in
@@ -9,6 +10,7 @@ v() {
     *) set -- /plugged/after/plugin ;;
     esac
     ;;
+
   b)
     shift
     case "$1" in
@@ -16,6 +18,9 @@ v() {
     *) set -- /plugged/before/plugin ;;
     esac
     ;;
+
+  p) shift && set -- /plugged ;;
+
   u)
     shift
     case "$1" in
@@ -23,6 +28,7 @@ v() {
     *) set -- /UltiSnips ;;
     esac
     ;;
+
   esac
   echo "$SHARILS_HOME/.vim$*"
 }
