@@ -10,6 +10,12 @@ matches:
   - trigger: Fsm,.
     replace: Finite State Machine
 
+  - trigger: Gw,.
+    replace: Goodbye world!
+
+  - trigger: Hw,.
+    replace: Hello world!
+
   - trigger: Os,.
     replace: Operating System
 
