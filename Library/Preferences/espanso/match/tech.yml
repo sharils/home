@@ -22,6 +22,15 @@ matches:
   - trigger: noti,.
     replace: notification
 
+  - trigger: scc,.
+    replace: screencast
+
+  - trigger: scr,.
+    replace: screen
+
+  - trigger: scs,.
+    replace: screenshot
+
   - trigger: ss,.
     replace: spreadsheet
 
