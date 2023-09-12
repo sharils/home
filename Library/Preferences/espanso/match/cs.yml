@@ -19,9 +19,6 @@ matches:
   - trigger: Sm,.
     replace: State Machine
 
-  - trigger: Sm,.
-    replace: State Machine
-
   - trigger: alg,.
     replace: algorithm
 
