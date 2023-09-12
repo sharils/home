@@ -5,6 +5,9 @@ matches:
     replace: Backlog Triage
 
   - trigger: Ds,.
+    replace: Daily Stand-up
+
+  - trigger: Dsn,.
     form: |
       Yesterday/Last Friday, I:
         -
@@ -21,6 +24,9 @@ matches:
 
   - trigger: Sp,.
     replace: Spring Planning
+
+  - trigger: Stum,.
+    replace: Stand-up Meeting
 
   - trigger: Su,.
     replace: Stand-Up
