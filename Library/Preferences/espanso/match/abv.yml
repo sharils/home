@@ -1,12 +1,6 @@
 ---
 matches:
 
-  - trigger: Plz,.
-    replace: Please
-
-  - trigger: Thx,.
-    replace: Thanks!
-
   - trigger: alt,.
     replace: alternative
 

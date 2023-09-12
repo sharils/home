@@ -7,11 +7,17 @@ matches:
   - trigger: Pd,.
     replace: Per discussion
 
+  - trigger: Plz,.
+    replace: Please
+
   - trigger: Pr,.
     replace: Please help review! Thanks!
 
   - trigger: Thowt,.
     replace: A penny for your thoughts.
+
+  - trigger: Thx,.
+    replace: Thanks!
 
   - trigger: Tldr,.
     replace: Thereby hangs a tail.
