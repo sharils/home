@@ -1,9 +1,6 @@
 ---
 matches:
 
-  - trigger: And,.
-    replace: Android
-
   - trigger: G,.
     replace: Google
 
@@ -15,6 +12,9 @@ matches:
 
   - trigger: Gtl,.
     replace: Google Translate
+
+  - trigger: Ndr,.
+    replace: Android
 
   - trigger: Yt,.
     replace: YouTube
