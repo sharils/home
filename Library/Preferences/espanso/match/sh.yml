@@ -4,6 +4,9 @@ matches:
   - trigger: \',.
     replace: "'\\''$|$'\\''"
 
+  - trigger: p,.
+    replace: printf
+
   - trigger: xsis,.
     replace: xargs sed -i '' 's/$|$//'
 
