@@ -4,6 +4,12 @@ matches:
   - trigger: Lgtm,.
     replace: Looks good to me.
 
+  - trigger: Nm,.
+    replace: Nevermind
+
+  - trigger: Nw,.
+    replace: No worries.
+
   - trigger: Pd,.
     replace: Per discussion
 
