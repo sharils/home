@@ -4,6 +4,12 @@ matches:
   - trigger: Fir,.
     replace: Firebase
 
+  - trigger: Fa,.
+    replace: Firebase Auth
+
+  - trigger: Ff,.
+    replace: Firebase Functions
+
   - trigger: Fs,.
     replace: Firestore
 
