@@ -1,11 +1,41 @@
 ---
-# https://slack.com/help/articles/201259356-Slash-commands-in-Slack#h_01EPZ2Z81EJ67RA2BGDKZ9M1AN
+# https://slack.com/help/articles/360057554553-Use-shortcuts-to-take-actions-in-Slack#built-in-shortcuts
 matches:
+
   - trigger: /c,.
-    replace: "/collapse"
+    replace: /collapse
+
+  - trigger: /d,.
+    replace: /dnd
+
+  - trigger: /e,.
+    replace: /expand
 
   - trigger: /r,.
-    replace: /remind me "$|$" next week
+    form: /remind [[who]] "[[what]]" [[when]]
+    form_fields:
+      who:
+        default: me
+      when:
+        default: tomorrow
 
   - trigger: /s,.
-    replace: "/status "
+    replace: "/status $|$ :books:"
+
+  - trigger: /sa,.
+    replace: /status away
+
+  - trigger: /sc,.
+    replace: /status clear
+
+  - trigger: /sh,.
+    replace: /shrug
+
+  - trigger: /sm,.
+    replace: "{{sm}}"
+    vars:
+      - name: sm
+        type: shell
+        params:
+          cmd: 'echo "/search from:me in:#standup-meeting after:$(date -jf%F -v-7d "$(date +%F)" +%F)"'
+
