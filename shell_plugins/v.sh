@@ -38,6 +38,13 @@ v() {
 
   v) shift && "$SHARILS_HOME/shell_plugins/v/v.sh" "$@" ;;
 
+  \?)
+    shift
+    ext="$(printf 'applescript | c | css | csv | eex | erl | ex | exs | feature | gql | html | java | jq | js | json | jsx | lua | md | mdx | mmd | mw | nginx | pegjs | php | proto | py | rs | scss | sh | sql | story | svelte | t | ts | tsx | txt | wat | xhtml | yaml | yml | zep' | sed 's# \| #\n#g')"
+    [ -n "$ext" ] && v "$ext"
+    return $?
+    ;;
+
   applescript | c | css | csv | eex | erl | ex | exs | feature | gql | html | java | jq | js | json | jsx | lua | md | mdx | mmd | mw | nginx | pegjs | php | proto | py | rs | scss | sh | sql | story | svelte | t | ts | tsx | txt | wat | xhtml | yaml | yml | zep)
     if [ -f "$1" ]; then
       vim "$1"
