@@ -5,7 +5,7 @@ matches:
     replace: gRPC
 
   - trigger: Pb,.
-    replace: Protocol Buffer
+    replace: Protocol Buffers
 
   - trigger: Rpc,.
     replace: RPC
