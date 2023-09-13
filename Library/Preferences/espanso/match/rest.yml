@@ -4,6 +4,9 @@ matches:
   - trigger: Oapi,.
     replace: OpenAPI
 
+  - trigger: Inso,.
+    replace: Insomnia
+
   - trigger: Rest,.
     replace: RESTful
 
