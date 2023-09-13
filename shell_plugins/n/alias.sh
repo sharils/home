@@ -5,6 +5,7 @@ n_alias() {
 @ionic/cli ionic
 @mermaid-js/mermaid-cli mmdc
 @neutralinojs/neu neu
+@openapitools/openapi-generator-cli openapi-generator-cli
 @sandworm/audit sandworm sandworm-audit
 baapan
 backstopjs backstop
