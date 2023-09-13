@@ -163,6 +163,7 @@ settings:
   url.searchengines:
     global:
       DEFAULT: https://lite.duckduckgo.com/lite/?q={}
+      aa: https://www.allacronyms.com/{}/abbreviated
       ab: https://archive.org/details/inlibrary?sin=&and%5B%5D={}
       b: https://search.brave.com/search?q={}
       bg: https://biggo.com.tw/s/?q={}&view=l&sort=lp
