@@ -1,5 +1,9 @@
 ---
 matches:
+
+  - trigger: K,.
+    replace: 000
+
   - trigger: a4,.
     replace: 210 × 297 mm
 
@@ -8,9 +12,6 @@ matches:
 
   - trigger: e4,.
     replace: 0000
-
-  - trigger: k,.
-    replace: 000
 
   - trigger: m,.
     replace: 000000
