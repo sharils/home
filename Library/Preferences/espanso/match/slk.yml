@@ -32,10 +32,4 @@ matches:
     replace: /shrug
 
   - trigger: /sm,.
-    replace: "{{sm}}"
-    vars:
-      - name: sm
-        type: shell
-        params:
-          cmd: 'echo "/search from:me in:#standup-meeting after:$(date -jf%F -v-7d "$(date +%F)" +%F)"'
-
+    replace: /search in:#standup-meeting from:me during:week
