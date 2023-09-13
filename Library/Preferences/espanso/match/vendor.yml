@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Hb,.
+    replace: Homebrew
+
   - trigger: Chat,.
     replace: ChatGPT
 
