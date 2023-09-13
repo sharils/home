@@ -2,6 +2,9 @@
 # https://slack.com/help/articles/360057554553-Use-shortcuts-to-take-actions-in-Slack#built-in-shortcuts
 matches:
 
+  - trigger: "#g,."
+    replace: "#general"
+
   - trigger: /c,.
     replace: /collapse
 
