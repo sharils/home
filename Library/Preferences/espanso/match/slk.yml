@@ -5,6 +5,9 @@ matches:
   - trigger: "#g,."
     replace: "#general"
 
+  - trigger: "#r,."
+    replace: "#random"
+
   - trigger: /c,.
     replace: /collapse
 
