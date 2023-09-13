@@ -10,6 +10,9 @@ matches:
   - trigger: Gd,.
     replace: Googla Drive
 
+  - trigger: Gm,.
+    replace: Gmail
+
   - trigger: Gt,.
     replace: Google Trends
 
