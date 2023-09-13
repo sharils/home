@@ -100,6 +100,7 @@ settings:
     docs.python.org: true
     docs.rs: true
     editor.swagger.io: true
+    exercism.org: true
     file://*: true
     firebase.google.com: true
     github.com: true
