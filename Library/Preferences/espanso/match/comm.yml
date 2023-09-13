@@ -23,7 +23,7 @@ matches:
     replace: A penny for your thoughts.
 
   - trigger: Thx,.
-    replace: Thanks!
+    replace: Thank you very much!
 
   - trigger: Tldr,.
     replace: Thereby hangs a tail.
