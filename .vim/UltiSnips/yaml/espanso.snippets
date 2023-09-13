@@ -21,7 +21,7 @@ snippet sh "type: shell" b
 		- name: $1
 			type: shell
 			params:
-				cmd: "${1:ipconfig getifaddr en0}"
+				cmd: "${2:ipconfig getifaddr en0}"
 endsnippet
 
 snippet t "trigger" b
