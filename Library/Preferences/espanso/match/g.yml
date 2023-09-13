@@ -19,7 +19,7 @@ matches:
   - trigger: Yt,.
     replace: YouTube
 
-  - trigger: g,.
+  - trigger: gg,.
     replace: google
 
   - trigger: yt,.
