@@ -1,6 +1,12 @@
 ---
 matches:
 
+  - trigger: Gq,.
+    replace: Good question!
+
+  - trigger: Hgit,.
+    replace: How about let’s give it a try?
+
   - trigger: Lgtm,.
     replace: Looks good to me.
 
@@ -27,3 +33,15 @@ matches:
 
   - trigger: Tldr,.
     replace: Thereby hangs a tail.
+
+  - trigger: Tmyt,.
+    replace: Please tell me about your thoughts.
+
+  - trigger: Wym,.
+    replace: Would you mind
+
+  - trigger: Wyt,.
+    replace: What do you think?
+
+  - trigger: Yt,.
+    replace: Your turn!
