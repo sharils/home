@@ -1,0 +1,5 @@
+---
+matches:
+
+  - trigger: pu2,.
+    replace: 👆
