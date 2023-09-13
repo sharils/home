@@ -25,6 +25,14 @@ matches:
   - trigger: doc,.
     replace: document
 
+  - trigger: dq,.
+    replace: "{{dq}}"
+    vars:
+      - name: dq
+        type: shell
+        params:
+          cmd: 'echo "[...document.querySelectorAll(\"$(pbpaste)\")].map((n) => {$|$})"'
+
   - trigger: esl,.
     replace: eslint
 
