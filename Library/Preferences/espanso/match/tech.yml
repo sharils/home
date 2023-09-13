@@ -10,6 +10,9 @@ matches:
   - trigger: Pos,.
     replace: POSIX
 
+  - trigger: Xr,.
+    replace: Exercism
+
   - trigger: bg,.
     replace: background
 
