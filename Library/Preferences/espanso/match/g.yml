@@ -7,6 +7,9 @@ matches:
   - trigger: Ga,.
     replace: Google Analytics
 
+  - trigger: Gd,.
+    replace: Googla Drive
+
   - trigger: Gt,.
     replace: Google Trends
 
@@ -19,7 +22,7 @@ matches:
   - trigger: Yt,.
     replace: YouTube
 
-  - trigger: gg,.
+  - trigger: g,.
     replace: google
 
   - trigger: yt,.
