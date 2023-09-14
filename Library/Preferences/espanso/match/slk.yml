@@ -39,3 +39,6 @@ matches:
 
   - trigger: /sm,.
     replace: /search in:#standup-meeting from:me during:week
+
+  - trigger: "@Sb,."
+    replace: "@Slackbot"
