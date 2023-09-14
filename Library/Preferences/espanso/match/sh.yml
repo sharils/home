@@ -13,6 +13,9 @@ matches:
   - trigger: p,.
     replace: printf
 
+  - trigger: seds,.
+    replace: sed 's/$|$//'
+
   - trigger: sh,.
     replace: shell
 
