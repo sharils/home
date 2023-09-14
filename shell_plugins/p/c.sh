@@ -7,11 +7,10 @@ c() {
     case "$1" in
     t) shift && set -- test "$@" ;;
     esac
-    set -- run manage.py "$@"
+    "$SHARILS_HOME/shell_plugins/p/r.sh" c run manage.py "$@"
     ;;
-  r) shift && set -- report "$@" ;;
+  r) shift && "$SHARILS_HOME/shell_plugins/p/r.sh" c report "$@" ;;
   esac
-  "$SHARILS_HOME/shell_plugins/p/r.sh" c "$@"
 }
 
 c "$@"
