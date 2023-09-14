@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Bsh,.
+    replace: Bourne Shell
+
   - trigger: Psh,.
     replace: POSIX Shell
 
