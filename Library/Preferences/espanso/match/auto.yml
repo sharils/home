@@ -9,3 +9,6 @@ matches:
 
   - trigger: Sel,.
     replace: Selenium
+
+  - trigger: Side,.
+    replace: Selenium IDE
