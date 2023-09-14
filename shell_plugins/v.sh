@@ -22,6 +22,8 @@ v() {
 
   case "$1" in
 
+  -) shift && "$SHARILS_HOME/shell_plugins/v/-.sh" "$@" ;;
+
   e) shift && "$SHARILS_HOME/shell_plugins/v/e.sh" "$@" ;;
 
   hosts) EDITOR=vim sudo --edit /etc/hosts "$@" ;;
@@ -36,11 +38,9 @@ v() {
 
   tor) vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc ;;
 
-  v) shift && "$SHARILS_HOME/shell_plugins/v/v.sh" "$@" ;;
-
   \?)
     shift
-    ext="$(printf 'applescript | c | css | csv | eex | erl | ex | exs | feature | gql | html | java | jq | js | json | jsx | lua | md | mdx | mmd | mw | nginx | pegjs | php | proto | py | rs | scss | sh | sql | story | svelte | t | ts | tsx | txt | wat | xhtml | yaml | yml | zep' | sed 's# \| #\n#g')"
+    ext="$(printf 'applescript | c | css | csv | eex | erl | ex | exs | feature | gql | html | java | jq | js | json | jsx | lua | md | mdx | mmd | mw | nginx | pegjs | php | proto | py | rs | scss | sh | sql | story | svelte | t | ts | tsx | txt | wat | xhtml | yaml | yml | zep' | sed 's# \| #\n#g' | fzf)"
     [ -n "$ext" ] && v "$ext"
     return $?
     ;;
