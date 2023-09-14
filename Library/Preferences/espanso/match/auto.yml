@@ -6,3 +6,6 @@ matches:
 
   - trigger: Pom,.
     replace: Page Object Model
+
+  - trigger: Sel,.
+    replace: Selenium
