@@ -20,3 +20,12 @@ matches:
         type: shell
         params:
           cmd: 'printf "(800) 555‑01%s" "$(jot -r 2 0 9 | tr -d \\n)" | pbcopy && pbpaste'
+
+  # TEST-NET-1 https://www.rfc-editor.org/rfc/rfc5737
+  - trigger: tn1,.
+    replace: "{{tn1}}"
+    vars:
+      - name: tn1
+        type: shell
+        params:
+          cmd: 'printf "192.0.2.%s" "$(jot -r 1 0 255)" | pbcopy && pbpaste'
