@@ -42,3 +42,6 @@ matches:
 
   - trigger: "@Sb,."
     replace: "@Slackbot"
+
+  - trigger: Sl,.
+    replace: Slack
