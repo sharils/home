@@ -32,6 +32,18 @@ p() {
 
   venv) x venv "$(poetry env info --path)" ;;
 
+  cpp | cs | java | kt | php | py | pyi | rb)
+    case "$1" in
+    cs) lang=csharp ;;
+    kt) lang=kotlin ;;
+    py) lang=python ;;
+    rb) lang=ruby ;;
+    *) lang="$1" ;;
+    esac
+    proto_files="$2" && shift 2
+    protoc "--${lang}_out" "${@:-.}" "$proto_files"
+    ;;
+
   *) echo not implemented >&2 ;;
 
   esac
