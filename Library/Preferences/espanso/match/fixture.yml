@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Jd,.
+    replace: John Doe
+
   - trigger: admin,.
     replace: admin@example.com
 
