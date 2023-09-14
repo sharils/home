@@ -15,6 +15,3 @@ matches:
 
   - trigger: pl,.
     replace: programming language
-
-  - trigger: sh,.
-    replace: shell

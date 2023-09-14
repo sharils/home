@@ -13,6 +13,9 @@ matches:
   - trigger: p,.
     replace: printf
 
+  - trigger: sh,.
+    replace: shell
+
   - trigger: xsis,.
     replace: xargs sed -i '' 's/$|$//'
 
