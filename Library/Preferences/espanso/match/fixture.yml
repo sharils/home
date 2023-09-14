@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Fid,.
+    replace: A123456789
+
   - trigger: Jd,.
     replace: John Doe
 
