@@ -43,5 +43,5 @@ matches:
   - trigger: Wyt,.
     replace: What do you think?
 
-  - trigger: Yt,.
-    replace: Your turn!
+  - trigger: Ytn,.
+    replace: Your turn now!
