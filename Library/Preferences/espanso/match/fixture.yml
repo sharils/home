@@ -21,6 +21,14 @@ matches:
         params:
           cmd: 'printf "(800) 555‑01%s" "$(jot -r 2 0 9 | tr -d \\n)" | pbcopy && pbpaste'
 
+  - trigger: tn,.
+    replace: "{{tn}}"
+    vars:
+      - name: tn
+        type: shell
+        params:
+          cmd: 'printf "%s%s" "$(printf "%s\n%s\n%s" "h192.0.2." "198.51.100." "203.0.113." | sort --sort=random | head -n1)" "$(jot -r 1 0 255)" | pbcopy && pbpaste'
+
   # TEST-NET-1 https://www.rfc-editor.org/rfc/rfc5737
   - trigger: tn1,.
     replace: "{{tn1}}"
