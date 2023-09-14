@@ -3,3 +3,6 @@ matches:
 
   - trigger: Cy,.
     replace: Cypress
+
+  - trigger: Pom,.
+    replace: Page Object Model
