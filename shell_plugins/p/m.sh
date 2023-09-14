@@ -1,6 +1,12 @@
 #!/usr/bin/env sh
 
 m() {
+  if [ -f "$1" ]; then
+    proto_files="$1" && shift
+    protoc "--objc_out" "${@:-.}" "$proto_files"
+    return $?
+  fi
+
   case "$1" in
   c) shift && set -- check "$@" ;;
   csu) shift && set -- createsuperuser "$@" ;;
