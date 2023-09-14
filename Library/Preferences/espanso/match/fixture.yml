@@ -29,3 +29,12 @@ matches:
         type: shell
         params:
           cmd: 'printf "192.0.2.%s" "$(jot -r 1 0 255)" | pbcopy && pbpaste'
+
+  # TEST-NET-2 https://www.rfc-editor.org/rfc/rfc5737
+  - trigger: tn2,.
+    replace: "{{tn2}}"
+    vars:
+      - name: tn2
+        type: shell
+        params:
+          cmd: 'printf "198.51.100.%s" "$(jot -r 1 0 255)" | pbcopy && pbpaste'
