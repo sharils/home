@@ -16,6 +16,9 @@ matches:
   - trigger: bg,.
     replace: background
 
+  - trigger: conf,.
+    replace: configure
+
   - trigger: gen,.
     replace: generate
 
