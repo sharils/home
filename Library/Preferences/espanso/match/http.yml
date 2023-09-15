@@ -1,0 +1,26 @@
+---
+matches:
+
+  - trigger: Hg,.
+    replace: GET
+
+  - trigger: Hh,.
+    replace: HEAD
+
+  - trigger: Hp,.
+    replace: POST
+
+  - trigger: Hu,.
+    replace: PUT
+
+  - trigger: Hd,.
+    replace: DELETE
+
+  - trigger: Hc,.
+    replace: CONNECT
+
+  - trigger: Ho,.
+    replace: OPTIONS
+
+  - trigger: Ht,.
+    replace: TRACE
