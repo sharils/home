@@ -25,7 +25,7 @@ fid() {
 EOF
   )"
 
-  printf '%s%s' "$letter" "$(tr -d '\n' <"$digits")"
+  printf '%s%s' "$letter" "$(tr -d '\n' <"$digits")" | pbcopy && pbpaste
 }
 
 fid "$@"
