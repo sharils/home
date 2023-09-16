@@ -38,7 +38,7 @@ matches:
     replace: Thereby hangs a tail. 🧶
 
   - trigger: Tmyt,.
-    replace: Please tell me about your thoughts.
+    replace: Please tell me about your thoughts. 💡
 
   - trigger: Wym,.
     replace: Would you mind
