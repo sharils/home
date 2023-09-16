@@ -10,6 +10,9 @@ matches:
   - trigger: d,.
     replace: develop
 
+  - trigger: gco,.
+    replace: git checkout
+
   - trigger: gh,.
     replace: github
 
@@ -21,4 +24,3 @@ matches:
 
   - trigger: o,.
     replace: origin
-
