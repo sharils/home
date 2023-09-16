@@ -6,7 +6,7 @@ k() {
   %)
     case "${2:-all}" in
     all)
-      for cmd in datetime date time year month week day hour minute second timezone literal extension; do
+      for cmd in datetime date time year month week day hour minute second timezone literal extension etc; do
         k % "$cmd"
       done
       ;;
