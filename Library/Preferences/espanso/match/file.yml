@@ -4,6 +4,9 @@ matches:
   - trigger: Rm,.
     replace: README.md
 
+  - trigger: /de,.
+    replace: /dev/stderr
+
   - trigger: /dn,.
     replace: /dev/null
 
