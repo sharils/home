@@ -33,6 +33,8 @@ k() {
 
   g) shift && "$SHARILS_HOME/shell_plugins/k/g.sh" "$@" ;;
 
+  gh) shift && l 'https://docs.github.com/en/get-started/using-github/keyboard-shortcuts#site-wide-shortcuts' ;;
+
   http) shift && "$SHARILS_HOME/shell_plugins/k/http.sh" "$@" ;;
 
   n) shift && "$SHARILS_HOME/shell_plugins/k/n.sh" "$@" ;;
