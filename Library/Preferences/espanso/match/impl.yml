@@ -10,6 +10,9 @@ matches:
   - trigger: depr,.
     replace: deprecated
 
+  - trigger: ft,.
+    replace: fallthrough
+
   - trigger: lib,.
     replace: library
 
