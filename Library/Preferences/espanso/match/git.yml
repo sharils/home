@@ -22,5 +22,8 @@ matches:
   - trigger: gl,.
     replace: gitlab
 
+  - trigger: mr,.
+    replace: merge request
+
   - trigger: o,.
     replace: origin
