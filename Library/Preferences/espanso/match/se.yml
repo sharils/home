@@ -16,6 +16,9 @@ matches:
   - trigger: Tdd,.
     replace: Test-Driven Development
 
+  - trigger: bf,.
+    replace: bugfix
+
   - trigger: eng,.
     replace: engineer
 
