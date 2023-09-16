@@ -14,7 +14,7 @@ matches:
     replace: Looks good to me. ✅
 
   - trigger: Nm,.
-    replace: Nevermind.
+    replace: Nevermind. 😌
 
   - trigger: Nw,.
     replace: No worries. 😌
