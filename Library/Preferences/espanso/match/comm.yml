@@ -4,6 +4,9 @@ matches:
   - trigger: Gq,.
     replace: Good question!
 
+  - trigger: Ha,.
+    replace: How about
+
   - trigger: Hgit,.
     replace: How about let’s give it a try?
 
