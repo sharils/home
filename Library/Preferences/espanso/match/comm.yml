@@ -8,7 +8,7 @@ matches:
     replace: How about
 
   - trigger: Hgit,.
-    replace: How about let’s give it a try?
+    replace: How about let’s give it a try? 🧪
 
   - trigger: Lgtm,.
     replace: Looks good to me. ✅
