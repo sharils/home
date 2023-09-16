@@ -35,7 +35,7 @@ matches:
     replace: Thank you very much! 🙇
 
   - trigger: Tldr,.
-    replace: Thereby hangs a tail.
+    replace: Thereby hangs a tail. 🧶
 
   - trigger: Tmyt,.
     replace: Please tell me about your thoughts.
