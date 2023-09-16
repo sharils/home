@@ -16,6 +16,9 @@ matches:
   - trigger: lib,.
     replace: library
 
+  - trigger: pt,.
+    replace: passthrough
+
   - trigger: pkg,.
     replace: package
 
