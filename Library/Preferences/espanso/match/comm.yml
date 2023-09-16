@@ -44,7 +44,7 @@ matches:
     replace: Would you mind
 
   - trigger: Wyt,.
-    replace: What do you think?
+    replace: What do you think? 🤔
 
   - trigger: Ytn,.
     replace: Your turn now!
