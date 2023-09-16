@@ -20,7 +20,7 @@ matches:
     replace: Retrospective
 
   - trigger: Rsp,.
-    replace: Retrospective and Spring Planning
+    replace: Retrospective and Sprint Planning
 
   - trigger: Sp,.
     replace: Spring Planning
