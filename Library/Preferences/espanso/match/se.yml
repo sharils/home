@@ -19,6 +19,9 @@ matches:
   - trigger: eng,.
     replace: engineer
 
+  - trigger: hf,.
+    replace: hotfix
+
   - trigger: ref,.
     replace: reference
 
