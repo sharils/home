@@ -32,7 +32,7 @@ matches:
     replace: A penny for your thoughts.
 
   - trigger: Thx,.
-    replace: Thank you very much!
+    replace: Thank you very much! 🙇
 
   - trigger: Tldr,.
     replace: Thereby hangs a tail.
