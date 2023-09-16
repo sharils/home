@@ -23,6 +23,8 @@ k() {
 
   bind) shift && "$SHARILS_HOME/shell_plugins/k/bind.sh" "$@" ;;
 
+  curl) shift && "$SHARILS_HOME/shell_plugins/k/curl.sh" "$@" ;;
+
   d) shift && "$SHARILS_HOME/shell_plugins/k/d.sh" "$@" ;;
 
   e) $EDITOR "$@" ~/.config/karabiner/karabiner.json ;;
