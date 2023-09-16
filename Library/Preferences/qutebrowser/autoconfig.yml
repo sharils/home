@@ -120,6 +120,7 @@ settings:
     nx.dev: true
     openlibrary.org: true
     play.rust-lang.org: true
+    prettier.io: true
     qute://*: true
     randomuser.me: true
     randomwordgenerator.com: true
