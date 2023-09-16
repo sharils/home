@@ -22,6 +22,9 @@ matches:
   - trigger: Rsp,.
     replace: Retrospective and Sprint Planning
 
+  - trigger: Sbl,.
+    replace: Sprint Backlog
+
   - trigger: Spl,.
     replace: Sprint Planning
 
