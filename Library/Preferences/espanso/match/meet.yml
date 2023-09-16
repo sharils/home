@@ -16,6 +16,9 @@ matches:
       Blocker:
         -
 
+  - trigger: Pbl,.
+    replace: Product Backlog
+
   - trigger: Rs,.
     replace: Retrospective
 
