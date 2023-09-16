@@ -2,7 +2,7 @@
 matches:
 
   - trigger: Gq,.
-    replace: Good question!
+    replace: Good question! 🙌
 
   - trigger: Ha,.
     replace: How about
