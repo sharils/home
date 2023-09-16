@@ -22,6 +22,9 @@ matches:
   - trigger: Ts,.
     replace: TypeScript
 
+  - trigger: a2,.
+    replace: async await
+
   - trigger: doc,.
     replace: document
 
