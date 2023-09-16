@@ -22,6 +22,9 @@ matches:
   - trigger: gl,.
     replace: gitlab
 
+  - trigger: pr,.
+    replace: pull request
+
   - trigger: mr,.
     replace: merge request
 
