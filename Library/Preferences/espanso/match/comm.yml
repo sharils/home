@@ -11,7 +11,7 @@ matches:
     replace: How about let’s give it a try?
 
   - trigger: Lgtm,.
-    replace: Looks good to me.
+    replace: Looks good to me. ✅
 
   - trigger: Nm,.
     replace: Nevermind.
