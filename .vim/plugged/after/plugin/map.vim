@@ -120,5 +120,6 @@ nmap <LEADER>E :edit!<CR>
 nmap <LEADER>S :source ~/.vimrc<CR>
 nmap <LEADER>sp :set paste!<CR>
 nmap <LEADER>ss :set spell!<CR>
+nmap <LEADER>sw :set wrap!<CR>
 nmap <LEADER>sex :set filetype=elixir<CR>
 nmap <LEADER>ssh :set filetype=sh<CR>
