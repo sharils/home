@@ -7,6 +7,7 @@
 ## Navigation maps
 bind generic +              :?^[+-](?![+-]{2})
 bind generic =              :/^[+-](?![+-]{2})
+bind generic >              :/[<|=>]{7}
 bind status  (              :?^[?ADMU]
 bind status  )              :/^[?ADMU]
 
