@@ -23,7 +23,7 @@ matches:
     replace: Retrospective and Sprint Planning
 
   - trigger: Sp,.
-    replace: Spring Planning
+    replace: Sprint Planning
 
   - trigger: Stum,.
     replace: Stand-up Meeting
