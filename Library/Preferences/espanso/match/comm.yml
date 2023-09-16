@@ -29,7 +29,7 @@ matches:
     replace: Please help review$|$! Thanks!
 
   - trigger: Thowt,.
-    replace: A penny for your thoughts.
+    replace: A penny for your thoughts. 🤔
 
   - trigger: Thx,.
     replace: Thank you very much! 🙇
