@@ -10,6 +10,9 @@ matches:
   - trigger: Li,.
     replace: LINE
 
+  - trigger: St,.
+    replace: Syncthing
+
   - trigger: hb,.
     replace: homebrew
 
