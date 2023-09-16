@@ -28,5 +28,8 @@ matches:
   - trigger: ref,.
     replace: reference
 
+  - trigger: rel,.
+    replace: release
+
   - trigger: ser,.
     replace: se-radio.net
