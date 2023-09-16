@@ -4,11 +4,6 @@ h() {
   # shellcheck disable=SC1083
   case "$1" in
 
-  '')
-    # shellcheck source=/dev/null
-    . "$SHARILS_HOME/.bash_profile"
-    ;;
-
   P)
     h g czz
     h g pull --prune --rebase
@@ -59,8 +54,13 @@ h() {
   builtin | % | . | : | \[ | { | alias | bg | bind | break | case | cd | command | complete | continue | dirs | echo | eval | exec | exit | export | false | fc | fg | for | getopts | hash | history | if | jobs | kill | local | log | logout | popd | printf | pushd | pwd | read | readonly | return | set | shift | source | suspend | test | time | times | trap | true | type | ulimit | umask | unalias | unset | until | wait | while) help "$@" | l ;;
 
   *)
-    if [ -f "$*" ]; then
+    if [ ! -t 0 ]; then
+      head "$@"
+    elif [ -f "$*" ]; then
       head "$*"
+    elif [ $# -eq 0 ]; then
+      # shellcheck source=/dev/null
+      . "$SHARILS_HOME/.bash_profile"
     else
       "$@" --help | l
     fi
