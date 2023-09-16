@@ -4,6 +4,9 @@ matches:
   - trigger: Bdd,.
     replace: Behaviour-Driven Development
 
+  - trigger: En,.
+    replace: EOF NL
+
   - trigger: Se,.
     replace: Software Engineering
 
