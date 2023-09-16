@@ -22,7 +22,7 @@ matches:
   - trigger: Rsp,.
     replace: Retrospective and Sprint Planning
 
-  - trigger: Sp,.
+  - trigger: Spl,.
     replace: Sprint Planning
 
   - trigger: Stum,.
