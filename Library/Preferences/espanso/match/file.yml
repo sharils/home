@@ -10,6 +10,9 @@ matches:
   - trigger: /dn,.
     replace: /dev/null
 
+  - trigger: /do,.
+    replace: /dev/stdout
+
   - trigger: fi,.
     replace: favicon.ico
 
