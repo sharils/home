@@ -8,6 +8,7 @@ x() {
   b) shift && "$BROWSER" "$@" ;;
   cal) cal -A4 -B4 ;;
   chunk) shift && fold -w "${@:-3}" | tr '\n' ' ' ;;
+  curl) shift && "$SHARILS_HOME/shell_plugins/x/curl.sh" "$@" ;;
   diff) shift && diff --color --unified "$@" ;;
   dig) shift && dig "@$(dig +nssearch "$@")" "$@" ;;
   fid) shift && "$SHARILS_HOME/shell_plugins/x/fid.sh" "$@" ;;
