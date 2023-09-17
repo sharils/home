@@ -33,3 +33,6 @@ matches:
 
   - trigger: as,.
     replace: applescript
+
+  - trigger: command,.
+    replace: ⌘
