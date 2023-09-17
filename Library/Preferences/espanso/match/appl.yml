@@ -39,3 +39,6 @@ matches:
 
   - trigger: control,.
     replace: ⌃
+
+  - trigger: option,.
+    replace: ⌥
