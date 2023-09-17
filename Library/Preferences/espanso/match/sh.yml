@@ -4,6 +4,9 @@ matches:
   - trigger: /-,.
     replace: /^[[:space:]]+-
 
+  - trigger: /e,.
+    replace: /^environment
+
   - trigger: Bsh,.
     replace: Bourne Shell
 
