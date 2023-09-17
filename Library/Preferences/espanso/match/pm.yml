@@ -15,6 +15,9 @@ matches:
       4️⃣ can tolerate it.
       5️⃣ dislike it.
 
+  - trigger: Rtm,.
+    replace: Remember The Milk
+
   - trigger: Smart,.
     replace: Specific, Measurable, Achievable, Relevant, and Time-bound
 
