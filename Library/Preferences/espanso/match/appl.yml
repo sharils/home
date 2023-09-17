@@ -36,3 +36,6 @@ matches:
 
   - trigger: command,.
     replace: ⌘
+
+  - trigger: control,.
+    replace: ⌃
