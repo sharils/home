@@ -33,8 +33,6 @@ t() {
 
   l) shift && "$SHARILS_HOME/shell_plugins/t/l.sh" "$@" ;;
 
-  r) shift && t replace "$@" ;;
-
   rc) shift && rm "$TODO_DIR"/todo.sync-conflict-*.txt ;;
 
   su) shift && "$SHARILS_HOME/shell_plugins/t/su.sh" "$@" ;;
