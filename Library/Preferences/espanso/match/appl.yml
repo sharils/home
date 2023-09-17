@@ -42,3 +42,6 @@ matches:
 
   - trigger: option,.
     replace: ⌥
+
+  - trigger: shift,.
+    replace: ⇧
