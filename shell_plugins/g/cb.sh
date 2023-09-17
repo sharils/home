@@ -10,6 +10,7 @@ cb() {
     ;;
 
   r)
+    shift
     upstream="${1:-origin/develop}"
     current_branch="$(git rev-parse --abbrev-ref HEAD)"
     git f
