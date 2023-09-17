@@ -4,6 +4,9 @@ matches:
   - trigger: Cy,.
     replace: Cypress
 
+  - trigger: Esp,.
+    replace: ESpanso
+
   - trigger: Pom,.
     replace: Page Object Model
 
