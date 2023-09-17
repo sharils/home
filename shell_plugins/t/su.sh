@@ -6,7 +6,8 @@ t_su() {
     return
   fi
 
-  if "$SHARILS_HOME/shell_plugins/t/is_todo.sh" "$@"; then
+  if cmd="$("$SHARILS_HOME/shell_plugins/t/is_todo.sh" "$@")"; then
+    shift && set -- "$cmd" "$@"
     TODO_FILE="$TODO_SU" todo.sh "$@"
     return
   fi
