@@ -7,6 +7,9 @@ matches:
   - trigger: Hb,.
     replace: Homebrew
 
+  - trigger: Hbt,.
+    replace: Habitica
+
   - trigger: Li,.
     replace: LINE
 
