@@ -32,6 +32,8 @@ p() {
 
   venv) x venv "$(poetry env info --path)" ;;
 
+  w) pbpaste | tr -d '[:space:]' | pbcopy ;;
+
   cpp | cs | java | kt | php | py | pyi | rb)
     case "$1" in
     cs) lang=csharp ;;
