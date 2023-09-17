@@ -5,7 +5,8 @@ t() {
   n | t | ui) x focus && echo focus! >&2 && return ;;
   esac
 
-  if "$SHARILS_HOME/shell_plugins/t/is_todo.sh" "$@"; then
+  if cmd="$("$SHARILS_HOME/shell_plugins/t/is_todo.sh" "$@")"; then
+    shift && set -- "$cmd" "$@"
     todo.sh "$@"
     return
   fi
@@ -45,8 +46,6 @@ t() {
   ui) shift && "$SHARILS_HOME/shell_plugins/t/oot.sh" tui "$@" ;;
 
   w) shift && "$SHARILS_HOME/shell_plugins/t/w.sh" "$@" ;;
-
-  z) shift && t archive "$@" ;;
 
   *) tldr "$@" ;;
 
