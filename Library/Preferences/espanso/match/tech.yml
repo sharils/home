@@ -43,5 +43,8 @@ matches:
   - trigger: ss,.
     replace: spreadsheet
 
+  - trigger: sync,.
+    replace: synchronization
+
   - trigger: tab,.
     replace: tablet
