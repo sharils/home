@@ -16,6 +16,9 @@ matches:
   - trigger: dyn,.
     replace: dynamic
 
+  - trigger: intro,.
+    replace: introduction
+
   - trigger: msg,.
     replace: message
 
