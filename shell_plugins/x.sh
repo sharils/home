@@ -32,6 +32,7 @@ x() {
   tel) shift && open "tel:$*" ;;
   ts) shift && n y ts-node "$@" ;;
   unzip) shift && unzip "$1" -d "${1%%.*}" && cd "${1%%.*}" && ls ;;
+  zip) shift && "$SHARILS_HOME/shell_plugins/x/zip.sh" "$@" ;;
   zws) printf "\xe2\x80\x8b" | c ;;
 
   resetLaunchPad | showHidden) "$SHARILS_HOME/shell_plugins/x/resetLaunchPad.sh" "$@" ;;
