@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Btw,.
+    replace: By the way
+
   - trigger: Gq,.
     replace: Good question! 🙌
 
