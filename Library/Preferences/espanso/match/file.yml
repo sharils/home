@@ -24,3 +24,6 @@ matches:
 
   - trigger: sm,.
     replace: sitemap.xml
+
+  - trigger: ~D,.
+    replace: ~/Downloads
