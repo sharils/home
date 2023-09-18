@@ -37,7 +37,7 @@ matches:
   - trigger: Thowt,.
     replace: A penny for your thoughts. 🤔
 
-  - trigger: Thx,.
+  - trigger: Ty,.
     replace: Thank you very much! 🙇
 
   - trigger: Tldr,.
