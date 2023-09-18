@@ -10,6 +10,9 @@ matches:
   - trigger: Hgit,.
     replace: How about let’s give it a try? 🧪
 
+  - trigger: Jc,.
+    replace: Just curious. 🧐
+
   - trigger: Lgtm,.
     replace: Looks good to me. ✅
 
