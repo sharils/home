@@ -1,9 +1,6 @@
 ---
 matches:
 
-  - trigger: Rm,.
-    replace: README.md
-
   - trigger: /de,.
     replace: /dev/stderr
 
@@ -12,6 +9,9 @@ matches:
 
   - trigger: /do,.
     replace: /dev/stdout
+
+  - trigger: Rm,.
+    replace: README.md
 
   - trigger: fi,.
     replace: favicon.ico
