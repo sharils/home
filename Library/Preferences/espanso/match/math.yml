@@ -12,3 +12,6 @@ matches:
 
   - trigger: fn,.
     replace: function
+
+  - trigger: min,.
+    replace: minimum
