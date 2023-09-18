@@ -4,6 +4,9 @@ matches:
   - trigger: Btw,.
     replace: By the way
 
+  - trigger: Cos,.
+    replace: CoScreen
+
   - trigger: Gq,.
     replace: Good question! 🙌
 
