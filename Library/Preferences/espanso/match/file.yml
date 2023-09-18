@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: .e,.
+    replace: .envrc
+
   - trigger: /de,.
     replace: /dev/stderr
 
