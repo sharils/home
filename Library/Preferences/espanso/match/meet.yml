@@ -33,6 +33,3 @@ matches:
 
   - trigger: Stum,.
     replace: Stand-up Meeting
-
-  - trigger: Su,.
-    replace: Stand-Up
