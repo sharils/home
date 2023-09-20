@@ -4,6 +4,9 @@ matches:
   - trigger: Chat,.
     replace: ChatGPT
 
+  - trigger: Dl,.
+    replace: Duolingo
+
   - trigger: Hb,.
     replace: Homebrew
 
