@@ -7,7 +7,7 @@ g() {
     return $?
   fi
   if ! [ -t 1 ] && [ "$1" = 's' ]; then
-    git status
+    git s
     return
   fi
   if [ $# -eq 1 ] && [ -f "$1" ] || [ $# -eq 0 ] ||
