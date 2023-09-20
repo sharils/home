@@ -2,7 +2,10 @@
 
 pr() {
   case "$1" in
-  m) shift && set -- merge "${@:---delete-branch --merge}" ;;
+  m)
+    shift && [ $# -eq 0 ] && set -- --delete-branch --merge "$@"
+    set -- merge "$@"
+    ;;
   r) shift && set -- ready "$@" ;;
   v) shift && set -- view "$@" ;;
   esac
