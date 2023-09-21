@@ -13,6 +13,9 @@ matches:
   - trigger: Hbt,.
     replace: Habitica
 
+  - trigger: Hn,.
+    replace: Hacker News
+
   - trigger: Li,.
     replace: LINE
 
