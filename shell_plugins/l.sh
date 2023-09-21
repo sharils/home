@@ -30,6 +30,7 @@ l() {
   port) shift && l x 'https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers#Registered_ports' ;;
   rfc) shift && "$SHARILS_HOME/shell_plugins/l/rfc.sh" "$@" ;;
   s) shift && less "$@" ;;
+  sc) shift && l x "https://github.com/koalaman/shellcheck/wiki/$*#wiki-body" ;;
   t) shift && l --tree "$@" ;;
   tld) shift && l x 'https://en.wikipedia.org/wiki/Template:CcTLD#bodyContent' ;;
   trpl) shift && l x "file://$HOME/.rustup/toolchains/stable-x86_64-apple-darwin/share/doc/rust/html/book/index.html" "$@" ;;
