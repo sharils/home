@@ -36,6 +36,8 @@ f() {
   esac
 
   git flow "$cmd" "$cmd1" "$@"
+
+  printf %s "$*" | pbcopy
 }
 
 f "$@"
