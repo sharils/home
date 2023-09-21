@@ -4,6 +4,9 @@ matches:
   - trigger: Ws,.
     replace: WebSocket
 
+  - trigger: a:,.
+    replace: "about:"
+
   - trigger: d:,.
     replace: "due:"
 
