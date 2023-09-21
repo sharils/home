@@ -26,7 +26,7 @@ deps
 .idea
 
 # ios
-ios/Pods
+Pods
 
 # javascript
 *.map
