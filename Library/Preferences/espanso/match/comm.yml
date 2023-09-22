@@ -20,7 +20,7 @@ matches:
     replace: Just curious. 🧐
 
   - trigger: Lgtm,.
-    replace: Looks good to me. ✅
+    replace: Looks good to me. 💯
 
   - trigger: Nm,.
     replace: Nevermind. 😌
