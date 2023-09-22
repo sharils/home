@@ -21,6 +21,7 @@ sqrt 14142 17320
 e 27182 36787
 incident 8964 47228
 iron 1538
+electricity 1752
 roc 1911
 tel 1999
 fat tom 4675
@@ -28,7 +29,6 @@ heart 5999
 teeth 8020
 cpu 8086
 hours 8760
-incident 8964
 yard 9144
 film 9527
 a4 21297 https://en.wikipedia.org/wiki/A4
