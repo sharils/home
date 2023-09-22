@@ -27,9 +27,8 @@ matches:
   - trigger: ep,.
     replace: episode
 
-  - trigger: free,.
-    replace: loyalty free
-
   - trigger: ft,.
     replace: feature
 
+  - trigger: lf,.
+    replace: loyalty free
