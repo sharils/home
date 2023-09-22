@@ -46,6 +46,9 @@ matches:
   - trigger: Tldr,.
     replace: Thereby hangs a tail. 🧶
 
+  - trigger: Thx,.
+    replace: Thanks
+
   - trigger: Tmyt,.
     replace: Please tell me about your thoughts. 💡
 
