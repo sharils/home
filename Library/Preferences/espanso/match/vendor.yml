@@ -19,6 +19,9 @@ matches:
   - trigger: Li,.
     replace: LINE
 
+  - trigger: Ol,.
+    replace: Open Library
+
   - trigger: St,.
     replace: Syncthing
 
