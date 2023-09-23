@@ -3,7 +3,6 @@
 [ -n "$SET_X" ] && set -x
 
 i() {
-  set -x
   case "$1" in
   y) shift && npm init --yes "$@" ;;
   @capacitor/app | expo-app | next-app | node-cli | nx-workspace | puck-app | react-app | react-native-app)
