@@ -25,6 +25,7 @@ electricity 1752
 overture 1812
 roc 1911
 tel 1999
+resolution 2758
 fat tom 4675
 heart 5999
 teeth 8020
