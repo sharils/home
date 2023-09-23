@@ -16,6 +16,8 @@ g() {
   [ ! -f "$base/$path.sh" ] && cat <<SH >"$base/$path.sh"
 #!/usr/bin/env sh
 
+[ -n "\$SET_X" ] && set -x
+
 $last() {
   :
 }
