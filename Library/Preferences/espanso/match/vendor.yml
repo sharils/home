@@ -19,6 +19,9 @@ matches:
   - trigger: Li,.
     replace: LINE
 
+  - trigger: Ob,.
+    replace: Obsidian
+
   - trigger: Ol,.
     replace: Open Library
 
