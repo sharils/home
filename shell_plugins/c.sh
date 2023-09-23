@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 c() {
   if ! [ -t 0 ]; then
     pbcopy "$@"

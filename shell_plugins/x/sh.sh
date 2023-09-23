@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 x_sh() {
   cmd="$1"
   shift

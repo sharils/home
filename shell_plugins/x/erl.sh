@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 x_erl() {
   if [ $# -eq 0 ]; then
     erl

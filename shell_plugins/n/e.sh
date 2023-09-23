@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 e() {
   if [ $# -eq 0 ]; then
     $EDITOR ./package.json

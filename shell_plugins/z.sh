@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 alias ..='z .'
 
 __z_t_tmp=''

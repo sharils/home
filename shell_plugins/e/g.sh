@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 a() {
   path="$(echo "$1" | perl -pe 's/(?<=[a-z])[A-Z]/_$&/g' | tr '[:upper:]' '[:lower:]' | tr '.' '/')"
   lib_path="lib/$path.ex"

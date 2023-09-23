@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 port() {
   cat <<'EOF'
 serial double fw 1122 2233 3344 4455 5566 6677 7788 8899 9900

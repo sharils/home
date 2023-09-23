@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 currency() {
   unset -v lang loc
   loc="$(locale -a)"

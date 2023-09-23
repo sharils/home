@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 l() {
   if [ ! -t 0 ]; then
     LESS="$LESS --quit-if-one-screen" b "${@:-man}" --style=plain

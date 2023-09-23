@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 p() {
   case "$1" in
   e) shift && p --editor "$EDITOR" "$@" ;;

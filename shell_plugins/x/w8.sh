@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 w8() {
   dir="$HOME/Sync/Libera PRO"
   file="$dir/${2:?}.txt"

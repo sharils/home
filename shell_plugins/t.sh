@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 t() {
   case "$1" in
   n | t | ui) x focus && echo focus! >&2 && return ;;

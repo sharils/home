@@ -1,3 +1,7 @@
+#!/usr/bin/env sh
+
+[ -n "$SET_X" ] && set -x
+
 m() {
   case "$1" in
 

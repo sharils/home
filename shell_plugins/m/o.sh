@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 o() {
   case "$1" in
   91) open -b com.apple.Music 'https://jazzfm91.streamb.live/SB00009' ;;

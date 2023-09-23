@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 sn() {
   # shellcheck disable=2087
   ssh no sh <<EOF

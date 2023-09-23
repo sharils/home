@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 mr() {
   case "${1:-ls}" in
   a) shift && mr approve "$@" ;;

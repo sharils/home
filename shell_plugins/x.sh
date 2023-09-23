@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 x() {
   case "$1" in
   +) shift && chmod -vv +x "$@" ;;
@@ -49,6 +51,6 @@ x() {
 
   am | at | au | bg | br | by | cn | cz | de | dk | ee | et | fi | fr | gb | gr | hk | hr | hu | ie | il | is | it | jp | kr | kz | lt | nl | no | nz | pl | pt | ro | ru | se | si | sk | tr | tw | ua | us | yu | za | dech | frbe | frca | frch | itch | nlbe | ca | es | eu | en) "$SHARILS_HOME/shell_plugins/x/currency.sh" "$@" ;;
 
-  *) (set -x && "$@") ;;
+  *) (set -x && SET_X=1 "$@") ;;
   esac
 }

@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 zero_d() {
     cat <<'TEXT'
   0 nul    1 soh    2 stx    3 etx    4 eot    5 enq    6 ack    7 bel

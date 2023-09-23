@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
-# dep: z.plugins.bash
+
+[ -n "$SET_X" ] && set -x
 
 g() {
   if ! [ -t 0 ]; then

@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 l() {
   case "$1" in
   l) shift && set -- --local --reverse --count 1 "${@:---public}" ;;

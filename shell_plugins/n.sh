@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 n() {
   cmd="$("$SHARILS_HOME/shell_plugins/n/alias.sh" "$@")"
   if [ -n "$cmd" ]; then

@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 e_wc() {
   cd "$SHARILS_HOME/Library/Preferences/espanso/match" || return $?
 

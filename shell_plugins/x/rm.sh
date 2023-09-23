@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 rm() {
   args=$(printf '%s\n' "$@")
   printf '%s\n' "$args" | while read -r arg; do

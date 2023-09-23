@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 d() {
   # -4 for numeric and special
   cmd="$((${1:-100} - 4))"

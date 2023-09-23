@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 g() {
   base="$SHARILS_HOME/shell_plugins"
   if [ ! -f "$base/$1.sh" ]; then

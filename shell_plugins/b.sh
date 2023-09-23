@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 b() {
   if [ ! -t 0 ]; then
     col -bx | bat --language "${@:-man}"

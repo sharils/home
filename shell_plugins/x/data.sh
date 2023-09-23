@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 data() {
   cmd="${1:-image/gif}"
   shift

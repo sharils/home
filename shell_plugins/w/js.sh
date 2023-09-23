@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 js() {
   watchman-make --pattern \
     '**/*.js' '**/*.jsx' '**/*.ts' '**/*.tsx' \

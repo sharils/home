@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 v_rm() {
   case "$1" in
   s) rm Session.vim ;;

@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 t() {
   case "$1" in
   f) shift && set -- --failed "$@" ;;

@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 fid() {
   weights="$(mktemp)"
   printf '%s\n%s' "$(jot 8 8 1)" 1 >"$weights"

@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 ai() {
   if [ $# -eq 0 ]; then
     openai repl

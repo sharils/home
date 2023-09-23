@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 h() {
   # shellcheck disable=SC1083
   case "$1" in

@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 credit_card() {
   cat <<'EOF'
 VISA: 4111 1111 1111 1111

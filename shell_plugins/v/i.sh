@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 i() {
   case "${1:-html}" in
   c) shift && set -- css ;;

@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 d() {
   case "$1" in
   d) shift && vim -d "$TODO_FILE" "$TODO_DIR/$DONE_FILE" ;;

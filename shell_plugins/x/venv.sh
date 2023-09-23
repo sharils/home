@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 venv() {
   if type deactivate >/dev/null 2>&1; then
     deactivate

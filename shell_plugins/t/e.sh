@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 e() {
   case "$1" in
   cfg) shift && $EDITOR "$@" ~/.todo.cfg ;;

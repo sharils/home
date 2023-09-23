@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 v() {
   if [ ! -t 0 ]; then
     tmp="$(mktemp)"

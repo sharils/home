@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 b() {
   base="$(basename "$PWD" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^[:alnum:]]+/-/g')"
   name="${base}_$USER"

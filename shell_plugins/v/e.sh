@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 e() {
   vim -p \
     "$SHARILS_HOME/.vimrc" \

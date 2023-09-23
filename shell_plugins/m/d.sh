@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 d() {
   if [ $# -eq 0 ]; then
     mix deps

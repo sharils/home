@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 n_alias() {
   cat <<'EOF' | grep "\(^\| \)$1\( \|$\)" | cut -d' ' -f1
 @ionic/cli ionic

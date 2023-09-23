@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 i() {
   if [ -d .git ]; then
     echo '.git exists' >&2

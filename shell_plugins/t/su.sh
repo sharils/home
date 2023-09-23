@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 t_su() {
   if [ $# -eq 0 ]; then
     toot auth --no-color | grep @ | cut -d' ' -f2

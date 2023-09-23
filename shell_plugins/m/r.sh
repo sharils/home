@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 r() {
   case "$1" in
   '') shift && MIX_ENV=prod mix release ;;

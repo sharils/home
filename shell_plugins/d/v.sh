@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 v() {
   case "$1" in
   c) shift && docker volume create "$@" ;;

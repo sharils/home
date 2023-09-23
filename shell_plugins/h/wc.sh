@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 h_wc() {
   (
     cd "$SHARILS_HOME/shell_plugins" &&

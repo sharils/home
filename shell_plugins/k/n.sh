@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 n() {
   cat <<'JAVASCRIPT' | node - "$@" | fold -w 4 | tr '\n' ' '
 // 7 8 9

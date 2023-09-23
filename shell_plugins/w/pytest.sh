@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 # -o OVERRIDE_INI, --override-ini=OVERRIDE_INI
 # -v, --verbose         Increase verbosity
 # -x, --exitfirst       Exit instantly on first error or failed test

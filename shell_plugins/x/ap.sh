@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 ap() {
   : "${X_AP_HOST:?}"
   : "${X_AP_USERNAME:?}"

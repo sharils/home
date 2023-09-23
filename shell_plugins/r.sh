@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 r() {
   if [ -f "$1" ] && [ "${1##*.}" = "rs" ]; then
     rustc "$@"

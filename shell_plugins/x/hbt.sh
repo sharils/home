@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 hbt() {
   dir="$HOME/git/github.com/sharils/~backup/habitica/$(date +%F)"
   mkdir -pv "$dir"

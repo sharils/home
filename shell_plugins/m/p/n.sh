@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 n() {
   path="${1:-hello_elixir}" && shift
   mix phx.new "$path" "$@" --install

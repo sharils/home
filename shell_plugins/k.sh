@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+[ -n "$SET_X" ] && set -x
+
 k() {
   case "$1" in
 

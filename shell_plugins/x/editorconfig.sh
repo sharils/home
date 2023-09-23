@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 editorconfig() {
   cat <<'EOF' >.editorconfig
 root = true

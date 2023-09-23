@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 fx() {
   if [ $# -ne 0 ]; then
     fx | grep --ignore-case --color=never "$1"

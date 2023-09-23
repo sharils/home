@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 m() {
   if [ -f "$1" ]; then
     proto_files="$1" && shift

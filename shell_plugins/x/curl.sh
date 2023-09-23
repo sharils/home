@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+[ -n "$SET_X" ] && set -x
+
 x_curl() {
   while out="$(curl --silent --proto-default 'https' --write-out '%{stderr}%{http_code}\t%header{date}\n' "${1:-example.com}" 2>&1 >/dev/null | tee /dev/stderr)"; do
     if [ "$(printf %s "$out" | cut -f1)" = 200 ]; then
