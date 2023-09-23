@@ -1,7 +1,7 @@
 ---
 matches:
 
-  - trigger: Chat,.
+  - trigger: Cg,.
     replace: ChatGPT
 
   - trigger: Dl,.
