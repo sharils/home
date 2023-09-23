@@ -4,7 +4,7 @@ matches:
   - trigger: Bdd,.
     replace: Behaviour-Driven Development
 
-  - trigger: En,.
+  - trigger: Enl,.
     replace: EOF NL
 
   - trigger: Se,.
