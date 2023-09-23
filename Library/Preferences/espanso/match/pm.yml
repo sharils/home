@@ -7,6 +7,9 @@ matches:
   - trigger: Gbv,.
     replace: Gross Booking Value
 
+  - trigger: Po,.
+    replace: Product Owner
+
   - trigger: Kano,.
     replace: >
       1️⃣ like it.
