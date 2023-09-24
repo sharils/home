@@ -5,17 +5,7 @@
 k() {
   case "$1" in
 
-  %)
-    case "${2:-all}" in
-    all)
-      for cmd in datetime date time year month week day hour minute second timezone literal extension etc; do
-        k % "$cmd"
-      done
-      ;;
-
-    *) cmd="$2" && shift 2 && "$SHARILS_HOME/shell_plugins/k/%/$cmd.sh" "$@" ;;
-    esac
-    ;;
+  %) shift && "$SHARILS_HOME/shell_plugins/k/%.sh" "$@" ;;
 
   0d) "$SHARILS_HOME/shell_plugins/k/0d.sh" "$@" ;;
 
