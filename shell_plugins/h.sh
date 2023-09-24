@@ -34,14 +34,7 @@ h() {
 
   m) echo 'h mix <command> instead' >&2 ;;
 
-  mix)
-    shift
-    if [ $# -eq 0 ]; then
-      mix --help | l
-    else
-      mix help "$@" | l md
-    fi
-    ;;
+  mix) shift && "$SHARILS_HOME/shell_plugins/h/mix.sh" "$@" ;;
 
   push) h g p ;;
 
