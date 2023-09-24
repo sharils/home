@@ -37,15 +37,7 @@ p() {
 
   w) pbpaste | tr -d '[:space:]' | pbcopy ;;
 
-  dts | ts | web)
-    case "$1" in
-    dts) import_style='commonjs+dts' ;;
-    ts) import_style='typescript' ;;
-    web) import_style='commonjs' ;;
-    esac
-    proto_files="$2" && shift 2 && out_dir="${1:-.}" && shift
-    protoc --grpc-web_out="import_style=$import_style,mode=grpcwebtext:$out_dir" "$proto_files"
-    ;;
+  dts | ts | web) "$SHARILS_HOME/shell_plugins/p/web.sh" "$@" ;;
 
   cpp | cs | java | kt | php | py | pyi | rb)
     case "$1" in
