@@ -11,7 +11,7 @@ p() {
 
   2) shift && ssh bbsu@ptt2.cc ;;
 
-  I) shift && poetry init "$@" ;;
+  I) shift && echo 'https://python-poetry.org/docs/basic-usage/#project-setup' >&2 && poetry init "$@" ;;
 
   a) shift && "$SHARILS_HOME/shell_plugins/p/a.sh" "$@" ;;
 
