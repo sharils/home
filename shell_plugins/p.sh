@@ -23,10 +23,7 @@ p() {
 
   i) shift && poetry install "$@" || echo 'Try "p I --no-interaction"?' >&2 ;;
 
-  js)
-    proto_files="$2" && shift 2 && out_dir="${1:-.}" && shift
-    "$HOMEBREW_PREFIX/opt/protobuf@3/bin/protoc" --js_out="import_style=commonjs,binary:$out_dir" "$@" "$proto_files"
-    ;;
+  js) shift && "$SHARILS_HOME/shell_plugins/p/js.sh" "$@" ;;
 
   m) shift && "$SHARILS_HOME/shell_plugins/p/m.sh" "$@" ;;
 
