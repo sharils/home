@@ -19,7 +19,7 @@ p() {
 
   e) shift && $EDITOR "$@" pyproject.toml ;;
 
-  i) shift && poetry install "$@" ;;
+  i) shift && poetry install "$@" || echo 'Try "p I --no-interaction"?' >&2 ;;
 
   js)
     proto_files="$2" && shift 2 && out_dir="${1:-.}" && shift
