@@ -10,10 +10,6 @@ snippet 3 "syntax = proto3" b
 syntax = "proto3";
 endsnippet
 
-snippet b "bool" b
-bool ${1:has_ponycopter} = ${2:3};
-endsnippet
-
 snippet en "enum" b
 enum ${1:Person} {
 	${2:option allow_alias = true;}$3
@@ -68,6 +64,10 @@ priority 2
 
 snippet O "OBSOLETE_" w
 OBSOLETE_
+endsnippet
+
+snippet b "bool" w
+bool ${1:has_ponycopter} = ${2:3};
 endsnippet
 
 snippet p "public" w
