@@ -17,6 +17,8 @@ p() {
 
   c) shift && "$SHARILS_HOME/shell_plugins/p/c.sh" "$@" ;;
 
+  g) shift && "$SHARILS_HOME/shell_plugins/p/g.sh" "$@" ;;
+
   e) shift && $EDITOR "$@" pyproject.toml ;;
 
   i) shift && poetry install "$@" || echo 'Try "p I --no-interaction"?' >&2 ;;
