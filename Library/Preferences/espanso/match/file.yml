@@ -7,6 +7,9 @@ matches:
   - trigger: /de,.
     replace: /dev/stderr
 
+  - trigger: /di,.
+    replace: /dev/stdin
+
   - trigger: /dn,.
     replace: /dev/null
 
