@@ -8,6 +8,11 @@ c() {
     return
   fi
 
+  if [ -f "$1" ]; then
+    cat "$1"
+    return
+  fi
+
   case "$1" in
 
   a) shift && set -- add "$@" ;;
