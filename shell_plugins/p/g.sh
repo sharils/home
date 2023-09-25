@@ -4,14 +4,14 @@
 
 g() {
   case "$1" in
-  f) shift && set -- freeze --user "$@";;
-  i) shift && set -- install --user "$@";;
-  l) shift && set -- list --user "$@";;
+  f) shift && set -- freeze "$@";;
+  i) shift && set -- install "$@";;
+  l) shift && set -- list "$@";;
   s) shift && set -- search "$@";;
   rm) shift && set -- uninstall "$@";;
   v) shift && set -- show "$@";;
   esac
-  pip "$@"
+  PIP_USER=1 pip "$@"
 }
 
 g "$@"
