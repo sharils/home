@@ -27,6 +27,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 export PATH="$HOME/.deno/bin:$PATH"
 
+# Created by `pipx` on 2023-09-25 13:18:26
+export PATH="$PATH:$HOME/.local/bin"
+
 export PATH="$HOMEBREW_PREFIX/opt/python@3.11/libexec/bin:$PATH"
 
 export RIPGREP_CONFIG_PATH="$SHARILS_HOME/.ripgreprc"
