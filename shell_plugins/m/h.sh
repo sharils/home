@@ -10,10 +10,10 @@ h() {
     o) shift && set -- online "$@" ;;
     *) set -- offline "${@}" ;;
     esac
-    m hex.docs "$@"
+    mix hex.docs "$@"
     ;;
   s) shift && m hex.search "$@" ;;
-  *) m help "$@" | l md ;;
+  *) mix help "$@" | l md ;;
   esac
 }
 
