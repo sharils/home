@@ -9,3 +9,6 @@ matches:
 
   - trigger: ob,.
     replace: observer.start()
+
+  - trigger: rc,.
+    replace: recompile
