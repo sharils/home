@@ -6,7 +6,7 @@ g() {
   case "$1" in
   f) shift && set -- freeze "$@";;
   i) shift && set -- install "$@";;
-  l) shift && set -- list "$@";;
+  ls) shift && set -- list "$@";;
   s) shift && set -- search "$@";;
   rm) shift && set -- uninstall "$@";;
   v) shift && set -- show "$@";;
