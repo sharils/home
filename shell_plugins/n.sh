@@ -5,7 +5,8 @@
 n() {
   cmd="$("$SHARILS_HOME/shell_plugins/n/alias.sh" "$@")"
   if [ -n "$cmd" ]; then
-    n y "$cmd"
+    shift
+    n y "$cmd" "$@"
     return
   fi
 
