@@ -4,6 +4,9 @@ matches:
   - trigger: Ex,.
     replace: Elixir
 
+  - trigger: Eu,.
+    replace: ExUnit
+
   - trigger: Lv,.
     replace: LiveView
 
