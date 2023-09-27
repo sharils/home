@@ -67,4 +67,5 @@
 	um = reset --merge
 	up = reset --patch
 	us = reset @
+	v = show
 	y = stash
