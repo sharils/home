@@ -10,6 +10,9 @@ matches:
   - trigger: depr,.
     replace: deprecated
 
+  - trigger: epd,.
+    replace: expected
+
   - trigger: ft,.
     replace: fallthrough
 
