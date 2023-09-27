@@ -23,8 +23,8 @@ p() {
   n) shift && "$SHARILS_HOME/shell_plugins/m/p/n.sh" "$@" ;;
   r)
     shift
-    router="$(find ./* ! -path 'deps/*' -name router.ex -exec head -n1 {} \; | cut -d' ' -f2 | fzf --select-1)" || return $?
-    mix phx.routes "$router"
+    router="$(find ./* ! -path './deps/*' -name router.ex -exec head -n1 {} \; | cut -d' ' -f2 | fzf --select-1)" || return $?
+    mix phx.routes "$router" "$@"
     ;;
   s) shift && mix phx.server "$@" ;;
   v) shift && mix phx.new --version "$@" ;;
