@@ -56,6 +56,7 @@ set blame-options               = -CCC
 set log-options                 = --show-signature
 set mouse                       = yes
 set mouse-scroll                = 1
+set wrap-lines                  = yes
 set status-show-untracked-files = yes
 
 # User-defined commands
