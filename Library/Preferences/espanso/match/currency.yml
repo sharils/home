@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Nt,.
+    replace: NT$
+
   - trigger: tt,.
     replace: to twd
 
