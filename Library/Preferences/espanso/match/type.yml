@@ -4,6 +4,7 @@ matches:
   - {"trigger":"a,.",   "replace":"array"}
   - {"trigger":"b,.",   "replace":"boolean"}
   - {"trigger":"bin,.", "replace":"binary"}
+  - {"trigger":"char,.", "replace":"character"}
   - {"trigger":"dec,.", "replace":"decimal"}
   - {"trigger":"dt,.",  "replace":"datetime"}
   - {"trigger":"en,.",  "replace":"enum"}
