@@ -13,7 +13,7 @@ h() {
     mix hex.docs "$@"
     ;;
   s) shift && m hex.search "$@" ;;
-  *) mix help "$@" | l md ;;
+  *) mix help "$@" | col -bx | bat --language md --style=plain ;;
   esac
 }
 
