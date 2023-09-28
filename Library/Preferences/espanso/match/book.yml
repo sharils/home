@@ -7,6 +7,9 @@ matches:
   - trigger: Jsdg,.
     replace: "JavaScript: The Definitive Guide"
 
+  - trigger: Lhtl,.
+    replace: Learning How to Learn
+
   - trigger: Lyse,.
     replace: Learn You Some Erlang for great good
 
