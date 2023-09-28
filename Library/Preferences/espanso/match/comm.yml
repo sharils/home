@@ -29,7 +29,7 @@ matches:
     replace: No worries. 😌
 
   - trigger: Pd,.
-    replace: Per discussion
+    replace: Per discussion with
 
   - trigger: Plz,.
     replace: Please
