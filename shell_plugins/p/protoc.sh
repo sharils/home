@@ -10,7 +10,7 @@ p_protoc() {
   rb) lang=ruby ;;
   *) lang="$1" ;;
   esac
-  proto_files="$2" && shift 2
+  proto_files="${2:?}" && shift 2
   protoc "--${lang}_out" "${@:-.}" "$proto_files"
 }
 
