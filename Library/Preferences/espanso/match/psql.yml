@@ -7,5 +7,5 @@ matches:
   - trigger: \c,.
     replace: \connect
 
-  - trigger: psql,.
+  - trigger: pg,.
     replace: postgresql
