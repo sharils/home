@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Dot,.
+    replace: Polkadot
+
   - trigger: Eth,.
     replace: Ethereum
 
