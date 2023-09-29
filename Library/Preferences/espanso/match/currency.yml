@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Eth,.
+    replace: Ethereum
+
   - trigger: Nt,.
     replace: NT$
 
