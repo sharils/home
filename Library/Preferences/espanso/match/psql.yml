@@ -1,7 +1,7 @@
 ---
 matches:
 
-  - trigger: Psql,.
+  - trigger: Pg,.
     replace: PostgreSQL
 
   - trigger: \c,.
