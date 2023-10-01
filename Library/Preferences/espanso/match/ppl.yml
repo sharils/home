@@ -8,7 +8,7 @@ matches:
     replace: Dan North
 
   - trigger: Ee,.
-    replace: eric evans
+    replace: Eric Evans
 
   - trigger: Kh,.
     replace: Kevlin Henney
