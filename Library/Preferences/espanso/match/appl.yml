@@ -7,6 +7,9 @@ matches:
   - trigger: Ios,.
     replace: iOS
 
+  - trigger: Im,.
+    replace: iMessage
+
   - trigger: Ip,.
     replace: iPad
 
