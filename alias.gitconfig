@@ -34,6 +34,7 @@
 	coo = checkout --ours
 	cot = checkout --theirs
 	cr = revert
+	cp = cherry-pick
 	cw = commit --amend --only
 	cz = stash
 	cza = stash apply --index
