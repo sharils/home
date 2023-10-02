@@ -1,0 +1,5 @@
+---
+matches:
+
+  - trigger: a/j,.
+    replace: application/json
