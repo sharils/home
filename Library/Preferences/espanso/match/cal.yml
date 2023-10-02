@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Cny,.
+    replace: Chinese New Year
+
   - trigger: Gbf,.
     replace: Dragon Boat Festival
 
