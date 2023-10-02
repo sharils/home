@@ -53,7 +53,7 @@ matches:
     replace: Please tell me about your thoughts. 💡
 
   - trigger: Wym,.
-    replace: Would you mind
+    replace: Would you mind $|$? Thanks.
 
   - trigger: Wyt,.
     replace: What do you think? 🤔
