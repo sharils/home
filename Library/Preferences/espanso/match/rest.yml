@@ -1,7 +1,7 @@
 ---
 matches:
 
-  - trigger: Oapi,.
+  - trigger: Oa,.
     replace: OpenAPI
 
   - trigger: Inso,.
