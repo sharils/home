@@ -3,6 +3,11 @@
 [ -n "$SET_X" ] && set -x
 
 p() {
+  if [ ! -t 1 ] && [ $# -eq 0 ]; then
+    pbpaste
+    return
+  fi
+
   case "$1" in
 
   '') p r p ;;
