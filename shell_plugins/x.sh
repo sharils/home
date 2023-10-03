@@ -8,7 +8,7 @@ x() {
   -) shift && chmod -vv -x "$@" ;;
   8601) x b 'https://en.wikipedia.org/wiki/ISO_8601' ;;
   b) shift && "$BROWSER" "$@" ;;
-  cal) cal -A4 -B4 ;;
+  cal) shift && "$SHARILS_HOME/shell_plugins/x/cal.sh" "$@" ;;
   chunk) shift && fold -w "${@:-3}" | tr '\n' ' ' ;;
   curl) shift && "$SHARILS_HOME/shell_plugins/x/curl.sh" "$@" ;;
   diff) shift && diff --color --unified "$@" ;;
