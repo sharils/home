@@ -7,6 +7,9 @@ matches:
   - trigger: Cos,.
     replace: CoScreen
 
+  - trigger: Fu,.
+    replace: Please discuss the follow-ups in the ticket.
+
   - trigger: Gq,.
     replace: Good question! 🙌
 
