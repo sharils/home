@@ -7,7 +7,7 @@ id() {
   printf '%s\n%s' "$(jot 8 8 1)" 1 >"$weights"
 
   digits="$(mktemp)"
-  printf "1\n2\n8\n9" | sort --sort=random | head -n1 >"$digits"
+  keepassxc-cli generate --custom 1289 --length 1 >"$digits"
   jot -r 8 0 9 >>"$digits"
 
   sum="$(paste -d'*' "$digits" "$weights" | xargs | tr ' ' '+' | bc)"
