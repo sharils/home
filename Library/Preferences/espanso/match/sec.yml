@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Jwt,.
+    replace: JWT
+
   - trigger: auth,.
     replace: authorization
 
