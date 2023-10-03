@@ -4,6 +4,9 @@ matches:
   - trigger: Jwt,.
     replace: JWT
 
+  - trigger: Pa,.
+    replace: PASETO
+
   - trigger: auth,.
     replace: authorization
 
