@@ -314,7 +314,7 @@ do
 done
 endsnippet
 
-snippet /(?<!-)e/ "echo" r
+snippet /(?<![-\\])e/ "echo" r
 echo $3${1:'${2:not implemented}' >&2}
 endsnippet
 
@@ -591,4 +591,8 @@ endsnippet
 
 snippet \' "'\''" i
 '\''
+endsnippet
+
+snippet \e "\033" i
+\033
 endsnippet
