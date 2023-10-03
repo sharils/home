@@ -26,6 +26,7 @@ iron 1538
 glorious revolution 1689
 electricity 1752
 declaration of independence 1776
+dissolution of the holy roman empire 1806
 overture 1812
 roc 1911
 tel 1999
