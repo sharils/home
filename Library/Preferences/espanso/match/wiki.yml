@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Mh,.
+    replace: Miraheze
+
   - trigger: Mw,.
     replace: MediaWiki
 
