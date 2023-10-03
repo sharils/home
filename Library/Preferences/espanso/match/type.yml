@@ -1,6 +1,7 @@
 ---
 matches:
 
+  - {"trigger":"Na,.",   "replace":"NaN"}
   - {"trigger":"a,.",   "replace":"array"}
   - {"trigger":"b,.",   "replace":"boolean"}
   - {"trigger":"bin,.", "replace":"binary"}
