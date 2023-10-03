@@ -36,7 +36,7 @@ h() {
 
   mix) shift && "$SHARILS_HOME/shell_plugins/h/mix.sh" "$@" ;;
 
-  push) h g "$@" ;;
+  p) shift && h g push "$@" ;;
 
   py) shift && x py "help($*)" ;;
 
