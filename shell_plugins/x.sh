@@ -13,7 +13,6 @@ x() {
   curl) shift && "$SHARILS_HOME/shell_plugins/x/curl.sh" "$@" ;;
   diff) shift && diff --color --unified "$@" ;;
   dig) shift && dig "@$(dig +nssearch "$@")" "$@" ;;
-  fid) shift && "$SHARILS_HOME/shell_plugins/x/fid.sh" "$@" ;;
   fzf) shift && fzf --select-1 --height=~14 --layout=reverse "$@" ;;
   gpg) echo | gpg --clearsign >/dev/null ;;
   hostnameise) tr '[:upper:]' '[:lower:]' | sed -E 's/[^[:alnum:]]+/-/g' ;;

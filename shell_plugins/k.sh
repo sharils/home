@@ -29,6 +29,8 @@ k() {
 
   http) shift && "$SHARILS_HOME/shell_plugins/k/http.sh" "$@" ;;
 
+  id) shift && "$SHARILS_HOME/shell_plugins/k/id.sh" "$@" ;;
+
   n) shift && "$SHARILS_HOME/shell_plugins/k/n.sh" "$@" ;;
 
   port) "$SHARILS_HOME/shell_plugins/k/port.sh" "$@" ;;

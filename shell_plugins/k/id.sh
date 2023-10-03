@@ -2,7 +2,7 @@
 
 [ -n "$SET_X" ] && set -x
 
-fid() {
+id() {
   weights="$(mktemp)"
   printf '%s\n%s' "$(jot 8 8 1)" 1 >"$weights"
 
@@ -30,4 +30,4 @@ EOF
   printf '%s%s' "$letter" "$(tr -d '\n' <"$digits")" | pbcopy && pbpaste
 }
 
-fid "$@"
+id "$@"
