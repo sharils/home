@@ -11,25 +11,25 @@ matches:
     replace: Please discuss the follow-ups in the ticket.
 
   - trigger: Gq,.
-    replace: Good question! 🙌
+    replace: Good question!
 
   - trigger: Ha,.
     replace: How about
 
   - trigger: Hgit,.
-    replace: How about let’s give it a try? 🧪
+    replace: How about let’s give it a try?
 
   - trigger: Jc,.
-    replace: Just curious. 🧐
+    replace: Just curious.
 
   - trigger: Lgtm,.
-    replace: Looks good to me. 💯
+    replace: Looks good to me.
 
   - trigger: Nm,.
-    replace: Nevermind. 😌
+    replace: Nevermind.
 
   - trigger: Nw,.
-    replace: No worries. 😌
+    replace: No worries.
 
   - trigger: Pd,.
     replace: Per discussion with
@@ -38,28 +38,28 @@ matches:
     replace: Please
 
   - trigger: Pr,.
-    replace: Please help review$|$! Thanks! 🙇
+    replace: Please help review$|$! Thanks!
 
   - trigger: Thowt,.
-    replace: A penny for your thoughts. 🤔
+    replace: A penny for your thoughts.
 
   - trigger: Ty,.
-    replace: Thank you very much! 🙇
+    replace: Thank you very much!
 
   - trigger: Tldr,.
-    replace: Thereby hangs a tail. 🧶
+    replace: Thereby hangs a tail.
 
   - trigger: Thx,.
     replace: Thanks
 
   - trigger: Tmyt,.
-    replace: Please tell me about your thoughts. 💡
+    replace: Please tell me about your thoughts.
 
   - trigger: Wym,.
     replace: Would you mind $|$? Thanks.
 
   - trigger: Wyt,.
-    replace: What do you think? 🤔
+    replace: What do you think?
 
   - trigger: Ytn,.
-    replace: Your turn now! 🔥
+    replace: Your turn now!
