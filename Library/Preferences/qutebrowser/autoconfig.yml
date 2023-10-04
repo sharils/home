@@ -180,6 +180,7 @@ settings:
       d: https://lite.duckduckgo.com/lite/?q={}
       dc: https://docs.docker.com/compose/compose-file/#{}
       dd: https://devdocs.io/#q={}
+      dgt: https://data.gov.tw/datasets/search?rft={}
       dh: https://hub.docker.com/search?type=image&image_filter=store%2Cofficial&q={}
       dj: https://devdocs.io/#q=js%20{}
       dk: https://docs.docker.com/engine/reference/builder/#{}
