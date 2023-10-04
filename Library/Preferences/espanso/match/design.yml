@@ -13,5 +13,8 @@ matches:
   - trigger: Ssot,.
     replace: Single Source of Truth
 
+  - trigger: Yagni,.
+    replace: YAGNI
+
   - trigger: sc,.
     replace: statechart
