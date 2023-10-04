@@ -30,6 +30,8 @@ d() {
 
   q) osascript -e 'quit app "Docker"' ;;
 
+  roc) shift && printf 'Year %s is either Gregorian %s or ROC %s.' "${*}" "$((${*}+1911))" "$((${*}-1911))" ;;
+
   x) d exec "$@" ;;
 
   -v | b | c | cmd | default.conf | e | i | j | node-red | r | s | v | swagger-codegen) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/d/$cmd.sh" "$@" ;;
