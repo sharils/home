@@ -16,6 +16,9 @@ matches:
   - trigger: dyn,.
     replace: dynamic
 
+  - trigger: exp,.
+    replace: experience
+
   - trigger: intro,.
     replace: introduction
 
