@@ -1,0 +1,5 @@
+---
+matches:
+
+  - trigger: pc,.
+    replace: podcast

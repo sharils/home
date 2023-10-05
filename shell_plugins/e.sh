@@ -39,6 +39,8 @@ e() {
 
   l) shift && e log "$@" ;;
 
+  s) shift && "$SHARILS_HOME/shell_plugins/e/s.sh" "$@" ;;
+
   wc) shift && "$SHARILS_HOME/shell_plugins/e/wc.sh" "$@" ;;
 
   edit | log | service) espanso "$@" ;;
