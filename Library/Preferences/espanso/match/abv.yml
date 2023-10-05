@@ -19,6 +19,9 @@ matches:
   - trigger: exp,.
     replace: experience
 
+  - trigger: hw,.
+    replace: homework
+
   - trigger: intro,.
     replace: introduction
 
