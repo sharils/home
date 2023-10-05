@@ -13,6 +13,9 @@ matches:
   - trigger: Wd,.
     replace: Wikidata
 
+  - trigger: Wk,.
+    replace: Wiktionary
+
   - trigger: Wp,.
     replace: Wikipedia
 
