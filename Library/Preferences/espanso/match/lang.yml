@@ -10,6 +10,9 @@ matches:
   - trigger: Eo,.
     replace: Esperanto
 
+  - trigger: Et,.
+    replace: Etymology Online
+
   - trigger: lang,.
     replace: language
 
