@@ -29,7 +29,6 @@ x() {
   ssh) shift && ssh -t "$@" screen -xRRe^Gg ;;
   ssh-copy-id) shift && ssh-copy-id -o PreferredAuthentications=password -i "$HOME/.ssh/id_ed25519.pub" "$@" ;;
   su) shift && sudo su "${X_SU:?}" ;;
-  syncthing) shift && "$SHARILS_HOME/shell_plugins/x/syncthing.sh" "$@" ;;
   tel) shift && open "tel:$*" ;;
   ts) shift && n y ts-node "$@" ;;
   unzip) shift && unzip "$1" -d "${1%%.*}" && cd "${1%%.*}" && ls ;;
@@ -43,7 +42,7 @@ x() {
     x fx "$cmd" | x bc "$(awk '{ print $3 }')" "$@"
     ;;
 
-  ai | ap | bc | data | editorconfig | erl | ex | focus | fx | getnf | gif | hbt | html | ico | mh | paisa | pdf | png | py | rm | sh | smolsite | sn | sqlite | ssh-keygen | touch | tree | tz | venv | w8 | webp | whois)
+  ai | ap | bc | data | editorconfig | erl | ex | focus | fx | getnf | gif | hbt | html | ico | mh | paisa | pdf | png | py | rm | sh | smolsite | sn | sqlite | ssh-keygen | st | touch | tree | tz | venv | w8 | webp | whois)
     cmd="$1" && shift
     "$SHARILS_HOME/shell_plugins/x/$cmd.sh" "$@"
     ;;
