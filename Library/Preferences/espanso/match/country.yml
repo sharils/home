@@ -1,0 +1,8 @@
+---
+matches:
+
+  - trigger: Tw,.
+    replace: Taiwan
+
+  - trigger: Us,.
+    replace: the U.S.
