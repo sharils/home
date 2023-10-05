@@ -30,3 +30,6 @@ matches:
 
   - trigger: od,.
     replace: official document
+
+  - trigger: sl,.
+    replace: sick leave
