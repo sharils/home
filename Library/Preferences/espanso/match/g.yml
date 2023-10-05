@@ -13,6 +13,9 @@ matches:
   - trigger: Gm,.
     replace: Gmail
 
+  - trigger: Gp,.
+    replace: Googla Play
+
   - trigger: Gtr,.
     replace: Google Trends
 
