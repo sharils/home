@@ -25,6 +25,9 @@ matches:
       when:
         default: tomorrow
 
+  - trigger: /rl,.
+    replace: /remind list
+
   - trigger: /s,.
     replace: "/status $|$ :books:"
 
