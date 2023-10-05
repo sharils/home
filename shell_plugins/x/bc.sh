@@ -2,9 +2,9 @@
 
 [ -n "$SET_X" ] && set -x
 
-bc() {
+x_bc() {
   if [ $# -eq 0 ]; then
-    /usr/bin/env bc --mathlib
+    bc --mathlib
   elif [ "$1" = 'ft' ]; then
     # Fong’s test https://www.kano.plus/about-kano#discrete-analysis
     shift && bc --mathlib <<BC
@@ -16,4 +16,4 @@ BC
   fi
 }
 
-bc "$@"
+x_bc "$@"
