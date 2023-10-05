@@ -8,9 +8,7 @@ x() {
   -) shift && chmod -vv -x "$@" ;;
   8601) x b 'https://en.wikipedia.org/wiki/ISO_8601' ;;
   b) shift && "$BROWSER" "$@" ;;
-  cal) shift && "$SHARILS_HOME/shell_plugins/x/cal.sh" "$@" ;;
   chunk) shift && fold -w "${@:-3}" | tr '\n' ' ' ;;
-  curl) shift && "$SHARILS_HOME/shell_plugins/x/curl.sh" "$@" ;;
   diff) shift && diff --color --unified "$@" ;;
   dig) shift && dig "@$(dig +nssearch "$@")" "$@" ;;
   fzf) shift && fzf --select-1 --height=~14 --layout=reverse "$@" ;;
@@ -32,7 +30,6 @@ x() {
   tel) shift && open "tel:$*" ;;
   ts) shift && n y ts-node "$@" ;;
   unzip) shift && unzip "$1" -d "${1%%.*}" && cd "${1%%.*}" && ls ;;
-  zip) shift && "$SHARILS_HOME/shell_plugins/x/zip.sh" "$@" ;;
   zws) printf "\xe2\x80\x8b" | c ;;
 
   resetLaunchPad | showHidden) "$SHARILS_HOME/shell_plugins/x/resetLaunchPad.sh" "$@" ;;
@@ -42,7 +39,7 @@ x() {
     x fx "$cmd" | x bc "$(awk '{ print $3 }')" "$@"
     ;;
 
-  ai | ap | bc | data | editorconfig | erl | ex | focus | fx | getnf | gif | hbt | html | ico | mh | paisa | pdf | png | py | rm | sh | smolsite | sn | sqlite | ssh-keygen | st | touch | tree | tz | venv | w8 | webp | whois)
+  ai | ap | bc | cal | curl | data | editorconfig | erl | ex | focus | fx | getnf | gif | hbt | html | ico | mh | paisa | pdf | png | py | rm | sh | smolsite | sn | sqlite | ssh-keygen | st | touch | tree | tz | venv | w8 | webp | whois | zip)
     cmd="$1" && shift
     "$SHARILS_HOME/shell_plugins/x/$cmd.sh" "$@"
     ;;
