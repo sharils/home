@@ -36,7 +36,7 @@ x() {
 
   aud | cad | chf | cnh | cny | eur | gbp | hkd | jpy | mop | nzd | sek | sgd | thb | usd | zar)
     cmd="$1" && shift
-    x fx "$cmd" | x bc "$(awk '{ print $3 }')" "$@"
+    x fx "$cmd" | x bc "$(awk '{ print $3 }')" '*' "${@:-1}"
     ;;
 
   ai | ap | bc | cal | curl | data | editorconfig | erl | ex | focus | fx | getnf | gif | hbt | html | ico | mh | paisa | pdf | png | py | rm | sh | smolsite | sn | sqlite | ssh-keygen | st | touch | tree | tz | venv | w8 | webp | whois | zip)
