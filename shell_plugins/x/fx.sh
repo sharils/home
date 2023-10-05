@@ -10,7 +10,7 @@ fx() {
   dir="$HOME/git/github.com/sharils/~sinopac"
   mkdir -p "$dir"
   cmd="$dir/$(date +%F).json"
-  [ ! -f "$cmd" ] && curl 'https://mma.sinopac.com/ws/share/rate/ws_exchange.ashx' >"$cmd"
+  [ ! -f "$cmd" ] && curl -s 'https://mma.sinopac.com/ws/share/rate/ws_exchange.ashx' >"$cmd"
   jq '([first.TitleInfo|splits("<.*?>")]|map(select(.!=""))[0][5:]|sub(" "; "T")) as $date|first.SubInfo|sort_by(.DataValue4)|map([$date,.DataValue4,.DataValue2,.DataValue3]|@tsv)[]' -r <"$cmd" | column -t
 }
 
