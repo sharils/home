@@ -1,0 +1,5 @@
+---
+matches:
+
+  - trigger: Co,.
+    replace: Coursera
