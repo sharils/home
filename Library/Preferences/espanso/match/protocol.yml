@@ -21,3 +21,6 @@ matches:
 
   - trigger: r:,.
     replace: rsync://
+
+  - trigger: t:,.
+    replace: 'tel:'
