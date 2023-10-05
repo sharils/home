@@ -3,6 +3,14 @@
 ---
 matches:
 
+  - trigger: p\d,.
+    replace: "{{d}}"
+    vars:
+      - name: d
+        type: shell
+        params:
+          cmd: "pbpaste | tr -cd '[:digit:]'"
+
   - trigger: pc,.
     replace: "{{d}}"
     vars:
@@ -10,14 +18,6 @@ matches:
         type: shell
         params:
           cmd: "pbpaste | wc -c"
-
-  - trigger: pd,.
-    replace: "{{d}}"
-    vars:
-      - name: d
-        type: shell
-        params:
-          cmd: "pbpaste | tr -cd '[:digit:]'"
 
   - trigger: pu,.
     replace: "{{d}}"
