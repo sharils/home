@@ -9,6 +9,7 @@ pr() {
     set -- merge "$@"
     ;;
   r) shift && set -- ready "$@" ;;
+  reviewers) shift && gh pr view | grep ^reviewers | sed 's/^reviewers:\t\([^ ]*\) (Requested)$/\1/' && return $? ;;
   v) shift && set -- view "$@" ;;
   esac
   gh pr "$@"
