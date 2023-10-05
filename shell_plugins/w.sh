@@ -3,6 +3,11 @@
 [ -n "$SET_X" ] && set -x
 
 w() {
+  if [ $# -eq 0 ]; then
+    whoami
+    return
+  fi
+
   case "$1" in
 
   c) shift && w rs cargo "$@" ;;
