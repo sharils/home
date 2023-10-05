@@ -2,13 +2,13 @@
 matches:
 
   - trigger: Pwa,.
-    replace: Progressive Web Application (PWA)
+    replace: Progressive Web Application
 
   - trigger: Spa,.
-    replace: Single Page Application (SPA)
+    replace: Single Page Application
 
   - trigger: Ssr,.
-    replace: Server Side Rendering (SSR)
+    replace: Server Side Rendering
 
   - trigger: Sw,.
     replace: Service Worker
