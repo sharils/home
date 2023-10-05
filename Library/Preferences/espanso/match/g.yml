@@ -13,7 +13,7 @@ matches:
   - trigger: Gm,.
     replace: Gmail
 
-  - trigger: Gt,.
+  - trigger: Gtr,.
     replace: Google Trends
 
   - trigger: Gtl,.
