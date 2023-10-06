@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Adp,.
+    replace: Apple Developer Program
+
   - trigger: Atv,.
     replace: Apple TV
 
