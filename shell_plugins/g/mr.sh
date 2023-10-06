@@ -9,14 +9,10 @@ mr() {
   d) shift && mr diff "$@" ;;
   m)
     shift
-    if expr "$*" : '^[[:space:][:digit:]][[:space:][:digit:]]*$' >/dev/null; then
-      for cmd in "$@"; do
-        mr merge "$cmd" --rebase --remove-source-branch --yes
-      done
-    else
-      until mr merge "$@" --rebase --remove-source-branch --yes; do sleep 1; done
-    fi
+    mr rebase
+    mr merge "$cmd" --rebase --remove-source-branch --yes
     git fetch --prune
+    "$SHARILS_HOME/shell_plugins/g/cb.sh" r
     ;;
   n) shift && mr note "$@" ;;
   u)
