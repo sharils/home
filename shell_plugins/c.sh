@@ -54,6 +54,8 @@ c() {
 
   u) set -- update "$@" ;;
 
+  w) shift && "$SHARILS_HOME/shell_plugins/c/w.sh" "$@" && return $? ;;
+
   esac
   cargo "$@"
 }
