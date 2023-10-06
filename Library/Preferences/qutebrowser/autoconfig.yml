@@ -219,6 +219,7 @@ settings:
       ph: https://www.phind.com/search?q={}
       piv: https://vortaro.net/#{}_kd
       pl: https://professorlin.com//?s={}&search=%E5%8E%BB
+      pp: https://www.productplan.com/?post_type=glossary&s={}
       ptt: https://www.ptt.cc/bbs/{}/index.html
       py: https://docs.python.org/3/search.html?q={}&check_keywords=yes&area=default
       rd: https://www.reddit.com/search/?q={}
