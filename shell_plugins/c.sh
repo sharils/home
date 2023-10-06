@@ -54,7 +54,7 @@ c() {
 
   u) set -- update "$@" ;;
 
-  ta | w) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/c/$cmd.sh" "$@" && return $? ;;
+  ta | v | w) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/c/$cmd.sh" "$@" && return $? ;;
 
   esac
   cargo "$@"
