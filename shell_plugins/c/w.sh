@@ -6,7 +6,6 @@ w() {
   while
     [ "$(curl \
       --silent \
-      --proto-default 'https' \
       --write-out '%{stderr}%{http_code}\t%header{date}\n' \
       "${1:-example.com}" \
       2>&1 >/dev/null |

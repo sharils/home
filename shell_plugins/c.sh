@@ -15,7 +15,7 @@ c() {
 
   case "$1" in
 
-  I) curl --head --proto-default 'https' "$@" ;;
+  I) curl --head "$@" ;;
 
   a) shift && set -- add "$@" ;;
 

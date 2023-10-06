@@ -3,7 +3,7 @@
 [ -n "$SET_X" ] && set -x
 
 ta() {
-  curl --proto-default 'https' --trace-ascii - "$@"
+  curl --trace-ascii - "$@"
 }
 
 ta "$@"

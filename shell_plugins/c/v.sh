@@ -3,7 +3,7 @@
 [ -n "$SET_X" ] && set -x
 
 v() {
-  curl --verbose --proto-default 'https' "$@"
+  curl --verbose "$@"
 }
 
 v "$@"
