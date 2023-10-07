@@ -16,6 +16,12 @@ enum ${1:Person} {
 }
 endsnippet
 
+snippet ex "extend google.protobuf.EnumValueOptions {}" b
+extend google.protobuf.EnumValueOptions {
+	optional ${1:string} ${2:string_name} = ${3:123456789};
+}
+endsnippet
+
 snippet i "import" b
 import "${1:google/protobuf/any.proto}";
 endsnippet
