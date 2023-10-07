@@ -63,6 +63,7 @@ verdaccio
 wait-on
 web-ext
 why-is-node-running
+yalc
 EOF
 }
 
