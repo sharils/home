@@ -224,6 +224,7 @@ settings:
       py: https://docs.python.org/3/search.html?q={}&check_keywords=yes&area=default
       rd: https://www.reddit.com/search/?q={}
       s: https://serĉu.com/search?q={}
+      sa: https://store.app/search?q={}
       sc: https://github.com/koalaman/shellcheck/wiki/{}
       se: https://www.se-radio.net/?s=%22se+radio+{}%22
       shyyp: https://shyyp.net/hant/searoh?q={}
