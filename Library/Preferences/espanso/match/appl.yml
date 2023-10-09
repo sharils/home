@@ -4,6 +4,9 @@ matches:
   - trigger: Adp,.
     replace: Apple Developer Program
 
+  - trigger: At,.
+    replace: AirTag
+
   - trigger: Atv,.
     replace: Apple TV
 
