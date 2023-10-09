@@ -18,6 +18,9 @@ matches:
         params:
           cmd: 'printf "(800) 555‑01%s" "$(jot -r 2 0 9 | tr -d \\n)" | pbcopy && pbpaste'
 
+  - trigger: json,.
+    replace: '{"a":97,"b":98}'
+
   - trigger: tn,.
     replace: "{{tn}}"
     vars:
