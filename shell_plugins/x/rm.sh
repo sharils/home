@@ -2,7 +2,7 @@
 
 [ -n "$SET_X" ] && set -x
 
-rm() {
+x_rm() {
   args=$(printf '%s\n' "$@")
   printf '%s\n' "$args" | while read -r arg; do
     osascript - "$(realpath "$arg")" <<APPLESCRIPT
@@ -19,4 +19,4 @@ APPLESCRIPT
   done
 }
 
-rm "$@"
+x_rm "$@"
