@@ -27,6 +27,7 @@ bind generic gcrn           @sh -c 'git revert --no-edit %(commit) && git revert
 bind generic gd<ENTER>      :!git d
 bind generic gds            :!git ds
 bind generic gf             @git f
+bind generic gmv            @git mv %(file) %(prompt)
 bind generic gp<ENTER>      @git p
 bind generic gpb:           @git p %(remote) :%(branch)
 bind generic gpc<SPACE>     @git p %(remote) %(commit):refs/heads/%(prompt)
