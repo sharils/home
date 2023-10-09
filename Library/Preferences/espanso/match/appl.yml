@@ -35,7 +35,7 @@ matches:
     replace: QuickTime Player
 
   - trigger: appl,.
-    replace: apple.com
+    replace: apple.com.tw
 
   - trigger: as,.
     replace: applescript
