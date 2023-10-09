@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Ad,.
+    replace: AirDrop
+
   - trigger: Adp,.
     replace: Apple Developer Program
 
