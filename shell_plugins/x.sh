@@ -39,7 +39,7 @@ x() {
     x fx "$cmd" | x bc "$(awk '{ print $3 }')" '*' "${@:-1}"
     ;;
 
-  ai | ap | bc | cal | data | editorconfig | erl | ex | focus | fx | getnf | gif | hbt | html | ico | mh | paisa | pdf | png | py | rm | sh | smolsite | sn | sqlite | ssh-keygen | st | touch | tree | tz | venv | w8 | webp | whois | zip)
+  ai | ap | bc | cal | data | editorconfig | erl | ex | focus | fx | getnf | gif | hbt | html | ico | jq | mh | paisa | pdf | png | py | rm | sh | smolsite | sn | sqlite | ssh-keygen | st | touch | tree | tz | venv | w8 | webp | whois | zip)
     cmd="$1" && shift
     "$SHARILS_HOME/shell_plugins/x/$cmd.sh" "$@"
     ;;
