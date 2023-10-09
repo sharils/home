@@ -13,6 +13,7 @@ matches:
   - {"trigger":"fl,.",  "replace":"float"}
   - {"trigger":"i,.",   "replace":"integer"}
   - {"trigger":"n,.",   "replace":"null"}
+  - {"trigger":"o,.",   "replace":"object"}
   - {"trigger":"s,.",   "replace":"string"}
   - {"trigger":"t,.",   "replace":"true"}
   - {"trigger":"ts,.",  "replace":"timestamp"}
