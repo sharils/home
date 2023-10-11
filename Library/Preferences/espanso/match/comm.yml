@@ -38,7 +38,7 @@ matches:
     replace: Please
 
   - trigger: Pr,.
-    replace: Please help review$|$! Thanks!
+    replace: Please help review $|$! Thanks!
 
   - trigger: Thowt,.
     replace: A penny for your thoughts.
