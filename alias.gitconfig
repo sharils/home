@@ -48,6 +48,7 @@
 	g = grep
 	gu = grep '^[<\\|=>]\\{7\\}'
 	l = log --graph --oneline
+	mb = merge-base
 	mt = mergetool
 	p = push
 	pf = push --force
