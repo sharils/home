@@ -31,5 +31,8 @@ matches:
   - trigger: od,.
     replace: official document
 
+  - trigger: sf,.
+    replace: satisifaction
+
   - trigger: sl,.
     replace: sick leave
