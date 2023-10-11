@@ -7,6 +7,9 @@ matches:
   - trigger: Enl,.
     replace: EOF NL
 
+  - trigger: Nl,.
+    replace: NL
+
   - trigger: Se,.
     replace: Software Engineering
 
