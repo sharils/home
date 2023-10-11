@@ -25,6 +25,9 @@ matches:
   - trigger: impl,.
     replace: implement
 
+  - trigger: is,.
+    replace: infrastructure
+
   - trigger: pt,.
     replace: passthrough
 
