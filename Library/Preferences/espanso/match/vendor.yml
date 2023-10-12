@@ -4,6 +4,9 @@ matches:
   - trigger: Cg,.
     replace: ChatGPT
 
+  - trigger: Dd,.
+    replace: Datadog
+
   - trigger: Dl,.
     replace: Duolingo
 
