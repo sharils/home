@@ -28,6 +28,9 @@ matches:
   - trigger: hf,.
     replace: hotfix
 
+  - trigger: perf,.
+    replace: performance
+
   - trigger: ref,.
     replace: reference
 
