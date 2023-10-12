@@ -9,11 +9,16 @@ ct() {
   # shellcheck disable=SC2016
   jq \
     --arg CountyName "${1:-南投縣}" \
-    --arg Date "${2:-$(date +%F)}" \
+    --arg Today "${2:-$(date +%F)}" \
+    --arg Tomorrow "${2:-$(date -v+1d +%F)}" \
     "$(cat <<'JQ'
 .cwaopendata.dataset.location[] |
 select(."CountyName" == $ARGS.named.CountyName) |
-.time |= map(select(.Date == $ARGS.named.Date))
+.time |= map(
+  select(
+    .Date == $ARGS.named.Today or .Date == $ARGS.named.Tomorrow
+  )
+)
 JQ
 )" \
     /tmp/A-B0062-001.json |
