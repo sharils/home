@@ -26,6 +26,8 @@ v() {
 
   -) shift && "$SHARILS_HOME/shell_plugins/v/-.sh" "$@" ;;
 
+  d) shift && vim -d "$@" ;;
+
   e) shift && "$SHARILS_HOME/shell_plugins/v/e.sh" "$@" ;;
 
   hosts) EDITOR=vim sudo --edit /etc/hosts "$@" ;;
