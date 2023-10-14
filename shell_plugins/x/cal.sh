@@ -10,12 +10,12 @@ x_cal() {
 
   nid='14718'
   case "$1" in
-  23) md5_url='ed0be53097a9da90ee037896396142c2' ;;
-  24) md5_url='2c1c090b51f0b61d9283d79a160f211d' ;;
+  2023) md5_url='ed0be53097a9da90ee037896396142c2' ;;
+  2024) md5_url='2c1c090b51f0b61d9283d79a160f211d' ;;
   tw)
     {
-      x_cal 23
-      x_cal 24
+      x_cal 2023
+      x_cal 2024
     } | column
     return $?
     ;;
@@ -23,7 +23,7 @@ x_cal() {
 
   tmp="/tmp/${md5_url}_export.json"
   [ ! -f "$tmp" ] && curl -s "https://quality.data.gov.tw/dq_download_json.php?nid=$nid&md5_url=$md5_url" >"$tmp"
-  jq --raw-output --arg labourDay "20${1}0501" "$(
+  jq --raw-output --arg labourDay "${1}0501" "$(
     cat <<'JQ'
       .[(map(.["西元日期"] == $ARGS.named.labourDay)|index(true))]["是否放假"] |= "2" |
       .[(map(.["西元日期"] == $ARGS.named.labourDay)|index(true))]["備註"] |= "勞動節" |
