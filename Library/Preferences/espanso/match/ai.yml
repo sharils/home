@@ -1,0 +1,15 @@
+---
+matches:
+
+  # 10. Drafting Survey Questions https://www.facebook.com/photo/?fbid=112336485093211&set=pcb.112341338426059
+  - trigger: DraftingSurveyQuestions,.
+    form: |
+      Using guidelines mentioned in
+      Teresa Torres' book "Continuous
+      Discovery Habits", formulate a
+      survey to capture feedback for a
+      [[text]]
+    form_fields:
+      text:
+        multiline: true
+        default: fintech product (mobile app) that helps users make digital payments without a credit card.
