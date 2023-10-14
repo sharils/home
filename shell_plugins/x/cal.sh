@@ -16,27 +16,28 @@ x_cal() {
     {
       x_cal 2023
       x_cal 2024
-    } | column
+    } | jq --raw-output \
+      "map(select((now|localtime|strftime(\"%F %a\")) <= .[0])) | map(@csv)[]" |
+      tr -d '"' | tr , ' '
     return $?
     ;;
   esac
 
   tmp="/tmp/${md5_url}_export.json"
   [ ! -f "$tmp" ] && curl -s "https://quality.data.gov.tw/dq_download_json.php?nid=$nid&md5_url=$md5_url" >"$tmp"
-  jq --raw-output --arg labourDay "${1}0501" "$(
+  jq --arg labourDay "${1}0501" "$(
     cat <<'JQ'
       .[(map(.["西元日期"] == $ARGS.named.labourDay)|index(true))]["是否放假"] |= "2" |
       .[(map(.["西元日期"] == $ARGS.named.labourDay)|index(true))]["備註"] |= "勞動節" |
-      map(select((now|localtime|strftime("%Y%m%d")) <= .["西元日期"])) |
       map(
         select(
           (.["是否放假"] == "2" and .["備註"] != "") or
           (.["是否放假"] == "0" and (.["星期"] == "六" or .["星期"] == "日"))
         )
       ) |
-      map([(.["西元日期"]|strptime("%Y%m%d")|strftime("%F %a")), .["備註"]] | @csv)[]
+      map([(.["西元日期"]|strptime("%Y%m%d")|strftime("%F %a")), .["備註"]])
 JQ
-  )" <"$tmp" | sort | tr -d '"' | tr , ' '
+  )" <"$tmp"
 }
 
 x_cal "$@"
