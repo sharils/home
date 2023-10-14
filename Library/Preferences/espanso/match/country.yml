@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Sg,.
+    replace: Singapore
+
   - trigger: Tw,.
     replace: Taiwan
 
