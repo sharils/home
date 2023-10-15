@@ -155,6 +155,7 @@ settings:
     www.ubus.com.tw: true
     www.wolframalpha.com: true
     yeoman.io: true
+    www.youbike.com.tw: true
   content.local_storage:
     '*.wikidata.org': true
     astexplorer.net: true
