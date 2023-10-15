@@ -124,6 +124,7 @@ settings:
     mermaid.live: true
     nx.dev: true
     openlibrary.org: true
+    philnash.github.io: true
     play.rust-lang.org: true
     prettier.io: true
     qute://*: true
