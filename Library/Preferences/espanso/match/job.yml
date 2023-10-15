@@ -1,0 +1,11 @@
+---
+matches:
+
+  - trigger: Do,.
+    replace: DevOps
+
+  - trigger: Em,.
+    replace: Engineering Manager
+
+  - trigger: Fse,.
+    replace: Full Stack Engineer
