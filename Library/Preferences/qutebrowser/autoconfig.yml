@@ -110,6 +110,7 @@ settings:
     global: false
     hexdocs.pm: true
     hn.algolia.com: true
+    https://www.cloudflare.com/ssl/encrypted-sni/: true
     https://www.google.com.tw/maps?*: true
     hub.docker.com: true
     ipac.nlpi.edu.tw: true
