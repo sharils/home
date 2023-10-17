@@ -9,6 +9,12 @@ m() {
 
   c) shift && "$SHARILS_HOME/shell_plugins/m/c.sh" "$@" ;;
 
+  composers)
+    cat <<'EOF' | sed 's/, /\n/g' | sort -R | head -n1
+Bach, Bartók, Handel, Beethoven, Berlioz, Brahms, Chopin, Debussy, Django Reinhardt, Dukas, Dvorak, Elgar, Fauré, Gershwin, Glinka, Haydn, Holst, Lalo, Liszt, Mahler, Mozart, Nielsen, Paganini, Prokofiev, Puccini, Ravel, Rossini, Saint-Saëns, Smetana, Schubert, Schumann, Sibelius, Richard Strauss, Johann Strauss II, Tchaikovsky, Verdi, Vivaldi, Wagner, Mussorgsky, Bruckner, Grieg, Rimsky-Korsakov, Stamitz, Richter, Stamitz, Cannabich, Mendelssohn, Bellini, Rachmaninoff, Franck, Ennio Morricone, Nino Rota, Ludovico Einaudi
+EOF
+    ;;
+
   d) shift && "$SHARILS_HOME/shell_plugins/m/d.sh" "$@" ;;
 
   e) shift && "$SHARILS_HOME/shell_plugins/m/e.sh" "$@" ;;
