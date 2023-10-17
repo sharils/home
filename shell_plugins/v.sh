@@ -40,6 +40,8 @@ v() {
 
   rm) shift && "$SHARILS_HOME/shell_plugins/v/rm.sh" "$@" ;;
 
+  ssh) shift && vim ~/.ssh/config "$@" ;;
+
   tor) vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc ;;
 
   \?)
