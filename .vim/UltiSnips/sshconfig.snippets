@@ -1,0 +1,6 @@
+snippet host "Host" b
+Host ${1:localhost}$2
+User ${3:ubuntu}
+Hostname $1
+IdentityFile ~/.ssh/${4:id_ed25519}
+endsnippet
