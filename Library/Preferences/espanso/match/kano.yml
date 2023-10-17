@@ -1,0 +1,53 @@
+---
+matches:
+
+  - trigger: Kano,.
+    replace: |
+      *{{satisifaction}}* because:
+      *{{kano.functional}}* if I had this feature;
+      *{{kano.dysfunctional}}* if I did not have this feature.
+      https://www.kano.plus/about-kano#questionnaire
+
+    vars:
+      - name: kano
+        type: form
+        params:
+          layout: |
+            [[functional]] if I had this feature;
+            [[dysfunctional]] if I did not have this feature.
+          fields:
+
+            functional:
+              type: choice
+              default: I like it.
+              values:
+                - ""
+                - I like it.
+                - I expect it.
+                - I am neutral.
+                - I can tolerate it.
+                - I dislike it.
+
+            dysfunctional:
+              type: choice
+              default: I dislike it.
+              values:
+                - ""
+                - I like it.
+                - I expect it.
+                - I am neutral.
+                - I can tolerate it.
+                - I dislike it.
+
+      - name: satisifaction
+        type: shell
+        params:
+          cmd: |
+            if [ '{{kano.functional}}' = 'I like it.' ] && [ '{{kano.dysfunctional}}' = 'I dislike it.' ]; then echo 'Performance'
+            elif [ '{{kano.functional}}' = 'I am neutral.' ] && [ '{{kano.dysfunctional}}' = 'I am neutral.' ]; then echo 'Indifferent'
+            elif [ '{{kano.functional}}' = '{{kano.dysfunctional}}' ]; then echo 'Questionable'
+            elif [ '{{kano.functional}}' = 'I like it.' ]; then echo 'Attractive'
+            elif [ '{{kano.dysfunctional}}' = 'I dislike it.' ]; then echo 'Must-be'
+            elif [ '{{kano.functional}}' = 'I dislike it.' ] || [ '{{kano.dysfunctional}}' = 'I like it.' ]; then echo 'Reverse'
+            else echo 'Indifferent'
+            fi

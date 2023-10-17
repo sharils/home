@@ -9,30 +9,6 @@ matches:
   - trigger: Po,.
     replace: Product Owner
 
-  - trigger: Kano,.
-    form: |
-      [[options]] if I had this feature. [[options]] if I did not have this feature. So [[satisifaction]]. https://www.kano.plus/about-kano#questionnaire
-    form_fields:
-      options:
-        type: choice
-        values:
-          - N/A
-          - I like it.
-          - I expect it.
-          - I am neutral.
-          - I can tolerate it.
-          - I dislike it.
-      satisifaction:
-        type: choice
-        values:
-          - N/A
-          - Attractive
-          - Performance
-          - Must-be
-          - Indifferent
-          - Reverse
-          - Questionable
-
   - trigger: Rtm,.
     replace: Remember The Milk
 
