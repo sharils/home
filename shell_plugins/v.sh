@@ -42,6 +42,8 @@ v() {
 
   rsync) shift && vim "rsync://$1:$2" ;;
 
+  scp) shift && vim "scp://$1/$2" ;;
+
   ssh) shift && vim ~/.ssh/config "$@" ;;
 
   tor) vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc ;;
