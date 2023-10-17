@@ -51,6 +51,12 @@ EOF
 
   s) shift && m search "$@" ;;
 
+  songs)
+    cat <<'EOF' | sed 's/, /\n/g' | sort -R | head -n1
+Vincent, Sound of Silence, Hey Jude
+EOF
+    ;;
+
   t) shift && "$SHARILS_HOME/shell_plugins/m/t.sh" "$@" ;;
 
   sft) m strftime ;;
