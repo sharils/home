@@ -24,7 +24,7 @@ x() {
   php) shift && php -r "$*" ;;
   screen) shift && screen -xRRe^Gg "$@" ;;
   shuf) tr ' ' '\n' | sort --random-sort | tr '\n' ' ' ;;
-  ssh) shift && ssh -t "$@" screen -xRRe^Gg ;;
+  ssh) shift && ssh -t "$@" screen -xRRe^Gg -T screen-256color ;;
   ssh-copy-id) shift && ssh-copy-id -o PreferredAuthentications=password -i "$HOME/.ssh/id_ed25519.pub" "$@" ;;
   su) shift && sudo su "${X_SU:?}" ;;
   tel) shift && open "tel:$*" ;;
