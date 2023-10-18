@@ -49,6 +49,7 @@
 	g = grep
 	gu = grep '^[<\\|=>]\\{7\\}'
 	l = log --graph --oneline
+	lS = log --graph --oneline --color-words --patch --pickaxe-regex -S
 	mb = merge-base
 	mt = mergetool
 	p = push
