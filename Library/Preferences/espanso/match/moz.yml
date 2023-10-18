@@ -6,6 +6,3 @@ matches:
 
   - trigger: Moz,.
     replace: Mozilla
-
-  - trigger: moz,.
-    replace: mozilla

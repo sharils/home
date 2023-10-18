@@ -3,6 +3,3 @@ matches:
 
   - trigger: Nwp,.
     replace: NewebPay
-
-  - trigger: nwp,.
-    replace: newebpay

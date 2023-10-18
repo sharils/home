@@ -9,6 +9,3 @@ matches:
 
   - trigger: mig,.
     replace: migrat
-
-  - trigger: mongo,.
-    replace: mongodb

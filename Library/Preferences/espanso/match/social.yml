@@ -9,6 +9,3 @@ matches:
 
   - trigger: so,.
     replace: significant other
-
-  - trigger: tg,.
-    replace: telegram

@@ -22,12 +22,6 @@ matches:
   - trigger: br,.
     replace: browser
 
-  - trigger: cr,.
-    replace: chromium
-
-  - trigger: fx,.
-    replace: firefox
-
   - trigger: gm,.
     replace: greasemonkey
 

@@ -19,11 +19,5 @@ matches:
   - trigger: fw,.
     replace: framework
 
-  - trigger: react,.
-    replace: react.dev
-
   - trigger: rn,.
     replace: react-native
-
-  - trigger: sv,.
-    replace: svelte

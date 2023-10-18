@@ -12,9 +12,3 @@ matches:
 
   - trigger: Fs,.
     replace: Firestore
-
-  - trigger: fir,.
-    replace: firebase
-
-  - trigger: fs,.
-    replace: firestore

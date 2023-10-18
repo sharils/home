@@ -18,12 +18,3 @@ matches:
 
   - trigger: Wp,.
     replace: Wikipedia
-
-  - trigger: wb,.
-    replace: Wikibase
-
-  - trigger: wd,.
-    replace: wikidata
-
-  - trigger: wp,.
-    replace: wikipedia

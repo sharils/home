@@ -15,12 +15,3 @@ matches:
 
   - trigger: Mep,.
     replace: MIX_ENV=prod
-
-  - trigger: ex,.
-    replace: elixir
-
-  - trigger: lv,.
-    replace: liveview
-
-  - trigger: phx,.
-    replace: phoenix

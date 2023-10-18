@@ -6,6 +6,3 @@ matches:
 
   - trigger: \c,.
     replace: \connect
-
-  - trigger: pg,.
-    replace: postgresql

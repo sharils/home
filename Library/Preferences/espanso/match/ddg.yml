@@ -6,9 +6,3 @@ matches:
 
   - trigger: Ddgl,.
     replace: DuckDuckGo Lite
-
-  - trigger: ddg,.
-    replace: duckduckgo.com
-
-  - trigger: ddgl,.
-    replace: lite.duckduckgo.com

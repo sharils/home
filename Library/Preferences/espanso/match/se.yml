@@ -36,6 +36,3 @@ matches:
 
   - trigger: rel,.
     replace: release
-
-  - trigger: ser,.
-    replace: se-radio.net

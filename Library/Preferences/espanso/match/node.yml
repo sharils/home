@@ -16,9 +16,6 @@ matches:
   - trigger: Net,.
     replace: NODE_ENV='test'
 
-  - trigger: dn,.
-    replace: deno
-
   - trigger: nc,.
     replace: npm_config_
 
