@@ -10,9 +10,6 @@ matches:
   - trigger: Dl,.
     replace: Duolingo
 
-  - trigger: Hb,.
-    replace: Homebrew
-
   - trigger: Hbt,.
     replace: Habitica
 
@@ -33,6 +30,7 @@ matches:
 
   - trigger: hb,.
     replace: homebrew
+    propagate_case: true
 
   - trigger: mmd,.
     replace: mermaid

@@ -3,9 +3,6 @@ matches:
   - trigger: Cf,.
     replace: CloudFront
 
-  - trigger: Ls,.
-    replace: Lightsail
-
   - trigger: Lsc,.
     replace: Lightsail Container
 
@@ -14,6 +11,7 @@ matches:
 
   - trigger: ls,.
     replace: lightsail
+    propagate_case: true
 
   - trigger: lsc,.
     replace: lightsail container

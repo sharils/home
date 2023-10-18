@@ -1,14 +1,10 @@
 ---
 matches:
 
-  - trigger: Fb,.
-    replace: Facebook
-
-  - trigger: Ig,.
-    replace: Instagram
-
   - trigger: fb,.
     replace: facebook
+    propagate_case: true
 
   - trigger: ig,.
     replace: instagram
+    propagate_case: true

@@ -1,9 +1,6 @@
 ---
 matches:
 
-  - trigger: G,.
-    replace: Google
-
   - trigger: Ga,.
     replace: Google Analytics
 
@@ -30,3 +27,4 @@ matches:
 
   - trigger: g,.
     replace: google
+    propagate_case: true
