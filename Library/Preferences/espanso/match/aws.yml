@@ -6,6 +6,9 @@ matches:
   - trigger: Lsc,.
     replace: Lightsail Container
 
+  - trigger: R53,.
+    replace: Route 53
+
   - trigger: cf,.
     replace: cloudfront
 
