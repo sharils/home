@@ -8,7 +8,7 @@ matches:
     replace: PageSpeed Insights
 
   - trigger: Serp,.
-    replace: Search Engine Results Pages (SERP)
+    replace: Search Engine Results Pages
 
   - trigger: s:,.
     replace: "site:"
