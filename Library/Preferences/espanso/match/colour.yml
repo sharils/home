@@ -1,5 +1,6 @@
 ---
 matches:
+
   - trigger: aliceblue,.
     replace: f0f8ff
 
