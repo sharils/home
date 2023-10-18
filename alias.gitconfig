@@ -6,7 +6,7 @@
 	bb = bisect bad
 	bg = bisect good
 	bl = blame
-	br = bisect restart
+	br = bisect reset
 	bs = bisect start
 	c = commit
 	ca = commit --amend
