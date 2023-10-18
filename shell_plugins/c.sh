@@ -15,7 +15,7 @@ c() {
 
   case "$1" in
 
-  I) curl --head "$@" ;;
+  I) shift && curl --head "$@" && return $? ;;
 
   a) shift && set -- add "$@" ;;
 
