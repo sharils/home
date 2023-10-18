@@ -99,6 +99,7 @@ settings:
     data.gov.tw: true
     devdocs.io: true
     developer.mozilla.org: true
+    docs.aws.amazon.com: true
     docs.expo.dev: true
     docs.python.org: true
     docs.rs: true
