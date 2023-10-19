@@ -154,6 +154,9 @@ resume-cli resume
 # Run Selenium IDE projects in cli
 selenium-side-runner
 
+# Node.js module and command-line tool for exporting SVG to PNG and JPEG.
+svgexport
+
 # Trello CLI tool
 trello-cli trello
 
