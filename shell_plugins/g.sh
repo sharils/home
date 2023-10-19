@@ -12,8 +12,7 @@ g() {
     return
   fi
   if [ $# -eq 1 ] && [ -f "$1" ] || [ $# -eq 0 ] ||
-    { echo "$1" | grep -E '^[0-9a-z]{7}$' >/dev/null; } ||
-    { echo "$1" | grep -E '^[0-9a-z]{40}$' >/dev/null; }; then
+    { echo "$1" | grep -E '^[0-9a-z]{7,8}$|^[0-9a-z]{40}$' >/dev/null; }; then
     tig "$@"
     return
   fi
