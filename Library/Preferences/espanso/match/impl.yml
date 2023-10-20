@@ -25,6 +25,9 @@ matches:
   - trigger: is,.
     replace: infrastructure
 
+  - trigger: len,.
+    replace: length
+
   - trigger: lib,.
     replace: library
 
