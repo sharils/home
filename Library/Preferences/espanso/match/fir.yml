@@ -1,9 +1,6 @@
 ---
 matches:
 
-  - trigger: Fir,.
-    replace: Firebase
-
   - trigger: Fa,.
     replace: Firebase Auth
 
@@ -12,3 +9,7 @@ matches:
 
   - trigger: Fs,.
     replace: Firestore
+
+  - trigger: fir,.
+    replace: firebase
+    propagate_case: true
