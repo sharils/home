@@ -9,6 +9,8 @@ d() {
 
   0) date -ujf%s 0 "${@:-+%FT%T}" ;;
 
+  A) shift && "$SHARILS_HOME/shell_plugins/d/A.sh" "$@" ;;
+
   F) date +%F ;;
 
   I) date -Iseconds "$@" | sed 's/:00$//;s/+00$/Z/' | tr -d '[:space:]' ;;
