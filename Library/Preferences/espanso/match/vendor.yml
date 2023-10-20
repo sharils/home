@@ -28,6 +28,9 @@ matches:
   - trigger: St,.
     replace: Syncthing
 
+  - trigger: Wp,.
+    replace: WordPress
+
   - trigger: hb,.
     replace: homebrew
     propagate_case: true
