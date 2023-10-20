@@ -19,14 +19,14 @@ matches:
   - trigger: ft,.
     replace: fallthrough
 
-  - trigger: lib,.
-    replace: library
-
   - trigger: impl,.
     replace: implement
 
   - trigger: is,.
     replace: infrastructure
+
+  - trigger: lib,.
+    replace: library
 
   - trigger: pt,.
     replace: passthrough
