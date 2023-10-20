@@ -19,9 +19,9 @@ h() {
     vim +PlugUpdate
     vim +'PlugSnapshot! ~/.vim/snapshot.vim'
 
-    h g a .vim/snapshot.vim
+    h g add .vim/snapshot.vim
     h g cm 'Execute vim +PlugUpdate'
-    h g p
+    h g push
     ;;
 
   e) shift && "$SHARILS_HOME/shell_plugins/h/e.sh" "$@" ;;

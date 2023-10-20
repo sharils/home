@@ -28,7 +28,7 @@ SH
   chmod -vv +x "$base/$path.sh"
   echo "  $last) shift && \"\$SHARILS_HOME/shell_plugins/$path.sh\" \"\$@\" ;;" | pbcopy
   [ -n "$EDITOR" ] && $EDITOR -O "$base/$1.sh" "$base/$path.sh"
-  g a "$base/$1.sh" "$base/$path.sh"
+  g add "$base/$1.sh" "$base/$path.sh"
 }
 
 g "$@"
