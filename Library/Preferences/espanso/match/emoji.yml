@@ -132,6 +132,8 @@ matches:
   - {"replace":"👬","trigger":":two_men_holding_hands:"}
   - {"replace":"👭","trigger":":two_women_holding_hands:"}
   - {"replace":"💏","trigger":":couplekiss:"}
+  - {"replace":"💏","trigger":":couplekiss:"}
+  - {"replace":"🫶","trigger":":heart_hands:"}
   - {"replace":"💑","trigger":":couple_with_heart:"}
   - {"replace":"👯","trigger":":dancers:"}
   - {"replace":"🙆","trigger":":ok_woman:"}
