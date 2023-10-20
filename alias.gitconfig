@@ -8,6 +8,7 @@
 	bl = blame
 	br = bisect reset
 	bs = bisect start
+	bv = bisect view --patch --stat
 	c = commit
 	ca = commit --amend
 	cam = commit --all --message
