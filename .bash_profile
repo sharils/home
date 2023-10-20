@@ -23,6 +23,7 @@ export SHARILS_HOME=~/git/github.com/sharils/home
 . $SHARILS_HOME/shell_plugins/nx.sh
 . $SHARILS_HOME/shell_plugins/wb.sh
 
+. $SHARILS_HOME/shell_plugins/a.sh
 . $SHARILS_HOME/shell_plugins/b.sh
 . $SHARILS_HOME/shell_plugins/c.sh
 . $SHARILS_HOME/shell_plugins/d.sh
