@@ -38,7 +38,7 @@ EOF
   p) shift && "$SHARILS_HOME/shell_plugins/m/p.sh" "$@" ;;
 
   pieces)
-    cat <<'EOF' | sed 's/, /\n/g' | sort -R | head -n1
+    cat <<'EOF' | sed 's/, /\n/g' | sort -R | head -n1 | pbcopy && pbpaste
 K265, BWV881, BWV1007-1012, Butterfly Lover, Carmina Burana, Goldberg Variation, Also sprach Zarathustra, Turandot, Má vlast, Tannhäuser, Der Fliegende Holländer, L'Apprenti sorcier, Ночь на лысой горе, Guillaume Tell, Tristan und Isolde, Peer Gynt Suites, Night on Bald Mountain, Night on Bald Mountain, Aida, Requiem (Verdi), Peter and the Wolf, Carnival of the Animals, Csárdás
 EOF
     ;;
