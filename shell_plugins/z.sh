@@ -10,11 +10,15 @@ z() {
 
   .)
     shift 2
-    set -- "$(dirname "$PWD")"
-    while [ "$1" != '/' ]; do
-      set -- "$(dirname "$1")" "$@"
+    tmp="$(mktemp)"
+    path="$(dirname "$PWD")"
+    while [ "$path" != '/' ]; do
+      echo "$path" >>"$tmp"
+      path="$(dirname "$path")"
     done
-    path="$(echo "$PWD" "$@" | tr ' ' \\n | fzf --tac)"
+    pwd >>"$tmp"
+    cat "$tmp"
+    path="$(fzf <"$tmp")"
     [ -n "$path" ] && z "$path"
     ;;
 
