@@ -52,7 +52,7 @@ EOF
   s) shift && m search "$@" ;;
 
   songs)
-    cat <<'EOF' | sed 's/, /\n/g' | sort -R | head -n1
+    cat <<'EOF' | sed 's/, /\n/g' | sort -R | head -n1 | pbcopy && pbpaste
 Vincent, Sound of Silence, Hey Jude
 EOF
     ;;
