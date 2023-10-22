@@ -28,6 +28,7 @@ x() {
   ssh-copy-id) shift && ssh-copy-id -o PreferredAuthentications=password -i "$HOME/.ssh/id_ed25519.pub" "$@" ;;
   su) shift && sudo su "${X_SU:?}" ;;
   tel) shift && open "tel:$*" ;;
+  til) shift && python -c 'import sys;from datetime import *;print(datetime.strptime(sys.argv[1], "%Y-%m-%dT%H:%M:%S") - datetime.now())' "$@" ;;
   ts) shift && n y ts-node "$@" ;;
   unzip) shift && unzip "$1" -d "${1%%.*}" && cd "${1%%.*}" && ls ;;
   zws) printf "\xe2\x80\x8b" | c ;;
