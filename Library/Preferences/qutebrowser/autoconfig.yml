@@ -239,6 +239,7 @@ settings:
       so: https://stackoverflow.com/search?q={}&s=fc2bd8dc-a211-4fce-9651-d6d1657d10a2
       sp: https://www.skypack.dev/search?q={}
       su: https://swurl.com/?q={}
+      sutian: https://sutian.moe.edu.tw/zh-hant/tshiau/?lui=tai_su&tsha={}
       tcl: https://ipac.library.taichung.gov.tw/webpac/search.cfm?m=ss&k0={}&t0=k&c0=and
       tldr: https://tldr.ostera.io/{}
       u: https://search.brave.com/search?q=qutebrowser+{}
