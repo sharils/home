@@ -79,6 +79,9 @@ jscodeshift
 # detector of copy/paste in files
 jscpd
 
+# Node package to parse and generate changelogs following the [keepachangelog](https://keepachangelog.com/) format.
+keep-a-changelog changelog
+
 # Find unused files, dependencies and exports in your TypeScript and JavaScript projects
 knip
 
