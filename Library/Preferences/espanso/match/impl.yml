@@ -4,6 +4,9 @@ matches:
   - trigger: Api,.
     replace: API
 
+  - trigger: Ds,.
+    replace: Design System
+
   - trigger: atl,.
     replace: actual
 
