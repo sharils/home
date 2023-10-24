@@ -40,6 +40,9 @@ matches:
   - trigger: Pr,.
     replace: Please help review $|$! Thanks!
 
+  - trigger: Sc,.
+    replace: Sorry for the confusion. I was talking about $|$.
+
   - trigger: Thowt,.
     replace: A penny for your thoughts.
 
