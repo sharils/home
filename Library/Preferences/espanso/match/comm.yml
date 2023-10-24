@@ -22,6 +22,9 @@ matches:
   - trigger: Jc,.
     replace: Just curious.
 
+  - trigger: Lmk,.
+    replace: Please let me know.
+
   - trigger: Lgtm,.
     replace: Looks good to me.
 
