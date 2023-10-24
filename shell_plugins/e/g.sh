@@ -2,7 +2,7 @@
 
 [ -n "$SET_X" ] && set -x
 
-a() {
+g() {
   path="$(echo "$1" | perl -pe 's/(?<=[a-z])[A-Z]/_$&/g' | tr '[:upper:]' '[:lower:]' | tr '.' '/')"
   lib_path="lib/$path.ex"
   test_path="test/${path}_test.exs"
@@ -29,4 +29,4 @@ EXS
   echo "vim -O $test_path $lib_path"
 }
 
-a "$@"
+g "$@"
