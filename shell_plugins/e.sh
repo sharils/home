@@ -37,6 +37,8 @@ e() {
 
   g) shift && "$SHARILS_HOME/shell_plugins/e/g.sh" "$@" ;;
 
+  grep) shift && "$SHARILS_HOME/shell_plugins/e/grep.sh" "$@" ;;
+
   l) shift && e log "$@" ;;
 
   s) shift && "$SHARILS_HOME/shell_plugins/e/s.sh" "$@" ;;
