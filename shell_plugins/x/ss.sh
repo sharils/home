@@ -6,6 +6,7 @@ ss() {
   # tw geo center
   lat='23.973874'
   lng='120.982024'
+
   date="$(date +%F)"
   json="/tmp/api.sunrise-sunset.org.$date.json"
   [ -f "$json" ] ||
@@ -15,7 +16,8 @@ ss() {
       --data "lat=$lat" \
       --data "lng=$lng" \
       >"$json"
-  jq <"$json" --arg 'date' "$date" "$(
+
+  jq <"$json" -r --arg 'date' "$date" "$(
     cat <<'JQ'
 .results |
 to_entries |
@@ -33,9 +35,12 @@ map(
 ) |
 from_entries |
 .date |= $ARGS.named.date |
-.source |= "https://sunrise-sunset.org/api"
+.source |= "https://sunrise-sunset.org/api" |
+to_entries |
+map([.key, .value])[] |
+@tsv
 JQ
-  )"
+  )" | column -t
 }
 
 ss "$@"
