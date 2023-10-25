@@ -4,11 +4,10 @@
 
 e() {
   case "$1" in
-  e) set -- /elixir ;;
-  p) set -- /python ;;
-  r) set -- /rust ;;
+  e) echo "$HOME/Exercism/elixir" ;;
+  p) echo "$HOME/Exercism/python" ;;
+  r) echo "$HOME/Exercism/rust" ;;
   esac
-  echo "$HOME/Exercism$*"
 }
 
 e "$@"
