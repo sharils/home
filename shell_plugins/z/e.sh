@@ -7,6 +7,7 @@ e() {
   e) echo "$HOME/Exercism/elixir" ;;
   p) echo "$HOME/Exercism/python" ;;
   r) echo "$HOME/Exercism/rust" ;;
+  *) echo "$SHARILS_HOME/Library/Preferences/espanso/match" ;;
   esac
 }
 
