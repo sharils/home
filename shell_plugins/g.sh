@@ -19,6 +19,8 @@ g() {
 
   case "$1" in
 
+  @) shift && git rev-parse --short @ "$@" ;;
+
   L) shift && tig reflog "$@" ;;
 
   a.) shift && g a . "$@" ;;
