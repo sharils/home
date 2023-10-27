@@ -69,3 +69,6 @@ matches:
 
   - trigger: Ytn,.
     replace: Your turn now!
+
+  - trigger: ibnlt,.
+    replace: including but not limited to
