@@ -24,17 +24,14 @@ to_entries |
 sort_by(.value) |
 map(
   if .key == "day_length" then .
-  else (
-    .value |= (
-      gsub("\\+00:00"; "Z") |
-      fromdateiso8601 |
-      strflocaltime("%T")
-    )
+  else .value |= $ARGS.named.date + "T" + (
+    gsub("\\+00:00"; "Z") |
+    fromdateiso8601 |
+    strflocaltime("%T")
   )
   end
 ) |
 from_entries |
-.date |= $ARGS.named.date |
 .source |= "https://sunrise-sunset.org/api" |
 to_entries |
 map([.key, .value])[] |
