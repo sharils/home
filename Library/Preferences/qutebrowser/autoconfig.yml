@@ -219,6 +219,7 @@ settings:
       mh: https://smilingpuffin.miraheze.org/w/index.php?title=Special:Search&search={}
       mhr: https://www.google.com.tw/search?client=firefox-b-d&gbv=1&q=site:www.manhuaren.com/manhua-*%20{}
       moe: https://www.moedict.tw/{}
+      ncl: https://www.ncl.app.visionmedia.com.tw/video/search?q={}
       nlpi: https://ipac.nlpi.edu.tw/search?searchField=FullText&searchInput={}
       od: https://www.oxfordlearnersdictionaries.com/search/english/?=english&q={}
       og: https://iq.opengenus.org/tag/{}/
