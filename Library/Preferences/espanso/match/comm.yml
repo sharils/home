@@ -35,7 +35,7 @@ matches:
     replace: No worries.
 
   - trigger: Pd,.
-    replace: Per discussion with
+    replace: Per discussion with $|$
 
   - trigger: Plz,.
     replace: Please
