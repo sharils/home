@@ -3,6 +3,10 @@
 [ -n "$SET_X" ] && set -x
 
 o() {
+  if [ $# -eq 0 ]; then
+    cat "$SHARILS_HOME/shell_plugins/m/o.sh"
+    return $?
+  fi
   case "$1" in
   91) open -b com.apple.Music 'https://jazzfm91.streamb.live/SB00009' ;;
   247) open -b com.apple.Music 'https://stream.zeno.fm/s2888pqwzqzuv' ;;
