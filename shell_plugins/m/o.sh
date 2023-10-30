@@ -3,10 +3,6 @@
 [ -n "$SET_X" ] && set -x
 
 o() {
-  if [ $# -eq 0 ]; then
-    $BROWSER 'https://classicalmusiconly.com/community/tv/lucky/random'
-    return
-  fi
   case "$1" in
   91) open -b com.apple.Music 'https://jazzfm91.streamb.live/SB00009' ;;
   247) open -b com.apple.Music 'https://stream.zeno.fm/s2888pqwzqzuv' ;;
@@ -18,6 +14,7 @@ o() {
   kids) open -b com.apple.Music 'https://classicalkids.stream.publicradio.org/classicalkids.aac' ;;
   muzaiko) open -b com.apple.Music 'http://fluo.muzaiko.saluton.dk:8000/radio.mp3' ;;
   peace) open -b com.apple.Music 'https://peacefulpiano.stream.publicradio.org/peacefulpiano.aac' ;;
+  rand) $BROWSER 'https://classicalmusiconly.com/community/tv/lucky/random' ;;
   vpr) open -b com.apple.Music 'https://www.vpr.net/apps/stream-playlists/vprclassicalaac.pls' ;;
   wwfm) open -b com.apple.Music 'https://wwmf.streamguys1.com/live' ;;
   esac
