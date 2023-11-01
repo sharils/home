@@ -43,6 +43,9 @@ matches:
   - trigger: Qtp,.
     replace: QuickTime Player
 
+  - trigger: Tf,.
+    replace: Test Flight
+
   - trigger: appl,.
     replace: apple.com.tw
 
