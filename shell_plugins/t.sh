@@ -8,6 +8,10 @@ t() {
   esac
 
   if cmd="$("$SHARILS_HOME/shell_plugins/t/is_todo.sh" "$@")"; then
+    if [ "$(osascript -e 'tell application "System Events" to (name of processes) contains "Syncthing"')" = 'false' ]; then
+      echo 'Syncthing?' >&2
+      return
+    fi
     shift && set -- "$cmd" "$@"
     todo.sh "$@"
     return
