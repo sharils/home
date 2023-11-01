@@ -7,6 +7,9 @@ matches:
   - trigger: Adp,.
     replace: Apple Developer Program
 
+  - trigger: Asc,.
+    replace: App Store Connect
+
   - trigger: At,.
     replace: AirTag
 
