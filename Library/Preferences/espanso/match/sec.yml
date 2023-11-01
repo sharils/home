@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Bw,.
+    replace: Bitwarden
+
   - trigger: Jwt,.
     replace: JWT
 
