@@ -3,9 +3,22 @@
 [ -n "$SET_X" ] && set -x
 
 st() {
-  case "$(osascript -e 'tell application "System Events" to (name of processes) contains "Syncthing"')" in
-  false) open -b com.github.xor-gate.syncthing-macosx ;; # osascript -e 'id of app "Syncthing"'
-  true) osascript -e 'quit app "Syncthing"' ;;
+  case "$1" in
+  l) st ls | jq length ;;
+  ls) st cli show connections | jq '.connections | to_entries | map(select(.value.connected)) | from_entries' ;;
+  o) open -b com.github.xor-gate.syncthing-macosx "$@" ;;
+  ps)
+    # shellcheck disable=SC2009
+    ps aux | grep syncthing
+    ;;
+  q) osascript -e 'quit app "Syncthing"' ;;
+  t)
+    case "$(osascript -e 'tell application "System Events" to (name of processes) contains "Syncthing"')" in
+    false) open -b com.github.xor-gate.syncthing-macosx ;; # osascript -e 'id of app "Syncthing"'
+    true) osascript -e 'quit app "Syncthing"' ;;
+    esac
+    ;;
+  *) /Applications/Syncthing.app/Contents/Resources/syncthing/syncthing "${@:---help}" ;;
   esac
 }
 
