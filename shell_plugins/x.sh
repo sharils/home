@@ -26,7 +26,7 @@ x() {
   shuf) tr ' ' '\n' | sort --random-sort | tr '\n' ' ' ;;
   ssh) shift && ssh -t "$@" screen -xRRe^Gg -T screen-256color ;;
   ssh-copy-id) shift && ssh-copy-id -o PreferredAuthentications=password -i "$HOME/.ssh/id_ed25519.pub" "$@" ;;
-  su) shift && sudo su "${X_SU:?}" ;;
+  su) shift && sudo su - "${X_SU:?}" ;;
   tel) shift && open "tel:$*" ;;
   til) shift && python -c 'import sys;from datetime import *;print(datetime.strptime(sys.argv[1], "%Y-%m-%dT%H:%M:%S") - datetime.now())' "${@:-$("$SHARILS_HOME/shell_plugins/x/ss.sh" | sed -n 2p | cut -d' ' -f3)}" ;;
   ts) shift && n y ts-node "$@" ;;
