@@ -26,7 +26,6 @@ x() {
   shuf) tr ' ' '\n' | sort --random-sort | tr '\n' ' ' ;;
   ssh) shift && ssh -t "$@" screen -xRRe^Gg -T screen-256color ;;
   ssh-copy-id) shift && ssh-copy-id -o PreferredAuthentications=password -i "$HOME/.ssh/id_ed25519.pub" "$@" ;;
-  su) shift && sudo su - "${X_SU:?}" ;;
   tel) shift && open "tel:$*" ;;
   til) shift && python -c 'import sys;from datetime import *;print(datetime.strptime(sys.argv[1], "%Y-%m-%dT%H:%M:%S") - datetime.now())' "${@:-$("$SHARILS_HOME/shell_plugins/x/ss.sh" | sed -n 2p | cut -d' ' -f3)}" ;;
   ts) shift && n y ts-node "$@" ;;
@@ -40,7 +39,7 @@ x() {
     x fx "$cmd" | x bc "$(awk '{ print $3 }')" '*' "${@:-1}"
     ;;
 
-  ai | airbox | ap | bc | cal | cat-weight | cert | cm | county-sunrise | data | editorconfig | eq | erl | ex | focus | fx | getnf | gif | hbt | html | ico | jq | kibble | mh | paisa | pdf | png | py | rm | sh | smolsite | sn | sqlite | ssh-keygen | ss | st | touch | tree | tz | uri | venv | w8 | webp | whois | zip)
+  ai | airbox | ap | bc | cal | cat-weight | cert | cm | county-sunrise | data | editorconfig | eq | erl | ex | focus | fx | getnf | gif | hbt | html | ico | jq | kibble | mh | paisa | pdf | png | py | rm | sh | smolsite | sn | sqlite | ssh-keygen | ss | st | su | touch | tree | tz | uri | venv | w8 | webp | whois | zip)
     cmd="$1" && shift
     "$SHARILS_HOME/shell_plugins/x/$cmd.sh" "$@"
     ;;
