@@ -12,6 +12,13 @@ st() {
     ps aux | grep syncthing
     ;;
   q) osascript -e 'quit app "Syncthing"' ;;
+  su)
+    shift
+    case "$1" in
+    q) shift && "$SHARILS_HOME/shell_plugins/x/su.sh" "osascript -e 'quit app \"Syncthing\"'" ;;
+    *) echo not implemented >&2 ;;
+    esac
+    ;;
   t)
     case "$(osascript -e 'tell application "System Events" to (name of processes) contains "Syncthing"')" in
     false) open -b com.github.xor-gate.syncthing-macosx ;; # osascript -e 'id of app "Syncthing"'
