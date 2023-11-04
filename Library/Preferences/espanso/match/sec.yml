@@ -30,3 +30,6 @@ matches:
 
   - trigger: pt,.
     replace: plaintext
+
+  - trigger: usr,.
+    replace: username
