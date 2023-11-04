@@ -25,5 +25,8 @@ matches:
   - trigger: ct,.
     replace: ciphertext
 
+  - trigger: psw,.
+    replace: password
+
   - trigger: pt,.
     replace: plaintext
