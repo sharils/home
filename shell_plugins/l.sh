@@ -21,7 +21,6 @@ l() {
   case "$1" in
   -*) lsd "$@" ;;
   F) shift && less +F "$@" ;;
-  b) shift && l x "https://search.brave.com/search?q=$*" ;;
   d) shift && l x "https://lite.duckduckgo.com/lite/?q=$*" ;;
   e) shift && $EDITOR -O "$SHARILS_HOME/.lynx/lynx.cfg" "$SHARILS_HOME/.lynx/lynx_bookmarks.html" ;;
   g) shift && l x "https://www.google.com/search?client=firefox-b-d&gbv=1&q=$*" ;;
