@@ -19,6 +19,9 @@ matches:
   - trigger: conf,.
     replace: configure
 
+  - trigger: dt,.
+    replace: desktop
+
   - trigger: ed,.
     replace: editor
 
