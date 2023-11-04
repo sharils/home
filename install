@@ -168,6 +168,7 @@ main() {
 .gitconfig,\
 .gitignore,\
 .inputrc,\
+.livebookdesktop.sh,\
 .qutebrowser,\
 .surfraw.conf,\
 .todo.cfg,\
