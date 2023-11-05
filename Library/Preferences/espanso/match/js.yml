@@ -39,6 +39,9 @@ matches:
   - trigger: esl,.
     replace: eslint
 
+  - trigger: jcs,.
+    replace: jscodeshift
+
   - trigger: js,.
     replace: javascript
 
