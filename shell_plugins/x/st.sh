@@ -35,6 +35,8 @@ st() {
     esac
     ;;
 
+  w) while [ "$(st l | tee /dev/stderr)" -ne 3 ]; do sleep 1; done ;;
+
   *) /Applications/Syncthing.app/Contents/Resources/syncthing/syncthing "${@:---help}" ;;
 
   esac
