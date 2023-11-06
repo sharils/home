@@ -73,5 +73,9 @@ matches:
   - trigger: def,.
     replace: definition
 
+  - trigger: grats,.
+    replace: congratulations
+    propagate_case: true
+
   - trigger: ibnlt,.
     replace: including but not limited to
