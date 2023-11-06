@@ -70,5 +70,8 @@ matches:
   - trigger: Ytn,.
     replace: Your turn now!
 
+  - trigger: def,.
+    replace: definition
+
   - trigger: ibnlt,.
     replace: including but not limited to
