@@ -28,6 +28,9 @@ matches:
   - trigger: St,.
     replace: Syncthing
 
+  - trigger: Twm,.
+    replace: Taiwan Mobile
+
   - trigger: Wp,.
     replace: WordPress
 
