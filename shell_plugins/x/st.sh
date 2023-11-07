@@ -7,7 +7,10 @@ st() {
 
   l) shift && st ls | jq length ;;
 
-  ls) shift && st cli show connections | jq '.connections | to_entries | map(select(.value.connected)) | from_entries' ;;
+  ls)
+    # shellcheck disable=SC2015
+    shift && st cli show connections || return $? | jq '.connections | to_entries | map(select(.value.connected)) | from_entries'
+    ;;
 
   o) shift && open -b com.github.xor-gate.syncthing-macosx "$@" ;;
 
