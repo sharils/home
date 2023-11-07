@@ -11,6 +11,14 @@ matches:
         params:
           cmd: "pbpaste | tr -cd '[:digit:]'"
 
+  - trigger: p\l,.
+    replace: "{{u}}"
+    vars:
+      - name: u
+        type: shell
+        params:
+          cmd: "pbpaste | tr '[:upper:]' '[:lower:]'"
+
   - trigger: p\u,.
     replace: "{{u}}"
     vars:
