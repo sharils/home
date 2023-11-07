@@ -31,8 +31,5 @@ matches:
   - trigger: arch,.
     replace: architecture
 
-  - trigger: char,.
-    replace: character
-
   - trigger: sys,.
     replace: system
