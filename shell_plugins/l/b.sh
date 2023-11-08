@@ -12,6 +12,7 @@ b() {
     ;;
   l) shift && bat --language=log --style=plain "$log" "$@" ;;
   o) shift && open -b dev.livebook.Livebook "$@" ;;
+  q) shift && osascript -e 'quit app "Livebook"' "$@" ;;
   esac
 }
 
