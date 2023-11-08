@@ -5,6 +5,8 @@
 st() {
   case "$1" in
 
+  b) shift && $BROWSER "http://$(st cli config gui dump-json | jq --raw-output .address)" ;;
+
   l) shift && st ls | jq length ;;
 
   ls)
