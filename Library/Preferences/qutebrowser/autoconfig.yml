@@ -111,6 +111,7 @@ settings:
     global: false
     hexdocs.pm: true
     hn.algolia.com: true
+    https://airtw.moenv.gov.tw/ENG/Forecast/Forecast_3days.aspx: true
     https://www.cloudflare.com/ssl/encrypted-sni/: true
     https://www.google.com.tw/maps?*: true
     hub.docker.com: true
