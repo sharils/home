@@ -9,7 +9,9 @@ st() {
 
   ls)
     # shellcheck disable=SC2015
-    shift && st cli show connections || return $? | jq '.connections | to_entries | map(select(.value.connected)) | from_entries'
+    shift
+    connections="$(st cli show connections)" || return $?
+    printf %s "$connections" | jq '.connections | to_entries | map(select(.value.connected)) | from_entries'
     ;;
 
   o) shift && open -b com.github.xor-gate.syncthing-macosx "$@" ;;
