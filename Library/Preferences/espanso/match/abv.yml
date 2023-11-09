@@ -7,6 +7,9 @@ matches:
   - trigger: cmd,.
     replace: command
 
+  - trigger: dept,.
+    replace: department
+
   - trigger: desc,.
     replace: description
 
