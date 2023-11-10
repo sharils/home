@@ -4,7 +4,7 @@
 
 e() {
   case "$1" in
-  '') $EDITOR "$@" ~/.bash_profile ;;
+  '') $EDITOR "$@" "$SHARILS_HOME/.bash_profile" ;;
   *) brew edit "$@" ;;
   esac
 }
