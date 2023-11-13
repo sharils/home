@@ -25,7 +25,9 @@ s() {
   q)
     shift
     osascript -e 'quit app "Syncthing"'
-    "$SHARILS_HOME/shell_plugins/x/su.sh" "osascript -e 'quit app \"Syncthing\"'"
+    case "$1" in
+    a) "$SHARILS_HOME/shell_plugins/x/su.sh" "osascript -e 'quit app \"Syncthing\"'" ;;
+    esac
     ;;
 
   t) shift && /Applications/Syncthing.app/Contents/Resources/syncthing/syncthing "${@:---help}" ;;
