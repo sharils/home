@@ -63,6 +63,7 @@
 	ra = rebase --abort
 	ro = rebase --onto
 	rr = rebase --continue
+	rs = rebase --skip
 	s = status
 	t = tag
 	tam = tag --annotate --message
