@@ -10,6 +10,7 @@
 	bs = bisect start
 	bv = bisect view --patch --stat
 	c = commit
+	cC = commit --reuse-message
 	ca = commit --amend
 	cam = commit --all --message
 	cb = branch
