@@ -7,6 +7,8 @@ s() {
 
   b) shift && $BROWSER "http://$(s t cli config gui dump-json | jq --raw-output .address)" ;;
 
+  id) shift && s t cli show system | jq --raw-output .myID | tee /dev/stderr | npx --yes qrcode-terminal ;;
+
   l)
     # shellcheck disable=SC2015
     shift
