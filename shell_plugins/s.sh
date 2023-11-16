@@ -16,7 +16,7 @@ s() {
     printf %s "$connections" | jq '.connections | to_entries | map(select(.value.connected)) | from_entries | length'
     ;;
 
-  o) shift && open -b com.github.xor-gate.syncthing-macosx "$@" ;;
+  o) shift && open -b com.github.xor-gate.syncthing-macosx "$@" && s w ;;
 
   ps)
     shift
