@@ -24,6 +24,8 @@ s() {
     ps aux | grep syncthing
     ;;
 
+  r) shift && t cli operations restart "$@" ;;
+
   q)
     shift
     osascript -e 'quit app "Syncthing"'
