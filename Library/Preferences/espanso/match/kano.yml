@@ -3,9 +3,9 @@ matches:
 
   - trigger: Kano,.
     replace: |
-      *{{satisifaction}}* because:
-      *{{kano.functional}}* if I had this feature;
-      *{{kano.dysfunctional}}* if I did not have this feature.
+      "{{satisifaction}}" because:
+      "{{kano.functional}}" if I had this feature;
+      "{{kano.dysfunctional}}" if I did not have this feature.
       https://www.kano.plus/about-kano#questionnaire
 
     vars:
