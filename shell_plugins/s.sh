@@ -40,7 +40,7 @@ s() {
     while
       if ! connections="$(s t cli show connections)"; then
         echo "$connections" | xargs
-      elif [ "$(printf %s "$connections" | jq '.connections | map(select(.connected)) | length' | tee /dev/stderr)" -eq 3 ]; then
+      elif [ "$(printf %s "$connections" | jq '.connections | map(select(.connected)) | length' | tee /dev/stderr)" -eq 4 ]; then
         return
       fi
       sleep 1
