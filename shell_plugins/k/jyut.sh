@@ -3,7 +3,7 @@
 [ -n "$SET_X" ] && set -x
 
 jyut() {
-  cat <<'EOF' | grep "${@:-}"
+  cat <<'EOF' | grep "${@:-}" | column
 b     ㄅ
 p     ㄆ
 m     ㄇ
