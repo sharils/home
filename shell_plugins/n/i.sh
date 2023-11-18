@@ -5,7 +5,7 @@
 i() {
   case "$1" in
   y) shift && npm init --yes "$@" ;;
-  @capacitor/app | expo-app | next-app | node-cli | nx-workspace | puck-app | react-app | react-native-app)
+  @capacitor/app | astro | expo-app | next-app | node-cli | nx-workspace | puck-app | react-app | react-native-app)
     app="$1" && shift
     npm init --yes "$app" -- "${@:-$app}"
     cd "${1:-$app}" || return
