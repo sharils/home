@@ -22,6 +22,9 @@ n_alias() {
 # SQL javascript database Excel XLSX XLS CSV https://github.com/alasql/alasql/wiki/AlaSQL-CLI
 alasql
 
+# Astro is a modern site builder with web best practices, performance, and DX front-of-mind.
+astro
+
 # Super Cool NPM Playground right on the Node REPL
 baapan
 
