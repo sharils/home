@@ -18,8 +18,8 @@ u() {
   npm --global update
   python3 -m pip install --upgrade pip
   pip3 list --outdated
-  mix local.hex
-  mix archive.install hex phx_new
+  mix local.hex --force
+  mix archive.install hex phx_new --force
 }
 
 u "$@"
