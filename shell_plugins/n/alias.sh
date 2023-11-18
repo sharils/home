@@ -19,6 +19,9 @@ n_alias() {
 # Security & License Compliance For Your App's Dependencies 🪱
 @sandworm/audit sandworm sandworm-audit
 
+# Presentation slides for developers
+@slidev/cli slidev
+
 # SQL javascript database Excel XLSX XLS CSV https://github.com/alasql/alasql/wiki/AlaSQL-CLI
 alasql
 
