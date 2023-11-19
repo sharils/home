@@ -10,6 +10,9 @@ matches:
   - trigger: Pos,.
     replace: POSIX
 
+  - trigger: Qr,.
+    replace: QR code
+
   - trigger: Xr,.
     replace: Exercism
 
