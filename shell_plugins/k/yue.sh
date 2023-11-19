@@ -82,6 +82,8 @@ yut   ㄩㄊ
 m     ㆬ
 ng    ㆭ
 EOF
+
+  echo https://zh.wikipedia.org/zh-tw/%E7%B2%B5%E8%AA%9E%E6%B3%A8%E9%9F%B3%E7%AC%A6%E8%99%9F#%E9%9F%BB%E6%AF%8D
 }
 
 yue "$@"
