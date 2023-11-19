@@ -2,7 +2,7 @@
 
 [ -n "$SET_X" ] && set -x
 
-jyut() {
+yue() {
   cat <<'EOF' | grep "${@:-}" | column
 b     ㄅ
 p     ㄆ
@@ -84,4 +84,4 @@ ng    ㆭ
 EOF
 }
 
-jyut "$@"
+yue "$@"

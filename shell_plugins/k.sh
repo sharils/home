@@ -31,7 +31,7 @@ k() {
 
   id) shift && "$SHARILS_HOME/shell_plugins/k/id.sh" "$@" ;;
 
-  jyut) shift && "$SHARILS_HOME/shell_plugins/k/jyut.sh" "$@" ;;
+  yue) shift && "$SHARILS_HOME/shell_plugins/k/yue.sh" "$@" ;;
 
   n) shift && "$SHARILS_HOME/shell_plugins/k/n.sh" "$@" ;;
 
