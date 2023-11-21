@@ -17,7 +17,7 @@
 	cbc = !sh -c 'git branch --show-current | tr -d [:space:] | pbcopy && pbpaste'
 	ce = commit --amend --no-edit
 	ceF = commit --edit --file=.git/COMMIT_EDITMSG
-	cf = comit --fixup
+	cf = commit --fixup
 	cg = config --global
 	cl = clean --force
 	cld = clean --force -d
