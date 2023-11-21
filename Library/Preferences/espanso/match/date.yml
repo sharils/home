@@ -37,3 +37,11 @@ matches:
         type: date
         params:
           format: "%FT%T%:z"
+
+  - trigger: 8601u,.
+    replace: "{{8601}}"
+    vars:
+      - name: 8601
+        type: shell
+        params:
+          cmd: "date -u +%FT%TZ"
