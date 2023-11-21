@@ -29,3 +29,11 @@ matches:
 
   - trigger: min,.
     replace: minute
+
+  - trigger: 8601,.
+    replace: "{{8601}}"
+    vars:
+      - name: 8601
+        type: date
+        params:
+          format: "%FT%T%:z"
