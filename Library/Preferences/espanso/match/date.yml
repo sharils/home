@@ -16,6 +16,14 @@ matches:
         params:
           format: "%R"
 
+  - trigger: "%T,."
+    replace: "{{T}}"
+    vars:
+      - name: T
+        type: date
+        params:
+          format: "%T"
+
   - trigger: 0:,.
     replace: 23:59
 
