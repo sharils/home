@@ -40,7 +40,7 @@ d() {
 
   *)
     if [ -f "$1" ] && [ -f "$2" ]; then
-      delta "$@"
+      delta --side-by-side "$@"
     else
       docker "$@"
     fi
