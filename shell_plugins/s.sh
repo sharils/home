@@ -28,6 +28,7 @@ s() {
 
   q)
     shift
+    s w
     osascript -e 'quit app "Syncthing"'
     case "$1" in
     a) "$SHARILS_HOME/shell_plugins/x/su.sh" "osascript -e 'quit app \"Syncthing\"'" ;;
