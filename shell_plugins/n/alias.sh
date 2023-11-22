@@ -4,6 +4,9 @@
 
 n_alias() {
   cat <<'EOF' | sed '/^#/d' | grep "\(^\| \)$1\( \|$\)" | cut -d' ' -f1
+# Biome is a toolchain for the web: formatter, linter and more
+@biomejs/biome biome
+
 # A tool for creating and developing Ionic Framework mobile apps.
 @ionic/cli ionic
 
