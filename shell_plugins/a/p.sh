@@ -3,7 +3,11 @@
 [ -n "$SET_X" ] && set -x
 
 p() {
-  case "${1:-ls}" in
+  if [ $# -eq 0 ]; then
+    set -- ls "$@"
+  fi
+
+  case "$1" in
 
   a)
     shift
