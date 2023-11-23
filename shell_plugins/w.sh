@@ -18,6 +18,12 @@ w() {
 
   ex) shift && w m --pattern '**/*.ex' '**/*.exs' --run "${*:-mix test && mix format}" ;;
 
+  fix)
+    shift
+    watchman watch-del "$PWD"
+    watchman watch-project "$PWD"
+    ;;
+
   js) shift && "$SHARILS_HOME/shell_plugins/w/js.sh" "$@" ;;
 
   m)
