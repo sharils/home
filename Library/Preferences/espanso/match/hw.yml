@@ -1,0 +1,8 @@
+---
+matches:
+
+  - trigger: Ard,.
+    replace: Arduino
+
+  - trigger: Rpi,.
+    replace: Raspberry Pi
