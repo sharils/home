@@ -8,7 +8,20 @@ salary() {
 
   [ -f "$dest" ] || curl "$src" >"$dest"
 
-  jq --raw-output <"$dest" 'last | to_entries | map([.key, .value])[] | @tsv'
+  jq <"$dest" \
+    --raw-output \
+    --arg THIS_YEAR "$(($(date +%Y) - 1911))年1月1日" \
+    --arg NEXT_YEAR "$(($(date +%Y) - 1911 + 1))年1月1日" "$(
+      cat <<'EOF'
+      map(select(
+        .["實施日期（民國）"] == $ARGS.named.THIS_YEAR or
+        .["實施日期（民國）"] == $ARGS.named.NEXT_YEAR
+      )) |
+      map(to_entries)[] |
+      map([.key, .value])[] |
+      @tsv
+EOF
+    )"
 }
 
 salary "$@"
