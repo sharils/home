@@ -37,17 +37,15 @@ EOF
     filter="$(
       cat <<'JQ'
       .feeds |= (
+        map(select(.SiteName == $ARGS.named.SiteName)) |
+        map(to_entries) |
         map(
-          select(.SiteName == $ARGS.named.SiteName)
-        ) |
-        map(
-          to_entries |
           map(
             .key as $key |
             .key |= ($descriptions[0][$key] // .)
-          ) |
-          from_entries
-        )
+          )
+        ) |
+        map(from_entries)
       )
 JQ
     )"
