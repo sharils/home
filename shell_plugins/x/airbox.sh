@@ -29,7 +29,7 @@ EOF
 
   *)
     airbox="/tmp/x-airbox-airbox-$(date -jf%s $(($(date +%s) / 300 * 300)) +%FT%T).json"
-    [ -f "$airbox" ] || curl https://pm25.lass-net.org/data/last-all-airbox.json.gz | gunzip >"$airbox"
+    [ -f "$airbox" ] || curl -s https://pm25.lass-net.org/data/last-all-airbox.json.gz | gunzip >"$airbox"
 
     descriptions='/tmp/x-airbox-descriptions.json'
     [ -f "$descriptions" ] || curl "$(jq --raw-output '.descriptions.URL' <"$airbox")" >"$descriptions"
