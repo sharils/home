@@ -4,30 +4,56 @@
 
 # https://pm25.lass-net.org/
 airbox() {
-  airbox="/tmp/x-airbox-airbox-$(date -jf%s $(($(date +%s) / 300 * 300)) +%FT%T).json"
-  [ -f "$airbox" ] || curl https://pm25.lass-net.org/data/last-all-airbox.json.gz | gunzip >"$airbox"
+  case "$1" in
+  w)
+    while :; do
+      json="$(airbox | jq --raw-output "$(cat <<'EOF'
+        .feeds[0] | [
+          (.["PM1 (ug/m3)"] | round),
+          (.["PM2.5 (ug/m3)"] | round),
+          (.["PM10 (ug/m3)"] | round),
+          .timestamp
+        ] |
+        @tsv
+EOF
+  )")"
+      pm1="$(echo "$json" | cut -f1)"
+      pm25="$(echo "$json" | cut -f2)"
+      pm10="$(echo "$json" | cut -f3)"
+      timestamp="$(echo "$json" | cut -f4 | sed 's/Z$/+0000/')"
+      pm="$(printf "%s %s %s %s\n" "$pm1" "$pm25" "$pm10" "$(date -jf%FT%T%z "$timestamp" +%T)" | tee /dev/stderr)"
+      [ "$pm25" -le 20 ] && printf 'display notification "%s" with title "%s"' "$pm" 'x airbox w' | osascript
+      sleep 300
+    done
+    ;;
 
-  descriptions='/tmp/x-airbox-descriptions.json'
-  [ -f "$descriptions" ] || curl "$(jq --raw-output '.descriptions.URL' <"$airbox")" >"$descriptions"
+  *)
+    airbox="/tmp/x-airbox-airbox-$(date -jf%s $(($(date +%s) / 300 * 300)) +%FT%T).json"
+    [ -f "$airbox" ] || curl https://pm25.lass-net.org/data/last-all-airbox.json.gz | gunzip >"$airbox"
 
-  filter="$(
-    cat <<'JQ'
-    .feeds |= (
-      map(
-        select(.SiteName == $ARGS.named.SiteName)
-      ) |
-      map(
-        to_entries |
+    descriptions='/tmp/x-airbox-descriptions.json'
+    [ -f "$descriptions" ] || curl "$(jq --raw-output '.descriptions.URL' <"$airbox")" >"$descriptions"
+
+    filter="$(
+      cat <<'JQ'
+      .feeds |= (
         map(
-          .key as $key |
-          .key |= ($descriptions[0][$key] // .)
+          select(.SiteName == $ARGS.named.SiteName)
         ) |
-        from_entries
+        map(
+          to_entries |
+          map(
+            .key as $key |
+            .key |= ($descriptions[0][$key] // .)
+          ) |
+          from_entries
+        )
       )
-    )
 JQ
-  )"
-  jq <"$airbox" --raw-output --arg SiteName "$X_AIRBOX" --slurpfile descriptions "$descriptions" "$filter"
+    )"
+    jq <"$airbox" --raw-output --arg SiteName "$X_AIRBOX" --slurpfile descriptions "$descriptions" "$filter"
+    ;;
+  esac
 }
 
 airbox "$@"
