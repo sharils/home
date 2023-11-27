@@ -47,3 +47,6 @@ matches:
 
   - trigger: js-pipe-through,.
     replace: node --eval 'process.stdin.pipe(new require("node:stream").Transform({transform:(chunk,encoding,callback)=>callback(null,chunk)})).pipe(process.stdout)'
+
+  - trigger: pj,.
+    replace: package.json
