@@ -10,7 +10,8 @@ aq() {
 
   case "$1" in
   json)
-    airbox="/tmp/x-aq-airbox-$(date -jf%s $(($(date +%s) / 300 * 300)) +%FT%T).json"
+    : "${X_AQ:?}"
+    airbox="/tmp/x-aq-airbox-$(date -jf%s $(($(date +%s) / 368 * 368)) +%FT%T).json"
     [ -f "$airbox" ] || curl -s https://pm25.lass-net.org/data/last-all-airbox.json.gz | gunzip >"$airbox"
 
     descriptions='/tmp/x-aq-descriptions.json'
