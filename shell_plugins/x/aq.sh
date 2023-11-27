@@ -31,7 +31,7 @@ aq() {
       )
 JQ
     )"
-    jq <"$airbox" --raw-output --arg SiteName "$X_AIRBOX" --slurpfile descriptions "$descriptions" "$filter"
+    jq <"$airbox" --raw-output --arg SiteName "$X_AQ" --slurpfile descriptions "$descriptions" "$filter"
     ;;
 
   w)
