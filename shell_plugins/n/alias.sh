@@ -94,6 +94,9 @@ keep-a-changelog changelog
 # Find unused files, dependencies and exports in your TypeScript and JavaScript projects
 knip
 
+# A simple measure of software dependency freshness
+libyear
+
 # Easily generate licenses for your projects!
 license
 
