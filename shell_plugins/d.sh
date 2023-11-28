@@ -36,7 +36,7 @@ d() {
 
   x) d exec "$@" ;;
 
-  -v | b | c | cmd | default.conf | e | i | j | ladder | node-red | r | s | v | swagger-codegen) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/d/$cmd.sh" "$@" ;;
+  -v | b | c | cmd | default.conf | e | freshli | i | j | ladder | node-red | r | s | v | swagger-codegen) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/d/$cmd.sh" "$@" ;;
 
   *)
     if [ -f "$1" ] && [ -f "$2" ]; then
