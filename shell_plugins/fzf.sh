@@ -5,7 +5,7 @@
 [ -f ~/.fzf.bash ] && . ~/.fzf.bash
 
 export FZF_COMPLETION_TRIGGER='*'
-export FZF_DEFAULT_COMMAND="fd . --hidden --unrestricted --color always --ignore-file $HOME/.fdignore"
+export FZF_DEFAULT_COMMAND="fd --hidden --unrestricted --color always --ignore-file $HOME/.fdignore"
 export FZF_DEFAULT_OPTS='--ansi --cycle --multi'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_OPTS='--preview "bat --color=always --line-range :500 {}"'
