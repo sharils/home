@@ -5,8 +5,14 @@
 pr() {
   case "$1" in
   m)
-    shift && [ $# -eq 0 ] && set -- --delete-branch --merge "$@"
-    set -- merge "$@"
+    set -o errexit -o nounset -o xtrace
+    git f
+    headRefName="$(pr v --jq .headRefName --json headRefName)"
+    git r "origin/$(pr v --jq .baseRefName --json baseRefName)" "$headRefName"
+    git po "$headRefName"
+    gh pr merge --delete-branch --merge "$@"
+    git f
+    return $?
     ;;
   r) shift && set -- ready "$@" ;;
   reviewers) shift && gh pr view | grep ^reviewers | sed 's/^reviewers:\t\([^ ]*\) (Requested)$/\1/' && return $? ;;
