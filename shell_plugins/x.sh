@@ -16,7 +16,7 @@ x() {
   hostnameise) tr '[:upper:]' '[:lower:]' | sed -E 's/[^[:alnum:]]+/-/g' ;;
   ip) shift && ipconfig getifaddr "${@:-en0}" ;;
   js) shift && node --print "$*" ;;
-  log) shift && log show --predicate 'eventMessage CONTAINS "unlockUIBecomesActive"' --last "${@:-1h}" ;;
+  log) shift && log show --debug --info --predicate process == "loginwindow" --style syslog --last "${@:-1h}" ;;
   mp) shift && mkdir -pv "$@" && cd "$@" || return ;;
   ncal) shift && ncal -wB4 -A7 ;;
   o) shift && open "${@:-.}" ;;
