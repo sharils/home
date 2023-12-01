@@ -33,6 +33,8 @@ k() {
 
   n) shift && "$SHARILS_HOME/shell_plugins/k/n.sh" "$@" ;;
 
+  o) shift && "$SHARILS_HOME/shell_plugins/k/o.sh" "$@" ;;
+
   port) "$SHARILS_HOME/shell_plugins/k/port.sh" "$@" ;;
 
   posix) echo '#%+-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~' ;;
