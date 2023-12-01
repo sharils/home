@@ -31,8 +31,6 @@ k() {
 
   id) shift && "$SHARILS_HOME/shell_plugins/k/id.sh" "$@" ;;
 
-  yue) shift && "$SHARILS_HOME/shell_plugins/k/yue.sh" "$@" ;;
-
   n) shift && "$SHARILS_HOME/shell_plugins/k/n.sh" "$@" ;;
 
   port) "$SHARILS_HOME/shell_plugins/k/port.sh" "$@" ;;
@@ -49,6 +47,8 @@ k() {
   u) shift && sed -n '3527,3842p' /Applications/qutebrowser.app/Contents/Resources/qutebrowser/config/configdata.yml | grep "$*" ;;
 
   uri) echo "!'()*-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~" ;;
+
+  yue) shift && "$SHARILS_HOME/shell_plugins/k/yue.sh" "$@" ;;
 
   zip)
     shift
