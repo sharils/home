@@ -14,7 +14,7 @@ nmap <C-X>; m`:s/[,;]*$/;/\|nohlsearch<ESC>``
 
 cnoremap <C-L><C-P> <C-R>+
 inoremap <C-L><C-P> <C-R>+
-nnoremap <LEADER>y :%y+<CR>
+nnoremap <LEADER>y<CR> :%y+<CR>
 nnoremap <LEADER>p "+gP
 vnoremap <LEADER>y "+y
 vnoremap <LEADER>p c<C-R>+<C-C>
