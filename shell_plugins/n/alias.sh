@@ -115,6 +115,9 @@ newman
 # A linter and formatter for Nginx configuration files
 nginx-linter
 
+# A better `npm publish`
+np
+
 # Check for outdated, incorrect, and unused dependencies.
 npm-check
 
