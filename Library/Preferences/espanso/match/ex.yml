@@ -1,9 +1,6 @@
 ---
 matches:
 
-  - trigger: Ex,.
-    replace: Elixir
-
   - trigger: Eu,.
     replace: ExUnit
 
@@ -18,3 +15,7 @@ matches:
 
   - trigger: Mep,.
     replace: MIX_ENV=prod
+
+  - trigger: ex,.
+    replace: elixir
+    propagate_case: true
