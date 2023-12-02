@@ -25,7 +25,7 @@ n() {
 
   lv) shift && NPM_CONFIG_LOGLEVEL='verbose' "$@" ;;
 
-  a | agpl | buf | cl | clear-npx-cache | b | bs | bsd | d | e | g | i | gi | graphql-codegen | jq | krampus | l | lighthouse | mkcert | p | pkill | r | rg | serve | tsc | vercel | w | wtfpl | xls | y | yo) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/n/$cmd.sh" "$@" ;;
+  a | agpl | buf | cl | clear-npx-cache | b | bs | bsd | d | e | g | i | gi | graphql-codegen | jq | knip | krampus | l | lighthouse | mkcert | p | pkill | r | rg | serve | tsc | vercel | w | wtfpl | xls | y | yo) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/n/$cmd.sh" "$@" ;;
 
   *)
     if "$SHARILS_HOME/shell_plugins/n/is_npm_run.sh" "$@"; then
