@@ -68,7 +68,7 @@
 	s = status
 	t = tag
 	tam = tag --annotate --message
-	tl = tag --list
+	tl = tag --list --sort taggerdate
 	u = reset
 	uh = reset --hard
 	um = reset --merge
