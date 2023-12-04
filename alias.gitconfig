@@ -68,6 +68,7 @@
 	s = status
 	t = tag
 	tam = tag --annotate --message
+	t1 = !sh -c 'git tag --list --sort -taggerdate | head -n1 | pbcopy && pbpaste'
 	tl = tag --list --sort taggerdate
 	u = reset
 	uh = reset --hard
