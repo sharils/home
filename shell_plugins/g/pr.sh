@@ -5,11 +5,12 @@
 pr() {
   case "$1" in
   m)
+    shift
     set -o errexit -o nounset -o xtrace
     git f
     headRefName="$(pr v --jq .headRefName --json headRefName)"
-    git r "origin/$(pr v --jq .baseRefName --json baseRefName)" "$headRefName"
-    git po "$headRefName"
+    git r --autosquash "origin/$(pr v --jq .baseRefName --json baseRefName)" "$headRefName"
+    git pof "$headRefName"
     gh pr merge --delete-branch --merge "$@"
     git f
     return $?
