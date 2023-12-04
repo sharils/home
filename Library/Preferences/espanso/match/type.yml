@@ -10,7 +10,7 @@ matches:
   - {"trigger":"dt,.",  "replace":"datetime"}
   - {"trigger":"en,.",  "replace":"enum"}
   - {"trigger":"f,.",   "replace":"false"}
-  - {"trigger":"fl,.",  "replace":"float"}
+  # - {"trigger":"fl,.",  "replace":"float"}
   - {"trigger":"i,.",   "replace":"integer"}
   - {"trigger":"n,.",   "replace":"null"}
   - {"trigger":"ob,.",   "replace":"object"}

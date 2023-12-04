@@ -15,3 +15,6 @@ matches:
 
   - trigger: app,.
     replace: application
+
+  - trigger: fl,.
+    replace: fastlane
