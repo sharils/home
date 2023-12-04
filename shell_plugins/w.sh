@@ -12,17 +12,17 @@ w() {
 
   c) shift && w rs cargo "$@" ;;
 
+  clear)
+    shift
+    watchman watch-del "$PWD"
+    watchman watch-project "$PWD"
+    ;;
+
   d) shift && "$SHARILS_HOME/shell_plugins/w/d.sh" "$@" ;;
 
   eslint) shift && w js "npx eslint $*" ;;
 
   ex) shift && w m --pattern '**/*.ex' '**/*.exs' --run "${*:-mix test && mix format}" ;;
-
-  fix)
-    shift
-    watchman watch-del "$PWD"
-    watchman watch-project "$PWD"
-    ;;
 
   js) shift && "$SHARILS_HOME/shell_plugins/w/js.sh" "$@" ;;
 
