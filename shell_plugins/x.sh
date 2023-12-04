@@ -18,7 +18,7 @@ x() {
   js) shift && node --print "$*" ;;
   log) shift && log show --debug --info --predicate process == "loginwindow" --style syslog --last "${@:-1h}" ;;
   mp) shift && mkdir -pv "$@" && cd "$@" || return ;;
-  ncal) shift && ncal -wB4 -A7 ;;
+  ncal) shift && ncal -wB1 -A10 | less --quit-at-eof ;;
   o) shift && open "${@:-.}" ;;
   perm) shift && python -c 'import itertools,sys;[print(" ".join(p)) for p in itertools.permutations(sys.argv[1:])]' "$@" | sort | uniq ;;
   php) shift && php -r "$*" ;;
