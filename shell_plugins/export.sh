@@ -19,7 +19,7 @@ export GREP_OPTIONS='--color=auto'
 
 export LYNX_CFG="$SHARILS_HOME/.lynx/lynx.cfg"
 
-export LESS='--RAW-CONTROL-CHARS --ignore-case --no-init'
+export LESS='--RAW-CONTROL-CHARS --ignore-case --no-init --quit-at-eof'
 
 export PAGER='less --quit-if-one-screen'
 
