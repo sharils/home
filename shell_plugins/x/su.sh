@@ -16,6 +16,13 @@ _su() {
     esac
     set -- brew "$@"
     ;;
+  k)
+    shift
+    case "$1" in
+    o) shift && set -- open "$@" ;;
+    esac
+    set -- keepassxc-cli "$@"
+    ;;
   esac
   sudo su "${X_SU:?}" -c "$*"
 }
