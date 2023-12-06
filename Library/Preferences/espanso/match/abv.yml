@@ -37,6 +37,9 @@ matches:
   - trigger: od,.
     replace: official document
 
+  - trigger: sb,.
+    replace: sandbox
+
   - trigger: sf,.
     replace: satisifaction
 
