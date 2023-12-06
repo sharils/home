@@ -4,6 +4,9 @@ matches:
   - trigger: alt,.
     replace: alternative
 
+  - trigger: cb,.
+    replace: catbox
+
   - trigger: cmd,.
     replace: command
 
