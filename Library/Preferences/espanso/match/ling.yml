@@ -10,8 +10,8 @@ matches:
   - trigger: ling,.
     replace: linguistics
 
-  - trigger: sb,.
-    replace: somebody
+  # - trigger: sb,.
+  #   replace: somebody
 
   - trigger: sci,.
     replace: science
