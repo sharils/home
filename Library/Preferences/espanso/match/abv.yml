@@ -45,3 +45,6 @@ matches:
 
   - trigger: sl,.
     replace: sick leave
+
+  - trigger: sp,.
+    replace: sandpit
