@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+[ -n "$SET_X" ] && set -x
 
 nx_ls() {
   case "$*" in

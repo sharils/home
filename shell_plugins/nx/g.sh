@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+[ -n "$SET_X" ] && set -x
 
 g() {
   if [ $# -eq 0 ]; then
