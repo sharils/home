@@ -45,6 +45,8 @@ g() {
 
   czP) shift && g cz pop "$@" ;;
 
+  dv) shift && "$SHARILS_HOME/shell_plugins/g/dv.sh" "$@" ;;
+
   s) shift && tig status "$@" ;;
 
   stripspace) shift && git grep -I --files-with-matches ' \{1,\}$' | xargs sed -i '' 's/ \{1,\}$//' ;;
