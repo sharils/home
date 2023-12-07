@@ -17,7 +17,7 @@ law() {
     curl --get --location "$src" >"$dest.zip"
     unzip "$zip" -d "$dest"
   }
-  xml="$(ls /tmp/x-law-2023-11/*.xml)"
+  xml="$(ls "$dest/"*.xml)"
 
   # yq --output-format=json "$xml" | jq '.LAWS["法規"]|map()' | bat --language json --style=plain
   yq --output-format=json "$xml" | jq --arg NAME "$1" "$(cat <<'EOF'
