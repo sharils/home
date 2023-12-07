@@ -1,6 +1,6 @@
 bind main    G             none
 
-bind generic <C-G>         +sh -c 'pbcopy <<< %(commit); pbpaste'
+bind generic <C-G>         +sh -c 'echo %(commit) | tr -d [:space:] | pbcopy; pbpaste'
 
 # bind main    Ga<ENTER>     @git add %(prompt)
 # bind status  Ga<ENTER>     @git add %(prompt)
