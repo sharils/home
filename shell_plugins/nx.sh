@@ -10,7 +10,7 @@ nx() {
 
   b) shift && nx r build "$@" ;;
 
-  e) shift && nx r e2e "$*-e2e" ;;
+  e) shift && nx r e2e "$@" ;;
 
   f) shift && nx format "$@" ;;
 
