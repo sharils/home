@@ -8,7 +8,8 @@ law() {
     return
   fi
 
-  # https://data.gov.tw/dataset/18289
+  # en https://data.gov.tw/dataset/18293
+  # zh https://data.gov.tw/dataset/18289
   src='https://sendlaw.moj.gov.tw/PublicData/GetFile.ashx?DType=XML&AuData=CF'
 
   dest="/tmp/x-law-$(date +%Y-%m)"
