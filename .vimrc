@@ -38,6 +38,7 @@ Plug 'https://github.com/chikamichi/mediawiki.vim', { 'for': 'mw' }
 Plug 'https://github.com/alunny/pegjs-vim', { 'for': 'pegjs' }
 Plug 'https://github.com/godlygeek/tabular', { 'for': ['cucumber', 'markdown'] }
 Plug 'https://github.com/majutsushi/tagbar', { 'for': ['elixir', 'eelixir'] }
+Plug 'https://github.com/freitass/todo.txt-vim', { 'for': ['todo'] }
 Plug 'https://github.com/alvan/vim-closetag', { 'for': ['html', 'javascriptreact', 'mediawiki', 'typescriptreact', 'xhtml'] }
 Plug 'https://github.com/hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'https://github.com/elixir-editors/vim-elixir', { 'for': ['elixir', 'eelixir'] }
