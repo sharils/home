@@ -10,6 +10,8 @@ w() {
 
   case "$1" in
 
+  8) shift && "$SHARILS_HOME/shell_plugins/w/8.sh" "$@" ;;
+
   c) shift && w rs cargo "$@" ;;
 
   clear)
