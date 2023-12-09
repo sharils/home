@@ -20,7 +20,7 @@ aq() {
     filter="$(
       cat <<'JQ'
       .feeds |= (
-        map(select(.SiteName == $ARGS.named.SiteName)) |
+        map(select(.device_id == $ARGS.named.device_id)) |
         map(to_entries) |
         map(
           map(
@@ -32,7 +32,7 @@ aq() {
       )
 JQ
     )"
-    jq <"$airbox" --raw-output --arg SiteName "$X_AQ" --slurpfile descriptions "$descriptions" "$filter"
+    jq <"$airbox" --raw-output --arg device_id "$X_AQ" --slurpfile descriptions "$descriptions" "$filter"
     ;;
 
   w)
