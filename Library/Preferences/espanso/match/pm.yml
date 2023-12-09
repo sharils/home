@@ -33,3 +33,6 @@ matches:
 
   - trigger: pjm,.
     replace: project management
+
+  - trigger: pmt,.
+    replace: project management triangle
