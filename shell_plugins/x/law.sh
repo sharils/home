@@ -20,7 +20,13 @@ law() {
   }
   xml="$(ls "$dest/"*.xml)"
 
-  yq --output-format=json "$xml" | jq --arg NAME "$1" "$(cat <<'EOF'
+  case "$1" in
+  刑) NAME='中華民國刑法' ;;
+  民) NAME='中華民國民法' ;;
+  *) NAME="$1";;
+  esac
+
+  yq --output-format=json "$xml" | jq --arg NAME "$NAME" "$(cat <<'EOF'
 .LAWS["法規"] |
 map(
   select(
