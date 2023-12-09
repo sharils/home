@@ -24,8 +24,7 @@ law() {
 .LAWS["法規"] |
 map(
   select(
-    .["法規名稱"] |
-    contains($ARGS.named.NAME)
+    .["法規名稱"] == $ARGS.named.NAME
   )
 )
 EOF
