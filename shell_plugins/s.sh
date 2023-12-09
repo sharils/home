@@ -7,6 +7,8 @@ s() {
 
   b) shift && $BROWSER "http://$(s t cli config gui dump-json | jq --raw-output .address)" ;;
 
+  cap) shift && tr '[:lower:]' '[:upper:]' | perl -pe 's/(?<=[[:alpha:]])./\L$&/g' ;;
+
   id) shift && s t cli show system | jq --raw-output .myID | tee /dev/stderr | npx --yes qrcode-terminal ;;
 
   l)
