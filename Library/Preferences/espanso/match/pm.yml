@@ -30,3 +30,6 @@ matches:
 
   - trigger: pdm,.
     replace: product management
+
+  - trigger: pjm,.
+    replace: project management
