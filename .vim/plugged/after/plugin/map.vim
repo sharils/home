@@ -1,4 +1,5 @@
 let mapleader = ' '
+let maplocalleader = ' '
 
 map Y y$
 
