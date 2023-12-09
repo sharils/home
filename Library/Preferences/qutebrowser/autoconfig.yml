@@ -108,6 +108,7 @@ settings:
     exercism.org: true
     file://*: true
     firebase.google.com: true
+    framadate.org: true
     github.com: true
     global: false
     hexdocs.pm: true
