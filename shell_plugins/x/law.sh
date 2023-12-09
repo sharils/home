@@ -24,7 +24,8 @@ law() {
 .LAWS["法規"] |
 map(
   select(
-    .["法規名稱"] == $ARGS.named.NAME
+    .["法規名稱"] == $ARGS.named.NAME and
+    .["廢止註記"] != "廢"
   )
 )
 EOF
