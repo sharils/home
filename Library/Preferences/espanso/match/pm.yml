@@ -27,3 +27,6 @@ matches:
 
   - trigger: lf,.
     replace: loyalty free
+
+  - trigger: pdm,.
+    replace: product management
