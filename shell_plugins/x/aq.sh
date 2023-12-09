@@ -36,6 +36,8 @@ JQ
     ;;
 
   w)
+    printf 'https://pm25.lass-net.org/grafana/d/airbox_dashboard_v3/airdata?orgId=2&var-source=AirBox&var-device_id=%s&refresh=1m\n' '08BEAC0AB704' >&2
+
     while :; do
       json="$(aq json | jq --raw-output "$(
         cat <<'EOF'
