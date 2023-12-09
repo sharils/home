@@ -2,6 +2,8 @@
 
 ## Staging/unstaging maps
 
+bind status  X              @git cl %(file)
+
 ## Diff maps
 
 ## Navigation maps
