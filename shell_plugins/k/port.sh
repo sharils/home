@@ -37,6 +37,7 @@ tel 1999
 resolution 2758
 fat tom 4675
 heart 5999
+sg area 7251
 teeth 8020
 cpu 8086
 hours 8760
