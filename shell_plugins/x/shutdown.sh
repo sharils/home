@@ -3,7 +3,7 @@
 [ -n "$SET_X" ] && set -x
 
 x_shutdown() {
-  shutdown -r now
+  sudo shutdown -r now
 }
 
 x_shutdown "$@"
