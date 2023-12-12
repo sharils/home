@@ -39,12 +39,12 @@ x() {
     x fx "$cmd" | x bc "$(awk '{ print $3 }')" '*' "${@:-1}"
     ;;
 
-  ai | ap | aq | bc | cal | cat-weight | cert | cm | county-sunrise | data | editorconfig | eq | erl | ex | fer | focus | fong | fx | getnf | gif | hbt | html | ico | jq | kibble | law | members | mh | paisa | pdf | png | py | rm | salary | sh | smolsite | sn | sqlite | ssh-keygen | ss | su | touch | tree | tz | uri | venv | webp | whois | zip)
+  ai | ap | aq | bc | cal | cat-weight | cert | cm | county-sunrise | data | editorconfig | eq | erl | ex | fer | focus | fong | fx | getnf | gif | hbt | html | ico | jq | kibble | law | members | mh | paisa | pdf | png | py | rm | salary | sh | shutdown | smolsite | sn | sqlite | ssh-keygen | ss | su | touch | tree | tz | uri | venv | webp | whois | zip)
     cmd="$1" && shift
     "$SHARILS_HOME/shell_plugins/x/$cmd.sh" "$@"
     ;;
 
-  am | at | au | bg | br | by | cn | cz | de | dk | ee | et | fi | fr | gb | gr | hk | hr | hu | ie | il | is | it | jp | kr | kz | lt | nl | no | nz | pl | pt | ro | ru | se | shutdown | si | sk | tr | tw | ua | us | yu | za | dech | frbe | frca | frch | itch | nlbe | ca | es | eu | en) "$SHARILS_HOME/shell_plugins/x/currency.sh" "$@" ;;
+  am | at | au | bg | br | by | cn | cz | de | dk | ee | et | fi | fr | gb | gr | hk | hr | hu | ie | il | is | it | jp | kr | kz | lt | nl | no | nz | pl | pt | ro | ru | se | si | sk | tr | tw | ua | us | yu | za | dech | frbe | frca | frch | itch | nlbe | ca | es | eu | en) "$SHARILS_HOME/shell_plugins/x/currency.sh" "$@" ;;
 
   *) (set -x && SET_X=1 "$@") ;;
   esac
