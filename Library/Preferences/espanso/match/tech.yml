@@ -22,6 +22,9 @@ matches:
   - trigger: conf,.
     replace: configure
 
+  - trigger: ds,.
+    replace: dataset
+
   - trigger: dt,.
     replace: desktop
 
