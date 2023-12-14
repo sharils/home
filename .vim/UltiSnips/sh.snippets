@@ -36,6 +36,11 @@ snippet ca "case);;" b
 ${1:*}) $0 ;;
 endsnippet
 
+snippet curl "curl /tmp" b
+[ -f "${$2:=/tmp/${1:x-train}-${2:hsr}-$(date +%F).${4:${3/.*\.//}}}" ] ||
+	curl ${3:https://www.rb.gov.tw/public/files/artsinfo/1700038063-m0.csv} >"$$2"
+endsnippet
+
 snippet ea "export ASDF__VERSION=12.22.12" b
 export ASDF_${1:NODEJS}_VERSION='${2:12.22.12}'
 endsnippet
