@@ -162,6 +162,7 @@ settings:
     www.railway.gov.tw: true
     www.reddit.com: true
     www.sharedrop.io: true
+    www.taaze.tw: true
     www.thsrc.com.tw: true
     www.typescriptlang.org: true
     www.ubus.com.tw: true
@@ -249,6 +250,7 @@ settings:
       sp: https://www.skypack.dev/search?q={}
       su: https://swurl.com/?q={}
       sutian: https://sutian.moe.edu.tw/zh-hant/tshiau/?lui=tai_su&tsha={}
+      taaze: https://www.taaze.tw/rwd_searchResult.html?keyType%5B%5D=0&keyword%5B%5D={}
       tcl: https://rwd-library.taichung.gov.tw/webpac_rwd/search.cfm?m=ss&k0={}&t0=k&c0=and
       tldr: https://tldr.ostera.io/{}
       u: https://search.brave.com/search?q=qutebrowser+{}
