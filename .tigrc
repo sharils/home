@@ -57,6 +57,8 @@ set log-options                 = --show-signature
 set main-view-id-display        = yes
 set mouse                       = yes
 set mouse-scroll                = 1
+set main-view-date              = custom
+set main-view-date-format       = "%m%dT%H"
 set wrap-lines                  = yes
 set status-show-untracked-files = yes
 
