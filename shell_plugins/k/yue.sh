@@ -32,14 +32,14 @@ aang  ㄤ
 aap   ㄚㄆ
 aat   ㄚㄊ
 aak   ㄚㄎ
-ai    ㄧ
-au    ㄨ
-am    ㆬ
-an    ㄣ
-ang   ㄥ
-ap    ㄆ
-at    ㄊ
-ak    ㄎ
+ai    ㆿ ㄧ
+au    ㆿ ㄨ
+am    ㆿ ㆬ
+an    ㆿ ㄣ
+ang   ㆿ ㄥ
+ap    ㆿ ㄆ
+at    ㆿ ㄊ
+ak    ㆿ ㄎ
 e     ㄝ
 ei    ㄟ
 eu    ㄝㄨ
@@ -60,8 +60,8 @@ ik    ㄧㄎ
 o     ㄛ
 oi    ㄛㄧ
 ou    ㄡ
-on    ㄛㄋ
-ong   ㄛㄫ
+on    干
+ong   丄
 ot    ㄛㄊ
 ok    ㄛㄎ
 u     ㄨ
@@ -70,12 +70,12 @@ un    ㄨㄣ
 ung   ㄨㄥ
 ut    ㄨㄊ
 uk    ㄨㄎ
-oe
-oeng  ㄥ
-oek   ㄎ
-eoi   ㄧ
-eon   ㄣ
-eot   ㄊ
+oe    ㆾ
+oeng  ㆾ ㄥ
+oek   ㆾ ㄎ
+eoi   ㆾ ㄧ
+eon   ㆾ ㄣ
+eot   ㆾ ㄊ
 yu    ㄩ
 yun   ㄩㄣ
 yut   ㄩㄊ
@@ -83,7 +83,8 @@ m     ㆬ
 ng    ㆭ
 EOF
 
-  echo https://zh.wikipedia.org/zh-tw/%E7%B2%B5%E8%AA%9E%E6%B3%A8%E9%9F%B3%E7%AC%A6%E8%99%9F#%E9%9F%BB%E6%AF%8D
+  echo 'Cantonese phonology https://en.wikipedia.org/wiki/Cantonese_phonology#Eight_vowel_analysis'
+  echo '粵語注音符號 https://zh.wikipedia.org/zh-tw/%E7%B2%B5%E8%AA%9E%E6%B3%A8%E9%9F%B3%E7%AC%A6%E8%99%9F#%E9%9F%BB%E6%AF%8D'
 }
 
 yue "$@"
