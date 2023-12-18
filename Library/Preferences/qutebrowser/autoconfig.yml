@@ -105,6 +105,7 @@ settings:
     docs.python.org: true
     docs.rs: true
     editor.swagger.io: true
+    excalidraw.com: true
     exercism.org: true
     file://*: true
     firebase.google.com: true
@@ -184,6 +185,8 @@ settings:
     www.sharedrop.io: true
   content.notifications.enabled:
     global: false
+  input.mode_override:
+    excalidraw.com: passthrough
   url.default_page:
     global: qute://start
   url.searchengines:
