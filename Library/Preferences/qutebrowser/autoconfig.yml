@@ -167,6 +167,7 @@ settings:
     www.sharedrop.io: true
     www.taaze.tw: true
     www.thsrc.com.tw: true
+    www.tldraw.com: true
     www.typescriptlang.org: true
     www.ubus.com.tw: true
     www.wolframalpha.com: true
@@ -187,6 +188,7 @@ settings:
     global: false
   input.mode_override:
     excalidraw.com: passthrough
+    www.tldraw.com: passthrough
   url.default_page:
     global: qute://start
   url.searchengines:
