@@ -12,7 +12,7 @@ w() {
       tee /dev/stderr |
       cut -f1)" != 200 ]
   do
-    sleep "${2:-600}"
+    sleep "${2:-1}"
   done
 }
 
