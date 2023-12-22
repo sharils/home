@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Amp,.
+    replace: Amplitude
+
   - trigger: Ei,.
     replace: E Ink
 
