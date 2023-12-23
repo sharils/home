@@ -21,41 +21,41 @@ console.assert($1)
 endsnippet
 
 snippet cod "console.debug()" w
-console.debug(${1:"`jot -cr 20 48 90 | tr -d ':;<=>?@ILOU\n' | head -c4``>?@ILOU\n' | head -c4`"}$2)
+console.debug("`jot -cr 20 48 90 | tr -d ':;<=>?@ILOU\n' | head -c4``>?@ILOU\n' | head -c4`", structuredClone($1))
 endsnippet
 
 snippet coe "console.error()" w
-console.error($1)
+console.error("`jot -cr 20 48 90 | tr -d ':;<=>?@ILOU\n' | head -c4``>?@ILOU\n' | head -c4`", structuredClone($1))
 endsnippet
 
 snippet cog "console.group()" w
-console.group(${1:`!p snip.rv = path_and_line()`})
+console.group(${1:"`jot -cr 20 48 90 | tr -d ':;<=>?@ILOU\n' | head -c4``>?@ILOU\n' | head -c4`"})
 ${2:${VISUAL}}
 console.groupEnd($1)
 endsnippet
 
 snippet cogc "console.Collapsed()" w
-console.groupCollapsed(${1:`!p snip.rv = path_and_line()`})
+console.groupCollapsed(${1:"`jot -cr 20 48 90 | tr -d ':;<=>?@ILOU\n' | head -c4``>?@ILOU\n' | head -c4`"})
 ${2:${VISUAL}}
 console.groupEnd($1)
 endsnippet
 
 snippet coi "console.info()" w
-console.info($1)
+console.info("`jot -cr 20 48 90 | tr -d ':;<=>?@ILOU\n' | head -c4``>?@ILOU\n' | head -c4`", structuredClone($1))
 endsnippet
 
 snippet col "console.log()" w
-console.log(${1:"`jot -cr 20 48 90 | tr -d ':;<=>?@ILOU\n' | head -c4``>?@ILOU\n' | head -c4`"}$2)
+console.log("`jot -cr 20 48 90 | tr -d ':;<=>?@ILOU\n' | head -c4``>?@ILOU\n' | head -c4`", structuredClone($1))
 endsnippet
 
 snippet cop "console.profile()" w
-console.profile(${1:`!p snip.rv = path_and_line()`})
+console.profile(${1:}"`jot -cr 20 48 90 | tr -d ':;<=>?@ILOU\n' | head -c4``>?@ILOU\n' | head -c4`")
 ${2:${VISUAL}}
 console.profileEnd($1)
 endsnippet
 
 snippet cot "console.time()" w
-console.time(${1:`!p snip.rv = path_and_line()`})
+console.time(${1:"`jot -cr 20 48 90 | tr -d ':;<=>?@ILOU\n' | head -c4``>?@ILOU\n' | head -c4`"})
 console.timeLog($1)
 ${2:${VISUAL}}
 console.timeEnd($1)
@@ -70,7 +70,7 @@ console.trace($1)
 endsnippet
 
 snippet cow "console.warn()" w
-console.warn($1)
+console.warn("`jot -cr 20 48 90 | tr -d ':;<=>?@ILOU\n' | head -c4``>?@ILOU\n' | head -c4`", structuredClone($1))
 endsnippet
 
 snippet fe "fetch" w
