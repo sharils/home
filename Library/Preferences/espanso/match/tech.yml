@@ -55,6 +55,9 @@ matches:
   - trigger: ss,.
     replace: spreadsheet
 
+  - trigger: sw,.
+    replace: software
+
   - trigger: sync,.
     replace: synchronization
 
