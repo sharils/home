@@ -1,6 +1,22 @@
 ---
 matches:
 
+  # 9. Questions To Uncover Jobs To Be Done https://www.facebook.com/photo/?fbid=112336425093217&set=pcb.112341338426059
+  - trigger: QuestionsToUncoverJobsToBeDone,.
+    form: |
+      Assume I’m a Product Manager for [[app]]. It will be serving the
+      [[region]]. I want to conduct some consumer research to figure out my
+      consumer's jobs-to-be-done. What personas should I target and then what
+      questions should I be asking them to elicit their job-to-be-done. Take
+      inspiration from the book "Mom Test"
+    form_fields:
+      app:
+        multiline: true
+        default: a grocery delivery mobile app
+      region:
+        multiline: true
+        default: Toronto GTA region only
+
   # 10. Drafting Survey Questions https://www.facebook.com/photo/?fbid=112336485093211&set=pcb.112341338426059
   - trigger: DraftingSurveyQuestions,.
     form: |
