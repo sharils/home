@@ -111,6 +111,7 @@ settings:
     firebase.google.com: true
     framadate.org: true
     framindmap.org: true
+    g0v.social: true
     github.com: true
     global: false
     hexdocs.pm: true
