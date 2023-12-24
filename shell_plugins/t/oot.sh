@@ -14,7 +14,7 @@ oot() {
     set -- timeline "$@"
     ;;
   n) shift && set -- notifications "${@:---reverse}" ;;
-  p) shift && set -- post "${@:---reverse}" ;;
+  p) shift && set -- post "${@:---editor}" ;;
   t) shift && set -- thread "$@" ;;
   ui) shift && set -- tui "$@" ;;
   esac
