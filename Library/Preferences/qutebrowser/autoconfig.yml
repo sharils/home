@@ -110,6 +110,7 @@ settings:
     file://*: true
     firebase.google.com: true
     framadate.org: true
+    framindmap.org: true
     github.com: true
     global: false
     hexdocs.pm: true
