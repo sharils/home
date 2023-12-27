@@ -16,6 +16,9 @@ matches:
   - trigger: Gp,.
     replace: Googla Play
 
+  - trigger: Gsc,.
+    replace: Google Search Console
+
   - trigger: Gtr,.
     replace: Google Trends
 
