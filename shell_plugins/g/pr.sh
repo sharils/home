@@ -6,6 +6,7 @@ pr() {
   case "$1" in
   m)
     shift
+    set -o errexit -o nounset
     git f
     headRefName="$(pr v --jq .headRefName --json headRefName)"
     git r --autosquash "origin/$(pr v --jq .baseRefName --json baseRefName)" "$headRefName"
