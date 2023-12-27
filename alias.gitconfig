@@ -38,6 +38,7 @@
 	coo = checkout --ours
 	cot = checkout --theirs
 	cr = revert
+	crn = !sh -c 'git revert --no-edit $0 && git revert --no-commit @ && git reset @'
 	cp = cherry-pick
 	cw = commit --amend --only
 	cz = stash
