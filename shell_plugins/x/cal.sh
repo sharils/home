@@ -12,6 +12,21 @@ x_cal() {
   case "$1" in
   2023) md5_url='ed0be53097a9da90ee037896396142c2' ;;
   2024) md5_url='2c1c090b51f0b61d9283d79a160f211d' ;;
+
+  st)
+    shift
+    # https://data.gov.tw/dataset/157677
+    [ -f "${st:=/tmp/x-cal-st-$(date +%Y).csv}" ] ||
+      curl --location 'https://opendata.cwa.gov.tw/fileapi/v1/opendataapi/A-A0087-003?Authorization=rdec-key-123-45678-011121314&format=CSV' >"$st"
+    yq @json "$st" | jq --arg TODAY "$(date +%F)" "$(cat <<'JQ'
+      map(select(.["節氣"] | type == "string")) |
+      map(select($ARGS.named.TODAY <= .["格里曆日期"])) |
+      .[0:4]
+JQ
+)"
+    return $?
+    ;;
+
   tw)
     {
       x_cal 2023
