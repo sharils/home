@@ -21,6 +21,14 @@ x_cal() {
       tr -d '"' | tr , ' '
     return $?
     ;;
+  zh)
+    shift
+    # https://data.gov.tw/dataset/157677
+    [ -f "${zh:=/tmp/x-cal-zh-$(date +%Y).csv}" ] ||
+      curl --location 'https://opendata.cwa.gov.tw/fileapi/v1/opendataapi/A-A0087-001?Authorization=rdec-key-123-45678-011121314&format=CSV' >"$zh"
+    yq @json "$zh" | jq --arg TODAY "$(date +%F)" "${@:-map(select(.[\"格里曆日期\"] == \$ARGS.named.TODAY))}"
+    return $?
+    ;;
   esac
 
   tmp="/tmp/${md5_url}_export.json"
