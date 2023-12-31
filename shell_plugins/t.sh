@@ -31,6 +31,8 @@ t() {
 
   d) shift && "$SHARILS_HOME/shell_plugins/t/d.sh" "$@" ;;
 
+  dsu) shift && "$SHARILS_HOME/shell_plugins/t/dsu.sh" "$@" ;;
+
   e) shift && "$SHARILS_HOME/shell_plugins/t/e.sh" "$@" ;;
 
   n) shift && "$SHARILS_HOME/shell_plugins/t/oot.sh" notifications "${@:---reverse}" ;;
