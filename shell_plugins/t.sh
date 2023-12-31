@@ -19,6 +19,8 @@ t() {
 
   case $1 in
 
+  auth) shift && "$SHARILS_HOME/shell_plugins/t/oot.sh" auth "$@" ;;
+
   b)
     shift
     if [ $# -eq 0 ]; then
