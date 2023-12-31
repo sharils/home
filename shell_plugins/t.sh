@@ -47,7 +47,7 @@ t() {
 
   su) shift && "$SHARILS_HOME/shell_plugins/t/su.sh" "$@" ;;
 
-  t) "$SHARILS_HOME/shell_plugins/t/oot.sh" thread "$@" ;;
+  t) shift && "$SHARILS_HOME/shell_plugins/t/oot.sh" thread "$@" ;;
 
   ui) shift && "$SHARILS_HOME/shell_plugins/t/oot.sh" tui "$@" ;;
 
