@@ -4,6 +4,9 @@ matches:
   - trigger: Amp,.
     replace: Amplitude
 
+  - trigger: Bt,.
+    replace: Bluetooth
+
   - trigger: Ei,.
     replace: E Ink
 
