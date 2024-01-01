@@ -5,7 +5,12 @@
 f() {
   cmd="$1"
   case "$cmd" in
-  i) shift && git flow init "${@:---force}" ;;
+  i)
+    shift
+    [ $# -eq 0 ] && set -- --defaults --force "$@"
+    git flow init "$@"
+    return $?
+    ;;
   f) cmd='feature' ;;
   b) cmd='bugfix' ;;
   r) cmd='release' ;;
