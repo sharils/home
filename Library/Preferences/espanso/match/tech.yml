@@ -55,6 +55,9 @@ matches:
   - trigger: scs,.
     replace: screenshot
 
+  - trigger: sp,.
+    replace: smart phone
+
   - trigger: ss,.
     replace: spreadsheet
 
