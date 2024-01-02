@@ -740,6 +740,7 @@ matches:
   - {"replace":"❎","trigger":":negative_squared_cross_mark:"}
   - {"replace":"✅","trigger":":white_check_mark:"}
   - {"replace":"✅","trigger":":white_tick:"}
+  - {"replace":"✅","trigger":":tick:"}
   - {"replace":"✴️","trigger":":eight_pointed_black_star:"}
   - {"replace":"💟","trigger":":heart_decoration:"}
   - {"replace":"🆚","trigger":":vs:"}
