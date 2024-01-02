@@ -6,9 +6,14 @@ code() {
   # https://data.gov.tw/dataset/5948
   [ -f "${zip_code:=/tmp/x-zip-code-$(date +%Y).json}" ] ||
     curl 'https://quality.data.gov.tw//dq_download_json.php?nid=5948&md5_url=e1f6004ad33eb3ff3a824fb992a4b01a' >"$zip_code"
-  administrative_division="$1" && shift
+  administrative_division="$(echo "$1" | tr '台' '臺')" && shift
   townships_cities_districts="$1" && shift
-  road="$(echo "$1" | tr '0123456789' '０１２３４５６７８９')" && shift
+  road="$(
+    echo "$1" |
+      sed 's/十/10/' |
+      tr '一二三四五六七八九' '１２３４５６７８９' |
+      tr '0123456789' '０１２３４５６７８９'
+  )" && shift
   jq <"$zip_code" "$(
     cat <<'JQ'
 map(select(.["縣市名稱"] == $ARGS.positional[0])) |
