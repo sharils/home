@@ -2,6 +2,7 @@
 
 [ -n "$SET_X" ] && set -x
 
+alias ..='cd ..'
 alias ...='z .'
 
 __z_t_tmp=''
