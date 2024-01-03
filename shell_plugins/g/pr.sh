@@ -16,7 +16,7 @@ pr() {
     return $?
     ;;
   r) shift && set -- ready "$@" ;;
-  reviewers) shift && gh pr view | grep ^reviewers | sed 's/^reviewers:\t\([^ ]*\) (Requested)$/\1/' && return $? ;;
+  reviewers) shift && gh pr view | grep ^reviewers | sed 's/^reviewers:\t\([^ ]*\) (Approved)$/\1/' && return $? ;;
   rr) shift && set -- edit --add-reviewer "$(pr reviewers)" "$@" ;;
   v) shift && set -- view "$@" ;;
   esac
