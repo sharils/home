@@ -81,6 +81,7 @@ matches:
   - {"replace":"😼","trigger":":smirk_cat:"}
   - {"replace":"🙀","trigger":":scream_cat:"}
   - {"replace":"😿","trigger":":crying_cat_face:"}
+  - {"replace":"😿","trigger":":ccf:"}
   - {"replace":"😹","trigger":":joy_cat:"}
   - {"replace":"😾","trigger":":pouting_cat:"}
   - {"replace":"👹","trigger":":japanese_ogre:"}
