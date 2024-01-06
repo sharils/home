@@ -22,6 +22,9 @@ n_alias() {
 # Security & License Compliance For Your App's Dependencies 🪱
 @sandworm/audit sandworm sandworm-audit
 
+# Pluggable linting tool to prevent committing credential.
+@secretlint/quick-start secretlint
+
 # Presentation slides for developers
 @slidev/cli slidev
 
