@@ -10,3 +10,5 @@ matches:
   - trigger: Hsp,.
     replace: Highly Sensitive Person (HSP)
 
+  - trigger: Pmr,.
+    replace: Progressive Muscle Relaxation
