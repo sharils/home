@@ -4,9 +4,6 @@ matches:
   - trigger: Cs,.
     replace: Computer Science
 
-  - trigger: Ddd,.
-    replace: Domain-Driven Design
-
   - trigger: Fsm,.
     replace: Finite State Machine
 
