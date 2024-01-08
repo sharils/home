@@ -1,1 +1,14 @@
 extends boolean
+
+snippet dsu "Daily Stand-up" b
+`! date +%F`:
+	Tomorrow:
+		- $5
+	Today:
+		- $2
+	Grateful: 🙇
+		- I’m grateful ${1:TODO}.
+	Time:
+		- I woke up at ${3:TODO}.
+		- I went to bed at ${4:TODO}.
+endsnippet
