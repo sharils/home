@@ -5,7 +5,7 @@
 x_zip() {
   case "$1" in
   code) shift && "$SHARILS_HOME/shell_plugins/x/zip/code.sh" "$@" ;;
-  *) zip --encrypt --recurse-paths ~"/Downloads/$(date -uIseconds | sed 's#+00:00$#Z#;s#[^[:digit:]T]##g').zip" "$@" ;;
+  *) zip --encrypt --recurse-paths "$HOME/Downloads/$(date -uIseconds | sed 's#+00:00$#Z#;s#[^[:digit:]T]##g').zip" "$@" ;;
   esac
 }
 
