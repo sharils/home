@@ -12,3 +12,15 @@ snippet dsu "Daily Stand-up" b
 		- I woke up at ${3:TODO}.
 		- I went to bed at ${4:TODO}.
 endsnippet
+
+snippet rs "Retrospective" b
+`! date +%Y-W%V`:
+	Loved: ✅
+		- $1
+	Loathed: ❌
+		- $2
+	Learned: 📘
+		- $3
+	Longed for: ⭐️
+		- $4
+endsnippet
