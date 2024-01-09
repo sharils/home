@@ -1,0 +1,39 @@
+---
+matches:
+
+  - trigger: M1,.
+    replace: January
+
+  - trigger: M2,.
+    replace: February
+
+  - trigger: M3,.
+    replace: March
+
+  - trigger: M4,.
+    replace: April
+
+  - trigger: M5,.
+    replace: May
+
+  - trigger: M6,.
+    replace: June
+
+  - trigger: M7,.
+    replace: July
+
+  - trigger: M8,.
+    replace: August
+
+  - trigger: M9,.
+    replace: September
+
+  - trigger: M10,.
+    replace: October
+
+  - trigger: M11,.
+    replace: November
+
+  - trigger: M12,.
+    replace: December
+
