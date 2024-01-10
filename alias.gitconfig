@@ -36,6 +36,7 @@
 	cod = checkout develop
 	com = checkout main
 	coo = checkout --ours
+	cop = checkout --patch
 	cot = checkout --theirs
 	cr = revert
 	crn = !sh -c 'git revert --no-edit $0 && git revert --no-commit @ && git reset @'
