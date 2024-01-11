@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Ph,.
+    replace: PLACE_HOLDER
+
   - trigger: alt,.
     replace: alternative
 
