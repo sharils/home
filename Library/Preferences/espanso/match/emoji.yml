@@ -619,6 +619,7 @@ matches:
   - {"replace":"🚦","trigger":":vertical_traffic_light:"}
   - {"replace":"🚥","trigger":":traffic_light:"}
   - {"replace":"⚠️","trigger":":warning:"}
+  - {"replace":"🚧","trigger":":blkr:"}
   - {"replace":"🚧","trigger":":construction:"}
   - {"replace":"🔰","trigger":":beginner:"}
   - {"replace":"⛽️","trigger":":fuelpump:"}
