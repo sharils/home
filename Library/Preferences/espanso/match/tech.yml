@@ -46,6 +46,9 @@ matches:
   - trigger: noti,.
     replace: notification
 
+  - trigger: ps,.
+    replace: podcast
+
   - trigger: scc,.
     replace: screencast
 
