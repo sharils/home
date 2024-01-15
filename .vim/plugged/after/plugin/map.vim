@@ -112,8 +112,8 @@ inoremap <C-[>* °
 cnoremap <C-[>* °
 inoremap <C-[>- –
 cnoremap <C-[>- –
-inoremap <C-_>- —
-cnoremap <C-_>- —
+inoremap <C-[>_ —
+cnoremap <C-[>_ —
 inoremap <C-[>} ’
 cnoremap <C-[>} ’
 nmap <LEADER>0 :vertical resize 100<CR>
