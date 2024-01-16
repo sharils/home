@@ -15,6 +15,7 @@ Lactation[1]                    2.0–6.0
 Growth                          2.5
 
 Kibble                          KCal/G
+Royal Canin LP34                3.87
 Hills’ C/D (low stress)         3.89
 
 [1]: based on number of offspring and weeks of lactation
@@ -26,7 +27,7 @@ EOF
 
   body_weight_kg="${1:?}"
   life_stage_factor="${2:?}"
-  kibble_kcal_g="${3:-3.89}"
+  kibble_kcal_g="${3:-3.87}"
 
   # https://unix.stackexchange.com/a/420970
   bc --mathlib --expression="e(l($body_weight_kg) * 0.75) * 70 * $life_stage_factor / $kibble_kcal_g"
