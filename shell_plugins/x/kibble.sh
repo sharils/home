@@ -5,14 +5,14 @@
 kibble() {
   if [ $# -eq 0 ]; then
     cat <<'EOF'
-Nutritional Assessment Factors  Feline Life Stage Factors
-Neutered adults                 1.2–1.4
-Intact adult                    1.4-1.6
-Inactive/obese prone            1.0
-Weight loss                     0.8
-Gestation                       1.6–2.0
-Lactation[1]                    2.0–6.0
-Growth                          2.5
+Nutritional Assessment Factors  Feline Life Stage Factors  No
+Neutered adults                 1.2–1.4                    N
+Intact adult                    1.4-1.6                    I
+Inactive/obese prone            1.0                        O
+Weight loss                     0.8                        W
+Gestation                       1.6–2.0                    G
+Lactation[1]                    2.0–6.0                    L
+Growth                          2.5                        R
 
 Kibble                          KCal/G
 Royal Canin LP34                3.87
@@ -26,11 +26,28 @@ EOF
   fi
 
   body_weight_kg="${1:?}"
-  life_stage_factor="${2:?}"
+  life_stage_factor="${2:-N}"
   kibble_kcal_g="${3:-3.87}"
 
-  # https://unix.stackexchange.com/a/420970
-  bc --mathlib --expression="e(l($body_weight_kg) * 0.75) * 70 * $life_stage_factor / $kibble_kcal_g"
+  case "$life_stage_factor" in
+  N) life_stage_factor_min=1.2 && life_stage_factor_max=1.4 ;;
+  I) life_stage_factor_min=1.4 && life_stage_factor_max=1.6 ;;
+  O) life_stage_factor_min=1.0 && life_stage_factor_max=1.0 ;;
+  W) life_stage_factor_min=0.8 && life_stage_factor_max=0.8 ;;
+  G) life_stage_factor_min=1.6 && life_stage_factor_max=2.0 ;;
+  L) life_stage_factor_min=2.0 && life_stage_factor_max=6.0 ;;
+  R) life_stage_factor_min=2.5 && life_stage_factor_max=2.5 ;;
+  esac
+
+  if [ "$life_stage_factor_min" = "$life_stage_factor_max" ]; then
+    # https://unix.stackexchange.com/a/420970
+    printf "kibble = %sg (per day)" \
+      "$(bc --mathlib --expression="scale=2; e(l($body_weight_kg) * 0.75) * 70 * $life_stage_factor_min / $kibble_kcal_g")"
+  else
+    printf "%sg <= kibble <= %sg (per day)" \
+      "$(bc --mathlib --expression="scale=2; e(l($body_weight_kg) * 0.75) * 70 * $life_stage_factor_min / $kibble_kcal_g")" \
+      "$(bc --mathlib --expression="scale=2; e(l($body_weight_kg) * 0.75) * 70 * $life_stage_factor_max / $kibble_kcal_g")"
+  fi
 }
 
 kibble "$@"
