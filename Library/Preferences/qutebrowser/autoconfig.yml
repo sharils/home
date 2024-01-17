@@ -199,6 +199,8 @@ settings:
   input.mode_override:
     excalidraw.com: passthrough
     www.tldraw.com: passthrough
+  session.lazy_restore:
+    global: true
   url.default_page:
     global: qute://start
   url.searchengines:
