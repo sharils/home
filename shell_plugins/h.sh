@@ -32,6 +32,8 @@ h() {
 
   g) shift && "$SHARILS_HOME/shell_plugins/h/g.sh" "$@" ;;
 
+  grep) shift && "$SHARILS_HOME/shell_plugins/h/grep.sh" "$@" ;;
+
   m) echo 'h mix <command> instead' >&2 ;;
 
   mix) shift && "$SHARILS_HOME/shell_plugins/h/mix.sh" "$@" ;;
