@@ -1,39 +1,7 @@
-# asdf
-.tool-versions
-
-# ctags
-tags
-
-# direnv
-.envrc
-
-# django
-/.dbshell
-
-# expo
-/web-build
-
-# macos
-.DS_Store
-
-# mongodb
-/.mongorc.js
-
-# python
-__pycache__
-
 # vim
 /.vim/.netrwhist
-
-# vim-obsession
-Session.vim
 
 # vim-plug
 /.vim/plugged/*
 !.vim/plugged/after
 !.vim/plugged/before
-
-# custom
-gitignore.*
-*.gitignore
-*.gitignore.*

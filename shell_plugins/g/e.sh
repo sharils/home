@@ -11,7 +11,7 @@ e() {
     "$SHARILS_HOME/.tig/bind-deprecated.tigrc" \
     "$SHARILS_HOME/.vim/plugged/after/plugin/vim-fugitive.vim" \
     "$SHARILS_HOME/.vim/plugged/vim-fugitive/autoload/fugitive.vim" \
-    "$SHARILS_HOME/.gitignore" \
+    "$SHARILS_HOME/.config/git/ignore" \
     "$SHARILS_HOME/.gitconfig"
 }
 

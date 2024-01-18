@@ -1,0 +1,31 @@
+# asdf
+.tool-versions
+
+# ctags
+tags
+
+# direnv
+.envrc
+
+# django
+/.dbshell
+
+# expo
+/web-build
+
+# macos
+.DS_Store
+
+# mongodb
+/.mongorc.js
+
+# python
+__pycache__
+
+# vim-obsession
+Session.vim
+
+# custom
+gitignore.*
+*.gitignore
+*.gitignore.*

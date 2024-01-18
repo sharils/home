@@ -3,7 +3,6 @@
 	verbose = 2
 [core]
 	autocrlf = input
-	excludesfile = ~/.gitignore
 	pager = less --quit-if-one-screen
 [diff]
 	tool = vimdiff
