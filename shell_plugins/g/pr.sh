@@ -3,7 +3,7 @@
 [ -n "$SET_X" ] && set -x
 
 pr() {
-  case "$1" in
+  case "${1:-v}" in
   m)
     shift
     set -o errexit -o nounset
