@@ -31,6 +31,9 @@ matches:
   - trigger: Twm,.
     replace: Taiwan Mobile
 
+  - trigger: Wm,.
+    replace: Wayback Machine
+
   - trigger: Wp,.
     replace: WordPress
 
