@@ -106,6 +106,7 @@ settings:
     docs.expo.dev: true
     docs.python.org: true
     docs.rs: true
+    ebook.nlpi.edu.tw: true
     editor.swagger.io: true
     excalidraw.com: true
     exercism.org: true
@@ -250,6 +251,7 @@ settings:
       moe: https://www.moedict.tw/{}
       ncl: https://www.ncl.app.visionmedia.com.tw/video/search?q={}
       nlpi: https://ipac.nlpi.edu.tw/search?searchField=FullText&searchInput={}
+      nlpie: https://ebook.nlpi.edu.tw/search?search_field=TI&search_input={}
       od: https://www.oxfordlearnersdictionaries.com/search/english/?=english&q={}
       og: https://iq.opengenus.org/tag/{}/
       ol: https://openlibrary.org/search?mode=everything&q={}
