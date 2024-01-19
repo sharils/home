@@ -21,8 +21,8 @@ law() {
   xml="$(ls "$dest/"*.xml)"
 
   case "$1" in
-  勞基法) NAME='勞動基準法' ;;
   刑 | 刑法) NAME='中華民國刑法' ;;
+  勞基法) NAME='勞動基準法' ;;
   民) NAME='中華民國民法' ;;
   *) NAME="$1";;
   esac
