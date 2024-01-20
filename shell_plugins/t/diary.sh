@@ -2,7 +2,6 @@
 
 [ -n "$SET_X" ] && set -x
 
-dsu() {
   [ $# -eq 0 ] && set -- ls "$@"
 
   case "$1" in
@@ -11,6 +10,7 @@ dsu() {
   esac
 
   TODO_FILE="$TODO_DIR/dsu.txt" todo.sh "$@"
+diary() {
 }
 
-dsu "$@"
+diary "$@"

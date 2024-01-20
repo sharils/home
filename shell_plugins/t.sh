@@ -33,7 +33,7 @@ t() {
 
   d) shift && "$SHARILS_HOME/shell_plugins/t/d.sh" "$@" ;;
 
-  dsu) shift && "$SHARILS_HOME/shell_plugins/t/dsu.sh" "$@" ;;
+  diary) shift && "$SHARILS_HOME/shell_plugins/t/diary.sh" "$@" ;;
 
   e) shift && "$SHARILS_HOME/shell_plugins/t/e.sh" "$@" ;;
 
