@@ -2,15 +2,8 @@
 
 [ -n "$SET_X" ] && set -x
 
-  [ $# -eq 0 ] && set -- ls "$@"
-
-  case "$1" in
-  a | ls) ;;
-  *) set -- add "$@" ;;
-  esac
-
-  TODO_FILE="$TODO_DIR/dsu.txt" todo.sh "$@"
 diary() {
+  vim -O "$TODO_DIR/dsu.txt" "$TODO_DIR/rs.txt"
 }
 
 diary "$@"
