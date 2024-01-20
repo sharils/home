@@ -274,7 +274,7 @@ settings:
       su: https://swurl.com/?q={}
       sutian: https://sutian.moe.edu.tw/zh-hant/tshiau/?lui=tai_su&tsha={}
       taaze: https://www.taaze.tw/rwd_searchResult.html?keyType%5B%5D=0&keyword%5B%5D={}
-      tcl: https://rwd-library.taichung.gov.tw/webpac_rwd/search.cfm?m=ss&k0={}&t0=k&c0=and
+      tcl: https://rwd-library.taichung.gov.tw/webpac_rwd/search.cfm?m=ss&&list_num=50k0={}&t0=k&c0=and
       tldr: https://tldr.ostera.io/{}
       u: https://search.brave.com/search?q=qutebrowser+{}
       vm: https://vimeo.com/search?q={}
