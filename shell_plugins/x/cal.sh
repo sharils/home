@@ -8,6 +8,7 @@ x_cal() {
     return
   fi
 
+  # https://data.gov.tw/dataset/14718
   nid='14718'
   case "$1" in
   2023) md5_url='ed0be53097a9da90ee037896396142c2' ;;
