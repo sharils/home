@@ -7,17 +7,17 @@ ss() {
   lat='23.973874'
   lng='120.982024'
 
-  today="$(date +%F)"
-  json="/tmp/api.sunrise-sunset.org.$today.json"
+  tomorrow="$(date -v+1d +%F)"
+  json="/tmp/api.sunrise-sunset.org.$tomorrow.json"
   [ -f "$json" ] ||
     curl --get --location 'https://api.sunrise-sunset.org/json' \
       --data 'formatted=0' \
-      --data "date=$today" \
+      --data "date=$tomorrow" \
       --data "lat=$lat" \
       --data "lng=$lng" \
       >"$json"
 
-  jq <"$json" -r --arg 'date' "$today" "$(
+  jq <"$json" -r --arg 'date' "$tomorrow" "$(
     cat <<'JQ'
 .results |
 to_entries |
