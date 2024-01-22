@@ -4,7 +4,7 @@
 
 t_su() {
   if [ $# -eq 0 ]; then
-    toot auth --no-color | grep @ | cut -d' ' -f2
+    toot --no-color auth | grep @ | cut -d' ' -f2
     return
   fi
 
