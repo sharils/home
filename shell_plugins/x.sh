@@ -27,7 +27,7 @@ x() {
   ssh) shift && ssh -t "$@" screen -xRRe^Gg -T screen-256color ;;
   ssh-copy-id) shift && ssh-copy-id -o PreferredAuthentications=password -i "$HOME/.ssh/id_ed25519.pub" "$@" ;;
   tel) shift && open "tel:$*" ;;
-  til) shift && python -c 'import sys;from datetime import *;print(datetime.strptime(sys.argv[1], "%Y-%m-%dT%H:%M:%S") - datetime.now())' "${@:-$("$SHARILS_HOME/shell_plugins/x/ss.sh" | sed -n '/civil_twilight_begin/p' | cut -d' ' -f3)}" ;;
+  til) shift && "$SHARILS_HOME/shell_plugins/x/til.sh" "$@" ;;
   ts) shift && n y ts-node "$@" ;;
   unzip) shift && unzip "$1" -d "${1%%.*}" && cd "${1%%.*}" && ls ;;
   zws) printf "\xe2\x80\x8b" | c ;;
