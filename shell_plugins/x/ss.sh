@@ -41,7 +41,11 @@ JQ
 
   sunrise_sunset="$(jq <"$json" --raw-output --arg 'date' "$tomorrow" "$filter")"
 
-  echo "$sunrise_sunset"
+  if [ $# -eq 0 ]; then
+    echo "$sunrise_sunset" | column -t
+  else
+    echo "$sunrise_sunset" | grep "$1" | cut -f2
+  fi
 }
 
 ss "$@"
