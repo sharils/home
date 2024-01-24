@@ -43,9 +43,9 @@ JQ
 
   if [ $# -eq 0 ]; then
     echo "$sunrise_sunset" | column -t
-  else
-    echo "$sunrise_sunset" | grep "$1" | cut -f2
+    return $?
   fi
+  echo "$sunrise_sunset" | grep "$1" | cut -f2
 }
 
 ss "$@"
