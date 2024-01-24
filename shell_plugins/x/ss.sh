@@ -45,7 +45,18 @@ JQ
     echo "$sunrise_sunset" | column -t
     return $?
   fi
-  echo "$sunrise_sunset" | grep "$1" | cut -f2
+  case "$1" in
+  ab) shift && set -- astronomical_twilight_begin "$@" ;;
+  nb) shift && set -- nautical_twilight_begin "$@" ;;
+  cb) shift && set -- civil_twilight_begin "$@" ;;
+  sr) shift && set -- sunrise "$@" ;;
+  sn) shift && set -- solar_noon "$@" ;;
+  ss) shift && set -- sunset "$@" ;;
+  ce) shift && set -- civil_twilight_end "$@" ;;
+  ne) shift && set -- nautical_twilight_end "$@" ;;
+  ae) shift && set -- astronomical_twilight_end "$@" ;;
+  esac
+  echo "$sunrise_sunset" | grep "^$1" | cut -f2
 }
 
 ss "$@"
