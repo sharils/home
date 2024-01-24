@@ -5,6 +5,7 @@
 til() {
   [ $# -eq 0 ] && set -- cb "$@"
   case "$1" in
+  1700) set -- "$(date +%FT17:00:00)" "$@" ;;
   1930) set -- "$(date +%FT19:30:00)" "$@" ;;
   n-8) set -- "$(date -ujf%FT%T -v-8H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" nb)" +%FT%T)" "$@" ;;
   c-8) set -- "$(date -ujf%FT%T -v-8H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)" "$@" ;;
