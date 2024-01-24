@@ -17,27 +17,31 @@ ss() {
       --data "lng=$lng" \
       >"$json"
 
-  jq <"$json" -r --arg 'date' "$tomorrow" "$(
+  filter="$(
     cat <<'JQ'
-.results |
-to_entries |
-sort_by(.value) |
-map(
-  if .key == "day_length" then .
-  else .value |= $ARGS.named.date + "T" + (
-    gsub("\\+00:00"; "Z") |
-    fromdateiso8601 |
-    strflocaltime("%T")
-  )
-  end
-) |
-from_entries |
-.source |= "https://sunrise-sunset.org/api" |
-to_entries |
-map([.key, .value])[] |
-@tsv
+      .results |
+      to_entries |
+      sort_by(.value) |
+      map(
+        if .key == "day_length" then .
+        else .value |= $ARGS.named.date + "T" + (
+          gsub("\\+00:00"; "Z") |
+          fromdateiso8601 |
+          strflocaltime("%T")
+        )
+        end
+      ) |
+      from_entries |
+      .source |= "https://sunrise-sunset.org/api" |
+      to_entries |
+      map([.key, .value])[] |
+      @tsv
 JQ
-  )" | column -t
+  )"
+
+  sunrise_sunset="$(jq <"$json" --raw-output --arg 'date' "$tomorrow" "$filter")"
+
+  echo "$sunrise_sunset"
 }
 
 ss "$@"
