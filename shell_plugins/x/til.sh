@@ -7,6 +7,7 @@ til() {
   case "$1" in
   1930) set -- "$(date +%FT19:30:00)" "$@" ;;
   n-8) set -- "$(date -ujf%FT%T -v-8H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" nb)" +%FT%T)" "$@" ;;
+  c-8) set -- "$(date -ujf%FT%T -v-8H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)" "$@" ;;
   *) key="$1" && shift && set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" "$key")" "$@" ;;
   esac
   python -c 'import sys;from datetime import *;print(datetime.strptime(sys.argv[1], "%Y-%m-%dT%H:%M:%S") - datetime.now())' "$@"
