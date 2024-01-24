@@ -6,6 +6,7 @@ til() {
   [ $# -eq 0 ] && set -- cb "$@"
   case "$1" in
   0715) set -- "$(date +%FT07:15:00)" "$@" ;;
+  0730) set -- "$(date +%FT07:30:00)" "$@" ;;
   1700) set -- "$(date +%FT17:00:00)" "$@" ;;
   1930) set -- "$(date +%FT19:30:00)" "$@" ;;
   c-a) set -- "$(date -ujf%FT%T -v-10H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)" "$@" ;;
