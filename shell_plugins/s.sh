@@ -43,8 +43,19 @@ s() {
     while
       if ! connections="$(s t cli show connections)"; then
         echo "$connections" | xargs
-      elif [ "$(printf %s "$connections" | jq '.connections | map(select(.connected)) | length' | tee /dev/stderr)" -eq 4 ]; then
+      elif [ "$(printf %s "$connections" | jq '.connections | map(select(.connected)) | length')" -eq 4 ]; then
+        printf %s "$connections" | jq '.connections | map(select(.connected)) | length'
         return
+      else
+        printf %s "$connections" | jq '.connections | map(select(.connected)) | length' | tr -d \\n
+        printf '\t'
+        printf %s "$connections" | jq --raw-output '.connections | to_entries | map(select(.value.connected)) | map(.key)[]' | {
+          while IFS= read -r deviceID; do
+          s t cli config devices "$deviceID" name get
+          done
+        } | tr \\n \\t | sed 's/\t$//'
+        printf '\t'
+        date '+%Y-%m-%dT%H:%M:%S%z'
       fi
       sleep 1
     do :; done
