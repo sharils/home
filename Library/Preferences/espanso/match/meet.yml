@@ -22,7 +22,7 @@ matches:
   - trigger: Rs,.
     replace: Retrospective
 
-  - trigger: Rsp,.
+  - trigger: Rspl,.
     replace: Retrospective and Sprint Planning
 
   - trigger: Sbl,.
