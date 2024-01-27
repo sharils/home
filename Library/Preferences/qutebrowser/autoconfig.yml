@@ -149,6 +149,7 @@ settings:
     regex101.com: true
     regexper.com: true
     rosettacode.org: true
+    runkit.com: true
     rwd-library.taichung.gov.tw: true
     schema.org: true
     search.brave.com: true
@@ -200,6 +201,7 @@ settings:
     global: false
   input.mode_override:
     excalidraw.com: passthrough
+    runkit.com: passthrough
     www.tldraw.com: passthrough
   session.lazy_restore:
     global: true
