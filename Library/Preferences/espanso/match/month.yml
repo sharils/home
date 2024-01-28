@@ -1,39 +1,39 @@
 ---
 matches:
 
-  - trigger: M1,.
+  - trigger: Ja,.
     replace: January
 
-  - trigger: M2,.
+  - trigger: Fe,.
     replace: February
 
-  - trigger: M3,.
+  - trigger: Mr,.
     replace: March
 
-  - trigger: M4,.
+  - trigger: Ar,.
     replace: April
 
-  - trigger: M5,.
+  - trigger: Ma,.
     replace: May
 
-  - trigger: M6,.
+  - trigger: Jn,.
     replace: June
 
-  - trigger: M7,.
+  - trigger: Jl,.
     replace: July
 
-  - trigger: M8,.
+  - trigger: Au,.
     replace: August
 
-  - trigger: M9,.
+  - trigger: Se,.
     replace: September
 
-  - trigger: M10,.
+  - trigger: Oc,.
     replace: October
 
-  - trigger: M11,.
+  - trigger: No,.
     replace: November
 
-  - trigger: M12,.
+  - trigger: De,.
     replace: December
 
