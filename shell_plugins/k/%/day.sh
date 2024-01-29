@@ -10,8 +10,8 @@ day:
   %d: 01-31, $(date +%d)
   %e: 1-31, $(date +%e)
   %j: 001-366, $(date +%j)
-  %u: 1-7, Mon-Sun, $(date +%u)
-  %w: 0-6, Sun-Sat, $(date +%w)
+  %u: 1-7, $(date +%u) # Mon-Sun
+  %w: 0-6, $(date +%w) # Sun-Sat
   %Od: POSIX, $(date +%Od)
   %Oe: POSIX, $(date +%Oe)
   %Ou: POSIX, $(date +%Ou)
