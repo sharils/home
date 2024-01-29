@@ -4,7 +4,7 @@
 
 x_cal() {
   if [ $# -eq 0 ]; then
-    cal -B1 -A7
+    cal -B1 -A4
     return
   fi
 
