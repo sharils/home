@@ -31,6 +31,9 @@ matches:
   - trigger: Twm,.
     replace: Taiwan Mobile
 
+  - trigger: Yb,.
+    replace: YouBike
+
   - trigger: Wm,.
     replace: Wayback Machine
 
