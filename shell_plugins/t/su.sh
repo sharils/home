@@ -22,7 +22,6 @@ t_su() {
     else
       return $?
     fi
-    echo "TOOT_USING=$auth" >&2
     TOOT_USING="${auth:?}" "$SHARILS_HOME/shell_plugins/t/oot.sh" "$@"
     ;;
   esac

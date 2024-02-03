@@ -21,6 +21,8 @@ oot() {
 
   [ -n "$TOOT_USING" ] && set -- "$@" --using "$TOOT_USING"
 
+  echo "TOOT_USING=${TOOT_USING:-$(toot auth | grep ACTIVE | cut -f2 -d' ')}"  >&2
+
   toot "$@"
 }
 
