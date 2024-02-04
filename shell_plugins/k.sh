@@ -11,6 +11,8 @@ k() {
 
   0x) "$SHARILS_HOME/shell_plugins/k/0x.sh" "$@" ;;
 
+  a4) shift && "$SHARILS_HOME/shell_plugins/k/a4.sh" "$@" ;;
+
   b) shift && "$SHARILS_HOME/shell_plugins/k/b.sh" "$@" ;;
 
   bind) shift && "$SHARILS_HOME/shell_plugins/k/bind.sh" "$@" ;;
