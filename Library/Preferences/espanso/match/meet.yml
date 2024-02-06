@@ -33,3 +33,6 @@ matches:
 
   - trigger: Stum,.
     replace: Stand-up Meeting
+
+  - trigger: pm,.
+    replace: post-mortem
