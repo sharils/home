@@ -7,6 +7,9 @@ matches:
   - trigger: Jwt,.
     replace: JWT
 
+  - trigger: Le,.
+    replace: Let’s Encrypt
+
   - trigger: Pa,.
     replace: PASETO
 
