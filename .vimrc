@@ -31,7 +31,6 @@ Plug 'https://github.com/vitalk/vim-shebang'
 " Plug 'https://github.com/tpope/vim-sleuth'
 Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/puremourning/vimspector'
-Plug 'https://github.com/vimwiki/vimwiki'
 
 Plug 'https://github.com/slashmili/alchemist.vim', { 'for': 'elixir', 'branch': 'main' }
 Plug 'https://github.com/ekalinin/Dockerfile.vim', { 'for': 'dockerfile' }
@@ -46,6 +45,7 @@ Plug 'https://github.com/elixir-editors/vim-elixir', { 'for': ['elixir', 'eelixi
 Plug 'https://github.com/moll/vim-node'
 Plug 'https://github.com/acarapetis/vim-sh-heredoc-highlighting', { 'for': ['sh', 'bash'] }
 " Plug 'https://github.com/dhruvasagar/vim-table-mode', { 'for': 'markdown' }
+Plug 'https://github.com/vimwiki/vimwiki', { 'for': 'wiki' }
 Plug 'https://github.com/pedrohdz/vim-yaml-folds', { 'for': 'yaml' }
 
 " colorscheme neverland-darker
