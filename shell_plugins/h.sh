@@ -17,7 +17,7 @@ h() {
     h u "$@"
 
     vim +PlugUpdate
-    vim +'PlugSnapshot! ~/.vim/snapshot.vim'
+    vim +'PlugSnapshot! ~/.vim/snapshot.vim | only'
 
     h g add .vim/snapshot.vim
     h g cm 'Execute vim +PlugUpdate'
