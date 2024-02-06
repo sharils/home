@@ -25,6 +25,9 @@ matches:
   - trigger: idx,.
     replace: index.html
 
+  - trigger: md,.
+    replace: markdown
+
   - trigger: rt,.
     replace: robots.txt
 
