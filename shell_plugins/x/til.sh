@@ -21,7 +21,17 @@ til() {
     ;;
 
   esac
-  python -c 'import sys;from datetime import *;print(datetime.strptime(sys.argv[1], "%Y-%m-%dT%H:%M:%S") - datetime.now())' "$@"
+  py="$(
+    cat <<'PYTHON'
+import sys
+from datetime import *
+
+duration = datetime.strptime(sys.argv[1], "%Y-%m-%dT%H:%M:%S") - datetime.now()
+
+print(f"{str(duration)}")
+PYTHON
+  )"
+  python -c "$py" "$@"
 }
 
 til "$@"
