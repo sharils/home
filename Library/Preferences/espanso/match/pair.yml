@@ -13,6 +13,9 @@ matches:
   - trigger: "*_,."
     replace: "*_$|$_*"
 
+  - trigger: "_*,."
+    replace: "_*$|$*_"
+
   - trigger: "__,."
     replace: "__$|$__"
 
