@@ -28,7 +28,7 @@ from datetime import *
 
 duration = datetime.strptime(sys.argv[1], "%Y-%m-%dT%H:%M:%S") - datetime.now()
 
-print(f"{str(duration)}\t{sys.argv[1]}")
+print(f"{sys.argv[1]}\t{str(duration)}")
 PYTHON
   )"
   python -c "$py" "$@"
