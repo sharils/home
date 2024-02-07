@@ -113,6 +113,7 @@ settings:
     exercism.org: true
     file://*: true
     firebase.google.com: true
+    framacalc.org: true
     framadate.org: true
     framindmap.org: true
     g0v.social: true
