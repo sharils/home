@@ -3,6 +3,7 @@ dd https://devdocs.io/
 dk https://docs.docker.com/engine/reference/builder/#from
 dr; javascript:void%20DarkReader.isEnabled()?DarkReader.disable():DarkReader.enable({brightness:100,contrast:90,sepia:10});
 c; javascript:candies();
+cp; javascript:clearThisPage();
 b; javascript:brave();
 d; javascript:duckduckgo();
 g; javascript:google();
