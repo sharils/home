@@ -19,7 +19,7 @@ x() {
   log) shift && log show --debug --info --predicate 'process == "loginwindow"' --style syslog --last "${@:-1h}" ;;
   mp) shift && mkdir -pv "$@" && cd "$@" || return ;;
   ncal) shift && ncal -wB1 -A6 ;;
-  o) shift && open "${@:-.}" ;;
+  o) shift && "$SHARILS_HOME/shell_plugins/x/o.sh" "$@" ;;
   perm) shift && python -c 'import itertools,sys;[print(" ".join(p)) for p in itertools.permutations(sys.argv[1:])]' "$@" | sort | uniq ;;
   php) shift && php -r "$*" ;;
   screen) shift && screen -xRRe^Gg "$@" ;;
