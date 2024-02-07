@@ -23,7 +23,7 @@ b() {
   case "$1" in
   cr) shift && BROWSER=/Applications/Chromium.app/Contents/MacOS/Chromium "$@" ;;
   e) shift && "$SHARILS_HOME/shell_plugins/b/e.sh" "$@" ;;
-  f) shift && BROWSER=/Applications/Firefox.app/Contents/MacOS/firefox "$@" ;;
+  f) shift && "$SHARILS_HOME/shell_plugins/b/f.sh" "$@" ;;
   fde) shift && BROWSER=/Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox "$@" ;;
   i) shift && brew install "$@" ;;
   l) shift && "$SHARILS_HOME/shell_plugins/b/l.sh" "$@" ;;
