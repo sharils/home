@@ -4,7 +4,7 @@
 
 til() {
   [ $# -eq 0 ] && set -- c "$@"
-  case "${1:-c}" in
+  case "$1" in
 
   c-a) set -- "$(date -ujf%FT%T -v-10H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)" "$@" ;;
 
