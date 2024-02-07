@@ -201,6 +201,8 @@ settings:
     www.sharedrop.io: true
   content.notifications.enabled:
     global: false
+  downloads.location.prompt:
+    global: false
   input.mode_override:
     excalidraw.com: passthrough
     runkit.com: passthrough
