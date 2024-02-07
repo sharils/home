@@ -47,6 +47,7 @@ s() {
         printf %s "$connections" | jq '.connections | map(select(.connected)) | length'
         return
       else
+        date '+%Y-%m-%dT%H:%M:%S%z'
         printf %s "$connections" | jq '.connections | map(select(.connected)) | length' | tr -d \\n
         printf '\t'
         printf %s "$connections" | jq --raw-output '.connections | to_entries | map(select(.value.connected)) | map(.key)[]' | {
@@ -55,7 +56,6 @@ s() {
           done
         } | tr \\n \\t | sed 's/\t$//'
         printf '\t'
-        date '+%Y-%m-%dT%H:%M:%S%z'
       fi
       sleep 1
     do :; done
