@@ -49,6 +49,8 @@ k() {
 
   posix) echo '#%+-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~' ;;
 
+  prime) shift && "$SHARILS_HOME/shell_plugins/k/prime.sh" "$@" ;;
+
   printable) shift && "$SHARILS_HOME/shell_plugins/k/printable.sh" "$@" ;;
 
   # safe = posix & uri
