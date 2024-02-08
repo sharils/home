@@ -104,7 +104,7 @@ cnoremap <C-D>  <Delete>
 
 " https://ss64.com/bash/syntax-keyboard.html
 inoremap <C-A> <C-O>I
-inoremap <C-B> <ESC>i
+inoremap <expr> <C-B> mode() ==# 'R' ? '<C-O>h' : '<ESC>i'
 inoremap <C-E> <C-O>A
 inoremap <C-F> <C-O>l
 inoremap <C-J> <C-O>j
