@@ -68,6 +68,23 @@ EOF
       )" "$@" |
         column
       ;;
+    lny)
+      shift
+      yq @json "$zh" | jq --raw-output "$(
+        cat <<'EOF'
+          map(
+            select(
+              .["農曆月"] == 12 and
+              .["農曆日"] == 28
+            )
+          ) |
+          map(.["格里曆日期"]) |
+          .[]
+EOF
+      )" "$@" | while IFS= read -r line; do
+        [ "$(date +%Y)" -le "$(date -jf%F -v-0d "$line" +%Y)" ] && date -jf%F -v-0d "$line" +%F
+      done | column
+      ;;
     *) yq @json "$zh" | jq --arg TODAY "$(date +%F)" "${@:-map(select(.[\"格里曆日期\"] == \$ARGS.named.TODAY))}" ;;
     esac
     return $?
