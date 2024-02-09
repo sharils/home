@@ -14,6 +14,39 @@ x_cal() {
   2023) md5_url='ed0be53097a9da90ee037896396142c2' ;;
   2024) md5_url='2c1c090b51f0b61d9283d79a160f211d' ;;
 
+  indigenous)
+    shift
+    # https://data.gov.tw/dataset/164651
+    [ -f "${indigenous:=/tmp/x-cal-indigenous-$(date +%Y).json}" ] ||
+      curl --insecure https://data.cip.gov.tw/API/v1/dump/datastore/A53000000A-112055-001 >"$indigenous"
+
+    jq --raw-output "$(
+      cat <<'EOF'
+        first.result.records |
+        map(
+          [
+            (.["民國年"] | tonumber + 1911),
+            (
+              .["舉辦期間"] |
+              split("[-~]"; "") |
+              map(
+                strptime("%m/%d") |
+                strftime("%m-%d")
+              )
+            ),
+            .["民族"], .["祭儀名稱"]
+          ]
+        ) |
+        map(flatten) |
+        sort[] |
+        @tsv
+EOF
+    )" <"$indigenous" |
+      column -t |
+      grep "${1:-^}"
+    return $?
+    ;;
+
   st)
     shift
     # https://data.gov.tw/dataset/157677
