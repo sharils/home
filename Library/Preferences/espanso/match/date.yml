@@ -36,6 +36,9 @@ matches:
   - trigger: 0-,.
     replace: 23:59
 
+  - trigger: 0:,.
+    replace: 00:00:00
+
   - trigger: min,.
     replace: minute
 
