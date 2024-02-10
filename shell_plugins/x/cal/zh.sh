@@ -48,11 +48,11 @@ EOF
 
   lantern)
     shift
-    yq @json "$zh" | jq --raw-output --arg TODAY "$(date +%F)" "$(
+    yq @json "$zh" | jq --raw-output --arg YEAR "$(date +%Y)" "$(
       cat <<'EOF'
           map(
             select(
-               $ARGS.named.TODAY <= .["格里曆日期"] and
+               $ARGS.named.YEAR <= (.["格里曆日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
               .["農曆月"] == 1 and
               .["農曆日"] == 15
             )
