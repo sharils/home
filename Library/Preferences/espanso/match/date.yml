@@ -33,7 +33,7 @@ matches:
   - trigger: "%T=,."
     replace: "%H:%M:%S"
 
-  - trigger: 0:,.
+  - trigger: 0-,.
     replace: 23:59
 
   - trigger: min,.
