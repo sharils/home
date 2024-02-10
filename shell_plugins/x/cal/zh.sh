@@ -66,10 +66,12 @@ EOF
 
   lny)
     shift
-    yq @json "$zh" | jq --raw-output "$(
+
+    yq @json "$zh" | jq --raw-output --arg YEAR "$(date +%Y)" "$(
       cat <<'EOF'
           map(
             select(
+               $ARGS.named.YEAR <= (.["格里曆日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
               .["農曆月"] == 1 and
               .["農曆日"] == 1
             )
@@ -78,7 +80,7 @@ EOF
           .[]
 EOF
     )" "$@" | while IFS= read -r line; do
-      [ "$(date +%Y)" -le "$(date -jf%F -v-0d "$line" +%Y)" ] && date -jf%F -v-2d "$line" +%F
+      date -jf%F -v-2d "$line" +%F
     done | column
     ;;
 
