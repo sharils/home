@@ -8,6 +8,9 @@ matches:
         params:
           format: "%F"
 
+  - trigger: "%F=,."
+    replace: "%Y-%m-%d"
+
   - trigger: "%R,."
     replace: "{{R}}"
     vars:
