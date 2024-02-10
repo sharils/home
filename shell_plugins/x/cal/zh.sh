@@ -8,6 +8,24 @@ zh() {
     curl --location 'https://opendata.cwa.gov.tw/fileapi/v1/opendataapi/A-A0087-001?Authorization=rdec-key-123-45678-011121314&format=CSV' >"$zh"
   case "$1" in
 
+  1)
+    shift
+    yq @json "$zh" | jq --raw-output --arg YEAR "$(date +%Y)" "$(
+      cat <<'EOF'
+          map(
+            select(
+              $ARGS.named.YEAR <= (.["格里曆日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
+              .["農曆日"] == 1
+            )
+          ) |
+          map(.["格里曆日期"]) |
+          .[]
+EOF
+    )" "$@" |
+      tr '\n' ' ' |
+      fold -w$((12 * 11))
+    ;;
+
   q)
     shift
     yq @json "$zh" | jq --raw-output --arg YEAR "$(date +%Y)" "$(
