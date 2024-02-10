@@ -30,6 +30,9 @@ matches:
         params:
           format: "%T"
 
+  - trigger: "%T=,."
+    replace: "%H:%M:%S"
+
   - trigger: 0:,.
     replace: 23:59
 
