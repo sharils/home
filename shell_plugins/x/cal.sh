@@ -109,15 +109,15 @@ EOF
         cat <<'EOF'
           map(
             select(
-              .["農曆月"] == 12 and
-              .["農曆日"] == 28
+              .["農曆月"] == 1 and
+              .["農曆日"] == 1
             )
           ) |
           map(.["格里曆日期"]) |
           .[]
 EOF
       )" "$@" | while IFS= read -r line; do
-        [ "$(date +%Y)" -le "$(date -jf%F -v-0d "$line" +%Y)" ] && date -jf%F -v-0d "$line" +%F
+        [ "$(date +%Y)" -le "$(date -jf%F -v-0d "$line" +%Y)" ] && date -jf%F -v-2d "$line" +%F
       done | column
       ;;
     *) yq @json "$zh" | jq --arg TODAY "$(date +%F)" "${@:-map(select(.[\"格里曆日期\"] == \$ARGS.named.TODAY))}" ;;
