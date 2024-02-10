@@ -16,6 +16,8 @@ til() {
 
   c) shift && set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" "$@" ;;
 
+  s) shift && set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" ss)" "$@" ;;
+
   # https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Pattern-Matching
   [[:digit:]][[:digit:]][[:digit:]] | [[:digit:]][[:digit:]][[:digit:]][[:digit:]])
     t="$(echo "$1" | sed 's/^.\{3\}$/0&/; s/^../&:/; s/$/:00/')" && shift
