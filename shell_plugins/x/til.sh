@@ -6,13 +6,13 @@ til() {
   [ $# -eq 0 ] && set -- "${X_TIL:?"echo export X_TIL='' >> \$SHARILS_HOME/shell_plugins/gitignore.sh"}" "$@"
   case "$1" in
 
-  c-a) set -- "$(date -ujf%FT%T -v-10H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)" "$@" ;;
+  c-a) shift && set -- "$(date -ujf%FT%T -v-10H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)" "$@" ;;
 
-  n-8) set -- "$(date -ujf%FT%T -v-8H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" nb)" +%FT%T)" "$@" ;;
+  n-8) shift && set -- "$(date -ujf%FT%T -v-8H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" nb)" +%FT%T)" "$@" ;;
 
-  c-8) set -- "$(date -ujf%FT%T -v-8H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)" "$@" ;;
+  c-8) shift && set -- "$(date -ujf%FT%T -v-8H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)" "$@" ;;
 
-  c) set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" "$@" ;;
+  c) shift && set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" "$@" ;;
 
   # https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Pattern-Matching
   [[:digit:]][[:digit:]][[:digit:]] | [[:digit:]][[:digit:]][[:digit:]][[:digit:]])
