@@ -19,6 +19,9 @@ matches:
         params:
           format: "%R"
 
+  - trigger: "%R=,."
+    replace: "%H:%M"
+
   - trigger: "%T,."
     replace: "{{T}}"
     vars:
