@@ -43,7 +43,9 @@ EOF
       [ "$(date +%Y)" -le "$(date -jf%F -v-0d "$line" +%Y)" ] && date -jf%F -v-2d "$line" +%F
     done | column
     ;;
+
   *) yq @json "$zh" | jq --arg TODAY "$(date +%F)" "${@:-map(select(.[\"格里曆日期\"] == \$ARGS.named.TODAY))}" ;;
+
   esac
 }
 
