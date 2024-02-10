@@ -102,6 +102,7 @@ EOF
       )" "$@" |
         column
       ;;
+
     lny)
       shift
       yq @json "$zh" | jq --raw-output "$(
