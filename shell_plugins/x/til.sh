@@ -5,6 +5,7 @@
 til() {
   [ $# -eq 0 ] && set -- "${X_TIL:?"echo export X_TIL='' >> \$SHARILS_HOME/shell_plugins/gitignore.sh"}" "$@"
   [ $# -eq 1 ] && set -- "$@" "$(date +%FT%T)"
+  [ $# -eq 2 ] && set -- "$@" '%Y-%m-%dT%H:%M:%S'
   case "$1" in
 
   c-a) shift && set -- "$(date -ujf%FT%T -v-10H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)" "$@" ;;
@@ -27,7 +28,7 @@ til() {
 import sys
 from datetime import *
 
-duration = datetime.strptime(sys.argv[1], "%Y-%m-%dT%H:%M:%S") - datetime.strptime(sys.argv[2], "%Y-%m-%dT%H:%M:%S")
+duration = datetime.strptime(sys.argv[1], sys.argv[3]) - datetime.strptime(sys.argv[2], sys.argv[3])
 
 print(f"{sys.argv[1]}\t{str(duration)}")
 PYTHON
