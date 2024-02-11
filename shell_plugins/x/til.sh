@@ -20,6 +20,11 @@ til() {
 
   s) shift && set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" ss)" "$@" ;;
 
+  5 | 7 | 9 | 11 | 13 | 15 | 19 | 21)
+    til "${1}30"
+    return $?
+    ;;
+
   # https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Pattern-Matching
   [[:digit:]][[:digit:]][[:digit:]] | [[:digit:]][[:digit:]][[:digit:]][[:digit:]])
     t="$(echo "$1" | sed 's/^.\{3\}$/0&/; s/^../&:/; s/$/:00/')" && shift
