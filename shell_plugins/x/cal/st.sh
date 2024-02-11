@@ -5,7 +5,7 @@
 st() {
   case "$1" in
   q) shift && set -- '驚蟄\|芒種\|白露\|大雪' "$@" ;;
-  *) set -- ^ "$@" ;;
+  *) set -- '^\|驚蟄\|芒種\|白露\|大雪' "$@" ;;
   esac
   # https://data.gov.tw/dataset/157677
   [ -f "${st:=/tmp/x-cal-st-$(date +%Y).csv}" ] ||
