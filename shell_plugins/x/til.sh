@@ -8,6 +8,8 @@ til() {
   [ $# -eq 2 ] && set -- "$@" '%Y-%m-%dT%H:%M:%S'
   case "$1" in
 
+  C) shift && set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" ce)" "$@" ;;
+
   c-a) shift && set -- "$(date -ujf%FT%T -v-10H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)" "$@" ;;
 
   n-8) shift && set -- "$(date -ujf%FT%T -v-8H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" nb)" +%FT%T)" "$@" ;;
