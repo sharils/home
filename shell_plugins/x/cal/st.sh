@@ -4,6 +4,7 @@
 
 st() {
   case "$1" in
+  q) shift && set -- '驚蟄\|芒種\|白露\|大雪' "$@" ;;
   *) set -- ^ "$@" ;;
   esac
   # https://data.gov.tw/dataset/157677
