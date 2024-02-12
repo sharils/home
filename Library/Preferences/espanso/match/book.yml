@@ -7,6 +7,9 @@ matches:
   - trigger: Hf,.
     replace: Head First
 
+  - trigger: Hfdp,.
+    replace: Head First Design Patterns
+
   - trigger: Hfooad,.
     replace: Head First Object-Oriented Analysis and Design
 
