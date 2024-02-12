@@ -6,3 +6,6 @@ matches:
 
   - trigger: Rpi,.
     replace: Raspberry Pi
+
+  - trigger: mw,.
+    replace: microwave
