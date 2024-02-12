@@ -7,6 +7,9 @@ matches:
   - trigger: Hf,.
     replace: Head First
 
+  - trigger: Hfooad,.
+    replace: Head First Object-Oriented Analysis and Design
+
   - trigger: Jsdg,.
     replace: "JavaScript: The Definitive Guide"
 
