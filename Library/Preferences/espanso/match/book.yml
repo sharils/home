@@ -4,6 +4,9 @@ matches:
   - trigger: 97p,.
     replace: 97 Things Every Programmer Should Know
 
+  - trigger: Hf,.
+    replace: Head First
+
   - trigger: Jsdg,.
     replace: "JavaScript: The Definitive Guide"
 
