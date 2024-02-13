@@ -34,6 +34,9 @@ matches:
   - trigger: hw,.
     replace: homework
 
+  - trigger: i18n,.
+    replace: internationalisation
+
   - trigger: intro,.
     replace: introduction
 
