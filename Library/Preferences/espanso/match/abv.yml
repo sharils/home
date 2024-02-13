@@ -4,6 +4,9 @@ matches:
   - trigger: Ph,.
     replace: PLACE_HOLDER
 
+  - trigger: a11y,.
+    replace: accessibility
+
   - trigger: alt,.
     replace: alternative
 
