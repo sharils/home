@@ -9,16 +9,6 @@ snippet pc "propagate_case" b
 propagate_case: true
 endsnippet
 
-snippet sh "type: shell" b
-- trigger: ${1:ip},.
-	replace: "{{$1}}"
-	vars:
-		- name: $1
-			type: shell
-			params:
-				cmd: "${2:ipconfig getifaddr en0}"
-endsnippet
-
 
 priority 4
 
@@ -30,6 +20,16 @@ trigger: ${1:<rb},.
 			multiline: true
 		${4:rt}:
 			multiline: true
+endsnippet
+
+snippet sh "type: shell" w
+trigger: ${1:ip},.
+	replace: "{{$1}}"
+	vars:
+		- name: $1
+			type: shell
+			params:
+				cmd: "${2:ipconfig getifaddr en0}"
 endsnippet
 
 snippet t "trigger" w
