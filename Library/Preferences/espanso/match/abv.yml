@@ -40,6 +40,9 @@ matches:
   - trigger: intro,.
     replace: introduction
 
+  - trigger: l10n,.
+    replace: localisation
+
   - trigger: msg,.
     replace: message
 
