@@ -65,6 +65,11 @@ v() {
     vim "$(z t && echo "$PWD")/$1"
     ;;
 
+  [[:digit:]] | [[:digit:]][[:digit:]])
+    volume="$(echo "$1 * 100 / 16" | bc --mathlib)"
+    osascript -e "$(printf 'set volume output volume %.0f' "$volume" | tee /dev/stderr)"
+    ;;
+
   *) vim "$@" ;;
 
   esac
