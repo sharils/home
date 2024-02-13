@@ -39,6 +39,8 @@ k() {
 
   id1) shift && "$SHARILS_HOME/shell_plugins/k/id1.sh" "$@" ;;
 
+  med) shift && "$SHARILS_HOME/shell_plugins/k/med.sh" "$@" ;;
+
   messages) shift && "$SHARILS_HOME/shell_plugins/k/messages.sh" "$@" ;;
 
   n) shift && "$SHARILS_HOME/shell_plugins/k/n.sh" "$@" ;;
