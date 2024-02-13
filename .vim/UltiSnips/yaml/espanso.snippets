@@ -29,8 +29,11 @@ snippet sh "type: shell" b
 				cmd: "${2:ipconfig getifaddr en0}"
 endsnippet
 
-snippet t "trigger" b
-- trigger: $1,.
+
+priority 4
+
+snippet t "trigger" w
+trigger: $1,.
 	replace: $2
 endsnippet
 
