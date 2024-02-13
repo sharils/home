@@ -11,6 +11,7 @@ endfunction
 
 autocmd CmdlineEnter : call SetRelativeNumber(0) | redraw
 autocmd CmdlineLeave : call SetRelativeNumber(1)
+" autocmd TextChanged,TextChangedI * silent update
 
 " augroup HiUnicode
 "   autocmd!
