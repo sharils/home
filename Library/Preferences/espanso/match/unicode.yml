@@ -1,5 +1,8 @@
 ---
 matches:
 
+  - trigger: dot,.
+    replace: ·
+
   - trigger: plusmn,.
     replace: ±
