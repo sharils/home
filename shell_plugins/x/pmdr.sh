@@ -13,7 +13,7 @@ pmdr() {
   next=$(((POMODORO - $1 % POMODORO) % POMODORO))
   pomodoro=$(($1 / POMODORO))
   long=$((pomodoro / LONG))
-  short=$((pomodoro % LONG + long * (LONG - 1)))
+  short=$((pomodoro - long))
   min=$((short * SHORT_MIN + long * LONG_MIN))
   max=$((short * SHORT_MAX + long * LONG_MAX))
 
