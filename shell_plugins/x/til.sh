@@ -25,6 +25,8 @@ til() {
 
   r) shift && set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" sr)" "$@" ;;
 
+  r-) shift && set -- "$(date -ujf%FT%T -v-1M "$("$SHARILS_HOME/shell_plugins/x/ss.sh" sr)" +%FT%T)" "$@" ;;
+
   s) shift && set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" ss)" "$@" ;;
 
   5 | 7 | 9 | 11 | 13 | 15 | 19 | 21)
