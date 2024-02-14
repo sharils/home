@@ -23,6 +23,8 @@ til() {
 
   c) shift && set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" "$@" ;;
 
+  r) shift && set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" sr)" "$@" ;;
+
   s) shift && set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" ss)" "$@" ;;
 
   5 | 7 | 9 | 11 | 13 | 15 | 19 | 21)
