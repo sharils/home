@@ -49,6 +49,9 @@ matches:
   - trigger: od,.
     replace: official document
 
+  - trigger: pmdr,.
+    replace: pomodoro
+
   - trigger: sb,.
     replace: sandbox
 
