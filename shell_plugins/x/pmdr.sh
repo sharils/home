@@ -11,6 +11,7 @@ pmdr() {
   SHORT_MIN=3
 
   next=$(((POMODORO - $1 % POMODORO) % POMODORO))
+  minutes=$(($1 + next))
   pomodoro=$(($1 / POMODORO))
   long=$((pomodoro / LONG))
   short=$((pomodoro - long))
@@ -18,7 +19,7 @@ pmdr() {
   max=$((short * SHORT_MAX + long * LONG_MAX))
 
   cat <<EOF
-til next  $next
+til next  $next ($minutes)
 pomodoro  $pomodoro
 short     $short
 long      $long
