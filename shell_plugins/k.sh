@@ -62,7 +62,7 @@ k() {
 
   stat) shift && stat -x ~/Sync/KeePass/keepass.kdbx ;;
 
-  u) shift && sed -n '3527,3842p' /Applications/qutebrowser.app/Contents/Resources/qutebrowser/config/configdata.yml | grep "$*" ;;
+  u) shift && "$SHARILS_HOME/shell_plugins/k/u.sh" "$@" ;;
 
   uri) echo "!'()*-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~" ;;
 
