@@ -8,6 +8,11 @@ til() {
   [ $# -eq 2 ] && set -- "$@" '%Y-%m-%dT%H:%M:%S'
   case "$1" in
 
+  6)
+    til "${1}45"
+    return $?
+    ;;
+
   17)
     til "${1}00"
     return $?
