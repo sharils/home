@@ -32,7 +32,7 @@ d() {
 
   q) osascript -e 'quit app "Docker"' ;;
 
-  roc) shift && printf 'Year %s is either Gregorian %s or ROC %s.' "${*}" "$((${*}+1911))" "$((${*}-1911))" ;;
+  roc) shift && "$SHARILS_HOME/shell_plugins/d/roc.sh" "$@" ;;
 
   x) d exec "$@" ;;
 
