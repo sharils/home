@@ -21,12 +21,12 @@ pmdr() {
   total_max=$(($1 + break_max))
 
   cat <<EOF
-til next   $next ($minutes)
-pomodoro   $pomodoro
-short      $short
-long       $long
-break      ${break_min}—$break_max
-total      ${total_min}—$total_max
+til next  $next ($minutes)
+pomodoro  $pomodoro
+short     $short
+long      $long
+break     ${break_min}—$break_max
+total     ${total_min}—$total_max
 EOF
 }
 
