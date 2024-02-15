@@ -222,6 +222,7 @@ settings:
       ab: https://archive.org/details/inlibrary?sin=&and%5B%5D={}
       au: https://talk.automators.fm/search?q=%23episodes%20in%3Atitle%20{}
       b: https://search.brave.com/search?q={}
+      bf: https://www.brainfacts.org/search?q={}
       bg: https://biggo.com.tw/s/?q={}&view=l&sort=lp
       bs: https://blogsurf.io/?query={}
       co: https://www.careonline.com.tw/search?q={}
