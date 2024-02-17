@@ -13,6 +13,8 @@ k() {
 
   a4) shift && "$SHARILS_HOME/shell_plugins/k/a4.sh" "$@" ;;
 
+  android) shift && "$SHARILS_HOME/shell_plugins/k/android.sh" "$@" ;;
+
   b) shift && "$SHARILS_HOME/shell_plugins/k/b.sh" "$@" ;;
 
   bind) shift && "$SHARILS_HOME/shell_plugins/k/bind.sh" "$@" ;;
