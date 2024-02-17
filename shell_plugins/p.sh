@@ -22,6 +22,8 @@ p() {
 
   c) shift && "$SHARILS_HOME/shell_plugins/p/c.sh" "$@" ;;
 
+  d) shift && "$SHARILS_HOME/shell_plugins/p/d.sh" "$@" ;;
+
   g) shift && "$SHARILS_HOME/shell_plugins/p/g.sh" "$@" ;;
 
   e) shift && $EDITOR "$@" pyproject.toml ;;
