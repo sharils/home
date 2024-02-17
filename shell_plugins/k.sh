@@ -39,6 +39,8 @@ k() {
 
   ha) shift && "$SHARILS_HOME/shell_plugins/k/ha.sh" "$@" ;;
 
+  heptagram) shift && "$SHARILS_HOME/shell_plugins/k/heptagram.sh" "$@" ;;
+
   http) shift && "$SHARILS_HOME/shell_plugins/k/http.sh" "$@" ;;
 
   id) shift && "$SHARILS_HOME/shell_plugins/k/id.sh" "$@" ;;
