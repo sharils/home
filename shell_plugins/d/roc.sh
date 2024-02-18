@@ -3,7 +3,7 @@
 [ -n "$SET_X" ] && set -x
 
 roc() {
-  year="${1:?}"
+  year="${1:-$(date +%Y)}"
   printf 'Year %s is either Gregorian %s or ROC %s. (gc-11; roc+11)\n' "$year" "$((year + 1911))" "$((year - 1911))"
 
   cat <<'EOF'
