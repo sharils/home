@@ -18,8 +18,6 @@ til() {
     return $?
     ;;
 
-  C) shift && set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" ce)" "$@" ;;
-
   c-a) shift && set -- "$(date -ujf%FT%T -v-10H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)" "$@" ;;
 
   n-8) shift && set -- "$(date -ujf%FT%T -v-8H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" nb)" +%FT%T)" "$@" ;;
@@ -33,6 +31,8 @@ til() {
   r-) shift && set -- "$(date -ujf%FT%T -v-1M "$("$SHARILS_HOME/shell_plugins/x/ss.sh" sr)" +%FT%T)" "$@" ;;
 
   s) shift && set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" ss)" "$@" ;;
+
+  C) shift && set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" ce)" "$@" ;;
 
   5 | 7 | 9 | 11 | 13 | 15 | 19 | 21)
     til "${1}30"
