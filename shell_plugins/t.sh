@@ -55,6 +55,8 @@ t() {
 
   w) shift && "$SHARILS_HOME/shell_plugins/t/w.sh" "$@" ;;
 
+  yue) shift && "$SHARILS_HOME/shell_plugins/t/yue.sh" "$@" ;;
+
   *) tldr "$@" ;;
 
   esac
