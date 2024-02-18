@@ -28,5 +28,8 @@ matches:
   - trigger: arch,.
     replace: architecture
 
+  - trigger: dp,.
+    replace: design pattern
+
   - trigger: sys,.
     replace: system
