@@ -21,6 +21,7 @@ b() {
   fi
 
   case "$1" in
+  b) shift && "$SHARILS_HOME/shell_plugins/b/b.sh" "$@" ;;
   cr) shift && BROWSER=/Applications/Chromium.app/Contents/MacOS/Chromium "$@" ;;
   e) shift && "$SHARILS_HOME/shell_plugins/b/e.sh" "$@" ;;
   f) shift && "$SHARILS_HOME/shell_plugins/b/f.sh" "$@" ;;
