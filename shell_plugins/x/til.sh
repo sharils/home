@@ -13,6 +13,11 @@ til() {
     return $?
     ;;
 
+  8)
+    til "${1}59"
+    return $?
+    ;;
+
   17)
     til "${1}00"
     return $?
