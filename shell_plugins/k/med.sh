@@ -6,7 +6,9 @@ med() {
   offset="${K_MED:-0}"
   if [ $# -eq 0 ]; then
     hour=$(date +%k%M)
-    if [ "$hour" -le $((830 + offset)) ]; then
+    if [ "$hour" -le $((630 + offset)) ]; then
+      set -- $((530 + offset)) "$@"
+    elif [ "$hour" -le $((830 + offset)) ]; then
       set -- $((730 + offset)) "$@"
     elif [ "$hour" -le $((1030 + offset)) ]; then
       set -- $((730 + offset)) "$@"
@@ -26,15 +28,16 @@ med() {
   fi
 
   cat <<EOF | grep -E "^(?: ?$1.*)?"
-      P  M   K    
-$(printf %4s $((730 + offset)))  P  T   WT CM  # Pigs Try Washing Tan Cat More
-$(printf %4s $((930 + offset)))      O  W H    # Old Woman Happy
-$(printf %4s $((1130 + offset)))     T   WT  M  # Two White Tiger Meow
-$(printf %4s $((1330 + offset)))         W  CM  # Wolves Chase Mice
-$(printf %4s $((1530 + offset)))     TO  WT  M  # Two Owls Want Talking Moon
-$(printf %4s $((1730 + offset)))         W   M  # White Monkey
-$(printf %4s $((1930 + offset)))  P  T   WTH    # Please Try With Tasty Honey
-$(printf %4s $((2130 + offset)))      O     C   # Old Cow
+$(date +%k%M)  #  P  M   K    
+$(printf %4s $((530 + offset)))  1         W      # Water
+$(printf %4s $((730 + offset)))  2  P  T   WT CM  # Pigs Try Washing Tan Cat More
+$(printf %4s $((930 + offset)))  3      O  W H    # Old Woman Happy
+$(printf %4s $((1130 + offset)))  4     T   WT  M  # Two White Tiger Meow
+$(printf %4s $((1330 + offset)))  5         W  CM  # Wolves Chase Mice
+$(printf %4s $((1530 + offset)))  6     TO  WT  M  # Two Owls Want Talking Moon
+$(printf %4s $((1730 + offset)))  7         W   M  # White Monkey
+$(printf %4s $((1930 + offset)))  8  P  T   WTH    # Please Try With Tasty Honey
+$(printf %4s $((2130 + offset)))  9      O     C   # Old Cow
 EOF
 }
 
