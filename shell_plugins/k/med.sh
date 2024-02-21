@@ -37,7 +37,7 @@ $(printf %4s $((1330 + offset)))  5         W  CM  # Wolves Chase Mice
 $(printf %4s $((1530 + offset)))  6     TU  WT  M  # Two Owls Want Talking Moon
 $(printf %4s $((1730 + offset)))  7         W   M  # White Monkey
 $(printf %4s $((1930 + offset)))  8  P  T   WTH    # Please Try With Tasty Honey
-$(printf %4s $((2130 + offset)))  9      O     C   # Old Cow
+$(printf %4s $((2130 + offset)))  9      U     C   # Old Cow
 EOF
 }
 
