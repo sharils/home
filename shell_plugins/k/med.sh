@@ -28,10 +28,10 @@ med() {
   fi
 
   cat <<EOF | grep -E "^(?: ?$1.*)?"
-$(date +%k%M)  #  P  M   K    
-$(printf %4s $((530 + offset)))  1         W      # Water
-$(printf %4s $((730 + offset)))  2  P  T   WT CM  # Pigs Try Washing Tan Cat More
-$(printf %4s $((930 + offset)))  3      U  W H    # Old Woman Happy
+$(date +%k%M                   )  #  P  M   K    
+$(printf %4s $(( 530 + offset)))  1         W      # Water
+$(printf %4s $(( 730 + offset)))  2  P  T   WT CM  # Pigs Try Washing Tan Cat More
+$(printf %4s $(( 930 + offset)))  3      U  W H    # Old Woman Happy
 $(printf %4s $((1130 + offset)))  4     T   WT  M  # Two White Tiger Meow
 $(printf %4s $((1330 + offset)))  5         W  CM  # Wolves Chase Mice
 $(printf %4s $((1530 + offset)))  6     TU  WT  M  # Two Owls Want Talking Moon
