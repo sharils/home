@@ -27,6 +27,7 @@ p() {
     mix phx.routes "$router" "$@"
     ;;
   s) shift && mix phx.server "$@" ;;
+  u) shift && "$SHARILS_HOME/shell_plugins/m/p/u.sh" "$@" ;;
   v) shift && mix phx.new --version "$@" ;;
   esac
 }
