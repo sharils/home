@@ -19,6 +19,8 @@ k() {
 
   bind) shift && "$SHARILS_HOME/shell_plugins/k/bind.sh" "$@" ;;
 
+  brew) shift && "$SHARILS_HOME/shell_plugins/k/brew.sh" "$@" ;;
+
   circadian) shift && "$SHARILS_HOME/shell_plugins/k/circadian.sh" "$@" ;;
 
   credit-card) shift && "$SHARILS_HOME/shell_plugins/k/credit-card.sh" "$@" ;;
