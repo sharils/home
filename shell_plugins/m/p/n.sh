@@ -25,20 +25,21 @@ services:
       - psql
 YAML
 
-  cat <<YAML >.envrc
+  cat <<SH >.envrc
 #!/usr/bin/env sh
 
-export POSTGRES_USER='postgres'
-export POSTGRES_PASSWORD='postgres'
-export POSTGRES_DB='${path}_dev'
-YAML
+export POSTGRES_HOST='db'
+export POSTGRES_USER='$(mix run -e 'Application.get_env(:world, World.Repo)[:username] |> IO.write()')'
+export POSTGRES_PASSWORD='$(mix run -e 'Application.get_env(:world, World.Repo)[:password] |> IO.write()')'
+export POSTGRES_DB='$(mix run -e 'Application.get_env(:world, World.Repo)[:database] |> IO.write()')'
+SH
 
   cat <<SH
 cd $path
 direnv allow
-docker compose --profile db start
-mix ecto.create
-docker compose --profile db stop
+docker compose up db --detach
+mix setup
+docker compose down db
 SH
 }
 

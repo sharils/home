@@ -4,6 +4,7 @@
 
 i() {
   case "${1:-ls}" in
+  -aq) shift && docker image -aq "$@" ;;
   p) shift && i prune "$@" ;;
   s)
     shift
