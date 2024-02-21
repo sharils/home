@@ -31,10 +31,10 @@ med() {
 $(date +%k%M)  #  P  M   K    
 $(printf %4s $((530 + offset)))  1         W      # Water
 $(printf %4s $((730 + offset)))  2  P  T   WT CM  # Pigs Try Washing Tan Cat More
-$(printf %4s $((930 + offset)))  3      O  W H    # Old Woman Happy
+$(printf %4s $((930 + offset)))  3      U  W H    # Old Woman Happy
 $(printf %4s $((1130 + offset)))  4     T   WT  M  # Two White Tiger Meow
 $(printf %4s $((1330 + offset)))  5         W  CM  # Wolves Chase Mice
-$(printf %4s $((1530 + offset)))  6     TO  WT  M  # Two Owls Want Talking Moon
+$(printf %4s $((1530 + offset)))  6     TU  WT  M  # Two Owls Want Talking Moon
 $(printf %4s $((1730 + offset)))  7         W   M  # White Monkey
 $(printf %4s $((1930 + offset)))  8  P  T   WTH    # Please Try With Tasty Honey
 $(printf %4s $((2130 + offset)))  9      O     C   # Old Cow
