@@ -17,6 +17,7 @@ e() {
     *) mix ecto.migrate "$@" ;;
     esac
     ;;
+  r) mix ecto.rolback ;;
   *)
     tmp="$(mktemp)"
     grep --line-number --with-filename "$1" mix.exs >"$tmp"
