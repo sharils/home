@@ -4,9 +4,9 @@
 
 h_mix() {
   if [ $# -eq 0 ]; then
-    mix --help | l
+    mix --help
   else
-    mix help "$@" | l md
+    mix help "$@" | bat --language md --style=plain
   fi
 }
 
