@@ -28,6 +28,9 @@ matches:
   - trigger: Gtl,.
     replace: Google Translate
 
+  - trigger: Gw,.
+    replace: Google Workspace
+
   - trigger: Yt,.
     replace: YouTube
 
