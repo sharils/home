@@ -11,7 +11,7 @@ med() {
     elif [ "$hour" -le $((830 + offset)) ]; then
       set -- $((730 + offset)) "$@"
     elif [ "$hour" -le $((1030 + offset)) ]; then
-      set -- $((730 + offset)) "$@"
+      set -- $((930 + offset)) "$@"
     elif [ "$hour" -le $((1230 + offset)) ]; then
       set -- $((1130 + offset)) "$@"
     elif [ "$hour" -le $((1430 + offset)) ]; then
