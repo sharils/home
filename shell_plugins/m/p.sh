@@ -9,7 +9,7 @@ p() {
     (
       cd apps/*_web || return $?
       case "$1" in
-      a) shift && mix phx.gen.auth "$@" ;;
+      a) shift && mix phx.gen.auth "$@" --binary-id ;;
       e) shift && mix phx.gen.embedded "$@" ;;
       h) shift && mix phx.gen.html "$@" ;;
       j) shift && mix phx.gen.json "$@" ;;
