@@ -16,6 +16,9 @@
     "altThirdCycle" : {
       "int" : 0
     },
+    "alwaysAccountForStage" : {
+      "int" : 0
+    },
     "applyGapsToMaximize" : {
       "int" : 0
     },
@@ -44,7 +47,16 @@
       "int" : 0
     },
     "disabledApps" : {
+      "string" : "[]"
+    },
+    "doubleClickTitleBar" : {
+      "int" : 0
+    },
+    "doubleClickTitleBarIgnoredApps" : {
 
+    },
+    "doubleClickTitleBarRestore" : {
+      "int" : 0
     },
     "dragFromStage" : {
       "int" : 0
@@ -53,7 +65,7 @@
       "int" : 1
     },
     "footprintAlpha" : {
-      "float" : 0.30000001192092896
+      "float" : 0.3
     },
     "footprintAnimationDurationMultiplier" : {
       "float" : 0
@@ -75,6 +87,9 @@
     },
     "hideMenubarIcon" : {
       "bool" : true
+    },
+    "ignoreDragSnapToo" : {
+      "int" : 0
     },
     "ignoredSnapAreas" : {
       "int" : 0
@@ -178,14 +193,23 @@
     "SUEnableAutomaticChecks" : {
       "bool" : true
     },
-    "todo" : {
+    "systemWideMouseDown" : {
       "int" : 0
     },
-    "todoApplication" : {
+    "systemWideMouseDownApps" : {
 
+    },
+    "todo" : {
+      "int" : 1
+    },
+    "todoApplication" : {
+      "string" : "org.qutebrowser.qutebrowser"
     },
     "todoMode" : {
       "bool" : false
+    },
+    "todoSidebarSide" : {
+      "int" : 1
     },
     "todoSidebarWidth" : {
       "float" : 400
@@ -201,6 +225,10 @@
     }
   },
   "shortcuts" : {
+    "almostMaximize" : {
+      "keyCode" : 69,
+      "modifierFlags" : 262144
+    },
     "bottomHalf" : {
       "keyCode" : 84,
       "modifierFlags" : 262144
@@ -225,13 +253,33 @@
       "keyCode" : 67,
       "modifierFlags" : 262144
     },
-    "nextDisplay" : {
-      "keyCode" : 41,
-      "modifierFlags" : 262144
+    "maximizeHeight" : {
+      "keyCode" : 87,
+      "modifierFlags" : 786432
+    },
+    "moveDown" : {
+      "keyCode" : 84,
+      "modifierFlags" : 786432
+    },
+    "moveLeft" : {
+      "keyCode" : 86,
+      "modifierFlags" : 786432
+    },
+    "moveRight" : {
+      "keyCode" : 88,
+      "modifierFlags" : 786432
+    },
+    "moveUp" : {
+      "keyCode" : 91,
+      "modifierFlags" : 786432
     },
     "previousDisplay" : {
       "keyCode" : 78,
       "modifierFlags" : 262144
+    },
+    "reflowTodo" : {
+      "keyCode" : 45,
+      "modifierFlags" : 786432
     },
     "restore" : {
       "keyCode" : 75,
@@ -240,6 +288,10 @@
     "rightHalf" : {
       "keyCode" : 88,
       "modifierFlags" : 262144
+    },
+    "toggleTodo" : {
+      "keyCode" : 11,
+      "modifierFlags" : 786432
     },
     "topHalf" : {
       "keyCode" : 91,
@@ -254,5 +306,5 @@
       "modifierFlags" : 262144
     }
   },
-  "version" : "70"
+  "version" : "82"
 }
