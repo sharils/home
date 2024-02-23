@@ -32,7 +32,7 @@ x() {
   unzip) shift && unzip "$1" -d "${1%%.*}" && cd "${1%%.*}" && ls ;;
   zws) printf "\xe2\x80\x8b" | c ;;
 
-  ResetLaunchPad | showHidden) "$SHARILS_HOME/shell_plugins/x/resetLaunchPad.sh" "$@" ;;
+  ResetLaunchPad | ShowHidden) "$SHARILS_HOME/shell_plugins/x/resetLaunchPad.sh" "$@" ;;
 
   aud | cad | chf | cnh | cny | eur | gbp | hkd | jpy | mop | nzd | sek | sgd | thb | usd | zar)
     cmd="$1" && shift
