@@ -14,6 +14,7 @@ endif
 
 set backupcopy=yes
 set colorcolumn=80
+set directory&
 set expandtab
 set foldcolumn=1
 set hidden
