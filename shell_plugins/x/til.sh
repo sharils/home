@@ -9,7 +9,7 @@ til() {
   case "$1" in
 
   6)
-    til "${1}45"
+    til 645
     return $?
     ;;
 
