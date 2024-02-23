@@ -10,7 +10,13 @@ f() {
   l) shift && set -- logs "$@" ;;
   m) shift && set -- machine "$@" ;;
   n) shift && set -- launch "$@" ;;
-  o) shift && set -- orgs "$@" ;;
+  o)
+    shift
+    case "$1" in
+    i) shift && set -- invite "$@" ;;
+    esac
+    set -- orgs "$@"
+    ;;
   s) shift && set -- status "$@" ;;
   esac
   flyctl "$@"
