@@ -22,5 +22,8 @@ matches:
   - trigger: fw,.
     replace: framework
 
+  - trigger: phx,.
+    replace: phoenix
+
   - trigger: rn,.
     replace: react-native
