@@ -13,6 +13,9 @@ matches:
   - trigger: Sw,.
     replace: Service Worker
 
+  - trigger: Wc,.
+    replace: Web Component
+
   - trigger: req,.
     replace: request
 
