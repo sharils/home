@@ -54,7 +54,7 @@ s() {
         printf '\t'
         printf %s "$connections" | jq --raw-output '.connections | to_entries | map(select(.value.connected)) | map(.key)[]' | {
           while IFS= read -r deviceID; do
-          s t cli config devices "$deviceID" name get
+            s t cli config devices "$deviceID" name get
           done
         } | tr \\n \\t | sed 's/\t$//'
         printf '\t'
