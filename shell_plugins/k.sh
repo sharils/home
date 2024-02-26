@@ -51,6 +51,8 @@ k() {
 
   med) shift && "$SHARILS_HOME/shell_plugins/k/med.sh" "$@" ;;
 
+  manifesto) shift && "$SHARILS_HOME/shell_plugins/k/manifesto.sh" "$@" ;;
+
   messages) shift && "$SHARILS_HOME/shell_plugins/k/messages.sh" "$@" ;;
 
   n) shift && "$SHARILS_HOME/shell_plugins/k/n.sh" "$@" ;;
