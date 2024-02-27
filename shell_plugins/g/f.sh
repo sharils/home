@@ -9,6 +9,7 @@ f() {
     shift
     [ $# -eq 0 ] && set -- --defaults --force "$@"
     git flow init "$@"
+    git push origin --set-upstream main develop
     return $?
     ;;
   f) cmd='feature' ;;
