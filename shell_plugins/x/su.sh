@@ -19,7 +19,7 @@ _su() {
   k)
     shift
     case "$1" in
-    o) shift && set -- open "$@" ;;
+    o) shift && set -- open "${@:-"$X_SU_K_O"}" ;;
     esac
     set -- keepassxc-cli "$@"
     ;;
