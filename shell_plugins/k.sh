@@ -21,6 +21,8 @@ k() {
 
   brew) shift && "$SHARILS_HOME/shell_plugins/k/brew.sh" "$@" ;;
 
+  cie) shift && "$SHARILS_HOME/shell_plugins/k/cie.sh" "$@" ;;
+
   circadian) shift && "$SHARILS_HOME/shell_plugins/k/circadian.sh" "$@" ;;
 
   credit-card) shift && "$SHARILS_HOME/shell_plugins/k/credit-card.sh" "$@" ;;
@@ -60,6 +62,8 @@ k() {
   n) shift && "$SHARILS_HOME/shell_plugins/k/n.sh" "$@" ;;
 
   napkin) shift && "$SHARILS_HOME/shell_plugins/k/napkin.sh" "$@" ;;
+
+  nightingale) shift && "$SHARILS_HOME/shell_plugins/k/nightingale.sh" "$@" ;;
 
   o) shift && "$SHARILS_HOME/shell_plugins/k/o.sh" "$@" ;;
 
