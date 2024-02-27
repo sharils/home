@@ -37,6 +37,8 @@ k() {
 
   g) shift && "$SHARILS_HOME/shell_plugins/k/g.sh" "$@" ;;
 
+  geneva) shift && "$SHARILS_HOME/shell_plugins/k/geneva.sh" "$@" ;;
+
   gh) shift && l 'https://docs.github.com/en/get-started/using-github/keyboard-shortcuts#site-wide-shortcuts' ;;
 
   ha) shift && "$SHARILS_HOME/shell_plugins/k/ha.sh" "$@" ;;
