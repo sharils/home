@@ -4,7 +4,13 @@
 
 f() {
   case "$1" in
-  a) shift && set -- apps "$@" ;;
+  a)
+    shift
+    case "$1" in
+    o) shift && set -- open "$@"
+    esac
+    set -- apps "$@"
+    ;;
   d) shift && set -- deploy "$@" ;;
   h) shift && set -- help "$@" ;;
   l) shift && set -- logs "$@" ;;
