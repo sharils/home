@@ -7,7 +7,7 @@ f() {
   a)
     shift
     case "$1" in
-    o) shift && set -- open "$@"
+    o) shift && set -- open "$@" ;;
     esac
     set -- apps "$@"
     ;;
@@ -23,7 +23,13 @@ f() {
     esac
     set -- orgs "$@"
     ;;
-  s) shift && set -- status "$@" ;;
+  s)
+    shift
+    case "$1" in
+    i) shift && set -- ssh issue --agent "$@" ;;
+    *) set -- status "$@" ;;
+    esac
+    ;;
   esac
   flyctl "$@"
 }
