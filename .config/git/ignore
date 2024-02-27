@@ -23,6 +23,7 @@ tags
 __pycache__
 
 # vim
+*.swo
 *.swp
 
 # vim-obsession
