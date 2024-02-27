@@ -26,6 +26,7 @@ f() {
   s)
     shift
     case "$1" in
+    c) shift && set -- ssh console --pty -C "/app/bin/$* remote" ;;
     i) shift && set -- ssh issue --agent "$@" ;;
     *) set -- status "$@" ;;
     esac
