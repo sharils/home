@@ -29,9 +29,9 @@ YAML
 #!/usr/bin/env sh
 
 export POSTGRES_HOST='db'
-export POSTGRES_USER='$(mix run -e 'Application.get_env(:world, World.Repo)[:username] |> IO.write()')'
-export POSTGRES_PASSWORD='$(mix run -e 'Application.get_env(:world, World.Repo)[:password] |> IO.write()')'
-export POSTGRES_DB='$(mix run -e 'Application.get_env(:world, World.Repo)[:database] |> IO.write()')'
+export POSTGRES_USER='postgres'
+export POSTGRES_PASSWORD='postgres'
+export POSTGRES_DB='${path}_dev'
 SH
 
   cat <<SH
