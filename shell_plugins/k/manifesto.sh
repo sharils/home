@@ -4,16 +4,16 @@
 
 manifesto() {
   cat <<'EOF'
-Well-crafted software
+Well-crafted software (WWC)
   Working software
     Comprehensive documentation
-Steadily adding value
+Steadily adding value (SRF)
   Responding to change
     Following a plan
-Community of professionals
+Community of professionals (CIP)
   Individuals and interactions
     Processes and tools
-Productive partnerships
+Productive partnerships (PCC)
   Customer collaboration
     Contract negotiation
 EOF
