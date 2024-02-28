@@ -7,6 +7,9 @@ matches:
   - trigger: Lny,.
     replace: Lunar New Year
 
+  - trigger: Pmd,.
+    replace: Peace Memorial Day
+
   - trigger: Tsd,.
     replace: Tomb Sweeping Day
 
