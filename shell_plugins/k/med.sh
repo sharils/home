@@ -28,7 +28,7 @@ med() {
   fi
 
   cat <<EOF | grep -E "^(?: ?$1.*)?"
-$(date +%k%M                   )  #    P  M    K    
+$(date +%k%M                   )  #    P  M    K      # Note
 $(printf %4s $(( 530 + offset)))  1            W      # Water
 $(printf %4s $(( 730 + offset)))  2 1  P  T O  WT CM  # Pigs Try Out White Tail Could Meow
 $(printf %4s $(( 930 + offset)))  3 2      U   W H    # Unicorns Will Help
