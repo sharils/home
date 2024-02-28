@@ -31,6 +31,8 @@ k() {
 
   d) shift && "$SHARILS_HOME/shell_plugins/k/d.sh" "$@" ;;
 
+  ddx) shift && "$SHARILS_HOME/shell_plugins/k/ddx.sh" "$@" ;;
+
   dr) shift && "$SHARILS_HOME/shell_plugins/k/dr.sh" "$@" ;;
 
   e) $EDITOR "$@" ~/.config/karabiner/karabiner.json ;;
