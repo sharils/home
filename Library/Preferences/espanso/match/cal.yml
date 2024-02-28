@@ -4,7 +4,7 @@ matches:
   - trigger: Cny,.
     replace: Chinese New Year
 
-  - trigger: Gbf,.
+  - trigger: Dbf,.
     replace: Dragon Boat Festival
 
   - trigger: Lny,.
