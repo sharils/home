@@ -101,6 +101,24 @@ EOF
     done | column
     ;;
 
+  maf)
+    shift
+    yq @json "$zh" | jq --raw-output --arg YEAR "$(date +%Y)" "$(
+      cat <<'EOF'
+          map(
+            select(
+               $ARGS.named.YEAR <= (.["格里曆日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
+              .["農曆月"] == 8 and
+              .["農曆日"] == 15
+            )
+          ) |
+          map(.["格里曆日期"]) |
+          .[]
+EOF
+    )" "$@" |
+      column
+    ;;
+
   *) yq @json "$zh" | jq --arg TODAY "$(date +%F)" "${@:-map(select(.[\"格里曆日期\"] == \$ARGS.named.TODAY))}" ;;
 
   esac
