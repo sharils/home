@@ -1,40 +1,5 @@
 extends boolean
 
-snippet dsu "Daily Stand-up" b
-`! date +%F-%a`:
-	Tomorrow: 🌈
-		- TODO
-	Grateful: 🙇
-		- I’m grateful TODO.
-	Loved: ✅
-		- TODO
-	Loathed: ❌
-		- TODO
-	Learned: 📘
-		- TODO
-	Health:
-		- TODO
-	Time:
-		- I woke up at ${1:`! date +%R`}.
-		- I went to bed at TODO.
-endsnippet
-
-snippet rs "Retrospective" b
-`! date +%Y-W%V`:
-	Longed for: ⭐️
-		- _______ TODO
-	Loved: ✅
-		- TODO
-	Loathed: ❌
-		- TODO
-	Learned: 📘
-		- TODO
-endsnippet
-
 snippet n "null" w
 null
-endsnippet
-
-snippet - "I ... til %R." w
-- I ${1:worked on $2} til ${3:`! date +%R`}.
 endsnippet
