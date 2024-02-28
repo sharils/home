@@ -4,6 +4,9 @@ matches:
   - trigger: Dbf,.
     replace: Dragon Boat Festival
 
+  - trigger: Ld,.
+    replace: Labour’s Day
+
   - trigger: Lny,.
     replace: Lunar New Year
 
