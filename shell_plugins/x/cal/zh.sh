@@ -26,6 +26,24 @@ EOF
       fold -w$((12 * 11))
     ;;
 
+  dbf)
+    shift
+    yq @json "$zh" | jq --raw-output --arg YEAR "$(date +%Y)" "$(
+      cat <<'EOF'
+          map(
+            select(
+               $ARGS.named.YEAR <= (.["格里曆日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
+              .["農曆月"] == 5 and
+              .["農曆日"] == 5
+            )
+          ) |
+          map(.["格里曆日期"]) |
+          .[]
+EOF
+    )" "$@" |
+      column
+    ;;
+
   q)
     shift
     yq @json "$zh" | jq --raw-output --arg YEAR "$(date +%Y)" "$(
@@ -44,7 +62,6 @@ EOF
       tr '\n' ' ' |
       fold -w$((4 * 11))
     ;;
-
 
   lantern)
     shift
