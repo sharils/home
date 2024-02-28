@@ -3,7 +3,12 @@
 [ -n "$SET_X" ] && set -x
 
 til() {
-  [ $# -eq 0 ] && set -- "${X_TIL:?"echo export X_TIL='' >> \$SHARILS_HOME/shell_plugins/gitignore.sh"}" "$@"
+  if [ $# -eq 0 ]; then
+    for t in 6 0900 17 s c-a n-8 c-8 c; do
+      printf "$t\t%s\n" "$(til "$t")"
+    done
+    return $?
+  fi
   [ $# -eq 1 ] && set -- "$@" "$(date +%FT%T)"
   [ $# -eq 2 ] && set -- "$@" '%Y-%m-%dT%H:%M:%S'
   case "$1" in
