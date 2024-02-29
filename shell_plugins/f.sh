@@ -11,6 +11,14 @@ f() {
     esac
     set -- apps "$@"
     ;;
+  c)
+    shift
+    case "$1" in
+    a) shift && set -- add "$@" ;;
+    v) shift && set -- show "$@" ;;
+    esac
+    set -- certs "$@"
+    ;;
   d) shift && set -- deploy "$@" ;;
   h) shift && set -- help "$@" ;;
   l) shift && set -- logs "$@" ;;
