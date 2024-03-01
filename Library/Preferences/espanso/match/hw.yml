@@ -4,7 +4,7 @@ matches:
   - trigger: Ard,.
     replace: Arduino
 
-  - trigger: Rpi,.
+  - trigger: Rp,.
     replace: Raspberry Pi
 
   - trigger: mw,.
