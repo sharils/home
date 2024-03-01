@@ -4,7 +4,7 @@
 
 g() {
   base="$SHARILS_HOME/shell_plugins"
-  if [ ! -f "$base/$1.sh" ]; then
+  if [ ! -f "$base/$1.sh" ] || [ $# -eq 1 ]; then
     git -C "$SHARILS_HOME" "$@"
     return $?
   fi
