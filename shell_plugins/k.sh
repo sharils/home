@@ -39,6 +39,8 @@ k() {
 
   fib) shift && "$SHARILS_HOME/shell_plugins/k/fib.sh" "$@" ;;
 
+  font) shift && "$SHARILS_HOME/shell_plugins/k/font.sh" "$@" ;;
+
   g) shift && "$SHARILS_HOME/shell_plugins/k/g.sh" "$@" ;;
 
   geneva) shift && "$SHARILS_HOME/shell_plugins/k/geneva.sh" "$@" ;;
