@@ -16,6 +16,9 @@ matches:
   - trigger: Atv,.
     replace: Apple TV
 
+  - trigger: Aw,.
+    replace: Apple Watch
+
   - trigger: Ios,.
     replace: iOS
 
