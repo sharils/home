@@ -36,6 +36,8 @@ JQ
     ;;
 
   w)
+    shift
+    op="${1:-l}"
     printf 'https://pm25.lass-net.org/grafana/d/airbox_dashboard_v3/airdata?orgId=2&var-source=AirBox&var-device_id=%s&refresh=1m\n' "$X_AQ" >&2
 
     while :; do
@@ -55,7 +57,11 @@ EOF
       pm10="$(echo "$json" | cut -f3)"
       timestamp="$(echo "$json" | cut -f4 | sed 's/Z$/+0000/')"
       pm="$(printf "%s %s %s %s\n" "$pm1" "$pm25" "$pm10" "$(date -jf%FT%T%z "$timestamp" +%T)" | tee /dev/stderr)"
-      [ "$pm25" -le 20 ] && printf 'display notification "%s" with title "%s"' "$pm" 'x airbox w' | osascript
+      if [ "$op" = l ]; then
+        [ "$pm25" -le 20 ] && printf 'display notification "%s" with title "%s"' "$pm" 'x airbox w' | osascript
+      elif [ "$op" = g ]; then
+        [ "$pm25" -ge 20 ] && printf 'display notification "%s" with title "%s"' "$pm" 'x airbox w' | osascript
+      fi
       sleep 300
     done
     ;;
