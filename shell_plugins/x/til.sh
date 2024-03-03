@@ -4,7 +4,7 @@
 
 til() {
   if [ $# -eq 0 ]; then
-    for t in 6 0900 1300 17 s c-a n-8 c-8 c; do
+    for t in 6 0900 1300 17 s c-a c-9 n-8 c-8 c; do
       printf "$t\t%s\n" "$(til "$t")"
     done
     return $?
