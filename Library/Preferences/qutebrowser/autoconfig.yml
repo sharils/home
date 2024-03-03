@@ -221,6 +221,7 @@ settings:
       DEFAULT: https://lite.duckduckgo.com/lite/?q={}
       aa: https://www.allacronyms.com/{}/abbreviated
       ab: https://archive.org/details/inlibrary?sin=&and%5B%5D={}
+      ain: https://aboutideasnow.com/?q={}
       au: https://talk.automators.fm/search?q=%23episodes%20in%3Atitle%20{}
       b: https://search.brave.com/search?q={}
       bf: https://www.brainfacts.org/search?q={}
