@@ -14,6 +14,7 @@ _su() {
     case "$1" in
     i) shift && set -- install "$@" ;;
     ri) shift && set -- reinstall "$@" ;;
+    rm) shift && set -- uninstall "$@" ;;
     esac
     set -- brew "$@"
     ;;
