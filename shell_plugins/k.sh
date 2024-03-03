@@ -88,6 +88,8 @@ k() {
 
   uri) echo "!'()*-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~" ;;
 
+  vet) shift && "$SHARILS_HOME/shell_plugins/k/vet.sh" "$@" ;;
+
   week) shift && "$SHARILS_HOME/shell_plugins/k/week.sh" "$@" ;;
 
   yue) shift && "$SHARILS_HOME/shell_plugins/k/yue.sh" "$@" ;;
