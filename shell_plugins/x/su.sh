@@ -13,6 +13,7 @@ _su() {
     shift
     case "$1" in
     i) shift && set -- install "$@" ;;
+    ri) shift && set -- reinstall "$@" ;;
     esac
     set -- brew "$@"
     ;;
