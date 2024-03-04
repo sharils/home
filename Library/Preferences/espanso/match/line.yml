@@ -3,3 +3,6 @@ matches:
 
   - trigger: Li,.
     replace: LINE
+
+  - trigger: Lp,.
+    replace: LINE Pay
