@@ -19,9 +19,6 @@ matches:
   - trigger: Kpxc,.
     replace: KeePassXC
 
-  - trigger: Li,.
-    replace: LINE
-
   - trigger: Ob,.
     replace: Obsidian
 

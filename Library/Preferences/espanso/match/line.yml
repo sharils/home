@@ -1,0 +1,5 @@
+---
+matches:
+
+  - trigger: Li,.
+    replace: LINE
