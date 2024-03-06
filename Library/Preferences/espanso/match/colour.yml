@@ -88,6 +88,7 @@ matches:
   - {"replace":"linen,.","trigger":"faf0e6"}
   - {"replace":"magenta,.","trigger":"ff00ff"}
   - {"replace":"maroon,.","trigger":"800000"}
+  - {"replace":"mc,.","trigger":"monochrome"}
   - {"replace":"mediumaquamarine,.","trigger":"66cdaa"}
   - {"replace":"mediumblue,.","trigger":"0000cd"}
   - {"replace":"mediumorchid,.","trigger":"ba55d3"}
