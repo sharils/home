@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: ",M,."
+    replace: ",000,000"
+
   - trigger: K,.
     replace: 000
 
