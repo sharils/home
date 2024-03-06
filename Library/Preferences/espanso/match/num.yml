@@ -1,5 +1,6 @@
 ---
 matches:
+
   - trigger: a4,.
     replace: 210 × 297 mm
 
