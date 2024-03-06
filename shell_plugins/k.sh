@@ -84,6 +84,8 @@ k() {
 
   stat) shift && stat -x ~/Sync/KeePass/keepass.kdbx ;;
 
+  twba) shift && "$SHARILS_HOME/shell_plugins/k/twba.sh" "$@" ;;
+
   u) shift && "$SHARILS_HOME/shell_plugins/k/u.sh" "$@" ;;
 
   uri) echo "!'()*-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~" ;;
