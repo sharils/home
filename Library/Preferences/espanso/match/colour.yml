@@ -57,6 +57,7 @@ matches:
   - {"replace":"green,.","trigger":"008000"}
   - {"replace":"greenyellow,.","trigger":"adff2f"}
   - {"replace":"grey,.","trigger":"808080"}
+  - {"replace":"gs,.","trigger":"greyscale"}
   - {"replace":"honeydew,.","trigger":"f0fff0"}
   - {"replace":"hotpink,.","trigger":"ff69b4"}
   - {"replace":"indianred,.","trigger":"cd5c5c"}
