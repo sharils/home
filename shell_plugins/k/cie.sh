@@ -19,7 +19,7 @@ cie() {
 
     我是工程師，我以身為工程師為榮。
 
-http://www.cie.org.tw/News/NewsDetail?cn_id=555
+http://www.cie.org.tw/Important/ImportantDetail?cic_id=2&cic_cicc_id=3
 EOF
 }
 
