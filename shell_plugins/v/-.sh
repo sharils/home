@@ -8,6 +8,7 @@ v_v() {
   ex) elixir --version ;;
   f | flyctl) flyctl version ;;
   phx) mix phx.new --version ;;
+  py) python --version ;;
   *) "$@" --version ;;
   esac
 }
