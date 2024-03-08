@@ -58,6 +58,9 @@ matches:
   - trigger: scs,.
     replace: screenshot
 
+  - trigger: sim,.
+    replace: simulator
+
   - trigger: sp,.
     replace: smart phone
 
