@@ -61,5 +61,12 @@ Plug 'https://github.com/trapd00r/neverland-vim-theme'
 " colorscheme leya
 " Plug 'https://github.com/marlun/vim-starwars'
 
+" colorscheme monotone
+Plug 'https://github.com/Lokaltog/vim-monotone'
+" colorscheme true-monochrome
+" Plug 'https://github.com/ryanpcmcquen/true-monochrome_vim'
+" colorscheme warlock
+" Plug 'https://github.com/hardselius/warlock'
+
 Plug '~/.vim/plugged/after'
 call plug#end()
