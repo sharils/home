@@ -281,7 +281,7 @@ settings:
       sc: https://github.com/koalaman/shellcheck/wiki/{}
       se: https://www.se-radio.net/?s=%22se+radio+{}%22
       shopee: https://shopee.tw/search?keyword={}&order=asc&sortBy=price
-      shyyp: https://shyyp.net/hant/searoh?q={}
+      shyyp: https://shyyp.net/searoh?q={}
       sn: https://www.grc.com/sn/sn-{}.htm
       so: https://stackoverflow.com/search?q={}&s=fc2bd8dc-a211-4fce-9651-d6d1657d10a2
       sp: https://www.skypack.dev/search?q={}
