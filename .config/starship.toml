@@ -1,4 +1,6 @@
 # https://starship.rs/config/#git-metrics
+[[battery.display]]
+threshold = 95
 # [git_metrics]
 # [kubernetes]
 # [localip]
