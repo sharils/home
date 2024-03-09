@@ -31,5 +31,8 @@ matches:
   - trigger: dp,.
     replace: design pattern
 
+  - trigger: ds,.
+    replace: data structure
+
   - trigger: sys,.
     replace: system
