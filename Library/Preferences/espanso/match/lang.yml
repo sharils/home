@@ -13,6 +13,9 @@ matches:
   - trigger: Et,.
     replace: Etymology Online
 
+  - trigger: Zh,.
+    replace: Chinese
+
   - trigger: lang,.
     replace: language
 
