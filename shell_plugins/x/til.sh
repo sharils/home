@@ -28,11 +28,6 @@ til() {
     return $?
     ;;
 
-  22)
-    til 2230
-    return $?
-    ;;
-
   c-a) shift && set -- "$(date -ujf%FT%T -v-10H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)" "$@" ;;
 
   n-9) shift && set -- "$(date -ujf%FT%T -v-9H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" nb)" +%FT%T)" "$@" ;;
