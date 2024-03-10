@@ -11,6 +11,8 @@ k() {
 
   0x) "$SHARILS_HOME/shell_plugins/k/0x.sh" "$@" ;;
 
+  6.3) shift && "$SHARILS_HOME/shell_plugins/k/6.3.sh" "$@" ;;
+
   a4) shift && "$SHARILS_HOME/shell_plugins/k/a4.sh" "$@" ;;
 
   android) shift && "$SHARILS_HOME/shell_plugins/k/android.sh" "$@" ;;
