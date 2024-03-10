@@ -13,11 +13,6 @@ til() {
   [ $# -eq 2 ] && set -- "$@" '%Y-%m-%dT%H:%M:%S'
   case "$1" in
 
-  17)
-    til 1700
-    return $?
-    ;;
-
   c-a) shift && set -- "$(date -ujf%FT%T -v-10H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)" "$@" ;;
 
   n-9) shift && set -- "$(date -ujf%FT%T -v-9H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" nb)" +%FT%T)" "$@" ;;
