@@ -13,11 +13,6 @@ til() {
   [ $# -eq 2 ] && set -- "$@" '%Y-%m-%dT%H:%M:%S'
   case "$1" in
 
-  8)
-    til 859
-    return $?
-    ;;
-
   17)
     til 1700
     return $?
