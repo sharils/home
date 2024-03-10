@@ -12,5 +12,7 @@ threshold = 95
 # [shlvl]
 # [status]
 # [sudo]
-# [time]
+[time]
+disabled = false
+time_format = '%m%dT%H%M'
 # disabled = false
