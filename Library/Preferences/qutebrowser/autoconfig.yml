@@ -242,6 +242,7 @@ settings:
       et: https://www.etymonline.com/search?q={}
       ex: https://hexdocs.pm/elixir/search.html?q={}
       expo: https://docs.expo.dev/versions/v47.0.0/sdk/{}/
+      fd: https://search.f-droid.org/?q={}
       fda: https://consumer.fda.gov.tw/food/tfnd.aspx?nodeID=178&k={}
       fx: https://addons.mozilla.org/en-GB/firefox/search/?q={}&type=extension
       g: https://www.google.com/search?client=firefox-b-d&gbv=1&q={}
