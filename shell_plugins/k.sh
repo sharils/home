@@ -83,6 +83,8 @@ k() {
 
   printable) shift && "$SHARILS_HOME/shell_plugins/k/printable.sh" "$@" ;;
 
+  quality) shift && "$SHARILS_HOME/shell_plugins/k/quality.sh" "$@" ;;
+
   # safe = posix & uri
   safe) echo '-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~' ;;
 
