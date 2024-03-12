@@ -23,6 +23,8 @@ k() {
 
   brew) shift && "$SHARILS_HOME/shell_plugins/k/brew.sh" "$@" ;;
 
+  burnout) shift && "$SHARILS_HOME/shell_plugins/k/burnout.sh" "$@" ;;
+
   cie) shift && "$SHARILS_HOME/shell_plugins/k/cie.sh" "$@" ;;
 
   circadian) shift && "$SHARILS_HOME/shell_plugins/k/circadian.sh" "$@" ;;
