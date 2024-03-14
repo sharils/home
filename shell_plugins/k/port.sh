@@ -48,6 +48,7 @@ film 9527
 a4 21297 https://en.wikipedia.org/wiki/A4
 salary 27470
 days/month 30416
+taiwan area 36197
 salt 38754
 EOF
 }
