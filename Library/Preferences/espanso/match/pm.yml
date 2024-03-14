@@ -25,9 +25,6 @@ matches:
   - trigger: ft,.
     replace: feature
 
-  - trigger: lf,.
-    replace: loyalty free
-
   - trigger: pdm,.
     replace: product management
 
@@ -36,3 +33,6 @@ matches:
 
   - trigger: pmt,.
     replace: project management triangle
+
+  - trigger: rf,.
+    replace: royalty free
