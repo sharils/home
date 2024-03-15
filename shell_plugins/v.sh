@@ -38,7 +38,7 @@ v() {
 
   mk) vim Makefile ;;
 
-  r) vim -r "$@" ;;
+  r) shift && vim -r "$@" ;;
 
   rm) shift && "$SHARILS_HOME/shell_plugins/v/rm.sh" "$@" ;;
 

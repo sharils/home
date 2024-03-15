@@ -91,6 +91,9 @@ jscodeshift
 # detector of copy/paste in files
 jscpd
 
+#  A cli tool to make installing packages form jsr.io in node easy
+jsr
+
 # Node package to parse and generate changelogs following the [keepachangelog](https://keepachangelog.com/) format.
 keep-a-changelog changelog
 
