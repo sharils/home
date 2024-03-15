@@ -38,6 +38,8 @@ v() {
 
   mk) vim Makefile ;;
 
+  r) vim -r "$@" ;;
+
   rm) shift && "$SHARILS_HOME/shell_plugins/v/rm.sh" "$@" ;;
 
   rsync) shift && vim "rsync://$1:$2" ;;
