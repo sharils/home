@@ -25,6 +25,9 @@ matches:
   - trigger: Ol,.
     replace: Open Library
 
+  - trigger: Osm,.
+    replace: Open Street Map
+
   - trigger: St,.
     replace: Syncthing
 
