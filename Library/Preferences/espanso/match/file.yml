@@ -31,7 +31,7 @@ matches:
   - trigger: rt,.
     replace: robots.txt
 
-  - trigger: sm,.
+  - trigger: sx,.
     replace: sitemap.xml
 
   - trigger: ~D,.
