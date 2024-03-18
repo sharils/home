@@ -31,6 +31,9 @@ matches:
   - trigger: re,.
     replace: regular expression
 
+  - trigger: sd,.
+    replace: state diagram
+
   - trigger: sm,.
     replace: state machine
 
