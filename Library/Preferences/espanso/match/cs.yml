@@ -1,9 +1,6 @@
 ---
 matches:
 
-  - trigger: Fsm,.
-    replace: Finite State Machine
-
   - trigger: Gw,.
     replace: Goodbye world!
 
@@ -33,6 +30,9 @@ matches:
 
   - trigger: ds,.
     replace: data structure
+
+  - trigger: fsm,.
+    replace: finite state machine
 
   - trigger: sys,.
     replace: system
