@@ -14,6 +14,9 @@ matches:
     replace: Googla Drive
 
   - trigger: Gm,.
+    replace: Google Maps
+
+  - trigger: Gm,.
     replace: Gmail
 
   - trigger: Gp,.
