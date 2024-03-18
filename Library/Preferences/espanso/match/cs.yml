@@ -1,9 +1,6 @@
 ---
 matches:
 
-  - trigger: Cs,.
-    replace: Computer Science
-
   - trigger: Fsm,.
     replace: Finite State Machine
 
@@ -27,6 +24,9 @@ matches:
 
   - trigger: arch,.
     replace: architecture
+
+  - trigger: cs,.
+    replace: computer science
 
   - trigger: dp,.
     replace: design pattern
