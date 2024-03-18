@@ -7,9 +7,6 @@ matches:
   - trigger: Hw,.
     replace: Hello world!
 
-  - trigger: Os,.
-    replace: Operating System
-
   - trigger: Re,.
     replace: Regular Expression
 
@@ -33,6 +30,9 @@ matches:
 
   - trigger: fsm,.
     replace: finite state machine
+
+  - trigger: os,.
+    replace: operating system
 
   - trigger: sys,.
     replace: system
