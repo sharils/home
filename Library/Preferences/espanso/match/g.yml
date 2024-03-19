@@ -7,6 +7,9 @@ matches:
   - trigger: Ga,.
     replace: Google Analytics
 
+  - trigger: Gc,.
+    replace: Google Calendar
+
   - trigger: Gcp,.
     replace: Google Cloud Platform
 
