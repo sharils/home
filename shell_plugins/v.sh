@@ -38,7 +38,19 @@ v() {
 
   mk) vim Makefile ;;
 
-  r) shift && vim -r "$@" ;;
+  r)
+    shift
+    case "$1" in
+    rm)
+      shift
+      vim -r 2>&1 | grep '^[[:digit:]]' | sed 's/^[[:digit:]]\.[[:space:]]*//' | tr -d '\r' | while IFS= read -r line; do
+        rm "$line"
+      done
+      ;;
+    *) vim -r "$@" ;;
+    esac
+
+    ;;
 
   rm) shift && "$SHARILS_HOME/shell_plugins/v/rm.sh" "$@" ;;
 
