@@ -39,7 +39,7 @@ x() {
     x fx "$cmd" | x bc "$(awk '{ print $3 }')" '*' "${@:-1}"
     ;;
 
-  ai | ap | aq | batt | bc | cal | cat-weight | cert | cm | county-sunrise | data | download.sh | draculadaily | editorconfig | english-words | eq | erl | ex | fer | focus | fong | fx | getnf | gif | hbt | hrm | html | ico | iconv | jq | kibble | law | mac | members | mh | paisa | pdf | petfood | pmdr | png | py | rm | salary | sh | shutdown | smolsite | sn | sqlite | ssh-keygen | ss | su | tld | touch | tree | tz | uri | venv | webp | weight | whois | zip)
+  ai | ap | aq | batt | bc | cal | cat-weight | cert | cm | county-sunrise | data | download.sh | draculadaily | editorconfig | english-words | eq | erl | ex | fer | focus | fong | fx | getnf | gif | hbt | hospital | hrm | html | ico | iconv | jq | kibble | law | mac | members | mh | paisa | pdf | petfood | pmdr | png | py | rm | salary | sh | shutdown | smolsite | sn | sqlite | ssh-keygen | ss | su | tld | touch | tree | tz | uri | venv | webp | weight | whois | zip)
     cmd="$1" && shift
     "$SHARILS_HOME/shell_plugins/x/$cmd.sh" "$@"
     ;;
