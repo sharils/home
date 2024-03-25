@@ -30,7 +30,7 @@ med() {
   cat <<EOF | grep -E "^(?: ?$1.*)?"
 $(date +%k%M                   )  #    P  M   K      2  # Notes
 $(printf %4s $(( 530 + offset)))  1           W      F  # Water
-$(printf %4s $(( 730 + offset)))  2 1  P  TU  WT CM  T  # The Pretty Unicorn Went to Candy Mountain
+$(printf %4s $(( 730 + offset)))  2 1  P  TU  WT CM  T  # The Pretty Unicorn Witch Twinks Candy Mountain
 $(printf %4s $(( 930 + offset)))  3 2         W H    F  # White House
 $(printf %4s $((1130 + offset)))  4 3     T   WT  M  F  # Ten White Tiger Meow
 $(printf %4s $((1330 + offset)))  5 4         W  CM  F  # Wolves Chase Moon
