@@ -16,6 +16,9 @@ matches:
   - trigger: cmd,.
     replace: command
 
+  - trigger: cont,.
+    replace: continued
+
   - trigger: dept,.
     replace: department
 
