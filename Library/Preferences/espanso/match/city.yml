@@ -1,5 +1,8 @@
 ---
 matches:
 
+  - trigger: La,.
+    replace: Los Angelos
+
   - trigger: Nyc,.
     replace: New York City
