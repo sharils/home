@@ -63,3 +63,6 @@ matches:
 
   - trigger: sp,.
     replace: sandpit
+
+  - trigger: ta,.
+    replace: take away
