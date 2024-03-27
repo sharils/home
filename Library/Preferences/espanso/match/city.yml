@@ -1,0 +1,5 @@
+---
+matches:
+
+  - trigger: Nyc,.
+    replace: New York City
