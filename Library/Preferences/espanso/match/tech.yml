@@ -75,3 +75,6 @@ matches:
 
   - trigger: tab,.
     replace: tablet
+
+  - trigger: win,.
+    replace: window
