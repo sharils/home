@@ -65,3 +65,6 @@ matches:
         type: date
         params:
           format: "%Y-W%V"
+
+  - trigger: Utc,.
+    replace: UTC
