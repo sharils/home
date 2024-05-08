@@ -1,0 +1,20 @@
+---
+matches:
+
+  - trigger: As,.
+    replace: App Store
+
+  - trigger: Fd,.
+    replace: F-Droid
+
+  - trigger: Ps,.
+    replace: Play Store
+
+  - trigger: Wv,.
+    replace: WebView
+
+  - trigger: app,.
+    replace: application
+
+  - trigger: fl,.
+    replace: fastlane

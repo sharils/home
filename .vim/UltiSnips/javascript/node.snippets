@@ -1,0 +1,64 @@
+global !p
+from my_snippet_helpers import *
+endglobal
+
+
+priority 4
+
+snippet d "default" "around_require(snip)" ie
+default
+endsnippet
+
+snippet r "require" "around_first_line_or_require(snip)" we
+require("$1")
+endsnippet
+
+snippet r "require" "around_const_let_var(snip)" we
+${2:`!p snip.rv = importname(t[1])`} = require("$1")
+endsnippet
+
+
+priority 3
+
+snippet me "module.exports" b
+module.exports
+endsnippet
+
+snippet /(?<="')p/ "production" r
+production
+endsnippet
+
+snippet !dev "process.env.NODE_ENV !== 'development'" i
+process.env.NODE_ENV !== "development"
+endsnippet
+
+snippet !prod "process.env.NODE_ENV !== 'production'" i
+process.env.NODE_ENV !== "production"
+endsnippet
+
+snippet !test "process.env.NODE_ENV !== 'test'" i
+process.env.NODE_ENV !== "test"
+endsnippet
+
+
+priority 2
+
+snippet pe "process.env" w
+process.env
+endsnippet
+
+snippet dev "process.env.NODE_ENV === 'development'" w
+process.env.NODE_ENV === "development"
+endsnippet
+
+snippet prod "process.env.NODE_ENV === 'production'" w
+process.env.NODE_ENV === "production"
+endsnippet
+
+snippet test "process.env.NODE_ENV === 'test'" w
+process.env.NODE_ENV === "test"
+endsnippet
+
+snippet RA "process.env.REACT_APP_" w
+process.env.REACT_APP_
+endsnippet

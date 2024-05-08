@@ -1,0 +1,47 @@
+---
+matches:
+
+  - trigger: Erd,.
+    replace: ER diagram
+
+  - trigger: Gw,.
+    replace: Goodbye world!
+
+  - trigger: Hw,.
+    replace: Hello world!
+
+  - trigger: alg,.
+    replace: algorithm
+
+  - trigger: arch,.
+    replace: architecture
+
+  - trigger: cs,.
+    replace: computer science
+
+  - trigger: dp,.
+    replace: design pattern
+
+  - trigger: ds,.
+    replace: data structure
+
+  - trigger: fsm,.
+    replace: finite state machine
+
+  - trigger: os,.
+    replace: operating system
+
+  - trigger: re,.
+    replace: regular expression
+
+  - trigger: sd,.
+    replace: state diagram
+
+  - trigger: sm,.
+    replace: state machine
+
+  - trigger: sys,.
+    replace: system
+
+  - trigger: ucd,.
+    replace: use case diagram

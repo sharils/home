@@ -1,0 +1,17 @@
+---
+matches:
+
+  - trigger: Gfm,.
+    replace: GitHub Flavoured Markdown
+
+  - trigger: Json,.
+    replace: JSON
+
+  - trigger: Md,.
+    replace: Markdown
+
+  - trigger: asm,.
+    replace: assembly
+
+  - trigger: pl,.
+    replace: programming language

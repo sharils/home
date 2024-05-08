@@ -1,0 +1,29 @@
+---
+matches:
+
+  - trigger: Next,.
+    replace: Next.js
+
+  - trigger: Phx,.
+    replace: Phoenix
+
+  - trigger: Rn,.
+    replace: React Native
+
+  - trigger: Rnw,.
+    replace: React Native Web
+
+  - trigger: Sk,.
+    replace: SvelteKit
+
+  - trigger: Sv,.
+    replace: Svelte
+
+  - trigger: fw,.
+    replace: framework
+
+  - trigger: phx,.
+    replace: phoenix
+
+  - trigger: rn,.
+    replace: react-native

@@ -1,0 +1,11 @@
+---
+matches:
+
+  - trigger: Sg,.
+    replace: Singapore
+
+  - trigger: Tw,.
+    replace: Taiwan
+
+  - trigger: Us,.
+    replace: the U.S.

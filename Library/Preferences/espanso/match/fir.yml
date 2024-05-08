@@ -1,0 +1,15 @@
+---
+matches:
+
+  - trigger: Fa,.
+    replace: Firebase Auth
+
+  - trigger: Ff,.
+    replace: Firebase Functions
+
+  - trigger: Fs,.
+    replace: Firestore
+
+  - trigger: fir,.
+    replace: firebase
+    propagate_case: true

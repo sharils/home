@@ -1,0 +1,11 @@
+---
+matches:
+
+  - trigger: Asl,.
+    replace: American Sign Language
+
+  - trigger: Isl,.
+    replace: International Sign Language
+
+  - trigger: Tss,.
+    replace: Taiwan Sign Language

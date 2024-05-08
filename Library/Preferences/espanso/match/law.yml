@@ -1,0 +1,11 @@
+---
+matches:
+
+  - trigger: Eula,.
+    replace: End-User License Agreement
+
+  - trigger: Sla,.
+    replace: Service-Level Agreement
+
+  - trigger: Tos,.
+    replace: Terms of Service

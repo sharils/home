@@ -1,0 +1,20 @@
+---
+matches:
+
+  - trigger: Nlp,.
+    replace: Natural Language Processing
+
+  - trigger: et,.
+    replace: etymology
+
+  - trigger: ling,.
+    replace: linguistics
+
+  # - trigger: sb,.
+  #   replace: somebody
+
+  - trigger: sci,.
+    replace: science
+
+  - trigger: sth,.
+    replace: something

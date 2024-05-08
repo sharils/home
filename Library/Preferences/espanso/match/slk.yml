@@ -1,0 +1,50 @@
+---
+# https://slack.com/help/articles/360057554553-Use-shortcuts-to-take-actions-in-Slack#built-in-shortcuts
+matches:
+
+  - trigger: "#g,."
+    replace: "#general"
+
+  - trigger: "#r,."
+    replace: "#random"
+
+  - trigger: /c,.
+    replace: /collapse
+
+  - trigger: /d,.
+    replace: /dnd
+
+  - trigger: /e,.
+    replace: /expand
+
+  - trigger: /r,.
+    form: /remind [[who]] "[[what]]" [[when]]
+    form_fields:
+      who:
+        default: me
+      when:
+        default: tomorrow
+
+  - trigger: /rl,.
+    replace: /remind list
+
+  - trigger: /s,.
+    replace: "/status $|$ :books:"
+
+  - trigger: /sa,.
+    replace: /status away
+
+  - trigger: /sc,.
+    replace: /status clear
+
+  - trigger: /sh,.
+    replace: /shrug
+
+  - trigger: /sm,.
+    replace: /search in:#standup-meeting from:me during:week
+
+  - trigger: "@Sb,."
+    replace: "@Slackbot"
+
+  - trigger: Sl,.
+    replace: Slack

@@ -1,0 +1,8 @@
+---
+matches:
+
+  - trigger: Ddg,.
+    replace: DuckDuckGo
+
+  - trigger: Ddgl,.
+    replace: DuckDuckGo Lite

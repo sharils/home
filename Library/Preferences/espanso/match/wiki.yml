@@ -1,0 +1,20 @@
+---
+matches:
+
+  - trigger: Mh,.
+    replace: Miraheze
+
+  - trigger: Mw,.
+    replace: MediaWiki
+
+  - trigger: Wb,.
+    replace: Wikibase
+
+  - trigger: Wd,.
+    replace: Wikidata
+
+  - trigger: Wk,.
+    replace: Wiktionary
+
+  - trigger: Wp,.
+    replace: Wikipedia

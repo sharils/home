@@ -1,0 +1,23 @@
+---
+matches:
+
+  - trigger: Ac,.
+    replace: Acceptance Criteria
+
+  - trigger: Bl,.
+    replace: Backlog
+
+  - trigger: Dod,.
+    replace: Definition of Done
+
+  - trigger: Sp,.
+    replace: Story Point
+
+  - trigger: Us,.
+    replace: User Story
+
+  - trigger: Wip,.
+    replace: Work In Progress
+
+  - trigger: lehv,.
+    replace: low effort and high value

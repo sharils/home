@@ -1,0 +1,47 @@
+---
+matches:
+
+  - trigger: Api,.
+    replace: API
+
+  - trigger: Ds,.
+    replace: Design System
+
+  - trigger: atl,.
+    replace: actual
+
+  - trigger: dep,.
+    replace: dependency
+
+  - trigger: depr,.
+    replace: deprecated
+
+  - trigger: epd,.
+    replace: expected
+
+  - trigger: ft,.
+    replace: fallthrough
+
+  - trigger: impl,.
+    replace: implement
+
+  - trigger: is,.
+    replace: infrastructure
+
+  - trigger: len,.
+    replace: length
+
+  - trigger: lib,.
+    replace: library
+
+  - trigger: pt,.
+    replace: passthrough
+
+  - trigger: pkg,.
+    replace: package
+
+  - trigger: spec,.
+    replace: specification
+
+  - trigger: var,.
+    replace: variable

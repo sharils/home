@@ -1,0 +1,11 @@
+---
+matches:
+
+  - trigger: Mongo,.
+    replace: MongoDB
+
+  - trigger: db,.
+    replace: database
+
+  - trigger: mig,.
+    replace: migrat

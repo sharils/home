@@ -1,0 +1,26 @@
+---
+matches:
+
+  - trigger: Dbf,.
+    replace: Dragon Boat Festival
+
+  - trigger: Dtd,.
+    replace: Double Tenth Day
+
+  - trigger: Ld,.
+    replace: Labour’s Day
+
+  - trigger: Lny,.
+    replace: Lunar New Year
+
+  - trigger: Maf,.
+    replace: Mid-Autumn Festival
+
+  - trigger: Pmd,.
+    replace: Peace Memorial Day
+
+  - trigger: Tsd,.
+    replace: Tomb Sweeping Day
+
+  - trigger: cal,.
+    replace: calendar

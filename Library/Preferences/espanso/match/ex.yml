@@ -1,0 +1,21 @@
+---
+matches:
+
+  - trigger: Eu,.
+    replace: ExUnit
+
+  - trigger: Lb,.
+    replace: Livebook
+
+  - trigger: Lv,.
+    replace: LiveView
+
+  - trigger: Me,.
+    replace: MIX_ENV=
+
+  - trigger: Mep,.
+    replace: MIX_ENV=prod
+
+  - trigger: ex,.
+    replace: elixir
+    propagate_case: true

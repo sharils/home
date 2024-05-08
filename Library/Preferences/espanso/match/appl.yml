@@ -1,0 +1,71 @@
+---
+matches:
+
+  - trigger: Ad,.
+    replace: AirDrop
+
+  - trigger: Adp,.
+    replace: Apple Developer Program
+
+  - trigger: Asc,.
+    replace: App Store Connect
+
+  - trigger: At,.
+    replace: AirTag
+
+  - trigger: Atv,.
+    replace: Apple TV
+
+  - trigger: Aw,.
+    replace: Apple Watch
+
+  - trigger: Ios,.
+    replace: iOS
+
+  - trigger: Im,.
+    replace: iMessage
+
+  - trigger: Ip,.
+    replace: iPad
+
+  - trigger: Ipp,.
+    replace: iPad Pro
+
+  - trigger: Iph,.
+    replace: iPhone
+
+  - trigger: Mac,.
+    replace: macOS
+
+  - trigger: Mba,.
+    replace: MacBook Air
+
+  - trigger: Mbp,.
+    replace: MacBook Pro
+
+  - trigger: Qtp,.
+    replace: QuickTime Player
+
+  - trigger: Tf,.
+    replace: TestFlight
+
+  - trigger: Wos,.
+    replace: watchOS
+
+  - trigger: appl,.
+    replace: apple.com.tw
+
+  - trigger: as,.
+    replace: applescript
+
+  - trigger: command,.
+    replace: ⌘
+
+  - trigger: control,.
+    replace: ⌃
+
+  - trigger: option,.
+    replace: ⌥
+
+  - trigger: shift,.
+    replace: ⇧

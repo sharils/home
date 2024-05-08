@@ -1,0 +1,49 @@
+---
+matches:
+
+  - trigger: Flow,.
+    replace: |
+      "{{mental_state}}" because:
+      "{{flow.skill_level}}" is the perceived skill level;
+      "{{flow.challenge_level}}" is the preceived challenge level.
+      https://en.wikipedia.org/wiki/Flow_(psychology)#Characteristics
+
+    vars:
+      - name: flow
+        type: form
+        params:
+          layout: |
+            [[skill_level]] is the perceived skill level;
+            [[challenge_level]] is the preceived challenge level.
+          fields:
+
+            skill_level:
+              type: choice
+              default: Low
+              values:
+                - Low
+                - Medium
+                - High
+
+            challenge_level:
+              type: choice
+              default: Low
+              values:
+                - Low
+                - Medium
+                - High
+
+      - name: mental_state
+        type: shell
+        params:
+          cmd: |
+            if [ '{{flow.skill_level}}' = 'Low' ] && [ '{{flow.challenge_level}}' = 'Low' ]; then echo 'Apathy'
+            elif [ '{{flow.skill_level}}' = 'Low' ] && [ '{{flow.challenge_level}}' = 'Medium' ]; then echo 'Worry'
+            elif [ '{{flow.skill_level}}' = 'Low' ] && [ '{{flow.challenge_level}}' = 'High' ]; then echo 'Anxiety'
+            elif [ '{{flow.skill_level}}' = 'Medium' ] && [ '{{flow.challenge_level}}' = 'Low' ]; then echo 'Boredom'
+            elif [ '{{flow.skill_level}}' = 'Medium' ] && [ '{{flow.challenge_level}}' = 'Medium' ]; then echo 'Center'
+            elif [ '{{flow.skill_level}}' = 'Medium' ] && [ '{{flow.challenge_level}}' = 'High' ]; then echo 'Arousal'
+            elif [ '{{flow.skill_level}}' = 'High' ] && [ '{{flow.challenge_level}}' = 'Low' ]; then echo 'Relaxation'
+            elif [ '{{flow.skill_level}}' = 'High' ] && [ '{{flow.challenge_level}}' = 'Medium' ]; then echo 'Control'
+            elif [ '{{flow.skill_level}}' = 'High' ] && [ '{{flow.challenge_level}}' = 'High' ]; then echo 'Flow'
+            fi

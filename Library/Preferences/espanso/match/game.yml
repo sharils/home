@@ -1,0 +1,5 @@
+---
+matches:
+
+  - trigger: Mj,.
+    replace: Mahjong

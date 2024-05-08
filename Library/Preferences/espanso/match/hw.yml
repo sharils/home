@@ -1,0 +1,11 @@
+---
+matches:
+
+  - trigger: Ard,.
+    replace: Arduino
+
+  - trigger: Rp,.
+    replace: Raspberry Pi
+
+  - trigger: mw,.
+    replace: microwave

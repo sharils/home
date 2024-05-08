@@ -1,0 +1,20 @@
+---
+matches:
+
+  - trigger: Oop,.
+    replace: Object-Oriented Programming
+
+  - trigger: Srp,.
+    replace: Single Responsibility Principle
+
+  - trigger: attr,.
+    replace: attribute
+
+  - trigger: oo,.
+    replace: object-oriented
+
+  - trigger: ooad,.
+    replace: object-oriented analysis and design
+
+  - trigger: prop,.
+    replace: property

@@ -1,0 +1,4 @@
+[merge]
+	tool = vim-conflicted
+[mergetool "vim-conflicted"]
+	cmd = vim +Conflicted

@@ -1,0 +1,26 @@
+---
+matches:
+
+  - trigger: "',."
+    replace: "'$|$'"
+
+  - trigger: "(,."
+    replace: "($|$)"
+
+  - trigger: "((,."
+    replace: "(($|$))"
+
+  - trigger: "*_,."
+    replace: "*_$|$_*"
+
+  - trigger: "_*,."
+    replace: "_*$|$*_"
+
+  - trigger: "__,."
+    replace: "__$|$__"
+
+  - trigger: "[,."
+    replace: "[$|$]"
+
+  - trigger: "{,."
+    replace: "{$|$}"

@@ -1,0 +1,35 @@
+---
+matches:
+
+  - trigger: Gh,.
+    replace: GitHub
+
+  - trigger: Gl,.
+    replace: GitLab
+
+  - trigger: d,.
+    replace: develop
+
+  - trigger: gco,.
+    replace: git checkout
+
+  - trigger: gh,.
+    replace: github
+
+  - trigger: gi,.
+    replace: gitignore
+
+  - trigger: gl,.
+    replace: gitlab
+
+  - trigger: gu,.
+    replace: ^[<|=>]{7}
+
+  - trigger: pr,.
+    replace: pull request
+
+  - trigger: mr,.
+    replace: merge request
+
+  - trigger: o,.
+    replace: origin

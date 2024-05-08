@@ -1,0 +1,1 @@
+javascript: globalThis.id = () => [...document.querySelectorAll("[id]")].filter(e => e.querySelector(`[href="#${e.id}"]`) === null).forEach(e => e.insertBefore(document.createElement("a"), e.firstChild).appendChild(document.createTextNode("¶")).parentNode.setAttribute("href", `#${e.id}`));

@@ -1,0 +1,26 @@
+---
+matches:
+
+  - trigger: eg,.
+    replace: example.com
+
+  - trigger: go,.
+    replace: g0v
+
+  - trigger: lh,.
+    replace: localhost
+
+  - trigger: li,.
+    replace: login
+
+  - trigger: lo,.
+    replace: logout
+
+  - trigger: si,.
+    replace: signin
+
+  - trigger: so,.
+    replace: signout
+
+  - trigger: su,.
+    replace: signup

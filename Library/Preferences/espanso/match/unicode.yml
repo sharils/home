@@ -1,0 +1,38 @@
+---
+matches:
+
+  - trigger: LeftRightArrow,.
+    replace: ↔
+
+  - trigger: and,.
+    replace: ∧
+
+  - trigger: cap,.
+    replace: ∩
+
+  - trigger: cup,.
+    replace: ∪
+
+  - trigger: dot,.
+    replace: ·
+
+  - trigger: exists,.
+    replace: ∃
+
+  - trigger: forall,.
+    replace: ∀
+
+  - trigger: not,.
+    replace: ¬
+
+  - trigger: or,.
+    replace: ∨
+
+  - trigger: plusmn,.
+    replace: ±
+
+  - trigger: rarr,.
+    replace: →
+
+  - trigger: isin,.
+    replace: ∈

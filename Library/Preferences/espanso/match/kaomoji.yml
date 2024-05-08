@@ -1,0 +1,6 @@
+# https://ja.wikipedia.org/wiki/%E9%A1%94%E6%96%87%E5%AD%97#%E6%97%A5%E6%9C%AC%E5%9E%8B%E3%81%AE%E9%A1%94%E6%96%87%E5%AD%97
+---
+matches:
+
+  - trigger: shrug,.
+    replace: ¯\_(ツ)_/¯

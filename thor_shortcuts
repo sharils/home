@@ -1,0 +1,77 @@
+[
+  {
+    "appDisplayName" : "QuickTime Player",
+    "shortcut" : "ctrl+alt+cmd+a",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/QuickTime%20Player.app\/"
+  },
+  {
+    "shortcut" : "ctrl+alt+cmd+b",
+    "appDisplayName" : "Obsidian",
+    "appBundleURL" : "file:\/\/\/Applications\/Obsidian.app\/"
+  },
+  {
+    "shortcut" : "ctrl+alt+cmd+c",
+    "appDisplayName" : "Chromium",
+    "appBundleURL" : "file:\/\/\/Applications\/Chromium.app\/"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Firefox.app\/",
+    "appDisplayName" : "Firefox",
+    "shortcut" : "ctrl+alt+cmd+f"
+  },
+  {
+    "shortcut" : "ctrl+alt+cmd+i",
+    "appDisplayName" : "Timer",
+    "appBundleURL" : "file:\/\/\/Applications\/Timer.app\/"
+  },
+  {
+    "appDisplayName" : "KeePassXC",
+    "shortcut" : "ctrl+alt+cmd+k",
+    "appBundleURL" : "file:\/\/\/Applications\/KeePassXC.app\/"
+  },
+  {
+    "appDisplayName" : "Clock",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Clock.app\/",
+    "shortcut" : "ctrl+alt+cmd+l"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Music.app\/",
+    "appDisplayName" : "Music",
+    "shortcut" : "ctrl+alt+cmd+m"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Opera.app\/",
+    "shortcut" : "ctrl+alt+cmd+o",
+    "appDisplayName" : "Opera"
+  },
+  {
+    "shortcut" : "ctrl+alt+cmd+p",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Podcasts.app\/",
+    "appDisplayName" : "Podcasts"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Telegram.app\/",
+    "shortcut" : "ctrl+alt+cmd+r",
+    "appDisplayName" : "Telegram"
+  },
+  {
+    "shortcut" : "ctrl+alt+cmd+t",
+    "appDisplayName" : "iTerm",
+    "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/"
+  },
+  {
+    "appDisplayName" : "qutebrowser",
+    "shortcut" : "ctrl+alt+cmd+u",
+    "appBundleURL" : "file:\/\/\/Applications\/qutebrowser.app\/"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Preview.app\/",
+    "appDisplayName" : "Preview",
+    "shortcut" : "ctrl+alt+cmd+v"
+  },
+  {
+    "shortcut" : "ctrl+alt+cmd+x",
+    "appBundleURL" : "file:\/\/\/Applications\/Firefox%20Developer%20Edition.app\/",
+    "appDisplayName" : "Firefox Developer Edition"
+  }
+]
