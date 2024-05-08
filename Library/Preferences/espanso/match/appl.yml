@@ -1,0 +1,20 @@
+---
+matches:
+
+  - trigger: appl,.
+    replace: apple.com.tw
+
+  - trigger: as,.
+    replace: applescript
+
+  - trigger: command,.
+    replace: ⌘
+
+  - trigger: control,.
+    replace: ⌃
+
+  - trigger: option,.
+    replace: ⌥
+
+  - trigger: shift,.
+    replace: ⇧

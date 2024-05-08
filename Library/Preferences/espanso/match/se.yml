@@ -1,0 +1,38 @@
+---
+matches:
+
+  - trigger: Bdd,.
+    replace: Behaviour-Driven Development
+
+  - trigger: Enl,.
+    replace: EOF NL
+
+  - trigger: Nl,.
+    replace: NL
+
+  - trigger: Ser,.
+    replace: SE Radio
+
+  - trigger: Tdd,.
+    replace: Test-Driven Development
+
+  - trigger: bf,.
+    replace: bugfix
+
+  - trigger: eng,.
+    replace: engineer
+
+  - trigger: hf,.
+    replace: hotfix
+
+  - trigger: perf,.
+    replace: performance
+
+  - trigger: ref,.
+    replace: reference
+
+  - trigger: rel,.
+    replace: release
+
+  - trigger: se,.
+    replace: software engineering

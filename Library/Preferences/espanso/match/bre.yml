@@ -1,0 +1,31 @@
+---
+matches:
+  - trigger: +,.
+    replace: \{1,\}
+
+  - trigger: ?,.
+    replace: \{0,1\}
+
+  - trigger: \<,.
+    replace: "[[:<:]]"
+
+  - trigger: \>,.
+    replace: "[[:>:]]"
+
+  - trigger: \D,.
+    replace: "[^[:digit:]]"
+
+  - trigger: \S,.
+    replace: "[^[:space:]]"
+
+  - trigger: \W,.
+    replace: "[^[:alnum:]_]"
+
+  - trigger: \d,.
+    replace: "[[:digit:]]"
+
+  - trigger: \s,.
+    replace: "[^[:space:]]"
+
+  - trigger: \w,.
+    replace: "[[:alnum:]_]"

@@ -1,0 +1,11 @@
+---
+matches:
+
+  - trigger: .s,.
+    replace: .social
+
+  - trigger: Tg,.
+    replace: Telegram
+
+  - trigger: so,.
+    replace: significant other

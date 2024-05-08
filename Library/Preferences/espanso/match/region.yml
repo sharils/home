@@ -1,0 +1,90 @@
+---
+matches:
+
+  - trigger: Africa (Cape Town)
+    replace: af-south-1
+
+  - trigger: Asia Pacific (Hong Kong)
+    replace: ap-east-1
+
+  - trigger: Asia Pacific (Tokyo)
+    replace: ap-northeast-1
+
+  - trigger: Asia Pacific (Seoul)
+    replace: ap-northeast-2
+
+  - trigger: Asia Pacific (Osaka)
+    replace: ap-northeast-3
+
+  - trigger: Asia Pacific (Mumbai)
+    replace: ap-south-1
+
+  - trigger: Asia Pacific (Hyderabad)
+    replace: ap-south-2
+
+  - trigger: Asia Pacific (Singapore)
+    replace: ap-southeast-1
+
+  - trigger: Asia Pacific (Sydney)
+    replace: ap-southeast-2
+
+  - trigger: Asia Pacific (Jakarta)
+    replace: ap-southeast-3
+
+  - trigger: Asia Pacific (Melbourne)
+    replace: ap-southeast-4
+
+  - trigger: Canada (Central)
+    replace: ca-central-1
+
+  - trigger: Canada West (Calgary)
+    replace: ca-west-1
+
+  - trigger: Europe (Frankfurt)
+    replace: eu-central-1
+
+  - trigger: Europe (Zurich)
+    replace: eu-central-2
+
+  - trigger: Europe (Stockholm)
+    replace: eu-north-1
+
+  - trigger: Europe (Milan)
+    replace: eu-south-1
+
+  - trigger: Europe (Spain)
+    replace: eu-south-2
+
+  - trigger: Europe (Ireland)
+    replace: eu-west-1
+
+  - trigger: Europe (London)
+    replace: eu-west-2
+
+  - trigger: Europe (Paris)
+    replace: eu-west-3
+
+  - trigger: Israel (Tel Aviv)
+    replace: il-central-1
+
+  - trigger: Middle East (UAE)
+    replace: me-central-1
+
+  - trigger: Middle East (Bahrain)
+    replace: me-south-1
+
+  - trigger: South America (São Paulo)
+    replace: sa-east-1
+
+  - trigger: US East (Virginia)
+    replace: us-east-1
+
+  - trigger: US East (Ohio)
+    replace: us-east-2
+
+  - trigger: US West (N. California)
+    replace: us-west-1
+
+  - trigger: US West (Oregon)
+    replace: us-west-2
+

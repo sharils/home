@@ -1,0 +1,11 @@
+---
+matches:
+
+  - trigger: bm,.
+    replace: bookmark
+
+  - trigger: br,.
+    replace: browser
+
+  - trigger: nav,.
+    replace: navigation

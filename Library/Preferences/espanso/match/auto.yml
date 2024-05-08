@@ -1,0 +1,5 @@
+---
+matches:
+
+  - trigger: Pom,.
+    replace: Page Object Model

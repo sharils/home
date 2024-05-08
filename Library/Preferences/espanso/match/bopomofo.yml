@@ -1,0 +1,15 @@
+---
+matches:
+
+  - trigger: cw,.
+    replace: ㄘㄨㄚˋ
+
+  - trigger: jiji,.
+    replace: ㄐㄐ
+
+  - trigger: kd,.
+    replace: ㄎㄧㄤ
+
+  - trigger: nznz,.
+    replace: ㄋㄟㄋㄟ
+

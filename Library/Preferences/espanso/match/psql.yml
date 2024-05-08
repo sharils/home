@@ -1,0 +1,8 @@
+---
+matches:
+
+  - trigger: Pg,.
+    replace: PostgreSQL
+
+  - trigger: \c,.
+    replace: \connect

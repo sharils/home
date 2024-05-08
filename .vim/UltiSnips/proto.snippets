@@ -1,0 +1,110 @@
+extends boolean
+
+priority 3
+
+snippet 2 "syntax = proto2" b
+syntax = "proto2";
+endsnippet
+
+snippet 3 "syntax = proto3" b
+syntax = "proto3";
+endsnippet
+
+snippet d "optional deadline" b
+optional deadline = ${1:30};
+endsnippet
+
+snippet en "enum" b
+enum ${1:Person} {
+	${2:option allow_alias = true;}$3
+}
+endsnippet
+
+snippet ex "extend google.protobuf.EnumValueOptions {}" b
+extend google.protobuf.EnumValueOptions {
+	optional ${1:string} ${2:string_name} = ${3:123456789};
+}
+endsnippet
+
+snippet i "import" b
+import "${1:google/protobuf/any.proto}";
+endsnippet
+
+snippet me "message" b
+message ${1:Person} {
+}
+endsnippet
+
+snippet o "optional" b
+optional
+endsnippet
+
+snippet 1 "oneof" b
+oneof ${1:test_oneof} {
+}
+endsnippet
+
+snippet p "package" b
+package ${1:tutorial};
+endsnippet
+
+snippet r "repeated" b
+repeated
+endsnippet
+
+snippet rsv "reserved" b
+reserved ${1:reserved 2, 15, 9 to 11, 40 to max;
+reserved "FOO", "BAR";}
+endsnippet
+
+snippet rpc "rpc" b
+rpc ${1:SayHello} (${2:HelloRequest}) returns (${3:HelloReply}) {}
+endsnippet
+
+snippet srv "service" b
+service ${1:Greeter} {
+}
+endsnippet
+
+
+priority 2
+
+snippet O "OBSOLETE_" w
+OBSOLETE_
+endsnippet
+
+snippet any "any" w
+google.protobuf.Any ${1:details}details = ${2:2};
+endsnippet
+
+snippet b "bool" w
+bool ${1:has_ponycopter} = ${2:3};
+endsnippet
+
+snippet depr " [deprecated = true]" w
+[deprecated = true]
+endsnippet
+
+snippet i32 "int32" w
+int32 ${1:id} = ${2:2};
+endsnippet
+
+snippet m "map" w
+map<${1:string}, ${2:Project}> ${3:projects} = ${4:3};
+endsnippet
+
+snippet p "public" w
+public $0
+endsnippet
+
+snippet rs "[retention = RETENTION_SOURCE]" w
+[retention = RETENTION_SOURCE]
+endsnippet
+
+snippet s "string" w
+string ${1:name} = ${2:1};
+endsnippet
+
+snippet st "stream" w
+stream $0
+endsnippet

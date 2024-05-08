@@ -1,0 +1,60 @@
+priority 4
+
+snippet h "html" "len(snip.buffer) == 1" e
+<!-- https://www.sitepoint.com/a-basic-html5-template/ -->
+<!DOCTYPE html>
+<html lang="${1:en}">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>${2:Example Domain}</title>
+		<meta name="description" content="${3:The domain names are used widely in books, tutorials, sample network configurations, and generally as examples for the use of domain names}" />
+		<meta name="author" content="${4:IANA}" />
+		<meta property="og:title" content="$2" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="${5:https://example.com}" />
+		<meta property="og:description" content="$3" />
+		<meta property="og:image" content="${6:image.png}" />
+		<link rel="icon" href="${7:/favicon.ico}" />
+		<link rel="icon" href="${8:/favicon.svg}" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="${9:/apple-touch-icon.png}" />
+		<link rel="stylesheet" href="${10:index.css?v=1.0}" />
+	</head>
+
+	<body>
+		<!-- your content here... -->
+		<script src="${11:index.js}"></script>
+	</body>
+</html>
+endsnippet
+
+
+priority 3
+
+snippet desc "<meta name='description' content='' />" b
+<meta name="description" content="$1" />
+endsnippet
+
+snippet l "link" b
+<link rel="stylesheet" type="text/css" href="${1:index}.css" />
+endsnippet
+
+snippet utf8 "<meta charset=utf-8 />" b
+<meta charset="utf-8" />
+endsnippet
+
+snippet viewport "<meta name='viewport' content='width=device-width, initial-scale=1' />" b
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+endsnippet
+
+
+priority 2
+
+snippet ss "script" w
+<script src="$1"></script>
+endsnippet
+
+snippet st "style" w
+<style type="text/css">$1
+</style>
+endsnippet

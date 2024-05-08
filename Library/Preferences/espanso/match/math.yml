@@ -1,0 +1,20 @@
+---
+matches:
+
+  - trigger: avg,.
+    replace: average
+
+  - trigger: empty,.
+    replace: ∅
+
+  - trigger: epsi,.
+    replace: ε
+
+  - trigger: fn,.
+    replace: function
+
+  - trigger: min,.
+    replace: minimum
+
+  - trigger: times,.
+    replace: ×

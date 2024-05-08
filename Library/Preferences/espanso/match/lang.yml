@@ -1,0 +1,26 @@
+---
+matches:
+
+  - trigger: Bre,.
+    replace: British English
+
+  - trigger: En,.
+    replace: English
+
+  - trigger: Eo,.
+    replace: Esperanto
+
+  - trigger: Et,.
+    replace: Etymology Online
+
+  - trigger: Zh,.
+    replace: Chinese
+
+  - trigger: lang,.
+    replace: language
+
+  - trigger: ncc,.
+    replace: "@needs native check"
+
+  - trigger: zh,.
+    replace: 中文

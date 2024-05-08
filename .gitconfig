@@ -1,0 +1,37 @@
+[commit]
+	gpgsign = true
+	verbose = 2
+[core]
+	autocrlf = input
+	pager = less --quit-if-one-screen
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[difftool "vimdiff"]
+	cmd = vimdiff '+:winc w' '+norm ]c' '+set foldlevel=1' $LOCAL $REMOTE
+[fetch]
+	prune = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = ~/git/github.com/sharils/home/gitignore.allowedSignersFile
+[grep]
+	lineNumber = true
+[include]
+	path = ~/git/github.com/sharils/home/alias.gitconfig
+	# https://github.com/settings/emails > Keep my email addresses private
+	# git config -f gitignore.gitconfig user.name $name
+	# git config -f gitignore.gitconfig user.email $id+$name@users.noreply.github.com.pub
+	# git config -f gitignore.gitconfig user.signingKey ~/.ssh/$email.pub
+	# git config -f gitignore.gitconfig core.sshCommand ~/.ssh/$email.pub
+	path = ~/git/github.com/sharils/home/gitignore.gitconfig
+	path = ~/git/github.com/sharils/home/vim-conflicted.gitconfig
+[init]
+	defaultBranch = main
+[merge]
+	conflictstyle = diff3
+[mergetool]
+	keepBackup = false
+[rebase]
+	missingCommitsCheck = error

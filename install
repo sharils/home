@@ -1,0 +1,211 @@
+#!/usr/bin/env bash
+
+# Go Mono https://blog.golang.org/go-fonts#TOC_2.
+
+main() {
+    if [ $# != 1 ]; then
+        echo "Usage: $0 <git_global_config_user.signingkey>"
+        return 1
+    fi
+
+    signingkey=$1
+
+    curl https://raw.githubusercontent.com/thameera/vimv/master/vimv > /usr/local/bin && \
+        chmod 755 /usr/local/bin
+
+    if brew --version; then
+        echo brew is already installed
+    else
+      /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    fi
+
+    brew install \
+        .lynx \
+        autojump \
+        ctags \
+        direnv \
+        fd \
+        fzf \
+        git \
+        git-crypt \
+        gnupg \
+        hr \
+        hub \
+        jq \
+        mas \
+        ncdu \
+        node \
+        node@10 \
+        noti \
+        ripgrep \
+        shellcheck \
+        shfmt \
+        tig \
+        typescript \
+        vim \
+        watchman
+
+    # brew install \
+    #     asciinema \
+    #     bat \
+    #     cask-repair \
+    #     elixir \
+    #     erlang \
+    #     exercism \
+    #     fpp \
+    #     gitlab-gem \
+    #     gitup \
+    #     nnn \
+    #     octave \
+    #     rmtrash \
+    #     phantomjs \
+    #     python-yq \
+    #     surfraw \
+    #     screen \
+    #     todo-txt \
+    #     w3m \
+    #     tldr \
+    #     zbar
+
+    # brew tap browsh-org/homebrew-browsh && \
+    #     brew install browsh-org/browsh/browsh
+
+    brew cask install homebrew/cask-versions/firefox-developer-edition
+
+    brew cask install \
+        brave-browser \
+        chromium \
+        clipy \
+        drawio \
+        firefox \
+        gimp \
+        karabiner-elements \
+        keepassxc \
+        keybase \
+        mongodb-compass \
+        mongodb-compass-readonly \
+        react-native-debugger \
+        postman
+        remember-the-milk \
+        slack \
+        spectacle \
+        vagrant \
+        virtualbox \
+        vivaldi \
+        zoomus
+
+    brew cask install \
+        dropbox \
+        wechatwebdevtools \
+        xmind-zen \
+        zoho-mail
+
+    brew cask install \
+        adobe-acrobat-reader \
+        anki \
+        chromedriver \
+        opera \
+        operadriver \
+        origin \
+        skype \
+        steam \
+        syncthing \
+        toggl \
+        tor-browser \
+        virtualbox-extension-pack \
+
+    # brew cask install \
+    #     android-file-transfer \
+    #     devdocs \
+    #     google-chrome \
+    #     insomnia \
+    #     libreoffice \
+    #     notion \
+    #     polar-bookshelf \
+    #     quicklook-json \
+    #     rescuetime \
+    #     robo-3t \
+
+    mas install \
+    # Battery-Diag (2.4.3)
+        # 836505650 \
+    # Be Focused (1.7.5)
+        # 973134470 \
+    # gifgrabberosx (4.1)
+        # 668208984 \
+    # KeyboardLocker (1.0)
+        # 1444996429 \
+    # LINE (5.16.2)
+        539883307 \
+    # metacode (1.8.15)
+        # 1454994142 \
+    # PocketMac (1.8.2)
+        # 568494494 \
+    # Thor (1.3.1)
+        1120999687
+
+    npm install \
+    # for create-react-native-app
+        expo-cli \
+        pnpm
+
+    if rustc --version; then
+        echo rust is installed
+    else
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    fi
+
+    git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it &&
+        ~/.bash_it/install.sh
+
+    ln -fs "$PWD/"{.bash_it_custom,\
+.bash_profile,\
+.bashrc,\
+.ctags.d,\
+.curlrc,\
+.editrc,\
+.fdignore,\
+.gitconfig,\
+.gitignore,\
+.inputrc,\
+.livebookdesktop.sh,\
+.qutebrowser,\
+.surfraw.conf,\
+.todo.cfg,\
+.tigrc,\
+.vim,\
+.vimrc,\
+tsconfig.json} ~
+
+    ln -fs "$PWD/.config/karabiner/karabiner.json" ~/.config/karabiner/karabiner.json
+
+    ln -fs "$PWD/.config/starship.toml" ~/.config/starship.toml
+    ln -fs "$PWD/.config/git" ~/.config/git
+    ln -fs "$PWD/.config/lsd" ~/.config/lsd
+    ln -fs "$PWD/.config/thefuck/rules" ~/.config/thefuck/rules
+
+    ln -fs "$PWD/Library/Preferences/"{espanso,qutebrowser} ~/Library/Preferences
+
+    mkdir -p ~/.gnupg/ && ln -fs "$PWD/.gnupg/gpg-agent.conf" ~/.gnupg/gpg-agent.conf
+
+    curl -L https://iterm2.com/shell_integration/install_shell_integration.sh | bash
+
+    cp .npmrc ~
+
+    mkdir -p ~/.cache/vim-gutentags
+
+    vim -S ~/.vim/snapshot.vim
+
+    IFS='<' read -r name email <<< "$(gpg --list-key "$signingkey" | sed -n 's/uid           \[ultimate\] //; 3s/>//g; 3s/ </</; 3p')"
+
+    git config --file ~/git/github.com/sharils/home/gitignore.gitconfig user.email "$email"
+    git config --file ~/git/github.com/sharils/home/gitignore.gitconfig user.name "$name"
+    git config --file ~/git/github.com/sharils/home/gitignore.gitconfig user.signingkey "$signingkey"
+    git config --file ~/git/github.com/sharils/home/gitignore.gitconfig --list
+}
+
+main "$*"
+
+echo 'REMEMBER:'
+echo '- Automatically rearrange Spaces based on most recent use'
+echo '- Dashboard: As Overlay'

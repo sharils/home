@@ -1,0 +1,8 @@
+--exclude=*.css
+--exclude=*.json
+--exclude=*.md
+--exclude=Session.vim
+--exclude=.next
+--exclude=dist
+--exclude=node_modules
+--exclude=package-lock.json

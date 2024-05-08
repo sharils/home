@@ -1,0 +1,81 @@
+extends javascript
+
+priority 2
+
+snippet CP< "ConstructorParameters<T>" w
+ConstructorParameters<${1:T}>
+endsnippet
+
+snippet P< "Parameters<T>" w
+Parameters<${1:T}>
+endsnippet
+
+snippet RT< "ReturnType<T>" w
+ReturnType<${1:T}>
+endsnippet
+
+snippet ac "as const" w
+as const
+endsnippet
+
+snippet de "declare" w
+declare $0
+endsnippet
+
+snippet dni "declare namespace interface" w
+declare ${1:global} {
+	namespace ${2:NodeJS} {
+		interface ${3:ProcessEnv} {$4}
+	}
+}
+endsnippet
+
+snippet eka "extends keyof any" w
+extends keyof any
+endsnippet
+
+snippet en "enum" w
+enum $1 {
+	$2
+}
+endsnippet
+
+snippet k "keyof" w
+keyof ${1:any}
+endsnippet
+
+snippet ne "never" w
+never
+endsnippet
+
+snippet pu "public" w
+public $0
+endsnippet
+
+snippet pro "protected" w
+protected $0
+endsnippet
+
+snippet # "private" w
+private $0
+endsnippet
+
+snippet ro "readonly" w
+readonly $0
+endsnippet
+
+snippet un "unknown" w
+unknown
+endsnippet
+
+snippet RA "ReadonlyArray<T>" w
+ReadonlyArray<$1>
+endsnippet
+
+snippet ty "type" w
+type $0
+endsnippet
+
+snippet < "<>" i
+<$1>
+endsnippet

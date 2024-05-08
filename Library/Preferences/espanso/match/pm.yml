@@ -1,0 +1,38 @@
+---
+matches:
+
+  - trigger: Cu,.
+    replace: ClickUp
+
+  - trigger: Gbv,.
+    replace: Gross Booking Value
+
+  - trigger: Po,.
+    replace: Product Owner
+
+  - trigger: Rtm,.
+    replace: Remember The Milk
+
+  - trigger: Smart,.
+    replace: Specific, Measurable, Achievable, Relevant, and Time-bound
+
+  - trigger: acc,.
+    replace: account
+
+  - trigger: ep,.
+    replace: episode
+
+  - trigger: ft,.
+    replace: feature
+
+  - trigger: pdm,.
+    replace: product management
+
+  - trigger: pjm,.
+    replace: project management
+
+  - trigger: pmt,.
+    replace: project management triangle
+
+  - trigger: rf,.
+    replace: royalty free

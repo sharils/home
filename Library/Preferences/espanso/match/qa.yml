@@ -1,0 +1,11 @@
+---
+matches:
+
+  - trigger: Adf,.
+    replace: AWS Device Farm
+
+  - trigger: Bl,.
+    replace: Browserling
+
+  - trigger: Bs,.
+    replace: BrowserStack

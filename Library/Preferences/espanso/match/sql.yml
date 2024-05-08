@@ -1,0 +1,17 @@
+---
+matches:
+
+  - trigger: Maria,.
+    replace: MariaDB
+
+  - trigger: My,.
+    replace: MySQL
+
+  - trigger: fk,.
+    replace: foreign key
+
+  - trigger: pk,.
+    replace: primary key
+
+  - trigger: rdbms,.
+    replace: relational database management system

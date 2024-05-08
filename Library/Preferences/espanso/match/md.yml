@@ -1,0 +1,25 @@
+---
+matches:
+
+  - trigger: "*,."
+    replace: "*$|$*"
+
+  - trigger: "[(,."
+    replace: "{{link}}"
+    vars:
+      - name: link
+        type: shell
+        params:
+          cmd: 'echo "[$|$]($(pbpaste))"'
+
+  - trigger: "_,."
+    replace: "_$|$_"
+
+  - trigger: "```,."
+    replace: |
+      ```
+      $|$
+      ```
+
+  - trigger: "~,."
+    replace: "~$|$~"

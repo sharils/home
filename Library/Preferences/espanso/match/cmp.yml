@@ -1,0 +1,17 @@
+---
+matches:
+
+  - trigger: eq,.
+    replace: equal to
+
+  - trigger: gt,.
+    replace: greater than
+
+  - trigger: gte,.
+    replace: greater than or equal to
+
+  - trigger: lt,.
+    replace: less than
+
+  - trigger: lte,.
+    replace: less than or equal to

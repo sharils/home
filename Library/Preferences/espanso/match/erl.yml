@@ -1,0 +1,11 @@
+---
+matches:
+
+  - trigger: Erl,.
+    replace: Erlang/OTP
+
+  - trigger: ob,.
+    replace: observer.start()
+
+  - trigger: rc,.
+    replace: recompile

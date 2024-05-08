@@ -1,0 +1,84 @@
+# general
+/Users/**
+!/Users/*/.fdignore
+!/Users/*/Downloads
+!/Users/*/Downloads/*
+!/Users/*/tmp
+
+# git
+.git
+!.git/info
+.gitattributes
+.gitmodules
+
+# android
+.gradle
+build
+
+# ctags
+tags
+
+# elixir
+_build
+deps
+
+# intellij idea
+.idea
+
+# ios
+Pods
+
+# javascript
+*.map
+.expo
+.next
+coverage
+node_modules
+package-lock.json
+tsconfig.tsbuildinfo
+yarn.lock
+
+# letsencrypt
+*.pem
+acme-staging{,-v02}.api.letsencrypt.org
+acme-v0{1,2}.api.letsencrypt.org
+
+# phoenix
+**/assets/vendor
+
+# python
+*.pyc
+.pytest_cache
+__pycache__
+
+# rust
+/target
+Cargo.lock
+
+# ssh
+!/Users/*/.ssh
+!/Users/*/.ssh/config
+
+# syncthing
+!/Users/*/Sync
+!/Users/*/Sync/**
+.stversions
+.stfolder
+
+# vagrant
+.vagrant
+
+# vim
+.vim/plugged/*
+!.vim/plugged/{after,before}
+!.vim/plugged/vim-snippets
+.vim/plugged/vim-snippets/*
+!.vim/plugged/vim-snippets/UltiSnips
+Session.vim
+
+# vscode
+.vscode
+
+# macos
+.localized
+.DS_Store

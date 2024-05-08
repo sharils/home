@@ -1,0 +1,45 @@
+snippet dsu "Daily Stand-up" b
+`! date +%F-%a`:
+	Tomorrow: 🌈
+		- Meal
+			- Umaru
+				- TODO
+			- Breakfast
+				- TODO
+			- Lunch
+				- TODO
+			- Dinner
+				- TODO
+		- TODO
+	Grateful: 🙇
+		- I’m grateful TODO.
+	Loved: ✅
+		- TODO
+		- I like myself about TODO.
+	Loathed: ❌
+		- TODO
+	Learned: 📘
+		- TODO
+	Health:
+		- TODO
+		- Deep sleep S00%, D0:00, D+0:00, DS00%, DS0:00, R0:00, E00%, E0:00. TODO
+	Time:
+		- I woke up at ${1:`! date +%R`}.
+		- I went to bed at TODO.
+endsnippet
+
+snippet rs "Retrospective" b
+`! date +%Y-W%V`:
+	Longed for: ⭐️
+		- _______ `! date +%F` TODO
+	Loved: ✅
+		- TODO
+	Loathed: ❌
+		- TODO
+	Learned: 📘
+		- TODO
+endsnippet
+
+snippet - "I ... til %R." w
+- I ${1:worked on $2} til ${3:`! date +%R`}.
+endsnippet

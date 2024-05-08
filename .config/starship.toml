@@ -1,0 +1,20 @@
+# https://starship.rs/config/#git-metrics
+[[battery.display]]
+charging_symbol = '🔌'
+discharging_symbol = '🔋'
+threshold = 95
+# [git_metrics]
+# [kubernetes]
+# [localip]
+# [memory_usage]
+# [hg_branch]
+# [os]
+# [pijul_channel]
+# [shell]
+# [shlvl]
+# [status]
+# [sudo]
+[time]
+disabled = false
+time_format = '%m%dT%H%M'
+# disabled = false

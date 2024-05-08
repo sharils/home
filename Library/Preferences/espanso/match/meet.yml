@@ -1,0 +1,38 @@
+---
+matches:
+
+  - trigger: Bt,.
+    replace: Backlog Triage
+
+  - trigger: Dsu,.
+    replace: Daily Stand-up
+
+  - trigger: Dsn,.
+    form: |
+      Yesterday/Last Friday, I:
+        -
+      Today, I’m going to:
+        -
+      Blocker:
+        -
+
+  - trigger: Pbl,.
+    replace: Product Backlog
+
+  - trigger: Rs,.
+    replace: Retrospective
+
+  - trigger: Rspl,.
+    replace: Retrospective and Sprint Planning
+
+  - trigger: Sbl,.
+    replace: Sprint Backlog
+
+  - trigger: Spl,.
+    replace: Sprint Planning
+
+  - trigger: Stum,.
+    replace: Stand-up Meeting
+
+  - trigger: pm,.
+    replace: post-mortem

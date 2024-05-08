@@ -1,0 +1,14 @@
+---
+matches:
+
+  - trigger: Cbt,.
+    replace: Cognitive behavioral therapy (CBT)
+
+  - trigger: Ddx,.
+    replace: Differential Diagnosis (DDx)
+
+  - trigger: Hsp,.
+    replace: Highly Sensitive Person (HSP)
+
+  - trigger: Pmr,.
+    replace: Progressive Muscle Relaxation

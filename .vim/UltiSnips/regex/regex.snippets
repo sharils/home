@@ -1,0 +1,33 @@
+global !p
+from my_snippet_helpers import *
+endglobal
+
+
+priority 6
+
+snippet <! "(?<!)" "around_regex(snip)" ie
+(?<!$1)
+endsnippet
+
+snippet <= "(?<=)" "around_regex(snip)" ie
+(?<=$1)
+endsnippet
+
+
+priority 5
+
+snippet ! "(?!)" "around_regex(snip)" ie
+(?!$1)
+endsnippet
+
+snippet : "(?:)" "around_regex(snip)" ie
+(?:$1)
+endsnippet
+
+snippet = "(?=)" "around_regex(snip)" ie
+(?=$1)
+endsnippet
+
+snippet ^ "[^]" "around_regex(snip)" ie
+[^$1]
+endsnippet

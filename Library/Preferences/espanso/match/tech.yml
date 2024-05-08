@@ -1,0 +1,89 @@
+---
+matches:
+
+  - trigger: Amp,.
+    replace: Amplitude
+
+  - trigger: Bt,.
+    replace: Bluetooth
+
+  - trigger: Dnd,.
+    replace: Do Not Disturb
+
+  - trigger: Ei,.
+    replace: E Ink
+
+  - trigger: Oss,.
+    replace: Open Source
+
+  - trigger: Pos,.
+    replace: POSIX
+
+  - trigger: Qr,.
+    replace: QR code
+
+  - trigger: Xr,.
+    replace: Exercism
+
+  - trigger: bg,.
+    replace: background
+
+  - trigger: conf,.
+    replace: configure
+
+  - trigger: ds,.
+    replace: dataset
+
+  - trigger: dt,.
+    replace: desktop
+
+  - trigger: ed,.
+    replace: editor
+
+  - trigger: ev,.
+    replace: environment variable
+
+  - trigger: gen,.
+    replace: generate
+
+  - trigger: ks,.
+    replace: keyboard shortcuts
+
+  - trigger: noti,.
+    replace: notification
+
+  - trigger: prog,.
+    replace: program
+
+  - trigger: ps,.
+    replace: podcast
+
+  - trigger: scc,.
+    replace: screencast
+
+  - trigger: scr,.
+    replace: screen
+
+  - trigger: scs,.
+    replace: screenshot
+
+  - trigger: sim,.
+    replace: simulator
+
+  - trigger: sp,.
+    replace: smart phone
+
+  - trigger: ss,.
+    replace: spreadsheet
+
+  - trigger: sw,.
+    replace: software
+
+  - trigger: sync,.
+    replace: synchronization
+
+  - trigger: tab,.
+    replace: tablet
+
+  - trigger: win,.
+    replace: window

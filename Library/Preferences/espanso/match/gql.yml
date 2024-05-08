@@ -1,0 +1,8 @@
+---
+matches:
+
+  - trigger: Agql,.
+    replace: Apollo GraphQL
+
+  - trigger: Gql,.
+    replace: GraphQL

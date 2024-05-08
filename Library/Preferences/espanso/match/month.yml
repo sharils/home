@@ -1,0 +1,39 @@
+---
+matches:
+
+  - trigger: Ja,.
+    replace: January
+
+  - trigger: Fe,.
+    replace: February
+
+  - trigger: Mr,.
+    replace: March
+
+  - trigger: Ar,.
+    replace: April
+
+  - trigger: Ma,.
+    replace: May
+
+  - trigger: Jn,.
+    replace: June
+
+  - trigger: Jl,.
+    replace: July
+
+  - trigger: Au,.
+    replace: August
+
+  - trigger: Se,.
+    replace: September
+
+  - trigger: Oc,.
+    replace: October
+
+  - trigger: No,.
+    replace: November
+
+  - trigger: De,.
+    replace: December
+
