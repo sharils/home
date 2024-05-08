@@ -1,0 +1,140 @@
+---
+matches:
+
+  - trigger: app,.
+    replace: application
+
+  - trigger: Dbf,.
+    replace: Dragon Boat Festival
+
+  - trigger: Dtd,.
+    replace: Double Tenth Day
+
+  - trigger: Ld,.
+    replace: Labour’s Day
+
+  - trigger: Lny,.
+    replace: Lunar New Year
+
+  - trigger: Maf,.
+    replace: Mid-Autumn Festival
+
+  - trigger: Pmd,.
+    replace: Peace Memorial Day
+
+  - trigger: Tsd,.
+    replace: Tomb Sweeping Day
+
+  - trigger: La,.
+    replace: Los Angelos
+
+  - trigger: Nyc,.
+    replace: New York City
+
+  - trigger: Sg,.
+    replace: Singapore
+
+  - trigger: Tw,.
+    replace: Taiwan
+
+  - trigger: Us,.
+    replace: the U.S.
+
+  - trigger: S4,.
+    replace: Sims 4
+
+  - trigger: Bre,.
+    replace: British English
+
+  - trigger: En,.
+    replace: English
+
+  - trigger: Eo,.
+    replace: Esperanto
+
+  - trigger: Zh,.
+    replace: Chinese
+
+  - trigger: Co,.
+    replace: Coursera
+
+  - trigger: Li,.
+    replace: LINE
+
+  - trigger: Lp,.
+    replace: LINE Pay
+
+  - trigger: Enfj,.
+    replace: ENFJ
+
+  - trigger: Enfp,.
+    replace: ENFP
+
+  - trigger: Entj,.
+    replace: ENTJ
+
+  - trigger: Entp,.
+    replace: ENTP
+
+  - trigger: Esfj,.
+    replace: ESFJ
+
+  - trigger: Esfp,.
+    replace: ESFP
+
+  - trigger: Estj,.
+    replace: ESTJ
+
+  - trigger: Estp,.
+    replace: ESTP
+
+  - trigger: Infj,.
+    replace: INFJ
+
+  - trigger: Infp,.
+    replace: INFP
+
+  - trigger: Intj,.
+    replace: INTJ
+
+  - trigger: Intp,.
+    replace: INTP
+
+  - trigger: Isfj,.
+    replace: ISFJ
+
+  - trigger: Isfp,.
+    replace: ISFP
+
+  - trigger: Istj,.
+    replace: ISTJ
+
+  - trigger: Istp,.
+    replace: ISTP
+
+  - trigger: Mbti,.
+    replace: MBTI
+
+  - trigger: Aed,.
+    replace: AED
+
+  - trigger: Cbt,.
+    replace: Cognitive behavioral therapy (CBT)
+
+  - trigger: Cpr,.
+    replace: CPR
+
+  - trigger: Ddx,.
+    replace: Differential Diagnosis (DDx)
+
+  - trigger: Hsp,.
+    replace: Highly Sensitive Person (HSP)
+
+  - trigger: Pmr,.
+    replace: Progressive Muscle Relaxation
+
+  - trigger: 934,.
+    replace: 9¾
+
+  - trigger: pc,.
+    replace: podcast

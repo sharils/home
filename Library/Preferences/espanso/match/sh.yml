@@ -1,0 +1,32 @@
+---
+matches:
+
+  - trigger: /-,.
+    replace: /^[[:space:]]+-
+
+  - trigger: /e,.
+    replace: /^environment
+
+  - trigger: Bsh,.
+    replace: Bourne Shell
+
+  - trigger: Psh,.
+    replace: POSIX Shell
+
+  - trigger: \',.
+    replace: "'\\''$|$'\\''"
+
+  - trigger: p,.
+    replace: printf
+
+  - trigger: seds,.
+    replace: sed 's/$|$//'
+
+  - trigger: sh,.
+    replace: shell
+
+  - trigger: xsis,.
+    replace: xargs sed -i '' 's/$|$//'
+
+  - trigger: "`,."
+    replace: "`$|$`"

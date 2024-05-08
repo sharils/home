@@ -1,0 +1,524 @@
+---
+matches:
+
+  - trigger: "!!,."
+    replace: ‼️
+
+  - trigger: "!?,."
+    replace: ⁉️
+
+  - trigger: "!!,."
+    replace: ❗️❕
+
+  - trigger: "??,."
+    replace: ❓❔
+
+  - trigger: 100yes,.
+    replace: 💯😃
+
+  - trigger: 5,.
+    replace: 5️⃣5️⃣5️⃣5️⃣5️⃣
+
+  - trigger: 7,.
+    replace: 🎰
+
+  - trigger: agree,.
+    replace: 🌜🥂🌛
+
+  - trigger: alien,.
+    replace: 🛸👽
+
+  - trigger: angry,.
+    replace: 👿🤬😡😠💢😤
+
+  - trigger: ass,.
+    replace: 💋🐴
+
+  - trigger: beg,.
+    replace: 🧎🏻‍♀️🚶🏻‍♀️🦽👩🏻‍🦽
+
+  - trigger: bite,.
+    replace: 🚫😬👋🏻🥘
+
+  - trigger: blind,.
+    replace: 🕳️👩🏻‍🦯
+
+  - trigger: blink,.
+    replace: 😐😑😐
+
+  - trigger: bin,.
+    replace: 🤾🏻‍♀️🗑️
+
+  - trigger: block,.
+    replace: ❌🧱
+
+  - trigger: bonk,.
+    replace: 🧎🏻‍♀️🏌🏻‍♀️
+
+  - trigger: brb,.
+    replace: 👩🏻‍💻🧴
+
+  - trigger: bs,.
+    replace: 🚫⏰🐂💩
+
+  - trigger: bye,.
+    replace: 🤸🏻‍♀️🕳️
+
+  - trigger: call,.
+    replace: 🤙🏻
+
+  - trigger: caught,.
+    replace: 😈📸
+
+  - trigger: cheers,.
+    replace: 🌚🥂🌝
+
+  - trigger: chef,.
+    replace: 😚🤌
+
+  - trigger: clown,.
+    replace: 🤡🔊
+
+  - trigger: cold,.
+    replace: 😫❄️
+
+  - trigger: comfort,.
+    replace: 🚫😢🍼💦
+
+  - trigger: cottagecore,.
+    replace: 🌈🍄🍃
+
+  - trigger: cloud,.
+    replace: ☁️🙆🏻‍♀️☁️
+
+  - trigger: cry,.
+    replace: 😭🏊🏻‍♀️
+
+  - trigger: die,.
+    replace: 🫃🏻🤛🏻
+
+  - trigger: dizzy,.
+    replace: 😵💫🚢
+
+  - trigger: doghouse,.
+    replace: 🐶🏡
+
+  - trigger: dontcare,.
+    replace: 😃🖕
+
+  - trigger: doorknob,.
+    replace: 😒❓🚪
+
+  - trigger: drink,.
+    replace: 🧃🐢
+
+  - trigger: dump,.
+    replace: 🚫😎💡
+
+  - trigger: embrass,.
+    replace: 🤸🏻‍♀️🚉
+
+  - trigger: eng,.
+    replace: 👩🏻‍💻🧑🏻‍💻👨🏻‍💻
+
+  - trigger: pig,.
+    replace: ⏰🐖🛫
+
+  - trigger: pin,.
+    replace: 📆📌
+
+  - trigger: pretty,.
+    replace: 😌💅🏻✨
+
+  - trigger: promise,.
+    replace: ✖️❤️
+
+  - trigger: promote,.
+    replace: ❤️➕✈️
+
+  - trigger: propose,.
+    replace: 🧍🏻‍♀️💍🧎🏻‍♂️
+
+  - trigger: popcorn,.
+    replace: 🍿🤏😯
+
+  - trigger: fast,.
+    replace: 👩🏻‍🦼💨
+
+  - trigger: fart,.
+    replace: 💨👂😏
+
+  - trigger: flip,.
+    replace: 🙂🙃🙂✌️
+
+  - trigger: funny,.
+    replace: |
+      🪂
+      🕳️
+    force_clipboard: true
+
+  - trigger: gah,.
+    replace: 🧓🏻🕶️🤏🏻
+
+  - trigger: getout,.
+    replace: 😃👉🚪
+
+  - trigger: gone,.
+    replace: 🕳️🎢
+
+  - trigger: grief,.
+    replace: 🖤🥀
+
+  - trigger: gtfo,.
+    replace: 🚪🏃🏻‍♀️💨
+
+  - trigger: gun,.
+    replace: 😃🔫
+
+  - trigger: hand,.
+    replace: 💁🏻‍♀️🤚🏻
+
+  - trigger: happened,.
+    replace: 🫲🤨🫱
+
+  - trigger: happy,.
+    replace: 🤲❤️
+
+  - trigger: hell,.
+    replace: 👹🔥⬅️🏃🏻‍♀️
+
+  - trigger: hellno,.
+    replace: 👹❌
+
+  - trigger: hot,.
+    replace: 🪭🥵🪭
+
+  - trigger: iguess,.
+    replace: 🙄🤝😐
+
+  - trigger: inshit,.
+    replace: 🏊🏻‍♀️💩
+
+  - trigger: irish,.
+    replace: 😐😶😶‍🌫️🫥
+
+  - trigger: listening,.
+    replace: ✋😌🤚
+
+  - trigger: loop,.
+    replace: 🔁
+
+  - trigger: jackpot,.
+    replace: 🍒🍒🍒
+
+  - trigger: jazz,.
+    replace: 🎷🐛
+
+  - trigger: me,.
+    replace: ↖️
+
+  - trigger: nvm,.
+    replace: ☝️😮✊😐
+
+  - trigger: noted,.
+    replace: 📃✍️🧐
+
+  - trigger: notlistening,.
+    replace: 👉🙄👈
+
+  - trigger: out,.
+    replace: 🚪🚶🏻‍♀️
+
+  - trigger: period,.
+    replace: 🫳🏻🎤
+
+  - trigger: please,.
+    replace: 🫸🏻🫷🏻
+
+  - trigger: read,.
+    replace: 😭📕👀
+
+  - trigger: run,.
+    replace: 🏃🏻‍♀️🦼
+
+  - trigger: sad,.
+    replace: 🥀💔
+
+  - trigger: sayit,.
+    replace: 🎤🪿
+
+  - trigger: scary,.
+    replace: 😰😨😱
+
+  - trigger: screw,.
+    replace: 🔩😒
+
+  - trigger: sex,.
+    replace: 👉🏻👌🏻
+
+  - trigger: shh,.
+    replace: 🤫🤐
+
+  - trigger: shocked,.
+    replace: 👁️👄👁️
+
+  - trigger: shopping,.
+    replace: 🛒🐛
+
+  - trigger: shutup,.
+    replace: ☺️👉🔪
+
+  - trigger: shy,.
+    replace: 👉🏻👈🏻
+
+  - trigger: skeptical,.
+    replace: 🤔🤨
+
+  - trigger: sip,.
+    replace: ☕🤏
+
+  - trigger: speechless,.
+    replace: 😶 💬
+
+  - trigger: space,.
+    replace: 🫷😣🫸
+
+  - trigger: stabbed,.
+    replace: 🔪❤️
+
+  - trigger: stargaze,.
+    replace: 🔭🦔
+
+  - trigger: tea,.
+    replace: 🙅🏻‍♀️☕️
+
+  - trigger: then,.
+    replace: ➡️
+
+  - trigger: train,.
+    replace: 🚂💭🚫🧐
+
+  - trigger: tough,.
+    replace: 🗿😔🗿
+
+  - trigger: vomit,.
+    replace: 🤢🤮
+
+  - trigger: wait,.
+    replace: 🤔🤚
+
+  - trigger: waiting,.
+    replace: 😐⌚👞
+
+  - trigger: wake,.
+    replace: 🛌🤺
+
+  - trigger: warn,.
+    replace: 🧍🏻‍♀️🚗💨
+
+  - trigger: well,.
+    replace: ☝️🤓
+
+  - trigger: what,.
+    replace: 😎🤏😲🕶️🤏
+
+  - trigger: white,.
+    replace: 🤍☁️⛸️🥛🐮🐚
+
+  - trigger: wig,.
+    replace: 👩🏻‍🦱🤏🏻👩🏻‍🦲
+
+  - trigger: you,.
+    replace: 🫵😂
+
+  - trigger: zzz,.
+    replace: |
+      💤
+      🛌
+    force_clipboard: true
+
+  - trigger: jolin,.
+    replace: 🥬10
+
+  - trigger: ai,.
+    replace: 🧞‍♀️🧞🧞‍♂️
+
+  - trigger: bow,.
+    replace: 🙇🏻‍♀️🙇🏻🙇🏻‍♂️
+
+  - trigger: cop,.
+    replace: 👮🏻‍♀️👮🏻👮🏻‍♂️
+
+  - trigger: deaf,.
+    replace: 🧏🏻‍♀️🧏🏻🧏🏻‍♂️
+
+  - trigger: detective,.
+    replace: 🕵🏻‍♀️🕵🏻🕵🏻‍♂️
+
+  - trigger: doctor,.
+    replace: 👩🏻‍⚕️🧑🏻‍⚕️👨🏻‍⚕️
+
+  - trigger: fairy,.
+    replace: 🧚🏻‍♀️🧚🏻🧚🏻‍♂️
+
+  - trigger: here,.
+    replace: 👇🏻👇🏼👇🏽👇🏾👇🏿
+
+  - trigger: mfw,.
+    replace: 🤦🏻‍♀️🤦🏻🤦🏻‍♂️
+
+  - trigger: ooo,.
+    replace: 🙆🏻‍♀️🙆🏻🙆🏻‍♂️
+
+  - trigger: oops,.
+    replace: 🤦🏻‍♀️🤷🏻‍♀️
+
+  - trigger: player,.
+    replace: 🧜🏻‍♀️🧜🏻🧜🏻‍♂️
+
+  - trigger: raise,.
+    replace: 🙋🏻‍♀️🙋🏻🙋🏻‍♂️
+
+  - trigger: shrug,.
+    replace: 🤷🏻‍♀️🤷🏻🤷🏻‍♂️
+
+  - trigger: superhero,.
+    replace: 🦸🏻‍♀️🦸🏻🦸🏻‍♂️
+
+  - trigger: vampire,.
+    replace: 🧛🏻‍♀️🧛🏻🧛🏻‍♂️
+
+  - trigger: zombie,.
+    replace: 🧟‍♀️🧟🧟‍♂️
+
+  - trigger: flags,.
+    replace: 🇦🇹🇬🇧🇫🇷🇩🇪🇮🇹🇯🇵🇷🇺🇺🇸
+
+  - trigger: love,.
+    replace: ❤️🧡💛💚💙💜
+
+  - trigger: that,.
+    replace: ☝🏻☝🏼☝🏽☝🏾☝🏿
+
+  - trigger: this,.
+    replace: 👆🏻👆🏼👆🏽👆🏾👆🏿
+
+  - trigger: thumb,.
+    replace: 👍🏻👍🏼👍🏽👍🏾👍🏿
+
+  - trigger: xxx,.
+    replace: 🙅🏻‍♀️🙅🏻🙅🏻‍♂️
+
+  - trigger: dd,.
+    replace: 🥚🦅
+
+  - trigger: ih,.
+    replace: 🐛🈴
+
+  - trigger: jl,.
+    replace: 🍌🟢
+
+  - trigger: mc,.
+    replace: 🍓❌
+
+  - trigger: mq,.
+    replace: 🍓💰
+
+  - trigger: pf,.
+    replace: 🏚️
+
+  - trigger: qu,.
+    replace: 🐦🪨
+
+  - trigger: ry,.
+    replace: 🫳🏻🫴🏻
+
+  - trigger: ug,.
+    replace: 📖💡
+
+  - trigger: ux,.
+    replace: 🦈👀
+
+  - trigger: vxm,.
+    replace: 🪡🧵🪵
+
+  - trigger: wock,.
+    replace: ✊🏻🌿
+
+  - trigger: xx,.
+    replace: 🦀🦀
+
+  - trigger: yld,.
+    replace: 🦆🍐🖐️
+
+  - trigger: emergency,.
+    replace: "💥 "
+
+  - trigger: alert,.
+    replace: "🚨 "
+
+  - trigger: critical,.
+    replace: "🔥 "
+
+  - trigger: error,.
+    replace: "❌ "
+
+  - trigger: warning,.
+    replace: "⚠️ "
+
+  - trigger: notice,.
+    replace: "👀 "
+
+  - trigger: info,.
+    replace: "ℹ️ "
+
+  - trigger: debug,.
+    replace: "🐛 "
+
+  - { "trigger": "0000,.", "replace": "00:00🕛" }
+  - { "trigger": "0030,.", "replace": "00:30🕧" }
+  - { "trigger": "0100,.", "replace": "01:00🕐" }
+  - { "trigger": "0130,.", "replace": "01:30🕜" }
+  - { "trigger": "0200,.", "replace": "02:00🕑" }
+  - { "trigger": "0230,.", "replace": "02:30🕝" }
+  - { "trigger": "0300,.", "replace": "03:00🕒" }
+  - { "trigger": "0330,.", "replace": "03:30🕞" }
+  - { "trigger": "0400,.", "replace": "04:00🕓" }
+  - { "trigger": "0430,.", "replace": "04:30🕟" }
+  - { "trigger": "0500,.", "replace": "05:00🕔" }
+  - { "trigger": "0530,.", "replace": "05:30🕠" }
+  - { "trigger": "0600,.", "replace": "06:00🕕" }
+  - { "trigger": "0630,.", "replace": "06:30🕡" }
+  - { "trigger": "0700,.", "replace": "07:00🕖" }
+  - { "trigger": "0730,.", "replace": "07:30🕢" }
+  - { "trigger": "0800,.", "replace": "08:00🕗" }
+  - { "trigger": "0830,.", "replace": "08:30🕣" }
+  - { "trigger": "0900,.", "replace": "09:00🕘" }
+  - { "trigger": "0930,.", "replace": "09:30🕤" }
+  - { "trigger": "1000,.", "replace": "10:00🕙" }
+  - { "trigger": "1030,.", "replace": "10:30🕥" }
+  - { "trigger": "1100,.", "replace": "11:00🕚" }
+  - { "trigger": "1130,.", "replace": "11:30🕦" }
+  - { "trigger": "1230,.", "replace": "12:30🕧" }
+  - { "trigger": "1300,.", "replace": "13:00🕐" }
+  - { "trigger": "1330,.", "replace": "13:30🕜" }
+  - { "trigger": "1400,.", "replace": "14:00🕑" }
+  - { "trigger": "1430,.", "replace": "14:30🕝" }
+  - { "trigger": "1500,.", "replace": "15:00🕒" }
+  - { "trigger": "1530,.", "replace": "15:30🕞" }
+  - { "trigger": "1600,.", "replace": "16:00🕓" }
+  - { "trigger": "1630,.", "replace": "16:30🕟" }
+  - { "trigger": "1700,.", "replace": "17:00🕔" }
+  - { "trigger": "1730,.", "replace": "17:30🕠" }
+  - { "trigger": "1800,.", "replace": "18:00🕕" }
+  - { "trigger": "1830,.", "replace": "18:30🕡" }
+  - { "trigger": "1900,.", "replace": "19:00🕖" }
+  - { "trigger": "1930,.", "replace": "19:30🕢" }
+  - { "trigger": "2000,.", "replace": "20:00🕗" }
+  - { "trigger": "2030,.", "replace": "20:30🕣" }
+  - { "trigger": "2100,.", "replace": "21:00🕘" }
+  - { "trigger": "2130,.", "replace": "21:30🕤" }
+  - { "trigger": "2200,.", "replace": "22:00🕙" }
+  - { "trigger": "2230,.", "replace": "22:30🕥" }
+  - { "trigger": "2300,.", "replace": "23:00🕚" }
+  - { "trigger": "2330,.", "replace": "23:30🕦" }

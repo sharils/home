@@ -1,0 +1,252 @@
+priority 3
+
+snippet Cx "Ĉ" i
+Ĉ
+endsnippet
+
+snippet Gx "Ĝ" i
+Ĝ
+endsnippet
+
+snippet Hx "Ĥ" i
+Ĥ
+endsnippet
+
+snippet Jx "Ĵ" i
+Ĵ
+endsnippet
+
+snippet Sx "Ŝ" i
+Ŝ
+endsnippet
+
+snippet Ux "Ŭ" i
+Ŭ
+endsnippet
+
+snippet cx "ĉ" i
+ĉ
+endsnippet
+
+snippet gx "ĝ" i
+ĝ
+endsnippet
+
+snippet hx "ĥ" i
+ĥ
+endsnippet
+
+snippet jx "ĵ" i
+ĵ
+endsnippet
+
+snippet sx "ŝ" i
+ŝ
+endsnippet
+
+snippet ux "ŭ" i
+ŭ
+endsnippet
+
+snippet 't "'t" i
+’t
+endsnippet
+
+snippet ’t "’t" i
+'t
+endsnippet
+
+priority -1
+
+snippet b32 "b32" i
+`jot -cr 20 48 90 | tr -d ':;<=>?@ILOU\n' | head -c4``>?@ILOU\n' | head -c4`
+endsnippet
+
+snippet #! "#!/usr/bin/env sh" b
+#!/usr/bin/env ${1:sh}
+
+$0
+endsnippet
+
+snippet ' "'" i
+’
+endsnippet
+
+snippet ’ "’" i
+'
+endsnippet
+
+snippet 'd "'d" i
+’d
+endsnippet
+
+snippet ’d "’d" i
+'d
+endsnippet
+
+snippet 'll "'ll" i
+’ll
+endsnippet
+
+snippet ’ll "’ll" i
+'ll
+endsnippet
+
+snippet 's "'s" i
+’s
+endsnippet
+
+snippet ’s "’s" i
+'s
+endsnippet
+
+snippet 've "'ve" i
+’ve
+endsnippet
+
+snippet ’ve "’ve" i
+'ve
+endsnippet
+
+snippet 00: "00:" w
+12:
+endsnippet
+
+snippet 01: "01:" w
+13:
+endsnippet
+
+snippet 02: "02:" w
+14:
+endsnippet
+
+snippet 03: "03:" w
+15:
+endsnippet
+
+snippet 04: "04:" w
+16:
+endsnippet
+
+snippet 05: "05:" w
+17:
+endsnippet
+
+snippet 06: "06:" w
+18:
+endsnippet
+
+snippet 07: "07:" w
+19:
+endsnippet
+
+snippet 08: "08:" w
+20:
+endsnippet
+
+snippet 09: "09:" w
+21:
+endsnippet
+
+snippet 10: "10:" w
+22:
+endsnippet
+
+snippet 11: "11:" w
+23:
+endsnippet
+
+snippet 12: "12:" w
+00:
+endsnippet
+
+snippet 13: "13:" w
+01:
+endsnippet
+
+snippet 14: "14:" w
+02:
+endsnippet
+
+snippet 15: "15:" w
+03:
+endsnippet
+
+snippet 16: "16:" w
+04:
+endsnippet
+
+snippet 17: "17:" w
+05:
+endsnippet
+
+snippet 18: "18:" w
+06:
+endsnippet
+
+snippet 19: "19:" w
+07:
+endsnippet
+
+snippet 20: "20:" w
+08:
+endsnippet
+
+snippet 21: "21:" w
+09:
+endsnippet
+
+snippet 22: "22:" w
+10:
+endsnippet
+
+snippet 23: "23:" w
+11:
+endsnippet
+
+snippet __ "____" w
+__$1__
+endsnippet
+
+snippet dt "%Y-%m-%d %H:%M:%S" w
+`date +%FT%T%z | sed s/00$//`
+endsnippet
+
+snippet ft "fallthrough" w
+fallthrough
+endsnippet
+
+snippet pt "passthrough" w
+passthrough
+endsnippet
+
+snippet sh "#!/usr/bin/env sh" b
+#!/usr/bin/env sh
+${1:set -o errexit -o nounset -o xtrace}
+
+$0
+endsnippet
+
+snippet todo "TODO: " w
+TODO (${2:`git config --get user.name`}): $1
+endsnippet
+
+snippet vim "vim" w
+vim:filetype=${1:javascript}
+endsnippet
+
+snippet Vim "vim" w
+Vim:set filetype=${1:javascript}:
+endsnippet
+
+snippet I’m "I’m" w
+I'm
+endsnippet
+
+# Vim:set nomodeline:
+
+snippet I'm "I'm" w
+I’m
+endsnippet
+
+# Vim:set nomodeline:

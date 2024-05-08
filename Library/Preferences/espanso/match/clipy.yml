@@ -1,0 +1,212 @@
+---
+matches:
+
+  - trigger: "30 歲之前不是左派沒有良心，30 歲以後還是左派沒有腦袋。,."
+    replace: 30 歲之前不是左派沒有良心，30 歲以後還是左派沒有腦袋。
+
+  - trigger: "Your body, your own risk, your decision.,."
+    replace: Your body, your own risk, your decision.
+
+  - trigger: "一種善的循環,."
+    replace: 一種善的循環
+
+  - trigger: "不要嘗試襲擊落單的雌性精靈 你會被其他精靈和勇者圍剿 屆時 我們都無能為力,."
+    replace: 不要嘗試襲擊落單的雌性精靈 你會被其他精靈和勇者圍剿 屆時 我們都無能為力
+
+  - trigger: "中文竟然可以這樣排列組合 是我見識還是太少了,."
+    replace: 中文竟然可以這樣排列組合 是我見識還是太少了
+
+  - trigger: "中華電信沒說我會看到這個,."
+    replace: 中華電信沒說我會看到這個
+
+  - trigger: "他已經不是你男友，而是被告了,."
+    replace: 他已經不是你男友，而是被告了
+
+  - trigger: "你們的幸福 打擾到我的孤寡了🥲,."
+    replace: 你們的幸福 打擾到我的孤寡了🥲
+
+  - trigger: "你的密碼一定是1234,."
+    replace: 你的密碼一定是1234
+
+  - trigger: "你知道嗎？根本沒人在乎,."
+    replace: 你知道嗎？根本沒人在乎
+
+  - trigger: "你這身體不能要了,."
+    replace: 你這身體不能要了
+
+  - trigger: "兄弟轉身有急事,."
+    replace: 兄弟轉身有急事
+
+  - trigger: "分吧姐妹，我要去下一篇了，,."
+    replace: 分吧姐妹，我要去下一篇了，
+
+  - trigger: "創得很好下次別創了,."
+    replace: 創得很好下次別創了
+
+  - trigger: "只有 0 次跟 ∞ 次,."
+    replace: 只有 0 次跟 ∞ 次
+
+  - trigger: "只有耕死的牛，沒有耕壞的田,."
+    replace: 只有耕死的牛，沒有耕壞的田
+
+  - trigger: "哩欸表情金變態,."
+    replace: 哩欸表情金變態
+
+  - trigger: "在不愛的時候想要找愛的痕跡,."
+    replace: 在不愛的時候想要找愛的痕跡
+
+  - trigger: "在愛的時候想要找不愛的痕跡,."
+    replace: 在愛的時候想要找不愛的痕跡
+
+  - trigger: "地獄開局,."
+    replace: 地獄開局
+
+  - trigger: "夢裡什麼都有,."
+    replace: 夢裡什麼都有
+
+  - trigger: "姐妹 心態要穩,."
+    replace: 姐妹 心態要穩
+
+  - trigger: "就生活沒交集了,."
+    replace: 就生活沒交集了
+
+  - trigger: "性癖可以冷門但不能邪門,."
+    replace: 性癖可以冷門但不能邪門
+
+  - trigger: "想騙妳尿尿的地方,."
+    replace: 想騙妳尿尿的地方
+
+  - trigger: "愛好者秘密連結，請不要外傳，不要說是我給妳的,."
+    replace: 愛好者秘密連結，請不要外傳，不要說是我給妳的
+
+  - trigger: "戀愛妳們都談走了 我談什麼 彈塗魚嗎？,."
+    replace: 戀愛妳們都談走了 我談什麼 彈塗魚嗎？
+
+  - trigger: "成年人只負責篩選不負責教育,."
+    replace: 成年人只負責篩選不負責教育
+
+  - trigger: "我以為是我發的文,."
+    replace: 我以為是我發的文
+
+  - trigger: "我們只能拉你一把，沒辦法把你扛著走,."
+    replace: 我們只能拉你一把，沒辦法把你扛著走
+
+  - trigger: "把我的感動還有被激勵的感覺還來😡😡氣鼠,."
+    replace: 把我的感動還有被激勵的感覺還來😡😡氣鼠
+
+  - trigger: "最近業務量大，沒空跟妳講原因，自己分。,."
+    replace: 最近業務量大，沒空跟妳講原因，自己分。
+
+  - trigger: "有人方便來保我一下嗎？,."
+    replace: 有人方便來保我一下嗎？
+
+  - trigger: "有病要看醫生，但這種醫生應該不收。,."
+    replace: 有病要看醫生，但這種醫生應該不收。
+
+  - trigger: "本來想說些什麼 想想還是算了,."
+    replace: 本來想說些什麼 想想還是算了
+
+  - trigger: "此處必有本,."
+    replace: 此處必有本
+
+  - trigger: "每日恐婚（1/1）,."
+    replace: 每日恐婚（1/1）
+
+  - trigger: "猝不及防,."
+    replace: 猝不及防
+
+  - trigger: "用魔法對抗魔法,."
+    replace: 用魔法對抗魔法
+
+  - trigger: "畫風突變,."
+    replace: 畫風突變
+
+  - trigger: "直接疊上來是什麼意思,."
+    replace: 直接疊上來是什麼意思
+
+  - trigger: "看到標楷體我以為是我爸的手機,."
+    replace: 看到標楷體我以為是我爸的手機
+
+  - trigger: "真的不要欸,."
+    replace: 真的不要欸
+
+  - trigger: "確認過眼神,."
+    replace: 確認過眼神
+
+  - trigger: "突然就結婚了,."
+    replace: 突然就結婚了
+
+  - trigger: "算盤聲我躺在家裡都聽到了😍,."
+    replace: 算盤聲我躺在家裡都聽到了😍
+
+  - trigger: "細思極恐🙀,."
+    replace: 細思極恐🙀
+
+  - trigger: "聽君一下話 如聽一席話,."
+    replace: 聽君一下話 如聽一席話
+
+  - trigger: "要知道，凡事都有因果。咖啡因來自咖啡果，所以咖啡果是因，咖啡因是果，咖啡因不是因，咖啡果不是果～,."
+    replace: 要知道，凡事都有因果。咖啡因來自咖啡果，所以咖啡果是因，咖啡因是果，咖啡因不是因，咖啡果不是果～
+
+  - trigger: "說什麼大實話,."
+    replace: 說什麼大實話
+
+  - trigger: "請支援輸贏,."
+    replace: 請支援輸贏
+
+  - trigger: "講那麼多，所以你有要分手嗎？,."
+    replace: 講那麼多，所以你有要分手嗎？
+
+  - trigger: "謝謝你我一整天都圓滿了,."
+    replace: 謝謝你我一整天都圓滿了
+
+  - trigger: "謝謝來自台中的答案🥹,."
+    replace: 謝謝來自台中的答案🥹
+
+  - trigger: "超好笑 這價碼是協尋逃家的貓咪吧,."
+    replace: 超好笑 這價碼是協尋逃家的貓咪吧
+
+  - trigger: "跟台鐵一樣準時,."
+    replace: 跟台鐵一樣準時
+
+  - trigger: "跟對等關稅一樣對等,."
+    replace: 跟對等關稅一樣對等
+
+  - trigger: "跟日本製的壓縮機一樣少,."
+    replace: 跟日本製的壓縮機一樣少
+
+  - trigger: "辣人眼睛👀,."
+    replace: 辣人眼睛👀
+
+  - trigger: "這圖片怎麼有味道,."
+    replace: 這圖片怎麼有味道
+
+  - trigger: "這在我們業界是一種獎勵,."
+    replace: 這在我們業界是一種獎勵
+
+  - trigger: "這好可愛，我可以看一天,."
+    replace: 這好可愛，我可以看一天
+
+  - trigger: "這種爽文是可以免費看的嗎？,."
+    replace: 這種爽文是可以免費看的嗎？
+
+  - trigger: "這種留著等過年嗎,."
+    replace: 這種留著等過年嗎
+
+  - trigger: "連個人形立牌都比她活潑,."
+    replace: 連個人形立牌都比她活潑
+
+  - trigger: "那比我命還長,."
+    replace: 那比我命還長
+
+  - trigger: "隊伍是從這裡開始的嗎,."
+    replace: 隊伍是從這裡開始的嗎
+
+  - trigger: "道德在哪裡？底線在哪裡？地址在哪裡？,."
+    replace: 道德在哪裡？底線在哪裡？地址在哪裡？
+
+  - trigger: 朋友婚,.
+    replace: |
+      兩個很要好的朋友，雖然不是情侶（當然沒有性行為），但為了互相照顧、在法律上可以彼此保障，登記結婚、成為法定配偶。
+
+      他們像是很親的家人或室友，住在一起分擔生活、彼此扶持，不談戀愛也不打算生小孩，各自可以自由去談感情，只是用結婚這個制度，來打造自己的支持系統。

@@ -1,0 +1,15 @@
+---
+matches:
+
+  - trigger: Grpc,.
+    replace: gRPC
+
+  - trigger: Pb,.
+    replace: Protocol Buffers
+
+  - trigger: Rpc,.
+    replace: RPC
+
+  - trigger: pb,.
+    replace: protobuf
+

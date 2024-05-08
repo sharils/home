@@ -1,0 +1,23 @@
+---
+matches:
+
+  - trigger: Pwa,.
+    replace: Progressive Web Application
+
+  - trigger: Spa,.
+    replace: Single Page Application
+
+  - trigger: Ssr,.
+    replace: Server Side Rendering
+
+  - trigger: Sw,.
+    replace: Service Worker
+
+  - trigger: Wc,.
+    replace: Web Component
+
+  - trigger: req,.
+    replace: request
+
+  - trigger: resp,.
+    replace: response

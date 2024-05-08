@@ -1,0 +1,23 @@
+---
+matches:
+
+  - trigger: Su,.
+    replace: Sunday
+
+  - trigger: Mo,.
+    replace: Monday
+
+  - trigger: Tu,.
+    replace: Tuesday
+
+  - trigger: We,.
+    replace: Wednesday
+
+  - trigger: Th,.
+    replace: Thursday
+
+  - trigger: Fr,.
+    replace: Friday
+
+  - trigger: Sa,.
+    replace: Saturday

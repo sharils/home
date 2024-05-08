@@ -1,0 +1,520 @@
+extends common, strictequal, boolean
+
+priority 4
+
+snippet /^i/ "import" r
+import $0
+endsnippet
+
+
+priority 3
+
+snippet #! "#!/usr/bin/env elixir" b
+#!/usr/bin/env elixir
+endsnippet
+
+snippet #t "# TODO ($1)" b
+# TODO ($1)
+endsnippet
+
+snippet a "alias" b
+alias $0
+endsnippet
+
+snippet ar "assert_raise" b
+assert_raise $0
+endsnippet
+
+snippet as "assert" b
+assert $0
+endsnippet
+
+snippet c "@doc" b
+@callback ${1:callback}(${2:collection :: any}) :: ${3:pos_integer}
+endsnippet
+
+snippet cl "@tag :capture_log" b
+@${1:module}tag :capture_log
+endsnippet
+
+snippet credo "credo" b
+{:credo, "~> 1.7", only: [:dev, :test], runtime: false}
+endsnippet
+
+snippet doc "@doc" b
+@doc ${1:~S}"""
+$2
+"""
+endsnippet
+
+snippet di "defimpl" b
+defimpl $1, for: $2 do
+end
+endsnippet
+
+snippet dialyxir "dialyxir" b
+{:dialyxir, "~> 1.4", only: [:dev], runtime: false}
+endsnippet
+
+snippet dp "defprotocol" b
+defprotocol $1 do
+end
+endsnippet
+
+snippet ds "defstruct" b
+defstruct [$1]
+endsnippet
+
+snippet dt "doctest" b
+doctest $0
+endsnippet
+
+snippet ek "@enforce_keys" b
+@enforce_keys [$1]
+endsnippet
+
+snippet hc "handle_call" b
+@impl GenServer
+def handle_call(${1:message}, ${2:_from}, ${3:state}) do
+end
+endsnippet
+
+snippet hi "handle_info" b
+@impl GenServer
+def handle_${1:info}(${2:{:DOWN, ref, :process, _pid, _reason}}, ${3:state}) do
+	${4:require Logger
+	Logger.debug("Unexpected message in KV.Registry: #{inspect(msg)}")
+	{:noreply, state}}
+end
+endsnippet
+
+snippet ie "iex> " b
+iex> $0
+endsnippet
+
+snippet init "init" b
+@impl ${1:GenServer}
+def init(${2:_opts}) do
+	{:ok, ${3:%{}}}
+end
+endsnippet
+
+snippet md "@moduledoc" b
+@moduledoc """$1
+"""
+endsnippet
+
+snippet oe "on_exit" b
+on_exit(fn -> $1 end)
+endsnippet
+
+snippet pld "phoenix_live_dashboard" b
+{:phoenix_live_dashboard, "~> 0.8"}
+endsnippet
+
+snippet s "@spec longer_than?(String.t(), non_neg_integer()) :: boolean()" b
+@spec ${1:fn}($2) :: $3
+endsnippet
+
+snippet sa "setup_all" b
+setup_all do
+	${2:bucket} = start_supervised!(${1:KV.Bucket})
+	%{$2: $2}
+end
+endsnippet
+
+snippet su "setup" b
+setup do
+	${2:bucket} = start_supervised!(${1:KV.Bucket})
+	%{$2: $2}
+end
+endsnippet
+
+snippet u "use" b
+use $0
+endsnippet
+
+
+priority 2
+
+snippet - "->" w
+-> $1
+endsnippet
+
+snippet 1 "&1" w
+&1
+endsnippet
+
+snippet 2 "&2" w
+&2
+endsnippet
+
+snippet d "dbg()" w
+dbg(${1:${VISUAL}})
+endsnippet
+
+snippet :d ":DOWN" w
+{:DOWN, _ref, :process, _pid, _reason}
+endsnippet
+
+snippet :e ":error" w
+{:error, ${1:reason}}
+endsnippet
+
+snippet :k ":ok" w
+{:ok, ${1:state}}
+endsnippet
+
+snippet :nr ":noreply" w
+{:noreply, ${1:state}}
+endsnippet
+
+snippet :one_for_all ":rest_for_one" w
+:rest_for_one
+endsnippet
+
+snippet :one_for_one ":one_for_all" w
+:one_for_all
+endsnippet
+
+snippet :rest_for_one ":one_for_one" w
+:one_for_one
+endsnippet
+
+snippet :r ":reply" w
+{:reply, ${1:reply}, ${2:state}}
+endsnippet
+
+snippet :s ":st" w
+{:stop, ${1:reason}}
+endsnippet
+
+snippet :sd ":shutdown" w
+:shutdown
+endsnippet
+
+snippet < "<-" w
+<- $1
+endsnippet
+
+snippet > "=>" w
+=> $1
+endsnippet
+
+snippet _ "__MODULE__" w
+__MODULE__
+endsnippet
+
+snippet | "|>" w
+|> $1
+endsnippet
+
+snippet \ "\\" w
+\\\\ $0
+endsnippet
+
+snippet @ "@" w
+@impl ${1:true}
+endsnippet
+
+snippet A "Agent" w
+Agent
+endsnippet
+
+snippet D "DynamicSupervisor" w
+DynamicSupervisor
+endsnippet
+
+snippet E "Enum" w
+Enum
+endsnippet
+
+snippet F "File" w
+File
+endsnippet
+
+snippet I "IO" w
+IO
+endsnippet
+
+snippet K "Kernel" w
+Kernel
+endsnippet
+
+snippet L "List" w
+List
+endsnippet
+
+snippet M "Map" w
+Map
+endsnippet
+
+snippet N "NaiveDateTime" w
+NaiveDateTime
+endsnippet
+
+snippet P "Process" w
+Process
+endsnippet
+
+snippet R "Regex" w
+Regex
+endsnippet
+
+snippet S "String" w
+String
+endsnippet
+
+snippet String "String.t()" w
+String.t()
+endsnippet
+
+snippet T "Task" w
+Task
+endsnippet
+
+snippet a "and" w
+and $0
+endsnippet
+
+snippet af "after" w
+after $0
+endsnippet
+
+snippet app "Application" w
+Application
+endsnippet
+
+snippet b "boolean()" w
+boolean()
+endsnippet
+
+snippet ca "case" w
+case ${1:expressino} do
+end
+endsnippet
+
+snippet co "cond" w
+cond do$2
+	true -> ${1:nil}
+end
+endsnippet
+
+snippet de "defexception" w
+defexception $1
+endsnippet
+
+snippet def "def" w
+def ${1:function_name}($2)${3:, do:}
+endsnippet
+
+snippet defp "defp" w
+defp ${1:function_name}($2)${3:, do:}
+endsnippet
+
+snippet dm "defmodule" w
+defmodule ${1:ModuleName} do
+end
+endsnippet
+
+snippet ds "defstruct" w
+defstruct $1
+endsnippet
+
+snippet /\b(<!:)e/ ":ets" r
+:ets
+endsnippet
+
+snippet ek "@enforce_keys" w
+@enforce_keys $1
+endsnippet
+
+snippet el "else" w
+else $0
+endsnippet
+
+snippet eua "assert" w
+assert $0
+endsnippet
+
+snippet eud "describe" w
+describe "$1" do$2
+end
+endsnippet
+
+snippet eus "setup" w
+setup do$0
+end
+endsnippet
+
+snippet eut "test" w
+test "$1" do$2
+end
+endsnippet
+
+snippet fn "fn" w
+fn $1 -> $2 end
+endsnippet
+
+snippet gs "GenServer" w
+GenServer
+endsnippet
+
+snippet i "integer()" w
+integer()
+endsnippet
+
+snippet if "if" w
+if ${1:expression} do
+end
+endsnippet
+
+snippet integer() "non_neg_integer()" w
+non_neg_integer()
+endsnippet
+
+snippet ioi "IO.inspect" w
+IO.inspect(${1:${VISUAL}}, label: ${2::"`jot -cr 20 48 90 | tr -d ':;<=>?@ILOU\n' | head -c4``>?@ILOU\n' | head -c4`"})
+endsnippet
+
+snippet kw "Keyword" w
+Keyword
+endsnippet
+
+snippet l "list()" w
+list($1)
+endsnippet
+
+snippet lg "Logger" w
+require Logger
+endsnippet
+
+snippet lgd "Logger.debug" w
+Logger.debug($1)
+endsnippet
+
+snippet lge "Logger.error" w
+Logger.error($1)
+endsnippet
+
+snippet lgi "Logger.info" w
+Logger.info($1)
+endsnippet
+
+snippet lgw "Logger.warn" w
+Logger.warn($1)
+endsnippet
+
+snippet nu "float()" w
+float()
+endsnippet
+
+snippet nn "non_neg_integer()" w
+non_neg_integer()
+endsnippet
+
+snippet non_neg_integer() "pos_integer()" w
+pos_integer()
+endsnippet
+
+snippet observer ":eex, :wx, :observer" w
+:eex, :wx, :observer
+endsnippet
+
+snippet p "pos_integer()" w
+pos_integer()
+endsnippet
+
+snippet pos_integer() "integer()" w
+integer()
+endsnippet
+
+snippet ra "description" w
+raise $0
+endsnippet
+
+snippet re "receive" w
+receive do$0
+end
+endsnippet
+
+snippet st "String.t()" w
+String.t()
+endsnippet
+
+snippet stg "strategy" w
+strategy: ${1::one_for_one}
+endsnippet
+
+snippet su "Supervisor" w
+Supervisor
+endsnippet
+
+snippet sys "System" w
+System
+endsnippet
+
+snippet te "test" w
+test "${1:should}" do
+end
+endsnippet
+
+snippet try "try catch" w
+try do$1
+catch$2
+end
+endsnippet
+
+snippet throw "throw" w
+throw $0
+endsnippet
+
+snippet tr "try rescue" w
+try do$1
+rescue$2
+end
+endsnippet
+
+snippet ty "@type" w
+@type $1() :: $0
+endsnippet
+
+snippet w "when" w
+when $1
+endsnippet
+
+snippet w/ "with" w
+with $1
+endsnippet
+
+snippet ~s "~s()" w
+~s($1)
+endsnippet
+
+
+
+priority 1
+
+snippet # "#{}" i
+#{$1}
+endsnippet
+
+snippet #i "#{inspect($1)}" i
+#{inspect(${1:error})}
+endsnippet
+
+snippet % "%{}" i
+%{$1}
+endsnippet
+
+snippet & "&()" i
+&($1)
+endsnippet
+
+snippet : "::" i
+::
+endsnippet
+
+snippet n "nil" i
+nil
+endsnippet

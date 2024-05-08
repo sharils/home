@@ -1,0 +1,49 @@
+# Fugitive Maps
+
+## Staging/unstaging maps
+
+bind status  X              @git cl %(file)
+
+## Diff maps
+
+## Navigation maps
+bind generic +              :?^[+-](?![+-]{2})
+bind generic =              :/^[+-](?![+-]{2})
+bind generic >              :/[<|=>]{7}
+bind status  (              :?^[?ADMU]
+bind status  )              :/^[?ADMU]
+
+## Commit maps
+bind generic ;cc            !git c
+bind generic ;ca            !git ca
+bind generic ;ce            @git ce
+bind generic ;cw            !git cw
+bind generic ;crc           @git cr %(commit)
+bind generic ;crn           @git cr --no-commit %(commit)
+
+## Checkout/branch maps
+bind generic ;cf            @git c --fixup %(commit)
+bind generic ;cF            @sh -c 'git commit --fixup %(commit) && git -c sequence.editor=true rebase --autosquash --interactive %(commit)~'
+
+## Stash maps
+bind generic ;czz           @git czz
+bind generic ;czw           @git czw
+bind generic ;czA           @git stash apply
+bind generic ;cza           @git cza
+bind generic ;czP           @git cz pop
+bind generic ;czp           @git czp
+
+## Rebase maps
+bind generic ;ri            !git r --interactive %(commit)~
+bind refs    ;ri            !git r --interactive %(ref)
+bind generic ;rf            !git -c sequence.editor=true r --autosquash --interactive %(commit)~
+bind generic ;rr            !git rr
+bind generic ;rs            !git rs
+bind generic ;ra            @git ra
+bind generic ;re            !git r --edit-todo
+
+## Miscellaneous maps
+
+## Global maps
+
+# vim:filetype=conf

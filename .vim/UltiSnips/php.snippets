@@ -1,0 +1,22 @@
+extends common, clike, javalike, strictequal, boolean
+
+priority 4
+
+snippet /^<$/ "<?php" r
+<?php
+endsnippet
+
+
+priority 2
+
+snippet <= "php echo" w
+<?= ${1:''} ?>
+endsnippet
+
+snippet <> "<?php?>" w
+<?php $1 ?>
+endsnippet
+
+snippet e "echo" w
+echo $1
+endsnippet

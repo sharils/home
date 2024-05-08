@@ -1,0 +1,36 @@
+---
+matches:
+
+ - {"trigger":"r1,.",  "replace":"ⅰ"}
+ - {"trigger":"r2,.",  "replace":"ⅱ"}
+ - {"trigger":"r3,.",  "replace":"ⅲ"}
+ - {"trigger":"r4,.",  "replace":"ⅳ"}
+ - {"trigger":"r5,.",  "replace":"ⅴ"}
+ - {"trigger":"r6,.",  "replace":"ⅵ"}
+ - {"trigger":"r7,.",  "replace":"ⅶ"}
+ - {"trigger":"r8,.",  "replace":"ⅷ"}
+ - {"trigger":"r9,.",  "replace":"ⅸ"}
+ - {"trigger":"r10,.", "replace":"ⅹ"}
+ - {"trigger":"r11,.", "replace":"ⅺ"}
+ - {"trigger":"r12,.", "replace":"ⅻ"}
+ - {"trigger":"r50,.", "replace":"ⅼ"}
+ - {"trigger":"r1h,.", "replace":"ⅽ"}
+ - {"trigger":"r5h,.", "replace":"ⅾ"}
+ - {"trigger":"r1k,.", "replace":"ⅿ"}
+
+ - {"trigger":"R1,.",  "replace":"Ⅰ"}
+ - {"trigger":"R2,.",  "replace":"Ⅱ"}
+ - {"trigger":"R3,.",  "replace":"Ⅲ"}
+ - {"trigger":"R4,.",  "replace":"Ⅳ"}
+ - {"trigger":"R5,.",  "replace":"Ⅴ"}
+ - {"trigger":"R6,.",  "replace":"Ⅵ"}
+ - {"trigger":"R7,.",  "replace":"Ⅶ"}
+ - {"trigger":"R8,.",  "replace":"Ⅷ"}
+ - {"trigger":"R9,.",  "replace":"Ⅸ"}
+ - {"trigger":"R10,.", "replace":"Ⅹ"}
+ - {"trigger":"R11,.", "replace":"Ⅺ"}
+ - {"trigger":"R12,.", "replace":"Ⅻ"}
+ - {"trigger":"R50,.", "replace":"Ⅼ"}
+ - {"trigger":"R1h,.", "replace":"Ⅽ"}
+ - {"trigger":"R5h,.", "replace":"Ⅾ"}
+ - {"trigger":"R1k,.", "replace":"Ⅿ"}

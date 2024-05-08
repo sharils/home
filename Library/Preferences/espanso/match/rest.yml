@@ -1,0 +1,14 @@
+---
+matches:
+
+  - trigger: Oa,.
+    replace: OpenAPI
+
+  - trigger: Inso,.
+    replace: Insomnia
+
+  - trigger: Rest,.
+    replace: RESTful
+
+  - trigger: swag,.
+    replace: swagger.yml

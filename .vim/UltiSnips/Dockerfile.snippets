@@ -1,0 +1,99 @@
+snippet a "ARG" b
+ARG $0
+endsnippet
+
+snippet add "ADD" b
+ADD ${1:false}.tar
+endsnippet
+
+snippet c "CMD" b
+CMD [$1]
+endsnippet
+
+snippet cp "COPY" b
+COPY ${1:--chown="2147483647:2147483647"}
+endsnippet
+
+snippet e "ENV" b
+ENV $0
+endsnippet
+
+snippet ep "ENTRYPOINT" b
+ENTRYPOINT [$0]
+endsnippet
+
+snippet ex "EXPOSE" b
+EXPOSE $0
+endsnippet
+
+snippet f "FROM" b
+FROM ${1:ubuntu:22.04}
+endsnippet
+
+snippet alpine "alpine" b
+# https://hub.docker.com/_/alpine
+FROM alpine:${1:3.16}
+endsnippet
+
+snippet nginx "nginx" b
+# https://hub.docker.com/_/nginx
+FROM nginx:${1:1.23}-alpine
+endsnippet
+
+snippet node "node" b
+# https://hub.docker.com/_/node
+FROM node:${1:20.0}-alpine${2:3.16}
+endsnippet
+
+snippet python "python" b
+# https://hub.docker.com/_/python
+FROM python:${1:3.10}-alpine${2:3.16}
+endsnippet
+
+snippet ubuntu "ubuntu" b
+# https://hub.docker.com/_/ubuntu
+FROM ubuntu:${1:22.04}
+endsnippet
+
+snippet l "LABEL" b
+LABEL $0
+endsnippet
+
+snippet m "MAINTAINER" b
+MAINTAINER ${1:name} <${2:$1@users.noreply.github.com}>
+endsnippet
+
+snippet o "ONBUILD" b
+ONBUILD $0
+endsnippet
+
+snippet r "RUN" b
+RUN $0
+endsnippet
+
+snippet u "USER" b
+USER ${1:"2147483647:2147483647"}
+endsnippet
+
+snippet v "VOLUME" b
+VOLUME [$1]
+endsnippet
+
+snippet w "WORKDIR" b
+WORKDIR ${1:/workdir}
+endsnippet
+
+snippet apk "apk add --no-cache --update" w
+apk add --no-cache --update ${0:package=version}
+endsnippet
+
+snippet apt "apt-get install -y" w
+apt update && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends --yes ${0:package=version} && rm -rf /var/lib/apt/lists/*
+endsnippet
+
+snippet wait-for "wait-for" b
+# https://docs.docker.com/compose/startup-order/
+RUN umask +x && wget https://raw.githubusercontent.com/eficode/wait-for/v2.1.3/wait-for -qO /usr/local/bin/wait-for
+endsnippet
+
+# vim:filetype=snippets

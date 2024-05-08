@@ -1,0 +1,607 @@
+global !p
+from my_snippet_helpers import *
+endglobal
+
+
+priority 4
+
+snippet /^a/ "alias" r
+alias $1='$2'
+endsnippet
+
+snippet /^e/ "alias" r
+export $0
+endsnippet
+
+
+priority 3
+
+snippet 'set -o errexit -o nounset -o xtrace' "-o pipefail" b
+set -o errexit -o nounset -o xtrace -o pipefail
+endsnippet
+
+snippet - "${ENV}=${ENV:-ENV}" b
+${1:ENV}="\${$1:-$2}"
+endsnippet
+
+snippet -1 "${@: -1}" b
+for ${1:last} in "$@"; do :; done
+endsnippet
+
+snippet ? "${ENV}=${ENV:?}" b
+${1:ENV}="\${$1:?}"
+endsnippet
+
+snippet ca "case);;" b
+${1:*}) $0 ;;
+endsnippet
+
+snippet curl "curl /tmp" b
+[ -f "${$2:=/tmp/${1:x-train}-${2:hsr}-$(date +%F).${4:${3/.*\.//}}}" ] ||
+	curl ${3:https://www.rb.gov.tw/public/files/artsinfo/1700038063-m0.csv} >"$$2"
+endsnippet
+
+snippet ea "export ASDF__VERSION=12.22.12" b
+export ASDF_${1:NODEJS}_VERSION='${2:12.22.12}'
+endsnippet
+
+snippet eif "else if ${1::}; then" b
+elif ${1::}; then
+	${2:return}
+endsnippet
+
+snippet el "else" b
+else
+	${1::}
+endsnippet
+
+snippet eux "set -eux" b
+set -o errexit -o nounset -o xtrace
+endsnippet
+
+snippet fn "fn() {}" b
+${1:f}() {
+	${2::}
+}
+endsnippet
+
+snippet for "for" b
+for ${1:arg} in ${2:"$@"}; do
+	${3::}
+done
+endsnippet
+
+snippet if "if" b
+if ${1:[ $# -eq 0 ]}; then
+	${2:return $?}
+fi
+endsnippet
+
+snippet node "export PATH=/usr/local/opt/node@20/bin:$PATH" b
+export PATH="$HOMEBREW_PREFIX/opt/${1:node@20}/bin:$PATH"
+endsnippet
+
+snippet psql "export POSTGRES_" b
+export POSTGRES_USER='usr-`keepassxc-cli generate --custom 0123456789ABCDEFGHJKMNPQRSTVWXYZ --length 4 | tr -d \\n`'
+export POSTGRES_PASSWORD='psw-`keepassxc-cli generate --custom 0123456789ABCDEFGHJKMNPQRSTVWXYZ --length 4 | tr -d \\n`'
+export POSTGRES_DB='db-`keepassxc-cli generate --custom 0123456789ABCDEFGHJKMNPQRSTVWXYZ --length 4 | tr -d \\n`'
+endsnippet
+
+snippet sc "# shellcheck disable=" b
+# shellcheck disable=
+endsnippet
+
+snippet scs "# shellcheck disable=" b
+# shellcheck source=${1:/dev/null}
+endsnippet
+
+snippet sw "case" b
+case "\$1" in
+*) ${1:echo not implemented >&2} ;;
+esac
+endsnippet
+
+snippet u "unset" b
+unset -v $0
+endsnippet
+
+snippet ube "/usr/bin/env" b
+/usr/bin/env $0
+endsnippet
+
+
+priority 2
+
+snippet != "!=" w
+[ ${1:""} != ${2:""} ]
+endsnippet
+
+snippet # "#" w
+$#
+endsnippet
+
+snippet & "&" w
+&& $0
+endsnippet
+
+snippet + "! [ -z ${var+1} ]" w
+# shellcheck disable=SC2237 # test defined
+! [ -z ${${1:var}+1} ]
+endsnippet
+
+snippet -G "-G" w
+[ -G ${1:""} ]
+endsnippet
+
+snippet -L "-L" w
+[ -L ${1:""} ]
+endsnippet
+
+snippet -O "-O" w
+[ -O ${1:""} ]
+endsnippet
+
+snippet -S "-S" w
+[ -S ${1:""} ]
+endsnippet
+
+snippet -b "-b" w
+[ -b ${1:""} ]
+endsnippet
+
+snippet -c "-c" w
+[ -c ${1:""} ]
+endsnippet
+
+snippet -d "-d" w
+[ -d ${1:""} ]
+endsnippet
+
+snippet -e "-e" w
+[ -e ${1:""} ]
+endsnippet
+
+snippet -eq "-eq" w
+[ ${1:""} -eq ${2:""} ]
+endsnippet
+
+snippet -f "-f" w
+[ -f ${1:""} ]
+endsnippet
+
+snippet -g "-g" w
+[ -g ${1:""} ]
+endsnippet
+
+snippet -ge "-ge" w
+[ ${1:""} -ge ${2:""} ]
+endsnippet
+
+snippet -gt "-gt" w
+[ ${1:""} -gt ${2:""} ]
+endsnippet
+
+snippet -h "-h" w
+[ -h ${1:""} ]
+endsnippet
+
+snippet -k "-k" w
+[ -k ${1:""} ]
+endsnippet
+
+snippet -le "-le" w
+[ ${1:""} -le ${2:""} ]
+endsnippet
+
+snippet -lt "-lt" w
+[ ${1:""} -lt ${2:""} ]
+endsnippet
+
+snippet -n "-n" w
+[ -n ${1:""} ]
+endsnippet
+
+snippet -ne "-ne" w
+[ ${1:""} -ne ${2:""} ]
+endsnippet
+
+snippet -p "-p" w
+[ -p ${1:""} ]
+endsnippet
+
+snippet -r "-r" w
+[ -r ${1:""} ]
+endsnippet
+
+snippet -s "-s" w
+[ -s ${1:""} ]
+endsnippet
+
+snippet -t "-t" w
+[ -t ${1:0} ]
+endsnippet
+
+snippet -u "-u" w
+[ -u ${1:""} ]
+endsnippet
+
+snippet -w "-w" w
+[ -w ${1:""} ]
+endsnippet
+
+snippet -x "-x" w
+[ -x ${1:""} ]
+endsnippet
+
+snippet -z "-z" w
+[ -z ${1:""} ]
+endsnippet
+
+snippet /(?<!-)r/ "return" r
+return ${1:$?}
+endsnippet
+
+snippet < "<<'EOF'" w
+<<'${1:EOF}'`echo \\n`$2`echo \\n`$1
+endsnippet
+
+snippet ; ";;" w
+;;
+endsnippet
+
+snippet = "=" w
+[ ${1:""} = ${2:""} ]
+endsnippet
+
+snippet =~ "expr $var : $re > /dev/null" w
+expr ${1:"$var"} : ${2:'[0-9]*'} >/dev/null
+endsnippet
+
+snippet > ">&2" w
+>&2
+endsnippet
+
+snippet B "$BROWSER" w
+$BROWSER
+endsnippet
+
+snippet E "$EDITOR" w
+$EDITOR
+endsnippet
+
+snippet P "$PAGER" w
+$PAGER
+endsnippet
+
+snippet ROOT "ROOT" w
+#!/usr/bin/env sh
+set -o errexit -o nounset -o xtrace
+
+[ "$(basename "\$0")" != "sh-minniebavaro-6780.sh" ] && echo 'EX_USAGE: no source' 1>&2 && exit 64
+ROOT="$(dirname "\$0")"; export ROOT
+endsnippet
+
+snippet c "cat" w
+cat $0
+endsnippet
+
+snippet cd "cd || return" w
+cd ${1:"$@"} || return $?
+endsnippet
+
+snippet dateI "date +%Y-%m-%dT%H:%M:%S%z" w
+date '+%Y-%m-%dT%H:%M:%S%z'
+endsnippet
+
+snippet dateU "date -u +%Y-%m-%dT%H:%M:%SZ" w
+date -u '+%Y-%m-%dT%H:%M:%SZ'
+endsnippet
+
+snippet datei "date +%Y%m%dT%H%M%S%z" w
+date '+%Y%m%dT%H%M%S%z'
+endsnippet
+
+snippet dater "date -ujf %s +%Y-%m-%dT%H:%M:%SZ" w
+date -ujf '%s +%Y-%m-%dT%H:%M:%SZ'
+endsnippet
+
+snippet dates "date +%s" w
+date '+%s'
+endsnippet
+
+snippet dateu "date -u +%Y%m%dT%H%M%SZ" w
+date -u '+%Y%m%dT%H%M%SZ'
+endsnippet
+
+snippet do "do : done" w
+do
+	:
+done
+endsnippet
+
+snippet /(?<![-\\])(?<=\s)e/ "echo" r
+echo $3${1:'${2:not implemented}' >&2}
+endsnippet
+
+snippet g "grep --extended-regexp >/dev/null" w
+grep --extended-regexp ${1:":\d+:"} ${2:README.md} >/dev/null
+endsnippet
+
+snippet gp "<<'GNUPLOT'" w
+<<'GNUPLOT'`echo \\n`$1`echo \\n`GNUPLOT
+endsnippet
+
+snippet home "home" w
+"$HOME"
+endsnippet
+
+snippet json "<<'JSON'" w
+<<'JSON'`echo \\n`$1`echo \\n`JSON
+endsnippet
+
+snippet lua "<<'LUA'" w
+<<'LUA'`echo \\n`$1`echo \\n`LUA
+endsnippet
+
+snippet p "printf" w
+printf ${1:${2:%s} ${3:""}}
+endsnippet
+
+snippet p\ "printf %s " w
+printf '${1:a}\\\n%s' "$2"
+endsnippet
+
+snippet pb "pbcopy && pbpaste" w
+pbcopy && pbpaste
+endsnippet
+
+snippet pl "<<'PERL'" w
+<<'PERL'`echo \\n`$1`echo \\n`PERL
+endsnippet
+
+snippet pwd "$PWD" w
+"$PWD"
+endsnippet
+
+snippet py "<<'PYTHON'" w
+<<'PYTHON'`echo \\n`$1`echo \\n`PYTHON
+endsnippet
+
+snippet read "IFS= read -r" w
+IFS= read -r ${1:file}
+endsnippet
+
+snippet s "set --" w
+set -- $2 ${1:"$@"}
+endsnippet
+
+snippet sedi "sed -i" w
+sed -i '' $0
+endsnippet
+
+snippet seds "sed 's###'" w
+sed 's${4:/}$1$4$2$4$3'
+endsnippet
+
+snippet setx "set -x && set +x" w
+(set -x && ${VISUAL})
+endsnippet
+
+snippet sh "shift" w
+shift
+endsnippet
+
+snippet shift "shift &&" w
+shift && $0
+endsnippet
+
+snippet til "until" w
+until ${1:${VISUAL::}}; do ${2:sleep 1}; done
+endsnippet
+
+snippet txt "<<'TEXT'" w
+<<'TEXT'`echo \\n`$1`echo \\n`TEXT
+endsnippet
+
+snippet user "user" w
+"$USER"
+endsnippet
+
+snippet wh "while do done" w
+while ${1:false}; do
+	${2::}
+done
+endsnippet
+
+
+priority 2
+
+snippet /(?<=")\$/ "${}" r
+${$1}$0
+endsnippet
+
+priority 1
+
+snippet " "\double quote" i
+\"
+endsnippet
+
+snippet $ "$" i
+"$$1"
+endsnippet
+
+snippet $* "$*" i
+\${*}
+endsnippet
+
+snippet $0 "$0" i
+\${0}
+endsnippet
+
+snippet $1 "$1" i
+\${1}
+endsnippet
+
+snippet $2 "$2" i
+\${2}
+endsnippet
+
+snippet $3 "$3" i
+\${3}
+endsnippet
+
+snippet $4 "$4" i
+\${4}
+endsnippet
+
+snippet $5 "$5" i
+\${5}
+endsnippet
+
+snippet $6 "$6" i
+\${6}
+endsnippet
+
+snippet $7 "$7" i
+\${7}
+endsnippet
+
+snippet $8 "$8" i
+\${8}
+endsnippet
+
+snippet $9 "$9" i
+\${9}
+endsnippet
+
+snippet $@ "$@" i
+\${@}
+endsnippet
+
+snippet ${*} "${*}" i
+\${*:-$1}
+endsnippet
+
+snippet ${0} "${0}" i
+\${0:-$1}
+endsnippet
+
+snippet ${1} "${1}" i
+\${1:-$1}
+endsnippet
+
+snippet ${2} "${2}" i
+\${2:-$1}
+endsnippet
+
+snippet ${3} "${3}" i
+\${3:-$1}
+endsnippet
+
+snippet ${4} "${4}" i
+\${4:-$1}
+endsnippet
+
+snippet ${5} "${5}" i
+\${5:-$1}
+endsnippet
+
+snippet ${6} "${6}" i
+\${6:-$1}
+endsnippet
+
+snippet ${7} "${7}" i
+\${7:-$1}
+endsnippet
+
+snippet ${8} "${8}" i
+\${8:-$1}
+endsnippet
+
+snippet ${9} "${9}" i
+\${9:-$1}
+endsnippet
+
+snippet ${@} "${@}" i
+\${@:-$1}
+endsnippet
+
+snippet / "/dev/null" i
+/dev/null
+endsnippet
+
+snippet /(?<!\$)0/ "$0" r
+"\$0$1"
+endsnippet
+
+snippet /(?<!\$)1/ "$1" r
+"\$1$1"
+endsnippet
+
+snippet /(?<!\$)2/ "$2" r
+"\$2$1"
+endsnippet
+
+snippet /(?<!\$)3/ "$3" r
+"\$3$1"
+endsnippet
+
+snippet /(?<!\$)4/ "$4" r
+"\$4$1"
+endsnippet
+
+snippet /(?<!\$)5/ "$5" r
+"\$5$1"
+endsnippet
+
+snippet /(?<!\$)6/ "$6" r
+"\$6$1"
+endsnippet
+
+snippet /(?<!\$)7/ "$7" r
+"\$7$1"
+endsnippet
+
+snippet /(?<!\$)8/ "$8" r
+"\$8$1"
+endsnippet
+
+snippet /(?<!\$)9/ "$9" r
+"\$9$1"
+endsnippet
+
+snippet /(?<!\$)@/ "$@" r
+"\$@$1"
+endsnippet
+
+snippet /(?<!\$)\*/ "$*" r
+"\$*$1"
+endsnippet
+
+snippet :- ":-" i
+:?
+endsnippet
+
+snippet := ":=" i
+:-
+endsnippet
+
+snippet :? ":?" i
+:=
+endsnippet
+
+snippet \ "'\\'" i
+'\\${VISUAL}'
+endsnippet
+
+snippet \' "'\''" i
+'\''
+endsnippet
+
+snippet \e "\033" i
+\033
+endsnippet
+
+snippet | "\bar" i
+\|
+endsnippet

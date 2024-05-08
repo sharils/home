@@ -1,0 +1,60 @@
+---
+matches:
+
+  - trigger: Cg,.
+    replace: ChatGPT
+
+  - trigger: Dd,.
+    replace: Datadog
+
+  - trigger: Dl,.
+    replace: Duolingo
+
+  - trigger: Hbt,.
+    replace: Habitica
+
+  - trigger: Hn,.
+    replace: Hacker News
+
+  - trigger: Kpxc,.
+    replace: KeePassXC
+
+  - trigger: Ms,.
+    replace: Microsoft
+
+  - trigger: Ob,.
+    replace: Obsidian
+
+  - trigger: Ol,.
+    replace: Open Library
+
+  - trigger: Osm,.
+    replace: Open Street Map
+
+  - trigger: St,.
+    replace: Syncthing
+
+  - trigger: Twm,.
+    replace: Taiwan Mobile
+
+  - trigger: Ub,.
+    replace: Ubuntu
+
+  - trigger: Vb,.
+    replace: Virtual Box
+
+  - trigger: Yb,.
+    replace: YouBike
+
+  - trigger: Wm,.
+    replace: Wayback Machine
+
+  - trigger: Wp,.
+    replace: WordPress
+
+  - trigger: hb,.
+    replace: homebrew
+    propagate_case: true
+
+  - trigger: mmd,.
+    replace: mermaid

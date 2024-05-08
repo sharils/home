@@ -1,0 +1,21 @@
+priority 4
+
+snippet /^a:/ "all:" Ar
+all:
+endsnippet
+
+snippet /^c:/ "clean:" Ar
+.PHONY: clean
+clean:
+endsnippet
+
+snippet /^p:/ ".PHONY:" Ar
+.PHONY:
+endsnippet
+
+
+priority 1
+
+snippet $ "$()" i
+$($1)
+endsnippet

@@ -1,0 +1,29 @@
+---
+matches:
+
+  - trigger: 3,.
+    replace: s3://
+
+  - trigger: Ws,.
+    replace: WebSocket
+
+  - trigger: a:,.
+    replace: "about:"
+
+  - trigger: d:,.
+    replace: "due:"
+
+  - trigger: f:,.
+    replace: file:///
+
+  - trigger: h:,.
+    replace: https://
+
+  - trigger: ht:,.
+    replace: http://
+
+  - trigger: r:,.
+    replace: rsync://
+
+  - trigger: t:,.
+    replace: 'tel:'

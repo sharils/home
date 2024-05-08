@@ -1,0 +1,7 @@
+# vim
+/.vim/.netrwhist
+
+# vim-plug
+/.vim/plugged/*
+!.vim/plugged/after
+!.vim/plugged/before

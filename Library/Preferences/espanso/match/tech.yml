@@ -1,0 +1,476 @@
+---
+matches:
+
+  - trigger: Amp,.
+    replace: Amplitude
+
+  - trigger: Bt,.
+    replace: Bluetooth
+
+  - trigger: Coscup,.
+    replace: COSCUP
+
+  - trigger: Dnd,.
+    replace: Do Not Disturb
+
+  - trigger: Ei,.
+    replace: E Ink
+
+  - trigger: Jsdc,.
+    replace: JSDC
+
+  - trigger: Oss,.
+    replace: Open Source
+
+  - trigger: Pom,.
+    replace: Page Object Model
+
+  - trigger: Pos,.
+    replace: POSIX
+
+  - trigger: Qr,.
+    replace: QR code
+
+  - trigger: Rfc,.
+    replace: RFC
+
+  - trigger: Totp,.
+    replace: TOTP
+
+  - trigger: Xr,.
+    replace: Exercism
+
+  - trigger: as,.
+    replace: applescript
+
+  - trigger: bg,.
+    replace: background
+
+  - trigger: conf,.
+    replace: configure
+
+  - trigger: ds,.
+    replace: dataset
+
+  - trigger: dt,.
+    replace: desktop
+
+  - trigger: ed,.
+    replace: editor
+
+  - trigger: ev,.
+    replace: environment variable
+
+  - trigger: gen,.
+    replace: generate
+
+  - trigger: ks,.
+    replace: keyboard shortcuts
+
+  - trigger: lg,.
+    replace: lomography
+
+  - trigger: noti,.
+    replace: notification
+
+  - trigger: prog,.
+    replace: program
+
+  - trigger: ps,.
+    replace: podcast
+
+  - trigger: scc,.
+    replace: screencast
+
+  - trigger: scr,.
+    replace: screen
+
+  - trigger: scs,.
+    replace: screenshot
+
+  - trigger: sim,.
+    replace: simulator
+
+  - trigger: sp,.
+    replace: smart phone
+
+  - trigger: ss,.
+    replace: spreadsheet
+
+  - trigger: sw,.
+    replace: software
+
+  - trigger: sync,.
+    replace: synchronization
+
+  - trigger: tab,.
+    replace: tablet
+
+  - trigger: win,.
+    replace: window
+
+  - trigger: Ph,.
+    replace: PLACE_HOLDER
+
+  - trigger: a11y,.
+    replace: accessibility
+
+  - trigger: i18n,.
+    replace: internationalisation
+
+  - trigger: l10n,.
+    replace: localisation
+
+  - trigger: bm,.
+    replace: bookmark
+
+  - trigger: Cos,.
+    replace: CoScreen
+
+  - trigger: A,.
+    replace: Add
+
+  - trigger: C,.
+    replace: Change
+
+  - trigger: D,.
+    replace: Remove
+
+  - trigger: F,.
+    replace: Fix
+
+  - trigger: R,.
+    replace: Refactor
+
+  - trigger: X,.
+    replace: Exec
+
+  - trigger: Erd,.
+    replace: ER diagram
+
+  - trigger: Hw,.
+    replace: Hello world!
+
+  - trigger: fsm,.
+    replace: finite state machine
+
+  - trigger: re,.
+    replace: regular expression
+
+  - trigger: ucd,.
+    replace: use case diagram
+
+  - trigger: Mongo,.
+    replace: MongoDB
+
+  - trigger: Ssot,.
+    replace: Single Source of Truth
+
+  - trigger: sc,.
+    replace: statechart
+
+  - trigger: Yagni,.
+    replace: YAGNI
+
+  - trigger: Df,.
+    replace: Dockerfile
+
+  - trigger: dc,.
+    replace: docker-compose.yml
+
+  - trigger: dev,.
+    replace: development
+
+  - trigger: prod,.
+    replace: production
+
+  - trigger: stg,.
+    replace: staging
+
+  - trigger: Erl,.
+    replace: Erlang/OTP
+
+  - trigger: ob,.
+    replace: observer.start()
+
+  - trigger: rc,.
+    replace: recompile
+
+  - trigger: Eu,.
+    replace: ExUnit
+
+  - trigger: Lb,.
+    replace: Livebook
+
+  - trigger: Lv,.
+    replace: LiveView
+
+  - trigger: Me,.
+    replace: MIX_ENV=
+
+  - trigger: Mep,.
+    replace: MIX_ENV=prod
+
+  - trigger: ex,.
+    replace: elixir
+    propagate_case: true
+
+  - trigger: fb,.
+    replace: facebook
+    propagate_case: true
+
+  - trigger: ig,.
+    replace: instagram
+    propagate_case: true
+
+  - trigger: Rm,.
+    replace: README.md
+
+  - trigger: fi,.
+    replace: favicon.ico
+
+  - trigger: idx,.
+    replace: index.html
+
+  - trigger: md,.
+    replace: markdown
+
+  - trigger: rt,.
+    replace: robots.txt
+
+  - trigger: sx,.
+    replace: sitemap.xml
+
+  - trigger: "%F=,."
+    replace: "%Y-%m-%d"
+
+  - trigger: "%R=,."
+    replace: "%H:%M"
+
+  - trigger: 00,.
+    replace: 00:00:00
+
+  - trigger: 59,.
+    replace: 23:59:59
+
+  - trigger: 0000,.
+    replace: 0000-00-00T00:00:00Z
+
+  - trigger: 1970,.
+    replace: 1970-01-01T00:00:00Z
+
+  - trigger: 2038,.
+    replace: 2038-01-19T03:14:07Z
+
+  - trigger: 9999,.
+    replace: 9999-99-99T99:99:99Z
+
+  - trigger: Utc,.
+    replace: UTC
+
+  - trigger: 0987,.
+    replace: 0987654321
+
+  - trigger: json,.
+    replace: '{"a":97,"b":98}'
+
+  - trigger: admin,.
+    replace: admin@example.com
+
+  - trigger: Next,.
+    replace: Next.js
+
+  - trigger: Phx,.
+    replace: Phoenix
+
+  - trigger: Rn,.
+    replace: React Native
+
+  - trigger: Rnw,.
+    replace: React Native Web
+
+  - trigger: Sk,.
+    replace: SvelteKit
+
+  - trigger: Sv,.
+    replace: Svelte
+
+  - trigger: fw,.
+    replace: framework
+
+  - trigger: phx,.
+    replace: phoenix
+
+  - trigger: rn,.
+    replace: react-native
+
+  - trigger: And,.
+    replace: Android
+
+  - trigger: Ga,.
+    replace: Google Analytics
+
+  - trigger: Gc,.
+    replace: Google Calendar
+
+  - trigger: Gcp,.
+    replace: Google Cloud Platform
+
+  - trigger: Gd,.
+    replace: Googla Drive
+
+  - trigger: Gf,.
+    replace: Google Forms
+
+  - trigger: Gm,.
+    replace: Google Maps
+
+  - trigger: Gp,.
+    replace: Googla Play
+
+  - trigger: Gsc,.
+    replace: Google Search Console
+
+  - trigger: Gtr,.
+    replace: Google Trends
+
+  - trigger: Gtl,.
+    replace: Google Translate
+
+  - trigger: Gw,.
+    replace: Google Workspace
+
+  - trigger: Yt,.
+    replace: YouTube
+
+  - trigger: g,.
+    replace: google
+    propagate_case: true
+
+  - trigger: Gh,.
+    replace: GitHub
+
+  - trigger: Gl,.
+    replace: GitLab
+
+  - trigger: d,.
+    replace: develop
+
+  - trigger: gco,.
+    replace: git checkout
+
+  - trigger: gh,.
+    replace: github
+
+  - trigger: gi,.
+    replace: gitignore
+
+  - trigger: gl,.
+    replace: gitlab
+
+  - trigger: pr,.
+    replace: pull request
+
+  - trigger: mr,.
+    replace: merge request
+
+  - trigger: o,.
+    replace: origin
+
+  - trigger: ft,.
+    replace: fallthrough
+
+  - trigger: pt,.
+    replace: passthrough
+
+  - trigger: depr,.
+    replace: deprecated
+
+  - trigger: 0.,.
+    replace: 0.0.0.0
+
+  - trigger: 1.,.
+    replace: 1.1.1.1
+
+  - trigger: 127.,.
+    replace: 127.0.0.1
+
+  - trigger: 192.,.
+    replace: 192.168.0.1
+
+  - trigger: Am,.
+    replace: Atomic Mail
+
+  - trigger: Es,.
+    replace: ECMAScript
+
+  - trigger: Np,.
+    replace: NEXT_PUBLIC_
+
+  - trigger: Js,.
+    replace: JavaScript
+
+  - trigger: Ts,.
+    replace: TypeScript
+
+  - trigger: js,.
+    replace: javascript
+
+  - trigger: js-pipe-through,.
+    replace: node --eval 'process.stdin.pipe(new require("node:stream").Transform({transform:(chunk,encoding,callback)=>callback(null,chunk)})).pipe(process.stdout)'
+
+  - trigger: pj,.
+    replace: package.json
+
+  - trigger: Eula,.
+    replace: End-User License Agreement
+
+  - trigger: Sla,.
+    replace: Service-Level Agreement
+
+  - trigger: Tos,.
+    replace: Terms of Service
+
+  - trigger: Nlp,.
+    replace: Natural Language Processing
+
+  - trigger: 109,.
+    replace: |
+      一二三四五六七八九十一二三四五六七八九廿一二三四五六七八九卅一二三四五六七八九卌一二三四五六七八九圩一二三四五六七八九圓一二三四五六七八九進一二三四五六七八九枯一二三四五六七八九枠一二三四五六七八九百一二三四五六七八九
+
+  - trigger: 261,.
+    replace: |
+      123456789A123456789B123456789C123456789D123456789E123456789F123456789G123456789H123456789I123456789J123456789K123456789L123456789M123456789N123456789O123456789P123456789Q123456789R123456789S123456789T123456789U123456789V123456789W123456789X123456789Y123456789Z
+
+  - trigger: poem,.
+    replace: |
+      I'm nobody! Who are you?
+      Are you nobody, too?
+      Then there's a pair of us - don't tell!
+      They'd banish us, you know.
+
+      How dreary to be somebody!
+      How public, like a frog
+      To tell your name the livelong day
+      To an admiring bog!
+
+  - trigger: aj,.
+    replace: application/json
+
+  - trigger: Njs,.
+    replace: NodeJS
+
+  - trigger: Ned,.
+    replace: NODE_ENV='development'
+
+  - trigger: Nep,.
+    replace: NODE_ENV='production'
+
+  - trigger: Net,.
+    replace: NODE_ENV='test'
+
+  - trigger: nc,.
+    replace: npm_config_
+
+  - trigger: node,.
+    replace: nodejs

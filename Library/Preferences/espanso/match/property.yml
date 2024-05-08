@@ -1,0 +1,191 @@
+---
+matches:
+
+  - trigger: 12s,.
+    replace: HTC Desire 12s
+
+  - trigger: 97p,.
+    replace: 97 Things Every Programmer Should Know
+
+  - trigger: Ad,.
+    replace: AirDrop
+
+  - trigger: Adp,.
+    replace: Apple Developer Program
+
+  - trigger: Am,.
+    replace: Agile Manifesto
+
+  - trigger: As,.
+    replace: App Store
+
+  - trigger: Asc,.
+    replace: App Store Connect
+
+  - trigger: At,.
+    replace: AirTag
+
+  - trigger: Atv,.
+    replace: Apple TV
+
+  - trigger: Aw,.
+    replace: Apple Watch
+
+  - trigger: Bm,.
+    replace: Babymonster
+
+  - trigger: Cf,.
+    replace: CloudFront
+
+  - trigger: Cr,.
+    replace: Chromium
+
+  - trigger: Cy,.
+    replace: Cypress
+
+  - trigger: Esp,.
+    replace: Espanso
+
+  - trigger: Fd,.
+    replace: F-Droid
+
+  - trigger: Fx,.
+    replace: Firefox
+
+  - trigger: Hf,.
+    replace: Head First
+
+  - trigger: Hfdp,.
+    replace: Head First Design Patterns
+
+  - trigger: Hfooad,.
+    replace: Head First Object-Oriented Analysis and Design
+
+  - trigger: Hul,.
+    replace: HTC U12 life
+
+  - trigger: Im,.
+    replace: iMessage
+
+  - trigger: Ios,.
+    replace: iOS
+
+  - trigger: Ip,.
+    replace: iPad
+
+  - trigger: Iph,.
+    replace: iPhone
+
+  - trigger: Ipa,.
+    replace: iPad Air
+
+  - trigger: Ipp,.
+    replace: iPad Pro
+
+  - trigger: Jsdg,.
+    replace: "JavaScript: The Definitive Guide"
+
+  - trigger: Jwms,.
+    replace: Justice with Michael Sandel
+
+  - trigger: Lab,.
+    replace: L*a*b*
+
+  - trigger: Lhtl,.
+    replace: Learning How to Learn
+
+  - trigger: Ls,.
+    replace: Lightsail
+
+  - trigger: Lsc,.
+    replace: Lightsail Container
+
+  - trigger: Lyse,.
+    replace: Learn You Some Erlang for great good
+
+  - trigger: Mac,.
+    replace: macOS
+
+  - trigger: Mba,.
+    replace: MacBook Air
+
+  - trigger: Mbp,.
+    replace: MacBook Pro
+
+  - trigger: Oc,.
+    replace: OpenChat
+
+  - trigger: Posa,.
+    replace: Pattern-Oriented Software Architecture
+
+  - trigger: Ps,.
+    replace: Play Store
+
+  - trigger: Qtp,.
+    replace: QuickTime Player
+
+  - trigger: R53,.
+    replace: Route 53
+
+  - trigger: Sel,.
+    replace: Selenium
+
+  - trigger: Sf,.
+    replace: Safari
+
+  - trigger: Side,.
+    replace: Selenium IDE
+
+  - trigger: Sn,.
+    replace: Security Now!
+
+  - trigger: Tx,.
+    replace: Onyx BOOX Tab X C
+
+  - trigger: Tf,.
+    replace: TestFlight
+
+  - trigger: Trpl,.
+    replace: The Rust Programming Language
+
+  - trigger: Wdt,.
+    replace: Web Developer Tools
+
+  - trigger: Wdtc,.
+    replace: Web Developer Tools Console
+
+  - trigger: Wos,.
+    replace: watchOS
+
+  - trigger: Wv,.
+    replace: WebView
+
+  - trigger: Xr,.
+    replace: iPhone XR
+
+  - trigger: cf,.
+    replace: cloudfront
+
+  - trigger: e,.
+    replace: espanso
+
+  - trigger: fl,.
+    replace: fastlane
+
+  - trigger: gm,.
+    replace: greasemonkey
+
+  - trigger: k2a,.
+    replace: keepass2android
+
+  - trigger: ls,.
+    replace: lightsail
+
+  - trigger: lsc,.
+    replace: lightsail container
+
+  - trigger: u,.
+    replace: qutebrowser
+
+  - trigger: Tabx,.
+    replace: BOOX Tab X C

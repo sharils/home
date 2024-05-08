@@ -1,0 +1,200 @@
+---
+matches:
+
+  - trigger: LeftRightArrow,.
+    replace: ↔
+
+  - trigger: and,.
+    replace: ∧
+
+  - trigger: cap,.
+    replace: ∩
+
+  - trigger: command,.
+    replace: ⌘
+
+  - trigger: control,.
+    replace: ⌃
+
+  - trigger: cup,.
+    replace: ∪
+
+  - trigger: dot,.
+    replace: ·
+
+  - trigger: exists,.
+    replace: ∃
+
+  - trigger: forall,.
+    replace: ∀
+
+  - trigger: isin,.
+    replace: ∈
+
+  - trigger: not,.
+    replace: ¬
+
+  - trigger: option,.
+    replace: ⌥
+
+  - trigger: or,.
+    replace: ∨
+
+  - trigger: plusmn,.
+    replace: ±
+
+  - trigger: rarr,.
+    replace: →
+
+  - trigger: shift,.
+    replace: ⇧
+
+  - trigger: be,.
+    replace: ㄅ
+
+  - trigger: ei,.
+    replace: ㄟ
+
+  - trigger: pe,.
+    replace: ㄆ
+
+  - trigger: ci,.
+    replace: ㄘ
+
+  - trigger: cw,.
+    replace: ㄘㄨㄚˋ
+
+  - trigger: de,.
+    replace: ㄉ
+
+  - trigger: he,.
+    replace: ㄏ
+
+  - trigger: jiji,.
+    replace: ㄐㄐ
+
+  - trigger: kd,.
+    replace: ㄎㄧㄤ
+
+  - trigger: ke,.
+    replace: ㄎ
+
+  - trigger: kiang,.
+    replace: ㄎㄧㄤ
+
+  - trigger: le,.
+    replace: ㄌ
+
+  - trigger: lt,.
+    replace: ㄌㄩㄝ
+
+  - trigger: me,.
+    replace: ㄇ
+
+  - trigger: ne,.
+    replace: ㄋ
+
+  - trigger: nl,.
+    replace: ㄋㄞ
+
+  - trigger: nznz,.
+    replace: ㄋㄟㄋㄟ
+
+  - trigger: o,.
+    replace: ㄛ
+
+  - trigger: oe,.
+    replace: ㄝ
+
+  - trigger: oh,.
+    replace: ㄤ
+
+  - trigger: cjk,.
+    replace: 龍龙竜용
+
+  - trigger: tw,.
+    replace: 臺灣
+
+  - trigger: chan,.
+    replace: ちゃん
+
+  - trigger: shrug,.
+    replace: ¯\_(ツ)_/¯
+
+  - trigger: omph,.
+    replace: ॐ मणि पद्मे हूं
+
+  - trigger: zh,.
+    replace: 中文
+
+  - trigger: empty,.
+    replace: ∅
+
+  - trigger: epsi,.
+    replace: ε
+
+  - trigger: times,.
+    replace: ×
+
+  - trigger: buephokkephok,.
+    replace: 袂博假博
+
+  - trigger: hiantsusi,.
+    replace: 現此時
+
+  - trigger: iantau,.
+    replace: 緣投
+
+  - trigger: khauiau,.
+    replace: 哭枵
+
+  - trigger: khimootsih,.
+    replace: 奇檬子
+
+  - trigger: khiang,.
+    replace: 勍
+
+  - trigger: khiau,.
+    replace: 巧
+
+  - trigger: khisiau,.
+    replace: 起痟
+
+  - trigger: lanpha,.
+    replace: 卵脬
+
+  - trigger: laukhokkhok,.
+    replace: 老硞硞
+
+  - trigger: linlaupe,.
+    replace: 恁老爸
+
+  - trigger: linpe,.
+    replace: 恁爸
+
+  - trigger: mthang,.
+    replace: 毋通
+
+  - trigger: phahtshiutshing,.
+    replace: 拍手銃
+
+  - trigger: siannsiau,.
+    replace: 啥潲
+
+  - trigger: siokan,.
+    replace: 相姦
+
+  - trigger: sui,.
+    replace: 媠
+
+  - trigger: tantiau,.
+    replace: 擲掉
+
+  - trigger: tsautsingkiampianhing,.
+    replace: 走精兼變形
+
+  - trigger: tsibai,.
+    replace: 膣屄
+
+  - trigger: tuhlan,.
+    replace: 揬卵

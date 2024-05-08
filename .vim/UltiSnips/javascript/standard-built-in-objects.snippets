@@ -1,0 +1,176 @@
+global !p
+from my_snippet_helpers import *
+endglobal
+
+
+priority 4
+
+snippet e "Error" "around_throw(snip)" we
+new Error("$1")
+endsnippet
+
+snippet te "TypeError" "around_throw(snip)" we
+new TypeError("$1")
+endsnippet
+
+
+priority 3
+
+snippet "//" "RegExp" r
+RegExp
+endsnippet
+
+snippet S "String" w
+String
+endsnippet
+
+snippet b "boolean" w
+boolean
+endsnippet
+
+snippet /(?<=["'])fn/ "function" r
+function
+endsnippet
+
+snippet /(?<=["'])n/ "number" r
+number
+endsnippet
+
+snippet /(?<=["'])oj/ "object" r
+object
+endsnippet
+
+snippet s "string" w
+string
+endsnippet
+
+snippet /(?<=["'])sy/ "symbol" r
+symbol
+endsnippet
+
+
+priority 2
+
+snippet l "length" w
+length
+endsnippet
+
+snippet .t ".then" w
+.then($1)
+endsnippet
+
+snippet Boolean "Boolean" w
+Boolean($1)
+endsnippet
+
+snippet Date "Date" w
+new Date($1)
+endsnippet
+
+snippet Error "Error" w
+new Error($1)
+endsnippet
+
+snippet Map "Map" w
+new Map($1)
+endsnippet
+
+snippet Number "Number" w
+Number($1)
+endsnippet
+
+snippet Promise "Promise" w
+new Promise($1)
+endsnippet
+
+snippet RangeError "RangeError" w
+new RangeError($1)
+endsnippet
+
+snippet RegExp "RegExp" w
+new RegExp(String.raw\`$1\`)
+endsnippet
+
+snippet Set "Set" w
+new Set($1)
+endsnippet
+
+snippet Symbol "Symbol" w
+Symbol("$1")
+endsnippet
+
+snippet TypeError "TypeError" w
+new TypeError($1)
+endsnippet
+
+snippet WeakMap "WeakMap" w
+new WeakMap($1)
+endsnippet
+
+snippet WeakSet "WeakSet" w
+new WeakSet($1)
+endsnippet
+
+snippet A "Array" w
+Array
+endsnippet
+
+snippet B "Boolean" w
+Boolean
+endsnippet
+
+snippet D "Date" w
+Date
+endsnippet
+
+snippet E "Error" w
+Error
+endsnippet
+
+snippet jsp "JSON.parse" w
+JSON.parse($1)
+endsnippet
+
+snippet jss "JSON.stringify" w
+JSON.stringify($1)
+endsnippet
+
+snippet M "Math" w
+Math
+endsnippet
+
+snippet M "Map" w
+Map
+endsnippet
+
+snippet Nu "Number" w
+Number
+endsnippet
+
+snippet O "Object" w
+Object
+endsnippet
+
+snippet P "Promise" w
+Promise
+endsnippet
+
+snippet RE "RangeError" w
+RangeError
+endsnippet
+
+snippet Sy "Symbol" w
+Symbol
+endsnippet
+
+snippet TE "TypeError" w
+TypeError
+endsnippet
+
+snippet WM "WeakMap" w
+WeakMap
+endsnippet
+
+snippet WS "WeakSet" w
+WeakSet
+endsnippet

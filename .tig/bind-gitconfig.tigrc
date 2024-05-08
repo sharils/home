@@ -1,0 +1,45 @@
+bind generic g              none
+bind generic g<SPACE>       view-grep
+bind generic ga<SPACE>      @git a %(prompt)
+bind generic ga.            @git a .
+bind generic gau            @git au
+bind generic gc<ENTER>      !git c
+bind generic gcC            @git c --reuse-message %(commit)
+bind status  gcl<ENTER>     @git cl %(file)
+bind generic gcld<ENTER>    @git cld
+bind status  gcld<ENTER>    @git cld
+bind generic gcm<SPACE>     !git cm '%(prompt)'
+bind generic gcma           !git cma '%(prompt Add )'
+bind generic gcmc           !git cmc '%(prompt Change )'
+bind generic gcmd           !git cmd '%(prompt Remove )'
+bind generic gcmf           !git cmf '%(prompt Fix )'
+bind generic gcmr           !git cmr '%(prompt Refactor )'
+bind generic gcmw           !git cmw '%(prompt wip! )'
+bind generic gcmx           !git cmx '%(prompt Execute )'
+bind generic gco<ENTER>     @git co %(commit)
+bind generic gco-           @git co-
+bind generic gco/           @git co :/
+bind generic gcob           @git co -b %(prompt) %(commit)
+bind generic gcod           @git cod
+bind generic gcom           @git com
+bind generic gcoo           @git coo
+bind generic gcop           @git cop
+bind generic gcrn           @sh -c 'git revert --no-edit %(commit) && git revert --no-commit @ && git reset @'
+bind generic gd<ENTER>      :!git d
+bind generic gds            :!git ds
+bind generic gf             @git f
+bind generic gmv            @git mv %(file) %(prompt)
+bind generic gp<ENTER>      @git p
+bind generic gpb:           @git p %(remote) :%(branch)
+bind generic gpc<SPACE>     @git p %(remote) %(commit):refs/heads/%(prompt)
+bind generic gpcf           @git pf %(remote) %(commit):refs/heads/%(prompt)
+bind generic gpf            @git pf
+bind generic gro            @git ro %(prompt) %(commit)
+bind generic gu<SPACE>      @git u %(prompt)
+bind generic guh            @git uh %(commit)
+bind generic gum            @git um
+bind generic gup            !git up %(commit)~
+bind generic gus            @git us
+bind generic gu~            @git u @~
+
+# vim:filetype=conf

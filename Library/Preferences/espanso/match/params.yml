@@ -1,0 +1,49 @@
+---
+matches:
+  - trigger: "%F,."
+    replace: "{{F}}"
+    vars:
+      - name: F
+        type: date
+        params:
+          format: "%F"
+
+  - trigger: "%R,."
+    replace: "{{R}}"
+    vars:
+      - name: R
+        type: date
+        params:
+          format: "%R"
+
+  - trigger: "%T,."
+    replace: "{{T}}"
+    vars:
+      - name: T
+        type: date
+        params:
+          format: "%T"
+
+  - trigger: 8601,.
+    replace: "{{8601}}"
+    vars:
+      - name: 8601
+        type: date
+        params:
+          format: "%FT%T%:z"
+
+  - trigger: 8601u,.
+    replace: "{{8601}}"
+    vars:
+      - name: 8601
+        type: shell
+        params:
+          cmd: "date -u +%FT%TZ"
+
+  - trigger: 8601w,.
+    replace: "{{8601w}}"
+    vars:
+      - name: 8601w
+        type: date
+        params:
+          format: "%Y-W%V"

@@ -1,0 +1,181 @@
+extends common, boolean
+
+snippet $schema "json schema $schema" b
+{
+	"$schema": "http://json-schema.org/draft-0${1:7}/schema#",
+	"title": "Match anything",
+	"description": "This is a schema that matches anything.",
+	"default": "Default value",
+	"examples": [
+		"Anything",
+		4035
+	],
+	"deprecated": true,
+	"readOnly": true,
+	"writeOnly": false,
+	"$comment": "Its value must always be a string",
+	"enum": ["red", "amber", "green"],
+	"const": "United States of America",
+	"type": "object",
+	"properties": {
+	},
+	"required": [
+	]
+}
+endsnippet
+
+snippet string "json schema string" w
+{
+	"type": "string",
+	"pattern": "https://json-schema.org/understanding-json-schema/reference/regular_expressions.html#regular-expressions",
+	"format": "https://json-schema.org/understanding-json-schema/reference/string.html#built-in-formats",
+	"contentEncoding": "base64",
+	"contentMediaType": "image/png"
+}
+endsnippet
+
+snippet integer "json schema integer" w
+{
+	"type": "integer",
+	"multipleOf" : 10,
+	"minimum": 0,
+	"exclusiveMinimum": 100,
+	"maximum": 100,
+	"exclusiveMaximum": 100
+}
+endsnippet
+
+snippet number "json schema integer" w
+{
+	"type": "number",
+	"multipleOf" : 10,
+	"minimum": 0,
+	"exclusiveMinimum": 100,
+	"maximum": 100,
+	"exclusiveMaximum": 100
+}
+endsnippet
+
+snippet object "json schema object" w
+{
+	"type": "object",
+	"properties": {
+	},
+	"patternProperties": {
+		"^I_": { "type": "integer" }
+	},
+	"additionalProperties": {
+		"type": "string"
+	},
+	"required": [],
+	"propertyNames": {
+		"pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+	},
+	"minProperties": 2,
+	"maxProperties": 3
+}
+endsnippet
+
+snippet array "json schema array" w
+{
+	"type": "array",
+	"items": {
+		"type": "number"
+	},
+	"prefixItems": [
+		{
+			"enum": ["NW", "NE", "SW", "SE"]
+		}
+	],
+	"items": {
+		"type": "string"
+	},
+	"contains": {
+		"type": "number"
+	},
+	"minContains": 2,
+	"maxContains": 3,
+	"minItems": 2,
+	"maxItems": 3
+	"uniqueItems": true
+}
+endsnippet
+
+snippet boolean "json schema boolean" w
+{
+	"type": "boolean"
+}
+endsnippet
+
+snippet null "json schema null" w
+{
+	"type": "null"
+}
+endsnippet
+
+snippet $ "$" w
+{
+	"$${1:match}": ${2:{}}
+}
+endsnippet
+
+snippet $mea "mongodb $match $expr $and" w
+{
+	"$match": {
+		"$expr": {
+			"$and": ${1:[]}
+		}
+	}
+}
+endsnippet
+
+snippet $lookup "mongodb $lookup" w
+{
+	"$lookup": {
+		"from": "${1:<foreign collection>}",
+		"localField": "${2:<field from local collection's documents>}",
+		"foreignField": "${3:<field from foreign collection's documents>}",
+		"let": ${4:{}},
+		"pipeline": [$5],
+		"as": "${6:<output array field>}"
+	}
+}
+endsnippet
+
+snippet $reduce "mongodb $reduce" w
+{
+	"$reduce": {
+		"input": "${1:<array>}",
+		"initialValue": ${2:"<expression>"},
+		"in": ${3:"<expression>"}
+	}
+}
+endsnippet
+
+snippet $filter "mongodb $filter" w
+{
+	"$filter": {
+		"input": "${1:<array>}",
+		"as": "${2:<string>}",
+		"cond": ${3:"<expression>"}
+	}
+}
+endsnippet
+
+snippet $if "mongodb $if" w
+{
+	"$cond": {
+		"if": ${1:"<boolean-expression>"},
+		"then": ${2:"<true-case>"},
+		"else": ${3:"<false-case>"}
+	}
+}
+endsnippet
+
+snippet $group "mongodb $group" w
+{
+	"$group": {
+		"_id": ${1:"<expression>"}
+	}
+}
+endsnippet

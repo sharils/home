@@ -1,0 +1,86 @@
+global !p
+from my_snippet_helpers import *
+endglobal
+
+
+priority 5
+
+snippet c "case" "around_switch(snip)" be
+case $1:
+endsnippet
+
+
+priority 3
+
+snippet /* "/* comment block */" b
+/**
+ * ${1:${VISUAL}}
+ */
+endsnippet
+
+snippet br "break" b
+break;
+endsnippet
+
+snippet cn "continue;" b
+continue;
+endsnippet
+
+snippet for "for" b
+for ($1) {
+	${2:${VISUAL}}
+}
+endsnippet
+
+snippet wh "while" b
+while ($1) {
+	${2:${VISUAL}}
+}
+endsnippet
+
+snippet sw "switch" b
+switch ($1) {
+	${2:${VISUAL}}
+}
+endsnippet
+
+snippet /vim "v" b
+// vim:filetype=${1:javascript}
+endsnippet
+
+snippet /Vim "v" b
+/* Vim:set filetype=${1:javascript}: */
+endsnippet
+
+
+priority 2
+
+snippet & "&&" w
+&& $0
+endsnippet
+
+snippet def "default" w
+default
+endsnippet
+
+snippet el "else" w
+ else {
+	${1:${VISUAL}}
+}
+endsnippet
+
+snippet eif "if" w
+ else if ($1) {
+	${2:${VISUAL}}
+}
+endsnippet
+
+snippet if "if" w
+if ($1) {
+	${2:${VISUAL}}
+}
+endsnippet
+
+snippet v "void" w
+void
+endsnippet

@@ -1,0 +1,14 @@
+---
+matches:
+
+  - trigger: Lh,.
+    replace: Lighthouse
+
+  - trigger: Psi,.
+    replace: PageSpeed Insights
+
+  - trigger: Serp,.
+    replace: Search Engine Results Pages
+
+  - trigger: s:,.
+    replace: "site:"

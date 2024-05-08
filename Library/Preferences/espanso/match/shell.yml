@@ -1,0 +1,151 @@
+---
+matches:
+
+  - trigger: Flow,.
+    replace: |
+      "{{mental_state}}" because:
+      "{{flow.skill_level}}" is the perceived skill level;
+      "{{flow.challenge_level}}" is the preceived challenge level.
+      https://en.wikipedia.org/wiki/Flow_(psychology)#Characteristics
+
+    vars:
+      - name: flow
+        type: form
+        params:
+          layout: |
+            [[skill_level]] is the perceived skill level;
+            [[challenge_level]] is the preceived challenge level.
+          fields:
+
+            skill_level:
+              type: choice
+              default: Low
+              values:
+                - Low
+                - Medium
+                - High
+
+            challenge_level:
+              type: choice
+              default: Low
+              values:
+                - Low
+                - Medium
+                - High
+
+      - name: mental_state
+        type: shell
+        params:
+          cmd: |
+            if [ '{{flow.skill_level}}' = 'Low' ] && [ '{{flow.challenge_level}}' = 'Low' ]; then echo 'Apathy'
+            elif [ '{{flow.skill_level}}' = 'Low' ] && [ '{{flow.challenge_level}}' = 'Medium' ]; then echo 'Worry'
+            elif [ '{{flow.skill_level}}' = 'Low' ] && [ '{{flow.challenge_level}}' = 'High' ]; then echo 'Anxiety'
+            elif [ '{{flow.skill_level}}' = 'Medium' ] && [ '{{flow.challenge_level}}' = 'Low' ]; then echo 'Boredom'
+            elif [ '{{flow.skill_level}}' = 'Medium' ] && [ '{{flow.challenge_level}}' = 'Medium' ]; then echo 'Center'
+            elif [ '{{flow.skill_level}}' = 'Medium' ] && [ '{{flow.challenge_level}}' = 'High' ]; then echo 'Arousal'
+            elif [ '{{flow.skill_level}}' = 'High' ] && [ '{{flow.challenge_level}}' = 'Low' ]; then echo 'Relaxation'
+            elif [ '{{flow.skill_level}}' = 'High' ] && [ '{{flow.challenge_level}}' = 'Medium' ]; then echo 'Control'
+            elif [ '{{flow.skill_level}}' = 'High' ] && [ '{{flow.challenge_level}}' = 'High' ]; then echo 'Flow'
+            fi
+
+  - trigger: 555,.
+    replace: "{{tel}}"
+    vars:
+      - name: tel
+        type: shell
+        params:
+          cmd: 'printf "(800) 555‑01%s" "$(jot -r 2 0 9 | tr -d \\n)" | pbcopy && pbpaste'
+
+  - trigger: tn,.
+    replace: "{{tn}}"
+    vars:
+      - name: tn
+        type: shell
+        params:
+          cmd: 'printf "%s%s" "$(printf "%s\n%s\n%s" "h192.0.2." "198.51.100." "203.0.113." | sort --sort=random | head -n1)" "$(jot -r 1 0 255)" | pbcopy && pbpaste'
+
+  # TEST-NET-1 https://www.rfc-editor.org/rfc/rfc5737
+  - trigger: tn1,.
+    replace: "{{tn1}}"
+    vars:
+      - name: tn1
+        type: shell
+        params:
+          cmd: 'printf "192.0.2.%s" "$(jot -r 1 0 255)" | pbcopy && pbpaste'
+
+  # TEST-NET-2 https://www.rfc-editor.org/rfc/rfc5737
+  - trigger: tn2,.
+    replace: "{{tn2}}"
+    vars:
+      - name: tn2
+        type: shell
+        params:
+          cmd: 'printf "198.51.100.%s" "$(jot -r 1 0 255)" | pbcopy && pbpaste'
+
+  # TEST-NET-3 https://www.rfc-editor.org/rfc/rfc5737
+  - trigger: tn3,.
+    replace: "{{tn3}}"
+    vars:
+      - name: tn3
+        type: shell
+        params:
+          cmd: 'printf "203.0.113.%s" "$(jot -r 1 0 255)" | pbcopy && pbpaste'
+
+  - trigger: ip,.
+    replace: "{{ip}}"
+    vars:
+      - name: ip
+        type: shell
+        params:
+          cmd: "ipconfig getifaddr en0 | pbcopy && pbpaste"
+
+  - trigger: Kano,.
+    replace: |
+      "{{satisifaction}}" because:
+      "{{kano.functional}}" if I had this feature;
+      "{{kano.dysfunctional}}" if I did not have this feature.
+      https://www.kano.plus/about-kano#questionnaire
+
+    vars:
+      - name: kano
+        type: form
+        params:
+          layout: |
+            [[functional]] if I had this feature;
+            [[dysfunctional]] if I did not have this feature.
+          fields:
+
+            functional:
+              type: choice
+              default: I like it.
+              values:
+                - ""
+                - I like it.
+                - I expect it.
+                - I am neutral.
+                - I can tolerate it.
+                - I dislike it.
+
+            dysfunctional:
+              type: choice
+              default: I dislike it.
+              values:
+                - ""
+                - I like it.
+                - I expect it.
+                - I am neutral.
+                - I can tolerate it.
+                - I dislike it.
+
+      - name: satisifaction
+        type: shell
+        params:
+          cmd: |
+            if [ '{{kano.functional}}' = 'I like it.' ] && [ '{{kano.dysfunctional}}' = 'I dislike it.' ]; then echo 'Performance'
+            elif [ '{{kano.functional}}' = 'I am neutral.' ] && [ '{{kano.dysfunctional}}' = 'I am neutral.' ]; then echo 'Indifferent'
+            elif [ '{{kano.functional}}' = '{{kano.dysfunctional}}' ]; then echo 'Questionable'
+            elif [ '{{kano.functional}}' = 'I like it.' ]; then echo 'Attractive'
+            elif [ '{{kano.dysfunctional}}' = 'I dislike it.' ]; then echo 'Must-be'
+            elif [ '{{kano.functional}}' = 'I dislike it.' ] || [ '{{kano.dysfunctional}}' = 'I like it.' ]; then echo 'Reverse'
+            else echo 'Indifferent'
+            fi

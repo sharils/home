@@ -1,0 +1,65 @@
+bind main    G             none
+
+bind generic <C-G>         +sh -c 'echo %(commit) | tr -d [:space:] | pbcopy; pbpaste'
+
+# bind main    Ga<ENTER>     @git add %(prompt)
+# bind status  Ga<ENTER>     @git add %(prompt)
+
+# bind refs    Gbmf<ENTER>    @sh -c 'git branch -m "$(echo feature/%(prompt) | tr " " "-")"'
+
+bind main    Gbb<ENTER>    +git bisect bad
+bind main    Gbg<ENTER>    +git bisect good
+bind main    Gbrs<ENTER>   +git bisect reset
+bind main    Gbs<ENTER>    !git bisect start %(head) %(commit)
+
+bind main    Gcal<ENTER>   !git commit -vv --all
+bind status  Gcal<ENTER>   !git commit -vv --all
+bind main    GcF<ENTER>    !git commit --edit --file=.git/COMMIT_EDITMSG
+bind status  GcF<ENTER>    !git commit --edit --file=.git/COMMIT_EDITMSG
+# bind main    Gcfh<ENTER>   +git commit --fixup %(head)
+# bind status  Gcfh<ENTER>   +git commit --fixup %(head)
+bind main    Gcrm<ENTER>   +git commit --reuse-message %(commit)
+
+bind main    Gch<ENTER>    !git cherry -v %(commit)
+
+bind main    Gd<ENTER>     !git diff %(commit) @
+
+# bind main    Gfbm<ENTER>   !FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch --msg-filter 'if [ $GIT_COMMIT = %(commit) ]; then echo %(prompt); fi' %(commit)~..%(commit)
+bind main    Gfrbp<ENTER>  !sh -c 'git fetch --all --prune && git rebase `git symbolic-ref refs/remotes/origin/HEAD` && git push --force %(remote) %(branch)'
+
+bind main    Gp<ENTER>     !git push %(remote) HEAD
+bind refs    Gp<ENTER>     !git push %(remote) HEAD
+bind status  Gp<ENTER>     !git push %(remote) HEAD
+bind main    Gpb<ENTER>    !git push %(remote) %(branch)
+bind refs    Gpb<ENTER>    !git push %(remote) %(branch)
+bind status  Gpb<ENTER>    !git push %(remote) %(branch)
+bind main    Gpbf<ENTER>   !git push --force %(remote) %(branch)
+bind refs    Gpbf<ENTER>   !git push --force %(remote) %(branch)
+bind status  Gpbf<ENTER>   !git push --force %(remote) %(branch)
+bind main    Gpcf<ENTER>   ?git push --force %(remote) %(commit):refs/heads/%(prompt)
+bind main    Gpt<ENTER>    !git push %(remote) %(tag)
+bind refs    Gpt<ENTER>    !git push %(remote) %(tag)
+bind main    Gpt:<ENTER>   ?git push %(remote) :%(tag)
+bind refs    Gpt:<ENTER>   ?git push %(remote) :%(tag)
+
+bind main    Grboh<ENTER>  !sh -c 'git rebase `git symbolic-ref refs/remotes/origin/HEAD`'
+
+
+bind diff    Grm<ENTER>    +git rm %(file)
+
+bind main    Gsht<ENTER>   !git show %(tag)
+bind refs    Gsht<ENTER>   !git show %(tag)
+
+
+bind main    Gt<ENTER>     !git tag --annotate --sign %(prompt) %(commit)
+bind main    Gtmp<ENTER>   @sh -c 'git tag "$(date +%Y%m%dT%H%M%S%z | sed "s/00$//")" %(commit)'
+
+bind main    Gtd<ENTER>    ?git tag --delete %(tag)
+bind refs    Gtd<ENTER>    ?git tag --delete %(tag)
+
+bind generic Gpr<ENTER>    @hub pr show
+bind generic Gbp<ENTER>    @hub browse -- pulls
+bind generic Gbr<ENTER>    @hub browse
+bind generic Gbrc<ENTER>   +sh -c 'hub browse --copy && hub browse --url'
+
+# vim:filetype=conf

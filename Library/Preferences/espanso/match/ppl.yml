@@ -1,0 +1,20 @@
+---
+matches:
+
+  - trigger: Dhh,.
+    replace: David Heinemeier Hansson
+
+  - trigger: Dna,.
+    replace: Dan North
+
+  - trigger: Ee,.
+    replace: Eric Evans
+
+  - trigger: Kh,.
+    replace: Kevlin Henney
+
+  - trigger: Mf,.
+    replace: Martin Fowler
+
+  - trigger: Ubm,.
+    replace: Uncle Bob Martin
