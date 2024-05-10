@@ -32,6 +32,13 @@ f() {
     esac
     set -- orgs "$@"
     ;;
+  p)
+    shift
+    case "$1" in
+    c) shift && set -- connect "$@" ;;
+    esac
+    set -- postgres "$@"
+    ;;
   s)
     shift
     case "$1" in
