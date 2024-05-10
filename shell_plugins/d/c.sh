@@ -10,7 +10,7 @@ c() {
   e) shift && $EDITOR "${@:-docker-compose.yml}" ;;
   l) shift && c logs "${@:---follow}" ;;
   p) shift && c --profile "$@" ;;
-  r) shift && c run "$@" ;;
+  r) shift && c run --rm "$@" ;;
   s) shift && c start "$@" ;;
   u)
     shift
