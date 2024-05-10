@@ -19,6 +19,9 @@ matches:
   - trigger: Kpxc,.
     replace: KeePassXC
 
+  - trigger: Ms,.
+    replace: Microsoft
+
   - trigger: Ob,.
     replace: Obsidian
 
