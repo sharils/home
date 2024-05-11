@@ -4,7 +4,6 @@
 
 android() {
   cat <<'EOF'
-source: https://en.wikipedia.org/wiki/Android_version_history#Overview
 Date        API  Ver    Name
 2008-09-23  1    1.0    1.0
 2009-02-09  2    1.1    1.1
@@ -41,6 +40,8 @@ Date        API  Ver    Name
 2022-08-15  33   13     13
 2023-10-04  34   14     14
 Date        API  Ver    Name
+
+source: https://en.wikipedia.org/wiki/Android_version_history#Overview
 EOF
 }
 
