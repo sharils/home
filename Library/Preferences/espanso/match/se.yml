@@ -10,9 +10,6 @@ matches:
   - trigger: Nl,.
     replace: NL
 
-  - trigger: Se,.
-    replace: Software Engineering
-
   - trigger: Ser,.
     replace: SE Radio
 
@@ -36,3 +33,6 @@ matches:
 
   - trigger: rel,.
     replace: release
+
+  - trigger: se,.
+    replace: software engineering
