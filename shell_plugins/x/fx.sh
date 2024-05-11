@@ -7,7 +7,7 @@ fx() {
     fx | grep --ignore-case --color=never "$1"
     return
   fi
-  dir="$HOME/git/github.com/sharils/~sinopac"
+  dir="$HOME/git/github.com/sharils/_sinopac"
   mkdir -p "$dir"
   cmd="$dir/$(date +%F).json"
   [ ! -f "$cmd" ] && curl -s 'https://mma.sinopac.com/ws/share/rate/ws_exchange.ashx' >"$cmd"
