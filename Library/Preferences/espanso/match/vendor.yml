@@ -40,6 +40,9 @@ matches:
   - trigger: Ub,.
     replace: Ubuntu
 
+  - trigger: Vb,.
+    replace: Virtual Box
+
   - trigger: Yb,.
     replace: YouBike
 
