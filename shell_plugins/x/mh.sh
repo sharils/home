@@ -3,7 +3,7 @@
 [ -n "$SET_X" ] && set -x
 
 mh() {
-  dir="$HOME/git/github.com/sharils/~backup/miraheze/$(date +%F)"
+  dir="$HOME/git/github.com/sharils/_backup/miraheze/$(date +%F)"
   mkdir -pv "$dir"
   mv -v ~/Downloads/smilingpuffinwiki_xml_*.xml.gz "$dir"
 }
