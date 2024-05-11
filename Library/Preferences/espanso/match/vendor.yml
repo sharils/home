@@ -37,6 +37,9 @@ matches:
   - trigger: Twm,.
     replace: Taiwan Mobile
 
+  - trigger: Ub,.
+    replace: Ubuntu
+
   - trigger: Yb,.
     replace: YouBike
 
