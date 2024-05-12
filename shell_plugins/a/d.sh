@@ -13,6 +13,11 @@ d() {
     adb disconnect "$1"
     return $?
     ;;
+  a)
+    shift
+    adb disconnect
+    return $?
+    ;;
   esac
 
   case "$1" in
