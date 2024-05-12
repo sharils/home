@@ -21,6 +21,11 @@ Hills’ C/D (low stress)         3.89
 [1]: based on number of offspring and weeks of lactation
 
 source https://www.aaha.org/globalassets/02-guidelines/2021-nutrition-and-weight-management/resourcepdfs/nutritiongl_box1.pdf
+
+Changing kibbles requires three times the kibble of each kind.
+Three is from x * (0.75 * 2 + 0.5 * 2 + 0.25 * 2).
+Given 3.5, 4.3 and 5.9, 199.89 <= x <= 233.2.
+i.e. 599.67 <= backup <= 699.6
 EOF
     return $?
   fi
