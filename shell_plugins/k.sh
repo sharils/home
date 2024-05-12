@@ -41,6 +41,8 @@ k() {
 
   ddx) shift && "$SHARILS_HOME/shell_plugins/k/ddx.sh" "$@" ;;
 
+  debian) shift && "$SHARILS_HOME/shell_plugins/k/debian.sh" "$@" ;;
+
   diet) shift && "$SHARILS_HOME/shell_plugins/k/diet.sh" "$@" ;;
 
   dr) shift && "$SHARILS_HOME/shell_plugins/k/dr.sh" "$@" ;;
