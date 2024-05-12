@@ -116,6 +116,8 @@ k() {
 
   u) shift && "$SHARILS_HOME/shell_plugins/k/u.sh" "$@" ;;
 
+  ubuntu) shift && "$SHARILS_HOME/shell_plugins/k/ubuntu.sh" "$@" ;;
+
   uri) echo "!'()*-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~" ;;
 
   vet) shift && "$SHARILS_HOME/shell_plugins/k/vet.sh" "$@" ;;
