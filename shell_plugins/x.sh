@@ -8,6 +8,7 @@ x() {
   case "$1" in
   +) shift && chmod -vv +x "$@" ;;
   -) shift && chmod -vv -x "$@" ;;
+  ./*) x rm "$@" ;;
   8601) x b 'https://en.wikipedia.org/wiki/ISO_8601' ;;
   b) shift && "$BROWSER" "$@" ;;
   chunk) shift && fold -w "${@:-3}" | tr '\n' ' ' ;;
