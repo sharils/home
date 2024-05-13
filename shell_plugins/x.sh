@@ -2,8 +2,6 @@
 
 [ -n "$SET_X" ] && set -x
 
-alias xrm='x rm'
-
 x() {
   case "$1" in
   +) shift && chmod -vv +x "$@" ;;
