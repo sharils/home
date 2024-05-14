@@ -47,7 +47,7 @@ s() {
     while
       if ! connections="$(s t cli show connections)"; then
         echo "$connections" | xargs
-      elif [ "$(printf %s "$connections" | jq '.connections | map(select(.connected)) | length')" -eq 4 ]; then
+      elif [ "$(printf %s "$connections" | jq '.connections | map(select(.connected)) | length')" -eq "${S_W:?}" ]; then
         printf %s "$connections" | jq '.connections | map(select(.connected)) | length'
         return
       else
