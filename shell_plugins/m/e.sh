@@ -14,7 +14,7 @@ e() {
     case "$1" in
     g) shift && mix ecto.gen.migration "$@" ;;
     ls) shift && mix ecto.migrations "$@" ;;
-    *) mix ecto.migrate --log-migrations-sql --log-migrator-sqlb "$@" ;;
+    *) mix ecto.migrate --log-migrations-sql --log-migrator-sql "$@" ;;
     esac
     ;;
   r)
