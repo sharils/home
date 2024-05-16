@@ -8,7 +8,7 @@ c() {
   b) shift && c build "$@" ;;
   d) shift && c down "$@" ;;
   e) shift && $EDITOR "${@:-docker-compose.yml}" ;;
-  l) shift && c logs "${@:---follow}" ;;
+  l) shift && c logs --follow "$@" ;;
   p) shift && c --profile "$@" ;;
   r) shift && c run --rm "$@" ;;
   s) shift && c start "$@" ;;
