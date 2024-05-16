@@ -16,6 +16,7 @@ c() {
     shift
     case "$1" in
     b) shift && set -- --build "$@" ;;
+    d) shift && set -- --detach "$@" ;;
     esac
     c up "$@"
     ;;
