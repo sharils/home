@@ -25,6 +25,9 @@ matches:
   - trigger: Aw,.
     replace: Apple Watch
 
+  - trigger: Cf,.
+    replace: CloudFront
+
   - trigger: Cy,.
     replace: Cypress
 
@@ -49,6 +52,12 @@ matches:
   - trigger: Ipp,.
     replace: iPad Pro
 
+  - trigger: Ls,.
+    replace: Lightsail
+
+  - trigger: Lsc,.
+    replace: Lightsail Container
+
   - trigger: Mac,.
     replace: macOS
 
@@ -63,6 +72,9 @@ matches:
 
   - trigger: Qtp,.
     replace: QuickTime Player
+
+  - trigger: R53,.
+    replace: Route 53
 
   - trigger: Sel,.
     replace: Selenium
@@ -79,6 +91,14 @@ matches:
   - trigger: Wv,.
     replace: WebView
 
+  - trigger: cf,.
+    replace: cloudfront
+
   - trigger: fl,.
     replace: fastlane
 
+  - trigger: ls,.
+    replace: lightsail
+
+  - trigger: lsc,.
+    replace: lightsail container
