@@ -1,32 +1,11 @@
 ---
 matches:
 
-  - trigger: Cr,.
-    replace: Chromium
-
-  - trigger: Fx,.
-    replace: Firefox
-
-  - trigger: Sf,.
-    replace: Safari
-
-  - trigger: Wdt,.
-    replace: Web Developer Tools
-
-  - trigger: Wdtc,.
-    replace: Web Developer Tools Console
-
   - trigger: bm,.
     replace: bookmark
 
   - trigger: br,.
     replace: browser
 
-  - trigger: gm,.
-    replace: greasemonkey
-
   - trigger: nav,.
     replace: navigation
-
-  - trigger: u,.
-    replace: qutebrowser

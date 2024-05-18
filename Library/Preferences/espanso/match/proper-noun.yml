@@ -31,6 +31,9 @@ matches:
   - trigger: Cf,.
     replace: CloudFront
 
+  - trigger: Cr,.
+    replace: Chromium
+
   - trigger: Cy,.
     replace: Cypress
 
@@ -39,6 +42,9 @@ matches:
 
   - trigger: Fd,.
     replace: F-Droid
+
+  - trigger: Fx,.
+    replace: Firefox
 
   - trigger: Hf,.
     replace: Head First
@@ -103,6 +109,9 @@ matches:
   - trigger: Sel,.
     replace: Selenium
 
+  - trigger: Sf,.
+    replace: Safari
+
   - trigger: Side,.
     replace: Selenium IDE
 
@@ -114,6 +123,12 @@ matches:
 
   - trigger: Trpl,.
     replace: The Rust Programming Language
+
+  - trigger: Wdt,.
+    replace: Web Developer Tools
+
+  - trigger: Wdtc,.
+    replace: Web Developer Tools Console
 
   - trigger: Wos,.
     replace: watchOS
@@ -130,8 +145,14 @@ matches:
   - trigger: fl,.
     replace: fastlane
 
+  - trigger: gm,.
+    replace: greasemonkey
+
   - trigger: ls,.
     replace: lightsail
 
   - trigger: lsc,.
     replace: lightsail container
+
+  - trigger: u,.
+    replace: qutebrowser
