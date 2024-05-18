@@ -25,6 +25,12 @@ matches:
   - trigger: Aw,.
     replace: Apple Watch
 
+  - trigger: Cy,.
+    replace: Cypress
+
+  - trigger: Esp,.
+    replace: Espanso
+
   - trigger: Fd,.
     replace: F-Droid
 
@@ -57,6 +63,12 @@ matches:
 
   - trigger: Qtp,.
     replace: QuickTime Player
+
+  - trigger: Sel,.
+    replace: Selenium
+
+  - trigger: Side,.
+    replace: Selenium IDE
 
   - trigger: Tf,.
     replace: TestFlight

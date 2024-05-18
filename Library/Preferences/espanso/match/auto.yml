@@ -1,17 +1,5 @@
 ---
 matches:
 
-  - trigger: Cy,.
-    replace: Cypress
-
-  - trigger: Esp,.
-    replace: ESpanso
-
   - trigger: Pom,.
     replace: Page Object Model
-
-  - trigger: Sel,.
-    replace: Selenium
-
-  - trigger: Side,.
-    replace: Selenium IDE
