@@ -3,3 +3,18 @@ matches:
 
   - trigger: Am,.
     replace: Agile Manifesto
+
+  - trigger: As,.
+    replace: App Store
+
+  - trigger: Fd,.
+    replace: F-Droid
+
+  - trigger: Ps,.
+    replace: Play Store
+
+  - trigger: Wv,.
+    replace: WebView
+
+  - trigger: fl,.
+    replace: fastlane
