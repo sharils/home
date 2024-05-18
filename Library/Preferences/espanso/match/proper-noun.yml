@@ -1,20 +1,72 @@
 ---
 matches:
 
+  - trigger: Ad,.
+    replace: AirDrop
+
+  - trigger: Adp,.
+    replace: Apple Developer Program
+
   - trigger: Am,.
     replace: Agile Manifesto
 
   - trigger: As,.
     replace: App Store
 
+  - trigger: Asc,.
+    replace: App Store Connect
+
+  - trigger: At,.
+    replace: AirTag
+
+  - trigger: Atv,.
+    replace: Apple TV
+
+  - trigger: Aw,.
+    replace: Apple Watch
+
   - trigger: Fd,.
     replace: F-Droid
 
+  - trigger: Im,.
+    replace: iMessage
+
+  - trigger: Ios,.
+    replace: iOS
+
+  - trigger: Ip,.
+    replace: iPad
+
+  - trigger: Iph,.
+    replace: iPhone
+
+  - trigger: Ipp,.
+    replace: iPad Pro
+
+  - trigger: Mac,.
+    replace: macOS
+
+  - trigger: Mba,.
+    replace: MacBook Air
+
+  - trigger: Mbp,.
+    replace: MacBook Pro
+
   - trigger: Ps,.
     replace: Play Store
+
+  - trigger: Qtp,.
+    replace: QuickTime Player
+
+  - trigger: Tf,.
+    replace: TestFlight
+
+  - trigger: Wos,.
+    replace: watchOS
 
   - trigger: Wv,.
     replace: WebView
 
   - trigger: fl,.
     replace: fastlane
+
