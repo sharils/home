@@ -94,6 +94,9 @@ matches:
   - trigger: cf,.
     replace: cloudfront
 
+  - trigger: e,.
+    replace: espanso
+
   - trigger: fl,.
     replace: fastlane
 
