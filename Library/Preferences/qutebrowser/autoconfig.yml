@@ -121,6 +121,7 @@ settings:
     global: false
     hexdocs.pm: true
     hn.algolia.com: true
+    https://developers.google.com/search/docs/appearance/structured-data/*: true
     https://www.berkeleychurchill.com/software/android-pwgen/pwgen.html: true
     https://www.cloudflare.com/ssl/encrypted-sni/: true
     https://www.google.com/maps?*: true
