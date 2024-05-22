@@ -1,5 +1,7 @@
 # https://starship.rs/config/#git-metrics
 [[battery.display]]
+charging_symbol = '🔌'
+discharging_symbol = '🔋'
 threshold = 95
 # [git_metrics]
 # [kubernetes]

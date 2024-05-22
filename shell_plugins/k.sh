@@ -73,6 +73,8 @@ k() {
 
   lehman) shift && "$SHARILS_HOME/shell_plugins/k/lehman.sh" "$@" ;;
 
+  manila) shift && "$SHARILS_HOME/shell_plugins/k/manila.sh" "$@" ;;
+
   med) shift && "$SHARILS_HOME/shell_plugins/k/med.sh" "$@" ;;
 
   manifesto) shift && "$SHARILS_HOME/shell_plugins/k/manifesto.sh" "$@" ;;
