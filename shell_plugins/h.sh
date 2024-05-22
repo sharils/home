@@ -24,6 +24,8 @@ h() {
     h g push
     ;;
 
+  aws) "$@" help ;;
+
   e) shift && "$SHARILS_HOME/shell_plugins/h/e.sh" "$@" ;;
 
   erl) shift && x erl "c:h($*)" ;;
