@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: 3,.
+    replace: s3://
+
   - trigger: Ws,.
     replace: WebSocket
 
