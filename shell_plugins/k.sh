@@ -93,6 +93,8 @@ k() {
 
   nightingale) shift && "$SHARILS_HOME/shell_plugins/k/nightingale.sh" "$@" ;;
 
+  node) shift && "$SHARILS_HOME/shell_plugins/k/node.sh" "$@" ;;
+
   o) shift && "$SHARILS_HOME/shell_plugins/k/o.sh" "$@" ;;
 
   pareto) shift && "$SHARILS_HOME/shell_plugins/k/pareto.sh" "$@" ;;
