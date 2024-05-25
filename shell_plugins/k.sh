@@ -29,6 +29,8 @@ k() {
 
   burnout) shift && "$SHARILS_HOME/shell_plugins/k/burnout.sh" "$@" ;;
 
+  cat) shift && "$SHARILS_HOME/shell_plugins/k/cat.sh" "$@" ;;
+
   cdnic) shift && "$SHARILS_HOME/shell_plugins/k/cdnic.sh" "$@" ;;
 
   cie) shift && "$SHARILS_HOME/shell_plugins/k/cie.sh" "$@" ;;
