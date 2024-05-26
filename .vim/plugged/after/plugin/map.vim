@@ -118,6 +118,8 @@ inoremap <C-[>_ —
 cnoremap <C-[>_ —
 inoremap <C-[>} ’
 cnoremap <C-[>} ’
+inoremap ý ’
+cnoremap ý ’
 nmap <LEADER>0 :vertical resize 100<CR>
 nmap <LEADER>E :edit!<CR>
 nmap <LEADER>S :source ~/.vimrc<CR>
