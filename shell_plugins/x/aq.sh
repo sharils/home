@@ -38,6 +38,7 @@ JQ
   w)
     shift
     op="${1:-lt}"
+    printf 'https://v5.airmap.g0v.tw/#/map'
     printf 'https://pm25.lass-net.org/grafana/d/airbox_dashboard_v3/airdata?orgId=2&var-source=AirBox&var-device_id=%s&refresh=1m\n' "$X_AQ" >&2
 
     while :; do
