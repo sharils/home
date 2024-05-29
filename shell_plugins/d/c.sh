@@ -6,6 +6,7 @@ c() {
   case "$1" in
   R) shift && c restart "$@" ;;
   b) shift && c build "$@" ;;
+  a) shift && c attach "$@" ;;
   d) shift && c down "$@" ;;
   e) shift && $EDITOR "${@:-docker-compose.yml}" ;;
   l) shift && c logs --follow "$@" ;;
