@@ -5,6 +5,7 @@
 rfc() {
   if [ $# -eq 0 ]; then
     cat <<'EOF'
+952  DOD INTERNET HOST TABLE SPECIFICATION
 2119 RFC Key Words
 2441 Working with Jon
 2468 I Remember IANA
