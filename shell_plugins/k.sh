@@ -73,6 +73,8 @@ k() {
 
   id1) shift && "$SHARILS_HOME/shell_plugins/k/id1.sh" "$@" ;;
 
+  iphone) shift && "$SHARILS_HOME/shell_plugins/k/iphone.sh" "$@" ;;
+
   joel) shift && "$SHARILS_HOME/shell_plugins/k/joel.sh" "$@" ;;
 
   lehman) shift && "$SHARILS_HOME/shell_plugins/k/lehman.sh" "$@" ;;
