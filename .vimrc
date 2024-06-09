@@ -7,6 +7,7 @@ Plug 'https://github.com/Valloric/YouCompleteMe', { 'do': './install.py --clang-
 
 Plug 'https://github.com/w0rp/ale'
 " Plug 'https://github.com/jiangmiao/auto-pairs'
+Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
 Plug 'https://github.com/github/copilot.vim', { 'branch': 'release' }
 Plug 'https://github.com/editorconfig/editorconfig-vim'
 Plug 'https://github.com/junegunn/fzf', { 'do': { -> fzf#install() } }
