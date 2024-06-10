@@ -79,6 +79,8 @@ k() {
 
   joel) shift && "$SHARILS_HOME/shell_plugins/k/joel.sh" "$@" ;;
 
+  bmi) shift && "$SHARILS_HOME/shell_plugins/k/bmi.sh" "$@" ;;
+
   lehman) shift && "$SHARILS_HOME/shell_plugins/k/lehman.sh" "$@" ;;
 
   manila) shift && "$SHARILS_HOME/shell_plugins/k/manila.sh" "$@" ;;
