@@ -4,11 +4,14 @@
 
 bmi() {
   cat <<'EOF'
-健    康：18.5 <= BMI < 24
-過    重：24   <= BMI < 27
-輕度肥胖：27   <= BMI < 30
-中度肥胖：30   <= BMI < 35
-重度肥胖：35   <= BMI
+Underweight (Severe thinness)    < 16.0
+Underweight (Moderate thinness)  16.0 – 16.9
+Underweight (Mild thinness)      17.0 – 18.4
+Normal range                     18.5 – 24.9
+Overweight (Pre-obese)           25.0 – 29.9
+Obese (Class I)                  30.0 – 34.9
+Obese (Class II)                 35.0 – 39.9
+Obese (Class III)                ≥ 40.0
 EOF
 }
 
