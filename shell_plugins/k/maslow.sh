@@ -26,7 +26,7 @@ Esteem
     Higher
         Self-respect
         Strength
-        Competence,[3] mastery
+        Competence, mastery
         Self-confidence
         Independence
         Freedom
@@ -41,7 +41,7 @@ Safety
     Health
     Personal security
     Emotional security
-    Financial security 
+    Financial security
 Physiological
     Air
     Water
@@ -49,8 +49,8 @@ Physiological
     Heat
     Clothes
     Reproduction
-    Shelter[2]
-    Sleep 
+    Shelter
+    Sleep
 EOF
 }
 
