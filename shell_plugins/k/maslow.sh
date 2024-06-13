@@ -3,7 +3,7 @@
 [ -n "$SET_X" ] && set -x
 
 maslow() {
-  cat <<'EOF'
+  cat <<'EOF' | grep -E '^|Transcendence|Self-actualization|Aesthetic|Cognitive|Esteem|Belonging and love|Safety|Physiological'
 Transcendence
 Self-actualization
     Partner acquisition
