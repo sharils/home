@@ -41,6 +41,8 @@ k() {
 
   credit-card) shift && "$SHARILS_HOME/shell_plugins/k/credit-card.sh" "$@" ;;
 
+  cup) shift && "$SHARILS_HOME/shell_plugins/k/cup.sh" "$@" ;;
+
   curl) shift && "$SHARILS_HOME/shell_plugins/k/curl.sh" "$@" ;;
 
   d) shift && "$SHARILS_HOME/shell_plugins/k/d.sh" "$@" ;;
