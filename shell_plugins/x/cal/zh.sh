@@ -14,11 +14,11 @@ zh() {
       cat <<'EOF'
           map(
             select(
-              $ARGS.named.YEAR <= (.["格里曆日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
+              $ARGS.named.YEAR <= (.["日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
               .["農曆日"] == 1
             )
           ) |
-          map(.["格里曆日期"]) |
+          map(.["日期"]) |
           .[]
 EOF
     )" "$@" |
@@ -32,12 +32,12 @@ EOF
       cat <<'EOF'
           map(
             select(
-               $ARGS.named.YEAR <= (.["格里曆日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
+               $ARGS.named.YEAR <= (.["日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
               .["農曆月"] == 5 and
               .["農曆日"] == 5
             )
           ) |
-          map(.["格里曆日期"]) |
+          map(.["日期"]) |
           .[]
 EOF
     )" "$@" |
@@ -50,12 +50,12 @@ EOF
       cat <<'EOF'
           map(
             select(
-              $ARGS.named.YEAR <= (.["格里曆日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
+              $ARGS.named.YEAR <= (.["日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
               ([.["農曆月"]] | inside([2, 5, 8, 11])) and
               .["農曆日"] == 1
             )
           ) |
-          map(.["格里曆日期"]) |
+          map(.["日期"]) |
           .[]
 EOF
     )" "$@" |
@@ -69,12 +69,12 @@ EOF
       cat <<'EOF'
           map(
             select(
-               $ARGS.named.YEAR <= (.["格里曆日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
+               $ARGS.named.YEAR <= (.["日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
               .["農曆月"] == 1 and
               .["農曆日"] == 15
             )
           ) |
-          map(.["格里曆日期"]) |
+          map(.["日期"]) |
           .[]
 EOF
     )" "$@" |
@@ -88,12 +88,12 @@ EOF
       cat <<'EOF'
           map(
             select(
-               $ARGS.named.YEAR <= (.["格里曆日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
+               $ARGS.named.YEAR <= (.["日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
               .["農曆月"] == 1 and
               .["農曆日"] == 1
             )
           ) |
-          map(.["格里曆日期"]) |
+          map(.["日期"]) |
           .[]
 EOF
     )" "$@" | while IFS= read -r line; do
@@ -107,19 +107,19 @@ EOF
       cat <<'EOF'
           map(
             select(
-               $ARGS.named.YEAR <= (.["格里曆日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
+               $ARGS.named.YEAR <= (.["日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
               .["農曆月"] == 8 and
               .["農曆日"] == 15
             )
           ) |
-          map(.["格里曆日期"]) |
+          map(.["日期"]) |
           .[]
 EOF
     )" "$@" |
       column
     ;;
 
-  *) yq @json "$zh" | jq --arg TODAY "$(date +%F)" "${@:-map(select(.[\"格里曆日期\"] == \$ARGS.named.TODAY))}" ;;
+  *) yq @json "$zh" | jq --arg TODAY "$(date +%F)" "${@:-map(select(.[\"日期\"] == \$ARGS.named.TODAY))}" ;;
 
   esac
 }
