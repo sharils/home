@@ -12,6 +12,7 @@ zh() {
     shift
     yq @json "$zh" | jq --raw-output --arg YEAR "$(date +%Y)" "$(
       cat <<'EOF'
+          map(select(.["日期"] != null)) |
           map(
             select(
               $ARGS.named.YEAR <= (.["日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
@@ -30,6 +31,7 @@ EOF
     shift
     yq @json "$zh" | jq --raw-output --arg YEAR "$(date +%Y)" "$(
       cat <<'EOF'
+          map(select(.["日期"] != null)) |
           map(
             select(
                $ARGS.named.YEAR <= (.["日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
@@ -48,6 +50,7 @@ EOF
     shift
     yq @json "$zh" | jq --raw-output --arg YEAR "$(date +%Y)" "$(
       cat <<'EOF'
+          map(select(.["日期"] != null)) |
           map(
             select(
               $ARGS.named.YEAR <= (.["日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
@@ -67,6 +70,7 @@ EOF
     shift
     yq @json "$zh" | jq --raw-output --arg YEAR "$(date +%Y)" "$(
       cat <<'EOF'
+          map(select(.["日期"] != null)) |
           map(
             select(
                $ARGS.named.YEAR <= (.["日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
@@ -86,6 +90,7 @@ EOF
 
     yq @json "$zh" | jq --raw-output --arg YEAR "$(date +%Y)" "$(
       cat <<'EOF'
+          map(select(.["日期"] != null)) |
           map(
             select(
                $ARGS.named.YEAR <= (.["日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
@@ -105,6 +110,7 @@ EOF
     shift
     yq @json "$zh" | jq --raw-output --arg YEAR "$(date +%Y)" "$(
       cat <<'EOF'
+          map(select(.["日期"] != null)) |
           map(
             select(
                $ARGS.named.YEAR <= (.["日期"] | strptime("%Y-%m-%d") | strftime("%Y")) and
