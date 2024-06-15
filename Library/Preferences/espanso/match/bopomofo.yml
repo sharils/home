@@ -1,0 +1,8 @@
+---
+matches:
+
+  - trigger: jiji,.
+    replace: ㄐㄐ
+
+  - trigger: nznz,.
+    replace: ㄋㄟㄋㄟ
