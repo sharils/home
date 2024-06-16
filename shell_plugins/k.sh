@@ -103,6 +103,8 @@ k() {
 
   napkin) shift && "$SHARILS_HOME/shell_plugins/k/napkin.sh" "$@" ;;
 
+  nd) shift && "$SHARILS_HOME/shell_plugins/k/nd.sh" "$@" ;;
+
   nf) shift && "$SHARILS_HOME/shell_plugins/k/nf.sh" "$@" ;;
 
   nightingale) shift && "$SHARILS_HOME/shell_plugins/k/nightingale.sh" "$@" ;;
