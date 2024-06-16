@@ -53,6 +53,8 @@ k() {
 
   diet) shift && "$SHARILS_HOME/shell_plugins/k/diet.sh" "$@" ;;
 
+  distortion) shift && "$SHARILS_HOME/shell_plugins/k/distortion.sh" "$@" ;;
+
   dr) shift && "$SHARILS_HOME/shell_plugins/k/dr.sh" "$@" ;;
 
   e) $EDITOR "$@" ~/.config/karabiner/karabiner.json ;;
