@@ -4,7 +4,7 @@
 
 e_ps() {
   # shellcheck disable=SC2009
-  ps aux | grep espanso
+  ps aux | grep -v grep | grep espanso | sort
 }
 
 e_ps "$@"
