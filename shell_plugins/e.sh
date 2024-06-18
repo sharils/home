@@ -41,6 +41,8 @@ e() {
 
   l) shift && e log "$@" ;;
 
+  ps) shift && "$SHARILS_HOME/shell_plugins/e/ps.sh" "$@" ;;
+
   s) shift && "$SHARILS_HOME/shell_plugins/e/s.sh" "$@" ;;
 
   wc) shift && "$SHARILS_HOME/shell_plugins/e/wc.sh" "$@" ;;
