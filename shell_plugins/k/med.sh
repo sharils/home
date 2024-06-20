@@ -29,14 +29,14 @@ med() {
 
   cat <<EOF | grep -E "^(?: ?$1.*)?"
 $(date +%k%M                   )  #    P  M   K      2  # Notes
-$(printf %4s $(( 530 + offset)))  1           W      F  # Water
-$(printf %4s $(( 730 + offset)))  2 1  P  TU  WT CM  T  # The Pretty Unicorn Witch Twinks Candy Mountain
-$(printf %4s $(( 930 + offset)))  3 2         W H    F  # White House
-$(printf %4s $((1130 + offset)))  4 3     T   WT  M  F  # Ten White Tiger Meow
+$(printf %4s $(( 530 + offset)))  1           W      F  # Water
+$(printf %4s $(( 730 + offset)))  2 1  P  TO  WT CM  T  # The Pretty Octopus Witch Twinks Candy Mountain
+$(printf %4s $(( 930 + offset)))  3 2      U  W H    F  # Use Water Hose
+$(printf %4s $((1130 + offset)))  4 3     T   WT  M  F  # Ten White Tiger Meow
 $(printf %4s $((1330 + offset)))  5 4         W  CM  F  # Wolves Chase Moon
 $(printf %4s $((1530 + offset)))  6 5     T   WT  M  F  # Toads Will Tolerate Mud
-$(printf %4s $((1730 + offset)))  7 6         W   M  F  # Working Monkey
-$(printf %4s $((1930 + offset)))  8 7  P  TU  WTH    T  # Tigers Play Uniquely, With Their Hairs
+$(printf %4s $((1730 + offset)))  7 6         W   M  F  # Working Monkey
+$(printf %4s $((1930 + offset)))  8 7  P  TO  WTH    T  # The Pretty Owl Went To Hunt Turtles
 $(printf %4s $((2130 + offset)))  9 8            C   F  # Cats
 EOF
 }
