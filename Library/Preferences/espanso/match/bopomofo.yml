@@ -1,8 +1,12 @@
 ---
 matches:
 
+  - trigger: cw,.
+    replace: ㄘㄨㄚˋ
+
   - trigger: jiji,.
     replace: ㄐㄐ
 
   - trigger: nznz,.
     replace: ㄋㄟㄋㄟ
+
