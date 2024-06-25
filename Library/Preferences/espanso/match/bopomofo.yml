@@ -7,6 +7,9 @@ matches:
   - trigger: jiji,.
     replace: ㄐㄐ
 
+  - trigger: kd,.
+    replace: ㄎㄧㄤ
+
   - trigger: nznz,.
     replace: ㄋㄟㄋㄟ
 
