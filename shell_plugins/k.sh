@@ -119,6 +119,8 @@ k() {
 
   posix) echo '#%+-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~' ;;
 
+  prices) shift && "$SHARILS_HOME/shell_plugins/k/prices.sh" "$@" ;;
+
   prime) shift && "$SHARILS_HOME/shell_plugins/k/prime.sh" "$@" ;;
 
   printable) shift && "$SHARILS_HOME/shell_plugins/k/printable.sh" "$@" ;;
