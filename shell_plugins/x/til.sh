@@ -4,7 +4,7 @@
 
 til() {
   if [ $# -eq 0 ]; then
-    for t in c 652 0720 0800 0859 0950 1030 1200 1250 1300 1700 s c-a n-9 c-9 n-8 c-8 2200 2230; do
+    for t in c 652 0900 1020 1700 c-a c-8; do
       printf "$t\t%s\n" "$(til "$t")" | grep -E '^|^(?:c |652|0859|c-a|c-8).*'
     done
     return $?
