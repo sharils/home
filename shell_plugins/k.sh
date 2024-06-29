@@ -113,6 +113,8 @@ k() {
 
   o) shift && "$SHARILS_HOME/shell_plugins/k/o.sh" "$@" ;;
 
+  oxymoron) shift && "$SHARILS_HOME/shell_plugins/k/oxymoron.sh" "$@" ;;
+
   pareto) shift && "$SHARILS_HOME/shell_plugins/k/pareto.sh" "$@" ;;
 
   port) "$SHARILS_HOME/shell_plugins/k/port.sh" "$@" ;;
