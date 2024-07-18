@@ -8,6 +8,7 @@ e() {
     return
   fi
   case "$1" in
+  R) shift && mix ecto.reset "$@" ;;
   c) shift && mix ecto.create "$@" ;;
   m)
     shift
