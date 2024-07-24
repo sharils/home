@@ -12,8 +12,10 @@ export FZF_CTRL_T_OPTS='--preview "bat --color=always --line-range :500 {}"'
 export FZF_ALT_C_COMMAND="fd --hidden --unrestricted --color always --ignore-file $HOME/.fdignore --ignore-file $PWD/gitignore.fdignore --type d"
 
 # https://github.com/junegunn/fzf/blob/master/README.md#supported-commands
-_fzf_setup_completion path b g l v w x
-_fzf_setup_completion dir z
+if type _fzf_setup_completion >/dev/null 2>&1; then
+  _fzf_setup_completion path b g l v w x
+  _fzf_setup_completion dir z
+fi
 
 _fzf_compgen_path() {
   $FZF_DEFAULT_COMMAND "$1"
