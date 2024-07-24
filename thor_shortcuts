@@ -1,18 +1,18 @@
 [
   {
-    "appDisplayName" : "QuickTime Player",
     "shortcut" : "ctrl+alt+cmd+a",
-    "appBundleURL" : "file:\/\/\/System\/Applications\/QuickTime%20Player.app\/"
+    "appBundleURL" : "file:\/\/\/System\/Applications\/QuickTime%20Player.app\/",
+    "appDisplayName" : "QuickTime Player"
   },
   {
-    "shortcut" : "ctrl+alt+cmd+b",
+    "appBundleURL" : "file:\/\/\/Applications\/Obsidian.app\/",
     "appDisplayName" : "Obsidian",
-    "appBundleURL" : "file:\/\/\/Applications\/Obsidian.app\/"
+    "shortcut" : "ctrl+alt+cmd+b"
   },
   {
     "shortcut" : "ctrl+alt+cmd+c",
-    "appDisplayName" : "Chromium",
-    "appBundleURL" : "file:\/\/\/Applications\/Chromium.app\/"
+    "appBundleURL" : "file:\/\/\/Applications\/Chromium.app\/",
+    "appDisplayName" : "Chromium"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Firefox.app\/",
@@ -21,42 +21,47 @@
   },
   {
     "shortcut" : "ctrl+alt+cmd+i",
-    "appDisplayName" : "Timer",
-    "appBundleURL" : "file:\/\/\/Applications\/Timer.app\/"
+    "appBundleURL" : "file:\/\/\/Applications\/Timer.app\/",
+    "appDisplayName" : "Timer"
   },
   {
-    "appDisplayName" : "KeePassXC",
     "shortcut" : "ctrl+alt+cmd+k",
-    "appBundleURL" : "file:\/\/\/Applications\/KeePassXC.app\/"
+    "appBundleURL" : "file:\/\/\/Applications\/KeePassXC.app\/",
+    "appDisplayName" : "KeePassXC"
   },
   {
-    "appDisplayName" : "Clock",
     "appBundleURL" : "file:\/\/\/System\/Applications\/Clock.app\/",
-    "shortcut" : "ctrl+alt+cmd+l"
+    "shortcut" : "ctrl+alt+cmd+l",
+    "appDisplayName" : "Clock"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Music.app\/",
     "appDisplayName" : "Music",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Music.app\/",
     "shortcut" : "ctrl+alt+cmd+m"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Opera.app\/",
-    "shortcut" : "ctrl+alt+cmd+o",
-    "appDisplayName" : "Opera"
+    "shortcut" : "ctrl+alt+cmd+n",
+    "appDisplayName" : "LINE",
+    "appBundleURL" : "file:\/\/\/Applications\/LINE.app\/"
   },
   {
-    "shortcut" : "ctrl+alt+cmd+p",
+    "appDisplayName" : "Opera",
+    "shortcut" : "ctrl+alt+cmd+o",
+    "appBundleURL" : "file:\/\/\/Applications\/Opera.app\/"
+  },
+  {
+    "appDisplayName" : "Podcasts",
     "appBundleURL" : "file:\/\/\/System\/Applications\/Podcasts.app\/",
-    "appDisplayName" : "Podcasts"
+    "shortcut" : "ctrl+alt+cmd+p"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Telegram.app\/",
-    "shortcut" : "ctrl+alt+cmd+r",
-    "appDisplayName" : "Telegram"
+    "appDisplayName" : "Telegram",
+    "shortcut" : "ctrl+alt+cmd+r"
   },
   {
-    "shortcut" : "ctrl+alt+cmd+t",
     "appDisplayName" : "iTerm",
+    "shortcut" : "ctrl+alt+cmd+t",
     "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/"
   },
   {
@@ -66,12 +71,12 @@
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Preview.app\/",
-    "appDisplayName" : "Preview",
-    "shortcut" : "ctrl+alt+cmd+v"
+    "shortcut" : "ctrl+alt+cmd+v",
+    "appDisplayName" : "Preview"
   },
   {
-    "shortcut" : "ctrl+alt+cmd+x",
     "appBundleURL" : "file:\/\/\/Applications\/Firefox%20Developer%20Edition.app\/",
-    "appDisplayName" : "Firefox Developer Edition"
+    "appDisplayName" : "Firefox Developer Edition",
+    "shortcut" : "ctrl+alt+cmd+x"
   }
 ]
