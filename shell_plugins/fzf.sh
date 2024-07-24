@@ -16,5 +16,5 @@ _fzf_setup_completion path b g l v w x
 _fzf_setup_completion dir z
 
 _fzf_compgen_path() {
-   $FZF_DEFAULT_COMMAND "$1"
+  $FZF_DEFAULT_COMMAND "$1"
 }
