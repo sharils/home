@@ -85,6 +85,9 @@
     "gapSize" : {
       "float" : 0
     },
+    "hapticFeedbackOnSnap" : {
+      "int" : 0
+    },
     "hideMenubarIcon" : {
       "bool" : true
     },
@@ -149,6 +152,9 @@
       "bool" : false
     },
     "screenEdgeGapTop" : {
+      "float" : 0
+    },
+    "screenEdgeGapTopNotch" : {
       "float" : 0
     },
     "shortEdgeSnapAreaSize" : {
@@ -226,7 +232,7 @@
   },
   "shortcuts" : {
     "almostMaximize" : {
-      "keyCode" : 69,
+      "keyCode" : 87,
       "modifierFlags" : 262144
     },
     "bottomHalf" : {
@@ -243,7 +249,7 @@
     },
     "center" : {
       "keyCode" : 87,
-      "modifierFlags" : 262144
+      "modifierFlags" : 786432
     },
     "leftHalf" : {
       "keyCode" : 86,
@@ -254,8 +260,8 @@
       "modifierFlags" : 262144
     },
     "maximizeHeight" : {
-      "keyCode" : 87,
-      "modifierFlags" : 786432
+      "keyCode" : 69,
+      "modifierFlags" : 262144
     },
     "moveDown" : {
       "keyCode" : 84,
@@ -271,6 +277,10 @@
     },
     "moveUp" : {
       "keyCode" : 91,
+      "modifierFlags" : 786432
+    },
+    "nextDisplay" : {
+      "keyCode" : 78,
       "modifierFlags" : 786432
     },
     "previousDisplay" : {
@@ -306,5 +316,5 @@
       "modifierFlags" : 262144
     }
   },
-  "version" : "82"
+  "version" : "86"
 }
