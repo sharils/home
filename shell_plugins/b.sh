@@ -39,7 +39,13 @@ b() {
     esac
     ;;
   fde) shift && BROWSER=/Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox "$@" ;;
-  i) shift && brew install "$@" ;;
+  i)
+    shift
+    case "$1" in
+    c) shift && set -- --cask "$@" ;;
+    esac
+    brew install "$@"
+    ;;
   l) shift && "$SHARILS_HOME/shell_plugins/b/l.sh" "$@" ;;
   n) shift && BROWSER=none "$@" ;;
   o) shift && BROWSER=open "$@" ;;
