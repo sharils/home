@@ -1,8 +1,9 @@
 #!/usr/bin/env sh
 # https://github.com/junegunn/fzf/blob/master/README.md
 
-# shellcheck source=/dev/null
-[ -f ~/.fzf.bash ] && . ~/.fzf.bash
+# https://github.com/junegunn/fzf?tab=readme-ov-file#setting-up-shell-integration
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --bash)"
 
 export FZF_COMPLETION_TRIGGER='*'
 export FZF_DEFAULT_COMMAND="fd --hidden --unrestricted --color always --ignore-file $HOME/.fdignore --ignore-file $PWD/gitignore.fdignore"
