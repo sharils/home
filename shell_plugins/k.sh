@@ -130,6 +130,8 @@ k() {
   # safe = posix & uri
   safe) echo '-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~' ;;
 
+  salary) shift && "$SHARILS_HOME/shell_plugins/k/salary.sh" "$@" ;;
+
   scrcpy) shift && "$SHARILS_HOME/shell_plugins/k/scrcpy.sh" "$@" ;;
 
   sdg) shift && "$SHARILS_HOME/shell_plugins/k/sdg.sh" "$@" ;;
