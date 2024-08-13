@@ -148,6 +148,8 @@ k() {
 
   vet) shift && "$SHARILS_HOME/shell_plugins/k/vet.sh" "$@" ;;
 
+  wedding) shift && "$SHARILS_HOME/shell_plugins/k/wedding.sh" "$@" ;;
+
   week) shift && "$SHARILS_HOME/shell_plugins/k/week.sh" "$@" ;;
 
   welfare) shift && "$SHARILS_HOME/shell_plugins/k/welfare.sh" "$@" ;;
