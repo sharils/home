@@ -14,6 +14,8 @@ Magnitude  Description  Mercalli intensity  Average frequency of occurrence glob
 7.0–7.9    Major        VIII or higher      10 to 20 per year
 8.0–8.9    Great                            One per year
 9.0–9.9    Extreme                          One to three per century
+
+https://en.wikipedia.org/wiki/Richter_scale#Richter_magnitudes
 EOF
 }
 
