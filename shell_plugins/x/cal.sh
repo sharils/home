@@ -21,9 +21,9 @@ x_cal() {
     return $?
     ;;
 
-  2023) md5_url='ed0be53097a9da90ee037896396142c2' ;;
+  2024) md5_url='06fc193ff1506418cce98bc8fa1d8ece' ;;
 
-  2024) md5_url='2c1c090b51f0b61d9283d79a160f211d' ;;
+  2025) md5_url='b4ebbea21464a91932d5288f05247899' ;;
 
   indigenous)
     shift
@@ -67,8 +67,8 @@ EOF
     # https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0020033
     # https://www.laws.taipei.gov.tw/Law/LawSearch/LawArticleContent?sysNumber=A040160021016200
     {
-      x_cal 2023
       x_cal 2024
+      x_cal 2025
     } | jq --raw-output \
       "map(select((now|localtime|strftime(\"%F %a\")) <= .[0])) | map(@csv)[]" |
       tr -d '"' | tr , ' '
