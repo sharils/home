@@ -13,6 +13,7 @@ a() {
   p) shift && "$SHARILS_HOME/shell_plugins/a/p.sh" "$@" ;;
   s3) shift && "$SHARILS_HOME/shell_plugins/a/s3.sh" "$@" ;;
   t) shift && "$SHARILS_HOME/shell_plugins/a/t.sh" "$@" ;;
+  x86) shift && "$SHARILS_HOME/shell_plugins/a/x86.sh" "$@" ;;
   g | l | s) "$SHARILS_HOME/shell_plugins/a/gls.sh" "$@" ;;
   esac
 }
