@@ -31,6 +31,8 @@ t() {
     b "$cmd" w t ls "$@"
     ;;
 
+  cl) shift && "$SHARILS_HOME/shell_plugins/t/cl.sh" "$@" ;;
+
   d) shift && "$SHARILS_HOME/shell_plugins/t/d.sh" "$@" ;;
 
   diary) shift && "$SHARILS_HOME/shell_plugins/t/diary.sh" "$@" ;;
