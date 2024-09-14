@@ -66,9 +66,9 @@ https://pagespeed.web.dev/ PageSpeed Insights
 https://hexdocs.pm/phoenix/overview.html Phoenix (phx)
 https://hex.pm/packages/phoenix_ecto Phoenix Ecto
 https://hexdocs.pm/phoenix_html Phoenix HTML
-https://hexdocs.pm/phoenix_pubsub Phoenix PubSub
 https://hexdocs.pm/phoenix_live_dashboard Phoenix LiveDashboard
 https://hexdocs.pm/phoenix_live_view/welcome.html Phoenix LiveView (lv)
+https://hexdocs.pm/phoenix_pubsub Phoenix PubSub
 https://www.photopea.com/ Photopea
 https://hexdocs.pm/plug Plug
 https://hexdocs.pm/plug/ Plug
@@ -106,6 +106,7 @@ https://editor.swagger.io/ Swagger Editor
 https://hexdocs.pm/swoosh Swoosh
 https://tsdocs.dev/ TS Docs
 https://www.typescriptlang.org TS Playground
+https://hexdocs.pm/telemetry_metrics Telemetry Metrics
 https://temp-mail.org/en/ Temp Mail
 https://testing-library.com/docs/queries/about/#priority Testing Library
 https://doc.rust-lang.org/book/ The Rust Programming Language (TRPL)
