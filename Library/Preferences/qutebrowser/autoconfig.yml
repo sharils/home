@@ -127,6 +127,7 @@ settings:
     https://www.google.com/maps?*: true
     https://www.google.com.tw/maps?*: true
     hub.docker.com: true
+    info.nhi.gov.tw: true
     iq.opengenus.org: true
     itaiwan.gov.tw: true
     jqlang.github.io: true
