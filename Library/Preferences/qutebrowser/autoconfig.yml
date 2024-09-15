@@ -223,6 +223,7 @@ settings:
   url.searchengines:
     global:
       DEFAULT: https://lite.duckduckgo.com/lite/?q={}
+      "4": https://sims.fandom.com/wiki/Special:Search?query={}
       aa: https://www.allacronyms.com/{}/abbreviated
       ab: https://archive.org/details/inlibrary?sin=&and%5B%5D={}
       ain: https://aboutideasnow.com/?q={}
