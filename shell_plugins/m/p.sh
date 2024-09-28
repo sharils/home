@@ -21,7 +21,13 @@ p() {
       esac
     )
     ;;
-  i) shift && iex -S mix phx.server "$@" ;;
+  i)
+    shift
+    case "$1" in
+    d) shift && iex --dbg pry -S mix phx.server "$@" ;;
+    *) iex -S mix phx.server "$@" ;;
+    esac
+    ;;
   n) shift && "$SHARILS_HOME/shell_plugins/m/p/n.sh" "$@" ;;
   r)
     shift
