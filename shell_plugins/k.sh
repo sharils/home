@@ -55,6 +55,8 @@ k() {
 
   distortion) shift && "$SHARILS_HOME/shell_plugins/k/distortion.sh" "$@" ;;
 
+  doctor) shift && "$SHARILS_HOME/shell_plugins/k/doctor.sh" "$@" ;;
+
   dr) shift && "$SHARILS_HOME/shell_plugins/k/dr.sh" "$@" ;;
 
   e) $EDITOR "$@" ~/.config/karabiner/karabiner.json ;;
