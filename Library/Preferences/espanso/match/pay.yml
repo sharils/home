@@ -3,3 +3,6 @@ matches:
 
   - trigger: Nwp,.
     replace: NewebPay
+
+  - trigger: Tp,.
+    replace: TapPay
