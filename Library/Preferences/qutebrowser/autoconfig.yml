@@ -196,6 +196,7 @@ settings:
     www.youbike.com.tw: true
     www.youtube.com: true
     yeoman.io: true
+    yunbus.tw: true
   content.local_storage:
     '*.wikidata.org': true
     astexplorer.net: true
