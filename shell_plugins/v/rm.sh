@@ -5,6 +5,7 @@
 v_rm() {
   case "$1" in
   s) rm Session.vim ;;
+  ycm) rm "$SHARILS_HOME/.vim/plugged/YouCompleteMe" ;;
   *) vim README.md ;;
   esac
 }
