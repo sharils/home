@@ -109,17 +109,30 @@ inoremap <C-E> <C-O>A
 inoremap <C-F> <C-O>l
 inoremap <C-J> <C-O>j
 inoremap <C-K> <C-O>k
+
 inoremap <C-[>O <ESC>O
+inoremap Ï <ESC>O
+
 inoremap <C-[>* °
 cnoremap <C-[>* °
+inoremap ª °
+cnoremap ª °
+
 inoremap <C-[>- –
 cnoremap <C-[>- –
+inoremap ­ –
+cnoremap ­ –
+
 inoremap <C-[>_ —
 cnoremap <C-[>_ —
+inoremap ß —
+cnoremap ß —
+
 inoremap <C-[>} ’
 cnoremap <C-[>} ’
 inoremap ý ’
 cnoremap ý ’
+
 nmap <LEADER>0 :vertical resize 100<CR>
 nmap <LEADER>E :edit!<CR>
 nmap <LEADER>S :source ~/.vimrc<CR>
@@ -127,4 +140,13 @@ nmap <LEADER>sp :set paste!<CR>
 nmap <LEADER>ss :set spell!<CR>
 nmap <LEADER>sw :set wrap!<CR>
 nmap <LEADER>sex :set filetype=elixir<CR>
+nmap <LEADER>sf1 :set foldlevel=1<CR>
+nmap <LEADER>sf2 :set foldlevel=2<CR>
+nmap <LEADER>sf3 :set foldlevel=3<CR>
+nmap <LEADER>sf4 :set foldlevel=4<CR>
+nmap <LEADER>sf5 :set foldlevel=5<CR>
+nmap <LEADER>sf6 :set foldlevel=6<CR>
+nmap <LEADER>sfi :set foldmethod=indent<CR>
+nmap <LEADER>sfm :set foldmethod=manual<CR>
+nmap <LEADER>sfs :set foldmethod=syntax<CR>
 nmap <LEADER>ssh :set filetype=sh<CR>
