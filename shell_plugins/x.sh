@@ -40,7 +40,7 @@ x() {
     x fx "$cmd" | x bc "$(awk '{ print $3 }')" '*' "${@:-1}"
     ;;
 
-  $ | ai | ap | aq | bak | batt | bc | bmi | cal | cat-weight | cert | cm | county-sunrise | data | download.sh | draculadaily | editorconfig | english-words | eq | erl | ex | fer | focus | fong | fx | getnf | gif | hbt | hospital | hrm | html | ico | iconv | jq | kibble | law | mac | members | mh | ml | paisa | pdf | petfood | ping | pmdr | png | py | rm | salary | scrcpy | sh | shutdown | smolsite | sn | sqlite | ssh-keygen | ss | su | title | tld | touch | traceroute | tree | tz | uri | vcf | venv | webp | weight | whois | wthr | vimv | zip)
+  $ | ai | ap | aq | bak | batt | bc | bmi | cal | cat-weight | cert | cm | county-sunrise | data | download.sh | draculadaily | editorconfig | english-words | eq | erl | ex | fer | focus | fong | fx | getnf | gif | hbt | hospital | hrm | html | ico | iconv | jq | kibble | law | mac | members | mh | ml | paisa | pdf | petfood | ping | pmdr | png | pvpi | py | rm | salary | scrcpy | sh | shutdown | smolsite | sn | sqlite | ssh-keygen | ss | su | title | tld | touch | traceroute | tree | tz | uri | vcf | venv | webp | weight | whois | wthr | vimv | zip)
     cmd="$1" && shift
     "$SHARILS_HOME/shell_plugins/x/$cmd.sh" "$@"
     ;;
