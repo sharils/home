@@ -1,5 +1,8 @@
 ---
 matches:
 
+  - trigger: lanpha,.
+    replace: 卵脬
+
   - trigger: tsibai,.
     replace: 膣屄
