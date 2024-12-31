@@ -4,5 +4,8 @@ matches:
   - trigger: lanpha,.
     replace: 卵脬
 
+  - trigger: mthang,.
+    replace: 毋通
+
   - trigger: tsibai,.
     replace: 膣屄
