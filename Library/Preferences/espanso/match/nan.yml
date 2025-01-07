@@ -4,6 +4,9 @@ matches:
   - trigger: lanpha,.
     replace: 卵脬
 
+  - trigger: laukhokkhok,.
+    replace: 老硞硞
+
   - trigger: mthang,.
     replace: 毋通
 
