@@ -3,3 +3,6 @@ matches:
 
   - trigger: Mj,.
     replace: Mahjong
+
+  - trigger: Pg,.
+    replace: Pokémon Go
