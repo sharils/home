@@ -10,6 +10,9 @@ matches:
   - trigger: kd,.
     replace: ㄎㄧㄤ
 
+  - trigger: lt,.
+    replace: ㄌㄩㄝ
+
   - trigger: nznz,.
     replace: ㄋㄟㄋㄟ
 
