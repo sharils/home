@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: iantau,.
+    replace: 緣投
+
   - trigger: lanpha,.
     replace: 卵脬
 
