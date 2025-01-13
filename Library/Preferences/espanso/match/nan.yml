@@ -13,6 +13,9 @@ matches:
   - trigger: mthang,.
     replace: 毋通
 
+  - trigger: sui,.
+    replace: 媠
+
   - trigger: tuhlan,.
     replace: 揬卵
 
