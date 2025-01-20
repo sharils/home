@@ -10,6 +10,9 @@ matches:
   - trigger: laukhokkhok,.
     replace: 老硞硞
 
+  - trigger: linpe,.
+    replace: 恁爸
+
   - trigger: mthang,.
     replace: 毋通
 
