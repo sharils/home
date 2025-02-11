@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: khisiau,.
+    replace: 起痟
+
   - trigger: iantau,.
     replace: 緣投
 
