@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: khiau,.
+    replace: 巧
+
   - trigger: khisiau,.
     replace: 起痟
 
