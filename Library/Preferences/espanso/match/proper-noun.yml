@@ -73,6 +73,9 @@ matches:
   - trigger: Jsdg,.
     replace: "JavaScript: The Definitive Guide"
 
+  - trigger: Jwms,.
+    replace: Justice with Michael Sandel
+
   - trigger: Lhtl,.
     replace: Learning How to Learn
 
