@@ -25,6 +25,9 @@ matches:
   - trigger: mthang,.
     replace: 毋通
 
+  - trigger: siannsiau,.
+    replace: 啥潲
+
   - trigger: sui,.
     replace: 媠
 
