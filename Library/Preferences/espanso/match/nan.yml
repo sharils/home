@@ -28,6 +28,9 @@ matches:
   - trigger: siannsiau,.
     replace: 啥潲
 
+  - trigger: siokan,.
+    replace: 相姦
+
   - trigger: sui,.
     replace: 媠
 
