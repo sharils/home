@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: iantau,.
+    replace: 緣投
+
   - trigger: khauiau,.
     replace: 哭枵
 
@@ -9,9 +12,6 @@ matches:
 
   - trigger: khisiau,.
     replace: 起痟
-
-  - trigger: iantau,.
-    replace: 緣投
 
   - trigger: lanpha,.
     replace: 卵脬
