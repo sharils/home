@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: hiantsusi,.
+    replace: 現此時
+
   - trigger: iantau,.
     replace: 緣投
 
