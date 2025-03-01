@@ -40,8 +40,8 @@ matches:
   - trigger: sui,.
     replace: 媠
 
-  - trigger: tuhlan,.
-    replace: 揬卵
-
   - trigger: tsibai,.
     replace: 膣屄
+
+  - trigger: tuhlan,.
+    replace: 揬卵
