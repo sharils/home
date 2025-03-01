@@ -31,6 +31,9 @@ matches:
   - trigger: mthang,.
     replace: 毋通
 
+  - trigger: phahtshiutshing,.
+    replace: 拍手銃
+
   - trigger: siannsiau,.
     replace: 啥潲
 
