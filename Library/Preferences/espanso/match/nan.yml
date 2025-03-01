@@ -40,6 +40,9 @@ matches:
   - trigger: sui,.
     replace: 媠
 
+  - trigger: tsautsingkiampianhing,.
+    replace: 走精兼變形
+
   - trigger: tsibai,.
     replace: 膣屄
 
