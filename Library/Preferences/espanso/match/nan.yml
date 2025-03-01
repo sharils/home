@@ -19,6 +19,9 @@ matches:
   - trigger: laukhokkhok,.
     replace: 老硞硞
 
+  - trigger: linlaupe,.
+    replace: 恁老爸
+
   - trigger: linpe,.
     replace: 恁爸
 
