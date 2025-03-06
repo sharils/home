@@ -49,6 +49,8 @@ k() {
 
   d) shift && "$SHARILS_HOME/shell_plugins/k/d.sh" "$@" ;;
 
+  db) shift && "$SHARILS_HOME/shell_plugins/k/db.sh" "$@" ;;
+
   ddx) shift && "$SHARILS_HOME/shell_plugins/k/ddx.sh" "$@" ;;
 
   debian) shift && "$SHARILS_HOME/shell_plugins/k/debian.sh" "$@" ;;
