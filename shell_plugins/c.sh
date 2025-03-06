@@ -8,6 +8,11 @@ c() {
     return
   fi
 
+  if [ $# -eq 0 ]; then
+    caffeine -ut86400
+    return $?
+  fi
+
   if [ -f "$1" ]; then
     cat "$1"
     return
@@ -53,6 +58,27 @@ c() {
     ;;
 
   u) set -- update "$@" ;;
+
+  [0-9][smhd])
+    unit="$(echo "$1" | cut -c2-2)"
+    amount="$(echo "$1" | cut -c1-1)"
+    if [ "$unit" = 'd' ]; then
+      amount="$(echo "$amount * 24" | bc -l)"
+      unit=h
+    fi
+    if [ "$unit" = 'h' ]; then
+      amount="$(echo "$amount * 60" | bc -l)"
+      unit=m
+    fi
+    if [ "$unit" = 'm' ]; then
+      amount="$(echo "$amount * 60" | bc -l)"
+      unit=s
+    fi
+    if [ "$unit" = 's' ]; then
+      caffeinate -ut"$amount"
+    fi
+    return $?
+    ;;
 
   rt | ta | v | w) cmd="$1" && shift && "$SHARILS_HOME/shell_plugins/c/$cmd.sh" "$@" && return $? ;;
 
