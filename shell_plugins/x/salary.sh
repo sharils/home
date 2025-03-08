@@ -3,6 +3,7 @@
 [ -n "$SET_X" ] && set -x
 
 salary() {
+  # https://data.gov.tw/dataset/6281
   src='https://apiservice.mol.gov.tw/OdService/download/A17000000J-020050-84m'
   dest="/tmp/x-salary.json"
 
