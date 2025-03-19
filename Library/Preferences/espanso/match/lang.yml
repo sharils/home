@@ -22,5 +22,8 @@ matches:
   - trigger: ncc,.
     replace: "@needs native check"
 
+  - trigger: omph,.
+    replace: ॐ मणि पद्मे हूं
+
   - trigger: zh,.
     replace: 中文
