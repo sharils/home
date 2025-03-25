@@ -16,6 +16,9 @@ matches:
   - trigger: kd,.
     replace: ㄎㄧㄤ
 
+  - trigger: le,.
+    replace: ㄌ
+
   - trigger: lt,.
     replace: ㄌㄩㄝ
 
