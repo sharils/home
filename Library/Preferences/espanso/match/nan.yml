@@ -43,6 +43,9 @@ matches:
   - trigger: sui,.
     replace: 媠
 
+  - trigger: tantiau,.
+    replace: 擲掉
+
   - trigger: tsautsingkiampianhing,.
     replace: 走精兼變形
 
