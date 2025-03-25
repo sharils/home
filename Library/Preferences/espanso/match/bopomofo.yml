@@ -4,6 +4,9 @@ matches:
   - trigger: cw,.
     replace: ㄘㄨㄚˋ
 
+  - trigger: de,.
+    replace: ㄉ
+
   - trigger: jiji,.
     replace: ㄐㄐ
 
