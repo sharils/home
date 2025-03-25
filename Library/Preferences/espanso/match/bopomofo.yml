@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: ci,.
+    replace: ㄘ
+
   - trigger: cw,.
     replace: ㄘㄨㄚˋ
 
