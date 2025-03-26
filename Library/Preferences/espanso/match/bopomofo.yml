@@ -22,6 +22,9 @@ matches:
   - trigger: lt,.
     replace: ㄌㄩㄝ
 
+  - trigger: me,.
+    replace: ㄇ
+
   - trigger: nznz,.
     replace: ㄋㄟㄋㄟ
 
