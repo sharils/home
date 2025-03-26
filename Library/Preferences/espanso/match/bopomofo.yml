@@ -7,6 +7,9 @@ matches:
   - trigger: e,.
     replace: ㄝ
 
+  - trigger: ei,.
+    replace: ㄟ
+
   - trigger: pe,.
     replace: ㄆ
 
