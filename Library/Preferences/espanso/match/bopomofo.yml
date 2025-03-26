@@ -4,6 +4,9 @@ matches:
   - trigger: be,.
     replace: ㄅ
 
+  - trigger: e,.
+    replace: ㄝ
+
   - trigger: pe,.
     replace: ㄆ
 
