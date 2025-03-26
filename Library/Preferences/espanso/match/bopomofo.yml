@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: be,.
+    replace: ㄅ
+
   - trigger: ci,.
     replace: ㄘ
 
