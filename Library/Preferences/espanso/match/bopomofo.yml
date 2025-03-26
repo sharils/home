@@ -16,6 +16,9 @@ matches:
   - trigger: de,.
     replace: ㄉ
 
+  - trigger: he,.
+    replace: ㄏ
+
   - trigger: jiji,.
     replace: ㄐㄐ
 
