@@ -31,6 +31,9 @@ matches:
   - trigger: me,.
     replace: ㄇ
 
+  - trigger: ne,.
+    replace: ㄋ
+
   - trigger: nznz,.
     replace: ㄋㄟㄋㄟ
 
