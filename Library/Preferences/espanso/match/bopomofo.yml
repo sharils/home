@@ -43,3 +43,5 @@ matches:
   - trigger: nznz,.
     replace: ㄋㄟㄋㄟ
 
+  - trigger: o,.
+    replace: ㄛ
