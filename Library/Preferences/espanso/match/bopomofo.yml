@@ -22,6 +22,9 @@ matches:
   - trigger: kd,.
     replace: ㄎㄧㄤ
 
+  - trigger: ke,.
+    replace: ㄎ
+
   - trigger: le,.
     replace: ㄌ
 
