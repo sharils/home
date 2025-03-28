@@ -51,6 +51,8 @@ k() {
 
   d) shift && "$SHARILS_HOME/shell_plugins/k/d.sh" "$@" ;;
 
+  dailies) shift && "$SHARILS_HOME/shell_plugins/k/dailies.sh" "$@" ;;
+
   db) shift && "$SHARILS_HOME/shell_plugins/k/db.sh" "$@" ;;
 
   ddx) shift && "$SHARILS_HOME/shell_plugins/k/ddx.sh" "$@" ;;
