@@ -21,6 +21,8 @@ k() {
 
   agile) shift && "$SHARILS_HOME/shell_plugins/k/agile.sh" "$@" ;;
 
+  alnum) shift && "$SHARILS_HOME/shell_plugins/k/alnum.sh" "$@" ;;
+
   android) shift && "$SHARILS_HOME/shell_plugins/k/android.sh" "$@" ;;
 
   b) shift && "$SHARILS_HOME/shell_plugins/k/b.sh" "$@" ;;
