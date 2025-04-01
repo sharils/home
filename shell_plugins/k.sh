@@ -99,6 +99,8 @@ k() {
 
   manila) shift && "$SHARILS_HOME/shell_plugins/k/manila.sh" "$@" ;;
 
+  mbti) shift && "$SHARILS_HOME/shell_plugins/k/mbti.sh" "$@" ;;
+
   med) shift && "$SHARILS_HOME/shell_plugins/k/med.sh" "$@" ;;
 
   manifesto) shift && "$SHARILS_HOME/shell_plugins/k/manifesto.sh" "$@" ;;
