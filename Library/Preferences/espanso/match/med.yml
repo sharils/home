@@ -4,6 +4,9 @@ matches:
   - trigger: Cbt,.
     replace: Cognitive behavioral therapy (CBT)
 
+  - trigger: Cpr,.
+    replace: CPR
+
   - trigger: Ddx,.
     replace: Differential Diagnosis (DDx)
 
