@@ -25,6 +25,9 @@ matches:
   - trigger: Rfc,.
     replace: RFC
 
+  - trigger: Totp,.
+    replace: TOTP
+
   - trigger: Xr,.
     replace: Exercism
 
