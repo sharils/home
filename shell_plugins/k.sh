@@ -183,5 +183,7 @@ k() {
     printf %s "$dir/$path.zip" | pbcopy
     ;;
 
+  -q | -L | -l | -U | -n | -s | -e | -x | -c | -h) "$SHARILS_HOME/shell_plugins/k/generate.sh" "$@" ;;
+
   esac
 }
