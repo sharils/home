@@ -22,6 +22,9 @@ matches:
   - trigger: Qr,.
     replace: QR code
 
+  - trigger: Rfc,.
+    replace: RFC
+
   - trigger: Xr,.
     replace: Exercism
 
