@@ -49,8 +49,6 @@ k() {
 
   curl) shift && "$SHARILS_HOME/shell_plugins/k/curl.sh" "$@" ;;
 
-  d) shift && "$SHARILS_HOME/shell_plugins/k/d.sh" "$@" ;;
-
   dailies) shift && "$SHARILS_HOME/shell_plugins/k/dailies.sh" "$@" ;;
 
   db) shift && "$SHARILS_HOME/shell_plugins/k/db.sh" "$@" ;;
@@ -161,6 +159,8 @@ k() {
   uri) echo "!'()*-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~" ;;
 
   vet) shift && "$SHARILS_HOME/shell_plugins/k/vet.sh" "$@" ;;
+
+  w) shift && "$SHARILS_HOME/shell_plugins/k/w.sh" "$@" ;;
 
   wedding) shift && "$SHARILS_HOME/shell_plugins/k/wedding.sh" "$@" ;;
 

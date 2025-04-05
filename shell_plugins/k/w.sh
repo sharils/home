@@ -2,7 +2,7 @@
 
 [ -n "$SET_X" ] && set -x
 
-d() {
+w() {
   # -4 for numeric and special
   cmd="$((${1:-100} - 4))"
   # shellcheck disable=3009
@@ -28,4 +28,4 @@ d() {
   pbpaste | wc
 }
 
-d "$@"
+w "$@"
