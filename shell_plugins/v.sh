@@ -62,6 +62,8 @@ v() {
 
   tor) vim ~/Library/Application\ Support/TorBrowser-Data/Tor/torrc ;;
 
+  up) shift && "$SHARILS_HOME/shell_plugins/v/up.sh" "$@" ;;
+
   \?)
     shift
     ext="$(printf 'applescript | c | css | csv | eex | erl | ex | exs | feature | gql | heex | html | java | jq | js | json | jsx | lua | md | mdx | mmd | mw | nginx | pegjs | php | proto | py | rs | scss | sh | sql | story | svelte | t | ts | tsx | txt | wat | xhtml | yaml | yml | zep' | sed 's# \| #\n#g' | fzf)"
