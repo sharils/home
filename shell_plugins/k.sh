@@ -176,7 +176,7 @@ k() {
     dir="$(z t && echo "$PWD")"
     cd "$dir" || return $?
     path="$(k b)"
-    printf %s "$*" > "$path"
+    printf %s "$*" >"$path"
     zip -er "$path.zip" "$path"
     rm "$path"
     cd - || return $?
