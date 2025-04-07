@@ -9,7 +9,7 @@ s() {
 
   cap) shift && tr '[:lower:]' '[:upper:]' | perl -pe 's/(?<=[[:alpha:]])./\L$&/g' ;;
 
-  cf) shift && shortcuts run toggle-color-filters "$@" ;;
+  cf) shift && shortcuts run 🎨 "$@" ;;
 
   id) shift && s t cli show system | jq --raw-output .myID | tee /dev/stderr | npx --yes qrcode-terminal ;;
 
