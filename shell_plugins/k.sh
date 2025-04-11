@@ -127,6 +127,8 @@ k() {
 
   pareto) shift && "$SHARILS_HOME/shell_plugins/k/pareto.sh" "$@" ;;
 
+  pi) shift && "$SHARILS_HOME/shell_plugins/k/pi.sh" "$@" ;;
+
   port) "$SHARILS_HOME/shell_plugins/k/port.sh" "$@" ;;
 
   posix) echo '#%+-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~' ;;
