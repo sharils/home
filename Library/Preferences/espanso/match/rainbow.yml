@@ -1,0 +1,12 @@
+---
+matches:
+
+  - trigger: hearts,.
+    replace: 🩷❤️🧡💛💚🩵💙💜🖤🩶🤍🤎
+
+  - trigger: circles,.
+    replace: 🔴🟠🟡🟢🔵🟣⚫️⚪️🟤
+
+  - trigger: squares,.
+    replace: 🟥🟧🟨🟩🟦🟪⬛️⬜️🟫
+
