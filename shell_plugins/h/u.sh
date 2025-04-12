@@ -7,10 +7,8 @@ u() {
   brew update
   # for less sudo timeout
   for outdated in $(brew outdated); do
-    sudo --validate
     brew upgrade "$outdated"
   done
-  sudo --validate
   which rustup >/dev/null && rustup update stable
   sudo --reset-timestamp
 
