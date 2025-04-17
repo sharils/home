@@ -16,6 +16,7 @@ o() {
   cap) open -b com.apple.Music 'https://playerservices.streamtheworld.com/pls/ClassicalStreamAAC.pls' ;;
   kamu) open -b com.apple.Music 'https://kamu.streamguys1.com/hd2-64' ;;
   kids) open -b com.apple.Music 'https://classicalkids.stream.publicradio.org/classicalkids.aac' ;;
+  meditate) $$BROWSER 'https://www.youtube.com/watch?v=OivxETqEpPI&t=3030s' ;;
   muzaiko) open -b com.apple.Music 'http://fluo.muzaiko.saluton.dk:8000/radio.mp3' ;;
   peace) open -b com.apple.Music 'https://peacefulpiano.stream.publicradio.org/peacefulpiano.aac' ;;
   rand) $BROWSER 'https://classicalmusiconly.com/community/tv/lucky/random' ;;
