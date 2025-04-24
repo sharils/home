@@ -7,6 +7,9 @@ matches:
   - trigger: Bt,.
     replace: Bluetooth
 
+  - trigger: Coscup,.
+    replace: COSCUP
+
   - trigger: Dnd,.
     replace: Do Not Disturb
 
