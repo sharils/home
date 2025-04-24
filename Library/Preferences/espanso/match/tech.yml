@@ -16,6 +16,9 @@ matches:
   - trigger: Ei,.
     replace: E Ink
 
+  - trigger: Jsdc,.
+    replace: JSDC
+
   - trigger: Oss,.
     replace: Open Source
 
