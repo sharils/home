@@ -61,6 +61,9 @@ matches:
   - trigger: ks,.
     replace: keyboard shortcuts
 
+  - trigger: lg,.
+    replace: lomography
+
   - trigger: noti,.
     replace: notification
 
