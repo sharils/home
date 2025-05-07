@@ -71,6 +71,8 @@ k() {
 
   font) shift && "$SHARILS_HOME/shell_plugins/k/font.sh" "$@" ;;
 
+  food) shift && "$SHARILS_HOME/shell_plugins/k/food.sh" "$@" ;;
+
   g) shift && "$SHARILS_HOME/shell_plugins/k/g.sh" "$@" ;;
 
   geneva) shift && "$SHARILS_HOME/shell_plugins/k/geneva.sh" "$@" ;;
