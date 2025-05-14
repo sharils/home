@@ -10,6 +10,9 @@ matches:
   - trigger: khauiau,.
     replace: 哭枵
 
+  - trigger: khimootsih,.
+    replace: 奇檬子
+
   - trigger: khiau,.
     replace: 巧
 
