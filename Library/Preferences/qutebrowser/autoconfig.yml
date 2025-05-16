@@ -101,6 +101,7 @@ settings:
     books.google.com.tw: true
     c.im: true
     data.gov.tw: true
+    deepai.org: true
     devdocs.io: true
     developer.mozilla.org: true
     docs.aws.amazon.com: true
