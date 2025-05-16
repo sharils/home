@@ -27,6 +27,8 @@ k() {
 
   b) shift && "$SHARILS_HOME/shell_plugins/k/b.sh" "$@" ;;
 
+  bar) shift && "$SHARILS_HOME/shell_plugins/k/bar.sh" "$@" ;;
+
   bind) shift && "$SHARILS_HOME/shell_plugins/k/bind.sh" "$@" ;;
 
   brew) shift && "$SHARILS_HOME/shell_plugins/k/brew.sh" "$@" ;;
@@ -153,8 +155,6 @@ k() {
   sdg) shift && "$SHARILS_HOME/shell_plugins/k/sdg.sh" "$@" ;;
 
   stat) shift && stat -x ~/Sync/KeePass/keepass.kdbx ;;
-
-  twba) shift && "$SHARILS_HOME/shell_plugins/k/twba.sh" "$@" ;;
 
   u) shift && "$SHARILS_HOME/shell_plugins/k/u.sh" "$@" ;;
 
