@@ -4,7 +4,12 @@
 
 bmi() {
   if [ $1 -eq 21 ] && [ $# -eq 2 ]; then
-    printf 'H: %s, W: %s–%s, BMI: %s' "$2" "$(bc --mathlib --expression="scale=2; 21*($2/100)^2")" "$(bc --mathlib --expression="scale=2; 21.7*($2/100)^2")" "$1"
+    printf 'H: %s, W: %s–%s %s, BMI: %s' \
+      "$2" \
+      "$(bc --mathlib --expression="scale=2; 21*($2/100)^2")" \
+      "$(bc --mathlib --expression="scale=2; 21.7*($2/100)^2")" \
+      "$(bc --mathlib --expression="scale=2; 21.35*($2/100)^2")" \
+      "$1"
 
   elif [ $1 -ne 21 ]; then
     cat <<'EOF'
