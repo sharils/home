@@ -65,6 +65,8 @@ k() {
 
   doctor) shift && "$SHARILS_HOME/shell_plugins/k/doctor.sh" "$@" ;;
 
+  dodecagram) shift && "$SHARILS_HOME/shell_plugins/k/dodecagram.sh" "$@" ;;
+
   dr) shift && "$SHARILS_HOME/shell_plugins/k/dr.sh" "$@" ;;
 
   e) $EDITOR "$@" ~/.config/karabiner/karabiner.json ;;
