@@ -4,7 +4,7 @@
 
 e() {
   case "$1" in
-  b) shift && $EDITOR "$@" "$TODO_DIR/backlog.md" ;;
+  b) shift && $EDITOR "$@" "$TODO_DIR/backlog.txt" ;;
   cfg) shift && $EDITOR "$@" ~/.todo.cfg ;;
   n) shift && $EDITOR "$@" "$TODO_DIR/note.md" ;;
   q) shift && $EDITOR "$@" "$TODO_DIR/QuickNote.md" ;;
