@@ -14,7 +14,7 @@ t() {
     fi
     shift && set -- "$cmd" "$@"
     case "$cmd" in
-    ls | list)
+    ls | list | s | stale)
       todo.sh "$@" | grep -v 'vim:filetype=todo'
       ;;
     *)
