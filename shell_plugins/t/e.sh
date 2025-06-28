@@ -4,10 +4,10 @@
 
 e() {
   case "$1" in
-  b) shift && $EDITOR "$@" "$TODO_DIR/backlog.txt" ;;
   cfg) shift && $EDITOR "$@" ~/.todo.cfg ;;
   n) shift && $EDITOR "$@" "$TODO_DIR/note.md" ;;
   q) shift && $EDITOR "$@" "$TODO_DIR/QuickNote.md" ;;
+  s) shift && $EDITOR "$@" "$TODO_DIR/stale.txt" ;;
   t) shift && $EDITOR "$@" "$TODO_FILE" ;;
   *[!0-9]*) $EDITOR "$TODO_DIR/$*.txt" ;;
   *)
