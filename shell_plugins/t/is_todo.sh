@@ -7,6 +7,8 @@ is_todo() {
 
   m) echo addm && return 0 ;;
 
+  pv) echo projectview && return 0 ;;
+
   r) echo replace && return 0 ;;
 
   z) echo archive && return 0 ;;
