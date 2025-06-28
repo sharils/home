@@ -158,6 +158,8 @@ k() {
 
   stat) shift && stat -x ~/Sync/KeePass/keepass.kdbx ;;
 
+  time) shift && "$SHARILS_HOME/shell_plugins/k/time.sh" "$@" ;;
+
   u) shift && "$SHARILS_HOME/shell_plugins/k/u.sh" "$@" ;;
 
   ubuntu) shift && "$SHARILS_HOME/shell_plugins/k/ubuntu.sh" "$@" ;;
