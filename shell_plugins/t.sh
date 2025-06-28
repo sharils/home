@@ -13,7 +13,14 @@ t() {
       return
     fi
     shift && set -- "$cmd" "$@"
-    todo.sh "$@"
+    case "$cmd" in
+    ls | list)
+      todo.sh "$@" | grep -v 'vim:filetype=todo'
+      ;;
+    *)
+      todo.sh "$@"
+      ;;
+    esac
     return
   fi
 
