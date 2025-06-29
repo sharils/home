@@ -147,6 +147,8 @@ k() {
 
   quality) shift && "$SHARILS_HOME/shell_plugins/k/quality.sh" "$@" ;;
 
+  rtm) shift && "$SHARILS_HOME/shell_plugins/k/rtm.sh" "$@" ;;
+
   # safe = posix & uri
   safe) echo '-.0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~' ;;
 
