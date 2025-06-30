@@ -1,8 +1,13 @@
 [
   {
-    "shortcut" : "ctrl+alt+cmd+a",
+    "appBundleURL" : "file:\/\/\/Applications\/EA%20Games\/The%20Sims%204.app\/",
+    "appDisplayName" : "The Sims 4",
+    "shortcut" : "ctrl+alt+cmd+4"
+  },
+  {
     "appBundleURL" : "file:\/\/\/System\/Applications\/QuickTime%20Player.app\/",
-    "appDisplayName" : "QuickTime Player"
+    "appDisplayName" : "QuickTime Player",
+    "shortcut" : "ctrl+alt+cmd+a"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Obsidian.app\/",
@@ -10,9 +15,19 @@
     "shortcut" : "ctrl+alt+cmd+b"
   },
   {
-    "shortcut" : "ctrl+alt+cmd+c",
-    "appBundleURL" : "file:\/\/\/Applications\/Chromium.app\/",
-    "appDisplayName" : "Chromium"
+    "appBundleURL" : "file:\/\/\/Applications\/Voice%20Tools.app\/",
+    "appDisplayName" : "Voice Tools",
+    "shortcut" : "ctrl+alt+cmd+c"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Dictionary.app\/",
+    "appDisplayName" : "Dictionary",
+    "shortcut" : "ctrl+alt+cmd+d"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Notes.app\/",
+    "appDisplayName" : "Notes",
+    "shortcut" : "ctrl+alt+cmd+e"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/Firefox.app\/",
@@ -20,63 +35,63 @@
     "shortcut" : "ctrl+alt+cmd+f"
   },
   {
-    "shortcut" : "ctrl+alt+cmd+i",
     "appBundleURL" : "file:\/\/\/Applications\/Timer.app\/",
-    "appDisplayName" : "Timer"
+    "appDisplayName" : "Timer",
+    "shortcut" : "ctrl+alt+cmd+i"
   },
   {
-    "shortcut" : "ctrl+alt+cmd+k",
     "appBundleURL" : "file:\/\/\/Applications\/KeePassXC.app\/",
-    "appDisplayName" : "KeePassXC"
+    "appDisplayName" : "KeePassXC",
+    "shortcut" : "ctrl+alt+cmd+k"
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Clock.app\/",
-    "shortcut" : "ctrl+alt+cmd+l",
-    "appDisplayName" : "Clock"
+    "appDisplayName" : "Clock",
+    "shortcut" : "ctrl+alt+cmd+l"
   },
   {
-    "appDisplayName" : "Music",
     "appBundleURL" : "file:\/\/\/System\/Applications\/Music.app\/",
+    "appDisplayName" : "Music",
     "shortcut" : "ctrl+alt+cmd+m"
   },
   {
-    "shortcut" : "ctrl+alt+cmd+n",
+    "appBundleURL" : "file:\/\/\/Applications\/LINE.app\/",
     "appDisplayName" : "LINE",
-    "appBundleURL" : "file:\/\/\/Applications\/LINE.app\/"
+    "shortcut" : "ctrl+alt+cmd+n"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/Opera.app\/",
     "appDisplayName" : "Opera",
-    "shortcut" : "ctrl+alt+cmd+o",
-    "appBundleURL" : "file:\/\/\/Applications\/Opera.app\/"
+    "shortcut" : "ctrl+alt+cmd+o"
   },
   {
-    "appDisplayName" : "Podcasts",
     "appBundleURL" : "file:\/\/\/System\/Applications\/Podcasts.app\/",
+    "appDisplayName" : "Podcasts",
     "shortcut" : "ctrl+alt+cmd+p"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Telegram.app\/",
-    "appDisplayName" : "Telegram",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Reminders.app\/",
+    "appDisplayName" : "Reminders",
     "shortcut" : "ctrl+alt+cmd+r"
   },
   {
-    "appDisplayName" : "iTerm",
-    "shortcut" : "ctrl+alt+cmd+t",
-    "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/"
+    "appBundleURL" : "file:\/\/\/Applications\/MonChats.app\/",
+    "appDisplayName" : "MonChats",
+    "shortcut" : "ctrl+alt+cmd+s"
   },
   {
+    "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/",
+    "appDisplayName" : "iTerm",
+    "shortcut" : "ctrl+alt+cmd+t"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/qutebrowser.app\/",
     "appDisplayName" : "qutebrowser",
-    "shortcut" : "ctrl+alt+cmd+u",
-    "appBundleURL" : "file:\/\/\/Applications\/qutebrowser.app\/"
+    "shortcut" : "ctrl+alt+cmd+u"
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Preview.app\/",
-    "shortcut" : "ctrl+alt+cmd+v",
-    "appDisplayName" : "Preview"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Applications\/Firefox%20Developer%20Edition.app\/",
-    "appDisplayName" : "Firefox Developer Edition",
-    "shortcut" : "ctrl+alt+cmd+x"
+    "appDisplayName" : "Preview",
+    "shortcut" : "ctrl+alt+cmd+v"
   }
 ]
