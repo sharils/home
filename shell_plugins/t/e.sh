@@ -7,7 +7,7 @@ e() {
   cfg) shift && $EDITOR "$@" ~/.todo.cfg ;;
   n) shift && $EDITOR "$@" "$TODO_DIR/note.md" ;;
   q) shift && $EDITOR "$@" "$TODO_DIR/QuickNote.md" ;;
-  s) shift && $EDITOR "$@" "$TODO_DIR/stale.txt" ;;
+  s) shift && $EDITOR "$@" -O "$TODO_DIR/stale.txt" "$TODO_DIR/note.md" ;;
   t) shift && $EDITOR "$@" "$TODO_FILE" ;;
   *[!0-9]*) $EDITOR "$TODO_DIR/$*.txt" ;;
   *)
