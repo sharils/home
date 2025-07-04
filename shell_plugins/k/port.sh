@@ -19,6 +19,7 @@ spanish flu 1918 1920
 log2 3010 30102
 days/month 3041 30416
 pi 3141 31415
+anything 3721
 acidity 4675
 log3 4771 47712
 card 8560 5398 10120
