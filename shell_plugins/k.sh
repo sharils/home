@@ -27,6 +27,8 @@ k() {
 
   b) shift && "$SHARILS_HOME/shell_plugins/k/b.sh" "$@" ;;
 
+  bank) shift && "$SHARILS_HOME/shell_plugins/k/bank.sh" "$@" ;;
+
   bar) shift && "$SHARILS_HOME/shell_plugins/k/bar.sh" "$@" ;;
 
   bind) shift && "$SHARILS_HOME/shell_plugins/k/bind.sh" "$@" ;;
