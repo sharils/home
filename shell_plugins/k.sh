@@ -63,6 +63,8 @@ k() {
 
   diet) shift && "$SHARILS_HOME/shell_plugins/k/diet.sh" "$@" ;;
 
+  digit) shift && "$SHARILS_HOME/shell_plugins/k/digit.sh" "$@" ;;
+
   distortion) shift && "$SHARILS_HOME/shell_plugins/k/distortion.sh" "$@" ;;
 
   doctor) shift && "$SHARILS_HOME/shell_plugins/k/doctor.sh" "$@" ;;
