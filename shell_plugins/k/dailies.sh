@@ -20,14 +20,13 @@ EOF
   echo
 
   cat <<'EOF'
-QD      ☀️  📧
-Q24     🪄
-QN      💉 🛒 🍽️ 🧪
-HS      👁️
-BID     😻 🚰 🚽 🩹
-TID     💊 🍛
-QID     😿
 8x/day  🥛
+QID     😿
+TID     💊 🍛
+BID     😻 🩹 🚰 🚽
+QD      🐤 💉 ☀️ 📧
+QN      🛒 🍽️ 🧪
+HS      👁️
 EOF
 
 }
