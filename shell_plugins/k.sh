@@ -53,7 +53,7 @@ k() {
 
   curl) shift && "$SHARILS_HOME/shell_plugins/k/curl.sh" "$@" ;;
 
-  d | dailies) shift && "$SHARILS_HOME/shell_plugins/k/dailies.sh" "$@" ;;
+  d) shift && "$SHARILS_HOME/shell_plugins/k/d.sh" "$@" ;;
 
   db) shift && "$SHARILS_HOME/shell_plugins/k/db.sh" "$@" ;;
 
