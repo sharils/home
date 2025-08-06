@@ -3,7 +3,7 @@
 [ -n "$SET_X" ] && set -x
 
 horoscope() {
-  printf '☉ ☽ ☿ ♀︎ ♂︎ ♃ ♄ ♅ ♆ ♇ ☊\n%s' "$K_HOROSCOPE"
+  printf '☉ ☽ ☿ ♀︎ ♂︎ ♃ ♄ ⛢ ♆ ♇ ☊\n%s' "$K_HOROSCOPE"
 }
 
 horoscope "$@"
