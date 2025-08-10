@@ -82,6 +82,11 @@ EOF
     return $?
     ;;
 
+  -y)
+    cal "$@"
+    return $?
+    ;;
+
   esac
 
   tmp="/tmp/${md5_url}_export.json"
