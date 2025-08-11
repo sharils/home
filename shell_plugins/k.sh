@@ -15,6 +15,8 @@ k() {
 
   12) shift && "$SHARILS_HOME/shell_plugins/k/12.sh" "$@" ;;
 
+  64) shift && "$SHARILS_HOME/shell_plugins/k/64.sh" "$@" ;;
+
   a4) shift && "$SHARILS_HOME/shell_plugins/k/a4.sh" "$@" ;;
 
   adhd) shift && "$SHARILS_HOME/shell_plugins/k/adhd.sh" "$@" ;;
