@@ -5,6 +5,7 @@
 e() {
   case "$1" in
   cfg) shift && $EDITOR "$@" ~/.todo.cfg ;;
+  k) shift && $EDITOR "$@" "$TODO_DIR/knowledge.md" ;;
   n) shift && $EDITOR "$@" "$TODO_DIR/note.md" ;;
   q) shift && $EDITOR "$@" "$TODO_DIR/QuickNote.md" ;;
   s) shift && $EDITOR "$@" -O "$TODO_FILE" "$TODO_DIR/stale.txt" "$TODO_DIR/note.md" ;;
