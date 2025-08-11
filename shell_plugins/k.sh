@@ -15,6 +15,8 @@ k() {
 
   12) shift && "$SHARILS_HOME/shell_plugins/k/12.sh" "$@" ;;
 
+  32) shift && "$SHARILS_HOME/shell_plugins/k/32.sh" "$@" ;;
+
   64) shift && "$SHARILS_HOME/shell_plugins/k/64.sh" "$@" ;;
 
   a4) shift && "$SHARILS_HOME/shell_plugins/k/a4.sh" "$@" ;;
@@ -26,8 +28,6 @@ k() {
   alnum) shift && "$SHARILS_HOME/shell_plugins/k/alnum.sh" "$@" ;;
 
   android) shift && "$SHARILS_HOME/shell_plugins/k/android.sh" "$@" ;;
-
-  b) shift && "$SHARILS_HOME/shell_plugins/k/b.sh" "$@" ;;
 
   bank) shift && "$SHARILS_HOME/shell_plugins/k/bank.sh" "$@" ;;
 
