@@ -73,7 +73,7 @@ k() {
 
   dr) shift && "$SHARILS_HOME/shell_plugins/k/dr.sh" "$@" ;;
 
-  e) $EDITOR "$@" ~/.config/karabiner/karabiner.json ;;
+  e) shift && "$SHARILS_HOME/shell_plugins/k/e.sh" "$@" ;;
 
   fib) shift && "$SHARILS_HOME/shell_plugins/k/fib.sh" "$@" ;;
 
