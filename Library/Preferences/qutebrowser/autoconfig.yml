@@ -60,6 +60,9 @@ settings:
     hexdocs.pm: true
     hn.algolia.com: true
     https://www.google.com.tw/maps?*: true
+    https://www.google.com.tw/search?*: true
+    https://www.google.com/search?*: true
+    https://www.google.com/sorry/*: true
     hub.docker.com: true
     jqplay.org: true
     lernu.net: true
@@ -126,8 +129,12 @@ settings:
     https://developers.google.com/search/docs/appearance/structured-data/*: true
     https://www.berkeleychurchill.com/software/android-pwgen/pwgen.html: true
     https://www.cloudflare.com/ssl/encrypted-sni/: true
-    https://www.google.com/maps?*: true
     https://www.google.com.tw/maps?*: true
+    https://www.google.com.tw/maps?*: true
+    https://www.google.com.tw/search?*: true
+    https://www.google.com/maps?*: true
+    https://www.google.com/search?*: true
+    https://www.google.com/sorry/*: true
     hub.docker.com: true
     info.nhi.gov.tw: true
     iq.opengenus.org: true
