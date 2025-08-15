@@ -11,6 +11,7 @@ rtm() {
 ~  Start Date
 *  Repeat
 =  Time Estimate
++  Given To
 // Note
 
 https://www.rememberthemilk.com/help/answer/basics-smartadd-howdoiuse
