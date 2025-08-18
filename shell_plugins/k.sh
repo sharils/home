@@ -155,6 +155,8 @@ k() {
 
   quality) shift && "$SHARILS_HOME/shell_plugins/k/quality.sh" "$@" ;;
 
+  rce) shift && "$SHARILS_HOME/shell_plugins/k/rce.sh" "$@" ;; # Ritual of the Calling of an Engineer
+
   rtm) shift && "$SHARILS_HOME/shell_plugins/k/rtm.sh" "$@" ;;
 
   # safe = posix & uri
