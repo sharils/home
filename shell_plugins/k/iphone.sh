@@ -35,6 +35,9 @@ iphone() {
 2022-10-07  iPhone 14 Plus
 2023-09-22  iPhone 15 / 15 Plus
 2023-09-22  iPhone 15 Pro / 15 Pro Max
+2024-09-09  iPhone 16 / 16 Plus
+2024-09-09  iPhone 16 Pro / 16 Pro Max
+2025-02-19  iPhone 16e
 EOF
 }
 
