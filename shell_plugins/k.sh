@@ -135,6 +135,8 @@ k() {
 
   o) shift && "$SHARILS_HOME/shell_plugins/k/o.sh" "$@" ;;
 
+  oote) shift && "$SHARILS_HOME/shell_plugins/k/oote.sh" "$@" ;; # Obligation of the Engineer
+
   oxymoron) shift && "$SHARILS_HOME/shell_plugins/k/oxymoron.sh" "$@" ;;
 
   pareto) shift && "$SHARILS_HOME/shell_plugins/k/pareto.sh" "$@" ;;
