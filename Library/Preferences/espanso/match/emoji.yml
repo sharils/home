@@ -31,6 +31,9 @@ matches:
   - trigger: period,.
     replace: 🫳🎤
 
+  - trigger: run,.
+    replace: 🏃🏻‍♀️🦼
+
   - trigger: sayit,.
     replace: 🎤🪿
 
