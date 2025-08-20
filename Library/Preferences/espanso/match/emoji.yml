@@ -16,6 +16,9 @@ matches:
   - trigger: end,.
     replace: 🤸🏻‍♀️🚉
 
+  - trigger: fast,.
+    replace: 👩🏻‍🦼💨
+
   - trigger: gah,.
     replace: 🧓🏻🕶️🤏🏻
 
