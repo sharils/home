@@ -31,6 +31,9 @@ matches:
   - trigger: gah,.
     replace: 🧓🏻🕶️🤏🏻
 
+  - trigger: know,.
+    replace: 🌚🥂🌝
+
   - trigger: look,.
     replace: 🔭🦔
 
