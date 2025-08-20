@@ -55,6 +55,9 @@ matches:
   - trigger: sip,.
     replace: ☕🤏
 
+  - trigger: snack,.
+    replace: 🧃🐢
+
   - trigger: wait,.
     replace: 🤔🤚
 
