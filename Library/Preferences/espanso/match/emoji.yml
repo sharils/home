@@ -3,3 +3,6 @@ matches:
 
   - trigger: ai,.
     replace: 🧞‍♀️🧞🧞‍♂️
+
+  - trigger: nervous,.
+    replace: 👉👈
