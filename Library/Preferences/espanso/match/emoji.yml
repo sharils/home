@@ -7,6 +7,9 @@ matches:
   - trigger: beg,.
     replace: 🧎🏻‍♀️🚶🏻‍♀️🦽👩🏻‍🦽
 
+  - trigger: bye,.
+    replace: 🤸🏻‍♀️🕳️
+
   - trigger: nervous,.
     replace: 👉👈
 
