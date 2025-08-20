@@ -16,6 +16,9 @@ matches:
   - trigger: die,.
     replace: 🫃🏻🤛🏻
 
+  - trigger: done,.
+    replace: 👉🏻🙄👈🏻
+
   - trigger: end,.
     replace: 🤸🏻‍♀️🚉
 
