@@ -9,3 +9,6 @@ matches:
 
   - trigger: noted,.
     replace: 📃✍️🧐
+
+  - trigger: wait,.
+    replace: 🤔🤚
