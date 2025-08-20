@@ -82,6 +82,9 @@ matches:
   - trigger: well,.
     replace: ☝️🤓
 
+  - trigger: what,.
+    replace: 😎🤏🏻😲🕶️🤏🏻
+
   - trigger: wig,.
     replace: 👩🏻‍🦱🤏🏻👩🏻‍🦲
 
