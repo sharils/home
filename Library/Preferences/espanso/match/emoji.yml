@@ -67,6 +67,9 @@ matches:
   - trigger: period,.
     replace: 🫳🎤
 
+  - trigger: rainbow,.
+    replace: ❤️🧡💛💚💙💜
+
   - trigger: run,.
     replace: 🏃🏻‍♀️🦼
 
