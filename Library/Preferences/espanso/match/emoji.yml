@@ -13,6 +13,9 @@ matches:
   - trigger: bye,.
     replace: 🤸🏻‍♀️🕳️
 
+  - trigger: end,.
+    replace: 🤸🏻‍♀️🚉
+
   - trigger: gah,.
     replace: 🧓🏻🕶️🤏🏻
 
