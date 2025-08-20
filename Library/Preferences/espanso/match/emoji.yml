@@ -22,6 +22,9 @@ matches:
   - trigger: out,.
     replace: 🚪🚶🏻‍♀️
 
+  - trigger: period,.
+    replace: 🫳🎤
+
   - trigger: sip,.
     replace: ☕🤏
 
