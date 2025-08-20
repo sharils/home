@@ -37,6 +37,9 @@ matches:
   - trigger: know,.
     replace: 🌚🥂🌝
 
+  - trigger: listening,.
+    replace: ✋🏻😌🤚🏻
+
   - trigger: look,.
     replace: 🔭🦔
 
