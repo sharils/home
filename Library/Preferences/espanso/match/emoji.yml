@@ -19,6 +19,9 @@ matches:
   - trigger: noted,.
     replace: 📃✍️🧐
 
+  - trigger: noway,.
+    replace: 🕳️👩🏻‍🦯
+
   - trigger: out,.
     replace: 🚪🚶🏻‍♀️
 
