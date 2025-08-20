@@ -19,6 +19,11 @@ matches:
   - trigger: fast,.
     replace: 👩🏻‍🦼💨
 
+  - trigger: funny,.
+    replace: |
+      🪂
+      🕳️
+
   - trigger: gah,.
     replace: 🧓🏻🕶️🤏🏻
 
