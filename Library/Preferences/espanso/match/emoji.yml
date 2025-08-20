@@ -7,6 +7,9 @@ matches:
   - trigger: nervous,.
     replace: 👉👈
 
+  - trigger: nvm,.
+    replace: ☝️😮✊😐
+
   - trigger: noted,.
     replace: 📃✍️🧐
 
