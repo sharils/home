@@ -13,6 +13,9 @@ matches:
   - trigger: bye,.
     replace: 🤸🏻‍♀️🕳️
 
+  - trigger: cheers,.
+    replace: 🌚🥂🌝
+
   - trigger: die,.
     replace: 🫃🏻🤛🏻
 
@@ -39,9 +42,6 @@ matches:
 
   - trigger: grief,.
     replace: 🖤🥀
-
-  - trigger: know,.
-    replace: 🌚🥂🌝
 
   - trigger: listening,.
     replace: ✋🏻😌🤚🏻
