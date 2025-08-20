@@ -29,7 +29,10 @@ matches:
     replace: 👩🏻‍🦼💨
 
   - trigger: funny,.
-    replace: 🪂🕳️
+    replace: |
+      🪂
+      🕳️
+    force_clipboard: true
 
   - trigger: gah,.
     replace: 🧓🏻🕶️🤏🏻
