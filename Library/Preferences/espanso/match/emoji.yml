@@ -10,6 +10,9 @@ matches:
   - trigger: bye,.
     replace: 🤸🏻‍♀️🕳️
 
+  - trigger: mixed,.
+    replace: 🙄🤝😐
+
   - trigger: nervous,.
     replace: 👉👈
 
