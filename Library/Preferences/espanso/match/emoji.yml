@@ -34,6 +34,9 @@ matches:
   - trigger: gah,.
     replace: 🧓🏻🕶️🤏🏻
 
+  - trigger: grief,.
+    replace: 🖤🥀
+
   - trigger: know,.
     replace: 🌚🥂🌝
 
