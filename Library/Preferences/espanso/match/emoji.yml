@@ -28,6 +28,9 @@ matches:
   - trigger: period,.
     replace: 🫳🎤
 
+  - trigger: sayit,.
+    replace: 🎤🪿
+
   - trigger: sip,.
     replace: ☕🤏
 
