@@ -88,6 +88,12 @@ matches:
   - trigger: sip,.
     replace: ☕🤏
 
+  - trigger: sleeping,.
+    replace: |
+      💤
+      🛌
+    force_clipboard: true
+
   - trigger: snack,.
     replace: 🧃🐢
 
