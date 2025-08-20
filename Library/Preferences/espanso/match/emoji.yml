@@ -10,5 +10,11 @@ matches:
   - trigger: noted,.
     replace: 📃✍️🧐
 
+  - trigger: sip,.
+    replace: ☕🤏
+
   - trigger: wait,.
     replace: 🤔🤚
+
+  - trigger: well,.
+    replace: ☝️🤓
