@@ -13,6 +13,9 @@ matches:
   - trigger: noted,.
     replace: 📃✍️🧐
 
+  - trigger: out,.
+    replace: 🚪🚶🏻‍♀️
+
   - trigger: sip,.
     replace: ☕🤏
 
