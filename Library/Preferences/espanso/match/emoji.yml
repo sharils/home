@@ -71,3 +71,6 @@ matches:
 
   - trigger: well,.
     replace: ☝️🤓
+
+  - trigger: zzz,.
+    replace: 🛏️🚶🏻‍♀️💤
