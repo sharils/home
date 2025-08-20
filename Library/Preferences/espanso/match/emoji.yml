@@ -6,3 +6,6 @@ matches:
 
   - trigger: nervous,.
     replace: 👉👈
+
+  - trigger: noted,.
+    replace: 📃✍️🧐
