@@ -79,5 +79,8 @@ matches:
   - trigger: well,.
     replace: ☝️🤓
 
+  - trigger: wig,.
+    replace: 👩🏻‍🦱🤏🏻👩🏻‍🦲
+
   - trigger: zzz,.
     replace: 🛏️🚶🏻‍♀️💤
