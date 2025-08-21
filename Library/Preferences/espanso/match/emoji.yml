@@ -73,6 +73,9 @@ matches:
   - trigger: period,.
     replace: 🫳🎤
 
+  - trigger: player,.
+    replace: 🧜🏻‍♀️🧜🏻🧜🏻‍♂️
+
   - trigger: rainbow,.
     replace: ❤️🧡💛💚💙💜
 
