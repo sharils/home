@@ -109,5 +109,8 @@ matches:
   - trigger: wig,.
     replace: 👩🏻‍🦱🤏🏻👩🏻‍🦲
 
+  - trigger: yes,.
+    replace: 🙆🏻‍♀️🙆🏻🙆🏻‍♂️
+
   - trigger: zzz,.
     replace: 🛏️🚶🏻‍♀️💤
