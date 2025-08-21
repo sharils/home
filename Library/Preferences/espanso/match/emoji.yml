@@ -55,6 +55,9 @@ matches:
   - trigger: mixed,.
     replace: 🙄🤝😐
 
+  - trigger: mfw,.
+    replace: 🤦🏻‍♀️🤦🏻🤦🏻‍♂️
+
   - trigger: nervous,.
     replace: 👉🏻👈🏻
 
