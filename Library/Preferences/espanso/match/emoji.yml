@@ -49,6 +49,9 @@ matches:
   - trigger: look,.
     replace: 🔭🦔
 
+  - trigger: me,.
+    replace: ↖️
+
   - trigger: mixed,.
     replace: 🙄🤝😐
 
