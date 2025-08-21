@@ -115,6 +115,9 @@ matches:
   - trigger: snack,.
     replace: 🧃🐢
 
+  - trigger: this,.
+    replace: ☝🏻☝🏻☝🏻
+
   - trigger: wait,.
     replace: 🤔🤚
 
