@@ -13,6 +13,9 @@ matches:
   - trigger: bye,.
     replace: 🤸🏻‍♀️🕳️
 
+  - trigger: call,.
+    replace: 🤙🏻
+
   - trigger: cheers,.
     replace: 🌚🥂🌝
 
