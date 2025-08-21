@@ -58,6 +58,9 @@ matches:
   - trigger: nvm,.
     replace: ☝️😮✊😐
 
+  - trigger: no,.
+    replace: 🙅🏻‍♀️🙅🏻🙅🏻‍♂️
+
   - trigger: noted,.
     replace: 📃✍️🧐
 
