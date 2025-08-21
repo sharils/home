@@ -85,6 +85,9 @@ matches:
   - trigger: sayit,.
     replace: 🎤🪿
 
+  - trigger: sex,.
+    replace: 👉🏻👌🏻
+
   - trigger: shocked,.
     replace: 👁️👄👁️
 
