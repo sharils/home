@@ -82,6 +82,9 @@ matches:
   - trigger: rainbow,.
     replace: ❤️🧡💛💚💙💜
 
+  - trigger: raise,.
+    replace: 🙋🏻‍♀️🙋🏻🙋🏻‍♂️
+
   - trigger: run,.
     replace: 🏃🏻‍♀️🦼
 
