@@ -37,6 +37,9 @@ matches:
   - trigger: end,.
     replace: 🤸🏻‍♀️🚉
 
+  - trigger: eng,.
+    replace: 👩🏻‍💻🧑🏻‍💻👨🏻‍💻
+
   - trigger: envy,.
     replace: 🪡🧵🪵
 
