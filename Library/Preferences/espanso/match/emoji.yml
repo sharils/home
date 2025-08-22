@@ -151,5 +151,8 @@ matches:
   - trigger: yes,.
     replace: 🙆🏻‍♀️🙆🏻🙆🏻‍♂️
 
+  - trigger: you,.
+    replace: 🫵🏻😂
+
   - trigger: zzz,.
     replace: 🛏️🚶🏻‍♀️💤
