@@ -70,6 +70,9 @@ matches:
   - trigger: look,.
     replace: 🔭🦔
 
+  - trigger: love,.
+    replace: ❤️🧡💛💚💙💜
+
   - trigger: me,.
     replace: ↖️
 
@@ -102,9 +105,6 @@ matches:
 
   - trigger: player,.
     replace: 🧜🏻‍♀️🧜🏻🧜🏻‍♂️
-
-  - trigger: rainbow,.
-    replace: ❤️🧡💛💚💙💜
 
   - trigger: raise,.
     replace: 🙋🏻‍♀️🙋🏻🙋🏻‍♂️
