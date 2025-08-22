@@ -34,6 +34,9 @@ matches:
   - trigger: caught,.
     replace: 😈📸
 
+  - trigger: pretty,.
+    replace: 😌💅🏻
+
   - trigger: popcorn,.
     replace: 🍿🤏🏻😯
 
