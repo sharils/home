@@ -22,6 +22,9 @@ matches:
   - trigger: cold,.
     replace: ❄️🧊⛄️
 
+  - trigger: cottagecore,.
+    replace: 🌈🍄🍃
+
   - trigger: die,.
     replace: 🫃🏻🤛🏻
 
