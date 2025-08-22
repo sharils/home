@@ -55,12 +55,6 @@ matches:
   - trigger: fast,.
     replace: 👩🏻‍🦼💨
 
-  - trigger: funny,.
-    replace: |
-      🪂
-      🕳️
-    force_clipboard: true
-
   - trigger: gah,.
     replace: 🧓🏻🕶️🤏🏻
 
@@ -99,6 +93,12 @@ matches:
 
   - trigger: noway,.
     replace: 🕳️👩🏻‍🦯
+
+  - trigger: oops,.
+    replace: |
+      🪂
+      🕳️
+    force_clipboard: true
 
   - trigger: out,.
     replace: 🚪🚶🏻‍♀️
