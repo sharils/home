@@ -112,6 +112,9 @@ matches:
   - trigger: shocked,.
     replace: 👁️👄👁️
 
+  - trigger: shutup,.
+    replace: ☺️👉🏻🔪
+
   - trigger: sip,.
     replace: ☕🤏
 
