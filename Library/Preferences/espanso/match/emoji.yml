@@ -28,6 +28,9 @@ matches:
   - trigger: done,.
     replace: 👉🏻🙄👈🏻
 
+  - trigger: dontcare,.
+    replace: 😃🖕🏻
+
   - trigger: end,.
     replace: 🤸🏻‍♀️🚉
 
