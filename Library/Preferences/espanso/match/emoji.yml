@@ -19,6 +19,9 @@ matches:
   - trigger: cheers,.
     replace: 🌚🥂🌝
 
+  - trigger: cold,.
+    replace: ❄️🧊⛄️
+
   - trigger: die,.
     replace: 🫃🏻🤛🏻
 
