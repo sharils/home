@@ -34,6 +34,9 @@ matches:
   - trigger: end,.
     replace: 🤸🏻‍♀️🚉
 
+  - trigger: envy,.
+    replace: 🪡🧵🪵
+
   - trigger: caught,.
     replace: 😈📸
 
