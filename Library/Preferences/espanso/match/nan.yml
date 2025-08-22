@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: buephokkephok,.
+    replace: 袂博假博
+
   - trigger: hiantsusi,.
     replace: 現此時
 
