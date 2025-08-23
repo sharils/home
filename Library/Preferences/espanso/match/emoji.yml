@@ -49,6 +49,9 @@ matches:
   - trigger: dontcare,.
     replace: 😃🖕🏻
 
+  - trigger: drop,.
+    replace: 🥚🦅
+
   - trigger: easy,.
     replace: 🫳🫴
 
