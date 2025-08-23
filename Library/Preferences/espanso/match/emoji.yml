@@ -130,6 +130,9 @@ matches:
   - trigger: shocked,.
     replace: 👁️👄👁️
 
+  - trigger: shopping,.
+    replace: 🛒🐛
+
   - trigger: shutup,.
     replace: ☺️👉🏻🔪
 
