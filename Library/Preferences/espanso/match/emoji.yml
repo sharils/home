@@ -40,6 +40,9 @@ matches:
   - trigger: die,.
     replace: 🫃🏻🤛🏻
 
+  - trigger: dizzy,.
+    replace: 😵💫🚢
+
   - trigger: done,.
     replace: 👉🏻🙄👈🏻
 
