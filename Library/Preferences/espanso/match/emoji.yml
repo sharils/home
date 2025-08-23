@@ -79,6 +79,9 @@ matches:
   - trigger: look,.
     replace: 🔭🦔
 
+  - trigger: lose,.
+    replace: 📖💡
+
   - trigger: love,.
     replace: ❤️🧡💛💚💙💜
 
