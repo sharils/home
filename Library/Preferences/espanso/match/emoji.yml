@@ -94,6 +94,9 @@ matches:
   - trigger: huh,.
     replace: 🐛🈴
 
+  - trigger: indeed,.
+    replace: 🐦🪨
+
   - trigger: listening,.
     replace: ✋🏻😌🤚🏻
 
