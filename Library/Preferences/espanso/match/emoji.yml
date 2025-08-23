@@ -67,6 +67,9 @@ matches:
   - trigger: pretty,.
     replace: 😌💅🏻
 
+  - trigger: promote,.
+    replace: ❤️➕✈️
+
   - trigger: popcorn,.
     replace: 🍿🤏🏻😯
 
