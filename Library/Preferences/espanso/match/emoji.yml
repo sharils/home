@@ -166,6 +166,9 @@ matches:
   - trigger: snack,.
     replace: 🧃🐢
 
+  - trigger: stress,.
+    replace: 🦆🍐🖐️
+
   - trigger: this,.
     replace: ☝🏻☝🏻☝🏻
 
