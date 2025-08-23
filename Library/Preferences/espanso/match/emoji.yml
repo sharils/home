@@ -70,6 +70,9 @@ matches:
   - trigger: grief,.
     replace: 🖤🥀
 
+  - trigger: happy,.
+    replace: 🤲❤️
+
   - trigger: huh,.
     replace: 🐛🈴
 
