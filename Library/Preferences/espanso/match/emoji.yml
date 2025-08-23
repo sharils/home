@@ -151,6 +151,9 @@ matches:
   - trigger: wait,.
     replace: 🤔🤚
 
+  - trigger: wake,.
+    replace: 🛌🤺
+
   - trigger: warn,.
     replace: 🧍🏻‍♀️🚗💨
 
