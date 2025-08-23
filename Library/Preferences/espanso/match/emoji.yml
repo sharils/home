@@ -148,6 +148,9 @@ matches:
   - trigger: wait,.
     replace: 🤔🤚
 
+  - trigger: warn,.
+    replace: 🧍🏻‍♀️🚗💨
+
   - trigger: well,.
     replace: ☝️🤓
 
