@@ -10,6 +10,9 @@ matches:
   - trigger: brb,.
     replace: 👩🏻‍💻🧴
 
+  - trigger: breached,.
+    replace: 🏚️
+
   - trigger: bye,.
     replace: 🤸🏻‍♀️🕳️
 
@@ -139,12 +142,6 @@ matches:
   - trigger: sip,.
     replace: ☕🤏
 
-  - trigger: sleeping,.
-    replace: |
-      💤
-      🛌
-    force_clipboard: true
-
   - trigger: snack,.
     replace: 🧃🐢
 
@@ -176,4 +173,7 @@ matches:
     replace: 🫵🏻😂
 
   - trigger: zzz,.
-    replace: 🛏️🚶🏻‍♀️💤
+    replace: |
+      💤
+      🛌🛏️🚶🏻‍♀️
+    force_clipboard: true
