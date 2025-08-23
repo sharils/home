@@ -58,6 +58,9 @@ matches:
   - trigger: gah,.
     replace: 🧓🏻🕶️🤏🏻
 
+  - trigger: getout,.
+    replace: 😃👉🏻🚪
+
   - trigger: grief,.
     replace: 🖤🥀
 
