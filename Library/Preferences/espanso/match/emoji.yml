@@ -172,6 +172,9 @@ matches:
   - trigger: stress,.
     replace: 🦆🍐🖐️
 
+  - trigger: thx,.
+    replace: 🦀🦀
+
   - trigger: this,.
     replace: ☝🏻☝🏻☝🏻
 
