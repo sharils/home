@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: agree,.
+    replace: 🍓❌
+
   - trigger: ai,.
     replace: 🧞‍♀️🧞🧞‍♂️
 
