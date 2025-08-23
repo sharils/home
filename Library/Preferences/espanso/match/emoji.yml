@@ -4,6 +4,9 @@ matches:
   - trigger: ai,.
     replace: 🧞‍♀️🧞🧞‍♂️
 
+  - trigger: anxious,.
+    replace: 🍌🟢
+
   - trigger: beg,.
     replace: 🧎🏻‍♀️🚶🏻‍♀️🦽👩🏻‍🦽
 
