@@ -34,6 +34,9 @@ matches:
   - trigger: cottagecore,.
     replace: 🌈🍄🍃
 
+  - trigger: darn,.
+    replace: ✊🏻🌿
+
   - trigger: die,.
     replace: 🫃🏻🤛🏻
 
