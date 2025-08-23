@@ -40,6 +40,9 @@ matches:
   - trigger: dontcare,.
     replace: 😃🖕🏻
 
+  - trigger: easy,.
+    replace: 🫳🫴
+
   - trigger: end,.
     replace: 🤸🏻‍♀️🚉
 
