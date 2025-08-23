@@ -67,6 +67,9 @@ matches:
   - trigger: grief,.
     replace: 🖤🥀
 
+  - trigger: huh,.
+    replace: 🐛🈴
+
   - trigger: listening,.
     replace: ✋🏻😌🤚🏻
 
