@@ -13,6 +13,9 @@ matches:
   - trigger: anxious,.
     replace: 🍌🟢
 
+  - trigger: ass,.
+    replace: 💋🐴
+
   - trigger: beg,.
     replace: 🧎🏻‍♀️🚶🏻‍♀️🦽👩🏻‍🦽
 
