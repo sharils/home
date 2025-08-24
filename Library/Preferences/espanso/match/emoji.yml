@@ -223,6 +223,9 @@ matches:
   - trigger: stress,.
     replace: 🦆🍐🖐️
 
+  - trigger: tea,.
+    replace: 🙅🏻‍♀️☕️
+
   - trigger: thx,.
     replace: 🦀🦀
 
