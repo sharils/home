@@ -52,6 +52,9 @@ matches:
   - trigger: dizzy,.
     replace: 😵💫🚢
 
+  - trigger: doghouse,.
+    replace: 🐶🏡
+
   - trigger: done,.
     replace: 👉🏻🙄👈🏻
 
