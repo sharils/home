@@ -40,6 +40,9 @@ matches:
   - trigger: cottagecore,.
     replace: 🌈🍄🍃
 
+  - trigger: cry,.
+    replace: 😭🏊🏻‍♀️
+
   - trigger: darn,.
     replace: ✊🏻🌿
 
