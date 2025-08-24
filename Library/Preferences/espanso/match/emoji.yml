@@ -22,6 +22,9 @@ matches:
   - trigger: breached,.
     replace: 🏚️
 
+  - trigger: bs,.
+    replace: 🚫⏰🐂💩
+
   - trigger: bye,.
     replace: 🤸🏻‍♀️🕳️
 
