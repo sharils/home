@@ -214,6 +214,9 @@ matches:
   - trigger: sayit,.
     replace: 🎤🪿
 
+  - trigger: screw,.
+    replace: 🔩😒
+
   - trigger: sex,.
     replace: 👉🏻👌🏻
 
