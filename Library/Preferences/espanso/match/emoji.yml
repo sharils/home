@@ -19,6 +19,9 @@ matches:
   - trigger: beg,.
     replace: 🧎🏻‍♀️🚶🏻‍♀️🦽👩🏻‍🦽
 
+  - trigger: bite,.
+    replace: 🚫😬👋🏻🥘
+
   - trigger: brb,.
     replace: 👩🏻‍💻🧴
 
