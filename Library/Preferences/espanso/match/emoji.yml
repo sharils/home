@@ -124,6 +124,9 @@ matches:
   - trigger: grief,.
     replace: 🖤🥀
 
+  - trigger: gtfo,.
+    replace: 🚪🏃🏻‍♀️💨
+
   - trigger: hand,.
     replace: 💁🏻‍♀️🤚🏻
 
