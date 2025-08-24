@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: 5,.
+    replace: 5️⃣5️⃣5️⃣5️⃣5️⃣
+
   - trigger: agree,.
     replace: 🍓❌
 
