@@ -166,6 +166,9 @@ matches:
   - trigger: raise,.
     replace: 🙋🏻‍♀️🙋🏻🙋🏻‍♂️
 
+  - trigger: read,.
+    replace: 😭📕👀
+
   - trigger: run,.
     replace: 🏃🏻‍♀️🦼
 
