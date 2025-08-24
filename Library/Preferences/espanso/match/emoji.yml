@@ -208,6 +208,9 @@ matches:
   - trigger: what,.
     replace: 😎🤏🏻😲🕶️🤏🏻
 
+  - trigger: white,.
+    replace: 🤍☁️⛸️🥛🐮🐚
+
   - trigger: wig,.
     replace: 👩🏻‍🦱🤏🏻👩🏻‍🦲
 
