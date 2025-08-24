@@ -118,6 +118,9 @@ matches:
   - trigger: grief,.
     replace: 🖤🥀
 
+  - trigger: hand,.
+    replace: 💁🏻‍♀️🤚🏻
+
   - trigger: happy,.
     replace: 🤲❤️
 
