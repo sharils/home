@@ -46,6 +46,9 @@ matches:
   - trigger: cottagecore,.
     replace: 🌈🍄🍃
 
+  - trigger: cloud,.
+    replace: ☁️🙆🏻‍♀️☁️
+
   - trigger: cry,.
     replace: 😭🏊🏻‍♀️
 
