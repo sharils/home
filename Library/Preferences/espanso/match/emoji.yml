@@ -55,6 +55,9 @@ matches:
   - trigger: drop,.
     replace: 🥚🦅
 
+  - trigger: dump,.
+    replace: 🚫😎💡
+
   - trigger: easy,.
     replace: 🫳🫴
 
