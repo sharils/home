@@ -70,6 +70,9 @@ matches:
   - trigger: dontcare,.
     replace: 😃🖕🏻
 
+  - trigger: doorknob,.
+    replace: 😒❓🚪
+
   - trigger: drop,.
     replace: 🥚🦅
 
