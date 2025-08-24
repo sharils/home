@@ -32,7 +32,7 @@ matches:
     replace: 🌚🥂🌝
 
   - trigger: cold,.
-    replace: ❄️🧊⛄️
+    replace: 😫❄️
 
   - trigger: cottagecore,.
     replace: 🌈🍄🍃
