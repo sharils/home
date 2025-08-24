@@ -199,6 +199,9 @@ matches:
   - trigger: this,.
     replace: ☝🏻☝🏻☝🏻
 
+  - trigger: tough,.
+    replace: 🗿😔🗿
+
   - trigger: wait,.
     replace: 🤔🤚
 
