@@ -82,6 +82,9 @@ matches:
   - trigger: caught,.
     replace: 😈📸
 
+  - trigger: pig,.
+    replace: ⏰🐖🛫
+
   - trigger: pretty,.
     replace: 😌💅🏻
 
