@@ -139,6 +139,9 @@ matches:
   - trigger: indeed,.
     replace: 🐦🪨
 
+  - trigger: inshit,.
+    replace: 🏊🏻‍♀️💩
+
   - trigger: listening,.
     replace: ✋🏻😌🤚🏻
 
