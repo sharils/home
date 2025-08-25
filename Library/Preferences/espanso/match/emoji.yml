@@ -256,6 +256,9 @@ matches:
   - trigger: tough,.
     replace: 🗿😔🗿
 
+  - trigger: vampire,.
+    replace: 🧛🏻‍♀️🧛🏻🧛🏻‍♂️
+
   - trigger: wait,.
     replace: 🤔🤚
 
