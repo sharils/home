@@ -277,6 +277,9 @@ matches:
   - trigger: snack,.
     replace: 🧃🐢
 
+  - trigger: speechless,.
+    replace: 😶 💬
+
   - trigger: stabbed,.
     replace: 🔪❤️
 
