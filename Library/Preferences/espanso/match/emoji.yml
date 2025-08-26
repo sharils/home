@@ -334,6 +334,9 @@ matches:
   - trigger: vampire,.
     replace: 🧛🏻‍♀️🧛🏻🧛🏻‍♂️
 
+  - trigger: vomit,.
+    replace: 🤢🤮
+
   - trigger: wait,.
     replace: 🤔🤚
 
