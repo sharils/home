@@ -322,6 +322,9 @@ matches:
   - trigger: tea,.
     replace: 🙅🏻‍♀️☕️
 
+  - trigger: then,.
+    replace: ➡️
+
   - trigger: this,.
     replace: ☝🏻☝🏻☝🏻
 
