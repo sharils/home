@@ -139,6 +139,9 @@ matches:
   - trigger: getout,.
     replace: 😃👉🏻🚪
 
+  - trigger: gone,.
+    replace: 🕳️🎢
+
   - trigger: grief,.
     replace: 🖤🥀
 
