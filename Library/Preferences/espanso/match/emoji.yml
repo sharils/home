@@ -112,6 +112,9 @@ matches:
   - trigger: pretty,.
     replace: 😌💅🏻
 
+  - trigger: promise,.
+    replace: ✖️❤️
+
   - trigger: promote,.
     replace: ❤️➕✈️
 
