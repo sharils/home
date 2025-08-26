@@ -52,6 +52,9 @@ matches:
   - trigger: cheers,.
     replace: 🌚🥂🌝
 
+  - trigger: chef,.
+    replace: 😚🤌
+
   - trigger: clown,.
     replace: 🤡🔊
 
