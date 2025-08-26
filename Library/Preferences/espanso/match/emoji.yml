@@ -322,11 +322,11 @@ matches:
   - trigger: tea,.
     replace: 🙅🏻‍♀️☕️
 
-  - trigger: thx,.
-    replace: 🦀🦀
-
   - trigger: this,.
     replace: ☝🏻☝🏻☝🏻
+
+  - trigger: thx,.
+    replace: 🦀🦀
 
   - trigger: train,.
     replace: 🚂💭🚫🧐
