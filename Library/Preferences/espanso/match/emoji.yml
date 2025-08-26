@@ -49,6 +49,9 @@ matches:
   - trigger: cheers,.
     replace: 🌚🥂🌝
 
+  - trigger: clown,.
+    replace: 🤡🔊
+
   - trigger: cold,.
     replace: 😫❄️
 
