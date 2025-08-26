@@ -190,6 +190,9 @@ matches:
   - trigger: inshit,.
     replace: 🏊🏻‍♀️💩
 
+  - trigger: irish,.
+    replace: 😐😶😶‍🌫️🫥
+
   - trigger: listening,.
     replace: ✋🏻😌🤚🏻
 
