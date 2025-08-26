@@ -283,6 +283,9 @@ matches:
   - trigger: sex,.
     replace: 👉🏻👌🏻
 
+  - trigger: shh,.
+    replace: 🤫🤐
+
   - trigger: shocked,.
     replace: 👁️👄👁️
 
