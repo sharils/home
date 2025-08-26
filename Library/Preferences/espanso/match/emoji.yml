@@ -16,6 +16,9 @@ matches:
   - trigger: alien,.
     replace: 🛸👽
 
+  - trigger: angry,.
+    replace: 👿🤬😡😠💢😤
+
   - trigger: anxious,.
     replace: 🍌🟢
 
