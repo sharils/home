@@ -37,6 +37,9 @@ matches:
   - trigger: blind,.
     replace: 🕳️👩🏻‍🦯
 
+  - trigger: bonk,.
+    replace: 🧎🏻‍♀️🏌🏻‍♀️
+
   - trigger: brb,.
     replace: 👩🏻‍💻🧴
 
