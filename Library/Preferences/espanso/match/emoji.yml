@@ -373,5 +373,5 @@ matches:
   - trigger: zzz,.
     replace: |
       💤
-      🛌🛏️🚶🏻‍♀️
+      🛌
     force_clipboard: true
