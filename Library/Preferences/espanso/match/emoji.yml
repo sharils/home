@@ -196,6 +196,9 @@ matches:
   - trigger: noted,.
     replace: 📃✍️🧐
 
+  - trigger: oops,.
+    replace: 🤦🏻‍♀️🤷🏻‍♀️
+
   - trigger: out,.
     replace: 🚪🚶🏻‍♀️
 
