@@ -22,6 +22,9 @@ matches:
   - trigger: bite,.
     replace: 🚫😬👋🏻🥘
 
+  - trigger: blind,.
+    replace: 🕳️👩🏻‍🦯
+
   - trigger: brb,.
     replace: 👩🏻‍💻🧴
 
@@ -186,9 +189,6 @@ matches:
 
   - trigger: noted,.
     replace: 📃✍️🧐
-
-  - trigger: noway,.
-    replace: 🕳️👩🏻‍🦯
 
   - trigger: oops,.
     replace: |
