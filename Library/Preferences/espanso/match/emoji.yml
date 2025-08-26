@@ -127,6 +127,12 @@ matches:
   - trigger: fart,.
     replace: 💨👂🏻😏
 
+  - trigger: funny,.
+    replace: |
+      🪂
+      🕳️
+    force_clipboard: true
+
   - trigger: gah,.
     replace: 🧓🏻🕶️🤏🏻
 
@@ -189,12 +195,6 @@ matches:
 
   - trigger: noted,.
     replace: 📃✍️🧐
-
-  - trigger: oops,.
-    replace: |
-      🪂
-      🕳️
-    force_clipboard: true
 
   - trigger: out,.
     replace: 🚪🚶🏻‍♀️
