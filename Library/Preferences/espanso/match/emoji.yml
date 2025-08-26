@@ -175,6 +175,9 @@ matches:
   - trigger: hand,.
     replace: 💁🏻‍♀️🤚🏻
 
+  - trigger: happened,.
+    replace: 🫲🤨🫱
+
   - trigger: happy,.
     replace: 🤲❤️
 
