@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: 100yes,.
+    replace: 💯😃
+
   - trigger: 5,.
     replace: 5️⃣5️⃣5️⃣5️⃣5️⃣
 
