@@ -157,6 +157,9 @@ matches:
   - trigger: hell,.
     replace: 👹🔥⬅️🏃🏻‍♂️
 
+  - trigger: hot,.
+    replace: 🪭🥵🪭
+
   - trigger: huh,.
     replace: 🐛🈴
 
