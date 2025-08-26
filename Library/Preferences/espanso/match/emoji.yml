@@ -109,6 +109,9 @@ matches:
   - trigger: pig,.
     replace: ⏰🐖🛫
 
+  - trigger: pin,.
+    replace: 📆📌
+
   - trigger: pretty,.
     replace: 😌💅🏻
 
