@@ -220,6 +220,9 @@ matches:
   - trigger: look,.
     replace: 🔭🦔
 
+  - trigger: loop,.
+    replace: 🔁
+
   - trigger: lose,.
     replace: 📖💡
 
