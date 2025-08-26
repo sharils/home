@@ -292,6 +292,9 @@ matches:
   - trigger: speechless,.
     replace: 😶 💬
 
+  - trigger: space,.
+    replace: 🫷😣🫸
+
   - trigger: stabbed,.
     replace: 🔪❤️
 
