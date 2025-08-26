@@ -301,6 +301,9 @@ matches:
   - trigger: this,.
     replace: ☝🏻☝🏻☝🏻
 
+  - trigger: train,.
+    replace: 🚂💭🚫🧐
+
   - trigger: tough,.
     replace: 🗿😔🗿
 
