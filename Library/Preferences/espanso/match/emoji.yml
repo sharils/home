@@ -292,6 +292,9 @@ matches:
   - trigger: shopping,.
     replace: 🛒🐛
 
+  - trigger: shrug,.
+    replace: 🤷🏻‍♀️🤷🏻🤷🏻‍♂️
+
   - trigger: shutup,.
     replace: ☺️👉🏻🔪
 
