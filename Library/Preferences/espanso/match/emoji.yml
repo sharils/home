@@ -292,6 +292,9 @@ matches:
   - trigger: shutup,.
     replace: ☺️👉🏻🔪
 
+  - trigger: skeptical,.
+    replace: 🤔🤨
+
   - trigger: sip,.
     replace: ☕🤏
 
