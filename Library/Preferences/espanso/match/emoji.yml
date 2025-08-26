@@ -190,6 +190,9 @@ matches:
   - trigger: love,.
     replace: ❤️🧡💛💚💙💜
 
+  - trigger: jackpot,.
+    replace: 🍒🍒🍒
+
   - trigger: me,.
     replace: ↖️
 
