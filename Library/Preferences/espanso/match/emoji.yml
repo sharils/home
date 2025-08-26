@@ -166,6 +166,9 @@ matches:
   - trigger: hell,.
     replace: 👹🔥⬅️🏃🏻‍♂️
 
+  - trigger: hellno,.
+    replace: 👹❌
+
   - trigger: hot,.
     replace: 🪭🥵🪭
 
