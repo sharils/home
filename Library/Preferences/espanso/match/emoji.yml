@@ -106,7 +106,7 @@ matches:
   - trigger: easy,.
     replace: 🫳🫴
 
-  - trigger: end,.
+  - trigger: embrass,.
     replace: 🤸🏻‍♀️🚉
 
   - trigger: eng,.
