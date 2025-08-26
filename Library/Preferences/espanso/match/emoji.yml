@@ -187,6 +187,9 @@ matches:
   - trigger: huh,.
     replace: 🐛🈴
 
+  - trigger: iguess,.
+    replace: 🙄🤝😐
+
   - trigger: indeed,.
     replace: 🐦🪨
 
@@ -213,9 +216,6 @@ matches:
 
   - trigger: me,.
     replace: ↖️
-
-  - trigger: mixed,.
-    replace: 🙄🤝😐
 
   - trigger: mfw,.
     replace: 🤦🏻‍♀️🤦🏻🤦🏻‍♂️
