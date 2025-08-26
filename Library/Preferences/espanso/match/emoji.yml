@@ -241,6 +241,9 @@ matches:
   - trigger: snack,.
     replace: 🧃🐢
 
+  - trigger: stabbed,.
+    replace: 🔪❤️
+
   - trigger: stress,.
     replace: 🦆🍐🖐️
 
