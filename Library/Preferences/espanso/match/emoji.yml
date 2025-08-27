@@ -40,6 +40,9 @@ matches:
   - trigger: blink,.
     replace: 😐😑😐
 
+  - trigger: block,.
+    replace: ❌🧱🤾🏻‍♀️🗑️
+
   - trigger: bonk,.
     replace: 🧎🏻‍♀️🏌🏻‍♀️
 
