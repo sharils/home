@@ -109,6 +109,9 @@ matches:
   - trigger: doorknob,.
     replace: 😒❓🚪
 
+  - trigger: drink,.
+    replace: 🧃🐢
+
   - trigger: drop,.
     replace: 🥚🦅
 
@@ -309,9 +312,6 @@ matches:
 
   - trigger: sip,.
     replace: ☕🤏
-
-  - trigger: snack,.
-    replace: 🧃🐢
 
   - trigger: speechless,.
     replace: 😶 💬
