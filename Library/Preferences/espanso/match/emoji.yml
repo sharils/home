@@ -94,6 +94,9 @@ matches:
   - trigger: dizzy,.
     replace: 😵💫🚢
 
+  - trigger: djdc,.
+    replace: 🥚🦅
+
   - trigger: doghouse,.
     replace: 🐶🏡
 
@@ -108,9 +111,6 @@ matches:
 
   - trigger: drink,.
     replace: 🧃🐢
-
-  - trigger: drop,.
-    replace: 🥚🦅
 
   - trigger: dump,.
     replace: 🚫😎💡
