@@ -247,9 +247,6 @@ matches:
   - trigger: mfw,.
     replace: 🤦🏻‍♀️🤦🏻🤦🏻‍♂️
 
-  - trigger: nervous,.
-    replace: 👉🏻👈🏻
-
   - trigger: nvm,.
     replace: ☝️😮✊😐
 
@@ -306,6 +303,9 @@ matches:
 
   - trigger: shutup,.
     replace: ☺️👉🏻🔪
+
+  - trigger: shy,.
+    replace: 👉🏻👈🏻
 
   - trigger: skeptical,.
     replace: 🤔🤨
