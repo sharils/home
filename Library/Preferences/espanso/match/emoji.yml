@@ -362,7 +362,7 @@ matches:
     replace: ☝️🤓
 
   - trigger: what,.
-    replace: 😎🤏🏻😲🕶️🤏🏻
+    replace: 😎🤏😲🕶️🤏
 
   - trigger: white,.
     replace: 🤍☁️⛸️🥛🐮🐚
