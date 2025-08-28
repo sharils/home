@@ -22,9 +22,6 @@ matches:
   - trigger: angry,.
     replace: 👿🤬😡😠💢😤
 
-  - trigger: anxious,.
-    replace: 🍌🟢
-
   - trigger: ass,.
     replace: 💋🐴
 
@@ -240,6 +237,9 @@ matches:
 
   - trigger: jazz,.
     replace: 🎷🐛
+
+  - trigger: jcly,.
+    replace: 🍌🟢
 
   - trigger: me,.
     replace: ↖️
