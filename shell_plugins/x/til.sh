@@ -4,7 +4,7 @@
 
 til() {
   if [ $# -eq 0 ]; then
-    for t in c 0800 1700 s c-a c-8 2200; do
+    for t in c 0800 1700 s c-a c-8 2200 0000; do
       printf "$t\t%s\n" "$(til "$t")" | grep -E '^|^(?:2200).*'
     done
     printf "X_TIL\t%s\n" "$(til "$X_TIL")" | grep -E '^|^(?:2200).*'
