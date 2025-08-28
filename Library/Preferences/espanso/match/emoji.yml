@@ -302,7 +302,7 @@ matches:
     replace: 🤷🏻‍♀️🤷🏻🤷🏻‍♂️
 
   - trigger: shutup,.
-    replace: ☺️👉🏻🔪
+    replace: ☺️👉🔪
 
   - trigger: shy,.
     replace: 👉🏻👈🏻
