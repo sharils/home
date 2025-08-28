@@ -95,13 +95,10 @@ matches:
     replace: 😵💫🚢
 
   - trigger: djdc,.
-    replace: 🥚🦅
+    replace: 🥚
 
   - trigger: doghouse,.
     replace: 🐶🏡
-
-  - trigger: done,.
-    replace: 👉🏻🙄👈🏻
 
   - trigger: dontcare,.
     replace: 😃🖕🏻
@@ -255,6 +252,9 @@ matches:
 
   - trigger: noted,.
     replace: 📃✍️🧐
+
+  - trigger: notlistening,.
+    replace: 👉🏻🙄👈🏻
 
   - trigger: oops,.
     replace: 🤦🏻‍♀️🤷🏻‍♀️
