@@ -254,7 +254,7 @@ matches:
     replace: 📃✍️🧐
 
   - trigger: notlistening,.
-    replace: 👉🏻🙄👈🏻
+    replace: 👉🙄👈
 
   - trigger: oops,.
     replace: 🤦🏻‍♀️🤷🏻‍♀️
