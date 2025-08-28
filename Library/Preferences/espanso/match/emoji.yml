@@ -377,7 +377,7 @@ matches:
     replace: 🙆🏻‍♀️🙆🏻🙆🏻‍♂️
 
   - trigger: you,.
-    replace: 🫵🏻😂
+    replace: 🫵😂
 
   - trigger: zzz,.
     replace: |
