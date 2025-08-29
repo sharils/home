@@ -85,17 +85,11 @@ matches:
   - trigger: cry,.
     replace: 😭🏊🏻‍♀️
 
-  - trigger: darn,.
-    replace: ✊🏻🌿
-
   - trigger: die,.
     replace: 🫃🏻🤛🏻
 
   - trigger: dizzy,.
     replace: 😵💫🚢
-
-  - trigger: djdc,.
-    replace: 🥚
 
   - trigger: doghouse,.
     replace: 🐶🏡
@@ -121,9 +115,6 @@ matches:
   - trigger: eng,.
     replace: 👩🏻‍💻🧑🏻‍💻👨🏻‍💻
 
-  - trigger: envy,.
-    replace: 🪡🧵🪵
-
   - trigger: caught,.
     replace: 😈📸
 
@@ -132,9 +123,6 @@ matches:
 
   - trigger: pin,.
     replace: 📆📌
-
-  - trigger: pofh,.
-    replace: 🏚️
 
   - trigger: pretty,.
     replace: 😌💅🏻
@@ -147,9 +135,6 @@ matches:
 
   - trigger: propose,.
     replace: 🧍🏻‍♀️💍🧎🏻‍♂️
-
-  - trigger: poor,.
-    replace: 🍓💰
 
   - trigger: popcorn,.
     replace: 🍿🤏🏻😯
@@ -202,14 +187,8 @@ matches:
   - trigger: hot,.
     replace: 🪭🥵🪭
 
-  - trigger: huh,.
-    replace: 🐛🈴
-
   - trigger: iguess,.
     replace: 🙄🤝😐
-
-  - trigger: indeed,.
-    replace: 🐦🪨
 
   - trigger: inshit,.
     replace: 🏊🏻‍♀️💩
@@ -226,9 +205,6 @@ matches:
   - trigger: loop,.
     replace: 🔁
 
-  - trigger: lose,.
-    replace: 📖💡
-
   - trigger: love,.
     replace: ❤️🧡💛💚💙💜
 
@@ -238,17 +214,11 @@ matches:
   - trigger: jazz,.
     replace: 🎷🐛
 
-  - trigger: jcly,.
-    replace: 🍌🟢
-
   - trigger: me,.
     replace: ↖️
 
   - trigger: mfw,.
     replace: 🤦🏻‍♀️🤦🏻🤦🏻‍♂️
-
-  - trigger: mzco,.
-    replace: 🍓❌
 
   - trigger: nvm,.
     replace: ☝️😮✊😐
@@ -328,9 +298,6 @@ matches:
   - trigger: stabbed,.
     replace: 🔪❤️
 
-  - trigger: stress,.
-    replace: 🦆🍐🖐️
-
   - trigger: tea,.
     replace: 🙅🏻‍♀️☕️
 
@@ -339,9 +306,6 @@ matches:
 
   - trigger: this,.
     replace: ☝🏻☝🏻☝🏻
-
-  - trigger: thx,.
-    replace: 🦀🦀
 
   - trigger: train,.
     replace: 🚂💭🚫🧐
@@ -376,9 +340,6 @@ matches:
   - trigger: wig,.
     replace: 👩🏻‍🦱🤏🏻👩🏻‍🦲
 
-  - trigger: wtf,.
-    replace: 🦈👀
-
   - trigger: yes,.
     replace: 🙆🏻‍♀️🙆🏻🙆🏻‍♂️
 
@@ -390,3 +351,43 @@ matches:
       💤
       🛌
     force_clipboard: true
+
+  - trigger: ddc,.
+    replace: 🥚🦅
+
+  - trigger: ih,.
+    replace: 🐛🈴
+
+  - trigger: jl,.
+    replace: 🍌🟢
+
+  - trigger: mc,.
+    replace: 🍓❌
+
+  - trigger: mq,.
+    replace: 🍓💰
+
+  - trigger: pf,.
+    replace: 🏚️
+
+  - trigger: qu,.
+    replace: 🐦🪨
+
+  - trigger: ug,.
+    replace: 📖💡
+
+  - trigger: ux,.
+    replace: 🦈👀
+
+  - trigger: vxm,.
+    replace: 🪡🧵🪵
+
+  - trigger: wock,.
+    replace: ✊🏻🌿
+
+  - trigger: xx,.
+    replace: 🦀🦀
+
+  - trigger: yld,.
+    replace: 🦆🍐🖐️
+
