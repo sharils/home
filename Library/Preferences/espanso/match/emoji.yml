@@ -73,6 +73,9 @@ matches:
   - trigger: comfort,.
     replace: 🚫😢🍼💦
 
+  - trigger: cop,.
+    replace: 👮🏻‍♀️👮🏻👮🏻‍♂️
+
   - trigger: correct,.
     replace: 🍓❌
 
