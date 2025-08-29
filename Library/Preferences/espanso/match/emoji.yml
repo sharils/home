@@ -76,9 +76,6 @@ matches:
   - trigger: cop,.
     replace: 👮🏻‍♀️👮🏻👮🏻‍♂️
 
-  - trigger: correct,.
-    replace: 🍓❌
-
   - trigger: cottagecore,.
     replace: 🌈🍄🍃
 
@@ -249,6 +246,9 @@ matches:
 
   - trigger: mfw,.
     replace: 🤦🏻‍♀️🤦🏻🤦🏻‍♂️
+
+  - trigger: mzco,.
+    replace: 🍓❌
 
   - trigger: nvm,.
     replace: ☝️😮✊😐
