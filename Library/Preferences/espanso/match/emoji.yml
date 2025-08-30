@@ -158,7 +158,7 @@ matches:
     replace: 🧓🏻🕶️🤏🏻
 
   - trigger: getout,.
-    replace: 😃👉🏻🚪
+    replace: 😃👉🚪
 
   - trigger: gone,.
     replace: 🕳️🎢
