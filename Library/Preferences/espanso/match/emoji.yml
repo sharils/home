@@ -95,7 +95,7 @@ matches:
     replace: 🐶🏡
 
   - trigger: dontcare,.
-    replace: 😃🖕🏻
+    replace: 😃🖕
 
   - trigger: doorknob,.
     replace: 😒❓🚪
