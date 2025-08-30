@@ -229,6 +229,9 @@ matches:
   - trigger: notlistening,.
     replace: 👉🙄👈
 
+  - trigger: ooo,.
+    replace: 🙆🏻‍♀️🙆🏻🙆🏻‍♂️
+
   - trigger: oops,.
     replace: 🤦🏻‍♀️🤷🏻‍♀️
 
@@ -336,9 +339,6 @@ matches:
 
   - trigger: wig,.
     replace: 👩🏻‍🦱🤏🏻👩🏻‍🦲
-
-  - trigger: yes,.
-    replace: 🙆🏻‍♀️🙆🏻🙆🏻‍♂️
 
   - trigger: you,.
     replace: 🫵😂
