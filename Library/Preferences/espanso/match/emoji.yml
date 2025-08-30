@@ -197,7 +197,7 @@ matches:
     replace: 😐😶😶‍🌫️🫥
 
   - trigger: listening,.
-    replace: ✋🏻😌🤚🏻
+    replace: ✋😌🤚
 
   - trigger: look,.
     replace: 🔭🦔
