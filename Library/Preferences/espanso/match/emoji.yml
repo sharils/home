@@ -10,9 +10,6 @@ matches:
   - trigger: 7,.
     replace: 🎰
 
-  - trigger: actually,.
-    replace: ☝️😌
-
   - trigger: agree,.
     replace: 🌜🥂🌛
 
