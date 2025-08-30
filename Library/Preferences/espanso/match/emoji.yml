@@ -220,9 +220,6 @@ matches:
   - trigger: nvm,.
     replace: ☝️😮✊😐
 
-  - trigger: no,.
-    replace: 🙅🏻‍♀️🙅🏻🙅🏻‍♂️
-
   - trigger: noted,.
     replace: 📃✍️🧐
 
@@ -384,6 +381,9 @@ matches:
 
   - trigger: xx,.
     replace: 🦀🦀
+
+  - trigger: xxx,.
+    replace: 🙅🏻‍♀️🙅🏻🙅🏻‍♂️
 
   - trigger: yld,.
     replace: 🦆🍐🖐️
