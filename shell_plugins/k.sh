@@ -168,6 +168,8 @@ k() {
 
   sdg) shift && "$SHARILS_HOME/shell_plugins/k/sdg.sh" "$@" ;;
 
+  solarterm) shift && "$SHARILS_HOME/shell_plugins/k/solarterm.sh" "$@" ;;
+
   stat) shift && stat -x ~/Sync/KeePass/keepass.kdbx ;;
 
   time) shift && "$SHARILS_HOME/shell_plugins/k/time.sh" "$@" ;;
