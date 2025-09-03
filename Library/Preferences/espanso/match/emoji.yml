@@ -319,6 +319,9 @@ matches:
   - trigger: wait,.
     replace: 🤔🤚
 
+  - trigger: waiting,.
+    replace: 😐⌚👣
+
   - trigger: wake,.
     replace: 🛌🤺
 
