@@ -256,6 +256,9 @@ matches:
   - trigger: sayit,.
     replace: 🎤🪿
 
+  - trigger: scary,.
+    replace: 😰😨😱
+
   - trigger: screw,.
     replace: 🔩😒
 
