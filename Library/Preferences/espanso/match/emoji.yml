@@ -346,6 +346,9 @@ matches:
   - trigger: you,.
     replace: 🫵😂
 
+  - trigger: zombie,.
+    replace: 🧟‍♀️🧟🧟‍♂️
+
   - trigger: zzz,.
     replace: |
       💤
