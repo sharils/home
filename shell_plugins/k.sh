@@ -91,6 +91,8 @@ k() {
 
   heptagram) shift && "$SHARILS_HOME/shell_plugins/k/heptagram.sh" "$@" ;;
 
+  hippocratic) shift && "$SHARILS_HOME/shell_plugins/k/hippocratic.sh" "$@" ;;
+
   horoscope) shift && "$SHARILS_HOME/shell_plugins/k/horoscope.sh" "$@" ;;
 
   http) shift && "$SHARILS_HOME/shell_plugins/k/http.sh" "$@" ;;
