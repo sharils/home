@@ -43,6 +43,9 @@ matches:
   - trigger: bonk,.
     replace: 🧎🏻‍♀️🏌🏻‍♀️
 
+  - trigger: bow,.
+    replace: 🙇🏻‍♀️🙇🏻🙇🏻‍♂️
+
   - trigger: brb,.
     replace: 👩🏻‍💻🧴
 
