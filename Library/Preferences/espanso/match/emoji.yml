@@ -361,7 +361,7 @@ matches:
       🛌
     force_clipboard: true
 
-  - trigger: ddc,.
+  - trigger: dd,.
     replace: 🥚🦅
 
   - trigger: ih,.
