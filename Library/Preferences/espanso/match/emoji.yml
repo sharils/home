@@ -91,6 +91,9 @@ matches:
   - trigger: dizzy,.
     replace: 😵💫🚢
 
+  - trigger: doctor,.
+    replace: 👩🏻‍⚕️🧑🏻‍⚕️👨🏻‍⚕️
+
   - trigger: doghouse,.
     replace: 🐶🏡
 
