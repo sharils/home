@@ -332,7 +332,7 @@ matches:
     replace: 🤔🤚
 
   - trigger: waiting,.
-    replace: 😐⌚👣
+    replace: 😐⌚👞
 
   - trigger: wake,.
     replace: 🛌🤺
