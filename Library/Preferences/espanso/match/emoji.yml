@@ -239,7 +239,7 @@ matches:
     replace: 🚪🚶🏻‍♀️
 
   - trigger: period,.
-    replace: 🫳🎤
+    replace: 🫳🏻🎤
 
   - trigger: player,.
     replace: 🧜🏻‍♀️🧜🏻🧜🏻‍♂️
