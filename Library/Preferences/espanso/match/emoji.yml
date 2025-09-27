@@ -314,7 +314,7 @@ matches:
     replace: ➡️
 
   - trigger: this,.
-    replace: ☝🏻☝🏻☝🏻
+    replace: ☝🏻☝🏼☝🏽☝🏾☝🏿
 
   - trigger: train,.
     replace: 🚂💭🚫🧐
