@@ -109,9 +109,6 @@ matches:
   - trigger: dump,.
     replace: 🚫😎💡
 
-  - trigger: easy,.
-    replace: 🫳🫴
-
   - trigger: embrass,.
     replace: 🤸🏻‍♀️🚉
 
@@ -384,6 +381,9 @@ matches:
 
   - trigger: qu,.
     replace: 🐦🪨
+
+  - trigger: ry,.
+    replace: 🫳🏻🫴🏻
 
   - trigger: ug,.
     replace: 📖💡
