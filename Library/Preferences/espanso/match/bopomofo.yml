@@ -7,9 +7,6 @@ matches:
   - trigger: be,.
     replace: ㄅ
 
-  - trigger: e,.
-    replace: ㄝ
-
   - trigger: ei,.
     replace: ㄟ
 
@@ -54,3 +51,6 @@ matches:
 
   - trigger: o,.
     replace: ㄛ
+
+  - trigger: oe,.
+    replace: ㄝ
