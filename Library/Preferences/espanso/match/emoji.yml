@@ -58,6 +58,9 @@ matches:
   - trigger: call,.
     replace: 🤙🏻
 
+  - trigger: caught,.
+    replace: 😈📸
+
   - trigger: cheers,.
     replace: 🌚🥂🌝
 
@@ -114,9 +117,6 @@ matches:
 
   - trigger: eng,.
     replace: 👩🏻‍💻🧑🏻‍💻👨🏻‍💻
-
-  - trigger: caught,.
-    replace: 😈📸
 
   - trigger: pig,.
     replace: ⏰🐖🛫
