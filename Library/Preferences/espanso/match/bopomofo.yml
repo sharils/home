@@ -43,6 +43,9 @@ matches:
   - trigger: ne,.
     replace: ㄋ
 
+  - trigger: nl,.
+    replace: ㄋㄞ
+
   - trigger: nznz,.
     replace: ㄋㄟㄋㄟ
 
