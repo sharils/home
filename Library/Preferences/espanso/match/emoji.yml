@@ -199,9 +199,6 @@ matches:
   - trigger: listening,.
     replace: ✋😌🤚
 
-  - trigger: look,.
-    replace: 🔭🦔
-
   - trigger: loop,.
     replace: 🔁
 
@@ -300,6 +297,9 @@ matches:
 
   - trigger: stabbed,.
     replace: 🔪❤️
+
+  - trigger: stargaze,.
+    replace: 🔭🦔
 
   - trigger: superhero,.
     replace: 🦸🏻‍♀️🦸🏻🦸🏻‍♂️
