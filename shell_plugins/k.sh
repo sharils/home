@@ -103,6 +103,8 @@ k() {
 
   iphone) shift && "$SHARILS_HOME/shell_plugins/k/iphone.sh" "$@" ;;
 
+  ja) shift && "$SHARILS_HOME/shell_plugins/k/ja.sh" "$@" ;;
+
   joel) shift && "$SHARILS_HOME/shell_plugins/k/joel.sh" "$@" ;;
 
   joke) shift && "$SHARILS_HOME/shell_plugins/k/joke.sh" "$@" ;;
