@@ -88,6 +88,9 @@ matches:
   - trigger: cry,.
     replace: 😭🏊🏻‍♀️
 
+  - trigger: detective,.
+    replace: 🕵🏻‍♀️🕵🏻🕵🏻‍♂️
+
   - trigger: die,.
     replace: 🫃🏻🤛🏻
 
