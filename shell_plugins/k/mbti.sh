@@ -3,7 +3,7 @@
 [ -n "$SET_X" ] && set -x
 
 mbti() {
-  cat <<'EOF' | grep -i "^\|^${@:-"$K_MBTI"}.*"
+  cat <<'EOF' | grep -i "^\|${@:-"$K_MBTI"}.*"
 INFP Fi Ne Si Te Fe Ni Se Ti Diplomats Mediator/調停者       4-5%  4.4% 14.23%
 ENFP Ne Fi Te Si Ni Fe Ti Se Diplomats Campaigner/競選者     6-8%  8.1% 12.56%
 ISFJ Si Fe Ti Ne Se Fi Te Ni Sentinels Defender/守衛者      9-14% 13.8%  9.56%
