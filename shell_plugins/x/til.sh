@@ -58,7 +58,7 @@ duration = datetime.strptime(sys.argv[1], sys.argv[3]) - datetime.strptime(sys.a
 print(f"{sys.argv[1]}\t{str(duration)}")
 PYTHON
   )"
-  python -c "$py" "$@"
+  python3 -c "$py" "$@"
 }
 
 til "$@"
