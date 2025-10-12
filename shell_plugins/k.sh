@@ -45,6 +45,8 @@ k() {
 
   circadian) shift && "$SHARILS_HOME/shell_plugins/k/circadian.sh" "$@" ;;
 
+  color) shift && "$SHARILS_HOME/shell_plugins/k/color.sh" "$@" ;;
+
   court) shift && "$SHARILS_HOME/shell_plugins/k/court.sh" "$@" ;;
 
   credit-card) shift && "$SHARILS_HOME/shell_plugins/k/credit-card.sh" "$@" ;;
