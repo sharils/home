@@ -3,7 +3,7 @@
 [ -n "$SET_X" ] && set -x
 
 digit() {
-  keepassxc-cli generate --numeric --length "${@:-6}" | tr -d \\n | pbcopy
+  keepassxc-cli generate --numeric --length "${@:-5}" | tr -d \\n | pbcopy
   pbpaste | wc
 }
 
