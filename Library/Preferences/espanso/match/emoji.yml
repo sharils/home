@@ -142,6 +142,9 @@ matches:
   - trigger: popcorn,.
     replace: 🍿🤏😯
 
+  - trigger: fairy,.
+    replace: 🧚🏻‍♀️🧚🏻🧚🏻‍♂️
+
   - trigger: fast,.
     replace: 👩🏻‍🦼💨
 
