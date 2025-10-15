@@ -178,6 +178,8 @@ k() {
 
   stat) shift && stat -x ~/Sync/KeePass/keepass.kdbx ;;
 
+  tarot) shift && "$SHARILS_HOME/shell_plugins/k/tarot.sh" "$@" ;;
+
   time) shift && "$SHARILS_HOME/shell_plugins/k/time.sh" "$@" ;;
 
   u) shift && "$SHARILS_HOME/shell_plugins/k/u.sh" "$@" ;;

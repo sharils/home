@@ -319,6 +319,9 @@ matches:
   - trigger: this,.
     replace: ☝🏻☝🏼☝🏽☝🏾☝🏿
 
+  - trigger: thumb,.
+    replace: 👍🏻👍🏼👍🏽👍🏾👍🏿
+
   - trigger: train,.
     replace: 🚂💭🚫🧐
 
