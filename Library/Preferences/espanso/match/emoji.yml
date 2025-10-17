@@ -175,6 +175,9 @@ matches:
   - trigger: gtfo,.
     replace: 🚪🏃🏻‍♀️💨
 
+  - trigger: gun,.
+    replace: 😃🔫
+
   - trigger: hand,.
     replace: 💁🏻‍♀️🤚🏻
 
