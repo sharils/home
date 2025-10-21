@@ -76,9 +76,6 @@ matches:
   - trigger: comfort,.
     replace: 🚫😢🍼💦
 
-  - trigger: cop,.
-    replace: 👮🏻‍♀️👮🏻👮🏻‍♂️
-
   - trigger: cottagecore,.
     replace: 🌈🍄🍃
 
@@ -88,17 +85,11 @@ matches:
   - trigger: cry,.
     replace: 😭🏊🏻‍♀️
 
-  - trigger: detective,.
-    replace: 🕵🏻‍♀️🕵🏻🕵🏻‍♂️
-
   - trigger: die,.
     replace: 🫃🏻🤛🏻
 
   - trigger: dizzy,.
     replace: 😵💫🚢
-
-  - trigger: doctor,.
-    replace: 👩🏻‍⚕️🧑🏻‍⚕️👨🏻‍⚕️
 
   - trigger: doghouse,.
     replace: 🐶🏡
@@ -141,9 +132,6 @@ matches:
 
   - trigger: popcorn,.
     replace: 🍿🤏😯
-
-  - trigger: fairy,.
-    replace: 🧚🏻‍♀️🧚🏻🧚🏻‍♂️
 
   - trigger: fast,.
     replace: 👩🏻‍🦼💨
@@ -211,9 +199,6 @@ matches:
   - trigger: loop,.
     replace: 🔁
 
-  - trigger: love,.
-    replace: ❤️🧡💛💚💙💜
-
   - trigger: jackpot,.
     replace: 🍒🍒🍒
 
@@ -222,9 +207,6 @@ matches:
 
   - trigger: me,.
     replace: ↖️
-
-  - trigger: mfw,.
-    replace: 🤦🏻‍♀️🤦🏻🤦🏻‍♂️
 
   - trigger: nvm,.
     replace: ☝️😮✊😐
@@ -235,23 +217,11 @@ matches:
   - trigger: notlistening,.
     replace: 👉🙄👈
 
-  - trigger: ooo,.
-    replace: 🙆🏻‍♀️🙆🏻🙆🏻‍♂️
-
-  - trigger: oops,.
-    replace: 🤦🏻‍♀️🤷🏻‍♀️
-
   - trigger: out,.
     replace: 🚪🚶🏻‍♀️
 
   - trigger: period,.
     replace: 🫳🏻🎤
-
-  - trigger: player,.
-    replace: 🧜🏻‍♀️🧜🏻🧜🏻‍♂️
-
-  - trigger: raise,.
-    replace: 🙋🏻‍♀️🙋🏻🙋🏻‍♂️
 
   - trigger: read,.
     replace: 😭📕👀
@@ -283,9 +253,6 @@ matches:
   - trigger: shopping,.
     replace: 🛒🐛
 
-  - trigger: shrug,.
-    replace: 🤷🏻‍♀️🤷🏻🤷🏻‍♂️
-
   - trigger: shutup,.
     replace: ☺️👉🔪
 
@@ -310,29 +277,17 @@ matches:
   - trigger: stargaze,.
     replace: 🔭🦔
 
-  - trigger: superhero,.
-    replace: 🦸🏻‍♀️🦸🏻🦸🏻‍♂️
-
   - trigger: tea,.
     replace: 🙅🏻‍♀️☕️
 
   - trigger: then,.
     replace: ➡️
 
-  - trigger: this,.
-    replace: ☝🏻☝🏼☝🏽☝🏾☝🏿
-
-  - trigger: thumb,.
-    replace: 👍🏻👍🏼👍🏽👍🏾👍🏿
-
   - trigger: train,.
     replace: 🚂💭🚫🧐
 
   - trigger: tough,.
     replace: 🗿😔🗿
-
-  - trigger: vampire,.
-    replace: 🧛🏻‍♀️🧛🏻🧛🏻‍♂️
 
   - trigger: vomit,.
     replace: 🤢🤮
@@ -364,14 +319,65 @@ matches:
   - trigger: you,.
     replace: 🫵😂
 
-  - trigger: zombie,.
-    replace: 🧟‍♀️🧟🧟‍♂️
-
   - trigger: zzz,.
     replace: |
       💤
       🛌
     force_clipboard: true
+
+  - trigger: cop,.
+    replace: 👮🏻‍♀️👮🏻👮🏻‍♂️
+
+  - trigger: detective,.
+    replace: 🕵🏻‍♀️🕵🏻🕵🏻‍♂️
+
+  - trigger: doctor,.
+    replace: 👩🏻‍⚕️🧑🏻‍⚕️👨🏻‍⚕️
+
+  - trigger: fairy,.
+    replace: 🧚🏻‍♀️🧚🏻🧚🏻‍♂️
+
+  - trigger: mfw,.
+    replace: 🤦🏻‍♀️🤦🏻🤦🏻‍♂️
+
+  - trigger: ooo,.
+    replace: 🙆🏻‍♀️🙆🏻🙆🏻‍♂️
+
+  - trigger: oops,.
+    replace: 🤦🏻‍♀️🤷🏻‍♀️
+
+  - trigger: player,.
+    replace: 🧜🏻‍♀️🧜🏻🧜🏻‍♂️
+
+  - trigger: raise,.
+    replace: 🙋🏻‍♀️🙋🏻🙋🏻‍♂️
+
+  - trigger: shrug,.
+    replace: 🤷🏻‍♀️🤷🏻🤷🏻‍♂️
+
+  - trigger: superhero,.
+    replace: 🦸🏻‍♀️🦸🏻🦸🏻‍♂️
+
+  - trigger: vampire,.
+    replace: 🧛🏻‍♀️🧛🏻🧛🏻‍♂️
+
+  - trigger: zombie,.
+    replace: 🧟‍♀️🧟🧟‍♂️
+
+  - trigger: flags,.
+    replace: 🇦🇹🇬🇧🇫🇷🇩🇪🇮🇹🇯🇵🇷🇺🇺🇸
+
+  - trigger: love,.
+    replace: ❤️🧡💛💚💙💜
+
+  - trigger: this,.
+    replace: ☝🏻☝🏼☝🏽☝🏾☝🏿
+
+  - trigger: thumb,.
+    replace: 👍🏻👍🏼👍🏽👍🏾👍🏿
+
+  - trigger: xxx,.
+    replace: 🙅🏻‍♀️🙅🏻🙅🏻‍♂️
 
   - trigger: dd,.
     replace: 🥚🦅
@@ -411,9 +417,6 @@ matches:
 
   - trigger: xx,.
     replace: 🦀🦀
-
-  - trigger: xxx,.
-    replace: 🙅🏻‍♀️🙅🏻🙅🏻‍♂️
 
   - trigger: yld,.
     replace: 🦆🍐🖐️
