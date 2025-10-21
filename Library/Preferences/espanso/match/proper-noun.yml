@@ -76,6 +76,9 @@ matches:
   - trigger: Jwms,.
     replace: Justice with Michael Sandel
 
+  - trigger: Lab,.
+    replace: L*a*b*
+
   - trigger: Lhtl,.
     replace: Learning How to Learn
 
