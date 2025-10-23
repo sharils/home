@@ -174,6 +174,8 @@ k() {
 
   sdg) shift && "$SHARILS_HOME/shell_plugins/k/sdg.sh" "$@" ;;
 
+  size) shift && "$SHARILS_HOME/shell_plugins/k/size.sh" "$@" ;;
+
   solarterm) shift && "$SHARILS_HOME/shell_plugins/k/solarterm.sh" "$@" ;;
 
   stat) shift && stat -x ~/Sync/KeePass/keepass.kdbx ;;
