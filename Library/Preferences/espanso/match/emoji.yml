@@ -37,8 +37,11 @@ matches:
   - trigger: blink,.
     replace: 😐😑😐
 
+  - trigger: bin,.
+    replace: 🤾🏻‍♀️🗑️
+
   - trigger: block,.
-    replace: ❌🧱🤾🏻‍♀️🗑️
+    replace: ❌🧱
 
   - trigger: bonk,.
     replace: 🧎🏻‍♀️🏌🏻‍♀️
