@@ -184,6 +184,8 @@ k() {
 
   time) shift && "$SHARILS_HOME/shell_plugins/k/time.sh" "$@" ;;
 
+  tld) shift && "$SHARILS_HOME/shell_plugins/k/tld.sh" "$@" ;;
+
   u) shift && "$SHARILS_HOME/shell_plugins/k/u.sh" "$@" ;;
 
   ubuntu) shift && "$SHARILS_HOME/shell_plugins/k/ubuntu.sh" "$@" ;;
