@@ -4,19 +4,128 @@
 
 oxymoron() {
   cat <<'EOF'
-fiery ice, cruel kindness, bittersweet, a wise fool, pleasing pain,
-noiseless sound, deafening silence, barely clothed, terribly good,
-peacekeeping missle, loving hate, sick health, hateful good, proud humility,
-darkness visible, beggarly riches, damn with faint praise, expressive silence,
-melancholy merriment, faith unfaithful, falsely true,
-conventionally unconventional, toruous spontaneity, delighted sorrow,
-loyal treachery, scalding coolness, friendly invasion, genuine imitation,
-good war, exact estimate, idiot savant, extensive briefing, old news,
-friendly fire, alone together, crash landing, found missing, only choice,
-freezer burn, growing smaller, loud whisper, original copy, same difference,
-seriously funny, student teacher, unbiased opinion, working vacation,
-devout atheist, painfully beautiful, awfully good, open secret,
+Sound of Silence
+wise fool
+absent presence
+alone together
+awfully good
+barely clothed
+beggarly riches
+bittersweet
+brisk vacancy
+cheerful pessimist
+civil war
 clearly confused
+clearly misunderstood
+comfortable misery
+conspicuous absence
+conventionally unconventional
+cool passion
+crash landing
+cruel kindness
+damn with faint praise
+darkness visible
+deafening silence
+deceptively honest
+definite maybe
+deliberate speed
+delighted sorrow
+devout atheist
+dull roar
+eloquent silence
+even odds
+exact estimate
+expressive silence
+extensive briefing
+extinct life
+faith unfaithful
+falsely true
+festive tranquility
+fiery ice
+found missing
+freezer burn
+friendly fire
+friendly invasion
+friendly takeover
+genuine imitation
+good grief
+good war
+growing smaller
+guest host
+hateful good
+historical present
+humane slaughter
+icy hot
+idiot savant
+ill health
+impossible solution
+intense apathy
+joyful sadness
+jumbo shrimp
+larger half
+lascivious grace
+lead balloon
+liquid marble
+living dead
+living end
+living sacrifices
+loosely sealed
+loud whisper
+loving hate
+loyal opposition
+loyal treachery
+magic realism
+melancholy merriment
+militant pacifist
+minor miracle
+negative growth
+negative income
+noiseless sound
+old news
+one-man band
+only choice
+open secret
+openly deceptive
+original copy
+overbearingly modest
+painfully beautiful
+paper tablecloth
+paper towel
+peaceful conquest
+peacekeeping missle
+plastic glasses
+plastic silverware
+pleasing pain
+poor health
+pretty ugly
+properly ridiculous
+proud humility
+random order
+recorded live
+resident alien
+sad smile
+same difference
+scalding coolness
+seriously funny
+shrewd dumbness
+sick health
+silent scream
+small crowd
+soft rock
+static flow
+steel wool
+student teacher
+sweet sorrow
+terribly good
+theoretical experience
+toruous spontaneity
+transparent night
+true fiction
+unbiased opinion
+unconscious awareness
+upward fall
+wise fool
+working vacation
 EOF
 
   echo
