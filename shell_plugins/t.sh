@@ -15,7 +15,7 @@ t() {
     shift && set -- "$cmd" "$@"
     case "$cmd" in
     ls | list | s | stale)
-      todo.sh "$@"
+      todo.sh "$@" | less
       ;;
     *)
       todo.sh "$@"

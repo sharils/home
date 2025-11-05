@@ -340,6 +340,9 @@ matches:
   - trigger: fairy,.
     replace: 🧚🏻‍♀️🧚🏻🧚🏻‍♂️
 
+  - trigger: here,.
+    replace: 👇🏻👇🏼👇🏽👇🏾👇🏿
+
   - trigger: mfw,.
     replace: 🤦🏻‍♀️🤦🏻🤦🏻‍♂️
 
