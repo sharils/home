@@ -31,6 +31,9 @@ matches:
   - trigger: ke,.
     replace: ㄎ
 
+  - trigger: kiang,.
+    replace: ㄎㄧㄤ
+
   - trigger: le,.
     replace: ㄌ
 
