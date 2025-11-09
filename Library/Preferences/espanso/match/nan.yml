@@ -16,6 +16,9 @@ matches:
   - trigger: khimootsih,.
     replace: 奇檬子
 
+  - trigger: khiang,.
+    replace: 勍
+
   - trigger: khiau,.
     replace: 巧
 
