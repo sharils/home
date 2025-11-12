@@ -196,6 +196,8 @@ k() {
 
   w) shift && "$SHARILS_HOME/shell_plugins/k/w.sh" "$@" ;;
 
+  warm) shift && "$SHARILS_HOME/shell_plugins/k/warm.sh" "$@" ;;
+
   wedding) shift && "$SHARILS_HOME/shell_plugins/k/wedding.sh" "$@" ;;
 
   week) shift && "$SHARILS_HOME/shell_plugins/k/week.sh" "$@" ;;
