@@ -63,6 +63,8 @@ k() {
 
   debian) shift && "$SHARILS_HOME/shell_plugins/k/debian.sh" "$@" ;;
 
+  devices) shift && "$SHARILS_HOME/shell_plugins/k/devices.sh" "$@" ;;
+
   diet) shift && "$SHARILS_HOME/shell_plugins/k/diet.sh" "$@" ;;
 
   digit) shift && "$SHARILS_HOME/shell_plugins/k/digit.sh" "$@" ;;
