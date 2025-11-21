@@ -8,7 +8,7 @@ e() {
   k) shift && $EDITOR "$@" "$TODO_DIR/knowledge.txt" ;;
   n) shift && $EDITOR "$@" "$TODO_DIR/note.md" ;;
   q) shift && $EDITOR "$@" "$TODO_DIR/QuickNote.md" ;;
-  s) shift && $EDITOR "$@" -O "$TODO_FILE" "$TODO_DIR/stale.txt" "$TODO_DIR/note.md" ;;
+  s) shift && $EDITOR "$@" -O "$TODO_FILE" "$TODO_DIR/stale.txt" "$TODO_DIR/QuickNote.md" ;;
   t) shift && $EDITOR "$@" "$TODO_FILE" ;;
   *[!0-9]*) $EDITOR "$TODO_DIR/$*.txt" ;;
   *)
