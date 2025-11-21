@@ -206,6 +206,8 @@ k() {
 
   welfare) shift && "$SHARILS_HOME/shell_plugins/k/welfare.sh" "$@" ;;
 
+  word) shift && "$SHARILS_HOME/shell_plugins/k/word.sh" "$@" ;;
+
   yue) shift && "$SHARILS_HOME/shell_plugins/k/yue.sh" "$@" ;;
 
   zip)
