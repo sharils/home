@@ -340,6 +340,9 @@ matches:
       🛌
     force_clipboard: true
 
+  - trigger: jolin,.
+    replace: 🥬10
+
   - trigger: cop,.
     replace: 👮🏻‍♀️👮🏻👮🏻‍♂️
 
