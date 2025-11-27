@@ -64,7 +64,7 @@ EOF
     ;;
 
   tw)
-    # https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0020033
+    # https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0020095
     # https://www.laws.taipei.gov.tw/Law/LawSearch/LawArticleContent?sysNumber=A040160021016200
     {
       x_cal 2024
