@@ -25,9 +25,6 @@ matches:
   - trigger: agree,.
     replace: 🌜🥂🌛
 
-  - trigger: ai,.
-    replace: 🧞‍♀️🧞🧞‍♂️
-
   - trigger: alien,.
     replace: 🛸👽
 
@@ -342,6 +339,9 @@ matches:
 
   - trigger: jolin,.
     replace: 🥬10
+
+  - trigger: ai,.
+    replace: 🧞‍♀️🧞🧞‍♂️
 
   - trigger: cop,.
     replace: 👮🏻‍♀️👮🏻👮🏻‍♂️
