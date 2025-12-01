@@ -126,6 +126,7 @@ settings:
     global: false
     hexdocs.pm: true
     hn.algolia.com: true
+    https://www.namecheap.com/visual/font-generator/: true
     https://bhspitmonkey.github.io/AdjectiveAdjectiveAnimal/: true
     https://developers.google.com/search/docs/appearance/structured-data/*: true
     https://www.berkeleychurchill.com/software/android-pwgen/pwgen.html: true
