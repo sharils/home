@@ -124,7 +124,12 @@ EOF
 
   case "$1" in
   line | smileys-people | animals-nature | food-drink | activity | travel-places | objects | symbols | flags) open "$SHARILS_HOME/emoji/$1.png" ;;
-  *) $EDITOR "$@" ~/.config/karabiner/karabiner.json ;;
+  *) cat <<'EOF'
+2.7182818284590452353602874713526624977572470936999595749669676277240766303535475945713821785251664274
+
+Looking for this?  $EDITOR "$@" ~/.config/karabiner/karabiner.json
+EOF
+    ;;
   esac
 }
 
