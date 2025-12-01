@@ -149,6 +149,8 @@ k() {
 
   pareto) shift && "$SHARILS_HOME/shell_plugins/k/pareto.sh" "$@" ;;
 
+  phi) shift && "$SHARILS_HOME/shell_plugins/k/phi.sh" "$@" ;;
+
   pi) shift && "$SHARILS_HOME/shell_plugins/k/pi.sh" "$@" ;;
 
   port) "$SHARILS_HOME/shell_plugins/k/port.sh" "$@" ;;
