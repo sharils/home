@@ -1,5 +1,8 @@
 ---
 matches:
 
+  - trigger: chan,.
+    replace: ちゃん
+
   - trigger: nagi,.
     replace: 小凪
