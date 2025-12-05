@@ -55,9 +55,6 @@ matches:
   - trigger: bonk,.
     replace: 🧎🏻‍♀️🏌🏻‍♀️
 
-  - trigger: bow,.
-    replace: 🙇🏻‍♀️🙇🏻🙇🏻‍♂️
-
   - trigger: brb,.
     replace: 👩🏻‍💻🧴
 
@@ -342,6 +339,9 @@ matches:
 
   - trigger: ai,.
     replace: 🧞‍♀️🧞🧞‍♂️
+
+  - trigger: bow,.
+    replace: 🙇🏻‍♀️🙇🏻🙇🏻‍♂️
 
   - trigger: cop,.
     replace: 👮🏻‍♀️👮🏻👮🏻‍♂️
