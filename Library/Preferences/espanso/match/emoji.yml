@@ -391,7 +391,7 @@ matches:
   - trigger: love,.
     replace: ❤️🧡💛💚💙💜
 
-  - trigger: this,.
+  - trigger: that,.
     replace: ☝🏻☝🏼☝🏽☝🏾☝🏿
 
   - trigger: thumb,.
