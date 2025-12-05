@@ -57,3 +57,6 @@ matches:
 
   - trigger: oe,.
     replace: ㄝ
+
+  - trigger: zkoh,.
+    replace: 早ㄤ
