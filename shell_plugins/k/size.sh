@@ -12,6 +12,7 @@ Apple Watch 7   	  41.00mm	   35.00mm	   10.70mm	 32.000g	 430px	352px 	Aluminum
 Cool Summer     	L(50, 95)	a(-5, +15)	b(-20, +5)	C(5, 35)
 Pocket Tissue S 	  12.50mm	    8.00mm
 Pocket Tissue L 	  12.50mm	   10.50mm
+ePony           	  98.00cm	   79.00cm	   27.00cm
 EOF
 }
 
