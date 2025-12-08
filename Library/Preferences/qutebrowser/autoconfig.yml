@@ -153,6 +153,7 @@ settings:
     nx.dev: true
     oneminutefocus.com: true
     openlibrary.org: true
+    perchance.org: true
     philnash.github.io: true
     photomania.net: true
     play.rust-lang.org: true
@@ -229,6 +230,7 @@ settings:
     global: false
   input.mode_override:
     excalidraw.com: passthrough
+    perchance.org: passthrough
     runkit.com: passthrough
     www.tldraw.com: passthrough
   session.lazy_restore:
