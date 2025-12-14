@@ -13,6 +13,9 @@ matches:
   - trigger: K,.
     replace: 000
 
+  - trigger: 9,.
+    replace: 9¾
+
   - trigger: M,.
     replace: 000000
 
