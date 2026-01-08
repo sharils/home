@@ -23,7 +23,7 @@ Obese (Class II)                 35.0 – 39.9
 Obese (Class III)                ≥ 40.0
 EOF
     echo
-    printf 'H: %s, W: %s, BMI: %s' "$1" "$2" "$(bc --mathlib --expression="scale=2; $2 / ($1 / 100)^2")"
+    printf 'H: %s, W: %s, BMI: %s (Normal: 18.5 – 24.9)' "$1" "$2" "$(bc --mathlib --expression="scale=2; $2 / ($1 / 100)^2")"
 
   elif [ $1 -eq 21 ] && [ $# -eq 1 ]; then
     cat <<'EOF'
