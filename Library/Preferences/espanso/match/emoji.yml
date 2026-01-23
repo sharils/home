@@ -346,6 +346,9 @@ matches:
   - trigger: cop,.
     replace: 👮🏻‍♀️👮🏻👮🏻‍♂️
 
+  - trigger: deaf,.
+    replace: 🧏🏻‍♀️🧏🏻🧏🏻‍♂️
+
   - trigger: detective,.
     replace: 🕵🏻‍♀️🕵🏻🕵🏻‍♂️
 
