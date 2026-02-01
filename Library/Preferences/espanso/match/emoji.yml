@@ -232,6 +232,9 @@ matches:
   - trigger: period,.
     replace: 🫳🏻🎤
 
+  - trigger: please,.
+    replace: 🫸🏻🫷🏻
+
   - trigger: read,.
     replace: 😭📕👀
 
