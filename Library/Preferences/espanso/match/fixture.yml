@@ -1,6 +1,14 @@
 ---
 matches:
 
+  - trigger: 555,.
+    replace: "{{tel}}"
+    vars:
+      - name: tel
+        type: shell
+        params:
+          cmd: 'printf "(800) 555‑01%s" "$(jot -r 2 0 9 | tr -d \\n)" | pbcopy && pbpaste'
+
   - trigger: Jd,.
     replace: John Doe
 
@@ -50,11 +58,3 @@ matches:
 
   - trigger: tw555,.
     replace: 0987654321
-
-  - trigger: us555,.
-    replace: "{{tel}}"
-    vars:
-      - name: tel
-        type: shell
-        params:
-          cmd: 'printf "(800) 555‑01%s" "$(jot -r 2 0 9 | tr -d \\n)" | pbcopy && pbpaste'
