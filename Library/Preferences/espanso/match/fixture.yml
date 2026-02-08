@@ -48,6 +48,9 @@ matches:
         params:
           cmd: 'printf "203.0.113.%s" "$(jot -r 1 0 255)" | pbcopy && pbpaste'
 
+  - trigger: tw555,.
+    replace: 0987654321
+
   - trigger: us555,.
     replace: "{{tel}}"
     vars:
