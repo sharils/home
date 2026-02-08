@@ -7,7 +7,7 @@ ss() {
   lat='23.973874'
   lng='120.982024'
 
-  tomorrow="$(date -v+1d +%F)"
+  tomorrow="$(date +%F)"
   json="/tmp/api.sunrise-sunset.org.$tomorrow.json"
   [ -f "$json" ] ||
     curl --get --location 'https://api.sunrise-sunset.org/json' \
