@@ -13,7 +13,7 @@ matches:
   - trigger: K,.
     replace: 000
 
-  - trigger: 9,.
+  - trigger: 934,.
     replace: 9¾
 
   - trigger: M,.
