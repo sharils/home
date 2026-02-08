@@ -44,7 +44,9 @@ til() {
   # https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Pattern-Matching
   [[:digit:]][[:digit:]][[:digit:]] | [[:digit:]][[:digit:]][[:digit:]][[:digit:]])
     t="$(echo "$1" | sed 's/^.\{3\}$/0&/; s/^../&:/; s/$/:00/')" && shift
-    set -- "$(date +%FT"$t")" "$@"
+    dt="$(date +%FT"$t")"
+    [ "$(date -jf%FT%T "$dt" +%s)" -lt "$(date +%s)" ] && dt="$(date -v+1d +%FT"$t")"
+    set -- "$dt" "$@"
     ;;
 
   esac
