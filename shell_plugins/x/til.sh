@@ -4,27 +4,68 @@
 
 til() {
   if [ $# -eq 0 ]; then
-    for t in c 0800 1700 s c-a c-8 2200 0000; do
-      printf "$t\t%s\n" "$(til "$t")" | grep -E '^|^(?:2200).*'
+    for t in c 0800 1700 s c-11.5 c-9 c-8 c-7.5 2200 0000; do
+      printf "$t\t%s\n" "$(til "$t")" | grep -E '^|^(?:c-11.5).*|^(?:c-9).*|^(?:c-7.5).*'
     done
-    printf "X_TIL\t%s\n" "$(til "$X_TIL")" | grep -E '^|^(?:2200).*'
+    printf "X_TIL\t%s\n" "$(til "$X_TIL")" | grep -E '^|^(?:X_TIL).*'
     return $?
   fi
   [ $# -eq 1 ] && set -- "$@" "$(date +%FT%T)"
   [ $# -eq 2 ] && set -- "$@" '%Y-%m-%dT%H:%M:%S'
   case "$1" in
 
-  c-a) shift && set -- "$(date -ujf%FT%T -v-10H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)" "$@" ;;
+  c-11.5)
+    shift
+    dt="$(date -ujf%FT%T -v-690M "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)"
+    [ "$(date -jf%FT%T "$dt" +%s)" -lt "$(date +%s)" ] && dt="$(date -jf%FT%T -v+1d "$dt" +%FT%T)"
+    set -- "$dt" "$@"
+    ;;
+
+  c-a)
+    shift
+    dt="$(date -ujf%FT%T -v-10H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)"
+    [ "$(date -jf%FT%T "$dt" +%s)" -lt "$(date +%s)" ] && dt="$(date -jf%FT%T -v+1d "$dt" +%FT%T)"
+    set -- "$dt" "$@"
+    ;;
 
   n-9) shift && set -- "$(date -ujf%FT%T -v-9H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" nb)" +%FT%T)" "$@" ;;
 
-  c-9) shift && set -- "$(date -ujf%FT%T -v-9H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)" "$@" ;;
+  c-9)
+    shift
+    dt="$(date -ujf%FT%T -v-9H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)"
+    [ "$(date -jf%FT%T "$dt" +%s)" -lt "$(date +%s)" ] && dt="$(date -jf%FT%T -v+1d "$dt" +%FT%T)"
+    set -- "$dt" "$@"
+    ;;
+
+  c-9.5)
+    shift
+    dt="$(date -ujf%FT%T -v-570M "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)"
+    [ "$(date -jf%FT%T "$dt" +%s)" -lt "$(date +%s)" ] && dt="$(date -jf%FT%T -v+1d "$dt" +%FT%T)"
+    set -- "$dt" "$@"
+    ;;
 
   n-8) shift && set -- "$(date -ujf%FT%T -v-8H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" nb)" +%FT%T)" "$@" ;;
 
-  c-8) shift && set -- "$(date -ujf%FT%T -v-8H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)" "$@" ;;
+  c-7.5)
+    shift
+    dt="$(date -ujf%FT%T -v-450M "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)"
+    [ "$(date -jf%FT%T "$dt" +%s)" -lt "$(date +%s)" ] && dt="$(date -jf%FT%T -v+1d "$dt" +%FT%T)"
+    set -- "$dt" "$@"
+    ;;
 
-  c) shift && set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" "$@" ;;
+  c-8)
+    shift
+    dt="$(date -ujf%FT%T -v-8H "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)"
+    [ "$(date -jf%FT%T "$dt" +%s)" -lt "$(date +%s)" ] && dt="$(date -jf%FT%T -v+1d "$dt" +%FT%T)"
+    set -- "$dt" "$@"
+    ;;
+
+  c)
+    shift
+    dt="$(date -ujf%FT%T "$("$SHARILS_HOME/shell_plugins/x/ss.sh" cb)" +%FT%T)"
+    [ "$(date -jf%FT%T "$dt" +%s)" -lt "$(date +%s)" ] && dt="$(date -jf%FT%T -v+1d "$dt" +%FT%T)"
+    set -- "$dt" "$@"
+    ;;
 
   r) shift && set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" sr)" "$@" ;;
 
