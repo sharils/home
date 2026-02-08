@@ -39,8 +39,17 @@ matches:
   - trigger: 0:,.
     replace: 00:00:00
 
+  - trigger: 0000,.
+    replace: 0000-00-00T00:00:00Z
+
   - trigger: 1970,.
     replace: 1970-01-01T00:00:00Z
+
+  - trigger: 2038,.
+    replace: 2038-01-19T03:14:07Z
+
+  - trigger: 9999,.
+    replace: 9999-99-99T99:99:99Z
 
   - trigger: min,.
     replace: minute
