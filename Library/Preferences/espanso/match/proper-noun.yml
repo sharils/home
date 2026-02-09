@@ -124,6 +124,9 @@ matches:
   - trigger: Sn,.
     replace: Security Now!
 
+  - trigger: Tx,.
+    replace: Onyx BOOX Tab X C
+
   - trigger: Tf,.
     replace: TestFlight
 
