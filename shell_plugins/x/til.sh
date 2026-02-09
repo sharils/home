@@ -6,7 +6,7 @@ til() {
   if [ $# -eq 0 ]; then
     for t in 0800 1700 s c-11.5 c-9 c-8 c-7.5 2200 c; do
       printf "$t\t%s\n" "$(til "$t")"
-    done | sort -nk3 | grep -E '^|^(?:c-11.5).*|^(?:c-9).*|^(?:c-7.5).*'
+    done | sort -k2 | grep -E '^|^(?:c-11.5).*|^(?:c-9).*|^(?:c-7.5).*'
     printf "X_TIL\t%s\n" "$(til "$X_TIL")" | grep -E '^|^(?:X_TIL).*'
     return $?
   fi
