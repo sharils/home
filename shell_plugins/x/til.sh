@@ -92,8 +92,6 @@ til() {
 
   r) shift && set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" sr)" "$@" ;;
 
-  r-) shift && set -- "$(date -ujf%FT%T -v-1M "$("$SHARILS_HOME/shell_plugins/x/ss.sh" sr)" +%FT%T)" "$@" ;;
-
   n) shift && set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" sn)" "$@" ;;
 
   s)
