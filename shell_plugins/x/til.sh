@@ -5,7 +5,7 @@
 til() {
   if [ $# -eq 0 ]; then
     {
-      for t in 0800 1700 s c-11.5 c-9 c-8 c-7.5 2200 c; do
+      for t in 0800 1700 s C c-11.5 c-9 c-8 c-7.5 2200 c; do
         printf "$t\t%s\n" "$(til "$t")"
       done
       printf "X_TIL\t%s\n" "$(til "$X_TIL")"
