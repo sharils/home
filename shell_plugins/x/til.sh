@@ -102,7 +102,14 @@ til() {
     set -- "$dt" "$@"
     ;;
 
-  C) shift && set -- "$("$SHARILS_HOME/shell_plugins/x/ss.sh" ce)" "$@" ;;
+  C)
+    shift
+    dt="$(date -ujf%FT%T "$("$SHARILS_HOME/shell_plugins/x/ss.sh" ce)" +%FT%T)"
+    while [ "$(date -jf%FT%T "$dt" +%s)" -lt "$(date +%s)" ]; do
+      dt="$(date -jf%FT%T -v+1d "$dt" +%FT%T)"
+    done
+    set -- "$dt" "$@"
+    ;;
 
   5 | 7 | 9 | 11 | 13 | 15 | 19 | 21)
     til "${1}30"
