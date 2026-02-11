@@ -145,6 +145,9 @@ matches:
   - trigger: Wv,.
     replace: WebView
 
+  - trigger: Xr,.
+    replace: iPhone XR
+
   - trigger: cf,.
     replace: cloudfront
 
