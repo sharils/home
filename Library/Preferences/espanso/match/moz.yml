@@ -1,8 +1,0 @@
----
-matches:
-
-  - trigger: Cv,.
-    replace: Common Voice
-
-  - trigger: Moz,.
-    replace: Mozilla

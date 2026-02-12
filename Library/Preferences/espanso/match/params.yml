@@ -8,9 +8,6 @@ matches:
         params:
           format: "%F"
 
-  - trigger: "%F=,."
-    replace: "%Y-%m-%d"
-
   - trigger: "%R,."
     replace: "{{R}}"
     vars:
@@ -19,9 +16,6 @@ matches:
         params:
           format: "%R"
 
-  - trigger: "%R=,."
-    replace: "%H:%M"
-
   - trigger: "%T,."
     replace: "{{T}}"
     vars:
@@ -29,30 +23,6 @@ matches:
         type: date
         params:
           format: "%T"
-
-  - trigger: "%T=,."
-    replace: "%H:%M:%S"
-
-  - trigger: 0-,.
-    replace: 23:59
-
-  - trigger: 0:,.
-    replace: 00:00:00
-
-  - trigger: 0000,.
-    replace: 0000-00-00T00:00:00Z
-
-  - trigger: 1970,.
-    replace: 1970-01-01T00:00:00Z
-
-  - trigger: 2038,.
-    replace: 2038-01-19T03:14:07Z
-
-  - trigger: 9999,.
-    replace: 9999-99-99T99:99:99Z
-
-  - trigger: min,.
-    replace: minute
 
   - trigger: 8601,.
     replace: "{{8601}}"
@@ -77,6 +47,3 @@ matches:
         type: date
         params:
           format: "%Y-W%V"
-
-  - trigger: Utc,.
-    replace: UTC

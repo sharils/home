@@ -1,5 +1,5 @@
 ---
 matches:
 
-  - trigger: a/j,.
+  - trigger: aj,.
     replace: application/json
