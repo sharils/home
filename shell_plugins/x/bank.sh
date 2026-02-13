@@ -2,7 +2,7 @@
 
 [ -n "$SET_X" ] && set -x
 
-bank() {
+x_bank() {
   # https://data.gov.tw/dataset/6041
   [ -f "${codes:=/tmp/x-bank-codes-$(date +%F).}" ] ||
     curl 'https://stat.fsc.gov.tw/FSC_OAS3_RESTORE/api/CSV_EXPORT?TableID=B14&OUTPUT_FILE=Y' >"$codes"
@@ -17,4 +17,4 @@ bank() {
     LESS='--RAW-CONTROL-CHARS --ignore-case --no-init --quit-at-eof --quit-if-one-screen' less
 }
 
-bank "$@"
+x_bank "$@"

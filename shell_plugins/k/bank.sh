@@ -1,9 +1,9 @@
 #!/usr/bin/env sh
 
-[  n "$SET_X" ] && set  x
+[ -n "$SET_X" ] && set -x
 
-bank() {
-  cat <<'EOF' | grep  i "${*: ^}"
+k_bank() {
+  cat <<'EOF' | grep -i "${@:-.*TW.*}" | less
 004  BKTWTWTP  臺灣銀行股份有限公司
 005  LBOTTWTP  臺灣土地銀行股份有限公司
 006  TACBTWTP  合作金庫商業銀行股份有限公司
@@ -140,4 +140,4 @@ bank() {
 EOF
 }
 
-bank "$@"
+k_bank "$@"
