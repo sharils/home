@@ -24,7 +24,6 @@ x() {
   perm) shift && python -c 'import itertools,sys;[print(" ".join(p)) for p in itertools.permutations(sys.argv[1:])]' "$@" | sort | uniq ;;
   php) shift && php -r "$*" ;;
   screen) shift && screen -xRRe^Gg "$@" ;;
-  shuf) tr ' ' '\n' | sort --random-sort | tr '\n' ' ' ;;
   ssh) shift && ssh -t "$@" screen -xRRe^Gg -T screen-256color ;;
   ssh-copy-id) shift && ssh-copy-id -o PreferredAuthentications=password -i "$HOME/.ssh/id_ed25519.pub" "$@" ;;
   tel) shift && open "tel:$*" ;;
