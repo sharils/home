@@ -30,7 +30,7 @@ export PATH="$HOME/.deno/bin:$PATH"
 # Created by `pipx` on 2023-09-25 13:18:26
 export PATH="$PATH:$HOME/.local/bin"
 
-export PATH="$HOMEBREW_PREFIX/opt/python@3.12/libexec/bin:$PATH"
+export PATH="$HOMEBREW_PREFIX/opt/$(brew info --json=v2 python | jq '.formulae[0].name')/libexec/bin:$PATH"
 
 export RIPGREP_CONFIG_PATH="$SHARILS_HOME/.ripgreprc"
 
