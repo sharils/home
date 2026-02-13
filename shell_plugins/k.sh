@@ -176,6 +176,8 @@ k() {
 
   sdg) shift && "$SHARILS_HOME/shell_plugins/k/sdg.sh" "$@" ;;
 
+  shuf) shift && "$SHARILS_HOME/shell_plugins/k/shuf.sh" "$@" ;;
+
   size) shift && "$SHARILS_HOME/shell_plugins/k/size.sh" "$@" ;;
 
   solarterm) shift && "$SHARILS_HOME/shell_plugins/k/solarterm.sh" "$@" ;;
