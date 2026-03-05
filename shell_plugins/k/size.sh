@@ -35,7 +35,7 @@ EOF
 Jelly Star     	  95.10mm	   49.60mm	   18.70mm	  121.00g	2023	 3.00in	13
 Jelly Max      	 128.70mm	   62.70mm	   16.30mm	  180.00g	2024	 5.05in	14
 iPhone SE 3    	 138.40mm	   67.30mm	    7.30mm	  144.00g	2022	 4.70in	26
-iPhone 16e     	 146.70mm	   71.50mm	    7.80mm	  167.00g	2025	 6.10in	26
+iPhone 17e     	 146.70mm	   71.50mm	    7.80mm	  170.00g	2026	 6.10in	26
 Xperia 10 VII  	 153.00mm	   72.00mm	    8.30mm	  168.00g	2025	 6.10in	15
 Pixel 10a      	 153.90mm	   73.00mm	    8.90mm	  188.00g	2026	 6.30in	16
 The Fairphone 6	 156.50mm	   73.30mm	    9.60mm	  191.40g	2025	 6.31in	15
