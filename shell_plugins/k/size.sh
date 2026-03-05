@@ -22,7 +22,7 @@ HTC Desire 12s 	 154.20mm	   72.70mm	    8.30mm	  150.00g	2018	 5.70in	 8.1.0
 HTC U12 Life   	 158.50mm	   75.40mm	    8.30mm	  175.00g	2018	 6.00in	 8.1.0
 TWD $2000      	 165.00mm	   70.00mm	    0.10mm	    1.15g
 A4             	 297.00mm	  210.00mm
-MacBook Air    	 304.10mm	  215.00mm	   11.30mm	 1240.00g	2024	13.60in	15.6.1
+MacBook Air    	 304.10mm	  215.00mm	   11.30mm	 1240.00g	2026	13.60in	15.6.1
 On-Lap1306H    	 320.00mm	  203.00mm	    9.00mm	  670.00g	2019	13.30in
 On-Lap1305H    	 320.00mm	  203.00mm	    9.00mm	  685.00g	2017	13.30in
 Roomba 890     	 353.00mm	  353.00mm	   91.00mm	 3800.00g	2017
@@ -42,7 +42,7 @@ The Fairphone 6	 156.50mm	   73.30mm	    9.60mm	  191.40g	2025	 6.31in	15
 Switch OLED    	 242.00mm	  102.00mm	   13.90mm	  420.00g	2021	 7.00in
 Switch 2       	 272.00mm	  116.00mm	   13.90mm	  534.00g	2025	 7.90in
 iPad Air       	 280.60mm	  214.90mm	    6.10mm	  616.00g	2024	13.00in	16
-MacBook Air    	 297.50mm	  206.40mm	   12.70mm	 1230.00g	2024	11.71in	16
+MacBook Neo    	 297.50mm	  206.40mm	   12.70mm	 1230.00g	2024	11.71in	16
 BOOX Tab X C   	 310.00mm	  228.00mm	    6.70mm	  560.00g	2024	13.30in	11
 MacBook Pro    	 355.70mm	  248.10mm	   16.80mm	 2140.00g	2025	16.20in	11
 Brompton T Line	 585.00mm	  565.00mm	  270.00mm	 7950.00g	2026	16.00in
