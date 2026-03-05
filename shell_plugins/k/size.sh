@@ -42,6 +42,7 @@ The Fairphone 6	 156.50mm	   73.30mm	    9.60mm	  191.40g	2025	 6.31in	15
 Switch OLED    	 242.00mm	  102.00mm	   13.90mm	  420.00g	2021	 7.00in
 Switch 2       	 272.00mm	  116.00mm	   13.90mm	  534.00g	2025	 7.90in
 iPad Air       	 280.60mm	  214.90mm	    6.10mm	  616.00g	2024	13.00in	16
+MacBook Air    	 297.50mm	  206.40mm	   12.70mm	 1230.00g	2024	11.71in	16
 BOOX Tab X C   	 310.00mm	  228.00mm	    6.70mm	  560.00g	2024	13.30in	11
 MacBook Pro    	 355.70mm	  248.10mm	   16.80mm	 2140.00g	2025	16.20in	11
 Brompton T Line	 585.00mm	  565.00mm	  270.00mm	 7950.00g	2026	16.00in
