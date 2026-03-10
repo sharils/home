@@ -44,7 +44,7 @@ x() {
     x fx "$cmd" | x bc "$(awk '{ print $3 }')" '*' "${@:-1}"
     ;;
 
-  $ | DS_Store | 217 | ai | ap | aq | bak | bank | batt | bc | bmi | cal | cat-weight | cert | cm | county-sunrise | cycle | data | download.sh | draculadaily | editorconfig | english-words | eq | erl | ex | fer | focus | fong | fx | getnf | gif | hbt | hospital | hrm | html | ico | iconv | id | jq | kibble | lab | law | mac | members | mh | ml | paisa | pdf | petfood | ping | pmdr | png | pvpi | py | rm | salary | scrcpy | sh | shutdown | smolsite | sn | sqlite | ssh-keygen | ss | su | title | tld | touch | traceroute | tree | tz | uri | uv | vcf | venv | webp | weight | whois | wthr | vimv | zip)
+  $ | DS_Store | 217 | ai | ap | aq | bak | bank | batt | bc | bmi | cal | cat-weight | cert | cm | county-sunrise | cycle | data | download.sh | draculadaily | editorconfig | english-words | eq | erl | ex | fer | focus | fong | fx | getnf | gif | hbt | hospital | hrm | html | ico | iconv | id | jq | kibble | lab | law | mac | members | mh | ml | paisa | pdf | petfood | ping | pmdr | png | pvpi | py | rm | salary | scrcpy | sh | shutdown | smolsite | sn | sqlite | ssh-keygen | shuf | ss | su | title | tld | touch | traceroute | tree | tz | uri | uv | vcf | venv | webp | weight | whois | wthr | vimv | zip)
     cmd="$1" && shift
     "$SHARILS_HOME/shell_plugins/x/$cmd.sh" "$@"
     ;;
