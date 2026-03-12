@@ -21,6 +21,7 @@ iPhone XR      	 150.90mm	   75.70mm	    8.30mm	  194.00g	2018	 6.10in	15.7.4
 HTC Desire 12s 	 154.20mm	   72.70mm	    8.30mm	  150.00g	2018	 5.70in	 8.1.0
 HTC U12 Life   	 158.50mm	   75.40mm	    8.30mm	  175.00g	2018	 6.00in	 8.1.0
 TWD $2000      	 165.00mm	   70.00mm	    0.10mm	    1.15g
+B-format       	 198.00mm	  129.00mm
 A4             	 297.00mm	  210.00mm
 MacBook Air    	 304.10mm	  215.00mm	   11.30mm	 1240.00g	2026	13.60in	15.6.1
 On-Lap1306H    	 320.00mm	  203.00mm	    9.00mm	  670.00g	2019	13.30in
