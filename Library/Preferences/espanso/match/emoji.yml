@@ -361,6 +361,9 @@ matches:
   - trigger: fairy,.
     replace: 🧚🏻‍♀️🧚🏻🧚🏻‍♂️
 
+  - trigger: heart,.
+    replace: 🩷❤️🧡💛💚🩵💙💜🖤🩶🤍🤎
+
   - trigger: here,.
     replace: 👇🏻👇🏼👇🏽👇🏾👇🏿
 
