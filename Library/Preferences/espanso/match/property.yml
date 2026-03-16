@@ -115,6 +115,9 @@ matches:
   - trigger: Oc,.
     replace: OpenChat
 
+  - trigger: Pgo,.
+    replace: Pokémon GO
+
   - trigger: Posa,.
     replace: Pattern-Oriented Software Architecture
 
