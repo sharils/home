@@ -275,7 +275,7 @@ matches:
     replace: 🤔🤨
 
   - trigger: sip,.
-    replace: ☕🤏
+    replace: ☕🤏🏻
 
   - trigger: speechless,.
     replace: 😶 💬
