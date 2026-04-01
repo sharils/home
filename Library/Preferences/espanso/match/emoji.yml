@@ -391,6 +391,9 @@ matches:
   - trigger: superhero,.
     replace: 🦸🏻‍♀️🦸🏻🦸🏻‍♂️
 
+  - trigger: teacher,.
+    replace: 👩🏻‍🏫🧑🏻‍🏫👨🏻‍🏫
+
   - trigger: vampire,.
     replace: 🧛🏻‍♀️🧛🏻🧛🏻‍♂️
 
