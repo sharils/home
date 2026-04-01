@@ -367,6 +367,9 @@ matches:
   - trigger: here,.
     replace: 👇🏻👇🏼👇🏽👇🏾👇🏿
 
+  - trigger: knee,.
+    replace: 🧎🏻‍♀️🧎🏻🧎🏻‍♂️
+
   - trigger: mfw,.
     replace: 🤦🏻‍♀️🤦🏻🤦🏻‍♂️
 
