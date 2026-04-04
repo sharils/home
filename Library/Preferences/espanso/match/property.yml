@@ -193,74 +193,14 @@ matches:
   - trigger: Tabx,.
     replace: BOOX Tab X C
 
-  - trigger: Hh,.
-    replace: Her Highness
-
-  - trigger: Mh,.
-    replace: My Highness
-
-  - trigger: Yh,.
-    replace: Your Highness
-
-  - trigger: Hl,.
-    replace: Her Liege
-
-  - trigger: Ml,.
-    replace: My Liege
-
-  - trigger: Yl,.
-    replace: Your Liege
-
-  - trigger: Hm,.
-    replace: Her Majesty
-
-  - trigger: Mm,.
-    replace: My Majesty
-
-  - trigger: Ym,.
-    replace: Your Majesty
-
-  - trigger: Hg,.
-    replace: Her Grace
-
-  - trigger: Mg,.
-    replace: My Grace
-
-  - trigger: Yg,.
-    replace: Your Grace
-
-  - trigger: hh,.
-    replace: her Highness
-
-  - trigger: mh,.
-    replace: my Highness
-
-  - trigger: yh,.
-    replace: your Highness
-
-  - trigger: hl,.
-    replace: her Liege
-
   - trigger: ml,.
     replace: my Liege
-
-  - trigger: yl,.
-    replace: your Liege
-
-  - trigger: hm,.
-    replace: her Majesty
-
-  - trigger: mm,.
-    replace: my Majesty
+    propagate_case: true
 
   - trigger: ym,.
     replace: your Majesty
-
-  - trigger: hg,.
-    replace: her Grace
-
-  - trigger: mg,.
-    replace: my Grace
+    propagate_case: true
 
   - trigger: yg,.
     replace: your Grace
+    propagate_case: true
