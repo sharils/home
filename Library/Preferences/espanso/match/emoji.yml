@@ -118,9 +118,6 @@ matches:
   - trigger: embrass,.
     replace: 🤸🏻‍♀️🚉
 
-  - trigger: eng,.
-    replace: 👩🏻‍💻🧑🏻‍💻👨🏻‍💻
-
   - trigger: pig,.
     replace: ⏰🐖🛫
 
@@ -357,6 +354,9 @@ matches:
 
   - trigger: doctor,.
     replace: 👩🏻‍⚕️🧑🏻‍⚕️👨🏻‍⚕️
+
+  - trigger: eng,.
+    replace: 👩🏻‍💻🧑🏻‍💻👨🏻‍💻
 
   - trigger: fairy,.
     replace: 🧚🏻‍♀️🧚🏻🧚🏻‍♂️
