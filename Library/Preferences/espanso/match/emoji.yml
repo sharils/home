@@ -205,9 +205,6 @@ matches:
   - trigger: loop,.
     replace: 🔁
 
-  - trigger: jackpot,.
-    replace: 🍒🍒🍒
-
   - trigger: jazz,.
     replace: 🎷🐛
 
@@ -366,6 +363,9 @@ matches:
 
   - trigger: here,.
     replace: 👇🏻👇🏼👇🏽👇🏾👇🏿
+
+  - trigger: jackpot,.
+    replace: 🍒🍒🍒
 
   - trigger: knee,.
     replace: 🧎🏻‍♀️🧎🏻🧎🏻‍♂️
