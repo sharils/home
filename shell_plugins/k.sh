@@ -41,6 +41,8 @@ k() {
 
   cdnic) shift && "$SHARILS_HOME/shell_plugins/k/cdnic.sh" "$@" ;;
 
+  checkup) shift && "$SHARILS_HOME/shell_plugins/k/checkup.sh" "$@" ;;
+
   cie) shift && "$SHARILS_HOME/shell_plugins/k/cie.sh" "$@" ;;
 
   circadian) shift && "$SHARILS_HOME/shell_plugins/k/circadian.sh" "$@" ;;
