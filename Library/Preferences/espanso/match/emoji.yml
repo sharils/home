@@ -64,9 +64,6 @@ matches:
   - trigger: bye,.
     replace: 🤸🏻‍♀️🕳️
 
-  - trigger: call,.
-    replace: 🤙🏻
-
   - trigger: caught,.
     replace: 😈📸
 
@@ -405,6 +402,9 @@ matches:
 
   - trigger: love,.
     replace: ❤️🧡💛💚💙💜
+
+  - trigger: call,.
+    replace: 🤙🏻🤙🏼🤙🏽🤙🏾🤙🏿
 
   - trigger: that,.
     replace: ☝🏻☝🏼☝🏽☝🏾☝🏿
