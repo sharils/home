@@ -89,6 +89,8 @@ k() {
 
   g) shift && "$SHARILS_HOME/shell_plugins/k/g.sh" "$@" ;;
 
+  game) shift && "$SHARILS_HOME/shell_plugins/k/game.sh" "$@" ;;
+
   geneva) shift && "$SHARILS_HOME/shell_plugins/k/geneva.sh" "$@" ;;
 
   gh) shift && l 'https://docs.github.com/en/get-started/using-github/keyboard-shortcuts#site-wide-shortcuts' ;;
