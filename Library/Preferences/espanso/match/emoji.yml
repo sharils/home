@@ -223,7 +223,7 @@ matches:
   - trigger: period,.
     replace: 🫳🏻🎤
 
-  - trigger: please,.
+  - trigger: plz,.
     replace: 🫸🏻🫷🏻
 
   - trigger: read,.
@@ -402,6 +402,9 @@ matches:
 
   - trigger: love,.
     replace: ❤️🧡💛💚💙💜
+
+  - trigger: please,.
+    replace: 🙏🏻 🙏🏼 🙏🏽 🙏🏾 🙏🏿
 
   - trigger: call,.
     replace: 🤙🏻🤙🏼🤙🏽🤙🏾🤙🏿
