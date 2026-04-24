@@ -3,7 +3,7 @@
 [ -n "$SET_X" ] && set -x
 
 maslow() {
-  cat <<'EOF' | grep -E '^|Sleep|Food|Water|Shelter|Clothes|Medicine|Shower|Hygiene|Trust|My Liege|Cherry|Kids|Self-Respect'
+  cat <<'EOF' | grep -E '^|Sleep|Food|Water|Shelter|Clothes|Medicine|Shower|Hygiene|Environement|Trust|My Liege|Cherry|Kids|Self-Respect'
 ✨ Transcendence
 🌟 Self-actualization
     💍 Partner Acquisition
@@ -45,6 +45,7 @@ maslow() {
     💖 Emotional Security
     💰 Financial Security
     🏥 Health
+        🧹 Environment
         🪥 Hygiene
         🚿 Shower
         💊 Medicine
