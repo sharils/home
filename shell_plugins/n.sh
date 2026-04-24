@@ -10,6 +10,11 @@ n() {
     return
   fi
 
+  if [ -f "$@" ]; then
+    nvim "$@"
+    return $?
+  fi
+
   case $1 in
 
   dg)
