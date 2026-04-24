@@ -38,12 +38,13 @@ maslow() {
         🐈 Kids
         🍒 Cherry
     💞 Intimacy
-        👸🏻 My Liege
     🥂 Trust
 🛡️ Safety
     ⚔️ Personal Security
     💖 Emotional Security
+        ⚓️ Anchor
     💰 Financial Security
+        🧳 Job
     🏥 Health
         🧹 Environment
         🪥 Hygiene
