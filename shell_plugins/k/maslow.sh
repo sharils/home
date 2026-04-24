@@ -43,13 +43,13 @@ maslow() {
     💖 Emotional Security
     💰 Financial Security
 🍎 Physiological
+    🧬 Reproduction
     🌬️ Air
-    🍵 Water
-    🍛 Food
     🔥 Heat
     👕 Clothes
-    🧬 Reproduction
     🏡 Shelter
+    🍵 Water
+    🍛 Food
     💤 Sleep
 EOF
 }
