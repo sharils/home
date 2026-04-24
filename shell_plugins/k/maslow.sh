@@ -42,7 +42,7 @@ maslow() {
     ⚔️ Personal Security
     💖 Emotional Security
     💰 Financial Security
-🍎 Physiological
+🫀 Physiological
     🧬 Reproduction
     🌬️ Air
     🔥 Heat
