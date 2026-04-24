@@ -3,7 +3,7 @@
 [ -n "$SET_X" ] && set -x
 
 maslow() {
-  cat <<'EOF' | grep -E '^|Transcendence|Self-actualization|Aesthetic|Cognitive|Esteem|Belonging and love|Safety|Physiological'
+  cat <<'EOF' | grep -E '^|Sleep|Food|Water|Shelter|Clothes|Health|Trust|Family|Intimacy|Self-Respect'
 ✨ Transcendence
 🌟 Self-actualization
     💍 Partner Acquisition
@@ -18,12 +18,12 @@ maslow() {
     🌈 Meaning
 🏆 Esteem
     📈 Higher
-        👑 Self-respect
         🦾 Strength
         ♟️ Competence / Mastery
-        🕶️ Self-confidence
+        🕶️ Self-Confidence
         🚲 Independence
         🗽 Freedom
+        👑 Self-Respect
     📉 Lower
         🪪 Status
         🎖️ Recognition
@@ -31,17 +31,17 @@ maslow() {
         💎 Prestige
         🔦 Attention
 👨‍👩‍👧‍👦 Belonging / Love
-    🏠 Family
     🍻 Friendship
-    💞 Intimacy
-    🥂 Trust
     🍻 Acceptance
     🎁 Receiving and Giving Love and Affection
+    💞 Intimacy
+    🏠 Family
+    🥂 Trust
 🛡️ Safety
-    🏥 Health
     ⚔️ Personal Security
     💖 Emotional Security
     💰 Financial Security
+    🏥 Health
 🫀 Physiological
     🧬 Reproduction
     🌬️ Air
