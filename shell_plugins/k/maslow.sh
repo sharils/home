@@ -18,24 +18,24 @@ maslow() {
     🌈 Meaning
 🏆 Esteem
     📈 Higher
-        🦾 Self-respect
-        🗼 Strength
-        🏅 Competence / Mastery
+        👑 Self-respect
+        🦾 Strength
+        ♟️ Competence / Mastery
         🕶️ Self-confidence
-        🦅 Independence
+        🚲 Independence
         🗽 Freedom
     📉 Lower
-        🎖️ Status
-        🏅 Recognition
-        📸 Fame
+        🪪 Status
+        🎖️ Recognition
+        🎉 Fame
         💎 Prestige
-        📣 Attention
+        🔦 Attention
 👨‍👩‍👧‍👦 Belonging / Love
     🏠 Family
-    🫂 Friendship
+    🍻 Friendship
     💞 Intimacy
     🥂 Trust
-    ✅ Acceptance
+    🍻 Acceptance
     🎁 Receiving and Giving Love and Affection
 🛡️ Safety
     🏥 Health
@@ -44,12 +44,12 @@ maslow() {
     💰 Financial Security
 🍎 Physiological
     🌬️ Air
-    💧 Water
-    🍞 Food
+    🍵 Water
+    🍛 Food
     🔥 Heat
     👕 Clothes
     🧬 Reproduction
-    ⛺ Shelter
+    🏡 Shelter
     💤 Sleep
 EOF
 }
