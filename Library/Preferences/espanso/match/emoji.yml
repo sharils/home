@@ -7,11 +7,11 @@ matches:
   - trigger: "!?,."
     replace: ⁉️
 
-  - trigger: "!!,."
-    replace: ❗️❕
+  - trigger: "!,."
+    replace: ❗️
 
-  - trigger: "??,."
-    replace: ❓❔
+  - trigger: "?,."
+    replace: ❓
 
   - trigger: 100yes,.
     replace: 💯😃
