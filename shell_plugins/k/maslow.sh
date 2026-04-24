@@ -38,7 +38,7 @@ maslow() {
     🥂 Trust
     🏠 Family
         🐈 Kids
-        🍒 Cherry
+        🍒 Sibling
 🛡️ Safety
     ⚔️ Personal Security
     💰 Financial Security
