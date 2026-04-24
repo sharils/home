@@ -175,6 +175,8 @@ k() {
 
   rce) shift && "$SHARILS_HOME/shell_plugins/k/rce.sh" "$@" ;; # Ritual of the Calling of an Engineer
 
+  roman) shift && "$SHARILS_HOME/shell_plugins/k/roman.sh" "$@" ;;
+
   rtm) shift && "$SHARILS_HOME/shell_plugins/k/rtm.sh" "$@" ;;
 
   # safe = posix & uri
