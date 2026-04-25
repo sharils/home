@@ -37,7 +37,7 @@ maslow() {
     💞 Intimacy
     🥂 Trust
     🏠 Family
-        🐈 Kids
+        🚼 Kids
         🍒 Sibling
 🛡️ Safety
     ⚔️ Personal Security
