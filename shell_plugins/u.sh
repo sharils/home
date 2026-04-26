@@ -5,6 +5,14 @@
 u() {
   case "$1" in
 
+  a) shift && set -- add "$@" ;;
+
+  i) shift && set -- init "$@" ;;
+
+  esac
+
+  case "$1" in
+
   clean) shift && rm "${@:--fir}" "$HOME/Library/Application Support/qutebrowser/webengine" ;;
 
   e) shift && "$SHARILS_HOME/shell_plugins/u/e.sh" "$@" ;;
@@ -30,6 +38,8 @@ EOF
   l) shift && l "$@" "$HOME/Library/Application Support/qutebrowser/webengine" ;;
 
   o) open -b org.qt-project.Qt.QtWebEngineCore ;;
+
+  add | init) uv "$@" ;;
 
   *) qutebrowser "$@" ;;
 
