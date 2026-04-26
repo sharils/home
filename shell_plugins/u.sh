@@ -2,6 +2,8 @@
 
 [ -n "$SET_X" ] && set -x
 
+alias pip='uv pip'
+
 u() {
   case "$1" in
 
