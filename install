@@ -182,6 +182,7 @@ tsconfig.json} ~
     ln -fs "$PWD/.config/starship.toml" ~/.config/starship.toml
     ln -fs "$PWD/.config/git" ~/.config/git
     ln -fs "$PWD/.config/lsd" ~/.config/lsd
+    ln -fs "$PWD/.config/nvim" ~/.config/nvim
     ln -fs "$PWD/.config/thefuck/rules" ~/.config/thefuck/rules
 
     ln -fs "$PWD/Library/Preferences/"{espanso,qutebrowser} ~/Library/Preferences
