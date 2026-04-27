@@ -26,6 +26,8 @@ d() {
     )
     ;;
 
+  c) deno check "$@" ;;
+
   l) d logs "$@" ;;
 
   o) open -b com.docker.docker ;;
