@@ -10,7 +10,7 @@ n() {
     return
   fi
 
-  if [ -f "$@" ]; then
+  if [ -f "$1" ]; then
     nvim "$@"
     return $?
   fi
