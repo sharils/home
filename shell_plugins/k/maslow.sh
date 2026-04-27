@@ -51,6 +51,7 @@ maslow() {
         🚿 Shower
         💊 Medicine
         🚽 Toilet
+        👁️ Eyes
 🫀 Physiological
     🧬 Reproduction
     🌬️ Air
