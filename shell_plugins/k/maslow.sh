@@ -55,12 +55,12 @@ maslow() {
         👁️ Eyes
 🫀 Physiological
     🧬 Reproduction
-    🌬️ Air
     🔥 Heat
     👕 Clothes
     🏡 Shelter
     🍵 Water
     🍛 Food
+    🌬️ Air
     💤 Sleep
 EOF
 }
