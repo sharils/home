@@ -173,6 +173,8 @@ k() {
 
   quality) shift && "$SHARILS_HOME/shell_plugins/k/quality.sh" "$@" ;;
 
+  rating) shift && "$SHARILS_HOME/shell_plugins/k/rating.sh" "$@" ;;
+
   rce) shift && "$SHARILS_HOME/shell_plugins/k/rce.sh" "$@" ;; # Ritual of the Calling of an Engineer
 
   roman) shift && "$SHARILS_HOME/shell_plugins/k/roman.sh" "$@" ;;
