@@ -17,11 +17,12 @@ threshold = 95
 
 # https://starship.rs/config/#os
 [os]
+format = '[$symbol]($style)'
 disabled = false
 
 # https://starship.rs/config/#time
 [time]
 disabled = false
 format = '[$time]($style) '
-time_format = '%m%d %H:%M:%S'
+time_format = '%FT%T%z'
 # disabled = false
