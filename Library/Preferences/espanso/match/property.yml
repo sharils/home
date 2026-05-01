@@ -204,3 +204,6 @@ matches:
   - trigger: yg,.
     replace: your Grace
     propagate_case: true
+
+  - trigger: Lt,.
+    replace: Live talk

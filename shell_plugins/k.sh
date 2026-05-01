@@ -121,6 +121,8 @@ k() {
 
   manila) shift && "$SHARILS_HOME/shell_plugins/k/manila.sh" "$@" ;;
 
+  mask) shift && "$SHARILS_HOME/shell_plugins/k/mask.sh" "$@" ;;
+
   mbti) shift && "$SHARILS_HOME/shell_plugins/k/mbti.sh" "$@" ;;
 
   med) shift && "$SHARILS_HOME/shell_plugins/k/med.sh" "$@" ;;
