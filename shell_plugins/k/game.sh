@@ -18,6 +18,7 @@ Spot the Difference: Test your partner's observation skills by changing one smal
 The Finger Counting: Synchronize your intuition by trying to hold up the exact same number of fingers on a count of three.
 Miss Sweetie Poo Challenge: Give a speech or tell a story within 60 seconds, or be interrupted by someone shouting "Please stop, I'm bored!"
 24/7 Lecture: Explain a complex topic in depth for 24 seconds, then summarize it perfectly using only seven words.
+Draw and Guess: one player draws a secret word or phrase and the others try to guess what it is.
 EOF
 }
 
