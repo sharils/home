@@ -109,6 +109,9 @@ matches:
   - trigger: oh,.
     replace: ㄤ
 
+  - trigger: or,.
+    replace: ㄦ
+
   - trigger: cjk,.
     replace: 龍龙竜용
 
