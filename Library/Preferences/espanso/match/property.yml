@@ -205,5 +205,8 @@ matches:
     replace: your Grace
     propagate_case: true
 
+  - trigger: 10a,.
+    replace: Pixel 10a
+
   - trigger: Lt,.
     replace: Live talk
