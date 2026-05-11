@@ -83,6 +83,8 @@ k() {
 
   fib) shift && "$SHARILS_HOME/shell_plugins/k/fib.sh" "$@" ;;
 
+  five) shift && "$SHARILS_HOME/shell_plugins/k/five.sh" "$@" ;;
+
   font) shift && "$SHARILS_HOME/shell_plugins/k/font.sh" "$@" ;;
 
   food) shift && "$SHARILS_HOME/shell_plugins/k/food.sh" "$@" ;;
