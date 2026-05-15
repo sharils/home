@@ -32,9 +32,10 @@ maslow() {
         🔦 Attention
 👨‍👩‍👧‍👦 Belonging / Love
     🍻 Friendship
-    🍻 Acceptance
+    🫂 Acceptance
     🎁 Receiving and Giving Love and Affection
     💞 Intimacy
+        ⚓️ Anchor
     🥂 Trust
     🏠 Family
         🚼 Kids
@@ -44,7 +45,6 @@ maslow() {
     💰 Financial Security
         🧳 Job
     💖 Emotional Security
-        ⚓️ Anchor
     🏥 Health
         🧹 Environment
         🪥 Hygiene
