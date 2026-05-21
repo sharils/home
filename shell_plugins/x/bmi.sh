@@ -84,18 +84,10 @@ BMI  18.50  21.00  21.35  21.70  24.99
 200  74.00  84.00  85.40  86.80  99.96
 BMI  18.50  21.00  21.35  21.70  24.99
 EOF
-    return $?
-  fi
-
-  if [ $1 -eq 21 ] && [ $# -eq 2 ]; then
-    printf 'H: %s, W: %s–%s %s, BMI: %s' \
-      "$2" \
-      "$(bc --mathlib --expression="scale=2; 21*($2/100)^2")" \
-      "$(bc --mathlib --expression="scale=2; 21.7*($2/100)^2")" \
-      "$(bc --mathlib --expression="scale=2; 21.35*($2/100)^2")" \
-      "$1"
-
-  elif [ $1 -ne 21 ]; then
+  elif [ $# -eq 1 ]; then
+    echo 'BMI  18.50  21.00  21.35  21.70  24.99'
+    bmi | grep --color=never "^$1.*"
+  else
     cat <<'EOF'
 Underweight (Severe thinness)    < 16.0
 Underweight (Moderate thinness)  16.0 – 16.9
