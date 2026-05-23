@@ -7,6 +7,9 @@ n_alias() {
 # Biome is a toolchain for the web: formatter, linter and more
 @biomejs/biome biome
 
+# A visual tool for inspecting and understanding your ESLint flat configs.
+@eslint/config-inspector
+
 # A tool for creating and developing Ionic Framework mobile apps.
 @ionic/cli ionic
 
