@@ -16,6 +16,9 @@ matches:
   - trigger: 100yes,.
     replace: 💯😃
 
+  - trigger: 484,.
+    replace: 4️⃣8️⃣4️⃣
+
   - trigger: 5,.
     replace: 5️⃣5️⃣5️⃣5️⃣5️⃣
 
