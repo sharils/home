@@ -1,0 +1,2 @@
+custom-shader = ~/git/github.com/s0xDk/ghostty-blackhole/blackhole.glsl
+custom-shader-animation = true
