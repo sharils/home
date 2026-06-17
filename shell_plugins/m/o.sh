@@ -10,7 +10,6 @@ o() {
   case "$1" in
   60) $BROWSER 'https://www.youtube.com/watch?v=dadisjcjqtk' ;;
   91) open -b com.apple.Music 'https://jazzfm91.streamb.live/SB00009' ;;
-  247) open -b com.apple.Music 'https://stream.zeno.fm/s2888pqwzqzuv' ;;
   977) open -b com.apple.Music 'https://music.apple.com/tw/station/classical-fm-97-7/ra.1459554452?l=en' ;;
   a1) open -b com.apple.Music 'https://music.apple.com/tw/station/apple-music-1/ra.978194965?l=en-GB' ;;
   bbc) open -b com.apple.Music 'https://music.apple.com/tw/station/bbc-radio-3/ra.1461288674?l=en' ;;
@@ -21,8 +20,11 @@ o() {
   muzaiko) open -b com.apple.Music 'http://fluo.muzaiko.saluton.dk:8000/radio.mp3' ;;
   peace) open -b com.apple.Music 'https://peacefulpiano.stream.publicradio.org/peacefulpiano.aac' ;;
   rand) $BROWSER 'https://classicalmusiconly.com/community/tv/lucky/random' ;;
+  rco) open -b com.apple.Music 'https://i1.cdn.jetstre.am:8000/sz=RCOLiveWebradio=mp3-192?port=8000' ;;
+  rsc) open -b com.apple.Music 'https://livestreaming-node-2.srg-ssr.ch/srgssr/rsc_de/aac/96' ;;
   vpr) open -b com.apple.Music 'https://www.vpr.net/apps/stream-playlists/vprclassicalaac.pls' ;;
   wwfm) open -b com.apple.Music 'https://wwmf.streamguys1.com/live' ;;
+  ycr) open -b com.apple.Music 'https://hls.stream.publicradio.org/ycradio-hls/playlist.m3u8' ;;
   esac
 }
 
