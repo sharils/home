@@ -28,7 +28,7 @@ t() {
         return $?
       fi
       while IFS= read -r task; do
-        maybe_date="$(echo "$task" | cut -d' ' -f2 | sed 's/\x1b\[[0-9;]*m//g')"
+        maybe_date="$(echo "$task" | cut -d' ' -f2 | sed 's/\x1b\[[0-9;]*m//g' | sed 's/-00/-01/g')"
         if ! date -jf%F "$maybe_date" >/dev/null 2>&1; then
           echo "$task"
           continue
