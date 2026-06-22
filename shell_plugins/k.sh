@@ -153,6 +153,8 @@ k() {
 
   oote) shift && "$SHARILS_HOME/shell_plugins/k/oote.sh" "$@" ;; # Obligation of the Engineer
 
+  orbit) shift && "$SHARILS_HOME/shell_plugins/k/orbit.sh" "$@" ;;
+
   oxymoron) shift && "$SHARILS_HOME/shell_plugins/k/oxymoron.sh" "$@" ;;
 
   pareto) shift && "$SHARILS_HOME/shell_plugins/k/pareto.sh" "$@" ;;
