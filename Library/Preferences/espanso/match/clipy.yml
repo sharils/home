@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: "好處說完了 壞處呢？,."
+    replace: 好處說完了 壞處呢？
+
   - trigger: "為什麼你頭上有防劇透,."
     replace: 為什麼你$|$有防劇透,.
 
