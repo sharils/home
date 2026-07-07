@@ -201,3 +201,166 @@ matches:
 
   - trigger: tuhlan,.
     replace: 揬卵
+
+  - trigger: ma,.
+    replace: ㎃
+
+  - trigger: kb,.
+    replace: ㎅
+
+  - trigger: mb,.
+    replace: ㎆
+
+  - trigger: gb,.
+    replace: ㎇
+
+  - trigger: cal,.
+    replace: ㎈
+
+  - trigger: kcal,.
+    replace: ㎉
+
+  - trigger: mg,.
+    replace: ㎎
+
+  - trigger: g,.
+    replace: ℊ
+
+  - trigger: kg,.
+    replace: ㎏
+
+  - trigger: hz,.
+    replace: ㎐
+
+  - trigger: ml,.
+    replace: ㎖
+
+  - trigger: l,.
+    replace: ℓ
+
+  - trigger: nm,.
+    replace: ㎚
+
+  - trigger: mm,.
+    replace: ㎜
+
+  - trigger: cm,.
+    replace: ㎝
+
+  - trigger: km,.
+    replace: ㎞
+
+  - trigger: ns,.
+    replace: ㎱
+
+  - trigger: us,.
+    replace: ㎲
+
+  - trigger: ms,.
+    replace: ㎳
+
+  - trigger: cc,.
+    replace: ㏄
+
+  - trigger: db,.
+    replace: ㏈
+
+  - trigger: in,.
+    replace: ㏌
+
+  - trigger: km,.
+    replace: ㏎
+
+  - trigger: ln,.
+    replace: ㏑
+
+  - trigger: log,.
+    replace: ㏒
+
+  - trigger: ph,.
+    replace: ㏗
+
+  - trigger: am,.
+    replace: ㏂
+
+  - trigger: pm,.
+    replace: ㏘
+
+  - trigger: ppm,.
+    replace: ㏙
+
+  - trigger: pr,.
+    replace: ㏚
+
+  - trigger: no,.
+    replace: №
+
+  - { "trigger": "1m,.", "replace": "㋀" }
+  - { "trigger": "2m,.", "replace": "㋁" }
+  - { "trigger": "3m,.", "replace": "㋂" }
+  - { "trigger": "4m,.", "replace": "㋃" }
+  - { "trigger": "5m,.", "replace": "㋄" }
+  - { "trigger": "6m,.", "replace": "㋅" }
+  - { "trigger": "7m,.", "replace": "㋆" }
+  - { "trigger": "8m,.", "replace": "㋇" }
+  - { "trigger": "9m,.", "replace": "㋈" }
+  - { "trigger": "10m,.", "replace": "㋉" }
+  - { "trigger": "11m,.", "replace": "㋊" }
+  - { "trigger": "12m,.", "replace": "㋋" }
+
+  - { "trigger": "1d,.", "replace": "㏠" }
+  - { "trigger": "2d,.", "replace": "㏡" }
+  - { "trigger": "3d,.", "replace": "㏢" }
+  - { "trigger": "4d,.", "replace": "㏣" }
+  - { "trigger": "5d,.", "replace": "㏤" }
+  - { "trigger": "6d,.", "replace": "㏥" }
+  - { "trigger": "7d,.", "replace": "㏦" }
+  - { "trigger": "8d,.", "replace": "㏧" }
+  - { "trigger": "9d,.", "replace": "㏨" }
+  - { "trigger": "10d,.", "replace": "㏩" }
+  - { "trigger": "11d,.", "replace": "㏪" }
+  - { "trigger": "12d,.", "replace": "㏫" }
+  - { "trigger": "13d,.", "replace": "㏬" }
+  - { "trigger": "14d,.", "replace": "㏭" }
+  - { "trigger": "15d,.", "replace": "㏮" }
+  - { "trigger": "16d,.", "replace": "㏯" }
+  - { "trigger": "17d,.", "replace": "㏰" }
+  - { "trigger": "18d,.", "replace": "㏱" }
+  - { "trigger": "19d,.", "replace": "㏲" }
+  - { "trigger": "20d,.", "replace": "㏳" }
+  - { "trigger": "21d,.", "replace": "㏴" }
+  - { "trigger": "22d,.", "replace": "㏵" }
+  - { "trigger": "23d,.", "replace": "㏶" }
+  - { "trigger": "24d,.", "replace": "㏷" }
+  - { "trigger": "25d,.", "replace": "㏸" }
+  - { "trigger": "26d,.", "replace": "㏹" }
+  - { "trigger": "27d,.", "replace": "㏺" }
+  - { "trigger": "28d,.", "replace": "㏻" }
+  - { "trigger": "29d,.", "replace": "㏼" }
+  - { "trigger": "30d,.", "replace": "㏽" }
+  - { "trigger": "31d,.", "replace": "㏾" }
+
+  - { "trigger": "0h,.", "replace": "㍘" }
+  - { "trigger": "1h,.", "replace": "㍙" }
+  - { "trigger": "2h,.", "replace": "㍚" }
+  - { "trigger": "3h,.", "replace": "㍛" }
+  - { "trigger": "4h,.", "replace": "㍜" }
+  - { "trigger": "5h,.", "replace": "㍝" }
+  - { "trigger": "6h,.", "replace": "㍞" }
+  - { "trigger": "7h,.", "replace": "㍟" }
+  - { "trigger": "8h,.", "replace": "㍠" }
+  - { "trigger": "9h,.", "replace": "㍡" }
+  - { "trigger": "10h,.", "replace": "㍢" }
+  - { "trigger": "11h,.", "replace": "㍣" }
+  - { "trigger": "12h,.", "replace": "㍤" }
+  - { "trigger": "13h,.", "replace": "㍥" }
+  - { "trigger": "14h,.", "replace": "㍦" }
+  - { "trigger": "15h,.", "replace": "㍧" }
+  - { "trigger": "16h,.", "replace": "㍨" }
+  - { "trigger": "17h,.", "replace": "㍩" }
+  - { "trigger": "18h,.", "replace": "㍪" }
+  - { "trigger": "19h,.", "replace": "㍫" }
+  - { "trigger": "20h,.", "replace": "㍬" }
+  - { "trigger": "21h,.", "replace": "㍭" }
+  - { "trigger": "22h,.", "replace": "㍮" }
+  - { "trigger": "23h,.", "replace": "㍯" }
