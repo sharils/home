@@ -295,6 +295,12 @@ matches:
   - trigger: no,.
     replace: №
 
+  - trigger: +-,.
+    replace: ±
+
+  - trigger: ~,.
+    replace: ≈
+
   - { "trigger": "1m,.", "replace": "㋀" }
   - { "trigger": "2m,.", "replace": "㋁" }
   - { "trigger": "3m,.", "replace": "㋂" }
