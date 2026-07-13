@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Chiikawa,.
+    replace: ちいかわ
+
   - trigger: Doraemon,.
     replace: ドラえもん
 
