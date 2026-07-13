@@ -136,7 +136,7 @@ matches:
   - trigger: epsi,.
     replace: ε
 
-  - trigger: times,.
+  - trigger: x,.
     replace: ×
 
   - trigger: buephokkephok,.
