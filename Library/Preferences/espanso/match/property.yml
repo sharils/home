@@ -1,6 +1,9 @@
 ---
 matches:
 
+  - trigger: Doraemon,.
+    replace: ドラえもん
+
   - trigger: 12s,.
     replace: HTC Desire 12s
 
