@@ -250,6 +250,38 @@ matches:
   - trigger: km,.
     replace: ㎞
 
+
+
+  - trigger: mm2,.
+    replace: ㎟
+
+  - trigger: cm2,.
+    replace: ㎠
+
+  - trigger: m2,.
+    replace: ㎡
+
+  - trigger: km2,.
+    replace: ㎢
+
+  - trigger: mm3,.
+    replace: ㎣
+
+  - trigger: cm3,.
+    replace: ㎤
+
+  - trigger: m3,.
+    replace: ㎥
+
+  - trigger: km3,.
+    replace: ㎦
+
+  - trigger: m/s,.
+    replace: ㎧
+
+  - trigger: m/s2,.
+    replace: ㎨
+
   - trigger: ns,.
     replace: ㎱
 
