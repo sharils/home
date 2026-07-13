@@ -19,7 +19,7 @@ matches:
   - trigger: cup,.
     replace: ∪
 
-  - trigger: dot,.
+  - trigger: .,.
     replace: ·
 
   - trigger: exists,.
