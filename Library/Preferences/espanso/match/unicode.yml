@@ -1,7 +1,31 @@
 ---
 matches:
 
-  - trigger: LeftRightArrow,.
+  - trigger: ">,."
+    replace: "﹥"
+
+  - trigger: ">=,."
+    replace: "≥"
+
+  - trigger: ">>,."
+    replace: "≫"
+
+  - trigger: ">>>,."
+    replace: "⋙"
+
+  - trigger: <,.
+    replace: ﹤
+
+  - trigger: <=,.
+    replace: ≤
+
+  - trigger: <<,.
+    replace: ≪
+
+  - trigger: <<<,.
+    replace: ⋘
+
+  - trigger: <->,.
     replace: ↔
 
   - trigger: and,.
