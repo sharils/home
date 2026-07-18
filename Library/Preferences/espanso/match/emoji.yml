@@ -451,7 +451,7 @@ matches:
   - trigger: ug,.
     replace: 📖💡
 
-  - trigger: ux,.
+  - trigger: uy,.
     replace: 🦈👀
 
   - trigger: vxm,.
