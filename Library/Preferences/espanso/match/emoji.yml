@@ -457,7 +457,7 @@ matches:
   - trigger: vxm,.
     replace: 🪡🧵🪵
 
-  - trigger: wock,.
+  - trigger: wc,.
     replace: ✊🏻🌿
 
   - trigger: xx,.

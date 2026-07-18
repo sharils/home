@@ -1,6 +1,12 @@
 ---
 matches:
 
+  - trigger: tm,.
+    replace: ™
+
+  - trigger: tel,.
+    replace: ℡
+
   - trigger: °f,.
     replace: ℉
 
