@@ -1,6 +1,12 @@
 ---
 matches:
 
+  - trigger: °f,.
+    replace: ℉
+
+  - trigger: °c,.
+    replace: ℃
+
   - trigger: ">,."
     replace: "﹥"
 
