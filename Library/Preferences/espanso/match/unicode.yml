@@ -1,6 +1,12 @@
 ---
 matches:
 
+  - trigger: pq,.
+    replace: p → q ≡ ¬p ∨ q
+
+  - trigger: qp,.
+    replace: (p → q) ⇏ (q → p)
+
   - trigger: tm,.
     replace: ™
 
