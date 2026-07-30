@@ -38,7 +38,7 @@ matches:
     replace: Apple Watch
 
   - trigger: Bm,.
-    replace: Babymonster
+    replace: BABYMONSTER
 
   - trigger: Cf,.
     replace: CloudFront

@@ -1,0 +1,12 @@
+{
+  "plugins": {
+    "auto-dark-mode.nvim": {
+      "rev": "54058b4fe414bd64bd2904a6f8a63f1f14e3d8df",
+      "src": "https://github.com/f-person/auto-dark-mode.nvim"
+    },
+    "mini.pairs": {
+      "rev": "b1c5a726921b7a8c9321e9a7a208aa0571de5810",
+      "src": "https://github.com/nvim-mini/mini.pairs"
+    }
+  }
+}
