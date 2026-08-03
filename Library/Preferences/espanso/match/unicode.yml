@@ -82,10 +82,10 @@ matches:
   - trigger: or,.
     replace: ∨
 
-  - trigger: plusmn,.
+  - trigger: +/-,.
     replace: ±
 
-  - trigger: rarr,.
+  - trigger: ->,.
     replace: →
 
   - trigger: shift,.
