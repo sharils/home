@@ -7,6 +7,9 @@ matches:
   - trigger: qp,.
     replace: (p → q) ⇏ (q → p)
 
+  - trigger: '?=,.'
+    replace: ≟
+
   - trigger: '!=,.'
     replace: ≠
 
