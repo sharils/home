@@ -13,6 +13,9 @@ matches:
   - trigger: "?,."
     replace: ❓
 
+  - trigger: 100,.
+    replace: 💯
+
   - trigger: 100yes,.
     replace: 💯😃
 
