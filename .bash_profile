@@ -11,6 +11,7 @@ export SHARILS_HOME=~/git/github.com/sharils/home
 . $SHARILS_HOME/shell_plugins/direnv.sh
 . $SHARILS_HOME/shell_plugins/fzf.sh
 . $SHARILS_HOME/shell_plugins/gpg.sh
+. $SHARILS_HOME/shell_plugins/ghostty.sh
 . $SHARILS_HOME/shell_plugins/iterm2.sh
 . $SHARILS_HOME/shell_plugins/starship.sh
 . $SHARILS_HOME/shell_plugins/todo.sh.sh
