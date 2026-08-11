@@ -97,6 +97,8 @@ k() {
 
   gh) shift && l 'https://docs.github.com/en/get-started/using-github/keyboard-shortcuts#site-wide-shortcuts' ;;
 
+  ghostty) shift && "$SHARILS_HOME/shell_plugins/k/ghostty.sh" "$@" ;;
+
   ha) shift && "$SHARILS_HOME/shell_plugins/k/ha.sh" "$@" ;;
 
   heptagram) shift && "$SHARILS_HOME/shell_plugins/k/heptagram.sh" "$@" ;;
