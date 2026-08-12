@@ -1,14 +1,15 @@
 ---
+
 matches:
 
-  - trigger: Chiikawa,.
-    replace: ちいかわ
-
-  - trigger: Doraemon,.
-    replace: ドラえもん
+  - trigger: 10a,.
+    replace: Pixel 10a
 
   - trigger: 12s,.
     replace: HTC Desire 12s
+
+  - trigger: 6s,.
+    replace: iPhone 6s
 
   - trigger: 97p,.
     replace: 97 Things Every Programmer Should Know
@@ -43,11 +44,17 @@ matches:
   - trigger: Cf,.
     replace: CloudFront
 
+  - trigger: Chiikawa,.
+    replace: ちいかわ
+
   - trigger: Cr,.
     replace: Chromium
 
   - trigger: Cy,.
     replace: Cypress
+
+  - trigger: Doraemon,.
+    replace: ドラえもん
 
   - trigger: Esp,.
     replace: Espanso
@@ -79,11 +86,11 @@ matches:
   - trigger: Ip,.
     replace: iPad
 
-  - trigger: Iph,.
-    replace: iPhone
-
   - trigger: Ipa,.
     replace: iPad Air
+
+  - trigger: Iph,.
+    replace: iPhone
 
   - trigger: Ipp,.
     replace: iPad Pro
@@ -105,6 +112,9 @@ matches:
 
   - trigger: Lsc,.
     replace: Lightsail Container
+
+  - trigger: Lt,.
+    replace: Live talk
 
   - trigger: Lyse,.
     replace: Learn You Some Erlang for great good
@@ -148,14 +158,17 @@ matches:
   - trigger: Sn,.
     replace: Security Now!
 
-  - trigger: Tx,.
-    replace: Onyx BOOX Tab X C
+  - trigger: Tabx,.
+    replace: BOOX Tab X C
 
   - trigger: Tf,.
     replace: TestFlight
 
   - trigger: Trpl,.
     replace: The Rust Programming Language
+
+  - trigger: Tx,.
+    replace: Onyx BOOX Tab X C
 
   - trigger: Wdt,.
     replace: Web Developer Tools
@@ -195,12 +208,3 @@ matches:
 
   - trigger: u,.
     replace: qutebrowser
-
-  - trigger: Tabx,.
-    replace: BOOX Tab X C
-
-  - trigger: 10a,.
-    replace: Pixel 10a
-
-  - trigger: Lt,.
-    replace: Live talk
