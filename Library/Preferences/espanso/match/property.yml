@@ -74,9 +74,6 @@ matches:
   - trigger: Hfooad,.
     replace: Head First Object-Oriented Analysis and Design
 
-  - trigger: Hul,.
-    replace: HTC U12 life
-
   - trigger: Im,.
     replace: iMessage
 
@@ -169,6 +166,9 @@ matches:
 
   - trigger: Tx,.
     replace: Onyx BOOX Tab X C
+
+  - trigger: U12,.
+    replace: HTC U12 life
 
   - trigger: Wdt,.
     replace: Web Developer Tools
