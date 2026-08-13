@@ -4,6 +4,7 @@ custom-shader-animation = true
 font-family = "Inconsolata LGC Nerd Font Mono"
 macos-option-as-alt = true
 window-save-state = always
+keybind = opt+shift+]=text:’
 
     # theme = light:3024 Day,dark:3024 Night
     # theme = light:Adwaita,dark:Adwaita Dark
@@ -36,13 +37,13 @@ window-save-state = always
   # theme = light:Melange Light,dark:Melange Dark
   # theme = light:Modus Operandi,dark:Modus Operandi Tinted
   # theme = light:Monokai Pro Light,dark:Monokai Pro
-# theme = light:Neobones Light,dark:Neobones Dark
+theme = light:Neobones Light,dark:Neobones Dark
   # theme = light:No Clown Fiesta Light,dark:No Clown Fiesta
   # theme = light:Nord Light,dark:Nord
   # theme = light:Nvim Light,dark:Nvim Dark
   # theme = light:One Double Light,dark:One Double Dark
   # theme = light:One Half Light,dark:One Half Dark
-theme = light:Poimandres White,dark:Poimandres
+# theme = light:Poimandres White,dark:Poimandres
     # theme = light:Pencil Light,dark:Pencil Dark
     # theme = light:Pro Light,dark:Pro
   # theme = light:Raycast Light,dark:Raycast Dark
