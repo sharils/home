@@ -517,6 +517,7 @@ matches:
   - { "trigger": "1030,.", "replace": "10:30🕥" }
   - { "trigger": "1100,.", "replace": "11:00🕚" }
   - { "trigger": "1130,.", "replace": "11:30🕦" }
+  - { "trigger": "1200,.", "replace": "12:00🕛" }
   - { "trigger": "1230,.", "replace": "12:30🕧" }
   - { "trigger": "1300,.", "replace": "13:00🕐" }
   - { "trigger": "1330,.", "replace": "13:30🕜" }
