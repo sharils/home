@@ -5,28 +5,28 @@
     "shortcut" : "ctrl+alt+cmd+4"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/QuickTime%20Player.app\/",
-    "appDisplayName" : "QuickTime Player",
+    "appBundleURL" : "file:\/\/\/Applications\/Anki.app\/",
+    "appDisplayName" : "Anki",
     "shortcut" : "ctrl+alt+cmd+a"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Obsidian.app\/",
-    "appDisplayName" : "Obsidian",
+    "appBundleURL" : "file:\/\/\/Applications\/Brave%20Browser.app\/",
+    "appDisplayName" : "Brave Browser",
     "shortcut" : "ctrl+alt+cmd+b"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Voice%20Tools.app\/",
-    "appDisplayName" : "Voice Tools",
+    "appBundleURL" : "file:\/\/\/Applications\/Chromium.app\/",
+    "appDisplayName" : "Chromium",
     "shortcut" : "ctrl+alt+cmd+c"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Dictionary.app\/",
-    "appDisplayName" : "Dictionary",
+    "appBundleURL" : "file:\/\/\/Applications\/KDE%20Connect.app\/",
+    "appDisplayName" : "KDE Connect",
     "shortcut" : "ctrl+alt+cmd+d"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Notes.app\/",
-    "appDisplayName" : "Notes",
+    "appBundleURL" : "file:\/\/\/Applications\/Session.app\/",
+    "appDisplayName" : "Session",
     "shortcut" : "ctrl+alt+cmd+e"
   },
   {
@@ -35,9 +35,9 @@
     "shortcut" : "ctrl+alt+cmd+f"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/Timer.app\/",
-    "appDisplayName" : "Timer",
-    "shortcut" : "ctrl+alt+cmd+i"
+    "appBundleURL" : "file:\/\/\/Applications\/Ghostty.app\/",
+    "appDisplayName" : "Ghostty",
+    "shortcut" : "ctrl+alt+cmd+t"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/KeePassXC.app\/",
@@ -50,19 +50,9 @@
     "shortcut" : "ctrl+alt+cmd+l"
   },
   {
-    "appBundleURL" : "file:\/\/\/System\/Applications\/Music.app\/",
-    "appDisplayName" : "Music",
-    "shortcut" : "ctrl+alt+cmd+m"
-  },
-  {
     "appBundleURL" : "file:\/\/\/Applications\/LINE.app\/",
     "appDisplayName" : "LINE",
     "shortcut" : "ctrl+alt+cmd+n"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Applications\/Opera.app\/",
-    "appDisplayName" : "Opera",
-    "shortcut" : "ctrl+alt+cmd+o"
   },
   {
     "appBundleURL" : "file:\/\/\/System\/Applications\/Podcasts.app\/",
@@ -75,14 +65,9 @@
     "shortcut" : "ctrl+alt+cmd+r"
   },
   {
-    "appBundleURL" : "file:\/\/\/Applications\/MonChats.app\/",
-    "appDisplayName" : "MonChats",
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Messages.app\/",
+    "appDisplayName" : "Messages",
     "shortcut" : "ctrl+alt+cmd+s"
-  },
-  {
-    "appBundleURL" : "file:\/\/\/Applications\/iTerm.app\/",
-    "appDisplayName" : "iTerm",
-    "shortcut" : "ctrl+alt+cmd+t"
   },
   {
     "appBundleURL" : "file:\/\/\/Applications\/qutebrowser.app\/",
