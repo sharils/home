@@ -4,6 +4,9 @@ matches:
   - trigger: ...,.
     replace: 💬
 
+  - trigger: r18,.
+    replace: 🔞
+
   - trigger: "!!,."
     replace: ‼️
 
