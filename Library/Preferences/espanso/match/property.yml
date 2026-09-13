@@ -23,6 +23,9 @@ matches:
   - trigger: Am,.
     replace: Agile Manifesto
 
+  - trigger: Ap,.
+    replace: Apple Pay
+
   - trigger: As,.
     replace: App Store
 
@@ -208,3 +211,4 @@ matches:
 
   - trigger: u,.
     replace: qutebrowser
+
