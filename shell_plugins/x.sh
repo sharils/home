@@ -12,6 +12,7 @@ x() {
   chunk) shift && fold -w "${@:-3}" | tr '\n' ' ' ;;
   diff) shift && diff --color --unified "$@" ;;
   dig) shift && dig "@$(dig +nssearch "$@")" "$@" ;;
+  displayplacer) shift && "$SHARILS_HOME/shell_plugins/x/displayplacer.sh" "$@" ;;
   fzf) shift && fzf --select-1 --height=~14 --layout=reverse "$@" ;;
   gpg) echo | gpg --clearsign >/dev/null ;;
   hostnameise) tr '[:upper:]' '[:lower:]' | sed -E 's/[^[:alnum:]]+/-/g' ;;
